@@ -1,0 +1,1676 @@
+{
+  "checked": 333,
+  "allowedExistingChanges": [
+    ".gitignore",
+    "README.md",
+    "docs/执行计划.md",
+    "database/verify-schema.mjs"
+  ],
+  "files": {
+    "assets/SOURCES.md": {
+      "before": "6f8293d9ccebb654d434937a3ce7803dbd6379d05bd457d8708eace9dbf4ccd7",
+      "after": "6f8293d9ccebb654d434937a3ce7803dbd6379d05bd457d8708eace9dbf4ccd7",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-001.jpg": {
+      "before": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "after": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-002.jpg": {
+      "before": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+      "after": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-003.jpg": {
+      "before": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+      "after": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-004.jpg": {
+      "before": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+      "after": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-005.jpg": {
+      "before": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+      "after": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-006.jpg": {
+      "before": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+      "after": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-007.jpg": {
+      "before": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+      "after": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-008.jpg": {
+      "before": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+      "after": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-009.jpg": {
+      "before": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+      "after": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-010.jpg": {
+      "before": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+      "after": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-011.jpg": {
+      "before": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+      "after": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-012.jpg": {
+      "before": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "after": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-013.jpg": {
+      "before": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+      "after": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-014.jpg": {
+      "before": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+      "after": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-015.jpg": {
+      "before": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+      "after": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-016.jpg": {
+      "before": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+      "after": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-017.jpg": {
+      "before": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+      "after": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-018.jpg": {
+      "before": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+      "after": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-019.jpg": {
+      "before": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+      "after": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-020.jpg": {
+      "before": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+      "after": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-021.jpg": {
+      "before": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2",
+      "after": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-022.jpg": {
+      "before": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46",
+      "after": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-023.jpg": {
+      "before": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc",
+      "after": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc",
+      "unchanged": true
+    },
+    "assets/clothes/clothing-024.jpg": {
+      "before": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18",
+      "after": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18",
+      "unchanged": true
+    },
+    "assets/diaries/diary-004.jpg": {
+      "before": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "after": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "unchanged": true
+    },
+    "assets/diary-photo-manifest.json": {
+      "before": "335f338fb8eaf7c5dce1ba1a098b18b335fec46386b139a9e68f9ac5cc02e6d3",
+      "after": "335f338fb8eaf7c5dce1ba1a098b18b335fec46386b139a9e68f9ac5cc02e6d3",
+      "unchanged": true
+    },
+    "assets/previews/clothes-overview-1.jpg": {
+      "before": "2c685bfb63ddaee83d5969a2313fa2b5f9e21e183efff66e71cca3f441abfeea",
+      "after": "2c685bfb63ddaee83d5969a2313fa2b5f9e21e183efff66e71cca3f441abfeea",
+      "unchanged": true
+    },
+    "assets/previews/clothes-overview-2.jpg": {
+      "before": "56d164f65a0019f62ccdd686ab4600e9ea5a23dc4cedc7df0e814fdbff01fcff",
+      "after": "56d164f65a0019f62ccdd686ab4600e9ea5a23dc4cedc7df0e814fdbff01fcff",
+      "unchanged": true
+    },
+    "assets/previews/korean-wardrobe-overview.jpg": {
+      "before": "9c42c0cee49483c792b7e7ef996ff458c6504efe1b48783505f70f51d9c2a3bf",
+      "after": "9c42c0cee49483c792b7e7ef996ff458c6504efe1b48783505f70f51d9c2a3bf",
+      "unchanged": true
+    },
+    "assets/previews/outfits-overview.jpg": {
+      "before": "87f8d0db7fe797e696721c1741b8afef2e09bffa5ce6d511afd445acb7a23e5d",
+      "after": "87f8d0db7fe797e696721c1741b8afef2e09bffa5ce6d511afd445acb7a23e5d",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR01.jpg": {
+      "before": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "after": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR02.jpg": {
+      "before": "ba9c80a1254fde3b2f003960823f340c9a77a57d25f4c8c0b0cd65d8039014a1",
+      "after": "ba9c80a1254fde3b2f003960823f340c9a77a57d25f4c8c0b0cd65d8039014a1",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR03.jpg": {
+      "before": "bdfeaacaadd815aaa1a3a45501a9d9c1549f3c03dfc58137507b29eceb35c92f",
+      "after": "bdfeaacaadd815aaa1a3a45501a9d9c1549f3c03dfc58137507b29eceb35c92f",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR04.jpg": {
+      "before": "3b427b93860396cd72d07a8803499361580c3f7a4fb75a6c7ce07daafaf487c2",
+      "after": "3b427b93860396cd72d07a8803499361580c3f7a4fb75a6c7ce07daafaf487c2",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR05.jpg": {
+      "before": "f9fe7832433f3de0d5acabc9a907edfc885becdee70d12d31410ddcb70730544",
+      "after": "f9fe7832433f3de0d5acabc9a907edfc885becdee70d12d31410ddcb70730544",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR06.jpg": {
+      "before": "b81168c5adfe81b169c1fcda8cfe20f9e4d5f1c075bee7cf721c7d1f4297b6ef",
+      "after": "b81168c5adfe81b169c1fcda8cfe20f9e4d5f1c075bee7cf721c7d1f4297b6ef",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR07.jpg": {
+      "before": "2fd7ad6eda38f658c98009e9bd7c69111e756e9bc98ab00adf18050ea6ae90b5",
+      "after": "2fd7ad6eda38f658c98009e9bd7c69111e756e9bc98ab00adf18050ea6ae90b5",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR08.jpg": {
+      "before": "22594e0cb79283e9d155ce52721687360bd70ebf07bdc13b54da3c44520013d6",
+      "after": "22594e0cb79283e9d155ce52721687360bd70ebf07bdc13b54da3c44520013d6",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR09.jpg": {
+      "before": "2078f45b60a4041566ef0d85d55b94e2369db198546cd63189154735c25b4e2b",
+      "after": "2078f45b60a4041566ef0d85d55b94e2369db198546cd63189154735c25b4e2b",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR10.jpg": {
+      "before": "aa9b4e110f02bd58689a32c2db095bd2e1e77a4fde37a9c286418718ecfca1d3",
+      "after": "aa9b4e110f02bd58689a32c2db095bd2e1e77a4fde37a9c286418718ecfca1d3",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR11.jpg": {
+      "before": "1d42cad48c70caf82b8faab037d08afd47e23c6bf02b1baf205da404ad946d8f",
+      "after": "1d42cad48c70caf82b8faab037d08afd47e23c6bf02b1baf205da404ad946d8f",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/KR12.jpg": {
+      "before": "822d56c500c35fa363f661f7b9a8d453e84ab26ed96d5036748b6269b30eaab3",
+      "after": "822d56c500c35fa363f661f7b9a8d453e84ab26ed96d5036748b6269b30eaab3",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/README.md": {
+      "before": "1ff3ed53146ef0d86055e7a0a3c63c0d5ac68d5a6cf54b09275d6958d872ed04",
+      "after": "1ff3ed53146ef0d86055e7a0a3c63c0d5ac68d5a6cf54b09275d6958d872ed04",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/reference-board.jpg": {
+      "before": "98ae24a075b60659f36888df2a6a3552ce4ef7e32262ca0f5875e65d00223622",
+      "after": "98ae24a075b60659f36888df2a6a3552ce4ef7e32262ca0f5875e65d00223622",
+      "unchanged": true
+    },
+    "assets/references/korean-daily/source-manifest.json": {
+      "before": "68e8a860ee122d0bb63b995a381ada6d395fd121a8c5be4bb9054bbf04778b5a",
+      "after": "68e8a860ee122d0bb63b995a381ada6d395fd121a8c5be4bb9054bbf04778b5a",
+      "unchanged": true
+    },
+    "assets/source-manifest.json": {
+      "before": "c2c3bccbc9c8f7f073c3786a764ef743012e1c6ddb0d5f2bd86304b19229cd96",
+      "after": "c2c3bccbc9c8f7f073c3786a764ef743012e1c6ddb0d5f2bd86304b19229cd96",
+      "unchanged": true
+    },
+    "data/demo-data.json": {
+      "before": "f2666225d977b4eaf4a0669cd106b43fd150dfb4f50d187246b3eb95984b15df",
+      "after": "f2666225d977b4eaf4a0669cd106b43fd150dfb4f50d187246b3eb95984b15df",
+      "unchanged": true
+    },
+    "data/demo-summary.json": {
+      "before": "687d01817d4dc4bca0936ca83f06be22e74de8730637f64899a85e54f404686b",
+      "after": "687d01817d4dc4bca0936ca83f06be22e74de8730637f64899a85e54f404686b",
+      "unchanged": true
+    },
+    "data/verification-result.json": {
+      "before": "6717dd88bae3ea37772ddde7033abf658c70d6b35c12af5bf180312f54207603",
+      "after": "6717dd88bae3ea37772ddde7033abf658c70d6b35c12af5bf180312f54207603",
+      "unchanged": true
+    },
+    "database/package-lock.json": {
+      "before": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+      "after": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+      "unchanged": true
+    },
+    "database/package.json": {
+      "before": "7ed8f69dfea49e1d33e62921ed75152f4302f1b335fc62b9bbef0d8a7d3a60d8",
+      "after": "7ed8f69dfea49e1d33e62921ed75152f4302f1b335fc62b9bbef0d8a7d3a60d8",
+      "unchanged": true
+    },
+    "database/schema.sql": {
+      "before": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+      "after": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+      "unchanged": true
+    },
+    "docs/P1-01四入口原型实施计划.md": {
+      "before": "a594794dedb8124e912dd67c2b8d9cca9865502668b9b022a6272d14358a1318",
+      "after": "a594794dedb8124e912dd67c2b8d9cca9865502668b9b022a6272d14358a1318",
+      "unchanged": true
+    },
+    "docs/P1-01执行与验收记录.md": {
+      "before": "7c0b8347f738a40e4a420e47b3ace1c4ab6f928deba2a617ab678012f777c042",
+      "after": "7c0b8347f738a40e4a420e47b3ace1c4ab6f928deba2a617ab678012f777c042",
+      "unchanged": true
+    },
+    "docs/P1-02执行与验收记录.md": {
+      "before": "a56d6d9bb1bc761db52b0919a03e457302001f2cf689681cadad7e84134c2073",
+      "after": "a56d6d9bb1bc761db52b0919a03e457302001f2cf689681cadad7e84134c2073",
+      "unchanged": true
+    },
+    "docs/P1-02衣物维护与搭配编辑实施计划.md": {
+      "before": "66e146f63e01d33428de93abc397e5cf9a4eac7d29c7256550d22ff6e44325d0",
+      "after": "66e146f63e01d33428de93abc397e5cf9a4eac7d29c7256550d22ff6e44325d0",
+      "unchanged": true
+    },
+    "docs/P1-03执行与验收记录.md": {
+      "before": "312c102df2409fd382f04edb2e47b3bff962a7aa82c37ddb13d382c71610978d",
+      "after": "312c102df2409fd382f04edb2e47b3bff962a7aa82c37ddb13d382c71610978d",
+      "unchanged": true
+    },
+    "docs/P1-03日记与统计原型实施计划.md": {
+      "before": "d3fe06282c345e9b35f4deca95b362bb70655557cc1399760851920f18d89af7",
+      "after": "d3fe06282c345e9b35f4deca95b362bb70655557cc1399760851920f18d89af7",
+      "unchanged": true
+    },
+    "docs/P1-04原型核对与视觉定稿实施计划.md": {
+      "before": "e9bf6e916c5de9482b0ceb85b623abc994e367a0f53399526014e9e13781be88",
+      "after": "e9bf6e916c5de9482b0ceb85b623abc994e367a0f53399526014e9e13781be88",
+      "unchanged": true
+    },
+    "docs/P1-04执行与验收记录.md": {
+      "before": "636762b26a45977cdac0081712d8206780b982d0685d9199ff33c5e1901ed21f",
+      "after": "636762b26a45977cdac0081712d8206780b982d0685d9199ff33c5e1901ed21f",
+      "unchanged": true
+    },
+    "docs/P2-01执行与核对记录.md": {
+      "before": "abe0be702560edb7904c4f756319f46ea7cde7cf48d36f30af09da75439a3ee4",
+      "after": "abe0be702560edb7904c4f756319f46ea7cde7cf48d36f30af09da75439a3ee4",
+      "unchanged": true
+    },
+    "docs/P2-01设计确认与本机连接实施计划.md": {
+      "before": "6332646bb4681915ba394f630f60ed3f62a3b4a064baee861c2ac88dcf8e6a58",
+      "after": "6332646bb4681915ba394f630f60ed3f62a3b4a064baee861c2ac88dcf8e6a58",
+      "unchanged": true
+    },
+    "docs/P2-02建表与结构验证实施计划.md": {
+      "before": "709addb9309dece5ecd0a49bf2ff35a6cf96d632c5d11cd98f26303986841129",
+      "after": "709addb9309dece5ecd0a49bf2ff35a6cf96d632c5d11cd98f26303986841129",
+      "unchanged": true
+    },
+    "docs/P2-02执行与验收记录.md": {
+      "before": "ad010e9d53b635236f0fd304c1540ae620725f2dd471b8dc685e9645a40f5d72",
+      "after": "ad010e9d53b635236f0fd304c1540ae620725f2dd471b8dc685e9645a40f5d72",
+      "unchanged": true
+    },
+    "docs/P2-03样例导入与数据库核对实施计划.md": {
+      "before": "e2add9a20cffa3225d52b95f8671c1307a4255e325f6302001b7668e4748e05b",
+      "after": "e2add9a20cffa3225d52b95f8671c1307a4255e325f6302001b7668e4748e05b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-diary-november.png": {
+      "before": "71edc0da762cf57b66a8e4bd88195dd9c7098958ce773ef3c5c6d59108c65f9b",
+      "after": "71edc0da762cf57b66a8e4bd88195dd9c7098958ce773ef3c5c6d59108c65f9b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-diary-october.png": {
+      "before": "7c8cb9969318a59ec60ee04f9021bdf17cb8e9b916010491645d3a1bee7ea5cd",
+      "after": "7c8cb9969318a59ec60ee04f9021bdf17cb8e9b916010491645d3a1bee7ea5cd",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-diary-photo.png": {
+      "before": "e65d9d4884b0c8501f926712469a251e30943ee0650ebab50c7e17763b95fbfd",
+      "after": "e65d9d4884b0c8501f926712469a251e30943ee0650ebab50c7e17763b95fbfd",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-diary.png": {
+      "before": "333d7c4dfe9fe3ac966fc0d1143b2cdca425d2f40f4e7a948a463f9159d0470f",
+      "after": "333d7c4dfe9fe3ac966fc0d1143b2cdca425d2f40f4e7a948a463f9159d0470f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-me-expanded.png": {
+      "before": "9329462407454c8894159c6e35858eba25ba8eefa701b8ef370451fda45469cf",
+      "after": "9329462407454c8894159c6e35858eba25ba8eefa701b8ef370451fda45469cf",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-me.png": {
+      "before": "ac0c236f08697cf765ab96ec9cd31b4843a9c90bf91c6c426711dae0e54692fa",
+      "after": "ac0c236f08697cf765ab96ec9cd31b4843a9c90bf91c6c426711dae0e54692fa",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-outfit-six-items-bottom.png": {
+      "before": "7e3ef7605d3fbcbdd8fc3be0d6a281667c5387a6d9756d4f7aebe0ca112d0d69",
+      "after": "7e3ef7605d3fbcbdd8fc3be0d6a281667c5387a6d9756d4f7aebe0ca112d0d69",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-outfit-six-items.png": {
+      "before": "4ebf67eae2f051f685b0763fcc849f23c6db9cecabf6faa5a77b87824ff938ed",
+      "after": "4ebf67eae2f051f685b0763fcc849f23c6db9cecabf6faa5a77b87824ff938ed",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-outfits.png": {
+      "before": "6892936cf8a8313b47758309df2f68edacc474835a9ca1c85a66113bbe5baeac",
+      "after": "6892936cf8a8313b47758309df2f68edacc474835a9ca1c85a66113bbe5baeac",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-preview-CLO011.png": {
+      "before": "4bf9c97687bcf4fa3558420a54de38fe96cb2cfae2e5748746d769839fdcc43e",
+      "after": "4bf9c97687bcf4fa3558420a54de38fe96cb2cfae2e5748746d769839fdcc43e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-preview-CLO015.png": {
+      "before": "94ca90162455c8b6750829566b5aab97f56699a1190d61f2cb9014a3af386f8b",
+      "after": "94ca90162455c8b6750829566b5aab97f56699a1190d61f2cb9014a3af386f8b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-preview-CLO018.png": {
+      "before": "5809a31f6e08705bac50cee6aae5c6514f8aa5234a0cfdf2c040a2234778c262",
+      "after": "5809a31f6e08705bac50cee6aae5c6514f8aa5234a0cfdf2c040a2234778c262",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-preview-CLO023.png": {
+      "before": "7e819dd02f977ee0e648c6c12a8d3dea59556928bceb4da4f0085a999b84119a",
+      "after": "7e819dd02f977ee0e648c6c12a8d3dea59556928bceb4da4f0085a999b84119a",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-preview-long-name.png": {
+      "before": "0cb93d455b53571d8f3ba2db3fbf90eb5db64ad366febfbd6dc0cc4a4da607d8",
+      "after": "0cb93d455b53571d8f3ba2db3fbf90eb5db64ad366febfbd6dc0cc4a4da607d8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/375-wardrobe.png": {
+      "before": "4ad5986d5a986c0a0d08603995ef21ffe9140916003a9f2851c362ed65360245",
+      "after": "4ad5986d5a986c0a0d08603995ef21ffe9140916003a9f2851c362ed65360245",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-diary-november.png": {
+      "before": "dfdf80ede683ba136710d8bea566ba3ade2d9b43a3a29a97c87dd3c82b2c5724",
+      "after": "dfdf80ede683ba136710d8bea566ba3ade2d9b43a3a29a97c87dd3c82b2c5724",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-diary.png": {
+      "before": "cc3ef638b019accbb4699b4658b886474f3cc8a222061640a8e08a79a318c97f",
+      "after": "cc3ef638b019accbb4699b4658b886474f3cc8a222061640a8e08a79a318c97f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-me-expanded.png": {
+      "before": "63bcdf39da3dde426560c8de5bbba0b723cf79ff51f83d0577ca37091cc02e9e",
+      "after": "63bcdf39da3dde426560c8de5bbba0b723cf79ff51f83d0577ca37091cc02e9e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-me.png": {
+      "before": "9f6b6303ad66eaa6ba618500cd7e3fec0a4717fb2cd3bd849f1170618b0475c5",
+      "after": "9f6b6303ad66eaa6ba618500cd7e3fec0a4717fb2cd3bd849f1170618b0475c5",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-outfits.png": {
+      "before": "84305b08b31b74ed42224e0fe0b35bab15bc29996c3b15ee46327b0192c4ae72",
+      "after": "84305b08b31b74ed42224e0fe0b35bab15bc29996c3b15ee46327b0192c4ae72",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-preview-long-name.png": {
+      "before": "28f25ccc3945de701e62fd5103c93d50660883b652d38698bb589d2bf2cfa120",
+      "after": "28f25ccc3945de701e62fd5103c93d50660883b652d38698bb589d2bf2cfa120",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/430-wardrobe.png": {
+      "before": "9d70945b6a88fe7e7685cd98d863abc1702963690557040270b018fb725acb64",
+      "after": "9d70945b6a88fe7e7685cd98d863abc1702963690557040270b018fb725acb64",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/acceptance-results.json": {
+      "before": "5e189435e335087a73dc2ae1e84c0278127fc237016769fc77c1143b2b28193f",
+      "after": "5e189435e335087a73dc2ae1e84c0278127fc237016769fc77c1143b2b28193f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/data-load-error.png": {
+      "before": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+      "after": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/final-wardrobe.png": {
+      "before": "4ad5986d5a986c0a0d08603995ef21ffe9140916003a9f2851c362ed65360245",
+      "after": "4ad5986d5a986c0a0d08603995ef21ffe9140916003a9f2851c362ed65360245",
+      "unchanged": true
+    },
+    "docs/evidence/P1-01/image-load-error.png": {
+      "before": "df489d6ebc0d6245bfd7e94d1e85c92a89e6793ce2a83eb771b7acec9a04a970",
+      "after": "df489d6ebc0d6245bfd7e94d1e85c92a89e6793ce2a83eb771b7acec9a04a970",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-clothing-detail.png": {
+      "before": "3065e3eb47912fdc1b4808a1a2f4c18e4dbd1f5f4a6b0c3993195d15258aba4d",
+      "after": "3065e3eb47912fdc1b4808a1a2f4c18e4dbd1f5f4a6b0c3993195d15258aba4d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-clothing-editor.png": {
+      "before": "4f2613c49967399ee375238af178bb4e2c118e69b12b00f2cea5ca394016a72e",
+      "after": "4f2613c49967399ee375238af178bb4e2c118e69b12b00f2cea5ca394016a72e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-diary.png": {
+      "before": "71edc0da762cf57b66a8e4bd88195dd9c7098958ce773ef3c5c6d59108c65f9b",
+      "after": "71edc0da762cf57b66a8e4bd88195dd9c7098958ce773ef3c5c6d59108c65f9b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-field-error.png": {
+      "before": "91898d45bdaf8704d91000cc02b6b364881328f3b0205b90651a510e9dc19184",
+      "after": "91898d45bdaf8704d91000cc02b6b364881328f3b0205b90651a510e9dc19184",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-keyboard-height.png": {
+      "before": "8de149f394f8de066bfc27dad165883096a76ede3e01875df33e95a4703c0d23",
+      "after": "8de149f394f8de066bfc27dad165883096a76ede3e01875df33e95a4703c0d23",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-me.png": {
+      "before": "4aed87601d71e59156de1dc89a5084219c3642f05a17942069f39f801cd09bee",
+      "after": "4aed87601d71e59156de1dc89a5084219c3642f05a17942069f39f801cd09bee",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-outfit-detail-bottom.png": {
+      "before": "75751ebf47470693b08368870607429c31b3ebc879264051c37339032b2df0b8",
+      "after": "75751ebf47470693b08368870607429c31b3ebc879264051c37339032b2df0b8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-outfit-detail.png": {
+      "before": "a260549115bd2870665d7199bdddb2de6217d7063e02b37e5a651bf99aa03576",
+      "after": "a260549115bd2870665d7199bdddb2de6217d7063e02b37e5a651bf99aa03576",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-outfit-editor-bottom.png": {
+      "before": "2bfacf844330e18002f2c8113873f71d0ef786ca9c8415e23f38adbcb9287f92",
+      "after": "2bfacf844330e18002f2c8113873f71d0ef786ca9c8415e23f38adbcb9287f92",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-outfit-editor.png": {
+      "before": "3e14ebfb71bed0e80af7dbd562f80d815a08bc49e0e9a699b6afcf3db20c709d",
+      "after": "3e14ebfb71bed0e80af7dbd562f80d815a08bc49e0e9a699b6afcf3db20c709d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-outfits.png": {
+      "before": "14e8b33c338980eda75240e943e16d9814730afa8da0958182608b3c6de2becb",
+      "after": "14e8b33c338980eda75240e943e16d9814730afa8da0958182608b3c6de2becb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-picker-top.png": {
+      "before": "d4375ad54a188d3e75f090df194dd0102d037886ad84e8b1112d0ee054833312",
+      "after": "d4375ad54a188d3e75f090df194dd0102d037886ad84e8b1112d0ee054833312",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-picker.png": {
+      "before": "df4776bf27166afee83e63dca4fb14def98e526a60cbb2e1a2634c52725a4162",
+      "after": "df4776bf27166afee83e63dca4fb14def98e526a60cbb2e1a2634c52725a4162",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/375-wardrobe.png": {
+      "before": "146922085e6bb8de9ce4c613385d456da894e30da2b1dc0fb7e031f194cb7731",
+      "after": "146922085e6bb8de9ce4c613385d456da894e30da2b1dc0fb7e031f194cb7731",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-clothing-detail.png": {
+      "before": "09da875440f007a1a9e90145206d22d9a6567f946d9ef2df8b5cff4233227d78",
+      "after": "09da875440f007a1a9e90145206d22d9a6567f946d9ef2df8b5cff4233227d78",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-clothing-editor.png": {
+      "before": "318f7eaa8d70ef566ef5cff58a5813340ab804f859b119ada60bf4dc28f163b8",
+      "after": "318f7eaa8d70ef566ef5cff58a5813340ab804f859b119ada60bf4dc28f163b8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-diary.png": {
+      "before": "dfdf80ede683ba136710d8bea566ba3ade2d9b43a3a29a97c87dd3c82b2c5724",
+      "after": "dfdf80ede683ba136710d8bea566ba3ade2d9b43a3a29a97c87dd3c82b2c5724",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-field-error.png": {
+      "before": "8ba7f4beafda90ff2d727e94a1dcf9ede6f6e0f5381e091d6796aa5bfe54438f",
+      "after": "8ba7f4beafda90ff2d727e94a1dcf9ede6f6e0f5381e091d6796aa5bfe54438f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-keyboard-height.png": {
+      "before": "ff5024abff60e549cbd87eab811f837377eaa9283b4e32252526712b1bef3739",
+      "after": "ff5024abff60e549cbd87eab811f837377eaa9283b4e32252526712b1bef3739",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-me.png": {
+      "before": "db98c4e9c879b739d93a4536d765f36e62a52f8fd933ba67e8a3259e34fa2050",
+      "after": "db98c4e9c879b739d93a4536d765f36e62a52f8fd933ba67e8a3259e34fa2050",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-outfit-detail-bottom.png": {
+      "before": "e5d835ac2532e8b51bd3b6bc36ed576c1cc305700e32f9ee6ac106a8b3a7c3d2",
+      "after": "e5d835ac2532e8b51bd3b6bc36ed576c1cc305700e32f9ee6ac106a8b3a7c3d2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-outfit-detail.png": {
+      "before": "2a105a57b8f83efabe2a0953c7ebff4df3ed76b3db25d57d3f5dadaf13f8155c",
+      "after": "2a105a57b8f83efabe2a0953c7ebff4df3ed76b3db25d57d3f5dadaf13f8155c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-outfit-editor-bottom.png": {
+      "before": "509cbb8c14c813e7dd4b1d65ffcaa3dc61996808eaaa77fec120828117a307a5",
+      "after": "509cbb8c14c813e7dd4b1d65ffcaa3dc61996808eaaa77fec120828117a307a5",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-outfit-editor.png": {
+      "before": "f48db9359274aa6fc57524c56052b9982f652ad3495d5dcc16fb0f29ef031af0",
+      "after": "f48db9359274aa6fc57524c56052b9982f652ad3495d5dcc16fb0f29ef031af0",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-outfits.png": {
+      "before": "52189ad76cb722165262d9c4c76846d65dc550131ee2ffcc0699f2c24156848f",
+      "after": "52189ad76cb722165262d9c4c76846d65dc550131ee2ffcc0699f2c24156848f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-picker-top.png": {
+      "before": "c5fbd1c9ef997f15e2f958697076d57bcc5a3584c106e4874ae57043fd0f74fb",
+      "after": "c5fbd1c9ef997f15e2f958697076d57bcc5a3584c106e4874ae57043fd0f74fb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-picker.png": {
+      "before": "184020e0de1db393770e3bd10ac19ad6f5bd67ba74d8362ea6d2236ae5688f6b",
+      "after": "184020e0de1db393770e3bd10ac19ad6f5bd67ba74d8362ea6d2236ae5688f6b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/430-wardrobe.png": {
+      "before": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+      "after": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-02/acceptance-results.json": {
+      "before": "fe9d41979a9b0d8db0cb3ff62940203a983c9592d6bf4ba8b29db598e2f0aef9",
+      "after": "fe9d41979a9b0d8db0cb3ff62940203a983c9592d6bf4ba8b29db598e2f0aef9",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-clothing-detail.png": {
+      "before": "3065e3eb47912fdc1b4808a1a2f4c18e4dbd1f5f4a6b0c3993195d15258aba4d",
+      "after": "3065e3eb47912fdc1b4808a1a2f4c18e4dbd1f5f4a6b0c3993195d15258aba4d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-clothing-editor.png": {
+      "before": "4f2613c49967399ee375238af178bb4e2c118e69b12b00f2cea5ca394016a72e",
+      "after": "4f2613c49967399ee375238af178bb4e2c118e69b12b00f2cea5ca394016a72e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-date-conflict.png": {
+      "before": "b61407a77f6c0a95305ddebb941f02c6243e48cbc0dd0772f805946489df4b79",
+      "after": "b61407a77f6c0a95305ddebb941f02c6243e48cbc0dd0772f805946489df4b79",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-detail-no-photo.png": {
+      "before": "7085b2541f827808b196261635b6c0afc682ea770fb9d4d4d5f27de35228f8ae",
+      "after": "7085b2541f827808b196261635b6c0afc682ea770fb9d4d4d5f27de35228f8ae",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-detail-photo.png": {
+      "before": "b5dbe2d5b0a73dce3d5849df0e14093b56d6be4085834af6b19e11bfa83699be",
+      "after": "b5dbe2d5b0a73dce3d5849df0e14093b56d6be4085834af6b19e11bfa83699be",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-editor-bottom.png": {
+      "before": "be5a741f0e5487cc4fd0d6b908d98f4349379e6a65351569fd2dbe78b4a9ec8c",
+      "after": "be5a741f0e5487cc4fd0d6b908d98f4349379e6a65351569fd2dbe78b4a9ec8c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-editor-top.png": {
+      "before": "18d158b4e0a4387f1ff19f1ce7a9cb842db68b77a54e39be121401f14c98d14d",
+      "after": "18d158b4e0a4387f1ff19f1ce7a9cb842db68b77a54e39be121401f14c98d14d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-editor.png": {
+      "before": "a5c019ed4854e6a205a607551dffad8c0c8096a0fa55c005f55dcc4cc8290329",
+      "after": "a5c019ed4854e6a205a607551dffad8c0c8096a0fa55c005f55dcc4cc8290329",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-keyboard.png": {
+      "before": "dfc885a15ba5462240f23df77f276601c8a27d2eab0467d1620deb4c12faa35b",
+      "after": "dfc885a15ba5462240f23df77f276601c8a27d2eab0467d1620deb4c12faa35b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary-picker.png": {
+      "before": "ff761d3b0ca107a4e3752df615ff9eb91a199d7314536ea5a83d3c7c0d8e2973",
+      "after": "ff761d3b0ca107a4e3752df615ff9eb91a199d7314536ea5a83d3c7c0d8e2973",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-diary.png": {
+      "before": "56789caecce612f11b5cbb80728de3c1fd863b84e538f38b9a636c3de50a80ab",
+      "after": "56789caecce612f11b5cbb80728de3c1fd863b84e538f38b9a636c3de50a80ab",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-field-error.png": {
+      "before": "91898d45bdaf8704d91000cc02b6b364881328f3b0205b90651a510e9dc19184",
+      "after": "91898d45bdaf8704d91000cc02b6b364881328f3b0205b90651a510e9dc19184",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-keyboard-height.png": {
+      "before": "8de149f394f8de066bfc27dad165883096a76ede3e01875df33e95a4703c0d23",
+      "after": "8de149f394f8de066bfc27dad165883096a76ede3e01875df33e95a4703c0d23",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-me.png": {
+      "before": "e781d3e80c891608cf626afa4ff61a6971cd424d3fdeba767eee0d3a82c5904a",
+      "after": "e781d3e80c891608cf626afa4ff61a6971cd424d3fdeba767eee0d3a82c5904a",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-outfit-detail-bottom.png": {
+      "before": "75751ebf47470693b08368870607429c31b3ebc879264051c37339032b2df0b8",
+      "after": "75751ebf47470693b08368870607429c31b3ebc879264051c37339032b2df0b8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-outfit-detail.png": {
+      "before": "8da75e017716e13b8d23b3a11748709edb6acda199aea19ec836930b924336bf",
+      "after": "8da75e017716e13b8d23b3a11748709edb6acda199aea19ec836930b924336bf",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-outfit-editor-bottom.png": {
+      "before": "2bfacf844330e18002f2c8113873f71d0ef786ca9c8415e23f38adbcb9287f92",
+      "after": "2bfacf844330e18002f2c8113873f71d0ef786ca9c8415e23f38adbcb9287f92",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-outfit-editor.png": {
+      "before": "3e14ebfb71bed0e80af7dbd562f80d815a08bc49e0e9a699b6afcf3db20c709d",
+      "after": "3e14ebfb71bed0e80af7dbd562f80d815a08bc49e0e9a699b6afcf3db20c709d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-outfits.png": {
+      "before": "14e8b33c338980eda75240e943e16d9814730afa8da0958182608b3c6de2becb",
+      "after": "14e8b33c338980eda75240e943e16d9814730afa8da0958182608b3c6de2becb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-photo-enlarged.png": {
+      "before": "2569221bf2882161f26227b5a3135a6e91cf179c47455fe117ac72387612a58d",
+      "after": "2569221bf2882161f26227b5a3135a6e91cf179c47455fe117ac72387612a58d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-picker-top.png": {
+      "before": "d4375ad54a188d3e75f090df194dd0102d037886ad84e8b1112d0ee054833312",
+      "after": "d4375ad54a188d3e75f090df194dd0102d037886ad84e8b1112d0ee054833312",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-picker.png": {
+      "before": "df4776bf27166afee83e63dca4fb14def98e526a60cbb2e1a2634c52725a4162",
+      "after": "df4776bf27166afee83e63dca4fb14def98e526a60cbb2e1a2634c52725a4162",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-statistics-bottom.png": {
+      "before": "266b3775aa397e8e13691362b833a58e6823b715ed99b41e59fb27b5d7e52c04",
+      "after": "266b3775aa397e8e13691362b833a58e6823b715ed99b41e59fb27b5d7e52c04",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-statistics.png": {
+      "before": "bc75309b5b5f1555677918a8736cea237a2105573ab24c4efd83d40662dc2999",
+      "after": "bc75309b5b5f1555677918a8736cea237a2105573ab24c4efd83d40662dc2999",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/375-wardrobe.png": {
+      "before": "146922085e6bb8de9ce4c613385d456da894e30da2b1dc0fb7e031f194cb7731",
+      "after": "146922085e6bb8de9ce4c613385d456da894e30da2b1dc0fb7e031f194cb7731",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-clothing-detail.png": {
+      "before": "2c191f8f6540d519430c343ff6a0641613c823d280fe3bde95136e31e67fa50d",
+      "after": "2c191f8f6540d519430c343ff6a0641613c823d280fe3bde95136e31e67fa50d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-clothing-editor.png": {
+      "before": "318f7eaa8d70ef566ef5cff58a5813340ab804f859b119ada60bf4dc28f163b8",
+      "after": "318f7eaa8d70ef566ef5cff58a5813340ab804f859b119ada60bf4dc28f163b8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary-detail-photo.png": {
+      "before": "4df925807c529995ca1c3b91634fa63cba8cd8fcf9b1fdc34153b689d339de71",
+      "after": "4df925807c529995ca1c3b91634fa63cba8cd8fcf9b1fdc34153b689d339de71",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary-editor-bottom.png": {
+      "before": "36804296f4683a82b241a7336e5fb04fca884184497ba03f30c0d51a2f5b53a0",
+      "after": "36804296f4683a82b241a7336e5fb04fca884184497ba03f30c0d51a2f5b53a0",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary-editor-top.png": {
+      "before": "0453219d458379d3f3a52534529214a629b5333e083e8a605b6a8120289847fb",
+      "after": "0453219d458379d3f3a52534529214a629b5333e083e8a605b6a8120289847fb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary-editor.png": {
+      "before": "404766997c548bc2932f1be35edfcbd2db267a3a6f0d4685554e98916f606f52",
+      "after": "404766997c548bc2932f1be35edfcbd2db267a3a6f0d4685554e98916f606f52",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary-keyboard.png": {
+      "before": "96279be8f78ed4aa3f5d973075650d192c18d364f849a56fca42e088ba0f5107",
+      "after": "96279be8f78ed4aa3f5d973075650d192c18d364f849a56fca42e088ba0f5107",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary-picker.png": {
+      "before": "f176e749e99b81b9d3bc16757ab76cf9feddbbefef13fbae3e6f234ca1677578",
+      "after": "f176e749e99b81b9d3bc16757ab76cf9feddbbefef13fbae3e6f234ca1677578",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-diary.png": {
+      "before": "2e94d19b535aad70f0b3fbdfff758d56582821c28e7c30ef99c6f21e50da9527",
+      "after": "2e94d19b535aad70f0b3fbdfff758d56582821c28e7c30ef99c6f21e50da9527",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-field-error.png": {
+      "before": "8ba7f4beafda90ff2d727e94a1dcf9ede6f6e0f5381e091d6796aa5bfe54438f",
+      "after": "8ba7f4beafda90ff2d727e94a1dcf9ede6f6e0f5381e091d6796aa5bfe54438f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-keyboard-height.png": {
+      "before": "ff5024abff60e549cbd87eab811f837377eaa9283b4e32252526712b1bef3739",
+      "after": "ff5024abff60e549cbd87eab811f837377eaa9283b4e32252526712b1bef3739",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-me.png": {
+      "before": "86138b135ce32fd23265a20884318689b4f683a3d289d589e6b9c724c9e55f5b",
+      "after": "86138b135ce32fd23265a20884318689b4f683a3d289d589e6b9c724c9e55f5b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-outfit-detail-bottom.png": {
+      "before": "e5d835ac2532e8b51bd3b6bc36ed576c1cc305700e32f9ee6ac106a8b3a7c3d2",
+      "after": "e5d835ac2532e8b51bd3b6bc36ed576c1cc305700e32f9ee6ac106a8b3a7c3d2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-outfit-detail.png": {
+      "before": "23668ebe6c1150b891756e5bfee15f64cd7ef1a093c5eef6bec48b26ec47203f",
+      "after": "23668ebe6c1150b891756e5bfee15f64cd7ef1a093c5eef6bec48b26ec47203f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-outfit-editor-bottom.png": {
+      "before": "509cbb8c14c813e7dd4b1d65ffcaa3dc61996808eaaa77fec120828117a307a5",
+      "after": "509cbb8c14c813e7dd4b1d65ffcaa3dc61996808eaaa77fec120828117a307a5",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-outfit-editor.png": {
+      "before": "f48db9359274aa6fc57524c56052b9982f652ad3495d5dcc16fb0f29ef031af0",
+      "after": "f48db9359274aa6fc57524c56052b9982f652ad3495d5dcc16fb0f29ef031af0",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-outfits.png": {
+      "before": "52189ad76cb722165262d9c4c76846d65dc550131ee2ffcc0699f2c24156848f",
+      "after": "52189ad76cb722165262d9c4c76846d65dc550131ee2ffcc0699f2c24156848f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-photo-enlarged.png": {
+      "before": "f0bc0093f6370399e873b316f08829d2254012d1be9001b9757910757583d14f",
+      "after": "f0bc0093f6370399e873b316f08829d2254012d1be9001b9757910757583d14f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-picker-top.png": {
+      "before": "c5fbd1c9ef997f15e2f958697076d57bcc5a3584c106e4874ae57043fd0f74fb",
+      "after": "c5fbd1c9ef997f15e2f958697076d57bcc5a3584c106e4874ae57043fd0f74fb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-picker.png": {
+      "before": "184020e0de1db393770e3bd10ac19ad6f5bd67ba74d8362ea6d2236ae5688f6b",
+      "after": "184020e0de1db393770e3bd10ac19ad6f5bd67ba74d8362ea6d2236ae5688f6b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-statistics-bottom.png": {
+      "before": "920c5cd307c7085014546e3ff5acf02e25817a0e664b34d1b75c6b229bce4462",
+      "after": "920c5cd307c7085014546e3ff5acf02e25817a0e664b34d1b75c6b229bce4462",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-statistics.png": {
+      "before": "bc6158cb22353d861338bcfca005c59109de35349e95e820e1b96d83e6c9e68f",
+      "after": "bc6158cb22353d861338bcfca005c59109de35349e95e820e1b96d83e6c9e68f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/430-wardrobe.png": {
+      "before": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+      "after": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-03/acceptance-results.json": {
+      "before": "641f9fa70bef4dc3c77906d7f3b2f0d0e55e05e2ed002c13caeddec61ae1d620",
+      "after": "641f9fa70bef4dc3c77906d7f3b2f0d0e55e05e2ed002c13caeddec61ae1d620",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P01-list.png": {
+      "before": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+      "after": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P02-detail.png": {
+      "before": "f907fd1594db9fffc4513f23a278cab7fed32f34ad1870231e6c7c29c91efe94",
+      "after": "f907fd1594db9fffc4513f23a278cab7fed32f34ad1870231e6c7c29c91efe94",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P03-edit-top.png": {
+      "before": "2371454ddbd94735bed52aafd43280cd710e9441010b6e2e7c6bbb2d3651f58a",
+      "after": "2371454ddbd94735bed52aafd43280cd710e9441010b6e2e7c6bbb2d3651f58a",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P03-new-top.png": {
+      "before": "d7bba3cadbe9ce26c856f031e791a9306e863da9bed0325e0bcf7939280c25cd",
+      "after": "d7bba3cadbe9ce26c856f031e791a9306e863da9bed0325e0bcf7939280c25cd",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P04-list.png": {
+      "before": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+      "after": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P05-detail.png": {
+      "before": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+      "after": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P06-edit-top.png": {
+      "before": "0172031efe08695720baec8f0f1d450f4903544a1cfc926dce327fe6009f3364",
+      "after": "0172031efe08695720baec8f0f1d450f4903544a1cfc926dce327fe6009f3364",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P06-new-top.png": {
+      "before": "a8867f599b68116c77d09198da44640698bb0e5934241dfba5663856b8c8f676",
+      "after": "a8867f599b68116c77d09198da44640698bb0e5934241dfba5663856b8c8f676",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P07-calendar.png": {
+      "before": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+      "after": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P08-photo.png": {
+      "before": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+      "after": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P09-conflict.png": {
+      "before": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+      "after": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P09-edit-top.png": {
+      "before": "32291b097911c5950c97a9c0147efaf3f942ef0abcd170d69e0066a7e9f46b14",
+      "after": "32291b097911c5950c97a9c0147efaf3f942ef0abcd170d69e0066a7e9f46b14",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P09-max-bottom.png": {
+      "before": "a7ec9008f1f46c7692961a05213c50cee759f810f74a74dda09385df2e1c4e50",
+      "after": "a7ec9008f1f46c7692961a05213c50cee759f810f74a74dda09385df2e1c4e50",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P09-max-top.png": {
+      "before": "4437bebd7d4b44c05a91deed89e33000599a65a74bcfcc65cffce86f4dd1bc6c",
+      "after": "4437bebd7d4b44c05a91deed89e33000599a65a74bcfcc65cffce86f4dd1bc6c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P09-new-top.png": {
+      "before": "4a175adf63ed4fc2814756ace15c943ae4db9c7c61b028847a065c6be6eea391",
+      "after": "4a175adf63ed4fc2814756ace15c943ae4db9c7c61b028847a065c6be6eea391",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P10-bottom.png": {
+      "before": "cf6555bbbe64c5553dc4e0ea5f0ba0bd463ff15dc004fec6376a5204086aadf2",
+      "after": "cf6555bbbe64c5553dc4e0ea5f0ba0bd463ff15dc004fec6376a5204086aadf2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-P10-statistics.png": {
+      "before": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+      "after": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-archive-summary-bottom.png": {
+      "before": "6feed1193ae19928a75b3f7fb93ca617754ed0824b36d1345c0d877ef4cb8070",
+      "after": "6feed1193ae19928a75b3f7fb93ca617754ed0824b36d1345c0d877ef4cb8070",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-archive-summary.png": {
+      "before": "9f27e89aeb05fb587f9d964336e98a5fd5ba66a379879e839d88b04bff5e7aa9",
+      "after": "9f27e89aeb05fb587f9d964336e98a5fd5ba66a379879e839d88b04bff5e7aa9",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-calendar-empty.png": {
+      "before": "1ca9cd7b46a0a200c62b9b637fb4eff14df796dd19b54fb7be95181767874827",
+      "after": "1ca9cd7b46a0a200c62b9b637fb4eff14df796dd19b54fb7be95181767874827",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-clothing-detail.png": {
+      "before": "f81c7edacb5cb780b4ab060df8599b720db6f568bb692f4da097f521ca9980ea",
+      "after": "f81c7edacb5cb780b4ab060df8599b720db6f568bb692f4da097f521ca9980ea",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-clothing-editor.png": {
+      "before": "07db0d7903947185053304d8d7c4bc8bf9aabb1b14410b3845498edf3e8f04b7",
+      "after": "07db0d7903947185053304d8d7c4bc8bf9aabb1b14410b3845498edf3e8f04b7",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-clothing-keyboard-height.png": {
+      "before": "7249cd71ba53335d40eeddd496ccbf620196fd11ae8702954ee1311a542f5868",
+      "after": "7249cd71ba53335d40eeddd496ccbf620196fd11ae8702954ee1311a542f5868",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-clothing-long-bottom.png": {
+      "before": "8e26c22109d892798ef8af73ab5448e08008de76f703bc9fd9b2f3111f24bf4f",
+      "after": "8e26c22109d892798ef8af73ab5448e08008de76f703bc9fd9b2f3111f24bf4f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-data-error.png": {
+      "before": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+      "after": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-date-conflict.png": {
+      "before": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+      "after": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-detail-no-photo.png": {
+      "before": "ce825783dd1e6cda446aa8a8167a9e6fd71f0a5bd204c1003b7e659ee9db7c6d",
+      "after": "ce825783dd1e6cda446aa8a8167a9e6fd71f0a5bd204c1003b7e659ee9db7c6d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-detail-photo.png": {
+      "before": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+      "after": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-editor-bottom.png": {
+      "before": "0c931bfa8ab8fa6dd5db1b12d9dc28b8228f4c353a595caace358ef323765af5",
+      "after": "0c931bfa8ab8fa6dd5db1b12d9dc28b8228f4c353a595caace358ef323765af5",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-editor-top.png": {
+      "before": "10a6cba1052dfe81860c7b3609195a123a57336ad45d66b62a2b43f41890a093",
+      "after": "10a6cba1052dfe81860c7b3609195a123a57336ad45d66b62a2b43f41890a093",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-editor.png": {
+      "before": "0f7051df5fc367d1e06a5bb8be2a51eb92a38f9f9d9da727e2edd840ccd23772",
+      "after": "0f7051df5fc367d1e06a5bb8be2a51eb92a38f9f9d9da727e2edd840ccd23772",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-keyboard-height.png": {
+      "before": "0578f7fcb66990ac0ec16514c3b303a3808040ec90c31f4fdb75aec6a47e8728",
+      "after": "0578f7fcb66990ac0ec16514c3b303a3808040ec90c31f4fdb75aec6a47e8728",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-keyboard.png": {
+      "before": "5f82a3763a32209c9a15c862a11216d6a66e2e0b0083ce2ff9233fa6c2b1b481",
+      "after": "5f82a3763a32209c9a15c862a11216d6a66e2e0b0083ce2ff9233fa6c2b1b481",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-long-bottom.png": {
+      "before": "0c931bfa8ab8fa6dd5db1b12d9dc28b8228f4c353a595caace358ef323765af5",
+      "after": "0c931bfa8ab8fa6dd5db1b12d9dc28b8228f4c353a595caace358ef323765af5",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary-picker.png": {
+      "before": "4c666964754180dc4f11fb2f076f81968c0c54f51cab6826d5b3005ace51e4d6",
+      "after": "4c666964754180dc4f11fb2f076f81968c0c54f51cab6826d5b3005ace51e4d6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-diary.png": {
+      "before": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+      "after": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-field-error.png": {
+      "before": "5beea6eac37f874148f05d10ea89c4e4ddf27b7582011391477c055d5a8a0b1d",
+      "after": "5beea6eac37f874148f05d10ea89c4e4ddf27b7582011391477c055d5a8a0b1d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-filter-empty.png": {
+      "before": "5eb241b2a65ea2f23f60708e15f63d3ce47a5b132cda134f6d557ec262b20353",
+      "after": "5eb241b2a65ea2f23f60708e15f63d3ce47a5b132cda134f6d557ec262b20353",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-flow-delete-statistics.png": {
+      "before": "a0584a5ca6207fce51e2864de2704aaf817b306b175d83685dc2b3bd4d5417e1",
+      "after": "a0584a5ca6207fce51e2864de2704aaf817b306b175d83685dc2b3bd4d5417e1",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-flow-record-statistics.png": {
+      "before": "487c92ff49b10c94636526d249601e772a8a4654b3098cf2827c205922aa708b",
+      "after": "487c92ff49b10c94636526d249601e772a8a4654b3098cf2827c205922aa708b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-image-error.png": {
+      "before": "7055162d855c8c71fd632fd5ad40641fa252a539a6ba3db84b08366e0b5acd3e",
+      "after": "7055162d855c8c71fd632fd5ad40641fa252a539a6ba3db84b08366e0b5acd3e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-keyboard-height.png": {
+      "before": "7b025b90ae472ae5a7e21987c9451332655afa88e5cb50a2c61d431038459834",
+      "after": "7b025b90ae472ae5a7e21987c9451332655afa88e5cb50a2c61d431038459834",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-long-picker-latin.png": {
+      "before": "f69f1b6596042d95713ddc1991385b6ac4310b8c8baf8c6daac6d922c119db1b",
+      "after": "f69f1b6596042d95713ddc1991385b6ac4310b8c8baf8c6daac6d922c119db1b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-long-picker-zh.png": {
+      "before": "8c308170e8abe7a82211df27405eaf144483d3f002ffb83138f9a3485e8f561d",
+      "after": "8c308170e8abe7a82211df27405eaf144483d3f002ffb83138f9a3485e8f561d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-long-related-bottom.png": {
+      "before": "8c535f2e885e31990063e0505af5e3ec9c8b00b2d37f162d3044dbc2a14fc505",
+      "after": "8c535f2e885e31990063e0505af5e3ec9c8b00b2d37f162d3044dbc2a14fc505",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-long-related-latin.png": {
+      "before": "4051138859ffb4ec28b0342eac56606d9be77e405c9efd08477ec5ee1946b7d2",
+      "after": "4051138859ffb4ec28b0342eac56606d9be77e405c9efd08477ec5ee1946b7d2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-long-related-zh.png": {
+      "before": "1a9085e89b1a083f4e67e3bc0f4d60233aeae7079c6816390ffbdff5b1ff7049",
+      "after": "1a9085e89b1a083f4e67e3bc0f4d60233aeae7079c6816390ffbdff5b1ff7049",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-me.png": {
+      "before": "3da7baf6f9684a438edac13eaab90e34139e69feb42f45e5f4cc99d1f60f8acf",
+      "after": "3da7baf6f9684a438edac13eaab90e34139e69feb42f45e5f4cc99d1f60f8acf",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-modal-login.png": {
+      "before": "f456a45519eff9f7a2e5c95922fe0960c6854a833e67c6f46ddb1d882558dcd2",
+      "after": "f456a45519eff9f7a2e5c95922fe0960c6854a833e67c6f46ddb1d882558dcd2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-modal-photo.png": {
+      "before": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+      "after": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-modal-profile.png": {
+      "before": "85040f78aad9429974f20baa16367d14870f3a7d7bbb91d18c2fdb04bc78ed68",
+      "after": "85040f78aad9429974f20baa16367d14870f3a7d7bbb91d18c2fdb04bc78ed68",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfit-detail-bottom.png": {
+      "before": "3c5545615cdb4bbc31cad6a115cf4d21ee5089bf6cb16717b7a44bfc09412aca",
+      "after": "3c5545615cdb4bbc31cad6a115cf4d21ee5089bf6cb16717b7a44bfc09412aca",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfit-detail.png": {
+      "before": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+      "after": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfit-editor-bottom.png": {
+      "before": "f960ee62dd6639e4e39eea9a2679b6ce6b7386388cd0d343ea1652b6abdef3b8",
+      "after": "f960ee62dd6639e4e39eea9a2679b6ce6b7386388cd0d343ea1652b6abdef3b8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfit-editor.png": {
+      "before": "5d73eac00729d139d04cdbc5bac68f774551b7668b2804c6955aa69706ee19be",
+      "after": "5d73eac00729d139d04cdbc5bac68f774551b7668b2804c6955aa69706ee19be",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfit-keyboard-height.png": {
+      "before": "43a8ba867a733dcd15ce386832e79cb4d6b4a11fbe83f6d2f862067bf9bfa152",
+      "after": "43a8ba867a733dcd15ce386832e79cb4d6b4a11fbe83f6d2f862067bf9bfa152",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfit-long-bottom.png": {
+      "before": "f960ee62dd6639e4e39eea9a2679b6ce6b7386388cd0d343ea1652b6abdef3b8",
+      "after": "f960ee62dd6639e4e39eea9a2679b6ce6b7386388cd0d343ea1652b6abdef3b8",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-outfits.png": {
+      "before": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+      "after": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-photo-enlarged.png": {
+      "before": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+      "after": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-picker-top.png": {
+      "before": "d7bf69a44d811d9963b0d2716ee6953d434a785ab19b3dae586ee0280c051eef",
+      "after": "d7bf69a44d811d9963b0d2716ee6953d434a785ab19b3dae586ee0280c051eef",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-picker.png": {
+      "before": "5e0b8261a92417b737f6d5b0871d794c2bd20356dec9c0fc5e4f47291f2827d7",
+      "after": "5e0b8261a92417b737f6d5b0871d794c2bd20356dec9c0fc5e4f47291f2827d7",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-statistics-bottom.png": {
+      "before": "fde1d24df128ac65bbee3e838bb5e66de5691d629f924101350db1fffe4741d6",
+      "after": "fde1d24df128ac65bbee3e838bb5e66de5691d629f924101350db1fffe4741d6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-statistics-empty.png": {
+      "before": "a1288aa2b1cd3417f7c3e4243756f29b4cb94caad33fd4d4bd1bad95da647e57",
+      "after": "a1288aa2b1cd3417f7c3e4243756f29b4cb94caad33fd4d4bd1bad95da647e57",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-statistics.png": {
+      "before": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+      "after": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/375-wardrobe.png": {
+      "before": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+      "after": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P01-list.png": {
+      "before": "92b215d49c8c321ed4a4cbef7d6c47d4c85c9198e5ba261da94ef8e8676977e7",
+      "after": "92b215d49c8c321ed4a4cbef7d6c47d4c85c9198e5ba261da94ef8e8676977e7",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P02-detail.png": {
+      "before": "ace5c0b8fae19e9f04393bb4e136696a9fac2375665db1c73c125a99516354a6",
+      "after": "ace5c0b8fae19e9f04393bb4e136696a9fac2375665db1c73c125a99516354a6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P03-edit-top.png": {
+      "before": "fc2d70b9366563557fdb8b2ccb7aa55c796ec0e925dbe93f634253850a1f0567",
+      "after": "fc2d70b9366563557fdb8b2ccb7aa55c796ec0e925dbe93f634253850a1f0567",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P03-new-top.png": {
+      "before": "e565f89aa952b71d0fab52f643cf7af1ced397b4e334715d44c93be9c7bf15fe",
+      "after": "e565f89aa952b71d0fab52f643cf7af1ced397b4e334715d44c93be9c7bf15fe",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P04-list.png": {
+      "before": "8f08850effa647756307f57b3259d26101c0f768fec5ad5a78f59756dfb0a20f",
+      "after": "8f08850effa647756307f57b3259d26101c0f768fec5ad5a78f59756dfb0a20f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P05-detail.png": {
+      "before": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+      "after": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P06-edit-top.png": {
+      "before": "aa9d332330fa70a06d9d600d58063304e35351ee06f08ac7317c71fec149d897",
+      "after": "aa9d332330fa70a06d9d600d58063304e35351ee06f08ac7317c71fec149d897",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P06-new-top.png": {
+      "before": "c150326b5550284041426c18768fa24615da2d28aa01695cace616c27bcbf32e",
+      "after": "c150326b5550284041426c18768fa24615da2d28aa01695cace616c27bcbf32e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P07-calendar.png": {
+      "before": "5d2c157ffec1993538a70b52cd71bb23b474587a6ad244b131a011e43701bc6b",
+      "after": "5d2c157ffec1993538a70b52cd71bb23b474587a6ad244b131a011e43701bc6b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P08-photo.png": {
+      "before": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+      "after": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P09-edit-top.png": {
+      "before": "f0ee28de71bb4675835a2d845d98501b5b57f3068d018efe4d67996311198584",
+      "after": "f0ee28de71bb4675835a2d845d98501b5b57f3068d018efe4d67996311198584",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P09-new-top.png": {
+      "before": "7953a88b0e04e145360707c62da8fd0a0cbff78c83e53c823b0f2b4031ec611e",
+      "after": "7953a88b0e04e145360707c62da8fd0a0cbff78c83e53c823b0f2b4031ec611e",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P10-bottom.png": {
+      "before": "05c38dccede963cf69557c83a638d252790e548e3c2e4711a6e7f22250ce5479",
+      "after": "05c38dccede963cf69557c83a638d252790e548e3c2e4711a6e7f22250ce5479",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-P10-statistics.png": {
+      "before": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+      "after": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-clothing-detail.png": {
+      "before": "5a339534fb509064c62275c619471bfaf006f6eeb6e2c71b8b333f6085a4887d",
+      "after": "5a339534fb509064c62275c619471bfaf006f6eeb6e2c71b8b333f6085a4887d",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-clothing-editor.png": {
+      "before": "9b6403e4c8b9ede0f90cdb3000286ddea6f09b132f33e43506faf79332250275",
+      "after": "9b6403e4c8b9ede0f90cdb3000286ddea6f09b132f33e43506faf79332250275",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-clothing-keyboard-height.png": {
+      "before": "0c57613e896f95f983b5ab756438cc697a585d1df87a4878f398649ed14717ea",
+      "after": "0c57613e896f95f983b5ab756438cc697a585d1df87a4878f398649ed14717ea",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-clothing-long-bottom.png": {
+      "before": "97cb7093f8fc0e2008f0d49db6d28d78fa57c05e5a4b72eb4aecaab0aad4e8f6",
+      "after": "97cb7093f8fc0e2008f0d49db6d28d78fa57c05e5a4b72eb4aecaab0aad4e8f6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-detail-photo.png": {
+      "before": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+      "after": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-editor-bottom.png": {
+      "before": "a92c5a05ce15e50fcfa1efba1be024f970c2cab307f182ac6e06862708d9285b",
+      "after": "a92c5a05ce15e50fcfa1efba1be024f970c2cab307f182ac6e06862708d9285b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-editor-top.png": {
+      "before": "66ab0036fc34fe46e86d47ff4ac1885c01560a3abe8ae55039293af741707ccf",
+      "after": "66ab0036fc34fe46e86d47ff4ac1885c01560a3abe8ae55039293af741707ccf",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-editor.png": {
+      "before": "05f4265f172e0bf7b69de3f88606a3fb54957292b3af3f0c0900e416c6e36054",
+      "after": "05f4265f172e0bf7b69de3f88606a3fb54957292b3af3f0c0900e416c6e36054",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-keyboard-height.png": {
+      "before": "bb552970bae5ce5431f6faa473bde9952f3c7f3a4020f98585c0dbe4435d4fb2",
+      "after": "bb552970bae5ce5431f6faa473bde9952f3c7f3a4020f98585c0dbe4435d4fb2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-keyboard.png": {
+      "before": "119435562c3d1a8a283856af74c1a95cd7b8b1f2e5aebd08aeaa0d420e12623c",
+      "after": "119435562c3d1a8a283856af74c1a95cd7b8b1f2e5aebd08aeaa0d420e12623c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-long-bottom.png": {
+      "before": "24291ea3a830938f1fb9e51d3c9f133e6e24fd67ba6aa90b74555a3ee097026f",
+      "after": "24291ea3a830938f1fb9e51d3c9f133e6e24fd67ba6aa90b74555a3ee097026f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary-picker.png": {
+      "before": "71e0f5edb8b32b065c2421f2a8f43b2c7a63c49ea0d3ba1c09a83ac87914835a",
+      "after": "71e0f5edb8b32b065c2421f2a8f43b2c7a63c49ea0d3ba1c09a83ac87914835a",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-diary.png": {
+      "before": "a9df4225eca862798d993ed3249cbdba832c9867551c2b8bf7167eafc35672aa",
+      "after": "a9df4225eca862798d993ed3249cbdba832c9867551c2b8bf7167eafc35672aa",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-field-error.png": {
+      "before": "678bc9eeba8317a72788c098fd8b9336adc08b3e22510df2dcf1c9108d67055b",
+      "after": "678bc9eeba8317a72788c098fd8b9336adc08b3e22510df2dcf1c9108d67055b",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-flow-delete-statistics.png": {
+      "before": "f72af2b8d503f74c7bace73c95ffd8d371e73d72c7231aea9bc4ccb5d33518b5",
+      "after": "f72af2b8d503f74c7bace73c95ffd8d371e73d72c7231aea9bc4ccb5d33518b5",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-flow-record-statistics.png": {
+      "before": "b628c85dc9abadccb380a0ac0ceb64378e04634913d75ac5849a57cd78bf94fd",
+      "after": "b628c85dc9abadccb380a0ac0ceb64378e04634913d75ac5849a57cd78bf94fd",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-keyboard-height.png": {
+      "before": "4a227b8dfa4d721508ef92c904ca1f3979fc85fe6b34d21693f62bad3d34fe43",
+      "after": "4a227b8dfa4d721508ef92c904ca1f3979fc85fe6b34d21693f62bad3d34fe43",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-long-picker-latin.png": {
+      "before": "bc9ab9677648a2cc6cfcc3f8467fa3518945f4568b89c300dd63c816ea7e04ff",
+      "after": "bc9ab9677648a2cc6cfcc3f8467fa3518945f4568b89c300dd63c816ea7e04ff",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-long-picker-zh.png": {
+      "before": "3f53f28f44af1aaf0f73c729d2470304287b6d4c54121cac19145bb5fc97b0ee",
+      "after": "3f53f28f44af1aaf0f73c729d2470304287b6d4c54121cac19145bb5fc97b0ee",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-long-related-bottom.png": {
+      "before": "fb66e7559fad18cb2c71acd138b4c3c9b740c6506c1b97ce8097357964e2a1e6",
+      "after": "fb66e7559fad18cb2c71acd138b4c3c9b740c6506c1b97ce8097357964e2a1e6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-long-related-latin.png": {
+      "before": "5dda5e5205c6d56eeaed786a5c8f1390969ba252ae1f7dfcb38f641fcf55e524",
+      "after": "5dda5e5205c6d56eeaed786a5c8f1390969ba252ae1f7dfcb38f641fcf55e524",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-long-related-zh.png": {
+      "before": "8a4c770fb497d8f717a3773f143010354cfa0845050bedd6e2b5e440cbc9728f",
+      "after": "8a4c770fb497d8f717a3773f143010354cfa0845050bedd6e2b5e440cbc9728f",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-me.png": {
+      "before": "a72bb7f33ac954fa4d0a6b66a9e11b1bd8234a1e4146af39b16ba2f810b968b4",
+      "after": "a72bb7f33ac954fa4d0a6b66a9e11b1bd8234a1e4146af39b16ba2f810b968b4",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-modal-login.png": {
+      "before": "4ccc404aa2c7c27775ced270c3d7b9e6aa6c79a3cba38d91f9d42e4c9c9a2145",
+      "after": "4ccc404aa2c7c27775ced270c3d7b9e6aa6c79a3cba38d91f9d42e4c9c9a2145",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-modal-photo.png": {
+      "before": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+      "after": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-modal-profile.png": {
+      "before": "c67af2eb80e1c843c7f23491fdeecf2e59daa07ac07d76ae256be564ba5e052c",
+      "after": "c67af2eb80e1c843c7f23491fdeecf2e59daa07ac07d76ae256be564ba5e052c",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfit-detail-bottom.png": {
+      "before": "80685e04523256022433837492d91a7c26ec225b364aebf5ad8246d011738932",
+      "after": "80685e04523256022433837492d91a7c26ec225b364aebf5ad8246d011738932",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfit-detail.png": {
+      "before": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+      "after": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfit-editor-bottom.png": {
+      "before": "6bd296197e91d5c11f9dc8e8770b0002ec5584f023d58c6f2d81ede0b0fa60c9",
+      "after": "6bd296197e91d5c11f9dc8e8770b0002ec5584f023d58c6f2d81ede0b0fa60c9",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfit-editor.png": {
+      "before": "d8745741567f6493b58d160737b57f042b4cc78256ad2fe8d065208175ba90bd",
+      "after": "d8745741567f6493b58d160737b57f042b4cc78256ad2fe8d065208175ba90bd",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfit-keyboard-height.png": {
+      "before": "d2c73b38dcb7866ed0ca9a884a339be1c7ce8ce2ad910b8473bd9641020b1173",
+      "after": "d2c73b38dcb7866ed0ca9a884a339be1c7ce8ce2ad910b8473bd9641020b1173",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfit-long-bottom.png": {
+      "before": "47a86be892fe5fd6e31cf9e0a1e96fe6869094b5e115dd7dac9dbcda757f7954",
+      "after": "47a86be892fe5fd6e31cf9e0a1e96fe6869094b5e115dd7dac9dbcda757f7954",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-outfits.png": {
+      "before": "9e5ea1adcd97cc2f9a828b42a2072aab326f98a6dbde67144c16317b2a481af7",
+      "after": "9e5ea1adcd97cc2f9a828b42a2072aab326f98a6dbde67144c16317b2a481af7",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-photo-enlarged.png": {
+      "before": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+      "after": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-picker-top.png": {
+      "before": "33e4318fc7adb1ddaa12b2cb43f2b05d251354e1f9aa2d8542049c9873932a79",
+      "after": "33e4318fc7adb1ddaa12b2cb43f2b05d251354e1f9aa2d8542049c9873932a79",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-picker.png": {
+      "before": "203ac6c1cc08944f478e78df10eb533c89af2cff940e19adab9137eb2fd5ab5a",
+      "after": "203ac6c1cc08944f478e78df10eb533c89af2cff940e19adab9137eb2fd5ab5a",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-statistics-bottom.png": {
+      "before": "95f6123b149f6f6a0d548073389120768edaf86e00f8d74bb26a92cff6122c64",
+      "after": "95f6123b149f6f6a0d548073389120768edaf86e00f8d74bb26a92cff6122c64",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-statistics.png": {
+      "before": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+      "after": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/430-wardrobe.png": {
+      "before": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+      "after": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/acceptance-results.json": {
+      "before": "92b8ceb9b48c5315e7ab947c20e298071b64122cc6b0ac81a2a6eaa5d4a92eef",
+      "after": "92b8ceb9b48c5315e7ab947c20e298071b64122cc6b0ac81a2a6eaa5d4a92eef",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/automated-results.json": {
+      "before": "ac4679e29992a3c6659fe0ae4be2b3b4fb068bf2a992b9d124b40bb2d87cd8d2",
+      "after": "ac4679e29992a3c6659fe0ae4be2b3b4fb068bf2a992b9d124b40bb2d87cd8d2",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/finalizer-validation.json": {
+      "before": "125f2bc95a51a93a78818179aa72c5e670a8c35200d89ce970465ecf68649128",
+      "after": "125f2bc95a51a93a78818179aa72c5e670a8c35200d89ce970465ecf68649128",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/layout-measurements.json": {
+      "before": "756dbf900ae590abc120eb1b0b7305fe56013f294773bcfb35ee5dfb3646c3a6",
+      "after": "756dbf900ae590abc120eb1b0b7305fe56013f294773bcfb35ee5dfb3646c3a6",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/manual-review.json": {
+      "before": "72aa6667fa11ca0f2ede8d2b1651330ed3f069b6bf0f2b7807d8726f6fab9725",
+      "after": "72aa6667fa11ca0f2ede8d2b1651330ed3f069b6bf0f2b7807d8726f6fab9725",
+      "unchanged": true
+    },
+    "docs/evidence/P1-04/visual-comparison.json": {
+      "before": "0191096f195a0f866d6f497840e8f20a70ca401cccee63b7ec5e874c62663ce3",
+      "after": "0191096f195a0f866d6f497840e8f20a70ca401cccee63b7ec5e874c62663ce3",
+      "unchanged": true
+    },
+    "docs/evidence/P2-01/acceptance-results.json": {
+      "before": "42e16f9b318a6c35175173c7861323be15653320081ffeb0c103392335fba110",
+      "after": "42e16f9b318a6c35175173c7861323be15653320081ffeb0c103392335fba110",
+      "unchanged": true
+    },
+    "docs/evidence/P2-01/baseline-hashes.json": {
+      "before": "32c56fa43140f6b908b49d0cda79003dc0c5296b84073a5668b745c175ebe094",
+      "after": "32c56fa43140f6b908b49d0cda79003dc0c5296b84073a5668b745c175ebe094",
+      "unchanged": true
+    },
+    "docs/evidence/P2-01/design-checks.json": {
+      "before": "69da67aa11ad713610fc8bcccb7318dff5004a9098c345038f482a669c2be468",
+      "after": "69da67aa11ad713610fc8bcccb7318dff5004a9098c345038f482a669c2be468",
+      "unchanged": true
+    },
+    "docs/evidence/P2-01/environment-check.json": {
+      "before": "e99ce2ef830ebf3b2c8ec004b43bd510e48c28011b04feadb71199110a2e1efe",
+      "after": "e99ce2ef830ebf3b2c8ec004b43bd510e48c28011b04feadb71199110a2e1efe",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-final/constraints.json": {
+      "before": "1bad4f4e841f2d4409d7a5b617fae164f98c64dc8f2f7c310908dfc2716b9dc6",
+      "after": "1bad4f4e841f2d4409d7a5b617fae164f98c64dc8f2f7c310908dfc2716b9dc6",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-final/preflight.json": {
+      "before": "c1d4d9bcae3a8dff4ae95a1870486e7dd5389c64db2363795845b5bf69c2c0bb",
+      "after": "c1d4d9bcae3a8dff4ae95a1870486e7dd5389c64db2363795845b5bf69c2c0bb",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-final/structure-before.json": {
+      "before": "742e0332bceabfc444b07299268842bc7a52468110e0dbd14d7056f6fc3156c6",
+      "after": "742e0332bceabfc444b07299268842bc7a52468110e0dbd14d7056f6fc3156c6",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-final/structure.json": {
+      "before": "e4320c1d38bd404b4b4b658953febef3ba14c763b140b714bfc74c1c4fe7c534",
+      "after": "e4320c1d38bd404b4b4b658953febef3ba14c763b140b714bfc74c1c4fe7c534",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r1/preflight.json": {
+      "before": "d7826c1516276a2dae57bfed9a3098bd533e12fe2ae4fbf2fe202f8e45b9fafb",
+      "after": "d7826c1516276a2dae57bfed9a3098bd533e12fe2ae4fbf2fe202f8e45b9fafb",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r2/preflight.json": {
+      "before": "8259445a78e51fd22d8d2a6b0413dc3081092ef9ad6212a0d3e2807bfa9a80d5",
+      "after": "8259445a78e51fd22d8d2a6b0413dc3081092ef9ad6212a0d3e2807bfa9a80d5",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r2/structure.json": {
+      "before": "d371750d86c7f8b23db7896df4b3b72129077d2f2696d561b14944a81ceccc7d",
+      "after": "d371750d86c7f8b23db7896df4b3b72129077d2f2696d561b14944a81ceccc7d",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r3/preflight.json": {
+      "before": "d1a89060420c5087a10c6b48375540ce08e227a35719da87f2d1f770bb21a091",
+      "after": "d1a89060420c5087a10c6b48375540ce08e227a35719da87f2d1f770bb21a091",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r4/constraints.json": {
+      "before": "76c7d0385708e2b4be6504a1dde5c270099f4264eb6fe9f785df00148a67be9b",
+      "after": "76c7d0385708e2b4be6504a1dde5c270099f4264eb6fe9f785df00148a67be9b",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r4/preflight.json": {
+      "before": "18b8511ef5b90e4b89eaea65b92394702da816baacb1fb3d50bb4297023d90a5",
+      "after": "18b8511ef5b90e4b89eaea65b92394702da816baacb1fb3d50bb4297023d90a5",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r4/structure-before.json": {
+      "before": "131a83ecb6deba2ab288d4948e92efa722596c894d80f1e4af93b5e45b2dcc81",
+      "after": "131a83ecb6deba2ab288d4948e92efa722596c894d80f1e4af93b5e45b2dcc81",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r4/structure.json": {
+      "before": "6c14065a7473038ede22cfb7d9783489b662f53e1f22482f268aea42bed7a126",
+      "after": "6c14065a7473038ede22cfb7d9783489b662f53e1f22482f268aea42bed7a126",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r5/constraints.json": {
+      "before": "34eca06ca56274fede086e73dc8173d941f2e8b7cac34f07bf06c490c821df88",
+      "after": "34eca06ca56274fede086e73dc8173d941f2e8b7cac34f07bf06c490c821df88",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r5/preflight.json": {
+      "before": "e534c7099a156cfc5962b3f82ded91d2ae0db71502c9e076d7572398f9963465",
+      "after": "e534c7099a156cfc5962b3f82ded91d2ae0db71502c9e076d7572398f9963465",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r5/structure-before.json": {
+      "before": "fe4c0766f9b0c269c2dfce4a23f337e7cbf8260d9287c1b77146fdb2e288b4d3",
+      "after": "fe4c0766f9b0c269c2dfce4a23f337e7cbf8260d9287c1b77146fdb2e288b4d3",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/20261106-r5/structure.json": {
+      "before": "e4c59c6ad9aea7f24d47ed0a71f8a47802ef8993d0b08feffd1715d604e13c44",
+      "after": "e4c59c6ad9aea7f24d47ed0a71f8a47802ef8993d0b08feffd1715d604e13c44",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/acceptance-results.json": {
+      "before": "cc428ae6c7b81632d325c01718d4a972ddaa9e9c51f527b1c1a309d3bea5df2d",
+      "after": "cc428ae6c7b81632d325c01718d4a972ddaa9e9c51f527b1c1a309d3bea5df2d",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/baseline-hashes.json": {
+      "before": "aef5e02e77764aff849a67157e2ea264c01c1d638a7ed8f3e6bf2dd2c4abbf66",
+      "after": "aef5e02e77764aff849a67157e2ea264c01c1d638a7ed8f3e6bf2dd2c4abbf66",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/ddl-execution.json": {
+      "before": "31473a1cc5f37284025f811467f8a8cb4da38bf8d44df0c8933c1b73058a5181",
+      "after": "31473a1cc5f37284025f811467f8a8cb4da38bf8d44df0c8933c1b73058a5181",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/protection.json": {
+      "before": "a5cf20a570b19fab6d65bcdc9a75f43b4fa98422174624467f6d8f432fcd5fca",
+      "after": "a5cf20a570b19fab6d65bcdc9a75f43b4fa98422174624467f6d8f432fcd5fca",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/schema-review.json": {
+      "before": "170a65423628db2abd7108332d1d4024a7a641ffa7dc71f7cbb0eb85bd364d8e",
+      "after": "170a65423628db2abd7108332d1d4024a7a641ffa7dc71f7cbb0eb85bd364d8e",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/season-metadata-review.json": {
+      "before": "9d375ac962d8caddeced94f6dc606e8c839adbc04db4dfa3da62d57b0a81d675",
+      "after": "9d375ac962d8caddeced94f6dc606e8c839adbc04db4dfa3da62d57b0a81d675",
+      "unchanged": true
+    },
+    "docs/前序准备说明.md": {
+      "before": "407ce11e25dd953f7436ea604a719cbc81979217cb8fddf88ab16c16d935a9c5",
+      "after": "407ce11e25dd953f7436ea604a719cbc81979217cb8fddf88ab16c16d935a9c5",
+      "unchanged": true
+    },
+    "docs/接口说明.md": {
+      "before": "3f70ba8f395b448fbc3a8b1e3cbd3b26d1844f2f58994ebea7bf32d9523ef1c6",
+      "after": "3f70ba8f395b448fbc3a8b1e3cbd3b26d1844f2f58994ebea7bf32d9523ef1c6",
+      "unchanged": true
+    },
+    "docs/数据与页面约定.md": {
+      "before": "d3b4dded8da26e3c60a20e314e2edb1e88aa062db517e1e4e70f4b6f5a171cb6",
+      "after": "d3b4dded8da26e3c60a20e314e2edb1e88aa062db517e1e4e70f4b6f5a171cb6",
+      "unchanged": true
+    },
+    "docs/数据库设计.md": {
+      "before": "6fe9422da14a5e6f3cd33bd9db5f7c7939b1dbd834d898a2a4741aae9495c887",
+      "after": "6fe9422da14a5e6f3cd33bd9db5f7c7939b1dbd834d898a2a4741aae9495c887",
+      "unchanged": true
+    },
+    "docs/素材风格调整.md": {
+      "before": "9a547757faeeca3cbcca5de8e055474371de073c5b3bc47aa59f361a36dc0283",
+      "after": "9a547757faeeca3cbcca5de8e055474371de073c5b3bc47aa59f361a36dc0283",
+      "unchanged": true
+    },
+    "docs/详细设计与实施方案.md": {
+      "before": "a71fda699e2a1ed4479c4ba900dc2d21865945834b81f7fcd532abf8d02837fd",
+      "after": "a71fda699e2a1ed4479c4ba900dc2d21865945834b81f7fcd532abf8d02837fd",
+      "unchanged": true
+    },
+    "docs/页面原型与样式约定.md": {
+      "before": "53e54a8ce7f0d2878742260e70ed48c07def160e63a09319634c344c7c679ce7",
+      "after": "53e54a8ce7f0d2878742260e70ed48c07def160e63a09319634c344c7c679ce7",
+      "unchanged": true
+    },
+    "prototype/app.js": {
+      "before": "439879e0095ef351a37d55abf3985e6038da8b0b4e880cfa5b4a8681b25f38cb",
+      "after": "439879e0095ef351a37d55abf3985e6038da8b0b4e880cfa5b4a8681b25f38cb",
+      "unchanged": true
+    },
+    "prototype/index.html": {
+      "before": "017d6ca076ea786d61124e357b0086efa95bd154fbd3ea55b34e6cfdb74f0b58",
+      "after": "017d6ca076ea786d61124e357b0086efa95bd154fbd3ea55b34e6cfdb74f0b58",
+      "unchanged": true
+    },
+    "prototype/styles.css": {
+      "before": "5b528fc557fecd959e4cf17b96642448fadf511195903e3061d535f06377ad27",
+      "after": "5b528fc557fecd959e4cf17b96642448fadf511195903e3061d535f06377ad27",
+      "unchanged": true
+    },
+    "tools/verify-preparation.mjs": {
+      "before": "1433d7667d14ba565ca486bf0b577aa443fe65a12a45104a0984494524d5b5dc",
+      "after": "1433d7667d14ba565ca486bf0b577aa443fe65a12a45104a0984494524d5b5dc",
+      "unchanged": true
+    },
+    "tools/verify-prototype.cjs": {
+      "before": "e6a21885c577f0e1333e69342a4933cb0eae9fec79e334623c2253d0a75b8f7d",
+      "after": "e6a21885c577f0e1333e69342a4933cb0eae9fec79e334623c2253d0a75b8f7d",
+      "unchanged": true
+    },
+    "docs/evidence/P2-02/release-verification.local.json": {
+      "before": "31fd84a9da44068b3d373ef4bcad4c644920ab643a3ed68fbf0f0e96953d7398",
+      "after": "31fd84a9da44068b3d373ef4bcad4c644920ab643a3ed68fbf0f0e96953d7398",
+      "unchanged": true
+    }
+  }
+}

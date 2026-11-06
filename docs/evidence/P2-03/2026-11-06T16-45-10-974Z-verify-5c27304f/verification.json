@@ -1,0 +1,3692 @@
+{
+  "runId": "2026-11-06T16-45-10-974Z-verify-5c27304f",
+  "kind": "verify",
+  "startedAt": "2026-11-06T16:45:10.977Z",
+  "state": "verified",
+  "hashes": {
+    "data/demo-data.json": "f2666225d977b4eaf4a0669cd106b43fd150dfb4f50d187246b3eb95984b15df",
+    "data/demo-summary.json": "687d01817d4dc4bca0936ca83f06be22e74de8730637f64899a85e54f404686b",
+    "assets/source-manifest.json": "c2c3bccbc9c8f7f073c3786a764ef743012e1c6ddb0d5f2bd86304b19229cd96",
+    "assets/diary-photo-manifest.json": "335f338fb8eaf7c5dce1ba1a098b18b335fec46386b139a9e68f9ac5cc02e6d3",
+    "database/schema.sql": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "database/verify-schema.mjs": "8b21e63d1c4fb34d3f4c3575f42cff8d726726df3da69bfdd5f1349b7ea29816",
+    "database/demo-common.mjs": "eb0cc971f390284c6d2332ffb9d7107dd3e4ade489f31b5fa2d77637ffa9d3a2",
+    "database/seed-demo.mjs": "73bea19da711d7f7c09155948095b0b983131b23913d9fe3a7bcd9ca9625548c",
+    "database/verify-demo.mjs": "6fc33c3481eab268eeea43a67cb1eb53b15664dc86e6a03ad07f2cf2b0df42a0",
+    "database/run-demo-local.mjs": "b7999ea1bb5628065df49c71694e3f795f7a79ffc19459a6e15eba8471d87964",
+    "database/run-demo-local.ps1": "5d0f26c3c18829b04fdb5e373dac328f08152d3fedf8fc64e3210944b9e19c97",
+    "database/demo-tools.test.mjs": "48f8f336f612be1766bf2f94564ac1513003aebd92e2f862c0424e454673f807",
+    "shared/password.mjs": "fbea9c857fe9405518cefb24d46b17e5452ae9bb6d68de5bb708a6929612bf72"
+  },
+  "importRunId": "2026-11-06T16-42-33-726Z-apply-5b84797b",
+  "asOf": "2026-11-06",
+  "preflight": {
+    "environment": {
+      "identity": {
+        "version": "8.0.28",
+        "product": "MySQL Community Server - GPL",
+        "hostname": "DESKTOP-D97LI2N",
+        "port": 3306,
+        "account": "root@localhost",
+        "roles": "NONE",
+        "connectionId": 46,
+        "sqlMode": "IGNORE_SPACE,ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",
+        "fkChecks": 1,
+        "timeZone": "+00:00",
+        "clientCharset": "utf8mb4",
+        "connectionCharset": "utf8mb4",
+        "resultsCharset": "utf8mb4",
+        "connectionCollation": "utf8mb4_0900_as_cs"
+      },
+      "grants": [
+        {
+          "Grants for root@localhost": "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE, DROP ROLE ON *.* TO `root`@`localhost` WITH GRANT OPTION"
+        },
+        {
+          "Grants for root@localhost": "GRANT APPLICATION_PASSWORD_ADMIN,AUDIT_ABORT_EXEMPT,AUDIT_ADMIN,AUTHENTICATION_POLICY_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,BINLOG_ENCRYPTION_ADMIN,CLONE_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,FLUSH_OPTIMIZER_COSTS,FLUSH_STATUS,FLUSH_TABLES,FLUSH_USER_RESOURCES,GROUP_REPLICATION_ADMIN,GROUP_REPLICATION_STREAM,INNODB_REDO_LOG_ARCHIVE,INNODB_REDO_LOG_ENABLE,PASSWORDLESS_USER_ADMIN,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_APPLIER,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,RESOURCE_GROUP_USER,ROLE_ADMIN,SERVICE_CONNECTION_ADMIN,SESSION_VARIABLES_ADMIN,SET_USER_ID,SHOW_ROUTINE,SYSTEM_USER,SYSTEM_VARIABLES_ADMIN,TABLE_ENCRYPTION_ADMIN,XA_RECOVER_ADMIN ON *.* TO `root`@`localhost` WITH GRANT OPTION"
+        },
+        {
+          "Grants for root@localhost": "GRANT PROXY ON ``@`` TO `root`@`localhost` WITH GRANT OPTION"
+        }
+      ],
+      "engines": [
+        {
+          "Engine": "MEMORY",
+          "Support": "YES",
+          "Comment": "Hash based, stored in memory, useful for temporary tables",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        },
+        {
+          "Engine": "MRG_MYISAM",
+          "Support": "YES",
+          "Comment": "Collection of identical MyISAM tables",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        },
+        {
+          "Engine": "CSV",
+          "Support": "YES",
+          "Comment": "CSV storage engine",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        },
+        {
+          "Engine": "FEDERATED",
+          "Support": "NO",
+          "Comment": "Federated MySQL storage engine",
+          "Transactions": null,
+          "XA": null,
+          "Savepoints": null
+        },
+        {
+          "Engine": "PERFORMANCE_SCHEMA",
+          "Support": "YES",
+          "Comment": "Performance Schema",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        },
+        {
+          "Engine": "MyISAM",
+          "Support": "YES",
+          "Comment": "MyISAM storage engine",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        },
+        {
+          "Engine": "InnoDB",
+          "Support": "DEFAULT",
+          "Comment": "Supports transactions, row-level locking, and foreign keys",
+          "Transactions": "YES",
+          "XA": "YES",
+          "Savepoints": "YES"
+        },
+        {
+          "Engine": "BLACKHOLE",
+          "Support": "YES",
+          "Comment": "/dev/null storage engine (anything you write to it disappears)",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        },
+        {
+          "Engine": "ARCHIVE",
+          "Support": "YES",
+          "Comment": "Archive storage engine",
+          "Transactions": "NO",
+          "XA": "NO",
+          "Savepoints": "NO"
+        }
+      ],
+      "collations": [
+        {
+          "Collation": "utf8mb4_0900_as_cs",
+          "Charset": "utf8mb4",
+          "Id": 278,
+          "Default": "",
+          "Compiled": "Yes",
+          "Sortlen": 0,
+          "Pad_attribute": "NO PAD"
+        }
+      ],
+      "schemas": [
+        {
+          "CATALOG_NAME": "def",
+          "SCHEMA_NAME": "wardrobe_demo",
+          "DEFAULT_CHARACTER_SET_NAME": "utf8mb4",
+          "DEFAULT_COLLATION_NAME": "utf8mb4_0900_as_cs",
+          "SQL_PATH": null,
+          "DEFAULT_ENCRYPTION": "NO"
+        }
+      ],
+      "objects": [
+        {
+          "TABLE_NAME": "categories",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": null
+        },
+        {
+          "TABLE_NAME": "clothes",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": 58
+        },
+        {
+          "TABLE_NAME": "diaries",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": 43
+        },
+        {
+          "TABLE_NAME": "diary_items",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": null
+        },
+        {
+          "TABLE_NAME": "outfit_items",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": null
+        },
+        {
+          "TABLE_NAME": "outfits",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": 26
+        },
+        {
+          "TABLE_NAME": "users",
+          "TABLE_TYPE": "BASE TABLE",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+          "AUTO_INCREMENT": 12
+        }
+      ],
+      "extras": {
+        "TRIGGERS": [],
+        "ROUTINES": [],
+        "EVENTS": []
+      }
+    },
+    "metadata": {
+      "status": "passed",
+      "columns": [
+        {
+          "table": "users",
+          "expected": {
+            "name": "id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "AUTO_INCREMENT"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "auto_increment",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "username",
+            "type": "varchar(20)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "username",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 20,
+            "CHARACTER_OCTET_LENGTH": 80,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(20)",
+            "COLUMN_KEY": "UNI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "password_hash",
+            "type": "varchar(255)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "password_hash",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 255,
+            "CHARACTER_OCTET_LENGTH": 1020,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(255)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "nickname",
+            "type": "varchar(20)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "nickname",
+            "ORDINAL_POSITION": 4,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 20,
+            "CHARACTER_OCTET_LENGTH": 80,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(20)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "avatar_path",
+            "type": "varchar(255)",
+            "nullable": true,
+            "def": "NULL"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "avatar_path",
+            "ORDINAL_POSITION": 5,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "YES",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 255,
+            "CHARACTER_OCTET_LENGTH": 1020,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(255)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "auth_token_hash",
+            "type": "char(64)",
+            "nullable": true,
+            "def": "NULL"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "auth_token_hash",
+            "ORDINAL_POSITION": 6,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "YES",
+            "DATA_TYPE": "char",
+            "CHARACTER_MAXIMUM_LENGTH": 64,
+            "CHARACTER_OCTET_LENGTH": 256,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "char(64)",
+            "COLUMN_KEY": "UNI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "auth_expires_at",
+            "type": "datetime(3)",
+            "nullable": true,
+            "def": "NULL"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "auth_expires_at",
+            "ORDINAL_POSITION": 7,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "YES",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "created_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "created_at",
+            "ORDINAL_POSITION": 8,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "users",
+          "expected": {
+            "name": "updated_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "users",
+            "COLUMN_NAME": "updated_at",
+            "ORDINAL_POSITION": 9,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "categories",
+          "expected": {
+            "name": "id",
+            "type": "varchar(16)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "categories",
+            "COLUMN_NAME": "id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 16,
+            "CHARACTER_OCTET_LENGTH": 64,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(16)",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "categories",
+          "expected": {
+            "name": "name",
+            "type": "varchar(20)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "categories",
+            "COLUMN_NAME": "name",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 20,
+            "CHARACTER_OCTET_LENGTH": 80,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(20)",
+            "COLUMN_KEY": "UNI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "categories",
+          "expected": {
+            "name": "sort_order",
+            "type": "smallint unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "categories",
+            "COLUMN_NAME": "sort_order",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "smallint",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 5,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "smallint unsigned",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "AUTO_INCREMENT"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "auto_increment",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "user_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "user_id",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "MUL",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "category_id",
+            "type": "varchar(16)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "category_id",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 16,
+            "CHARACTER_OCTET_LENGTH": 64,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(16)",
+            "COLUMN_KEY": "MUL",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "name",
+            "type": "varchar(40)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "name",
+            "ORDINAL_POSITION": 4,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 40,
+            "CHARACTER_OCTET_LENGTH": 160,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(40)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "image_path",
+            "type": "varchar(255)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "image_path",
+            "ORDINAL_POSITION": 5,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 255,
+            "CHARACTER_OCTET_LENGTH": 1020,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(255)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "color",
+            "type": "varchar(20)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "color",
+            "ORDINAL_POSITION": 6,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 20,
+            "CHARACTER_OCTET_LENGTH": 80,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(20)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "season",
+            "type": "varchar(8)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "season",
+            "ORDINAL_POSITION": 7,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 8,
+            "CHARACTER_OCTET_LENGTH": 32,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(8)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "note",
+            "type": "varchar(500)",
+            "nullable": false,
+            "def": "''"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "note",
+            "ORDINAL_POSITION": 8,
+            "COLUMN_DEFAULT": "",
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 500,
+            "CHARACTER_OCTET_LENGTH": 2000,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(500)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "is_archived",
+            "type": "tinyint unsigned",
+            "nullable": false,
+            "def": "0"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "is_archived",
+            "ORDINAL_POSITION": 9,
+            "COLUMN_DEFAULT": "0",
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "tinyint",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 3,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "tinyint unsigned",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "created_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "created_at",
+            "ORDINAL_POSITION": 10,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "clothes",
+          "expected": {
+            "name": "updated_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "clothes",
+            "COLUMN_NAME": "updated_at",
+            "ORDINAL_POSITION": 11,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "AUTO_INCREMENT"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "auto_increment",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "user_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "user_id",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "MUL",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "name",
+            "type": "varchar(40)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "name",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 40,
+            "CHARACTER_OCTET_LENGTH": 160,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(40)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "occasion",
+            "type": "varchar(20)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "occasion",
+            "ORDINAL_POSITION": 4,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 20,
+            "CHARACTER_OCTET_LENGTH": 80,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(20)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "note",
+            "type": "varchar(500)",
+            "nullable": false,
+            "def": "''"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "note",
+            "ORDINAL_POSITION": 5,
+            "COLUMN_DEFAULT": "",
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 500,
+            "CHARACTER_OCTET_LENGTH": 2000,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(500)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "is_archived",
+            "type": "tinyint unsigned",
+            "nullable": false,
+            "def": "0"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "is_archived",
+            "ORDINAL_POSITION": 6,
+            "COLUMN_DEFAULT": "0",
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "tinyint",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 3,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "tinyint unsigned",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "created_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "created_at",
+            "ORDINAL_POSITION": 7,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfits",
+          "expected": {
+            "name": "updated_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfits",
+            "COLUMN_NAME": "updated_at",
+            "ORDINAL_POSITION": 8,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfit_items",
+          "expected": {
+            "name": "outfit_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfit_items",
+            "COLUMN_NAME": "outfit_id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfit_items",
+          "expected": {
+            "name": "clothing_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfit_items",
+            "COLUMN_NAME": "clothing_id",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "outfit_items",
+          "expected": {
+            "name": "sort_order",
+            "type": "smallint unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "outfit_items",
+            "COLUMN_NAME": "sort_order",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "smallint",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 5,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "smallint unsigned",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "AUTO_INCREMENT"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "auto_increment",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "user_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "user_id",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "MUL",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "wear_date",
+            "type": "date",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "wear_date",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "date",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "date",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "source_outfit_id",
+            "type": "int unsigned",
+            "nullable": true,
+            "def": "NULL"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "source_outfit_id",
+            "ORDINAL_POSITION": 4,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "YES",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "MUL",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "occasion",
+            "type": "varchar(20)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "occasion",
+            "ORDINAL_POSITION": 5,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 20,
+            "CHARACTER_OCTET_LENGTH": 80,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(20)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "mood",
+            "type": "varchar(12)",
+            "nullable": true,
+            "def": "NULL"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "mood",
+            "ORDINAL_POSITION": 6,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "YES",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 12,
+            "CHARACTER_OCTET_LENGTH": 48,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(12)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "photo_path",
+            "type": "varchar(255)",
+            "nullable": true,
+            "def": "NULL"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "photo_path",
+            "ORDINAL_POSITION": 7,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "YES",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 255,
+            "CHARACTER_OCTET_LENGTH": 1020,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(255)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "note",
+            "type": "varchar(1000)",
+            "nullable": false,
+            "def": "''"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "note",
+            "ORDINAL_POSITION": 8,
+            "COLUMN_DEFAULT": "",
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "varchar",
+            "CHARACTER_MAXIMUM_LENGTH": 1000,
+            "CHARACTER_OCTET_LENGTH": 4000,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": "utf8mb4",
+            "COLLATION_NAME": "utf8mb4_0900_as_cs",
+            "COLUMN_TYPE": "varchar(1000)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "created_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "created_at",
+            "ORDINAL_POSITION": 9,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diaries",
+          "expected": {
+            "name": "updated_at",
+            "type": "datetime(3)",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diaries",
+            "COLUMN_NAME": "updated_at",
+            "ORDINAL_POSITION": 10,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "datetime",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": null,
+            "NUMERIC_SCALE": null,
+            "DATETIME_PRECISION": 3,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "datetime(3)",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diary_items",
+          "expected": {
+            "name": "diary_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diary_items",
+            "COLUMN_NAME": "diary_id",
+            "ORDINAL_POSITION": 1,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diary_items",
+          "expected": {
+            "name": "clothing_id",
+            "type": "int unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diary_items",
+            "COLUMN_NAME": "clothing_id",
+            "ORDINAL_POSITION": 2,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "int",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 10,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "int unsigned",
+            "COLUMN_KEY": "PRI",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        },
+        {
+          "table": "diary_items",
+          "expected": {
+            "name": "sort_order",
+            "type": "smallint unsigned",
+            "nullable": false,
+            "def": "无默认值"
+          },
+          "actual": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "wardrobe_demo",
+            "TABLE_NAME": "diary_items",
+            "COLUMN_NAME": "sort_order",
+            "ORDINAL_POSITION": 3,
+            "COLUMN_DEFAULT": null,
+            "IS_NULLABLE": "NO",
+            "DATA_TYPE": "smallint",
+            "CHARACTER_MAXIMUM_LENGTH": null,
+            "CHARACTER_OCTET_LENGTH": null,
+            "NUMERIC_PRECISION": 5,
+            "NUMERIC_SCALE": 0,
+            "DATETIME_PRECISION": null,
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "COLUMN_TYPE": "smallint unsigned",
+            "COLUMN_KEY": "",
+            "EXTRA": "",
+            "PRIVILEGES": "select,insert,update,references",
+            "COLUMN_COMMENT": "",
+            "GENERATION_EXPRESSION": "",
+            "SRS_ID": null
+          },
+          "status": "passed"
+        }
+      ],
+      "indexes": [
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "categories",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 7,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "categories",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_categories_name",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "name",
+          "COLLATION": "A",
+          "CARDINALITY": 7,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "clothes",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_clothes_category",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "category_id",
+          "COLLATION": "A",
+          "CARDINALITY": 7,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "clothes",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_clothes_user_archived_id",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "user_id",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "clothes",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_clothes_user_archived_id",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "is_archived",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "clothes",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_clothes_user_archived_id",
+          "SEQ_IN_INDEX": 3,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 24,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "clothes",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 24,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diaries",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_diaries_source_outfit",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "source_outfit_id",
+          "COLLATION": "A",
+          "CARDINALITY": 8,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "YES",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diaries",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 12,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diaries",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_diaries_user_date",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "user_id",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diaries",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_diaries_user_date",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "wear_date",
+          "COLLATION": "A",
+          "CARDINALITY": 12,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diary_items",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_diary_items_clothing",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "clothing_id",
+          "COLLATION": "A",
+          "CARDINALITY": 20,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diary_items",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_diary_items_clothing",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "diary_id",
+          "COLLATION": "A",
+          "CARDINALITY": 53,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diary_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "diary_id",
+          "COLLATION": "A",
+          "CARDINALITY": 12,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diary_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "clothing_id",
+          "COLLATION": "A",
+          "CARDINALITY": 53,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diary_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_diary_items_order",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "diary_id",
+          "COLLATION": "A",
+          "CARDINALITY": 12,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "diary_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_diary_items_order",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "sort_order",
+          "COLLATION": "A",
+          "CARDINALITY": 53,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfit_items",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_outfit_items_clothing",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "clothing_id",
+          "COLLATION": "A",
+          "CARDINALITY": 22,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfit_items",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_outfit_items_clothing",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "outfit_id",
+          "COLLATION": "A",
+          "CARDINALITY": 37,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfit_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "outfit_id",
+          "COLLATION": "A",
+          "CARDINALITY": 8,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfit_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "clothing_id",
+          "COLLATION": "A",
+          "CARDINALITY": 37,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfit_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_outfit_items_order",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "outfit_id",
+          "COLLATION": "A",
+          "CARDINALITY": 8,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfit_items",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_outfit_items_order",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "sort_order",
+          "COLLATION": "A",
+          "CARDINALITY": 37,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfits",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_outfits_user_archived_id",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "user_id",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfits",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_outfits_user_archived_id",
+          "SEQ_IN_INDEX": 2,
+          "COLUMN_NAME": "is_archived",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfits",
+          "NON_UNIQUE": 1,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "idx_outfits_user_archived_id",
+          "SEQ_IN_INDEX": 3,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 8,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "outfits",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 8,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "users",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "PRIMARY",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "id",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "users",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_users_auth_token_hash",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "auth_token_hash",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "YES",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        },
+        {
+          "TABLE_CATALOG": "def",
+          "TABLE_SCHEMA": "wardrobe_demo",
+          "TABLE_NAME": "users",
+          "NON_UNIQUE": 0,
+          "INDEX_SCHEMA": "wardrobe_demo",
+          "INDEX_NAME": "uq_users_username",
+          "SEQ_IN_INDEX": 1,
+          "COLUMN_NAME": "username",
+          "COLLATION": "A",
+          "CARDINALITY": 1,
+          "SUB_PART": null,
+          "PACKED": null,
+          "NULLABLE": "",
+          "INDEX_TYPE": "BTREE",
+          "COMMENT": "",
+          "INDEX_COMMENT": "",
+          "IS_VISIBLE": "YES",
+          "EXPRESSION": null
+        }
+      ],
+      "relations": [
+        {
+          "CONSTRAINT_NAME": "fk_clothes_category",
+          "TABLE_NAME": "clothes",
+          "COLUMN_NAME": "category_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "categories",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_clothes_user",
+          "TABLE_NAME": "clothes",
+          "COLUMN_NAME": "user_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "users",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_diaries_source",
+          "TABLE_NAME": "diaries",
+          "COLUMN_NAME": "source_outfit_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "outfits",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_diaries_user",
+          "TABLE_NAME": "diaries",
+          "COLUMN_NAME": "user_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "users",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_diary_items_clothing",
+          "TABLE_NAME": "diary_items",
+          "COLUMN_NAME": "clothing_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "clothes",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_diary_items_diary",
+          "TABLE_NAME": "diary_items",
+          "COLUMN_NAME": "diary_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "diaries",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "CASCADE"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_outfit_items_clothing",
+          "TABLE_NAME": "outfit_items",
+          "COLUMN_NAME": "clothing_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "clothes",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_outfit_items_outfit",
+          "TABLE_NAME": "outfit_items",
+          "COLUMN_NAME": "outfit_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "outfits",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        },
+        {
+          "CONSTRAINT_NAME": "fk_outfits_user",
+          "TABLE_NAME": "outfits",
+          "COLUMN_NAME": "user_id",
+          "REFERENCED_TABLE_SCHEMA": "wardrobe_demo",
+          "REFERENCED_TABLE_NAME": "users",
+          "REFERENCED_COLUMN_NAME": "id",
+          "ORDINAL_POSITION": 1,
+          "UPDATE_RULE": "RESTRICT",
+          "DELETE_RULE": "RESTRICT"
+        }
+      ],
+      "checks": [
+        {
+          "TABLE_NAME": "categories",
+          "CONSTRAINT_NAME": "ck_categories_sort",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(`sort_order` between 1 and 7)",
+          "verifiedExpression": "(`sort_order` between 1 and 7)",
+          "expectedExpression": "sort_order BETWEEN 1 AND 7"
+        },
+        {
+          "TABLE_NAME": "clothes",
+          "CONSTRAINT_NAME": "ck_clothes_archived",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(`is_archived` in (0,1))",
+          "verifiedExpression": "(`is_archived` in (0,1))",
+          "expectedExpression": "is_archived IN (0,1)"
+        },
+        {
+          "TABLE_NAME": "clothes",
+          "CONSTRAINT_NAME": "ck_clothes_season",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(`season` in (_utf8mb4\\'æ¥\\',_utf8mb4\\'å¤\\',_utf8mb4\\'ç§\\',_utf8mb4\\'å¬\\',_utf8mb4\\'æ¥å¤\\',_utf8mb4\\'æ¥ç§\\',_utf8mb4\\'ç§å¬\\',_utf8mb4\\'åå­£\\'))",
+          "verifiedExpression": "(`season` in (_utf8mb4'春',_utf8mb4'夏',_utf8mb4'秋',_utf8mb4'冬',_utf8mb4'春夏',_utf8mb4'春秋',_utf8mb4'秋冬',_utf8mb4'四季'))",
+          "expectedExpression": "season IN ('春','夏','秋','冬','春夏','春秋','秋冬','四季')"
+        },
+        {
+          "TABLE_NAME": "diary_items",
+          "CONSTRAINT_NAME": "ck_diary_items_sort",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(`sort_order` >= 1)",
+          "verifiedExpression": "(`sort_order` >= 1)",
+          "expectedExpression": "sort_order>=1"
+        },
+        {
+          "TABLE_NAME": "outfit_items",
+          "CONSTRAINT_NAME": "ck_outfit_items_sort",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(`sort_order` >= 1)",
+          "verifiedExpression": "(`sort_order` >= 1)",
+          "expectedExpression": "sort_order>=1"
+        },
+        {
+          "TABLE_NAME": "outfits",
+          "CONSTRAINT_NAME": "ck_outfits_archived",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(`is_archived` in (0,1))",
+          "verifiedExpression": "(`is_archived` in (0,1))",
+          "expectedExpression": "is_archived IN (0,1)"
+        },
+        {
+          "TABLE_NAME": "users",
+          "CONSTRAINT_NAME": "ck_users_auth_pair",
+          "ENFORCED": "YES",
+          "CHECK_CLAUSE": "(((`auth_token_hash` is null) and (`auth_expires_at` is null)) or ((`auth_token_hash` is not null) and (`auth_expires_at` is not null)))",
+          "verifiedExpression": "(((`auth_token_hash` is null) and (`auth_expires_at` is null)) or ((`auth_token_hash` is not null) and (`auth_expires_at` is not null)))",
+          "expectedExpression": "(auth_token_hash IS NULL AND auth_expires_at IS NULL) OR (auth_token_hash IS NOT NULL AND auth_expires_at IS NOT NULL)"
+        }
+      ],
+      "showCreate": {
+        "users": "CREATE TABLE `users` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `username` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `password_hash` varchar(255) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `nickname` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `avatar_path` varchar(255) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `auth_token_hash` char(64) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `auth_expires_at` datetime(3) DEFAULT NULL,\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_users_username` (`username`),\n  UNIQUE KEY `uq_users_auth_token_hash` (`auth_token_hash`),\n  CONSTRAINT `ck_users_auth_pair` CHECK ((((`auth_token_hash` is null) and (`auth_expires_at` is null)) or ((`auth_token_hash` is not null) and (`auth_expires_at` is not null))))\n) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+        "categories": "CREATE TABLE `categories` (\n  `id` varchar(16) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `name` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `sort_order` smallint unsigned NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_categories_name` (`name`),\n  CONSTRAINT `ck_categories_sort` CHECK ((`sort_order` between 1 and 7))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+        "clothes": "CREATE TABLE `clothes` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `user_id` int unsigned NOT NULL,\n  `category_id` varchar(16) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `name` varchar(40) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `image_path` varchar(255) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `color` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `season` varchar(8) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `note` varchar(500) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\n  `is_archived` tinyint unsigned NOT NULL DEFAULT '0',\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  KEY `idx_clothes_user_archived_id` (`user_id`,`is_archived`,`id`),\n  KEY `idx_clothes_category` (`category_id`),\n  CONSTRAINT `fk_clothes_category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_clothes_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `ck_clothes_archived` CHECK ((`is_archived` in (0,1))),\n  CONSTRAINT `ck_clothes_season` CHECK ((`season` in (_utf8mb4'春',_utf8mb4'夏',_utf8mb4'秋',_utf8mb4'冬',_utf8mb4'春夏',_utf8mb4'春秋',_utf8mb4'秋冬',_utf8mb4'四季')))\n) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+        "outfits": "CREATE TABLE `outfits` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `user_id` int unsigned NOT NULL,\n  `name` varchar(40) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `occasion` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `note` varchar(500) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\n  `is_archived` tinyint unsigned NOT NULL DEFAULT '0',\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  KEY `idx_outfits_user_archived_id` (`user_id`,`is_archived`,`id`),\n  CONSTRAINT `fk_outfits_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `ck_outfits_archived` CHECK ((`is_archived` in (0,1)))\n) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+        "outfit_items": "CREATE TABLE `outfit_items` (\n  `outfit_id` int unsigned NOT NULL,\n  `clothing_id` int unsigned NOT NULL,\n  `sort_order` smallint unsigned NOT NULL,\n  PRIMARY KEY (`outfit_id`,`clothing_id`),\n  UNIQUE KEY `uq_outfit_items_order` (`outfit_id`,`sort_order`),\n  KEY `idx_outfit_items_clothing` (`clothing_id`,`outfit_id`),\n  CONSTRAINT `fk_outfit_items_clothing` FOREIGN KEY (`clothing_id`) REFERENCES `clothes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_outfit_items_outfit` FOREIGN KEY (`outfit_id`) REFERENCES `outfits` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `ck_outfit_items_sort` CHECK ((`sort_order` >= 1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+        "diaries": "CREATE TABLE `diaries` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `user_id` int unsigned NOT NULL,\n  `wear_date` date NOT NULL,\n  `source_outfit_id` int unsigned DEFAULT NULL,\n  `occasion` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `mood` varchar(12) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `photo_path` varchar(255) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `note` varchar(1000) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_diaries_user_date` (`user_id`,`wear_date`),\n  KEY `idx_diaries_source_outfit` (`source_outfit_id`),\n  CONSTRAINT `fk_diaries_source` FOREIGN KEY (`source_outfit_id`) REFERENCES `outfits` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_diaries_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT\n) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+        "diary_items": "CREATE TABLE `diary_items` (\n  `diary_id` int unsigned NOT NULL,\n  `clothing_id` int unsigned NOT NULL,\n  `sort_order` smallint unsigned NOT NULL,\n  PRIMARY KEY (`diary_id`,`clothing_id`),\n  UNIQUE KEY `uq_diary_items_order` (`diary_id`,`sort_order`),\n  KEY `idx_diary_items_clothing` (`clothing_id`,`diary_id`),\n  CONSTRAINT `fk_diary_items_clothing` FOREIGN KEY (`clothing_id`) REFERENCES `clothes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_diary_items_diary` FOREIGN KEY (`diary_id`) REFERENCES `diaries` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT,\n  CONSTRAINT `ck_diary_items_sort` CHECK ((`sort_order` >= 1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs"
+      }
+    },
+    "counts": {
+      "users": 1,
+      "categories": 7,
+      "clothes": 24,
+      "outfits": 8,
+      "outfit_items": 37,
+      "diaries": 12,
+      "diary_items": 53
+    }
+  },
+  "password": {
+    "correctAccepted": true,
+    "wrongRejected": true,
+    "encodingLength": 178,
+    "saltBytes": 16,
+    "derivedBytes": 64,
+    "N": 16384,
+    "r": 8,
+    "p": 1
+  },
+  "files": [
+    {
+      "path": "users/11/e7036f72-5506-4839-a94e-83d637362ff0.jpg",
+      "logicalId": "CLO001",
+      "bytes": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/2dce84aa-ced8-4885-a21f-de77d6baee62.jpg",
+      "logicalId": "CLO002",
+      "bytes": 204461,
+      "sha256": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/cd00fb8a-2275-4ce5-a854-958302011a50.jpg",
+      "logicalId": "CLO003",
+      "bytes": 210293,
+      "sha256": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/bc024c67-3a4c-48e4-a365-172a8db114dd.jpg",
+      "logicalId": "CLO004",
+      "bytes": 46462,
+      "sha256": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/c91583af-49bd-443e-aac3-79f6829ba731.jpg",
+      "logicalId": "CLO005",
+      "bytes": 26218,
+      "sha256": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/0dffa7f8-ecbc-45b0-8f55-650c56432fae.jpg",
+      "logicalId": "CLO006",
+      "bytes": 170395,
+      "sha256": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/87b67c9b-41c2-4ef4-9600-11df5ccb0b50.jpg",
+      "logicalId": "CLO007",
+      "bytes": 146962,
+      "sha256": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/78425f99-3716-4360-9cf5-c7c9bed52f3b.jpg",
+      "logicalId": "CLO008",
+      "bytes": 42225,
+      "sha256": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/1d8ac382-ad0a-4f8a-be84-f675c9194d72.jpg",
+      "logicalId": "CLO009",
+      "bytes": 46926,
+      "sha256": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/04c82ddb-a122-44e5-ade1-012539affb3c.jpg",
+      "logicalId": "CLO010",
+      "bytes": 28660,
+      "sha256": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/ef78faaf-c408-4cc0-a81e-ef70046e3dfe.jpg",
+      "logicalId": "CLO011",
+      "bytes": 15187,
+      "sha256": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/1758b8f6-3006-4116-afa0-4d09ec42160a.jpg",
+      "logicalId": "CLO012",
+      "bytes": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/93c9ff10-2212-4ebe-b642-ad21e029cd96.jpg",
+      "logicalId": "CLO013",
+      "bytes": 143845,
+      "sha256": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/f567f384-ccb8-41da-8adc-bb4fa57db25f.jpg",
+      "logicalId": "CLO014",
+      "bytes": 176798,
+      "sha256": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/c3d2d631-77ee-489f-a2bd-6dcdcdd65020.jpg",
+      "logicalId": "CLO015",
+      "bytes": 105810,
+      "sha256": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/1c1e128f-aec1-4948-ab96-d3a640788109.jpg",
+      "logicalId": "CLO016",
+      "bytes": 246083,
+      "sha256": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/f5ccdd69-c885-4740-864d-2d4eec79db43.jpg",
+      "logicalId": "CLO017",
+      "bytes": 26241,
+      "sha256": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/ac403c2d-cb8b-48f7-8fca-0c1a0c0febf6.jpg",
+      "logicalId": "CLO018",
+      "bytes": 71670,
+      "sha256": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/07e7a91f-9e26-4a4e-bf13-1a08754d5e28.jpg",
+      "logicalId": "CLO019",
+      "bytes": 116567,
+      "sha256": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/be415b92-f6ae-47b5-ac9e-f7319bbefa0d.jpg",
+      "logicalId": "CLO020",
+      "bytes": 102089,
+      "sha256": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/908fb98d-708c-494d-9a76-c3cbb5d739d3.jpg",
+      "logicalId": "CLO021",
+      "bytes": 188050,
+      "sha256": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/6c0cf21d-910a-4896-be39-b0e01a6e7693.jpg",
+      "logicalId": "CLO022",
+      "bytes": 172454,
+      "sha256": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/fa6dda30-7668-450c-9800-febe4cc3332b.jpg",
+      "logicalId": "CLO023",
+      "bytes": 89360,
+      "sha256": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/fe7ac251-69ab-42b7-8997-5e73d8ae12c5.jpg",
+      "logicalId": "CLO024",
+      "bytes": 38160,
+      "sha256": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18",
+      "sourceMatched": true
+    },
+    {
+      "path": "users/11/4c03cc86-6c15-46f9-afa8-c843f6ba43f6.jpg",
+      "logicalId": "DIA004",
+      "bytes": 163542,
+      "sha256": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "sourceMatched": true
+    }
+  ],
+  "verifiedRows": {
+    "clothes": [
+      {
+        "logicalId": "CLO001",
+        "actualId": 34,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO002",
+        "actualId": 35,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO003",
+        "actualId": 36,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO004",
+        "actualId": 37,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO005",
+        "actualId": 38,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO006",
+        "actualId": 39,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO007",
+        "actualId": 40,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO008",
+        "actualId": 41,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO009",
+        "actualId": 42,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO010",
+        "actualId": 43,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO011",
+        "actualId": 44,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO012",
+        "actualId": 45,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO013",
+        "actualId": 46,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO014",
+        "actualId": 47,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO015",
+        "actualId": 48,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO016",
+        "actualId": 49,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO017",
+        "actualId": 50,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO018",
+        "actualId": 51,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO019",
+        "actualId": 52,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO020",
+        "actualId": 53,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO021",
+        "actualId": 54,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO022",
+        "actualId": 55,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO023",
+        "actualId": 56,
+        "fieldsMatched": true
+      },
+      {
+        "logicalId": "CLO024",
+        "actualId": 57,
+        "fieldsMatched": true
+      }
+    ],
+    "outfits": [
+      {
+        "logicalId": "OUT001",
+        "actualId": 18,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT002",
+        "actualId": 19,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 35,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 49,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT003",
+        "actualId": 20,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 39,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 57,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT004",
+        "actualId": 21,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 38,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 41,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 48,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT005",
+        "actualId": 22,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 36,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 47,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT006",
+        "actualId": 23,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 37,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 55,
+            "sort_order": 5
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 6
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT007",
+        "actualId": 24,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 40,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 50,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT008",
+        "actualId": 25,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 42,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 5
+          }
+        ]
+      }
+    ],
+    "diaries": [
+      {
+        "logicalId": "DIA001",
+        "actualId": 31,
+        "wearDate": "2026-10-07",
+        "sourceOutfitId": 18,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA002",
+        "actualId": 32,
+        "wearDate": "2026-10-09",
+        "sourceOutfitId": 19,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 35,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 49,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA003",
+        "actualId": 33,
+        "wearDate": "2026-10-12",
+        "sourceOutfitId": 20,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 39,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 57,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA004",
+        "actualId": 34,
+        "wearDate": "2026-10-16",
+        "sourceOutfitId": null,
+        "hasPhoto": true,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA005",
+        "actualId": 35,
+        "wearDate": "2026-10-18",
+        "sourceOutfitId": 21,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 38,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 41,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 48,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA006",
+        "actualId": 36,
+        "wearDate": "2026-10-21",
+        "sourceOutfitId": 22,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 36,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 47,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA007",
+        "actualId": 37,
+        "wearDate": "2026-10-24",
+        "sourceOutfitId": 18,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA008",
+        "actualId": 38,
+        "wearDate": "2026-10-27",
+        "sourceOutfitId": 23,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 37,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 55,
+            "sort_order": 5
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 6
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA009",
+        "actualId": 39,
+        "wearDate": "2026-10-30",
+        "sourceOutfitId": 25,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 42,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA010",
+        "actualId": 40,
+        "wearDate": "2026-11-01",
+        "sourceOutfitId": 21,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 38,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 41,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 48,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA011",
+        "actualId": 41,
+        "wearDate": "2026-11-03",
+        "sourceOutfitId": 19,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 35,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 49,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA012",
+        "actualId": 42,
+        "wearDate": "2026-11-05",
+        "sourceOutfitId": 23,
+        "hasPhoto": false,
+        "fieldsMatched": true,
+        "items": [
+          {
+            "clothing_id": 37,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 55,
+            "sort_order": 5
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 6
+          }
+        ]
+      }
+    ]
+  },
+  "statistics": {
+    "asOf": "2026-11-06",
+    "window": [
+      "2026-10-08",
+      "2026-11-06"
+    ],
+    "categoryCounts": [
+      7,
+      3,
+      1,
+      6,
+      2,
+      2,
+      3
+    ],
+    "monthly": {
+      "2026-10": 9,
+      "2026-11": 3
+    },
+    "wear": [
+      {
+        "id": 51,
+        "is_archived": 0,
+        "wearCount": 6,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO018"
+      },
+      {
+        "id": 53,
+        "is_archived": 0,
+        "wearCount": 6,
+        "lastWornDate": "2026-11-03",
+        "logicalId": "CLO020"
+      },
+      {
+        "id": 52,
+        "is_archived": 0,
+        "wearCount": 5,
+        "lastWornDate": "2026-11-03",
+        "logicalId": "CLO019"
+      },
+      {
+        "id": 54,
+        "is_archived": 0,
+        "wearCount": 5,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO021"
+      },
+      {
+        "id": 34,
+        "is_archived": 0,
+        "wearCount": 3,
+        "lastWornDate": "2026-10-24",
+        "logicalId": "CLO001"
+      },
+      {
+        "id": 45,
+        "is_archived": 0,
+        "wearCount": 3,
+        "lastWornDate": "2026-10-30",
+        "logicalId": "CLO012"
+      },
+      {
+        "id": 46,
+        "is_archived": 0,
+        "wearCount": 3,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO013"
+      },
+      {
+        "id": 56,
+        "is_archived": 0,
+        "wearCount": 3,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO023"
+      },
+      {
+        "id": 35,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-03",
+        "logicalId": "CLO002"
+      },
+      {
+        "id": 37,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO004"
+      },
+      {
+        "id": 38,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-01",
+        "logicalId": "CLO005"
+      },
+      {
+        "id": 41,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-01",
+        "logicalId": "CLO008"
+      },
+      {
+        "id": 48,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-01",
+        "logicalId": "CLO015"
+      },
+      {
+        "id": 49,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-03",
+        "logicalId": "CLO016"
+      },
+      {
+        "id": 55,
+        "is_archived": 0,
+        "wearCount": 2,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO022"
+      },
+      {
+        "id": 36,
+        "is_archived": 0,
+        "wearCount": 1,
+        "lastWornDate": "2026-10-21",
+        "logicalId": "CLO003"
+      },
+      {
+        "id": 39,
+        "is_archived": 0,
+        "wearCount": 1,
+        "lastWornDate": "2026-10-12",
+        "logicalId": "CLO006"
+      },
+      {
+        "id": 42,
+        "is_archived": 0,
+        "wearCount": 1,
+        "lastWornDate": "2026-10-30",
+        "logicalId": "CLO009"
+      },
+      {
+        "id": 47,
+        "is_archived": 0,
+        "wearCount": 1,
+        "lastWornDate": "2026-10-21",
+        "logicalId": "CLO014"
+      },
+      {
+        "id": 57,
+        "is_archived": 0,
+        "wearCount": 1,
+        "lastWornDate": "2026-10-12",
+        "logicalId": "CLO024"
+      },
+      {
+        "id": 40,
+        "is_archived": 0,
+        "wearCount": 0,
+        "lastWornDate": null,
+        "logicalId": "CLO007"
+      },
+      {
+        "id": 43,
+        "is_archived": 0,
+        "wearCount": 0,
+        "lastWornDate": null,
+        "logicalId": "CLO010"
+      },
+      {
+        "id": 44,
+        "is_archived": 0,
+        "wearCount": 0,
+        "lastWornDate": null,
+        "logicalId": "CLO011"
+      },
+      {
+        "id": 50,
+        "is_archived": 0,
+        "wearCount": 0,
+        "lastWornDate": null,
+        "logicalId": "CLO017"
+      }
+    ],
+    "top5": [
+      {
+        "id": 51,
+        "is_archived": 0,
+        "wearCount": 6,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO018"
+      },
+      {
+        "id": 53,
+        "is_archived": 0,
+        "wearCount": 6,
+        "lastWornDate": "2026-11-03",
+        "logicalId": "CLO020"
+      },
+      {
+        "id": 52,
+        "is_archived": 0,
+        "wearCount": 5,
+        "lastWornDate": "2026-11-03",
+        "logicalId": "CLO019"
+      },
+      {
+        "id": 54,
+        "is_archived": 0,
+        "wearCount": 5,
+        "lastWornDate": "2026-11-05",
+        "logicalId": "CLO021"
+      },
+      {
+        "id": 34,
+        "is_archived": 0,
+        "wearCount": 3,
+        "lastWornDate": "2026-10-24",
+        "logicalId": "CLO001"
+      }
+    ],
+    "neverWorn": [
+      "CLO007",
+      "CLO010",
+      "CLO011",
+      "CLO017"
+    ],
+    "notWornRecently": [
+      "CLO007",
+      "CLO010",
+      "CLO011",
+      "CLO017"
+    ],
+    "boundary": [
+      {
+        "wear_date": "2026-10-07",
+        "included": 0,
+        "diaryCount": 1
+      },
+      {
+        "wear_date": "2026-10-08",
+        "included": 1,
+        "diaryCount": 0
+      }
+    ]
+  },
+  "userId": 11,
+  "completedAt": "2026-11-06T16:45:11.181Z"
+}

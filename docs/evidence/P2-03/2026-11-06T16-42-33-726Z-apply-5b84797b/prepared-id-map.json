@@ -1,0 +1,67 @@
+{
+  "committed": false,
+  "map": {
+    "users": {
+      "DEMO001": 11
+    },
+    "categories": {
+      "tops": "tops",
+      "outerwear": "outerwear",
+      "dresses": "dresses",
+      "bottoms": "bottoms",
+      "shoes": "shoes",
+      "bags": "bags",
+      "accessories": "accessories"
+    },
+    "clothes": {
+      "CLO001": 34,
+      "CLO002": 35,
+      "CLO003": 36,
+      "CLO004": 37,
+      "CLO005": 38,
+      "CLO006": 39,
+      "CLO007": 40,
+      "CLO008": 41,
+      "CLO009": 42,
+      "CLO010": 43,
+      "CLO011": 44,
+      "CLO012": 45,
+      "CLO013": 46,
+      "CLO014": 47,
+      "CLO015": 48,
+      "CLO016": 49,
+      "CLO017": 50,
+      "CLO018": 51,
+      "CLO019": 52,
+      "CLO020": 53,
+      "CLO021": 54,
+      "CLO022": 55,
+      "CLO023": 56,
+      "CLO024": 57
+    },
+    "outfits": {
+      "OUT001": 18,
+      "OUT002": 19,
+      "OUT003": 20,
+      "OUT004": 21,
+      "OUT005": 22,
+      "OUT006": 23,
+      "OUT007": 24,
+      "OUT008": 25
+    },
+    "diaries": {
+      "DIA001": 31,
+      "DIA002": 32,
+      "DIA003": 33,
+      "DIA004": 34,
+      "DIA005": 35,
+      "DIA006": 36,
+      "DIA007": 37,
+      "DIA008": 38,
+      "DIA009": 39,
+      "DIA010": 40,
+      "DIA011": 41,
+      "DIA012": 42
+    }
+  }
+}

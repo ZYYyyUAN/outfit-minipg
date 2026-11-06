@@ -1,0 +1,29 @@
+{
+  "runId": "2026-11-06T16-45-11-286Z-apply-d188ca26",
+  "kind": "apply",
+  "startedAt": "2026-11-06T16:45:11.288Z",
+  "state": "preflight-rejected",
+  "hashes": {
+    "data/demo-data.json": "f2666225d977b4eaf4a0669cd106b43fd150dfb4f50d187246b3eb95984b15df",
+    "data/demo-summary.json": "687d01817d4dc4bca0936ca83f06be22e74de8730637f64899a85e54f404686b",
+    "assets/source-manifest.json": "c2c3bccbc9c8f7f073c3786a764ef743012e1c6ddb0d5f2bd86304b19229cd96",
+    "assets/diary-photo-manifest.json": "335f338fb8eaf7c5dce1ba1a098b18b335fec46386b139a9e68f9ac5cc02e6d3",
+    "database/schema.sql": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "database/verify-schema.mjs": "8b21e63d1c4fb34d3f4c3575f42cff8d726726df3da69bfdd5f1349b7ea29816",
+    "database/demo-common.mjs": "eb0cc971f390284c6d2332ffb9d7107dd3e4ade489f31b5fa2d77637ffa9d3a2",
+    "database/seed-demo.mjs": "73bea19da711d7f7c09155948095b0b983131b23913d9fe3a7bcd9ca9625548c",
+    "database/verify-demo.mjs": "6fc33c3481eab268eeea43a67cb1eb53b15664dc86e6a03ad07f2cf2b0df42a0",
+    "database/run-demo-local.mjs": "b7999ea1bb5628065df49c71694e3f795f7a79ffc19459a6e15eba8471d87964",
+    "database/run-demo-local.ps1": "5d0f26c3c18829b04fdb5e373dac328f08152d3fedf8fc64e3210944b9e19c97",
+    "database/demo-tools.test.mjs": "48f8f336f612be1766bf2f94564ac1513003aebd92e2f862c0424e454673f807",
+    "shared/password.mjs": "fbea9c857fe9405518cefb24d46b17e5452ae9bb6d68de5bb708a6929612bf72"
+  },
+  "datasetVersion": "korean-daily-20261106",
+  "error": {
+    "code": "NON_EMPTY_DATABASE"
+  },
+  "committed": false,
+  "copiedFiles": [],
+  "completedAt": "2026-11-06T16:45:11.333Z"
+}

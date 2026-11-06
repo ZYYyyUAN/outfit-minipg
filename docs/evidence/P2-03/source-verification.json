@@ -1,0 +1,15 @@
+{
+  "version": "korean-daily-20261106",
+  "counts": {
+    "users": 1,
+    "categories": 7,
+    "clothes": 24,
+    "outfits": 8,
+    "outfit_items": 37,
+    "diaries": 12,
+    "diary_items": 53
+  },
+  "sourceImages": 25,
+  "bytes": 3041635,
+  "sha256Verified": true
+}

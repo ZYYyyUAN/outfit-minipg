@@ -1,0 +1,28 @@
+✔ source: fixed counts, references and 25 JPEG bytes (1.5154ms)
+✔ reject duplicate logical ID (0.6679ms)
+✔ reject wrong owner (0.239ms)
+✔ reject duplicate date (0.3544ms)
+✔ reject invalid date (1.1007ms)
+✔ reject missing clothing reference (0.3419ms)
+✔ reject duplicate selection (0.2642ms)
+✔ reject empty selection (0.2894ms)
+✔ reject overlong selection (0.4631ms)
+✔ reject invalid source outfit (0.5669ms)
+✔ reject blob path (0.4235ms)
+✔ reject missing image manifest reference (0.4247ms)
+✔ mapping: positive actual IDs need not start at 1 (0.3635ms)
+✔ reject map missing (0.2481ms)
+✔ reject map alias (0.1456ms)
+✔ reject map temporary (0.207ms)
+✔ date and null conversion boundaries (0.1753ms)
+✔ password encoding, independent salts and positive/negative verification without logging secrets (127.4076ms)
+✔ exclusive file copy refuses replacement and leaves original bytes (11.532ms)
+✔ module import has no CLI/evidence side effects; all no-argument entries show help (963.0217ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1335.2121

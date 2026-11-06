@@ -56,7 +56,7 @@ function checkExpression(text) {
   return tokens.filter(t => t !== '(' && t !== ')').map(t => t.startsWith("'") ? t : t.toLowerCase()).join(' ');
 }
 
-async function inspect(c) {
+export async function inspect(c) {
   const [identity] = await c.query('SELECT VERSION() version, @@version_comment product, @@hostname hostname, @@port port, CURRENT_USER() account, CURRENT_ROLE() roles, CONNECTION_ID() connectionId, @@session.sql_mode sqlMode, @@session.foreign_key_checks fkChecks, @@session.time_zone timeZone, @@character_set_client clientCharset, @@character_set_connection connectionCharset, @@character_set_results resultsCharset, @@collation_connection connectionCollation');
   const [grants] = await c.query('SHOW GRANTS FOR CURRENT_USER()');
   const [engines] = await c.query('SHOW ENGINES');
@@ -71,7 +71,7 @@ async function inspect(c) {
   return { identity: identity[0], grants, engines, collations, schemas, objects, extras };
 }
 
-function validateEnvironment(e) {
+export function validateEnvironment(e) {
   assert.match(e.identity.version, /^8\./, 'target must be MySQL 8');
   const version = e.identity.version.split('.').map(Number);
   assert(version[1] > 0 || version[2] >= 16, 'enforced CHECK needs MySQL >=8.0.16');
@@ -97,7 +97,7 @@ async function counts(c) {
   return result;
 }
 
-async function structure(c, e) {
+export async function structure(c, e) {
   const dictionary = fieldDictionary();
   assert.equal(e.schemas.length, 1);
   assert.equal(e.schemas[0].DEFAULT_CHARACTER_SET_NAME, 'utf8mb4');
@@ -368,4 +368,4 @@ async function main() {
   console.log(JSON.stringify({ runId, mode, status: report.status, decision: report.decision, behavior: report.behavior?.map(r => ({ id: r.id, status: r.status })), error: report.error }));
 }
 
-await main();
+if (import.meta.main) await main();

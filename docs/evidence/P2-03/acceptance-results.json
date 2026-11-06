@@ -1,0 +1,183 @@
+{
+  "executedAt": "2026-11-06T16:47:06.655Z",
+  "baselineHead": "7dad9d29adbef71dc5d4b1138e41526ac7dddff2",
+  "localPassed": 22,
+  "total": 23,
+  "state": "local-passed-publication-pending",
+  "refs": {
+    "check": "2026-11-06T16-42-33-169Z-check-313e9994",
+    "rollback": "2026-11-06T16-42-33-244Z-rollback-check-ef6427cb",
+    "apply": "2026-11-06T16-42-33-726Z-apply-5b84797b",
+    "verify": "2026-11-06T16-45-10-974Z-verify-5c27304f",
+    "runner": "2026-11-06T16-45-10-969Z-local-runner-505d737d"
+  },
+  "implementationHashes": {
+    "data/demo-data.json": "f2666225d977b4eaf4a0669cd106b43fd150dfb4f50d187246b3eb95984b15df",
+    "data/demo-summary.json": "687d01817d4dc4bca0936ca83f06be22e74de8730637f64899a85e54f404686b",
+    "assets/source-manifest.json": "c2c3bccbc9c8f7f073c3786a764ef743012e1c6ddb0d5f2bd86304b19229cd96",
+    "assets/diary-photo-manifest.json": "335f338fb8eaf7c5dce1ba1a098b18b335fec46386b139a9e68f9ac5cc02e6d3",
+    "database/schema.sql": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "database/verify-schema.mjs": "8b21e63d1c4fb34d3f4c3575f42cff8d726726df3da69bfdd5f1349b7ea29816",
+    "database/demo-common.mjs": "eb0cc971f390284c6d2332ffb9d7107dd3e4ade489f31b5fa2d77637ffa9d3a2",
+    "database/seed-demo.mjs": "73bea19da711d7f7c09155948095b0b983131b23913d9fe3a7bcd9ca9625548c",
+    "database/verify-demo.mjs": "6fc33c3481eab268eeea43a67cb1eb53b15664dc86e6a03ad07f2cf2b0df42a0",
+    "database/run-demo-local.mjs": "b7999ea1bb5628065df49c71694e3f795f7a79ffc19459a6e15eba8471d87964",
+    "database/run-demo-local.ps1": "5d0f26c3c18829b04fdb5e373dac328f08152d3fedf8fc64e3210944b9e19c97",
+    "database/demo-tools.test.mjs": "48f8f336f612be1766bf2f94564ac1513003aebd92e2f862c0424e454673f807",
+    "shared/password.mjs": "fbea9c857fe9405518cefb24d46b17e5452ae9bb6d68de5bb708a6929612bf72"
+  },
+  "writeCoreUnchangedSinceCommit": [
+    "database/seed-demo.mjs",
+    "database/demo-common.mjs",
+    "shared/password.mjs",
+    "database/schema.sql",
+    "database/package-lock.json",
+    "database/verify-schema.mjs"
+  ],
+  "reviewedCorrections": [
+    "Hidden input now validates length before runner",
+    "No Oct 8 diary exists: SQL DATE boundary predicate plus actual counts, no source mutation",
+    "Post-commit resume runs verify/refusal checks only"
+  ],
+  "checks": [
+    {
+      "id": "P203-V01",
+      "name": "当前实例/权限、7表完整结构、真实空表",
+      "status": "passed",
+      "evidence": "2026-11-06T16-42-33-244Z-rollback-check-ef6427cb"
+    },
+    {
+      "id": "P203-V02",
+      "name": "源字段、关联及25图字节和SHA",
+      "status": "passed",
+      "evidence": "source-verification.json"
+    },
+    {
+      "id": "P203-V03",
+      "name": "无参帮助、非法模式、check零写入",
+      "status": "passed",
+      "evidence": "offline-tests.txt"
+    },
+    {
+      "id": "P203-V04",
+      "name": "旧模块无副作用、密码/映射/覆盖拒绝20测试",
+      "status": "passed",
+      "evidence": "offline-tests.txt"
+    },
+    {
+      "id": "P203-V05",
+      "name": "指定错误点、全部行/25图后真实回滚",
+      "status": "passed",
+      "evidence": "2026-11-06T16-42-33-244Z-rollback-check-ef6427cb"
+    },
+    {
+      "id": "P203-V06",
+      "name": "遗留25文件保留、无覆盖、空心情文字变体",
+      "status": "passed",
+      "evidence": "rollback-files.json"
+    },
+    {
+      "id": "P203-V07",
+      "name": "用户字段、密码178字符及正反验证",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V08",
+      "name": "真实COMMIT、新连接7表准确行数",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V09",
+      "name": "真实一对一整数ID、分类恒等及用户归属",
+      "status": "passed",
+      "evidence": "2026-11-06T16-42-33-726Z-apply-5b84797b/id-map.json"
+    },
+    {
+      "id": "P203-V10",
+      "name": "7分类、24衣物和8搭配字段",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V11",
+      "name": "12日记字段、UTC时间、无来源及唯一照片",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V12",
+      "name": "37搭配有序独立明细",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V13",
+      "name": "53日记有序独立明细",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V14",
+      "name": "正式25文件/25引用、JPEG字节/SHA、NULL照片",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V15",
+      "name": "逐件累计次数/MAX日期与源独立重算",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V16",
+      "name": "Top5次数、最近日期与并列真实ID排序",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V17",
+      "name": "10月9/11月3，月份不改变累计窗口",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V18",
+      "name": "30天未穿4件、SQL DATE双边界及真实日记数量",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-974Z-verify-5c27304f"
+    },
+    {
+      "id": "P203-V19",
+      "name": "重复check/apply拒绝，行哈希/自增/50文件不变",
+      "status": "passed",
+      "evidence": "2026-11-06T16-45-10-969Z-local-runner-505d737d"
+    },
+    {
+      "id": "P203-V20",
+      "name": "只读事务、缺失/别名映射拒绝、提交后失败不重导",
+      "status": "passed",
+      "evidence": "offline-tests.txt"
+    },
+    {
+      "id": "P203-V21",
+      "name": "原型、源数据、素材、历史证据未改/副本忽略",
+      "status": "passed",
+      "evidence": "protected-files.json"
+    },
+    {
+      "id": "P203-V22",
+      "name": "实现/证据/说明/交接一致；最终写入核心未变",
+      "status": "passed",
+      "evidence": "../../P2-03执行与验收记录.md"
+    },
+    {
+      "id": "P203-V23",
+      "name": "双端main、标签对象/目标一致及工作区干净",
+      "status": "pending-publication",
+      "evidence": "release-verification.local.json"
+    }
+  ]
+}
