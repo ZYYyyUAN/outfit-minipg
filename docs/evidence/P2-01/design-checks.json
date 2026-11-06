@@ -1,0 +1,190 @@
+{
+  "checkedAt": "2026-11-06T14:18:14.589Z",
+  "status": "passed",
+  "checks": {
+    "apiRoutes": [
+      {
+        "id": "A01",
+        "method": "POST",
+        "path": "/api/auth/register"
+      },
+      {
+        "id": "A02",
+        "method": "POST",
+        "path": "/api/auth/login"
+      },
+      {
+        "id": "A03",
+        "method": "POST",
+        "path": "/api/auth/logout"
+      },
+      {
+        "id": "A04",
+        "method": "GET",
+        "path": "/api/me"
+      },
+      {
+        "id": "A05",
+        "method": "PUT",
+        "path": "/api/me"
+      },
+      {
+        "id": "A06",
+        "method": "GET",
+        "path": "/api/categories"
+      },
+      {
+        "id": "A07",
+        "method": "POST",
+        "path": "/api/uploads"
+      },
+      {
+        "id": "A08",
+        "method": "GET",
+        "path": "/api/media/:filename"
+      },
+      {
+        "id": "A09",
+        "method": "GET",
+        "path": "/api/health"
+      },
+      {
+        "id": "C01",
+        "method": "GET",
+        "path": "/api/clothes"
+      },
+      {
+        "id": "C02",
+        "method": "GET",
+        "path": "/api/clothes/facets"
+      },
+      {
+        "id": "C03",
+        "method": "GET",
+        "path": "/api/clothes/:id"
+      },
+      {
+        "id": "C04",
+        "method": "POST",
+        "path": "/api/clothes"
+      },
+      {
+        "id": "C05",
+        "method": "PUT",
+        "path": "/api/clothes/:id"
+      },
+      {
+        "id": "C06",
+        "method": "PATCH",
+        "path": "/api/clothes/:id/archive"
+      },
+      {
+        "id": "C07",
+        "method": "GET",
+        "path": "/api/clothes/:id/outfits"
+      },
+      {
+        "id": "C08",
+        "method": "GET",
+        "path": "/api/clothes/:id/diaries"
+      },
+      {
+        "id": "O01",
+        "method": "GET",
+        "path": "/api/outfits"
+      },
+      {
+        "id": "O02",
+        "method": "GET",
+        "path": "/api/outfits/facets"
+      },
+      {
+        "id": "O03",
+        "method": "GET",
+        "path": "/api/outfits/:id"
+      },
+      {
+        "id": "O04",
+        "method": "POST",
+        "path": "/api/outfits"
+      },
+      {
+        "id": "O05",
+        "method": "PUT",
+        "path": "/api/outfits/:id"
+      },
+      {
+        "id": "O06",
+        "method": "PATCH",
+        "path": "/api/outfits/:id/archive"
+      },
+      {
+        "id": "D01",
+        "method": "GET",
+        "path": "/api/diaries"
+      },
+      {
+        "id": "D02",
+        "method": "GET",
+        "path": "/api/diaries/by-date"
+      },
+      {
+        "id": "D03",
+        "method": "GET",
+        "path": "/api/diaries/:id"
+      },
+      {
+        "id": "D04",
+        "method": "POST",
+        "path": "/api/diaries"
+      },
+      {
+        "id": "D05",
+        "method": "PUT",
+        "path": "/api/diaries/:id"
+      },
+      {
+        "id": "D06",
+        "method": "DELETE",
+        "path": "/api/diaries/:id"
+      },
+      {
+        "id": "S01",
+        "method": "GET",
+        "path": "/api/statistics"
+      }
+    ],
+    "validExamples": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08"
+    ],
+    "statisticsRecomputed": true,
+    "categoryCounts": [
+      7,
+      3,
+      1,
+      6,
+      2,
+      2,
+      3
+    ],
+    "recentWindow": [
+      "2026-10-08",
+      "2026-11-06"
+    ],
+    "relationshipCounts": {
+      "outfitItems": 37,
+      "diaryItems": 53
+    },
+    "protectedFilesCompared": 297,
+    "protectedChanged": [],
+    "noDatabaseOrBusinessDirectories": true
+  },
+  "scope": "Offline design/data consistency only; no DDL/DML/HTTP behavior tests"
+}

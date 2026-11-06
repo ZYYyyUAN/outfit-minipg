@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "executedAt": "2026-11-06T14:20:29.469Z",
+  "stage": "P2-01",
+  "results": [
+    {
+      "id": "P201-V01",
+      "status": "passed",
+      "observed": "数据库设计10页矩阵与接口30路由对应，颜色/季节/搜索/分页/账号资料保留"
+    },
+    {
+      "id": "P201-V02",
+      "status": "passed",
+      "observed": "7张字段表47行，完整类型、可空和默认；4实体自增、分类字符串、2复合PK"
+    },
+    {
+      "id": "P201-V03",
+      "status": "passed",
+      "observed": "ER可选来源与NULL一致，9条关系及两侧类型一致；只有日记明细删除级联"
+    },
+    {
+      "id": "P201-V04",
+      "status": "passed",
+      "observed": "约束命名表、普通索引及复合列序明确；日期唯一/顺序/去重和入口规则分清"
+    },
+    {
+      "id": "P201-V05",
+      "status": "passed",
+      "observed": "账号小写、scrypt、令牌摘要/到期成对与7天期一致；不接收userId指定归属"
+    },
+    {
+      "id": "P201-V06",
+      "status": "passed",
+      "observed": "离线扫描30个唯一接口编号和/api路径；认证例外A01/A02/A09，media二进制明确"
+    },
+    {
+      "id": "P201-V07",
+      "status": "passed",
+      "observed": "E01～E08 JSON.parse通过；数组与响应顺序、null/空文字、日期冲突及整数ID实际断言通过"
+    },
+    {
+      "id": "P201-V08",
+      "status": "passed",
+      "observed": "单季完整映射、颜色精确、名称搜索、archived和facets范围、稳定分页均已定稿"
+    },
+    {
+      "id": "P201-V09",
+      "status": "passed",
+      "observed": "uq_diaries_user_date、409详情、编辑自身排除、实际清单与来源分离、事务与归档语义核对一致"
+    },
+    {
+      "id": "P201-V10",
+      "status": "passed",
+      "observed": "从未修改JSON重新计算榜单和30天未穿，示例一致；10月7/8边界、月度与累计范围分别说明"
+    },
+    {
+      "id": "P201-V11",
+      "status": "passed",
+      "observed": "7/24/8/12及37/53关系实际计数，25个业务图片引用、分类字符串和四实体映射明确；无实际ID生成"
+    },
+    {
+      "id": "P201-V12",
+      "status": "passed",
+      "observed": "路径引用、鉴权下载、临时显示、取消/替换不自动删文件一致；未复制图片或创建持久数据"
+    },
+    {
+      "id": "P201-V13",
+      "status": "passed",
+      "observed": "客户端、服务、监听重新取得；父子PID关系实际确认，见environment-check.json"
+    },
+    {
+      "id": "P201-V14",
+      "status": "passed",
+      "observed": "TCP登录成功，VERSION及当前身份/端口实际返回，认证后已退出"
+    },
+    {
+      "id": "P201-V15",
+      "status": "passed",
+      "observed": "InnoDB、排序规则、STRICT和外键开关支持设计；SYSTEM时区显示限制明确，未来显式UTC，不修改现有设置"
+    },
+    {
+      "id": "P201-V16",
+      "status": "passed",
+      "observed": "直接授权覆盖需要的操作且无角色依赖；有全库可见性，目标库确不存在；实际DDL未验证"
+    },
+    {
+      "id": "P201-V17",
+      "status": "passed",
+      "observed": "297个受保护原文件SHA-256一致，只有允许的总方案/README/进度文件变化，未创建业务/数据库目录"
+    },
+    {
+      "id": "P201-V18",
+      "status": "passed",
+      "observed": "文档和准入一致；发布最后核对本地及两端main、附注标签对象和目标提交、干净工作区；引用见交付摘要"
+    }
+  ],
+  "evidence": {
+    "environment": "environment-check.json",
+    "design": "design-checks.json",
+    "protection": "baseline-hashes.json",
+    "record": "../../P2-01执行与核对记录.md"
+  },
+  "scope": "Design consistency and authenticated read-only environment checks; not database structure/constraint behavior or HTTP tests",
+  "releaseVerification": "Both main/tag object/peeled commit checked after push; exact references reported in delivery response"
+}
