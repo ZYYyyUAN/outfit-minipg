@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "protectedFiles": 305,
+  "changed": [],
+  "allowedChanges": [
+    ".gitignore",
+    "README.md",
+    "docs/执行计划.md"
+  ],
+  "scope": "all existing files except declared configuration/index/progress edits"
+}

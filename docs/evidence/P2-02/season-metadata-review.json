@@ -1,0 +1,21 @@
+{
+  "sql": "ALTER TABLE wardrobe_demo.clothes DROP CHECK ck_clothes_season, ADD CONSTRAINT ck_clothes_season CHECK (season IN (_utf8mb4 0xe698a5,_utf8mb4 0xe5a48f,_utf8mb4 0xe7a78b,_utf8mb4 0xe586ac,_utf8mb4 0xe698a5e5a48f,_utf8mb4 0xe698a5e7a78b,_utf8mb4 0xe7a78be586ac,_utf8mb4 0xe59b9be5ada3)) ENFORCED;",
+  "result": {
+    "chunk_id": "9036db",
+    "wall_time_seconds": 0.0000729,
+    "exit_code": 0,
+    "original_token_count": 122,
+    "output": "ALTER TABLE wardrobe_demo.clothes DROP CHECK ck_clothes_season, ADD CONST\r\n\u001b[23;80HTRAINT ck_clothes_season CHECK (season IN (_utf8mb4 0xe698a5,_utf8mb4 0xe5a48f,_u\r\n\u001b[23;80Hutf8mb4 0xe7a78b,_utf8mb4 0xe586ac,_utf8mb4 0xe698a5e5a48f,_utf8mb4 0xe698a5e7a78\r\n\u001b[23;80H8b,_utf8mb4 0xe7a78be586ac,_utf8mb4 0xe59b9be5ada3)) ENFORCED;\r\nQuery OK, 0 rows affected (0.06 sec)\r\nRecords: 0  Duplicates: 0  Warnings: 0\r\n\nmysql> SHOW WARNINGS;\r\nEmpty set (0.00 sec)\r\n\nmysql> quit\r\nBye\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "countsBefore": {
+    "users": 0,
+    "categories": 0,
+    "clothes": 0,
+    "outfits": 0,
+    "outfit_items": 0,
+    "diaries": 0,
+    "diary_items": 0
+  },
+  "reason": "Empty schema, suspected literal encoding difference. Rebuilt only ck_clothes_season with explicit utf8mb4 bytes; later inspection established SHOW CREATE is correct while CHECK_CLAUSE metadata uses escaped mojibake. No further schema model changes.",
+  "inspection": "****\r\n{\"rows\":[{\"CHECK_CLAUSE\":\"(`season` in (_utf8mb4\\\\'æ¥\\\\',_utf8mb4\\\\'å¤\\\\',_utf8mb4\\\\'ç§\\\\',_utf8mb4\\\\'å¬\\\\',_utf8mb4\\\\'æ¥å¤\\\\',_utf8mb4\\\\'æ¥ç§\\\\',_utf8mb4\\\\'ç§å¬\\\\',_utf8mb4\\\\'åå­£\\\\'))\",\"hexValue\":\"2860736561736F6E6020696E20285F757466386D62345C27C3A6C298C2A55C272C5F757466386D62345C27C3A5C2A4C28F5C272C5F757466386D62345C27C3A7C2A7C28B5C272C5F757466386D62345C27C3A5C286C2AC5C272C5F757466386D62345C27C3A6C298C2A5C3A5C2A4C28F5C272C5F757466386D62345C27C3A6C298C2A5C3A7C2A7C28B5C272C5F757466386D62345C27C3A7C2A7C28BC3A5C286C2AC5C272C5F757466386D62345C27C3A5C29BC29BC3A5C2ADC2A35C272929\",\"charSet\":\"utf8mb3\",\"collationName\":\"utf8_bin\"}],\"fields\":[{\"name\":\"CHECK_CLAUSE\",\"charset\":278},{\"name\":\"hexValue\",\"charset\":278},{\"name\":\"charSet\",\"charset\":278},{\"name\":\"collationName\",\"charset\":278}]}\r\n[{\"Table\":\"clothes\",\"Create Table\":\"CREATE TABLE `clothes` (\\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\\n  `user_id` int unsigned NOT NULL,\\n  `category_id` varchar(16) COLLATE utf8mb4_0900_as_cs NOT NULL,\\n  `name` varchar(40) COLLATE utf8mb4_0900_as_cs NOT NULL,\\n  `image_path` varchar(255) COLLATE utf8mb4_0900_as_cs NOT NULL,\\n  `color` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\\n  `season` varchar(8) COLLATE utf8mb4_0900_as_cs NOT NULL,\\n  `note` varchar(500) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\\n  `is_archived` tinyint unsigned NOT NULL DEFAULT '0',\\n  `created_at` datetime(3) NOT NULL,\\n  `updated_at` datetime(3) NOT NULL,\\n  PRIMARY KEY (`id`),\\n  KEY `idx_clothes_user_archived_id` (`user_id`,`is_archived`,`id`),\\n  KEY `idx_clothes_category` (`category_id`),\\n  CONSTRAINT `fk_clothes_category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\\n  CONSTRAINT `fk_clothes_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDAT\r\n\u001b[23;80HTE RESTRICT,\\n  CONSTRAINT `ck_clothes_archived` CHECK ((`is_archived` in (0,1)))\r\n\u001b[23;80H),\\n  CONSTRAINT `ck_clothes_season` CHECK ((`season` in (_utf8mb4'春',_utf8mb4' \r\n\u001b[23;80H 夏',_utf8mb4'秋',_utf8mb4'冬',_utf8mb4'春夏',_utf8mb4'春秋',_utf8mb4'秋冬',_utf8\r\n\u001b[23;80H8mb4'四季')))\\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs\r\n\u001b[23;80Hs\"}]\r\n\u001b[?9001l\u001b[?1004l"
+}

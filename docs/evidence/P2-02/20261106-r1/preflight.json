@@ -1,0 +1,18 @@
+{
+  "runId": "20261106-r1",
+  "mode": "--preflight",
+  "executedAt": "2026-11-06T15:36:40.153Z",
+  "status": "failed",
+  "hashes": {
+    "database/schema.sql": "00e7cd3a6180310ec0bdbb756d1c3276aa3b038222a2d6dabee4f6f7404bc753",
+    "database/verify-schema.mjs": "1690b9cd135f29711c29562e24c00a383457117eea3d30fd0d13452c0f91462a",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "docs/数据库设计.md": "6fe9422da14a5e6f3cd33bd9db5f7c7939b1dbd834d898a2a4741aae9495c887"
+  },
+  "error": {
+    "name": "RangeError",
+    "code": "ERR_OUT_OF_RANGE",
+    "message": "The value of \"value\" is out of range. It must be >= 0 and <= 255. Received 278"
+  },
+  "completedAt": "2026-11-06T15:36:40.167Z"
+}

@@ -1,0 +1,737 @@
+{
+  "status": "local-passed-awaiting-publication",
+  "runId": "20261106-final",
+  "executedAt": "2026-11-06T15:50:59.169Z",
+  "results": [
+    {
+      "id": "S01",
+      "status": "passed",
+      "observed": "r2 authenticated preflight found no database; final preflight confirms matching empty structure",
+      "evidence": "20261106-final/structure.json"
+    },
+    {
+      "id": "S02",
+      "status": "passed",
+      "observed": "reviewed 47 fields and final SQL checksum; explicit utf8mb4 byte constants are semantically identical",
+      "evidence": "schema-review.json"
+    },
+    {
+      "id": "S03",
+      "status": "passed",
+      "observed": "native batch DDL exit 0; recorded empty-table season CHECK repair, warnings 0",
+      "evidence": "ddl-execution.json"
+    },
+    {
+      "id": "S04",
+      "status": "passed",
+      "observed": "seven InnoDB base tables, target schema/collation, no extra objects",
+      "evidence": "20261106-final/structure.json"
+    },
+    {
+      "id": "S05",
+      "status": "passed",
+      "observed": "47 complete column comparisons passed",
+      "evidence": "20261106-final/structure.json"
+    },
+    {
+      "id": "S06",
+      "status": "passed",
+      "observed": "19 exact indexes compared",
+      "evidence": "20261106-final/structure.json"
+    },
+    {
+      "id": "S07",
+      "status": "passed",
+      "observed": "9 foreign keys and referential actions compared",
+      "evidence": "20261106-final/structure.json"
+    },
+    {
+      "id": "S08",
+      "status": "passed",
+      "observed": "7 ENFORCED CHECK names/ownership/SHOW CREATE expressions verified",
+      "evidence": "20261106-final/structure.json"
+    },
+    {
+      "id": "B01",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "two NULL token hashes allowed",
+          "status": "passed"
+        },
+        {
+          "label": "username duplicate",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_users_username"
+          }
+        },
+        {
+          "label": "non-null token duplicate",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_users_auth_token_hash"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B02",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "both NULL",
+          "status": "passed"
+        },
+        {
+          "label": "both present",
+          "status": "passed"
+        },
+        {
+          "label": "hash only",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_users_auth_pair"
+          }
+        },
+        {
+          "label": "expiry only",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_users_auth_pair"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B03",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "category id",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "PRIMARY"
+          }
+        },
+        {
+          "label": "category name",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_categories_name"
+          }
+        },
+        {
+          "label": "category order 0",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_categories_sort"
+          }
+        },
+        {
+          "label": "category order 8",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_categories_sort"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B04",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "same user same day",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_diaries_user_date"
+          }
+        },
+        {
+          "label": "different users same day allowed",
+          "status": "passed"
+        },
+        {
+          "label": "edit keeps own date",
+          "status": "passed"
+        },
+        {
+          "label": "edit occupied date",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_diaries_user_date"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B05",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "outfit_items",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "PRIMARY"
+          }
+        },
+        {
+          "label": "outfit_items another parent allowed",
+          "status": "passed"
+        },
+        {
+          "label": "diary_items",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "PRIMARY"
+          }
+        },
+        {
+          "label": "diary_items another parent allowed",
+          "status": "passed"
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B06",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "outfit_items",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_outfit_items_order"
+          }
+        },
+        {
+          "label": "diary_items",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_diary_items_order"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B07",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "outfit_items",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_outfit_items_sort"
+          }
+        },
+        {
+          "label": "diary_items",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_diary_items_sort"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B08",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "fk_clothes_user",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_clothes_user"
+          }
+        },
+        {
+          "label": "fk_clothes_category",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_clothes_category"
+          }
+        },
+        {
+          "label": "fk_outfits_user",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_outfits_user"
+          }
+        },
+        {
+          "label": "fk_outfit_items_outfit",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_outfit_items_outfit"
+          }
+        },
+        {
+          "label": "fk_outfit_items_clothing",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_outfit_items_clothing"
+          }
+        },
+        {
+          "label": "fk_diaries_user",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_diaries_user"
+          }
+        },
+        {
+          "label": "fk_diaries_source",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_diaries_source"
+          }
+        },
+        {
+          "label": "fk_diary_items_diary",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_diary_items_diary"
+          }
+        },
+        {
+          "label": "fk_diary_items_clothing",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_NO_REFERENCED_ROW_2",
+            "errno": 1452,
+            "sqlState": "23000",
+            "key": "fk_diary_items_clothing"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B09",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "NULL fields and independent items",
+          "status": "passed"
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B10",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "allowed season 春",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 夏",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 秋",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 冬",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 春夏",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 春秋",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 秋冬",
+          "status": "passed"
+        },
+        {
+          "label": "allowed season 四季",
+          "status": "passed"
+        },
+        {
+          "label": "clothing archive",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_clothes_archived"
+          }
+        },
+        {
+          "label": "outfit archive",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_outfits_archived"
+          }
+        },
+        {
+          "label": "season enum",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_CHECK_CONSTRAINT_VIOLATED",
+            "errno": 3819,
+            "sqlState": "HY000",
+            "key": "ck_clothes_season"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B11",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "only target diary and its items deleted",
+          "status": "passed"
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B12",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "fk_outfit_items_clothing",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_ROW_IS_REFERENCED_2",
+            "errno": 1451,
+            "sqlState": "23000",
+            "key": "fk_outfit_items_clothing"
+          }
+        },
+        {
+          "label": "fk_diary_items_clothing",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_ROW_IS_REFERENCED_2",
+            "errno": 1451,
+            "sqlState": "23000",
+            "key": "fk_diary_items_clothing"
+          }
+        },
+        {
+          "label": "fk_diaries_source",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_ROW_IS_REFERENCED_2",
+            "errno": 1451,
+            "sqlState": "23000",
+            "key": "fk_diaries_source"
+          }
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B13",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "archive=1, relations preserved",
+          "status": "passed"
+        },
+        {
+          "label": "archive=0, relations preserved",
+          "status": "passed"
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B14",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "outfits partial failure",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_outfit_items_order"
+          }
+        },
+        {
+          "label": "outfits create/update rollback atomic",
+          "status": "passed"
+        },
+        {
+          "label": "diaries partial failure",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_DUP_ENTRY",
+            "errno": 1062,
+            "sqlState": "23000",
+            "key": "uq_diary_items_order"
+          }
+        },
+        {
+          "label": "diaries create/update rollback atomic",
+          "status": "passed"
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "B15",
+      "status": "passed",
+      "operations": [
+        {
+          "label": "nickname NULL",
+          "status": "passed",
+          "failedStatementPreservedRows": true,
+          "error": {
+            "code": "ER_BAD_NULL_ERROR",
+            "errno": 1048,
+            "sqlState": "23000",
+            "key": "nickname"
+          }
+        },
+        {
+          "label": "defaults and utf8mb4 roundtrip",
+          "status": "passed"
+        }
+      ],
+      "savepointRestored": true,
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "D01",
+      "status": "passed",
+      "observed": {
+        "before": {
+          "users": 0,
+          "categories": 0,
+          "clothes": 0,
+          "outfits": 0,
+          "outfit_items": 0,
+          "diaries": 0,
+          "diary_items": 0
+        },
+        "autoIncrementBefore": [
+          {
+            "TABLE_NAME": "clothes",
+            "AUTO_INCREMENT": 7
+          },
+          {
+            "TABLE_NAME": "diaries",
+            "AUTO_INCREMENT": 13
+          },
+          {
+            "TABLE_NAME": "outfits",
+            "AUTO_INCREMENT": 7
+          },
+          {
+            "TABLE_NAME": "users",
+            "AUTO_INCREMENT": 7
+          }
+        ],
+        "afterSameConnection": {
+          "users": 0,
+          "categories": 0,
+          "clothes": 0,
+          "outfits": 0,
+          "outfit_items": 0,
+          "diaries": 0,
+          "diary_items": 0
+        },
+        "autoIncrementAfter": [
+          {
+            "TABLE_NAME": "clothes",
+            "AUTO_INCREMENT": 10
+          },
+          {
+            "TABLE_NAME": "diaries",
+            "AUTO_INCREMENT": 19
+          },
+          {
+            "TABLE_NAME": "outfits",
+            "AUTO_INCREMENT": 10
+          },
+          {
+            "TABLE_NAME": "users",
+            "AUTO_INCREMENT": 10
+          }
+        ],
+        "rolledBack": true,
+        "afterReconnect": {
+          "users": 0,
+          "categories": 0,
+          "clothes": 0,
+          "outfits": 0,
+          "outfit_items": 0,
+          "diaries": 0,
+          "diary_items": 0
+        }
+      },
+      "evidence": "20261106-final/constraints.json"
+    },
+    {
+      "id": "D02",
+      "status": "passed",
+      "observed": {
+        "protectedFiles": 305,
+        "changed": []
+      },
+      "evidence": "protection.json"
+    },
+    {
+      "id": "D03",
+      "status": "passed",
+      "observed": "execution record, startup, fixes and P2-03 handoff reviewed; API/import not implemented",
+      "evidence": "../../P2-02执行与验收记录.md"
+    },
+    {
+      "id": "D04",
+      "status": "pending-publication",
+      "observed": "Will verify both actual remote main/tag refs and clean worktree after publication",
+      "evidence": "release-verification.local.json"
+    }
+  ],
+  "hashes": {
+    "database/schema.sql": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+    "database/verify-schema.mjs": "8346476648cd9844c014c95d43f5200a9ae0fcf69ccf461e29cb37d38536ab94",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "docs/数据库设计.md": "6fe9422da14a5e6f3cd33bd9db5f7c7939b1dbd834d898a2a4741aae9495c887"
+  },
+  "localPassed": 26,
+  "releaseEvidence": "release-verification.local.json"
+}

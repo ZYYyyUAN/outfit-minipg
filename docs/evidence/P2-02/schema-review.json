@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "reviewedAt": "2026-11-06T15:37:30.382Z",
+  "schemaHash": "00e7cd3a6180310ec0bdbb756d1c3276aa3b038222a2d6dabee4f6f7404bc753",
+  "tables": 7,
+  "columns": 47,
+  "primary": 7,
+  "unique": 6,
+  "indexes": 6,
+  "foreignKeys": 9,
+  "checks": 7,
+  "review": "47 fields manually compared with reviewed dictionary; explicit defaults, timestamp precision, character sets and delete rules match; no seed data or constraint disabling",
+  "finalSchemaHash": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+  "finalReview": "Explicit utf8mb4 hex literals encode the same eight season strings; ASCII DDL is independent of Windows argument encoding; final SHOW CREATE and all eight accepted values verified."
+}

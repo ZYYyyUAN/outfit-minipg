@@ -3,3 +3,5 @@ node_modules/
 *.log
 .DS_Store
 server/uploads/
+# Post-publication checks reference this commit and are generated locally after both pushes.
+docs/evidence/P2-02/release-verification.local.json

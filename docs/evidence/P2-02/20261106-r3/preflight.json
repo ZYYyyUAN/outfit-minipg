@@ -1,0 +1,198 @@
+{
+  "runId": "20261106-r3",
+  "mode": "--preflight",
+  "executedAt": "2026-11-06T15:40:29.540Z",
+  "status": "failed",
+  "hashes": {
+    "database/schema.sql": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+    "database/verify-schema.mjs": "dae0ed24accc349fd0cd69105ff464744409a7625a7a1facafe7252a2f23ce53",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "docs/数据库设计.md": "6fe9422da14a5e6f3cd33bd9db5f7c7939b1dbd834d898a2a4741aae9495c887"
+  },
+  "environment": {
+    "identity": {
+      "version": "8.0.28",
+      "product": "MySQL Community Server - GPL",
+      "hostname": "DESKTOP-D97LI2N",
+      "port": 3306,
+      "account": "root@localhost",
+      "roles": "NONE",
+      "connectionId": 15,
+      "sqlMode": "IGNORE_SPACE,ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION",
+      "fkChecks": 1,
+      "timeZone": "+00:00",
+      "clientCharset": "utf8mb4",
+      "connectionCharset": "utf8mb4",
+      "resultsCharset": "utf8mb4",
+      "connectionCollation": "utf8mb4_0900_as_cs"
+    },
+    "grants": [
+      {
+        "Grants for root@localhost": "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE, DROP ROLE ON *.* TO `root`@`localhost` WITH GRANT OPTION"
+      },
+      {
+        "Grants for root@localhost": "GRANT APPLICATION_PASSWORD_ADMIN,AUDIT_ABORT_EXEMPT,AUDIT_ADMIN,AUTHENTICATION_POLICY_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,BINLOG_ENCRYPTION_ADMIN,CLONE_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,FLUSH_OPTIMIZER_COSTS,FLUSH_STATUS,FLUSH_TABLES,FLUSH_USER_RESOURCES,GROUP_REPLICATION_ADMIN,GROUP_REPLICATION_STREAM,INNODB_REDO_LOG_ARCHIVE,INNODB_REDO_LOG_ENABLE,PASSWORDLESS_USER_ADMIN,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_APPLIER,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,RESOURCE_GROUP_USER,ROLE_ADMIN,SERVICE_CONNECTION_ADMIN,SESSION_VARIABLES_ADMIN,SET_USER_ID,SHOW_ROUTINE,SYSTEM_USER,SYSTEM_VARIABLES_ADMIN,TABLE_ENCRYPTION_ADMIN,XA_RECOVER_ADMIN ON *.* TO `root`@`localhost` WITH GRANT OPTION"
+      },
+      {
+        "Grants for root@localhost": "GRANT PROXY ON ``@`` TO `root`@`localhost` WITH GRANT OPTION"
+      }
+    ],
+    "engines": [
+      {
+        "Engine": "MEMORY",
+        "Support": "YES",
+        "Comment": "Hash based, stored in memory, useful for temporary tables",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      },
+      {
+        "Engine": "MRG_MYISAM",
+        "Support": "YES",
+        "Comment": "Collection of identical MyISAM tables",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      },
+      {
+        "Engine": "CSV",
+        "Support": "YES",
+        "Comment": "CSV storage engine",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      },
+      {
+        "Engine": "FEDERATED",
+        "Support": "NO",
+        "Comment": "Federated MySQL storage engine",
+        "Transactions": null,
+        "XA": null,
+        "Savepoints": null
+      },
+      {
+        "Engine": "PERFORMANCE_SCHEMA",
+        "Support": "YES",
+        "Comment": "Performance Schema",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      },
+      {
+        "Engine": "MyISAM",
+        "Support": "YES",
+        "Comment": "MyISAM storage engine",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      },
+      {
+        "Engine": "InnoDB",
+        "Support": "DEFAULT",
+        "Comment": "Supports transactions, row-level locking, and foreign keys",
+        "Transactions": "YES",
+        "XA": "YES",
+        "Savepoints": "YES"
+      },
+      {
+        "Engine": "BLACKHOLE",
+        "Support": "YES",
+        "Comment": "/dev/null storage engine (anything you write to it disappears)",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      },
+      {
+        "Engine": "ARCHIVE",
+        "Support": "YES",
+        "Comment": "Archive storage engine",
+        "Transactions": "NO",
+        "XA": "NO",
+        "Savepoints": "NO"
+      }
+    ],
+    "collations": [
+      {
+        "Collation": "utf8mb4_0900_as_cs",
+        "Charset": "utf8mb4",
+        "Id": 278,
+        "Default": "",
+        "Compiled": "Yes",
+        "Sortlen": 0,
+        "Pad_attribute": "NO PAD"
+      }
+    ],
+    "schemas": [
+      {
+        "CATALOG_NAME": "def",
+        "SCHEMA_NAME": "wardrobe_demo",
+        "DEFAULT_CHARACTER_SET_NAME": "utf8mb4",
+        "DEFAULT_COLLATION_NAME": "utf8mb4_0900_as_cs",
+        "SQL_PATH": null,
+        "DEFAULT_ENCRYPTION": "NO"
+      }
+    ],
+    "objects": [
+      {
+        "TABLE_NAME": "categories",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      },
+      {
+        "TABLE_NAME": "clothes",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      },
+      {
+        "TABLE_NAME": "diaries",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      },
+      {
+        "TABLE_NAME": "diary_items",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      },
+      {
+        "TABLE_NAME": "outfit_items",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      },
+      {
+        "TABLE_NAME": "outfits",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      },
+      {
+        "TABLE_NAME": "users",
+        "TABLE_TYPE": "BASE TABLE",
+        "ENGINE": "InnoDB",
+        "TABLE_COLLATION": "utf8mb4_0900_as_cs",
+        "AUTO_INCREMENT": null
+      }
+    ],
+    "extras": {
+      "TRIGGERS": [],
+      "ROUTINES": [],
+      "EVENTS": []
+    }
+  },
+  "error": {
+    "name": "AssertionError",
+    "code": "ERR_ASSERTION",
+    "message": "Expected values to be strictly equal:\n+ actual - expected\n\n+ \"season in 'æ\\x98¥\\\\' , 'å¤\\x8F\\\\' , 'ç§\\x8B\\\\' , 'å\\x86¬\\\\' , 'æ\\x98¥å¤\\x8F\\\\' , 'æ\\x98¥ç§\\x8B\\\\' , 'ç§\\x8Bå\\x86¬\\\\' , 'å\\x9B\\x9Bå­£\\\\'\"\n- \"season in '春' , '夏' , '秋' , '冬' , '春夏' , '春秋' , '秋冬' , '四季'\"\n"
+  },
+  "completedAt": "2026-11-06T15:40:29.584Z"
+}
