@@ -1,0 +1,57 @@
+{
+  "runId": "2026-11-06T12:06:06.348Z",
+  "measurements": [
+    {
+      "width": 375,
+      "input": "40 W characters in clothing and outfit name",
+      "relation": {
+        "client": 347,
+        "scroll": 347
+      },
+      "picker": {
+        "client": 375,
+        "scroll": 375
+      },
+      "chip": {
+        "width": 333,
+        "height": 48
+      },
+      "shortcut": {
+        "width": 48,
+        "height": 44
+      },
+      "day": {
+        "width": 45.578125,
+        "height": 44
+      },
+      "counterFont": "12px"
+    },
+    {
+      "width": 430,
+      "input": "40 W characters in clothing and outfit name",
+      "relation": {
+        "client": 402,
+        "scroll": 402
+      },
+      "picker": {
+        "client": 430,
+        "scroll": 430
+      },
+      "chip": {
+        "width": 388,
+        "height": 48
+      },
+      "shortcut": {
+        "width": 48,
+        "height": 44
+      },
+      "day": {
+        "width": 53.421875,
+        "height": 44
+      },
+      "counterFont": "12px"
+    }
+  ],
+  "note": "该补充测量关联前轮相同界面；最终轮界面文件未改、52张复核图字节相同。不是声称重新测量。",
+  "measuredForRunId": "2026-11-06T11:57:06.203Z"
+}

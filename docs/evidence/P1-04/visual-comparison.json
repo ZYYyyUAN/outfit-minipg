@@ -1,0 +1,268 @@
+{
+  "runId": "2026-11-06T12:06:06.348Z",
+  "previousRun": "2026-11-06T11:57:06.203Z",
+  "compared": 52,
+  "changed": [],
+  "frames": [
+    {
+      "path": "docs/evidence/P1-04/375-P01-list.png",
+      "sha256": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P02-detail.png",
+      "sha256": "f907fd1594db9fffc4513f23a278cab7fed32f34ad1870231e6c7c29c91efe94",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P03-new-top.png",
+      "sha256": "d7bba3cadbe9ce26c856f031e791a9306e863da9bed0325e0bcf7939280c25cd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P03-edit-top.png",
+      "sha256": "2371454ddbd94735bed52aafd43280cd710e9441010b6e2e7c6bbb2d3651f58a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P04-list.png",
+      "sha256": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P05-detail.png",
+      "sha256": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P06-new-top.png",
+      "sha256": "a8867f599b68116c77d09198da44640698bb0e5934241dfba5663856b8c8f676",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P06-edit-top.png",
+      "sha256": "0172031efe08695720baec8f0f1d450f4903544a1cfc926dce327fe6009f3364",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P07-calendar.png",
+      "sha256": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P08-photo.png",
+      "sha256": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P09-new-top.png",
+      "sha256": "4a175adf63ed4fc2814756ace15c943ae4db9c7c61b028847a065c6be6eea391",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P09-edit-top.png",
+      "sha256": "32291b097911c5950c97a9c0147efaf3f942ef0abcd170d69e0066a7e9f46b14",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P10-statistics.png",
+      "sha256": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P10-bottom.png",
+      "sha256": "cf6555bbbe64c5553dc4e0ea5f0ba0bd463ff15dc004fec6376a5204086aadf2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-me.png",
+      "sha256": "3da7baf6f9684a438edac13eaab90e34139e69feb42f45e5f4cc99d1f60f8acf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-modal-photo.png",
+      "sha256": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-modal-profile.png",
+      "sha256": "85040f78aad9429974f20baa16367d14870f3a7d7bbb91d18c2fdb04bc78ed68",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-modal-login.png",
+      "sha256": "f456a45519eff9f7a2e5c95922fe0960c6854a833e67c6f46ddb1d882558dcd2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P01-list.png",
+      "sha256": "92b215d49c8c321ed4a4cbef7d6c47d4c85c9198e5ba261da94ef8e8676977e7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P02-detail.png",
+      "sha256": "ace5c0b8fae19e9f04393bb4e136696a9fac2375665db1c73c125a99516354a6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P03-new-top.png",
+      "sha256": "e565f89aa952b71d0fab52f643cf7af1ced397b4e334715d44c93be9c7bf15fe",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P03-edit-top.png",
+      "sha256": "fc2d70b9366563557fdb8b2ccb7aa55c796ec0e925dbe93f634253850a1f0567",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P04-list.png",
+      "sha256": "8f08850effa647756307f57b3259d26101c0f768fec5ad5a78f59756dfb0a20f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P05-detail.png",
+      "sha256": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P06-new-top.png",
+      "sha256": "c150326b5550284041426c18768fa24615da2d28aa01695cace616c27bcbf32e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P06-edit-top.png",
+      "sha256": "aa9d332330fa70a06d9d600d58063304e35351ee06f08ac7317c71fec149d897",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P07-calendar.png",
+      "sha256": "5d2c157ffec1993538a70b52cd71bb23b474587a6ad244b131a011e43701bc6b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P08-photo.png",
+      "sha256": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P09-new-top.png",
+      "sha256": "7953a88b0e04e145360707c62da8fd0a0cbff78c83e53c823b0f2b4031ec611e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P09-edit-top.png",
+      "sha256": "f0ee28de71bb4675835a2d845d98501b5b57f3068d018efe4d67996311198584",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P10-statistics.png",
+      "sha256": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-P10-bottom.png",
+      "sha256": "05c38dccede963cf69557c83a638d252790e548e3c2e4711a6e7f22250ce5479",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-me.png",
+      "sha256": "a72bb7f33ac954fa4d0a6b66a9e11b1bd8234a1e4146af39b16ba2f810b968b4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-modal-photo.png",
+      "sha256": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-modal-profile.png",
+      "sha256": "c67af2eb80e1c843c7f23491fdeecf2e59daa07ac07d76ae256be564ba5e052c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-modal-login.png",
+      "sha256": "4ccc404aa2c7c27775ced270c3d7b9e6aa6c79a3cba38d91f9d42e4c9c9a2145",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-clothing-keyboard-height.png",
+      "sha256": "7249cd71ba53335d40eeddd496ccbf620196fd11ae8702954ee1311a542f5868",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-diary-keyboard-height.png",
+      "sha256": "bb552970bae5ce5431f6faa473bde9952f3c7f3a4020f98585c0dbe4435d4fb2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-long-picker-latin.png",
+      "sha256": "f69f1b6596042d95713ddc1991385b6ac4310b8c8baf8c6daac6d922c119db1b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-long-related-bottom.png",
+      "sha256": "8c535f2e885e31990063e0505af5e3ec9c8b00b2d37f162d3044dbc2a14fc505",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-long-related-bottom.png",
+      "sha256": "fb66e7559fad18cb2c71acd138b4c3c9b740c6506c1b97ce8097357964e2a1e6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P09-max-bottom.png",
+      "sha256": "a7ec9008f1f46c7692961a05213c50cee759f810f74a74dda09385df2e1c4e50",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-P09-conflict.png",
+      "sha256": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-data-error.png",
+      "sha256": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-image-error.png",
+      "sha256": "7055162d855c8c71fd632fd5ad40641fa252a539a6ba3db84b08366e0b5acd3e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-filter-empty.png",
+      "sha256": "5eb241b2a65ea2f23f60708e15f63d3ce47a5b132cda134f6d557ec262b20353",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-statistics-empty.png",
+      "sha256": "a1288aa2b1cd3417f7c3e4243756f29b4cb94caad33fd4d4bd1bad95da647e57",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-outfit-keyboard-height.png",
+      "sha256": "43a8ba867a733dcd15ce386832e79cb4d6b4a11fbe83f6d2f862067bf9bfa152",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-diary-keyboard-height.png",
+      "sha256": "0578f7fcb66990ac0ec16514c3b303a3808040ec90c31f4fdb75aec6a47e8728",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-archive-summary-bottom.png",
+      "sha256": "6feed1193ae19928a75b3f7fb93ca617754ed0824b36d1345c0d877ef4cb8070",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/375-flow-delete-statistics.png",
+      "sha256": "a0584a5ca6207fce51e2864de2704aaf817b306b175d83685dc2b3bd4d5417e1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence/P1-04/430-flow-delete-statistics.png",
+      "sha256": "f72af2b8d503f74c7bace73c95ffd8d371e73d72c7231aea9bc4ccb5d33518b5",
+      "unchanged": true
+    }
+  ]
+}

@@ -20,7 +20,7 @@ const resource = path => new URL(path, rootUrl).href;
 const image = (path, name, className = '') => `<figure class="image-frame ${className}"><img src="${escape(resource(path))}" alt="${escape(name)}"></figure>`;
 
 function clothingTile(clothing, interactive = false) {
-  const content = `${image(clothing.imagePath, clothing.name)}<span class="clothing-name">${escape(clothing.name)}</span><span class="clothing-meta">${escape(clothing.color)}${clothing.isArchived ? ' · 已归档' : ''}</span>`;
+  const content = `${image(clothing.imagePath, clothing.name)}<span class="clothing-name">${escape(clothing.name)}</span><span class="clothing-meta">${escape(clothing.color)}</span>${clothing.isArchived ? '<span class="archive-label">已归档</span>' : ''}`;
   return interactive ? `<button class="clothing-tile" data-clothing="${clothing.id}" aria-label="预览${escape(clothing.name)}">${content}</button>` : `<div class="clothing-tile" data-item="${clothing.id}">${content}</div>`;
 }
 
@@ -237,7 +237,7 @@ function renderView() {
   if (isClothing) {
     const diaries = data.diaries.filter(d => d.clothingIds.includes(record.id)).sort((a, b) => b.wearDate.localeCompare(a.wearDate));
     const outfits = data.outfits.filter(o => o.clothingIds.includes(record.id));
-    content += `${image(record.imagePath, record.name)}<dl class="attributes"><div><dt>分类</dt><dd>${escape(categoryById.get(record.categoryId).name)}</dd></div><div><dt>颜色</dt><dd>${escape(record.color)}</dd></div><div><dt>季节</dt><dd>${escape(record.season)}</dd></div></dl><p class="preview-note">${escape(record.note)}</p><h3 class="detail-section">穿着记录 · ${diaries.length} 次</h3><p class="muted">最近穿着：${diaries[0]?.wearDate || '尚未记录'}</p><div class="history">${diaries.map(d => `<button class="related-row" data-diary="${d.id}">${d.wearDate} · ${escape(d.occasion)}<span>›</span></button>`).join('')}</div><h3 class="detail-section">相关搭配</h3>${outfits.map(o => `<button class="related-row" data-related="${o.id}">${escape(o.name)}${o.isArchived ? ' · 已归档' : ''}<span>›</span></button>`).join('') || '<p class="muted">尚未加入搭配</p>'}`;
+    content += `${image(record.imagePath, record.name)}<dl class="attributes"><div><dt>分类</dt><dd>${escape(categoryById.get(record.categoryId).name)}</dd></div><div><dt>颜色</dt><dd>${escape(record.color)}</dd></div><div><dt>季节</dt><dd>${escape(record.season)}</dd></div></dl><p class="preview-note">${escape(record.note)}</p><h3 class="detail-section">穿着记录 · ${diaries.length} 次</h3><p class="muted">最近穿着：${diaries[0]?.wearDate || '尚未记录'}</p><div class="history">${diaries.map(d => `<button class="related-row" data-diary="${d.id}">${d.wearDate} · ${escape(d.occasion)}<span>›</span></button>`).join('')}</div><h3 class="detail-section">相关搭配</h3>${outfits.map(o => `<button class="related-row" data-related="${o.id}"><span class="related-label">${escape(o.name)}${o.isArchived ? ' · 已归档' : ''}</span><span>›</span></button>`).join('') || '<p class="muted">尚未加入搭配</p>'}`;
   } else {
     content += `<p class="preview-subtitle">${escape(record.occasion)} · 共 ${record.clothingIds.length} 件单品</p><p class="preview-note">${escape(record.note)}</p><button class="primary-button" data-record-outfit="${record.id}">记录穿着</button><div class="preview-outfit-grid">${record.clothingIds.map(id => clothingTile(clothingById.get(id), true)).join('')}</div>`;
   }
@@ -406,7 +406,7 @@ function diaryPhoto(d) {
 }
 function renderDiaryDetail(frame) {
   const d=diaryById.get(frame.id), source=d.sourceOutfitId ? data.outfits.find(o=>o.id===d.sourceOutfitId) : null;
-  $('#subview').innerHTML=`<div class="detail-top"><span class="status-label">穿搭记录</span><div><button data-action="edit">编辑</button><button data-action="delete-diary">删除</button></div></div><h2 class="detail-title">${d.wearDate}</h2><div class="diary-meta"><span>${escape(d.occasion)}</span>${d.mood ? `<span>${escape(d.mood)}</span>` : ''}</div><p class="diary-note">${escape(d.note)}</p>${diaryPhoto(d)}<h3 class="detail-section">当次单品 · ${d.clothingIds.length} 件</h3><div class="preview-outfit-grid">${d.clothingIds.map(id=>clothingTile(clothingById.get(id),true)).join('')}</div><h3 class="detail-section">记录来源</h3>${source ? `<button class="related-row" data-related="${source.id}">${escape(source.name)}${source.isArchived ? ' · 已归档' : ''}<span>›</span></button><p class="muted">由此搭配发起，实际单品以本篇记录为准</p>` : '<p class="muted">直接选衣记录</p>'}`;
+  $('#subview').innerHTML=`<div class="detail-top"><span class="status-label">穿搭记录</span><div><button data-action="edit">编辑</button><button data-action="delete-diary">删除</button></div></div><h2 class="detail-title">${d.wearDate}</h2><div class="diary-meta"><span>${escape(d.occasion)}</span>${d.mood ? `<span>${escape(d.mood)}</span>` : ''}</div><p class="diary-note">${escape(d.note)}</p>${diaryPhoto(d)}<h3 class="detail-section">当次单品 · ${d.clothingIds.length} 件</h3><div class="preview-outfit-grid">${d.clothingIds.map(id=>clothingTile(clothingById.get(id),true)).join('')}</div><h3 class="detail-section">记录来源</h3>${source ? `<button class="related-row" data-related="${source.id}"><span class="related-label">${escape(source.name)}${source.isArchived ? ' · 已归档' : ''}</span><span>›</span></button><p class="muted">由此搭配发起，实际单品以本篇记录为准</p>` : '<p class="muted">直接选衣记录</p>'}`;
   $('#subview').scrollTop=frame.scroll || 0;
 }
 function startDiaryEditor(id=null, sourceId=null) {

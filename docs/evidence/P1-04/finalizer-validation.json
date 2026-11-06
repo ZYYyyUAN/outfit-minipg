@@ -1,0 +1,66 @@
+{
+  "runId": "2026-11-06T12:06:06.348Z",
+  "rejections": [
+    {
+      "case": "manual_missing",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "runid_mismatch",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "review_failure",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "missing_review",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "missing_evidence",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "missing_case",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "duplicate_case",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "implementation_mismatch",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "source_mismatch",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    },
+    {
+      "case": "auto_failure",
+      "exitCode": 1,
+      "status": "incomplete",
+      "expectedRejection": true
+    }
+  ],
+  "validEvidence": "passed"
+}
