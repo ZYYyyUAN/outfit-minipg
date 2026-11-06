@@ -1,271 +1,85 @@
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const crypto = require('node:crypto');
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE);
-
-const root = path.resolve(__dirname, '..');
-const evidence = path.join(root, 'docs/evidence/P1-01');
-fs.mkdirSync(evidence, { recursive: true });
-const data = JSON.parse(fs.readFileSync(path.join(root, 'data/demo-data.json')));
-const sources = JSON.parse(fs.readFileSync(path.join(root, 'assets/source-manifest.json')));
-const photos = JSON.parse(fs.readFileSync(path.join(root, 'assets/diary-photo-manifest.json')));
-const files = ['data/demo-data.json', 'data/demo-summary.json', 'assets/source-manifest.json', 'assets/diary-photo-manifest.json', ...sources.map(s => s.file), ...photos.map(s => s.file)];
-const hashes = () => Object.fromEntries(files.map(file => [file, crypto.createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex')]));
-const before = hashes();
-const results = [];
-const base = 'http://127.0.0.1:4173';
-
-(async () => {
-  const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ viewport: { width: 375, height: 812 } });
-  const page = await context.newPage();
-  const errors = [], requests = [], responses = [];
-  page.on('pageerror', e => errors.push(e.message));
-  page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
-  page.on('request', r => requests.push({ url: r.url(), method: r.method() }));
-  page.on('response', r => responses.push({ url: r.url(), status: r.status() }));
-  const tab = async name => page.locator(`[data-tab="${name}"]`).click();
-  const ready = async () => page.locator('#clothes-grid button').first().waitFor();
-  const screenshot = async name => {
-    await page.waitForFunction(() => [...document.querySelectorAll('img')].every(i => i.complete));
-    await page.evaluate(async () => { await Promise.all(document.getAnimations().filter(a => a.effect.getTiming().iterations !== Infinity).map(a => a.finished)); });
-    await page.screenshot({ path: path.join(evidence, name + '.png') });
-  };
-  const check = async (id, title, work) => {
-    await work();
-    results.push({ id, title, status: 'passed' });
-    console.log(`${id} passed ${title}`);
-  };
-  try {
-    await page.goto(`${base}/prototype/`);
-    await ready();
-    await check('V01', '四入口切换', async () => {
-      for (const [name, title] of Object.entries({ wardrobe: '衣橱', outfits: '搭配', diary: '日记', me: '我的' })) {
-        await tab(name);
-        assert.equal(await page.locator('#page-title').textContent(), title);
-        assert.equal(await page.locator('.page:visible').count(), 1);
-        assert.equal(await page.locator(`[data-tab=${name}]`).getAttribute('aria-current'), 'page');
-      }
-      await tab('wardrobe');
-    });
-    await check('V02', '24件及7类数量', async () => {
-      assert.equal(await page.locator('#clothes-grid button').count(), 24);
-      for (const c of data.categories) {
-        await page.locator(`[data-category=${c.id}]`).click();
-        assert.equal(await page.locator('#clothes-grid button').count(), data.clothes.filter(x => x.categoryId === c.id).length);
-      }
-      await page.locator('[data-category=all]').click();
-    });
-    await check('V03', '组合筛选与清除搜索', async () => {
-      await page.locator('[data-category=bottoms]').click();
-      await page.locator('#search').fill('牛仔');
-      assert.equal(await page.locator('#clothes-grid button').count(), 3);
-      await page.locator('#clear-search').click();
-      assert.equal(await page.locator('#clothes-grid button').count(), 6);
-    });
-    await check('V04', '无结果与重置', async () => {
-      await page.locator('#search').fill('没有这件衣服');
-      assert.equal(await page.locator('#empty-clothes').isVisible(), true);
-      await page.locator('#reset-filters').click();
-      assert.equal(await page.locator('#clothes-grid button').count(), 24);
-    });
-    await check('V05', '完整单品及属性预览', async () => {
-      for (const id of ['CLO015', 'CLO011', 'CLO018', 'CLO023']) {
-        await page.locator(`[data-clothing=${id}]`).click();
-        const image = page.locator('#preview-body img');
-        await image.evaluate(i => i.decode());
-        assert.equal(await image.evaluate(i => getComputedStyle(i).objectFit), 'contain');
-        assert.equal(await page.locator('#preview-title').textContent(), data.clothes.find(c => c.id === id).name);
-        await screenshot(`375-preview-${id}`);
-        await page.locator('#close-preview').click();
-      }
-    });
-    await check('V06', '场景及6件完整搭配', async () => {
-      await tab('outfits');
-      for (const [scene, count] of [['校园', 3], ['休闲', 4], ['出游', 1]]) {
-        await page.locator(`[data-occasion="${scene}"]`).click();
-        assert.equal(await page.locator('.outfit-row').count(), count);
-      }
-      await page.locator('[data-occasion=all]').click();
-      await page.locator('[data-outfit=OUT006]').click();
-      assert.deepEqual(await page.locator('.preview-outfit-grid [data-item]').evaluateAll(rows => rows.map(r => r.dataset.item)), data.outfits.find(o => o.id === 'OUT006').clothingIds);
-      await screenshot('375-outfit-six-items');
-      await page.locator('#preview-body').evaluate(e => e.scrollTop = e.scrollHeight);
-      assert.equal(await page.locator('#preview-body').evaluate(e => Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) < 2), true);
-      assert.equal(await page.locator('#preview-title').isVisible(), true);
-      assert.equal(await page.locator('#close-preview').isVisible(), true);
-      await screenshot('375-outfit-six-items-bottom');
-      await page.locator('#close-preview').click();
-    });
-    await check('V07', '弹层关闭及焦点恢复', async () => {
-      const trigger = page.locator('[data-outfit=OUT006]');
-      await trigger.click(); await page.keyboard.press('Escape');
-      assert.equal(await page.locator('#preview').isVisible(), false);
-      assert.equal(await trigger.evaluate(e => e === document.activeElement), true);
-      await trigger.click(); await page.mouse.click(5, 5);
-      assert.equal(await page.locator('#preview').isVisible(), false);
-      await trigger.click(); await page.locator('#close-preview').click();
-      assert.equal(await page.locator('#preview').isVisible(), false);
-    });
-    await check('V08', '日记初始11月5日', async () => {
-      await tab('diary');
-      assert.equal(await page.locator('#month-title').textContent(), '2026年11月');
-      assert.equal(await page.locator('#calendar [aria-pressed=true]').getAttribute('data-date'), '2026-11-05');
-      assert.equal(await page.locator('#diary-summary [data-item]').count(), 6);
-      assert.equal(await page.locator('.diary-photo').count(), 0);
-    });
-    await check('V09', '跨月9/3篇及选日', async () => {
-      await page.locator('#previous-month').click();
-      assert.equal(await page.locator('#calendar .has-record').count(), 9);
-      assert.equal(await page.locator('#calendar [aria-pressed=true]').getAttribute('data-date'), '2026-10-07');
-      await page.locator('#next-month').click();
-      assert.equal(await page.locator('#calendar .has-record').count(), 3);
-      assert.equal(await page.locator('#calendar [aria-pressed=true]').getAttribute('data-date'), '2026-11-01');
-    });
-    await check('V10', '月首星期及42格', async () => {
-      for (const [month, offset, days] of [['2026-11', 6, 30], ['2026-10', 3, 31]]) {
-        if (month === '2026-10') await page.locator('#previous-month').click();
-        assert.equal(await page.locator('#calendar > *').count(), 42);
-        assert.equal(await page.locator('#calendar > *').nth(offset).getAttribute('data-date'), `${month}-01`);
-        assert.equal(await page.locator('#calendar button').count(), days);
-      }
-    });
-    await check('V11', '10月16日附图', async () => {
-      await page.locator('[data-date="2026-10-16"]').click();
-      assert.deepEqual(await page.locator('#diary-summary [data-item]').evaluateAll(rows => rows.map(r => r.dataset.item)), ['CLO001']);
-      await page.locator('.diary-photo img').evaluate(i => i.decode());
-      assert.match(await page.locator('.diary-photo figcaption').textContent(), /同款穿着参考/);
-      await screenshot('375-diary-october');
-      await page.locator('.diary-photo').scrollIntoViewIfNeeded();
-      await screenshot('375-diary-photo');
-    });
-    await check('V12', '重复穿搭的独立日期', async () => {
-      for (const date of ['2026-10-07', '2026-10-24']) {
-        await page.locator(`[data-date="${date}"]`).click();
-        assert.equal(await page.locator('#diary-summary [data-item]').count(), 4);
-        assert.match(await page.locator('.diary-date').textContent(), new RegExp(String(Number(date.slice(-2)))));
-      }
-    });
-    await check('V13', '空日期与空月份', async () => {
-      await page.locator('#next-month').click();
-      await page.locator('[data-date="2026-11-02"]').click();
-      assert.equal(await page.locator('.empty-day').textContent(), '这一天暂无穿搭记录');
-      await page.locator('#next-month').click();
-      assert.equal(await page.locator('#calendar .has-record').count(), 0);
-      assert.match(await page.locator('#month-count').textContent(), /0/);
-    });
-    await check('V14', 'tab切换保留状态与滚动', async () => {
-      await tab('wardrobe'); await page.locator('[data-category=tops]').click();
-      await page.locator('#search').fill('针织');
-      await page.locator('#wardrobe').evaluate(e => e.scrollTop = 250);
-      const scroll = await page.locator('#wardrobe').evaluate(e => e.scrollTop);
-      await tab('diary');
-      assert.equal(await page.locator('#month-title').textContent(), '2026年12月');
-      await tab('wardrobe');
-      assert.equal(await page.locator('#search').inputValue(), '针织');
-      assert.equal(await page.locator('[data-category=tops]').getAttribute('aria-pressed'), 'true');
-      assert.equal(await page.locator('#wardrobe').evaluate(e => e.scrollTop), scroll);
-      assert.equal(requests.filter(r => r.url.endsWith('/data/demo-data.json')).length, 1);
-      await page.locator('#search').fill(''); await page.locator('[data-category=all]').click();
-    });
-    await check('V15', '演示身份及数据说明', async () => {
-      await tab('me');
-      assert.equal(await page.locator('#nickname').textContent(), data.demoProfile.nickname);
-      assert.deepEqual(await page.locator('#profile-counts strong').allTextContents(), ['24', '8', '12']);
-      await page.locator('#about summary').click();
-      assert.equal(await page.locator('#about').evaluate(e => e.open), true);
-      await page.locator('#about summary').click();
-      assert.equal(await page.locator('#about').evaluate(e => e.open), false);
-    });
-    await check('V16', '只读范围与控件', async () => {
-      assert.equal(await page.getByRole('button', { name: /新增|保存|上传|登录|退出|编辑|删除|记一笔/ }).count(), 0);
-      assert.equal(requests.every(r => r.method === 'GET'), true);
-    });
-    await check('V17', '375及430两尺寸布局', async () => {
-      for (const [width, height] of [[375, 812], [430, 932]]) {
-        await page.setViewportSize({ width, height });
-        for (const name of ['wardrobe', 'outfits', 'diary', 'me']) {
-          await tab(name);
-          await page.locator(`#${name}`).evaluate(e => e.scrollTop = 0);
-          assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-          assert.equal(await page.locator(`#${name}`).evaluate(e => e.scrollWidth <= e.clientWidth), true);
-          await screenshot(`${width}-${name}`);
-          await page.locator(`#${name}`).evaluate(e => e.scrollTop = e.scrollHeight);
-          assert.equal(await page.locator(`#${name}`).evaluate(e => Math.abs(e.scrollHeight - e.clientHeight - e.scrollTop) < 2), true);
-          assert.equal(await page.evaluate(() => document.querySelector('main').getBoundingClientRect().bottom <= document.querySelector('nav').getBoundingClientRect().top + 1), true);
-        }
-        await tab('wardrobe');
-        await page.locator('[data-clothing=CLO016]').click();
-        assert.equal(await page.locator('#preview').evaluate(e => e.getBoundingClientRect().right <= innerWidth), true);
-        await screenshot(`${width}-preview-long-name`);
-        await page.locator('#close-preview').click();
-        // 缩小可用高度检查搜索输入与导航的布局，另核对两种正式验收视口。
-        await page.setViewportSize({ width, height: 460 });
-        await page.locator('#search').focus();
-        assert.equal(await page.locator('#search').isVisible(), true);
-        assert.equal(await page.evaluate(() => document.querySelector('main').getBoundingClientRect().bottom <= document.querySelector('nav').getBoundingClientRect().top + 1), true);
-      }
-      await page.setViewportSize({ width: 375, height: 812 });
-    });
-    await check('V18', '本地25图与资源路径', async () => {
-      for (const file of [...sources, ...photos].map(s => s.file)) {
-        const response = await context.request.get(`${base}/${file}`);
-        assert.equal(response.status(), 200, file);
-        assert.equal(response.headers()['content-type'].startsWith('image/'), true);
-      }
-      assert.equal(requests.every(r => r.url.startsWith(`${base}/`)), true);
-      assert.equal(requests.some(r => r.url.includes('/prototype/assets/') || r.url.includes('/api/')), false);
-      assert.equal(responses.every(r => r.status === 200), true);
-      assert.deepEqual(errors, []);
-    });
-    await check('V19', '数据与图片失败及恢复', async () => {
-      const failPage = await context.newPage();
-      await failPage.route('**/data/demo-data.json', route => route.abort());
-      await failPage.goto(`${base}/prototype/`);
-      await failPage.getByText('载入演示数据失败').waitFor();
-      assert.equal(await failPage.locator('#clothes-grid button').count(), 0);
-      await failPage.screenshot({ path: path.join(evidence, 'data-load-error.png') });
-      await failPage.unroute('**/data/demo-data.json');
-      await failPage.getByRole('button', { name: '重新加载' }).click();
-      await failPage.locator('#clothes-grid button').first().waitFor();
-      assert.equal(await failPage.locator('#clothes-grid button').count(), 24);
-      await failPage.route('**/assets/clothes/clothing-001.jpg', route => route.abort());
-      await failPage.reload();
-      await failPage.locator('[data-clothing=CLO001] .image-error').waitFor();
-      assert.match(await failPage.locator('[data-clothing=CLO001]').textContent(), /粉色绞花针织/);
-      await failPage.screenshot({ path: path.join(evidence, 'image-load-error.png') });
-      await failPage.unroute('**/assets/clothes/clothing-001.jpg');
-      await failPage.reload();
-      await failPage.locator('[data-clothing=CLO001] img').evaluate(i => i.decode());
-      await failPage.close();
-    });
-    await check('V20', '刷新重置及源文件不变', async () => {
-      await page.reload(); await ready();
-      assert.equal(await page.locator('#search').inputValue(), '');
-      assert.equal(await page.locator('[data-tab=wardrobe]').getAttribute('aria-current'), 'page');
-      await tab('diary');
-      assert.equal(await page.locator('#calendar [aria-pressed=true]').getAttribute('data-date'), '2026-11-05');
-      assert.deepEqual(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length })), { local: 0, session: 0 });
-      assert.deepEqual(hashes(), before);
-      assert.deepEqual(errors, []);
-    });
-    for (const [width, height] of [[375, 812], [430, 932]]) {
-      await page.setViewportSize({ width, height });
-      await tab('diary');
-      await page.locator('#diary').evaluate(e => e.scrollTop = 0);
-      await screenshot(`${width}-diary-november`);
-      await tab('me');
-      if (!await page.locator('#about').evaluate(e => e.open)) await page.locator('#about summary').click();
-      await screenshot(`${width}-me-expanded`);
-      assert.equal(await page.locator('#me').evaluate(e => e.scrollWidth <= e.clientWidth), true);
-    }
-    await page.setViewportSize({ width: 375, height: 812 });
-    await tab('wardrobe');
-    await page.locator('#wardrobe').evaluate(e => e.scrollTop = 0);
-    await screenshot('final-wardrobe');
-  } finally {
-    fs.writeFileSync(path.join(evidence, 'acceptance-results.json'), JSON.stringify({ status: results.length === 20 ? 'passed' : 'incomplete', baseUrl: `${base}/prototype/`, browser: await browser.version(), results, consoleErrors: errors, requests, responses, sourceHashes: before }, null, 2));
-    await browser.close();
-  }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE),root=path.resolve(__dirname,'..'),out=path.join(root,'docs/evidence/P1-02');fs.mkdirSync(out,{recursive:true});
+const data=JSON.parse(fs.readFileSync(path.join(root,'data/demo-data.json'))),files=['data/demo-data.json','data/demo-summary.json','assets/source-manifest.json','assets/diary-photo-manifest.json',...data.clothes.map(c=>c.imagePath),...data.diaries.filter(d=>d.photoPath).map(d=>d.photoPath)];
+const hashes=()=>Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,f))).digest('hex')])),before=hashes(),results=[];
+const jpeg={name:'test.jpg',mimeType:'image/jpeg',buffer:fs.readFileSync(path.join(root,'assets/clothes/clothing-001.jpg'))},png={name:'test.png',mimeType:'image/png',buffer:Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jU1sAAAAASUVORK5CYII=','base64')};
+(async()=>{const b=await chromium.launch(),ctx=await b.newContext({viewport:{width:375,height:812}}),p=await ctx.newPage();let accept=true;const errors=[],requests=[],responses=[];
+p.on('dialog',d=>accept?d.accept():d.dismiss());p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text());});p.on('request',r=>requests.push([r.url(),r.method()]));p.on('response',r=>responses.push([r.url(),r.status()]));
+await p.addInitScript(()=>{window.urlEvents=[];const c=URL.createObjectURL.bind(URL),r=URL.revokeObjectURL.bind(URL);URL.createObjectURL=f=>{const u=c(f);window.urlEvents.push(['create',u]);return u};URL.revokeObjectURL=u=>{window.urlEvents.push(['revoke',u]);r(u)};});
+const ready=()=>p.locator('[data-clothing=CLO001]').waitFor(),tab=n=>p.locator(`[data-tab=${n}]`).click(),back=()=>p.locator('#view-back').click(),edit=()=>p.locator('[data-action=edit]').click(),save=()=>p.locator('#save-edit').click(),fill=(n,v)=>p.locator(`#entity-form [name=${n}]`).fill(v),pick=id=>p.locator(`[data-pick=${id}]`).click(),picker=()=>p.locator('[data-action=picker]').click(),ids=()=>p.locator('[data-selected]').evaluateAll(es=>es.map(e=>e.dataset.selected));
+const fresh=async()=>{accept=true;await p.goto('http://127.0.0.1:4173/prototype/');await ready();};
+const photo=async(f=jpeg)=>{await p.locator('#file-input').setInputFiles(f);await p.waitForFunction(()=>!document.querySelector('#save-edit').disabled);await p.locator('#draft-image img').evaluate(i=>i.decode());};
+const valid=async(name='新衣')=>{await photo();await fill('name',name);await fill('color','粉色');await p.locator('[name=categoryId]').selectOption('tops');await p.locator('[name=season]').selectOption('春秋');};
+const newC=async()=>{await p.locator('#new-clothing').click();await valid();await save();};
+const newO=async()=>{await tab('outfits');await p.locator('#new-outfit').click();await fill('name','新搭配');await fill('occasion','休闲');};
+const picks=async(a=['CLO001','CLO012'])=>{await picker();for(const x of a)await pick(x);await p.locator('#picker-confirm').click();};
+const shot=async(n)=>{await p.waitForFunction(()=>[...document.images].every(i=>i.complete));await p.evaluate(async()=>{await Promise.all(document.getAnimations().filter(a=>a.effect.getTiming().iterations!==Infinity).map(a=>a.finished));});await p.screenshot({path:path.join(out,n+'.png')});};
+const test=async(id,fn)=>{await fresh();await fn();results.push({id,status:'passed'});console.log(id+' passed');};
+try{
+await test('F01',async()=>{await p.locator('[data-clothing=CLO001]').click();assert.match(await p.locator('#subview').textContent(),/3 次/);await back();assert.equal(await p.locator('#clothes-grid button').count(),24);});
+await test('F02',async()=>{await newC();assert.equal(await p.locator('#subview').getAttribute('data-record-id'),'TMP-CLO-0001');await back();await tab('me');assert.equal(await p.locator('#profile-counts strong').first().textContent(),'25');await newO();await picker();assert.equal(await p.locator('[data-pick=TMP-CLO-0001]').count(),1);});
+await test('F03',async()=>{await p.locator('#new-clothing').click();await save();for(const n of ['name','color','categoryId','season','imagePath'])assert.notEqual(await p.locator(`[data-error=${n}]`).textContent(),'');});
+await test('F04',async()=>{await p.locator('#new-clothing').click();await valid('衣'.repeat(41));await fill('color','色'.repeat(21));await fill('note','记'.repeat(501));await save();for(const n of ['name','color','note'])assert.notEqual(await p.locator(`[data-error=${n}]`).textContent(),'');await fill('name','衣'.repeat(40));await fill('color','色'.repeat(20));await fill('note','记'.repeat(500));await save();assert.equal(await p.locator('#subview').getAttribute('data-record-id'),'TMP-CLO-0001');});
+await test('F05',async()=>{await p.locator('#new-clothing').click();await photo();const old=await p.locator('#draft-image img').getAttribute('src');for(const f of [{name:'a.txt',mimeType:'text/plain',buffer:Buffer.from('bad')},{name:'a.jpg',mimeType:'image/jpeg',buffer:Buffer.from('bad')},{name:'big.jpg',mimeType:'image/jpeg',buffer:Buffer.alloc(5242881)}]){await p.locator('#file-input').setInputFiles(f);await p.waitForFunction(()=>!document.querySelector('#save-edit').disabled);assert.notEqual(await p.locator('[data-error=imagePath]').textContent(),'');assert.equal(await p.locator('#draft-image img').getAttribute('src'),old);}await photo(png);});
+await test('F06',async()=>{await p.locator('[data-clothing=CLO001]').click();await edit();const old=await p.locator('#draft-image img').getAttribute('src');await p.locator('#file-input').setInputFiles([]);assert.equal(await p.locator('#draft-image img').getAttribute('src'),old);await photo();await photo();await back();assert.equal((await p.locator('#subview img').first().getAttribute('src')).startsWith('http:'),true);});
+await test('F07',async()=>{await p.locator('[data-clothing=CLO001]').click();await edit();await fill('name','<针织>');await fill('color','紫色');await save();assert.equal(await p.locator('.detail-title').textContent(),'<针织>');await edit();assert.equal(await p.locator('[name=color]').inputValue(),'紫色');});
+await test('F08',async()=>{await p.locator('[data-clothing=CLO001]').click();await edit();await photo();await save();await back();await tab('outfits');await p.locator('[data-outfit=OUT001]').click();assert.equal((await p.locator('#subview img').first().getAttribute('src')).startsWith('blob:'),true);await back();await tab('diary');await p.locator('#previous-month').click();await p.locator('[data-date="2026-10-16"]').click();assert.equal((await p.locator('#diary-summary .diary-clothes img').getAttribute('src')).startsWith('blob:'),true);assert.match(await p.locator('.diary-photo img').getAttribute('src'),/diary-004/);});
+await test('F09',async()=>{await p.locator('[data-clothing=CLO001]').click();await edit();await fill('name','未保存');accept=false;await back();assert.equal(await p.locator('[name=name]').inputValue(),'未保存');accept=true;await back();assert.equal(await p.locator('.detail-title').textContent(),data.clothes[0].name);});
+await test('F10',async()=>{await p.locator('[data-clothing=CLO001]').click();await edit();await fill('name','改');await fill('name',data.clothes[0].name);let count=0;const listener=()=>count++;p.on('dialog',listener);await back();assert.equal(count,0);p.off('dialog',listener);await edit();await fill('note','完成');await save();await back();assert.equal(await p.locator('#wardrobe').isVisible(),true);});
+await test('F11',async()=>{await p.locator('[data-clothing=CLO001]').click();await p.locator('[data-action=archive]').click();await back();assert.equal(await p.locator('#clothes-grid button').count(),23);await p.locator('#clothing-scope').selectOption('archived');assert.equal(await p.locator('#clothes-grid button').count(),1);await p.locator('[data-clothing=CLO001]').click();await p.locator('[data-action=archive]').click();assert.match(await p.locator('.status-label').textContent(),/在用/);});
+await test('F12',async()=>{await p.locator('[data-category=shoes]').click();await newC();await back();assert.equal(await p.locator('#clothes-grid button').count(),2);});
+await test('F13',async()=>{await tab('outfits');await p.locator('[data-outfit=OUT006]').click();assert.equal(await p.locator('#subview [data-clothing]').count(),6);await p.locator('#subview [data-clothing]').first().click();await back();assert.equal(await p.locator('#subview').getAttribute('data-record-id'),'OUT006');});
+await test('F14',async()=>{await newO();await picks();await save();assert.equal(await p.locator('#subview').getAttribute('data-record-id'),'TMP-OUT-0001');await edit();assert.deepEqual(await ids(),['CLO001','CLO012']);});
+await test('F15',async()=>{await tab('outfits');await p.locator('#new-outfit').click();await save();for(const n of ['name','occasion','clothingIds'])assert.notEqual(await p.locator(`[data-error=${n}]`).textContent(),'');await fill('name','名'.repeat(41));await fill('occasion','场'.repeat(21));await fill('note','记'.repeat(501));await save();for(const n of ['name','occasion','note'])assert.notEqual(await p.locator(`[data-error=${n}]`).textContent(),'');});
+await test('F16',async()=>{await newO();await picker();for(const id of ['CLO001','CLO001','CLO012','CLO001'])await pick(id);await p.locator('#picker-confirm').click();assert.deepEqual(await ids(),['CLO012','CLO001']);});
+await test('F17',async()=>{await newO();await picker();await pick('CLO001');await p.locator('#picker-category').selectOption('shoes');await p.locator('#picker-search').fill('不存在');await p.locator('#picker-archived').check();assert.equal(await p.locator('[data-unpick=CLO001]').count(),1);assert.match(await p.locator('#picker-grid').textContent(),/没有匹配/);await p.locator('#picker-reset').click();assert.equal(await p.locator('[data-pick]').count(),24);assert.equal(await p.locator('[data-unpick=CLO001]').count(),1);assert.equal(await p.locator('#picker-archived').isChecked(),true);await p.locator('#picker-confirm').click();assert.deepEqual(await ids(),['CLO001']);});
+await test('F18',async()=>{await newO();await picks(['CLO001']);for(const m of ['cancel','escape','backdrop']){await picker();await pick('CLO012');if(m==='cancel')await p.locator('#picker-cancel').click();else if(m==='escape')await p.keyboard.press('Escape');else await p.mouse.click(2,2);assert.deepEqual(await ids(),['CLO001']);}await back();assert.equal(await p.locator('.outfit-row').count(),8);});
+await test('F19',async()=>{await newO();await picks(['CLO001','CLO012','CLO018']);assert.equal(await p.locator('[data-move="0"][data-delta="-1"]').isDisabled(),true);await p.locator('[data-move="1"][data-delta="-1"]').click();await p.locator('[data-remove=CLO018]').click();await save();await edit();assert.deepEqual(await ids(),['CLO012','CLO001']);});
+await test('F20',async()=>{await newO();await picker();for(const c of data.clothes.slice(0,20))await pick(c.id);await pick('CLO021');assert.match(await p.locator('#picker-message').textContent(),/20/);assert.equal(await p.locator('[data-unpick]').count(),20);await p.locator('[data-unpick=CLO001]').click();await pick('CLO021');await p.locator('#picker-confirm').click();assert.equal((await ids()).length,20);await back();await p.locator('#new-outfit').click();await picker();await p.locator('#picker-confirm').click();await save();assert.notEqual(await p.locator('[data-error=clothingIds]').textContent(),'');});
+await test('F21',async()=>{await tab('outfits');await p.locator('[data-outfit=OUT001]').click();await edit();await p.locator('[data-remove=CLO001]').click();await save();await back();await tab('diary');await p.locator('#previous-month').click();for(const date of ['2026-10-07','2026-10-24']){await p.locator(`[data-date="${date}"]`).click();assert.deepEqual(await p.locator('#diary-summary [data-item]').evaluateAll(es=>es.map(e=>e.dataset.item)),data.diaries.find(d=>d.wearDate===date).clothingIds);assert.equal(await p.locator('.diary-note').textContent(),data.diaries.find(d=>d.wearDate===date).note);}});
+await test('F22',async()=>{await tab('outfits');await p.locator('[data-occasion="出游"]').click();await p.locator('[data-outfit=OUT007]').click();await edit();await fill('occasion','新场景');await save();await back();assert.equal(await p.locator('.outfit-row').count(),0);await p.locator('[data-occasion=all]').click();await p.locator('[data-occasion="新场景"]').click();assert.equal(await p.locator('.outfit-row').count(),1);});
+await test('F23',async()=>{await tab('outfits');await p.locator('#outfit-scope').selectOption('archived');assert.match(await p.locator('#empty-outfits').textContent(),/暂无已归档/);await p.locator('#outfit-scope').selectOption('active');await p.locator('[data-outfit=OUT001]').click();await p.locator('[data-action=archive]').click();await back();assert.equal(await p.locator('.outfit-row').count(),7);await p.locator('[data-occasion="校园"]').click();assert.equal(await p.locator('.outfit-row').count(),2);await p.locator('#outfit-scope').selectOption('archived');assert.equal(await p.locator('.outfit-row').count(),1);await p.locator('[data-outfit=OUT001]').click();await p.locator('[data-action=archive]').click();await back();assert.equal(await p.locator('.outfit-row').count(),0);assert.match(await p.locator('#empty-outfits').textContent(),/清除筛选/);await p.locator('#reset-occasions').click();assert.match(await p.locator('#empty-outfits').textContent(),/暂无已归档/);assert.equal(await p.locator('#outfit-scope').inputValue(),'archived');await tab('me');assert.deepEqual(await p.locator('#profile-counts strong').allTextContents(),['24','8','12']);});
+await test('F24',async()=>{await p.locator('[data-clothing=CLO001]').click();await p.locator('[data-action=archive]').click();await back();await tab('outfits');await p.locator('[data-outfit=OUT001]').click();await edit();await picker();assert.match(await p.locator('[data-unpick=CLO001]').textContent(),/已归档/);await p.locator('#picker-archived').check();assert.equal(await p.locator('[data-pick=CLO001]').count(),1);});
+await test('F25',async()=>{for(let n=1;n<=2;n++){await newC();assert.equal(await p.locator('#subview').getAttribute('data-record-id'),`TMP-CLO-000${n}`);await back();}for(let n=1;n<=2;n++){await newO();await picks();await save();assert.equal(await p.locator('#subview').getAttribute('data-record-id'),`TMP-OUT-000${n}`);await back();}});
+await test('F26',async()=>{await p.locator('#new-clothing').click();await photo();const a=await p.locator('#draft-image img').getAttribute('src');await photo();const c=await p.locator('#draft-image img').getAttribute('src');assert.equal(await p.evaluate(u=>window.urlEvents.some(e=>e[0]==='revoke'&&e[1]===u),a),true);await back();assert.equal(await p.evaluate(u=>window.urlEvents.some(e=>e[0]==='revoke'&&e[1]===u),c),true);await newC();const old=await p.locator('#subview img').first().getAttribute('src');await edit();await photo();await save();assert.equal(await p.evaluate(u=>window.urlEvents.some(e=>e[0]==='revoke'&&e[1]===u),old),true);});
+await test('F27',async()=>{await newC();await back();await tab('diary');assert.match(await p.locator('#month-count').textContent(),/3/);await p.locator('#previous-month').click();assert.match(await p.locator('#month-count').textContent(),/9/);await tab('me');assert.equal(await p.locator('#profile-counts strong').first().textContent(),'25');await tab('diary');assert.equal(await p.locator('#month-title').textContent(),'2026年10月');});
+await test('F28',async()=>{
+for(const [width,height]of[[375,812],[430,932]]){
+  await p.setViewportSize({width,height});
+  for(const name of ['wardrobe','outfits','diary','me']){await tab(name);await shot(`${width}-${name}`);}
+  await tab('wardrobe');await p.locator('[data-clothing=CLO016]').click();await shot(`${width}-clothing-detail`);
+  await edit();await shot(`${width}-clothing-editor`);
+  await fill('name','韩系日常针织长名称'.repeat(5));await save();assert.notEqual(await p.locator('[data-error=name]').textContent(),'');await shot(`${width}-field-error`);
+  await p.setViewportSize({width,height:460});
+  for(const field of ['name','color','note']){await fill(field,'较矮视口输入检查');await p.locator(`[name=${field}]`).scrollIntoViewIfNeeded();assert.equal(await p.locator('#save-edit').isVisible(),true);}
+  await shot(`${width}-keyboard-height`);await p.setViewportSize({width,height});await back();await back();
+  await newO();await picker();for(const c of data.clothes.slice(0,20))await pick(c.id);await shot(`${width}-picker`);
+  await p.locator('#preview-body').evaluate(e=>e.scrollTop=0);await shot(`${width}-picker-top`);await p.locator('#picker-confirm').click();await shot(`${width}-outfit-editor`);
+  await p.locator('#subview').evaluate(e=>e.scrollTop=e.scrollHeight);await shot(`${width}-outfit-editor-bottom`);
+  assert.equal(await p.evaluate(()=>document.querySelector('main').getBoundingClientRect().bottom<=document.querySelector('#editor-actions').getBoundingClientRect().top+1),true);
+  assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  await p.setViewportSize({width,height:460});for(const field of ['name','occasion','note']){await fill(field,'较矮视口输入检查');await p.locator(`[name=${field}]`).scrollIntoViewIfNeeded();assert.equal(await p.locator('#save-edit').isVisible(),true);}
+  await back();await p.setViewportSize({width,height});await p.locator('[data-outfit=OUT006]').click();await shot(`${width}-outfit-detail`);
+  await p.locator('#subview').evaluate(e=>e.scrollTop=e.scrollHeight);await shot(`${width}-outfit-detail-bottom`);await back();
+}});
+await test('F29',async()=>{await newC();await edit();await fill('name','未保存');accept=false;await Promise.allSettled([p.reload({timeout:1200})]);assert.equal(await p.locator('[name=name]').inputValue(),'未保存');accept=true;await p.reload();await ready();assert.equal(await p.locator('[data-clothing^="TMP-"]').count(),0);await tab('me');assert.deepEqual(await p.locator('#profile-counts strong').allTextContents(),['24','8','12']);assert.deepEqual(await p.evaluate(()=>[localStorage.length,sessionStorage.length]),[0,0]);assert.deepEqual(hashes(),before);});
+await test('F30',async()=>{assert.equal(requests.every(r=>r[1]==='GET'&&!r[0].includes('/api/')),true);assert.equal(await p.getByRole('button',{name:/登录|退出|记一笔|记录穿着/}).count(),0);assert.deepEqual(errors,[]);});
+for(let n=1;n<=20;n++)await test('R'+String(n).padStart(2,'0'),async()=>{
+if(n===1)for(const name of['outfits','diary','me','wardrobe']){await tab(name);assert.equal(await p.locator('.page:visible').count(),1);}
+if(n===2)for(const c of data.categories){await p.locator(`[data-category=${c.id}]`).click();assert.equal(await p.locator('#clothes-grid button').count(),data.clothes.filter(x=>x.categoryId===c.id).length);}
+if(n===3){await p.locator('[data-category=bottoms]').click();await p.locator('#search').fill('牛仔');assert.equal(await p.locator('#clothes-grid button').count(),3);await p.locator('#clear-search').click();assert.equal(await p.locator('#clothes-grid button').count(),6);}
+if(n===4){await p.locator('#search').fill('不存在');await p.locator('#reset-filters').click();assert.equal(await p.locator('#clothes-grid button').count(),24);}
+if(n===5){await p.locator('[data-clothing=CLO015]').click();assert.equal(await p.locator('#subview img').first().evaluate(i=>getComputedStyle(i).objectFit),'contain');await back();}
+if(n===6){await tab('outfits');for(const[s,c]of[['校园',3],['休闲',4],['出游',1]]){await p.locator(`[data-occasion="${s}"]`).click();assert.equal(await p.locator('.outfit-row').count(),c);}}
+if(n===7){await newO();await picker();await p.keyboard.press('Escape');assert.equal(await p.locator('#preview').isVisible(),false);}
+if(n>=8&&n<=13){await tab('diary');if(n===8)assert.equal(await p.locator('[data-date][aria-pressed=true]').getAttribute('data-date'),'2026-11-05');if(n!==8)await p.locator('#previous-month').click();if(n===9)assert.equal(await p.locator('.has-record').count(),9);if(n===10)assert.equal(await p.locator('#calendar>*').count(),42);if(n===11){await p.locator('[data-date="2026-10-16"]').click();assert.equal(await p.locator('.diary-photo').count(),1);}if(n===12)for(const day of['07','24']){await p.locator(`[data-date="2026-10-${day}"]`).click();assert.equal(await p.locator('#diary-summary [data-item]').count(),4);}if(n===13){await p.locator('#next-month').click();await p.locator('#next-month').click();assert.equal(await p.locator('.has-record').count(),0);}}
+if(n===14){await p.locator('#search').fill('针织');await tab('diary');await tab('wardrobe');assert.equal(await p.locator('#search').inputValue(),'针织');}
+if(n===15){await tab('me');await p.locator('#about summary').click();assert.match(await p.locator('#about').textContent(),/刷新/);}
+if(n===16)assert.equal(await p.locator('#new-clothing').isVisible(),true);
+if(n===17){await p.setViewportSize({width:430,height:932});assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);}
+if(n===18)for(const file of [...data.clothes.map(c=>c.imagePath),...data.diaries.filter(d=>d.photoPath).map(d=>d.photoPath)])assert.equal((await ctx.request.get('http://127.0.0.1:4173/'+file)).status(),200);
+if(n===19){const q=await ctx.newPage();await q.route('**/data/demo-data.json',r=>r.abort());await q.goto('http://127.0.0.1:4173/prototype/');await q.getByText('载入演示数据失败').waitFor();await q.unroute('**/data/demo-data.json');await q.getByText('重新加载',{exact:true}).click();await q.locator('[data-clothing=CLO001]').waitFor();await q.route('**/clothing-001.jpg',r=>r.abort());await q.reload();await q.locator('[data-clothing=CLO001] .image-error').waitFor();await q.close();}
+if(n===20){assert.deepEqual(hashes(),before);assert.deepEqual(await p.evaluate(()=>[localStorage.length,sessionStorage.length]),[0,0]);assert.deepEqual(errors,[]);assert.equal(responses.every(r=>r[1]===200||r[1]===304),true);assert.equal(requests.every(r=>r[0].startsWith('http://127.0.0.1:4173/')||r[0].startsWith('blob:http://127.0.0.1:4173/')),true);}
+});
+}finally{fs.writeFileSync(path.join(out,'acceptance-results.json'),JSON.stringify({status:results.length===50?'passed':'incomplete',executedAt:new Date().toISOString(),baseUrl:'http://127.0.0.1:4173/prototype/',results,browser:b.version(),consoleErrors:errors,requests,responses,sourceHashes:before},null,2));await b.close();}
+})().catch(e=>{console.error(e);process.exitCode=1});

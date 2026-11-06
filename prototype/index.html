@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="app">
-    <header class="app-header"><h1 id="page-title">衣橱</h1><span class="demo-label"><i></i>演示原型 · 示例数据</span></header>
+    <header class="app-header"><button id="view-back" class="icon-button" aria-label="返回" hidden>‹</button><h1 id="page-title">衣橱</h1><span class="demo-label"><i></i>演示原型 · 示例数据</span></header>
     <main>
       <div id="load-state" class="load-state" role="status"><span class="loader"></span><p>正在打开衣橱…</p></div>
       <section id="wardrobe" class="page" aria-label="衣橱" hidden>
@@ -27,6 +27,7 @@
         <div class="page-intro"><h2>我的搭配集</h2><span id="outfits-total" class="muted"></span></div>
         <div id="occasions" class="filter-bar" aria-label="搭配场景"></div>
         <div id="outfit-list" class="outfit-list"></div>
+        <div id="empty-outfits" class="empty-state" hidden><p></p><button id="reset-occasions" class="primary-button">清除筛选</button></div>
       </section>
       <section id="diary" class="page" aria-label="日记" hidden>
         <div class="month-line"><button id="previous-month" class="icon-button" aria-label="上月">‹</button><div><h2 id="month-title"></h2><p id="month-count" class="muted" aria-live="polite"></p></div><button id="next-month" class="icon-button" aria-label="下月">›</button></div>
@@ -38,10 +39,12 @@
       <section id="me" class="page" aria-label="我的" hidden>
         <div class="profile"><div id="avatar" class="avatar"></div><span class="eyebrow">演示用户</span><h2 id="nickname"></h2><p class="muted">把日常穿搭，慢慢记下来。</p></div>
         <div id="profile-counts" class="profile-counts"></div>
-        <details id="about" class="about"><summary>数据说明<span aria-hidden="true">⌄</span></summary><div><p>当前为只读演示原型，资料与记录暂不可修改，浏览状态不会永久保存。</p><p>衣物、搭配和日记来自虚构示例。日记附图为同款针织的穿着参考，不表示真实用户自拍。</p><p>图片来源：CHERRYKOKO、Pexels。品牌商品图按本地实训参考登记，未获单独再分发授权。</p></div></details>
+        <details id="about" class="about"><summary>数据说明<span aria-hidden="true">⌄</span></summary><div><p>当前可在演示内维护衣物和搭配，刷新恢复原始样例。日记仍只供浏览。</p><p>衣物、搭配和日记来自虚构示例。日记附图为同款针织的穿着参考，不表示真实用户自拍。</p><p>图片来源：CHERRYKOKO、Pexels。品牌商品图按本地实训参考登记，未获单独再分发授权。</p></div></details>
         <div class="quiet-note"><span class="small-flower" aria-hidden="true">✳</span><p>穿过的日子，<br>也值得被好好收藏。</p></div>
       </section>
+      <section id="subview" class="page" hidden></section>
     </main>
+    <footer id="editor-actions" hidden><button id="cancel-edit">取消</button><button id="save-edit" class="primary-button">保存</button></footer>
     <nav class="bottom-nav" aria-label="底部导航">
       <button data-tab="wardrobe" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7V5a2 2 0 1 0-2-2M12 7 3 14v3h18v-3L12 7Z"/></svg><span>衣橱</span></button>
       <button data-tab="outfits"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3-5 4 3 4 2-1v11h8V10l2 1 3-4-5-4c-1 3-7 3-8 0Z"/></svg><span>搭配</span></button>
