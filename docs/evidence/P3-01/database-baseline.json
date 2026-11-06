@@ -1,0 +1,37 @@
+{
+  "observedAt": "2026-11-06T18:17:40.654Z",
+  "identity": {
+    "version": "8.0.28",
+    "db": "wardrobe_demo",
+    "account": "root@localhost",
+    "hostname": "DESKTOP-D97LI2N",
+    "port": 3306
+  },
+  "counts": {
+    "users": 1,
+    "categories": 7,
+    "clothes": 24,
+    "outfits": 8,
+    "outfit_items": 37,
+    "diaries": 12,
+    "diary_items": 53
+  },
+  "rowHashes": {
+    "users": "1eb99e076f62c678920d2d4a1b7ceea299d9a0383335b3414ef9bf76f2d49ac1",
+    "categories": "43132164ecf32c45688dffe8e0d734b8c9c2514a93768705a6fe585411dc8f3d",
+    "clothes": "2a3c6cfa50c7ceedb081e4caddec8a63504cbeebdde7b8046e6071fbf5a1a5cb",
+    "outfits": "ac0aee4ce5de6e7fcb2c0f1735ab42b013b428170af53b0e2661c1446186e71b",
+    "outfit_items": "7e1158b76f44d78e46d2fef510cd49ccad98ecaef0a20893bb93fb4f0156aa52",
+    "diaries": "66ff6301ce3b5988e041487f688451ade219797594650e5c2ca8b681ac908952",
+    "diary_items": "25653c60d733eff2b968022c5d8aefd467409b233527018a30febe3813294cd9"
+  },
+  "structure": {
+    "users": "68bc73d30e5a35dfb88554a6fb948053d798725c80aea38b7ede78816ed4d7c6",
+    "categories": "dc1582a65c9bc56898b3ede0e915e5aadbda800b8215f8e16afe119c1b284215",
+    "clothes": "24d8839568a230eebde76b3294ae1f083631742b04b369437cc1f4edc39312cf",
+    "outfits": "cbf0bb4fb41dd7513ef9b74a74ff0dfd49455064d9addd192676e5e11232c7e5",
+    "outfit_items": "d14e87532cd8401224e826d12dfaa8d386b65af08924d84aeb291475567ad7d0",
+    "diaries": "e9cf8c91fdb8ca237ae9d3de749df7f172dc19db8cc56c078bfb9a0f123853aa",
+    "diary_items": "67a47ce8881cb8c50810ed5c4ad5dcd44c280ea626b1ebe0282c414976870c11"
+  }
+}

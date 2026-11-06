@@ -1,0 +1,7 @@
+{
+  "observedAt": "2026-11-06T19:09:50.078Z",
+  "port": 3000,
+  "fetchError": "ECONNREFUSED",
+  "state": "not-listening",
+  "reason": "Observed backend had already stopped before group B; no unrelated process terminated"
+}

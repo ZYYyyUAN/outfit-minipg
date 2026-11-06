@@ -1,0 +1,11 @@
+<view class="page">
+  <view class="eyebrow">个人衣橱与穿搭日记</view>
+  <view class="title">我的</view>
+  <view class="description">账号功能待接入，当前未登录。</view>
+  <view class="section">
+    <view class="section-title">本地连接</view>
+    <view class="hint">本阶段用于检查小程序与本机服务是否连通。</view>
+    <view class="status {{state}}"><view class="status-title">{{statusText}}</view><view class="hint">{{detail}}</view></view>
+    <button class="button" bindtap="checkConnection" disabled="{{state === 'checking'}}">{{state === 'checking' ? '正在检查…' : '检查本地连接'}}</button>
+  </view>
+</view>

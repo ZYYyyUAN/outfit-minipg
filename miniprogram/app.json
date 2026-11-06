@@ -1,0 +1,14 @@
+{
+  "pages": ["pages/wardrobe/index", "pages/outfits/index", "pages/diary/index", "pages/me/index"],
+  "window": { "navigationBarTitleText": "个人衣橱与穿搭日记", "navigationBarBackgroundColor": "#FAF8F5", "navigationBarTextStyle": "black", "backgroundColor": "#FAF8F5" },
+  "tabBar": {
+    "color": "#6D6670", "selectedColor": "#A34F69", "backgroundColor": "#FFFFFF", "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/wardrobe/index", "text": "衣橱", "iconPath": "assets/tab-wardrobe.png", "selectedIconPath": "assets/tab-wardrobe-active.png" },
+      { "pagePath": "pages/outfits/index", "text": "搭配", "iconPath": "assets/tab-outfits.png", "selectedIconPath": "assets/tab-outfits-active.png" },
+      { "pagePath": "pages/diary/index", "text": "日记", "iconPath": "assets/tab-diary.png", "selectedIconPath": "assets/tab-diary-active.png" },
+      { "pagePath": "pages/me/index", "text": "我的", "iconPath": "assets/tab-me.png", "selectedIconPath": "assets/tab-me-active.png" }
+    ]
+  },
+  "style": "v2"
+}

@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-11-06T19:12:20.975Z",
+  "group": "B",
+  "operator": "user manual operation",
+  "image": "manual/375-health-stopped.png",
+  "inspected": true,
+  "backendOffConfirmed": "manual-b-backend-off.json",
+  "result": {
+    "failureTextVisible": true,
+    "actionRestored": true,
+    "messageWraps": true,
+    "noTabObstruction": true
+  },
+  "restart": {
+    "sessionId": 91579,
+    "database": "wardrobe_demo",
+    "serverVersion": "8.0.28",
+    "url": "http://127.0.0.1:3000/api/health",
+    "events": [
+      "database-connected",
+      "http-listening"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+
+> personal-wardrobe-server@0.1.0 test
+> node --env-file-if-exists=.env --test test/foundation.test.mjs
+
+✔ config defaults and paths are independent of caller cwd (1.2322ms)
+✔ missing config PUBLIC_BASE_URL (0.3552ms)
+✔ missing config DB_HOST (0.1064ms)
+✔ missing config DB_PORT (0.1214ms)
+✔ missing config DB_NAME (0.1214ms)
+✔ missing config DB_USER (0.0843ms)
+✔ missing config DB_PASSWORD (0.0918ms)
+✔ missing config UPLOAD_ROOT (0.0905ms)
+✔ reject invalid PORT variant 0 (0.2717ms)
+✔ reject invalid PORT variant 65536 (0.1974ms)
+✔ reject invalid PORT variant  (0.182ms)
+✔ reject invalid DB_PORT variant oops (0.0879ms)
+✔ reject invalid DB_HOST variant localhost (0.0868ms)
+✔ reject invalid DB_NAME variant other_database (0.0794ms)
+✔ reject invalid PUBLIC_BASE_URL variant invalid (0.1046ms)
+✔ reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3000/api (0.1099ms)
+✔ reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3001 (0.0906ms)
+✔ reject invalid PUBLIC_BASE_URL variant http://redacted@127.0.0.1:3000 (0.0961ms)
+✔ reject invalid UPLOAD_ROOT variant ../assets (0.0921ms)
+✔ private values are untrimmed and never included in safe errors (0.8888ms)
+✔ Node native env file keeps process environment precedence from another cwd (79.8609ms)
+✔ health is anonymous and independent from DB; unsupported paths return JSON 404 (68.7043ms)
+✔ unknown request error boundary never serializes SQL, secrets or stack (0.188ms)
+✔ missing configuration exits before binding even from another cwd (299.684ms)
+✔ real refused DB connection exits and does not leave a listener (261.0553ms)
+✔ occupied HTTP port exits, releases pool, and preserves the occupying fixture (341.2455ms)
+✔ page request has one api prefix and a disabled checking state (0.8739ms)
+✔ page rejects protocol variant {"statusCode":500,"data":{"data":{"status":"ok"}}} (0.4847ms)
+✔ page rejects protocol variant {"statusCode":200,"data":"<html>wrong service</html>"} (0.4772ms)
+✔ page rejects protocol variant {"statusCode":200,"data":{"data":{"status":"wrong"}}} (0.4542ms)
+✔ page network failure restores action: request:fail timeout (0.5111ms)
+✔ page network failure restores action: request:fail connection refused (0.469ms)
+✔ page judges real HTTP fixture responses rather than callback success alone (10.5825ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1359.004

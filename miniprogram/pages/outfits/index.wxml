@@ -1,0 +1,7 @@
+<view class="page">
+  <view class="eyebrow">个人衣橱与穿搭日记</view>
+  <view class="title">搭配</view>
+  <view class="description">搭配列表与组合编辑将在搭配模块接入。</view>
+  <view class="label">功能待开发</view>
+  <view class="section"><view class="section-title">留住喜欢的组合</view><view class="hint">这里将用于选择衣物、调整顺序，保存自己的搭配。</view></view>
+</view>

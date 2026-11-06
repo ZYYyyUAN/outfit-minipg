@@ -1,0 +1,32 @@
+{
+  "observedAt": "2026-11-06T19:09:50.034Z",
+  "group": "A",
+  "operator": "user manual operation",
+  "reviewer": "assistant inspected all six images",
+  "viewportReportedByUser": {
+    "width": 375,
+    "height": 812
+  },
+  "screenshots": [
+    "375-wardrobe.png",
+    "375-outfits.png",
+    "375-diary.png",
+    "375-me.png",
+    "375-health-success.png",
+    "compile-info.png"
+  ],
+  "observations": {
+    "fourTabs": true,
+    "explicitUnimplementedAndLoggedOut": true,
+    "successVisible": true,
+    "buttonEnabledAfterSuccess": true,
+    "noVisibleOverflowOrTabObstruction": true,
+    "networkListStatus": 200
+  },
+  "limitations": [
+    "Raster screenshots are simulator captures at display scale, not literal 375x812 bitmap dimensions",
+    "compile-info.png is a Network list, not compile/base-library metadata",
+    "Full request URL, method and response-body images remain pending; supplement after restart"
+  ],
+  "backendCurrentlyNotListeningOn3000": true
+}

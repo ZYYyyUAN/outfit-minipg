@@ -1,0 +1,7 @@
+<view class="page">
+  <view class="eyebrow">个人衣橱与穿搭日记</view>
+  <view class="title">日记</view>
+  <view class="description">穿搭日历与日记维护将在日记模块接入。</view>
+  <view class="label">功能待开发</view>
+  <view class="section"><view class="section-title">记下今天的穿着</view><view class="hint">这里将用于查看日历、补记穿搭，保留衣物与当日心情。</view></view>
+</view>

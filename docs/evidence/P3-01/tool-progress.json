@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-11-06T18:52:54.157Z",
+  "toolVersion": "2.02.2609250 Stable",
+  "library": "3.18.0",
+  "actualProjectImported": true,
+  "actualNativeWardrobeVisible": true,
+  "sourceRoot": "miniprogram",
+  "appidConfiguredLocally": true,
+  "appidValueNotPublished": true,
+  "legacyTouristPlaceholderRejectedByNewTool": true,
+  "inputIssue": "Computer-use clicks and keys did not change this elevated-or-unresponsive tool window; user asked to reopen normally, cause not established",
+  "cliAttempt": {
+    "command": "open --project <this project>",
+    "result": "service port disabled; CLI process returned 0 despite error text",
+    "servicePortNotEnabledByAgent": true
+  },
+  "pending": [
+    "all four tabs",
+    "375/430 width",
+    "health request in tool",
+    "stop/restart/retry",
+    "recompile/reopen"
+  ]
+}

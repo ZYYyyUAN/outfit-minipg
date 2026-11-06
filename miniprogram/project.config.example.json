@@ -1,0 +1,8 @@
+{
+  "description": "P3-01 native mini program foundation",
+  "projectname": "personal-wardrobe",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "./",
+  "appid": "<configure-this-project-locally>",
+  "setting": { "es6": true, "minified": true }
+}

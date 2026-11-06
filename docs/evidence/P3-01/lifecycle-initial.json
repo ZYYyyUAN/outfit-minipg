@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-11-06T18:28:55.478Z",
+  "firstSession": 27393,
+  "action": "physical Ctrl+C sent through terminal tool",
+  "nodeOutput": {
+    "event": "closed"
+  },
+  "outerPtyExitCode": 1,
+  "port3000NotListeningBeforeRestart": true,
+  "restartedSession": 67244,
+  "restartEvents": [
+    {
+      "event": "database-connected",
+      "database": "wardrobe_demo",
+      "version": "8.0.28"
+    },
+    {
+      "event": "http-listening",
+      "url": "http://127.0.0.1:3000/api/health"
+    }
+  ]
+}

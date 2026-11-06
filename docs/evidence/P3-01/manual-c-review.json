@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-11-06T19:17:58.602Z",
+  "group": "C",
+  "operator": "user manual operation",
+  "userConfirmation": "C完成，懒得截图记录了，无异常",
+  "result": {
+    "recoverySuccessful": true,
+    "viewportReportedByUser": {
+      "width": 430,
+      "height": 932
+    },
+    "fourTabsConfirmedByUser": true,
+    "recompileAndRecheckConfirmedByUser": true,
+    "noUnexpectedProjectErrorsReported": true
+  },
+  "imagesActuallyInspected": [
+    "manual/health-recovered.png"
+  ],
+  "evidenceAmendment": "User explicitly waived remaining C screenshots, including 430 pages/recompile/Network detail/Console. C acceptance rests on user confirmation, not independent image verification.",
+  "notIndependentlyInspected": [
+    "430 layouts",
+    "recompile screenshot",
+    "full Network request/response detail",
+    "Console screenshot"
+  ],
+  "servicePortRemainsClosed": true
+}

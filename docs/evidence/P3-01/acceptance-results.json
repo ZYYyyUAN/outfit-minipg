@@ -1,0 +1,269 @@
+{
+  "generatedAt": "2026-11-06T19:19:25.789Z",
+  "state": "local-passed-publication-pending",
+  "localPassed": 20,
+  "total": 21,
+  "implementationHashes": {
+    "server/.env.example": "f6c3de3bc1c606519509c8b18e6441afb0a7b4831291b9501103929a724d18c6",
+    "server/package-lock.json": "d4ce06e15c0954c5f3e3f322d2297196ddb15e639c611efe8659acd8015416ef",
+    "server/package.json": "b4927157fdf80dcc69668b096b53c78f4b24baa8ca0f49622f2c01f790bd7a7b",
+    "server/scripts/verify-foundation.mjs": "d966ac053926faf2f76f8e54ee51104d83cfe6d7c384a0cc649954151eb00251",
+    "server/src/app.js": "2abee250aac7e28dc78540709b2ec015c530b26c1ac2dfcdfe4cb62d0db2b54c",
+    "server/src/config.js": "a4ed05c3ec958bc2021a609b0f49c3aff0743edef0533c106f2337ec79af5600",
+    "server/src/db.js": "b196e3f497f04044349e91992e1305c3313bd807e0022e88ecdc864f0444f469",
+    "server/src/index.js": "31fd817ca08b9d061fe397b2ad492f27a0e7c532ebb9691e3c0e1dd57978f58c",
+    "server/test/foundation.test.mjs": "fdd0154a630de266f1d1aca2988ad3624657cf1314d87b48bf7d581016d1c11d",
+    "miniprogram/app.js": "1ab645c73bcea61604f9cc4805a752ab9ba8fb66813d8c57cad34328c0ce4109",
+    "miniprogram/app.json": "5196fc086d8c2dbec98ee72e3d9ef3c72eb293d465fea86ea89a7a131b339f7f",
+    "miniprogram/app.wxss": "781e7b687f8c287c3e9c8017c7af8b78fdd2850402a5ae2ccb2f11df92ba3446",
+    "miniprogram/assets/tab-diary-active.png": "8b8f23055c92f0644d5ba69149dfe56c08eac1d07bb03ec88c01377c43268e05",
+    "miniprogram/assets/tab-diary.png": "cf3cb260b4654f8aa25d545b35b4b967d9cecb3c68bd80e07343a7337b87ff39",
+    "miniprogram/assets/tab-me-active.png": "684c7260f66dfc9c7a895c9e9b8910fd5bda1693d5fd1b68c58ccd8f8aa957ed",
+    "miniprogram/assets/tab-me.png": "4189be6766b6e3b66d8567e7e106ec65a9df7d1d9ed77c6599dfa42752a08931",
+    "miniprogram/assets/tab-outfits-active.png": "a448df4045f31896e619f85aac713fbf1cc97f53abcf81d02eccfb8a6a9063a3",
+    "miniprogram/assets/tab-outfits.png": "c4731711bc4ede80d3cc1c07085f855d908c5ae8abb2267f1e12f6859500deed",
+    "miniprogram/assets/tab-wardrobe-active.png": "7a6f216badb9a798ce772cecb5e79a5b438b304d146e4e904700bbec0bdac0b7",
+    "miniprogram/assets/tab-wardrobe.png": "abf460c3c03048a5d5b00db5826e6b159edea9f460c4d9764106d6afa2191615",
+    "miniprogram/config.js": "f5daec78b68f3a80478d53aac7b7f012e99f24f268cce01ca8dd0d6d9bc461c9",
+    "miniprogram/pages/diary/index.js": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5",
+    "miniprogram/pages/diary/index.json": "c313b918dbd2ba0b068a92809676722d8d1b5142c6606d614a60a8f8002e4384",
+    "miniprogram/pages/diary/index.wxml": "ea88c365b6d89d883055c8ec5b9bb1faf5e9d10537979ab82a6c08a7fcc09abe",
+    "miniprogram/pages/diary/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/me/index.js": "8559ff9c15696173638ee9f6b9e462d92e572727b183314087c0908311f4eaec",
+    "miniprogram/pages/me/index.json": "a465281f644c1694ebbe3d38aade68e78a16b5a63e7a3e11c28cda4b7103b543",
+    "miniprogram/pages/me/index.wxml": "b801024d4204daa5cdcc069687d0a713f262b3fc70585ea132dbf19e9b2715a3",
+    "miniprogram/pages/me/index.wxss": "e14d7a034566dfc795f80a998418f56b06b2952a13dbf22d784faa273a8a1316",
+    "miniprogram/pages/outfits/index.js": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5",
+    "miniprogram/pages/outfits/index.json": "18981933cc4956df66cb7a22d73b2c4350f0ce126076269370d05292b19ea814",
+    "miniprogram/pages/outfits/index.wxml": "b4f1e4adab85ce0c1cb002d9522601517cea2a705969db1711ec11e8dc1e0f54",
+    "miniprogram/pages/outfits/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/wardrobe/index.js": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5",
+    "miniprogram/pages/wardrobe/index.json": "9030e20b6faa91aac0b8b92d4790347306392c4c85db4aaf56859b0faeabd56a",
+    "miniprogram/pages/wardrobe/index.wxml": "13de7c37ec3abcd65755ef26c620edd31d9bd7df15a35fc42a345d0080607ecb",
+    "miniprogram/pages/wardrobe/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/project.config.example.json": "7000d6bcb091e61eb06273cc406a85b2b31fd297405b2261e22c2aa023b4edfd"
+  },
+  "manualEvidenceAmendment": {
+    "userInstruction": "C完成，懒得截图记录了，无异常",
+    "remainingCScreenshotsWaived": true,
+    "notClaimedIndependentVisualReview": [
+      "430 layouts",
+      "recompile screenshot",
+      "Network detail",
+      "Console screenshot"
+    ]
+  },
+  "checks": [
+    {
+      "id": "P301-V01",
+      "name": "基线与已有上传目录保护",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V02",
+      "name": "锁定依赖与npm ci",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V03",
+      "name": "配置优先级、路径和api前缀",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V04",
+      "name": "配置非法/缺失入口拒绝",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V05",
+      "name": "实际数据库认证、实例和启动",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V06",
+      "name": "两连接、复借会话与UTC/DATE",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V07",
+      "name": "7表47字段及样例有序读取",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V08",
+      "name": "A09与404/500协议",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V09",
+      "name": "连接拒绝与端口占用退出",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V10",
+      "name": "Ctrl+C释放与重启",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V11",
+      "name": "原生文件、图标和导入根",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V12",
+      "name": "实际编译与基础库",
+      "status": "passed",
+      "method": "native-page-observation + user compilation confirmation",
+      "evidence": [
+        "manual-a-review.json",
+        "manual-b-review.json",
+        "manual-c-review.json"
+      ]
+    },
+    {
+      "id": "P301-V13",
+      "name": "四入口与待开发说明",
+      "status": "passed",
+      "method": "A screenshots inspected; C user confirmation",
+      "evidence": [
+        "manual-a-review.json",
+        "manual-b-review.json",
+        "manual-c-review.json"
+      ]
+    },
+    {
+      "id": "P301-V14",
+      "name": "两宽度、长提示及无遮挡",
+      "status": "passed",
+      "method": "375 screenshots inspected; 430 user confirmation, screenshot waived",
+      "evidence": [
+        "manual-a-review.json",
+        "manual-b-review.json",
+        "manual-c-review.json"
+      ]
+    },
+    {
+      "id": "P301-V15",
+      "name": "真实请求成功及响应判断",
+      "status": "passed",
+      "method": "200 list/success screenshot + strict client validation + user Network confirmation; detail screenshots waived",
+      "evidence": [
+        "manual-a-review.json",
+        "manual-b-review.json",
+        "manual-c-review.json"
+      ]
+    },
+    {
+      "id": "P301-V16",
+      "name": "断开/恢复及错误协议拒绝",
+      "status": "passed",
+      "method": "B failure/recovery screenshots + server lifecycle + protocol fixtures",
+      "evidence": [
+        "manual-a-review.json",
+        "manual-b-review.json",
+        "manual-c-review.json"
+      ]
+    },
+    {
+      "id": "P301-V17",
+      "name": "重新编译后可用",
+      "status": "passed",
+      "method": "user recompile/recheck confirmation; screenshot waived",
+      "evidence": [
+        "manual-a-review.json",
+        "manual-b-review.json",
+        "manual-c-review.json"
+      ]
+    },
+    {
+      "id": "P301-V18",
+      "name": "数据库、50图及历史文件未变",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V19",
+      "name": "私有信息/副本忽略",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V20",
+      "name": "启动、执行记录与能力一致",
+      "status": "passed",
+      "method": "automated evidence + implementation/document review",
+      "evidence": [
+        "foundation-tests.txt",
+        "foundation-final/automated-results.json"
+      ]
+    },
+    {
+      "id": "P301-V21",
+      "name": "双端main、标签对象/目标及干净工作区",
+      "status": "pending-publication"
+    }
+  ]
+}

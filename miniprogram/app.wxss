@@ -1,0 +1,18 @@
+page { background: #FAF8F5; color: #2F2D32; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 28rpx; line-height: 1.6; }
+view, text, button { box-sizing: border-box; }
+.page { padding: 54rpx 28rpx 64rpx; }
+.eyebrow { color: #A34F69; font-size: 24rpx; letter-spacing: 2rpx; margin-bottom: 16rpx; }
+.title { font-size: 44rpx; font-weight: 600; line-height: 1.35; margin: 0 0 24rpx; }
+.description { color: #6D6670; line-height: 1.8; max-width: 620rpx; overflow-wrap: anywhere; }
+.section { border-top: 1rpx solid #E8E2E3; margin-top: 60rpx; padding-top: 28rpx; }
+.section-title { font-size: 30rpx; font-weight: 500; margin-bottom: 12rpx; }
+.label { display: inline-block; color: #A34F69; background: #F6E7ED; border-radius: 8rpx; padding: 8rpx 16rpx; font-size: 24rpx; margin-top: 26rpx; }
+.button { margin: 32rpx 0 0; min-height: 88rpx; border-radius: 16rpx; padding: 20rpx 24rpx; background: #A34F69; color: #FFFFFF; font-size: 28rpx; line-height: 1.6; }
+.button::after { border: none; }
+.button[disabled] { background: #DCC7CF; color: #FFFFFF; }
+.status { margin-top: 28rpx; padding-left: 22rpx; border-left: 4rpx solid #E8E2E3; overflow-wrap: anywhere; }
+.status.success { border-left-color: #A34F69; }
+.status.failed { border-left-color: #A32C42; }
+.status-title { font-weight: 500; margin-bottom: 8rpx; }
+.status.failed .status-title { color: #A32C42; }
+.hint { font-size: 24rpx; color: #6D6670; line-height: 1.8; overflow-wrap: anywhere; }

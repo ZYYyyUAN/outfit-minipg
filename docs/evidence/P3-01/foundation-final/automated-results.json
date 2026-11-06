@@ -1,0 +1,915 @@
+{
+  "runId": "foundation-final",
+  "startedAt": "2026-11-06T19:17:10.736Z",
+  "state": "automated-passed",
+  "sessions": [
+    {
+      "version": "8.0.28",
+      "hostname": "DESKTOP-D97LI2N",
+      "port": 3306,
+      "account": "root@localhost",
+      "db": "wardrobe_demo",
+      "connectionId": 62,
+      "timeZone": "+00:00",
+      "clientCharset": "utf8mb4",
+      "connectionCharset": "utf8mb4",
+      "resultsCharset": "utf8mb4",
+      "connectionCollation": "utf8mb4_0900_as_cs"
+    },
+    {
+      "version": "8.0.28",
+      "hostname": "DESKTOP-D97LI2N",
+      "port": 3306,
+      "account": "root@localhost",
+      "db": "wardrobe_demo",
+      "connectionId": 63,
+      "timeZone": "+00:00",
+      "clientCharset": "utf8mb4",
+      "connectionCharset": "utf8mb4",
+      "resultsCharset": "utf8mb4",
+      "connectionCollation": "utf8mb4_0900_as_cs"
+    }
+  ],
+  "reusedSession": {
+    "version": "8.0.28",
+    "hostname": "DESKTOP-D97LI2N",
+    "port": 3306,
+    "account": "root@localhost",
+    "db": "wardrobe_demo",
+    "connectionId": 63,
+    "timeZone": "+00:00",
+    "clientCharset": "utf8mb4",
+    "connectionCharset": "utf8mb4",
+    "resultsCharset": "utf8mb4",
+    "connectionCollation": "utf8mb4_0900_as_cs"
+  },
+  "database": {
+    "counts": {
+      "users": 1,
+      "categories": 7,
+      "clothes": 24,
+      "outfits": 8,
+      "outfit_items": 37,
+      "diaries": 12,
+      "diary_items": 53
+    },
+    "rowHashes": {
+      "users": "1eb99e076f62c678920d2d4a1b7ceea299d9a0383335b3414ef9bf76f2d49ac1",
+      "categories": "43132164ecf32c45688dffe8e0d734b8c9c2514a93768705a6fe585411dc8f3d",
+      "clothes": "2a3c6cfa50c7ceedb081e4caddec8a63504cbeebdde7b8046e6071fbf5a1a5cb",
+      "outfits": "ac0aee4ce5de6e7fcb2c0f1735ab42b013b428170af53b0e2661c1446186e71b",
+      "outfit_items": "7e1158b76f44d78e46d2fef510cd49ccad98ecaef0a20893bb93fb4f0156aa52",
+      "diaries": "66ff6301ce3b5988e041487f688451ade219797594650e5c2ca8b681ac908952",
+      "diary_items": "25653c60d733eff2b968022c5d8aefd467409b233527018a30febe3813294cd9"
+    },
+    "structure": {
+      "users": "68bc73d30e5a35dfb88554a6fb948053d798725c80aea38b7ede78816ed4d7c6",
+      "categories": "dc1582a65c9bc56898b3ede0e915e5aadbda800b8215f8e16afe119c1b284215",
+      "clothes": "24d8839568a230eebde76b3294ae1f083631742b04b369437cc1f4edc39312cf",
+      "outfits": "cbf0bb4fb41dd7513ef9b74a74ff0dfd49455064d9addd192676e5e11232c7e5",
+      "outfit_items": "d14e87532cd8401224e826d12dfaa8d386b65af08924d84aeb291475567ad7d0",
+      "diaries": "e9cf8c91fdb8ca237ae9d3de749df7f172dc19db8cc56c078bfb9a0f123853aa",
+      "diary_items": "67a47ce8881cb8c50810ed5c4ad5dcd44c280ea626b1ebe0282c414976870c11"
+    }
+  },
+  "columns": [
+    {
+      "TABLE_NAME": "categories",
+      "COLUMN_NAME": "id",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "categories",
+      "COLUMN_NAME": "name",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "categories",
+      "COLUMN_NAME": "sort_order",
+      "DATA_TYPE": "smallint"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "user_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "category_id",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "name",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "image_path",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "color",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "season",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "note",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "is_archived",
+      "DATA_TYPE": "tinyint"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "created_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "clothes",
+      "COLUMN_NAME": "updated_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "user_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "wear_date",
+      "DATA_TYPE": "date"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "source_outfit_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "occasion",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "mood",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "photo_path",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "note",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "created_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "diaries",
+      "COLUMN_NAME": "updated_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "diary_items",
+      "COLUMN_NAME": "diary_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "diary_items",
+      "COLUMN_NAME": "clothing_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "diary_items",
+      "COLUMN_NAME": "sort_order",
+      "DATA_TYPE": "smallint"
+    },
+    {
+      "TABLE_NAME": "outfit_items",
+      "COLUMN_NAME": "outfit_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "outfit_items",
+      "COLUMN_NAME": "clothing_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "outfit_items",
+      "COLUMN_NAME": "sort_order",
+      "DATA_TYPE": "smallint"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "user_id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "name",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "occasion",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "note",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "is_archived",
+      "DATA_TYPE": "tinyint"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "created_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "outfits",
+      "COLUMN_NAME": "updated_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "id",
+      "DATA_TYPE": "int"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "username",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "password_hash",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "nickname",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "avatar_path",
+      "DATA_TYPE": "varchar"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "auth_token_hash",
+      "DATA_TYPE": "char"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "auth_expires_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "created_at",
+      "DATA_TYPE": "datetime"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "updated_at",
+      "DATA_TYPE": "datetime"
+    }
+  ],
+  "categories": [
+    {
+      "id": "tops",
+      "name": "上装",
+      "sort_order": 1
+    },
+    {
+      "id": "outerwear",
+      "name": "外套",
+      "sort_order": 2
+    },
+    {
+      "id": "dresses",
+      "name": "连衣裙",
+      "sort_order": 3
+    },
+    {
+      "id": "bottoms",
+      "name": "下装",
+      "sort_order": 4
+    },
+    {
+      "id": "shoes",
+      "name": "鞋履",
+      "sort_order": 5
+    },
+    {
+      "id": "bags",
+      "name": "包袋",
+      "sort_order": 6
+    },
+    {
+      "id": "accessories",
+      "name": "配饰",
+      "sort_order": 7
+    }
+  ],
+  "relations": {
+    "outfits": [
+      {
+        "logicalId": "OUT001",
+        "actualId": 18,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT002",
+        "actualId": 19,
+        "items": [
+          {
+            "clothing_id": 35,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 49,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT003",
+        "actualId": 20,
+        "items": [
+          {
+            "clothing_id": 39,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 57,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT004",
+        "actualId": 21,
+        "items": [
+          {
+            "clothing_id": 38,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 41,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 48,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT005",
+        "actualId": 22,
+        "items": [
+          {
+            "clothing_id": 36,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 47,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT006",
+        "actualId": 23,
+        "items": [
+          {
+            "clothing_id": 37,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 55,
+            "sort_order": 5
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 6
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT007",
+        "actualId": 24,
+        "items": [
+          {
+            "clothing_id": 40,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 50,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "OUT008",
+        "actualId": 25,
+        "items": [
+          {
+            "clothing_id": 42,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 5
+          }
+        ]
+      }
+    ],
+    "diaries": [
+      {
+        "logicalId": "DIA001",
+        "actualId": 31,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA002",
+        "actualId": 32,
+        "items": [
+          {
+            "clothing_id": 35,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 49,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA003",
+        "actualId": 33,
+        "items": [
+          {
+            "clothing_id": 39,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 57,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA004",
+        "actualId": 34,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA005",
+        "actualId": 35,
+        "items": [
+          {
+            "clothing_id": 38,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 41,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 48,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA006",
+        "actualId": 36,
+        "items": [
+          {
+            "clothing_id": 36,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 47,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA007",
+        "actualId": 37,
+        "items": [
+          {
+            "clothing_id": 34,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA008",
+        "actualId": 38,
+        "items": [
+          {
+            "clothing_id": 37,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 55,
+            "sort_order": 5
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 6
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA009",
+        "actualId": 39,
+        "items": [
+          {
+            "clothing_id": 42,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 45,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA010",
+        "actualId": 40,
+        "items": [
+          {
+            "clothing_id": 38,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 41,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 48,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 5
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA011",
+        "actualId": 41,
+        "items": [
+          {
+            "clothing_id": 35,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 49,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 52,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 53,
+            "sort_order": 4
+          }
+        ]
+      },
+      {
+        "logicalId": "DIA012",
+        "actualId": 42,
+        "items": [
+          {
+            "clothing_id": 37,
+            "sort_order": 1
+          },
+          {
+            "clothing_id": 46,
+            "sort_order": 2
+          },
+          {
+            "clothing_id": 51,
+            "sort_order": 3
+          },
+          {
+            "clothing_id": 54,
+            "sort_order": 4
+          },
+          {
+            "clothing_id": 55,
+            "sort_order": 5
+          },
+          {
+            "clothing_id": 56,
+            "sort_order": 6
+          }
+        ]
+      }
+    ]
+  },
+  "diarySample": {
+    "wear_date": "2026-10-16",
+    "source_outfit_id": null,
+    "photo_path": "users/11/4c03cc86-6c15-46f9-afa8-c843f6ba43f6.jpg",
+    "created_at": "2026-11-06 16:42:33.800",
+    "updated_at": "2026-11-06 16:42:33.800"
+  },
+  "months": [
+    {
+      "month": "2026-10",
+      "days": 9
+    },
+    {
+      "month": "2026-11",
+      "days": 3
+    }
+  ],
+  "protection": {
+    "checked": 424,
+    "allowedExistingChanges": [
+      ".gitignore",
+      "README.md",
+      "docs/执行计划.md"
+    ],
+    "uploads": {
+      "10": 25,
+      "11": 25
+    }
+  },
+  "http": {
+    "url": "http://127.0.0.1:3000/api/health",
+    "status": 200,
+    "body": {
+      "data": {
+        "status": "ok"
+      }
+    },
+    "unimplementedClothesStatus": 404
+  },
+  "hashes": {
+    "server/.env.example": "f6c3de3bc1c606519509c8b18e6441afb0a7b4831291b9501103929a724d18c6",
+    "server/package-lock.json": "d4ce06e15c0954c5f3e3f322d2297196ddb15e639c611efe8659acd8015416ef",
+    "server/package.json": "b4927157fdf80dcc69668b096b53c78f4b24baa8ca0f49622f2c01f790bd7a7b",
+    "server/scripts/verify-foundation.mjs": "d966ac053926faf2f76f8e54ee51104d83cfe6d7c384a0cc649954151eb00251",
+    "server/src/app.js": "2abee250aac7e28dc78540709b2ec015c530b26c1ac2dfcdfe4cb62d0db2b54c",
+    "server/src/config.js": "a4ed05c3ec958bc2021a609b0f49c3aff0743edef0533c106f2337ec79af5600",
+    "server/src/db.js": "b196e3f497f04044349e91992e1305c3313bd807e0022e88ecdc864f0444f469",
+    "server/src/index.js": "31fd817ca08b9d061fe397b2ad492f27a0e7c532ebb9691e3c0e1dd57978f58c",
+    "server/test/foundation.test.mjs": "fdd0154a630de266f1d1aca2988ad3624657cf1314d87b48bf7d581016d1c11d",
+    "miniprogram/app.js": "1ab645c73bcea61604f9cc4805a752ab9ba8fb66813d8c57cad34328c0ce4109",
+    "miniprogram/app.json": "5196fc086d8c2dbec98ee72e3d9ef3c72eb293d465fea86ea89a7a131b339f7f",
+    "miniprogram/app.wxss": "781e7b687f8c287c3e9c8017c7af8b78fdd2850402a5ae2ccb2f11df92ba3446",
+    "miniprogram/assets/tab-diary-active.png": "8b8f23055c92f0644d5ba69149dfe56c08eac1d07bb03ec88c01377c43268e05",
+    "miniprogram/assets/tab-diary.png": "cf3cb260b4654f8aa25d545b35b4b967d9cecb3c68bd80e07343a7337b87ff39",
+    "miniprogram/assets/tab-me-active.png": "684c7260f66dfc9c7a895c9e9b8910fd5bda1693d5fd1b68c58ccd8f8aa957ed",
+    "miniprogram/assets/tab-me.png": "4189be6766b6e3b66d8567e7e106ec65a9df7d1d9ed77c6599dfa42752a08931",
+    "miniprogram/assets/tab-outfits-active.png": "a448df4045f31896e619f85aac713fbf1cc97f53abcf81d02eccfb8a6a9063a3",
+    "miniprogram/assets/tab-outfits.png": "c4731711bc4ede80d3cc1c07085f855d908c5ae8abb2267f1e12f6859500deed",
+    "miniprogram/assets/tab-wardrobe-active.png": "7a6f216badb9a798ce772cecb5e79a5b438b304d146e4e904700bbec0bdac0b7",
+    "miniprogram/assets/tab-wardrobe.png": "abf460c3c03048a5d5b00db5826e6b159edea9f460c4d9764106d6afa2191615",
+    "miniprogram/config.js": "f5daec78b68f3a80478d53aac7b7f012e99f24f268cce01ca8dd0d6d9bc461c9",
+    "miniprogram/pages/diary/index.js": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5",
+    "miniprogram/pages/diary/index.json": "c313b918dbd2ba0b068a92809676722d8d1b5142c6606d614a60a8f8002e4384",
+    "miniprogram/pages/diary/index.wxml": "ea88c365b6d89d883055c8ec5b9bb1faf5e9d10537979ab82a6c08a7fcc09abe",
+    "miniprogram/pages/diary/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/me/index.js": "8559ff9c15696173638ee9f6b9e462d92e572727b183314087c0908311f4eaec",
+    "miniprogram/pages/me/index.json": "a465281f644c1694ebbe3d38aade68e78a16b5a63e7a3e11c28cda4b7103b543",
+    "miniprogram/pages/me/index.wxml": "b801024d4204daa5cdcc069687d0a713f262b3fc70585ea132dbf19e9b2715a3",
+    "miniprogram/pages/me/index.wxss": "e14d7a034566dfc795f80a998418f56b06b2952a13dbf22d784faa273a8a1316",
+    "miniprogram/pages/outfits/index.js": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5",
+    "miniprogram/pages/outfits/index.json": "18981933cc4956df66cb7a22d73b2c4350f0ce126076269370d05292b19ea814",
+    "miniprogram/pages/outfits/index.wxml": "b4f1e4adab85ce0c1cb002d9522601517cea2a705969db1711ec11e8dc1e0f54",
+    "miniprogram/pages/outfits/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/wardrobe/index.js": "0895cb310fb18e3f6b35229e90218b9bd57abde1bb8820f33ff98f73fe83a0d5",
+    "miniprogram/pages/wardrobe/index.json": "9030e20b6faa91aac0b8b92d4790347306392c4c85db4aaf56859b0faeabd56a",
+    "miniprogram/pages/wardrobe/index.wxml": "13de7c37ec3abcd65755ef26c620edd31d9bd7df15a35fc42a345d0080607ecb",
+    "miniprogram/pages/wardrobe/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/project.config.example.json": "7000d6bcb091e61eb06273cc406a85b2b31fd297405b2261e22c2aa023b4edfd"
+  },
+  "completedAt": "2026-11-06T19:17:11.213Z"
+}

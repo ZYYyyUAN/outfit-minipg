@@ -1,0 +1,7 @@
+<view class="page">
+  <view class="eyebrow">个人衣橱与穿搭日记</view>
+  <view class="title">衣橱</view>
+  <view class="description">衣物列表与维护将在衣橱模块接入。</view>
+  <view class="label">功能待开发</view>
+  <view class="section"><view class="section-title">从一件衣物开始</view><view class="hint">这里将用于整理日常单品，查看资料与穿着记录。</view></view>
+</view>

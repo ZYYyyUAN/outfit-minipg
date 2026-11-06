@@ -1,0 +1,13 @@
+{
+  "name": "personal-wardrobe-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "test": "node --env-file-if-exists=.env --test test/foundation.test.mjs",
+    "verify:foundation": "node --env-file-if-exists=.env scripts/verify-foundation.mjs"
+  },
+  "dependencies": { "express": "5.3.0", "mysql2": "3.24.6" }
+}
