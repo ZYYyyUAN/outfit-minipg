@@ -1,0 +1,55 @@
+{
+  "clothes": 24,
+  "outfits": 8,
+  "diaries": 12,
+  "categories": {
+    "上装": 7,
+    "外套": 3,
+    "连衣裙": 1,
+    "下装": 6,
+    "鞋履": 2,
+    "包袋": 2,
+    "配饰": 3
+  },
+  "monthDiaryCounts": {
+    "2026-10": 9,
+    "2026-11": 3
+  },
+  "dateRange": [
+    "2026-10-07",
+    "2026-11-05"
+  ],
+  "mostWorn": [
+    {
+      "id": "CLO018",
+      "count": 6
+    },
+    {
+      "id": "CLO020",
+      "count": 6
+    },
+    {
+      "id": "CLO019",
+      "count": 5
+    },
+    {
+      "id": "CLO021",
+      "count": 5
+    },
+    {
+      "id": "CLO001",
+      "count": 3
+    }
+  ],
+  "neverWorn": [
+    "CLO007",
+    "CLO010",
+    "CLO011",
+    "CLO017"
+  ],
+  "imagesBytes": 2878093,
+  "completeItemImages": 24,
+  "newlySelectedImages": 22,
+  "retainedImages": 2,
+  "diaryReferencePhotos": 1
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>小夏的衣橱 · 演示原型</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header"><h1 id="page-title">衣橱</h1><span class="demo-label"><i></i>演示原型 · 示例数据</span></header>
+    <main>
+      <div id="load-state" class="load-state" role="status"><span class="loader"></span><p>正在打开衣橱…</p></div>
+      <section id="wardrobe" class="page" aria-label="衣橱" hidden>
+        <div class="page-intro"><h2>日常衣物</h2><span id="wardrobe-total" class="muted"></span></div>
+        <div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="搜索衣物名称" aria-label="搜索衣物名称" maxlength="40" autocomplete="off"><button id="clear-search" class="text-button" hidden>清除</button></div>
+        <div id="categories" class="filter-bar" aria-label="衣物分类"></div>
+        <div class="section-line"><span id="result-label" class="eyebrow">全部单品</span><span id="result-count" class="muted" aria-live="polite"></span></div>
+        <div id="clothes-grid" class="clothes-grid"></div>
+        <div id="empty-clothes" class="empty-state" hidden><p>没有找到匹配的衣物</p><button id="reset-filters" class="primary-button">清除筛选</button></div>
+        <p class="page-footnote">每一件喜欢，都有自己的位置。</p>
+      </section>
+      <section id="outfits" class="page" aria-label="搭配" hidden>
+        <div class="page-intro"><h2>我的搭配集</h2><span id="outfits-total" class="muted"></span></div>
+        <div id="occasions" class="filter-bar" aria-label="搭配场景"></div>
+        <div id="outfit-list" class="outfit-list"></div>
+      </section>
+      <section id="diary" class="page" aria-label="日记" hidden>
+        <div class="month-line"><button id="previous-month" class="icon-button" aria-label="上月">‹</button><div><h2 id="month-title"></h2><p id="month-count" class="muted" aria-live="polite"></p></div><button id="next-month" class="icon-button" aria-label="下月">›</button></div>
+        <div class="weekdays" aria-hidden="true"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+        <div id="calendar" class="calendar" aria-label="穿搭日历"></div>
+        <div class="calendar-key"><i></i><span>有穿搭记录</span></div>
+        <article id="diary-summary" class="diary-summary" aria-live="polite"></article>
+      </section>
+      <section id="me" class="page" aria-label="我的" hidden>
+        <div class="profile"><div id="avatar" class="avatar"></div><span class="eyebrow">演示用户</span><h2 id="nickname"></h2><p class="muted">把日常穿搭，慢慢记下来。</p></div>
+        <div id="profile-counts" class="profile-counts"></div>
+        <details id="about" class="about"><summary>数据说明<span aria-hidden="true">⌄</span></summary><div><p>当前为只读演示原型，资料与记录暂不可修改，浏览状态不会永久保存。</p><p>衣物、搭配和日记来自虚构示例。日记附图为同款针织的穿着参考，不表示真实用户自拍。</p><p>图片来源：CHERRYKOKO、Pexels。品牌商品图按本地实训参考登记，未获单独再分发授权。</p></div></details>
+        <div class="quiet-note"><span class="small-flower" aria-hidden="true">✳</span><p>穿过的日子，<br>也值得被好好收藏。</p></div>
+      </section>
+    </main>
+    <nav class="bottom-nav" aria-label="底部导航">
+      <button data-tab="wardrobe" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7V5a2 2 0 1 0-2-2M12 7 3 14v3h18v-3L12 7Z"/></svg><span>衣橱</span></button>
+      <button data-tab="outfits"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3-5 4 3 4 2-1v11h8V10l2 1 3-4-5-4c-1 3-7 3-8 0Z"/></svg><span>搭配</span></button>
+      <button data-tab="diary"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h.01M15 15h.01M9 18h.01"/></svg><span>日记</span></button>
+      <button data-tab="me"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>我的</span></button>
+    </nav>
+  </div>
+  <dialog id="preview" aria-labelledby="preview-title"><div class="dialog-header"><div class="dialog-heading"><span class="eyebrow">只读预览</span><h2 id="preview-title"></h2></div><button id="close-preview" class="icon-button" aria-label="关闭预览">×</button></div><div id="preview-body" class="dialog-body"></div></dialog>
+</body>
+</html>

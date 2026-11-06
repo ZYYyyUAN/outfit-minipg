@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "clothes": 24,
+  "outfits": 8,
+  "diaries": 12,
+  "localImages": 24,
+  "diaryPhotos": 1,
+  "months": {
+    "2026-10": 9,
+    "2026-11": 3
+  },
+  "neverWorn": 4,
+  "imagesBytes": 2878093
+}

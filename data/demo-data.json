@@ -1,0 +1,676 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "korean-daily-20261106",
+  "datasetType": "demo",
+  "preparedOn": "2026-11-06",
+  "description": "韩系日常演示衣橱及虚构穿搭记录；来源图片不代表真实用户记录。",
+  "demoProfile": {
+    "id": "DEMO001",
+    "nickname": "小夏的演示衣橱"
+  },
+  "categories": [
+    {
+      "id": "tops",
+      "name": "上装",
+      "sortOrder": 1
+    },
+    {
+      "id": "outerwear",
+      "name": "外套",
+      "sortOrder": 2
+    },
+    {
+      "id": "dresses",
+      "name": "连衣裙",
+      "sortOrder": 3
+    },
+    {
+      "id": "bottoms",
+      "name": "下装",
+      "sortOrder": 4
+    },
+    {
+      "id": "shoes",
+      "name": "鞋履",
+      "sortOrder": 5
+    },
+    {
+      "id": "bags",
+      "name": "包袋",
+      "sortOrder": 6
+    },
+    {
+      "id": "accessories",
+      "name": "配饰",
+      "sortOrder": 7
+    }
+  ],
+  "clothes": [
+    {
+      "id": "CLO001",
+      "userId": "DEMO001",
+      "name": "粉色绞花针织两件套",
+      "categoryId": "tops",
+      "color": "浅粉色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-001.jpg",
+      "isArchived": false,
+      "note": "短款V领针织与同色背心作为一组衣物记录，适合与牛仔裤搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO002",
+      "userId": "DEMO001",
+      "name": "灰米色撞领针织上衣",
+      "categoryId": "tops",
+      "color": "灰米色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-002.jpg",
+      "isArchived": false,
+      "note": "白色领口和下摆形成层次；图片展示的是一件假两件设计上衣。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO003",
+      "userId": "DEMO001",
+      "name": "棕色菱格针织上衣",
+      "categoryId": "tops",
+      "color": "棕色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-003.jpg",
+      "isArchived": false,
+      "note": "菱格图案与深色牛仔裤组合，增加上装的图案变化。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO004",
+      "userId": "DEMO001",
+      "name": "浅紫色V领宽松针织",
+      "categoryId": "tops",
+      "color": "浅紫色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-004.jpg",
+      "isArchived": false,
+      "note": "宽松轮廓，可与牛仔裤和浅彩围巾组合。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO005",
+      "userId": "DEMO001",
+      "name": "白色荷叶领衬衫",
+      "categoryId": "tops",
+      "color": "白色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-005.jpg",
+      "isArchived": false,
+      "note": "荷叶领和灯笼袖增加细节，可在开衫内叠穿。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO006",
+      "userId": "DEMO001",
+      "name": "藏蓝拼袖长袖上衣",
+      "categoryId": "tops",
+      "color": "藏蓝与灰色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-006.jpg",
+      "isArchived": false,
+      "note": "灰色衣身与藏蓝插肩袖，适合校园休闲搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO007",
+      "userId": "DEMO001",
+      "name": "奶油色绒感短针织",
+      "categoryId": "tops",
+      "color": "奶油色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-007.jpg",
+      "isArchived": false,
+      "note": "短款轮廓与明显绒感纹理，预备搭配小花半裙。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO008",
+      "userId": "DEMO001",
+      "name": "浅蓝色罗纹短开衫",
+      "categoryId": "outerwear",
+      "color": "浅蓝色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-008.jpg",
+      "isArchived": false,
+      "note": "短款开衫，可在白色衬衫外叠穿。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO009",
+      "userId": "DEMO001",
+      "name": "藏蓝北欧图案开衫",
+      "categoryId": "outerwear",
+      "color": "藏蓝与米白色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-009.jpg",
+      "isArchived": false,
+      "note": "肩部与袖口带北欧图案，适合日常牛仔组合。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO010",
+      "userId": "DEMO001",
+      "name": "黑色圆领短外套",
+      "categoryId": "outerwear",
+      "color": "黑色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-010.jpg",
+      "isArchived": false,
+      "note": "圆领与颗粒纹理；保留为待穿衣物，尚未写入穿着日记。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO011",
+      "userId": "DEMO001",
+      "name": "黑色系带吊带连衣裙",
+      "categoryId": "dresses",
+      "color": "黑色",
+      "season": "春夏",
+      "imagePath": "assets/clothes/clothing-011.jpg",
+      "isArchived": false,
+      "note": "肩带系结，可单穿或叠穿；演示数据中暂未穿着。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO012",
+      "userId": "DEMO001",
+      "name": "水洗蓝阔腿牛仔裤",
+      "categoryId": "bottoms",
+      "color": "水洗蓝",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-012.jpg",
+      "isArchived": false,
+      "note": "宽松直落裤型，适合短款针织与图案开衫。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO013",
+      "userId": "DEMO001",
+      "name": "浅蓝色直筒牛仔裤",
+      "categoryId": "bottoms",
+      "color": "浅蓝色",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-013.jpg",
+      "isArchived": false,
+      "note": "直筒轮廓，与阔腿及微喇裤型分别展示。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO014",
+      "userId": "DEMO001",
+      "name": "深靛蓝微喇牛仔裤",
+      "categoryId": "bottoms",
+      "color": "深靛蓝",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-014.jpg",
+      "isArchived": false,
+      "note": "微喇裤脚与深色水洗，与棕色菱格针织组合。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO015",
+      "userId": "DEMO001",
+      "name": "奶油色层叠长半裙",
+      "categoryId": "bottoms",
+      "color": "奶油色",
+      "season": "春秋",
+      "imagePath": "assets/clothes/clothing-015.jpg",
+      "isArchived": false,
+      "note": "抽绳腰头和层叠裙摆，适合蓝色开衫与白色衬衫。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO016",
+      "userId": "DEMO001",
+      "name": "灰色细格纹直筒半裙",
+      "categoryId": "bottoms",
+      "color": "灰色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-016.jpg",
+      "isArchived": false,
+      "note": "细格纹和开衩细节，搭配撞领针织用于自习场景。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO017",
+      "userId": "DEMO001",
+      "name": "米白色小花半裙",
+      "categoryId": "bottoms",
+      "color": "米白与黑色",
+      "season": "春夏",
+      "imagePath": "assets/clothes/clothing-017.jpg",
+      "isArchived": false,
+      "note": "小花图案与直落裙型，已建立待穿搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO018",
+      "userId": "DEMO001",
+      "name": "白色休闲运动鞋",
+      "categoryId": "shoes",
+      "color": "白色",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-018.jpg",
+      "isArchived": false,
+      "note": "保留首批已核对的完整单品图，供牛仔裤装搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO019",
+      "userId": "DEMO001",
+      "name": "黑色玛丽珍平底鞋",
+      "categoryId": "shoes",
+      "color": "黑色",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-019.jpg",
+      "isArchived": false,
+      "note": "细搭扣和圆头设计，供半裙及深蓝牛仔裤组合。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO020",
+      "userId": "DEMO001",
+      "name": "深棕色褶皱软肩包",
+      "categoryId": "bags",
+      "color": "深棕色",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-020.jpg",
+      "isArchived": false,
+      "note": "柔软肩包与长肩带，适合针织及牛仔搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO021",
+      "userId": "DEMO001",
+      "name": "浅蓝色手提包",
+      "categoryId": "bags",
+      "color": "浅蓝色",
+      "season": "四季",
+      "imagePath": "assets/clothes/clothing-021.jpg",
+      "isArchived": false,
+      "note": "保留首批完整单品图，用于粉蓝和浅紫配色组合。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO022",
+      "userId": "DEMO001",
+      "name": "粉蓝浅彩格纹围巾",
+      "categoryId": "accessories",
+      "color": "粉蓝与浅绿色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-022.jpg",
+      "isArchived": false,
+      "note": "保留完整折叠及流苏轮廓，用作浅色搭配中的彩色配饰。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO023",
+      "userId": "DEMO001",
+      "name": "米白色毛绒渔夫帽",
+      "categoryId": "accessories",
+      "color": "米白色",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-023.jpg",
+      "isArchived": false,
+      "note": "毛绒纹理与浅色帽型，适合秋冬休闲搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "CLO024",
+      "userId": "DEMO001",
+      "name": "薄荷蓝流苏围巾",
+      "categoryId": "accessories",
+      "color": "薄荷蓝",
+      "season": "秋冬",
+      "imagePath": "assets/clothes/clothing-024.jpg",
+      "isArchived": false,
+      "note": "用明亮配饰补充藏蓝与浅蓝牛仔组合。",
+      "origin": "demo"
+    }
+  ],
+  "outfits": [
+    {
+      "id": "OUT001",
+      "userId": "DEMO001",
+      "name": "粉蓝校园日常",
+      "occasion": "校园",
+      "clothingIds": [
+        "CLO001",
+        "CLO012",
+        "CLO018",
+        "CLO021"
+      ],
+      "note": "粉色绞花两件套配水洗蓝阔腿牛仔裤，用浅蓝包呼应。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT002",
+      "userId": "DEMO001",
+      "name": "图书馆自习",
+      "occasion": "校园",
+      "clothingIds": [
+        "CLO002",
+        "CLO016",
+        "CLO019",
+        "CLO020"
+      ],
+      "note": "撞领针织与灰色细格纹半裙，配黑色平底鞋和深棕软包。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT003",
+      "userId": "DEMO001",
+      "name": "周末轻松散步",
+      "occasion": "休闲",
+      "clothingIds": [
+        "CLO006",
+        "CLO013",
+        "CLO018",
+        "CLO021",
+        "CLO024"
+      ],
+      "note": "藏蓝插肩袖配直筒牛仔裤，以薄荷蓝围巾点色。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT004",
+      "userId": "DEMO001",
+      "name": "蓝白针织叠穿",
+      "occasion": "休闲",
+      "clothingIds": [
+        "CLO005",
+        "CLO008",
+        "CLO015",
+        "CLO019",
+        "CLO020"
+      ],
+      "note": "白色荷叶领衬衫叠浅蓝短开衫，下装选奶油色层叠长裙。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT005",
+      "userId": "DEMO001",
+      "name": "菱格与深蓝牛仔",
+      "occasion": "校园",
+      "clothingIds": [
+        "CLO003",
+        "CLO014",
+        "CLO019",
+        "CLO020"
+      ],
+      "note": "棕色菱格针织搭深靛蓝微喇牛仔裤，配黑色玛丽珍鞋。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT006",
+      "userId": "DEMO001",
+      "name": "浅紫色秋日",
+      "occasion": "休闲",
+      "clothingIds": [
+        "CLO004",
+        "CLO013",
+        "CLO018",
+        "CLO021",
+        "CLO022",
+        "CLO023"
+      ],
+      "note": "浅紫宽松针织搭直筒牛仔裤，以格纹围巾和毛绒帽增加层次。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT007",
+      "userId": "DEMO001",
+      "name": "小花半裙计划",
+      "occasion": "出游",
+      "clothingIds": [
+        "CLO007",
+        "CLO017",
+        "CLO019",
+        "CLO020"
+      ],
+      "note": "奶油色短针织搭米白小花半裙；已保存为搭配，尚未记录穿着。",
+      "isArchived": false,
+      "origin": "demo"
+    },
+    {
+      "id": "OUT008",
+      "userId": "DEMO001",
+      "name": "北欧图案开衫",
+      "occasion": "休闲",
+      "clothingIds": [
+        "CLO009",
+        "CLO012",
+        "CLO018",
+        "CLO020",
+        "CLO023"
+      ],
+      "note": "图案短开衫搭阔腿牛仔裤，米白毛绒帽呼应图案颜色。",
+      "isArchived": false,
+      "origin": "demo"
+    }
+  ],
+  "diaries": [
+    {
+      "id": "DIA001",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-07",
+      "sourceOutfitId": "OUT001",
+      "clothingIds": [
+        "CLO001",
+        "CLO012",
+        "CLO018",
+        "CLO021"
+      ],
+      "occasion": "校园",
+      "mood": "轻松",
+      "photoPath": null,
+      "note": "上课前选了粉色短针织和阔腿牛仔裤，浅蓝色包让配色更轻快。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA002",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-09",
+      "sourceOutfitId": "OUT002",
+      "clothingIds": [
+        "CLO002",
+        "CLO016",
+        "CLO019",
+        "CLO020"
+      ],
+      "occasion": "校园",
+      "mood": "专注",
+      "photoPath": null,
+      "note": "去图书馆自习，撞领针织和细格纹半裙组成了今天的搭配。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA003",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-12",
+      "sourceOutfitId": "OUT003",
+      "clothingIds": [
+        "CLO006",
+        "CLO013",
+        "CLO018",
+        "CLO021",
+        "CLO024"
+      ],
+      "occasion": "休闲",
+      "mood": "愉快",
+      "photoPath": null,
+      "note": "周末散步选了长袖和直筒牛仔裤，添一条薄荷蓝围巾。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA004",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-16",
+      "sourceOutfitId": null,
+      "clothingIds": [
+        "CLO001"
+      ],
+      "occasion": "休闲",
+      "mood": "从容",
+      "photoPath": "assets/diaries/diary-004.jpg",
+      "note": "补记这件粉色绞花针织；附图为同款穿着参考，文字是虚构演示记录。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA005",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-18",
+      "sourceOutfitId": "OUT004",
+      "clothingIds": [
+        "CLO005",
+        "CLO008",
+        "CLO015",
+        "CLO019",
+        "CLO020"
+      ],
+      "occasion": "休闲",
+      "mood": "放松",
+      "photoPath": null,
+      "note": "白衬衫露出荷叶领，再叠一件浅蓝短开衫，搭奶油色长半裙。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA006",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-21",
+      "sourceOutfitId": "OUT005",
+      "clothingIds": [
+        "CLO003",
+        "CLO014",
+        "CLO019",
+        "CLO020"
+      ],
+      "occasion": "校园",
+      "mood": "平静",
+      "photoPath": null,
+      "note": "今天试了棕色菱格和深蓝牛仔的组合，平底鞋方便走动。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA007",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-24",
+      "sourceOutfitId": "OUT001",
+      "clothingIds": [
+        "CLO001",
+        "CLO012",
+        "CLO018",
+        "CLO021"
+      ],
+      "occasion": "校园",
+      "mood": "轻松",
+      "photoPath": null,
+      "note": "又选了一次粉蓝校园组合，为这一天单独保存穿着记录。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA008",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-27",
+      "sourceOutfitId": "OUT006",
+      "clothingIds": [
+        "CLO004",
+        "CLO013",
+        "CLO018",
+        "CLO021",
+        "CLO022",
+        "CLO023"
+      ],
+      "occasion": "休闲",
+      "mood": "愉快",
+      "photoPath": null,
+      "note": "浅紫针织加格纹围巾，帽子的毛绒纹理适合秋日。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA009",
+      "userId": "DEMO001",
+      "wearDate": "2026-10-30",
+      "sourceOutfitId": "OUT008",
+      "clothingIds": [
+        "CLO009",
+        "CLO012",
+        "CLO018",
+        "CLO020",
+        "CLO023"
+      ],
+      "occasion": "休闲",
+      "mood": "满意",
+      "photoPath": null,
+      "note": "图案开衫搭阔腿牛仔裤，米白帽子与开衫上的浅色图案呼应。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA010",
+      "userId": "DEMO001",
+      "wearDate": "2026-11-01",
+      "sourceOutfitId": "OUT004",
+      "clothingIds": [
+        "CLO005",
+        "CLO008",
+        "CLO015",
+        "CLO019",
+        "CLO020"
+      ],
+      "occasion": "休闲",
+      "mood": "放松",
+      "photoPath": null,
+      "note": "沿用蓝白叠穿组合，保留今天的新记录，方便月底回顾。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA011",
+      "userId": "DEMO001",
+      "wearDate": "2026-11-03",
+      "sourceOutfitId": "OUT002",
+      "clothingIds": [
+        "CLO002",
+        "CLO016",
+        "CLO019",
+        "CLO020"
+      ],
+      "occasion": "校园",
+      "mood": "从容",
+      "photoPath": null,
+      "note": "去图书馆时再次选了撞领针织和灰色半裙。",
+      "origin": "demo"
+    },
+    {
+      "id": "DIA012",
+      "userId": "DEMO001",
+      "wearDate": "2026-11-05",
+      "sourceOutfitId": "OUT006",
+      "clothingIds": [
+        "CLO004",
+        "CLO013",
+        "CLO018",
+        "CLO021",
+        "CLO022",
+        "CLO023"
+      ],
+      "occasion": "休闲",
+      "mood": "平静",
+      "photoPath": null,
+      "note": "今天又穿了浅紫针织这套，回顾时可以看到重复穿着的日期。",
+      "origin": "demo"
+    }
+  ]
+}
