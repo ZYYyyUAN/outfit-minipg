@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/wardrobe/index", "pages/outfits/index", "pages/diary/index", "pages/me/index"],
+  "pages": ["pages/auth/login/index", "pages/auth/register/index", "pages/profile/index", "pages/wardrobe/index", "pages/outfits/index", "pages/diary/index", "pages/me/index"],
   "window": { "navigationBarTitleText": "个人衣橱与穿搭日记", "navigationBarBackgroundColor": "#FAF8F5", "navigationBarTextStyle": "black", "backgroundColor": "#FAF8F5" },
   "tabBar": {
     "color": "#6D6670", "selectedColor": "#A34F69", "backgroundColor": "#FFFFFF", "borderStyle": "white",

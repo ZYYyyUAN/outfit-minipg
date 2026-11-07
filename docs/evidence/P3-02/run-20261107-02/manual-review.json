@@ -1,0 +1,42 @@
+{
+  "source": "assistant inspected actual local PNGs; user reported all manual steps passed",
+  "toolVersion": "2.02.2609250",
+  "baseLibrary": "3.18.0",
+  "reportedLogicalViewports": [
+    "375x812",
+    "430x932",
+    "460px short usable height"
+  ],
+  "pixelDimensionsNote": "文件像素为工具缩放/截图输出尺寸，不当作逻辑视口尺寸的独立证明。",
+  "images": [
+    {
+      "file": "375-me.png",
+      "width": 345,
+      "height": 751,
+      "sha256": "50011b75b7b754e63e4fd406e882fc29d89432a90704c31a525a9339f514f32c",
+      "viewed": true,
+      "visualFinding": "真实账号及健康成功可见，底部导航和按钮完整，无明显横向溢出。"
+    },
+    {
+      "file": "375-profile·png.png",
+      "width": 342,
+      "height": 746,
+      "sha256": "7ef108d8b92330b5de8d2a94ec0b73cb3fb8289cdd6b6c6e8591c138bb921a00",
+      "viewed": true,
+      "visualFinding": "21/20字符计数及字段错误可见，保存/取消完整，无明显文字溢出。"
+    },
+    {
+      "file": "430-unsaved.png",
+      "width": 349,
+      "height": 759,
+      "sha256": "230a48ce37fe57bd277057f2b40a27cf232497c17b68cc1fbaff320049db5875",
+      "viewed": true,
+      "visualFinding": "页面取消触发的自定义放弃弹窗完整，遮罩正常；原生顶部返回另依据用户人工确认。"
+    }
+  ],
+  "pending": [
+    "430-auth.png not found",
+    "p302_abbadjea_u final API logout",
+    "ownership of new account zyyuan"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "runId": "run-20261107-03",
+  "accounts": [
+    {
+      "runId": "run-20261107-03",
+      "username": "p302_cdfcdfdg_a",
+      "id": 18,
+      "purpose": "HTTP",
+      "state": "logged-out"
+    },
+    {
+      "runId": "run-20261107-03",
+      "username": "p302_cdfcdfdg_b",
+      "id": 19,
+      "purpose": "HTTP",
+      "state": "logged-out"
+    },
+    {
+      "runId": "run-20261107-03",
+      "username": "p302_cdfcdfdg_u",
+      "id": null,
+      "purpose": "manual",
+      "state": "reserved"
+    }
+  ]
+}

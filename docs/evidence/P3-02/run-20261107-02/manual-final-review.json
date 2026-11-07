@@ -1,0 +1,54 @@
+{
+  "reviewedAt": "2026-11-07T11:02:48.449506+00:00",
+  "currentImages": [
+    {
+      "file": "manual/375-me.png",
+      "sha256": "50011b75b7b754e63e4fd406e882fc29d89432a90704c31a525a9339f514f32c",
+      "width": 345,
+      "height": 751,
+      "viewed": true,
+      "finding": "真实账号与健康成功可见，无明显溢出。"
+    },
+    {
+      "file": "manual/375-profile·png.png",
+      "sha256": "7ef108d8b92330b5de8d2a94ec0b73cb3fb8289cdd6b6c6e8591c138bb921a00",
+      "width": 342,
+      "height": 746,
+      "viewed": true,
+      "finding": "超长昵称21/20计数、错误与保存/取消完整。"
+    },
+    {
+      "file": "manual/430-auth.png",
+      "sha256": "6df6c8faf560a118ddf4926b1478097376dda8f7ffa9a984648683bd1ef1bec3",
+      "width": 348,
+      "height": 757,
+      "viewed": true,
+      "finding": "登录页，用户名和密码均为空，按钮与表单完整；无凭据可见。"
+    },
+    {
+      "file": "manual/430-unsaved.png",
+      "sha256": "65a835be9a1da2415e1970ca4ea4e45e3b8b96965e76d62f3a3d9fa9906bdcf0",
+      "width": 350,
+      "height": 759,
+      "viewed": true,
+      "finding": "登录页，用户名和密码均为空，按钮与表单完整；无凭据可见。"
+    }
+  ],
+  "priorModalObservation": "manual-review.json records the original modal image previously inspected; same filename was subsequently overwritten by login image. Original PNG no longer present.",
+  "secretVisualReview": "No visible password/token/AppID/private headers in current four screenshots.",
+  "userConfirmed": [
+    "all guide operations passed",
+    "tool 2.02.2609250 and base library 3.18.0 unchanged",
+    "no unexpected project console errors",
+    "logical viewport settings and short usable height checked"
+  ],
+  "screenshotException": {
+    "confirmedAt": "2026-11-07T11:30:38.489906+00:00",
+    "source": "explicit user instruction",
+    "userReply": "接受此前实际查看记录与本轮人工确认，免补弹窗图",
+    "scope": "Only replacement of the overwritten modal PNG; no waiver of feature tests, final logout, data protection or dual-remote verification.",
+    "priorObservation": "manual-review.json retains original modal SHA256 and actual viewing conclusion; original image was overwritten.",
+    "evidenceLevel": "previous assistant visual inspection plus this run user confirmation; current PNG is a login page, not modal proof"
+  },
+  "state": "passed with explicit screenshot exception"
+}

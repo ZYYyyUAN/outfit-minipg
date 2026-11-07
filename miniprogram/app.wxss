@@ -16,3 +16,14 @@ view, text, button { box-sizing: border-box; }
 .status-title { font-weight: 500; margin-bottom: 8rpx; }
 .status.failed .status-title { color: #A32C42; }
 .hint { font-size: 24rpx; color: #6D6670; line-height: 1.8; overflow-wrap: anywhere; }
+
+.form { margin-top: 40rpx; padding-bottom: calc(48rpx + env(safe-area-inset-bottom)); }
+.field-label { display: block; margin-top: 28rpx; margin-bottom: 12rpx; font-size: 28rpx; }
+.required { color: #A34F69; }
+.field { box-sizing: border-box; width: 100%; min-height: 96rpx; height: 96rpx; padding: 20rpx 22rpx; background: #FFFFFF; border: 1rpx solid #D8CBD0; border-radius: 12rpx; font-size: 28rpx; }
+.count { float: right; color: #6D6670; font-size: 24rpx; }
+.error { color: #A32C42; font-size: 26rpx; margin-top: 12rpx; overflow-wrap: anywhere; }
+.button.secondary { background: transparent; color: #A34F69; border: 1rpx solid #CBAAB7; }
+.button.secondary[disabled] { color: #83757A; border-color: #DCC7CF; }
+.avatar-placeholder { display: flex; align-items: center; justify-content: center; width: 108rpx; height: 108rpx; border-radius: 54rpx; background: #F6E7ED; color: #A34F69; font-size: 36rpx; margin: 24rpx 0; }
+.break-text { overflow-wrap: anywhere; word-break: break-all; }

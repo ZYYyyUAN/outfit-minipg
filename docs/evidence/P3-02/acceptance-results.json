@@ -1,0 +1,367 @@
+{
+  "state": "local-passed-pending-release",
+  "implementation": {
+    "server/.env.example": "f6c3de3bc1c606519509c8b18e6441afb0a7b4831291b9501103929a724d18c6",
+    "server/package-lock.json": "d4ce06e15c0954c5f3e3f322d2297196ddb15e639c611efe8659acd8015416ef",
+    "server/package.json": "8e5cab1fe00ba60653f1db1bdf22dfdca3f6bd0dcdba2dfa285ce3601dd0c1bf",
+    "server/scripts/verify-auth.mjs": "c3df548434af8283d019a8a53f14d5632b277a0214e371848c37cd6cd36a4d14",
+    "server/scripts/verify-foundation.mjs": "d966ac053926faf2f76f8e54ee51104d83cfe6d7c384a0cc649954151eb00251",
+    "server/src/app.js": "c4e9b66bb83646df912fc40c01c6a5d61d6a58e50ddfd020cbe839f56f5d5007",
+    "server/src/config.js": "a4ed05c3ec958bc2021a609b0f49c3aff0743edef0533c106f2337ec79af5600",
+    "server/src/db.js": "b196e3f497f04044349e91992e1305c3313bd807e0022e88ecdc864f0444f469",
+    "server/src/index.js": "d0dcd642a6e54650480e14cbcd8f676ff2b798d28070adf4b025f2b50871e5bd",
+    "server/src/middleware/auth.js": "61c9fa4dadec7069235f1fd8df32f2e2c6010a8bac680902b0b63bb57ad4f52c",
+    "server/src/routes/account.js": "93392b1dc0f45a82d7070b4bc5258d738ba7c8c8c4b08f5aecc01a7439a73e24",
+    "server/src/services/account.js": "623ca1bff9d524e3df72fa86f343039d876c51bbf10916e147d255932cf74a3b",
+    "server/src/utils/business-error.js": "ca8bd173dbc365071357120e01b41c0a852ed4c74f83af0f2d6a88e9d2304849",
+    "server/src/utils/image-reference.js": "a9fb630662879e45e3fe67b2fd182b66a3d1de1ae69153e99107d463308e04cb",
+    "server/test/auth.test.mjs": "700d010fc9d2ac8a10c074df24abb60e3c8e9099f3497c247ea98e4c2b7e23a7",
+    "server/test/client-harness.mjs": "21ea857fb83063965b024c035359e91bed146fdbfe18de3331d24ab1d56f996d",
+    "server/test/foundation.test.mjs": "c07b3210ae1db211c6237f8c49aedb11dd82403cf9c2bdeb12cea08deedb9994",
+    "miniprogram/app.js": "3f7a8d8a5377d1ad05a9d217249eec4b1971f8f8b99869f965bc4905a5d1fe66",
+    "miniprogram/app.json": "510f97965c994e30b26f7cc197710c059767c8732188a2ce3d11813976160ba2",
+    "miniprogram/app.wxss": "f6db8b69712c4ef271e49a739bb6a20bbd3d9876f3c31d80e84edf6ba92759cb",
+    "miniprogram/assets/tab-diary-active.png": "8b8f23055c92f0644d5ba69149dfe56c08eac1d07bb03ec88c01377c43268e05",
+    "miniprogram/assets/tab-diary.png": "cf3cb260b4654f8aa25d545b35b4b967d9cecb3c68bd80e07343a7337b87ff39",
+    "miniprogram/assets/tab-me-active.png": "684c7260f66dfc9c7a895c9e9b8910fd5bda1693d5fd1b68c58ccd8f8aa957ed",
+    "miniprogram/assets/tab-me.png": "4189be6766b6e3b66d8567e7e106ec65a9df7d1d9ed77c6599dfa42752a08931",
+    "miniprogram/assets/tab-outfits-active.png": "a448df4045f31896e619f85aac713fbf1cc97f53abcf81d02eccfb8a6a9063a3",
+    "miniprogram/assets/tab-outfits.png": "c4731711bc4ede80d3cc1c07085f855d908c5ae8abb2267f1e12f6859500deed",
+    "miniprogram/assets/tab-wardrobe-active.png": "7a6f216badb9a798ce772cecb5e79a5b438b304d146e4e904700bbec0bdac0b7",
+    "miniprogram/assets/tab-wardrobe.png": "abf460c3c03048a5d5b00db5826e6b159edea9f460c4d9764106d6afa2191615",
+    "miniprogram/config.js": "f5daec78b68f3a80478d53aac7b7f012e99f24f268cce01ca8dd0d6d9bc461c9",
+    "miniprogram/pages/auth/login/index.js": "a9c443335628606598535896d4a100120cf8dc3d63ade6765417ebf80a9138d7",
+    "miniprogram/pages/auth/login/index.json": "01baa9e5ad226f02125d9437c005ce3730825dee840f97bfabe9dfc73cd1a366",
+    "miniprogram/pages/auth/login/index.wxml": "d28bb42589ed7e84662869484d9d833a25fdf38b4d6afd50167c21f734199e14",
+    "miniprogram/pages/auth/login/index.wxss": "df35014bb1eeecdd59f60d38a493694f405c79bf06e2bb425c11fa9a8411dd1a",
+    "miniprogram/pages/auth/register/index.js": "e97019be204351e08da7a2da129e66ea8a06fb97c04c50c4dfd49157f7cd33c8",
+    "miniprogram/pages/auth/register/index.json": "da728f9db871d3db902a5f5e1b2e17ce02fe9b745332036490793032aba038ca",
+    "miniprogram/pages/auth/register/index.wxml": "ed53e2ebc37641b7fad58d5e68dcba7b613e5cdcfa185fcf70ab438ee6fbc182",
+    "miniprogram/pages/auth/register/index.wxss": "df35014bb1eeecdd59f60d38a493694f405c79bf06e2bb425c11fa9a8411dd1a",
+    "miniprogram/pages/diary/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/diary/index.json": "c313b918dbd2ba0b068a92809676722d8d1b5142c6606d614a60a8f8002e4384",
+    "miniprogram/pages/diary/index.wxml": "ea88c365b6d89d883055c8ec5b9bb1faf5e9d10537979ab82a6c08a7fcc09abe",
+    "miniprogram/pages/diary/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/me/index.js": "411fe0c6386621ad98f92b8027102dddd4eeb4a0be2269ea753e15eaf6ef6c8d",
+    "miniprogram/pages/me/index.json": "a465281f644c1694ebbe3d38aade68e78a16b5a63e7a3e11c28cda4b7103b543",
+    "miniprogram/pages/me/index.wxml": "4ddbe4d88e0dd6ff047816c07afad848187f9e0c243d1d60a036ed93e1836ee3",
+    "miniprogram/pages/me/index.wxss": "e14d7a034566dfc795f80a998418f56b06b2952a13dbf22d784faa273a8a1316",
+    "miniprogram/pages/outfits/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/outfits/index.json": "18981933cc4956df66cb7a22d73b2c4350f0ce126076269370d05292b19ea814",
+    "miniprogram/pages/outfits/index.wxml": "b4f1e4adab85ce0c1cb002d9522601517cea2a705969db1711ec11e8dc1e0f54",
+    "miniprogram/pages/outfits/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/profile/index.js": "03b35046d7993a090fbfec3a18ac63948370b1a68946ef87ea6292e93d63be31",
+    "miniprogram/pages/profile/index.json": "975897489e6248d68ba184b940c69bb908c880ebe6271d767ca8f4d5929706a6",
+    "miniprogram/pages/profile/index.wxml": "d2c3acf4b6c71196540a79b6b7bc6419d7c114457db3270909caa597e08abaab",
+    "miniprogram/pages/profile/index.wxss": "f757304ea40853d59e3913b685d6884fdaa552c1c61a1012778efeb9aea81b34",
+    "miniprogram/pages/wardrobe/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/wardrobe/index.json": "9030e20b6faa91aac0b8b92d4790347306392c4c85db4aaf56859b0faeabd56a",
+    "miniprogram/pages/wardrobe/index.wxml": "13de7c37ec3abcd65755ef26c620edd31d9bd7df15a35fc42a345d0080607ecb",
+    "miniprogram/pages/wardrobe/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/project.config.example.json": "7000d6bcb091e61eb06273cc406a85b2b31fd297405b2261e22c2aa023b4edfd",
+    "miniprogram/utils/request.js": "0967623b5eadff3af85f0ecfae460defdac7efca4d1acb3336699af683f40666",
+    "miniprogram/utils/session.js": "e4730d6a318d52b5a48adf606986005e0987b727d1c4c28fb97d78a523d53a34"
+  },
+  "automatedRun": "run-20261107-03",
+  "manualRun": "run-20261107-02",
+  "manualUsername": "p302_abbadjea_u",
+  "unitTests": 64,
+  "realHttpCases": 65,
+  "checks": [
+    {
+      "id": "P302-V01",
+      "requirement": "阶段起点、真实实例/用户/允许变化和50图基线清楚",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "baseline.json",
+        "protection-latest.json",
+        "run-20261107-02/accounts.json"
+      ]
+    },
+    {
+      "id": "P302-V02",
+      "requirement": "合法注册201/User、NULL登录态、不自动登录、无新衣橱行",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V03",
+      "requirement": "trim/小写一致，大小写/空白变体重复409，约束身份正确",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V04",
+      "requirement": "缺字段/错类型/多余字段/长度/JSON非法/超大分别拒绝且不泄密",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V05",
+      "requirement": "Unicode计数正确，密码原值不trim，共享178编码/随机盐/正反验证",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V06",
+      "requirement": "只有正确登录签发43字符token/7天ISO到期，库仅64摘要且成对",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V07",
+      "requirement": "未知账号/错误密码同401且原有效会话不变",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V08",
+      "requirement": "缺/错格式/随机/旧/已退出token均401，不回显摘要",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V09",
+      "requirement": "到期前1ms/相等/后1ms口径正确，真实HTTP过期拒绝",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V10",
+      "requirement": "新登录替代旧token，旧退出不清新态；同账号原子退出重放失效",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V11",
+      "requirement": "A04仅当前User，A05只改自身昵称/头像/updated_at，越权字段拒绝",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V12",
+      "requirement": "昵称保存重读/重启后持久，取消与失败不写资料",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json"
+      ]
+    },
+    {
+      "id": "P302-V13",
+      "requirement": "null头像保存、缺失与非法引用拒绝，合法非空引用分层逻辑正确",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ],
+      "boundary": "Full nonnull avatar HTTP save/authenticated display deferred to P3-03; required layered cases passed."
+    },
+    {
+      "id": "P302-V14",
+      "requirement": "request地址/api一次，公共/保护头正确、非200/坏JSON/网络超时区分，无自动重试",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V15",
+      "requirement": "INVALID_CREDENTIALS留表单，UNAUTHENTICATED清理/单次跳转，多个401及旧响应不伤新会话",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V16",
+      "requirement": "首开无token/有效恢复/401/网络失败和重新编译行为正确，密码不存storage",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json"
+      ]
+    },
+    {
+      "id": "P302-V17",
+      "requirement": "注册→登录→我的→资料保存→重读→退出→重新登录→最终退出完整走通",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json"
+      ]
+    },
+    {
+      "id": "P302-V18",
+      "requirement": "确认密码不发API，提交防重、失败保留、离开清密码、资料未保存返回规则",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json"
+      ],
+      "note": "原弹窗实际查看记录保留；用户明确免补被覆盖PNG，当前430-unsaved.png按登录图登记。工具尺寸/连续流程部分依人工确认。"
+    },
+    {
+      "id": "P302-V19",
+      "requirement": "375/430、460较矮高度的表单/键盘/长昵称/错误与按钮无明显遮挡",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json"
+      ],
+      "note": "原弹窗实际查看记录保留；用户明确免补被覆盖PNG，当前430-unsaved.png按登录图登记。工具尺寸/连续流程部分依人工确认。"
+    },
+    {
+      "id": "P302-V20",
+      "requirement": "两个自动账号及人工账号归属/增量清楚，结束正常退出，无自动删除/复制样例",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "baseline.json",
+        "protection-latest.json",
+        "run-20261107-02/accounts.json"
+      ]
+    },
+    {
+      "id": "P302-V21",
+      "requirement": "六业务表/原50图/源/旧证据不变；既有账号不改身份和密码，不回写旧登录态",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "baseline.json",
+        "protection-latest.json",
+        "run-20261107-02/accounts.json"
+      ]
+    },
+    {
+      "id": "P302-V22",
+      "requirement": "所有适用P3-01组迁移回归通过，健康仍匿名，启动/池/错误未破坏",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P302-V23",
+      "requirement": "HTTP和工具证据不泄露密码/token/派生串/私有配置，仓库忽略正确",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json",
+        "secret-review.json"
+      ],
+      "note": "原弹窗实际查看记录保留；用户明确免补被覆盖PNG，当前430-unsaved.png按登录图登记。工具尺寸/连续流程部分依人工确认。"
+    },
+    {
+      "id": "P302-V24",
+      "requirement": "A09/my健康迁移仍可用，未实现业务保持占位/404，未公开图片",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json"
+      ]
+    },
+    {
+      "id": "P302-V25",
+      "requirement": "文档/示例/真实能力一致，P3-03头像链和隔离未测范围交代清楚",
+      "status": "passed",
+      "evidence": [
+        "run-20261107-03/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261107-02/manual-confirmation.json",
+        "run-20261107-02/manual-final-review.json",
+        "run-20261107-02/evidence-exception.json",
+        "../../P3-02执行与验收记录.md",
+        "../../本地启动与演示说明.md"
+      ]
+    },
+    {
+      "id": "P302-V26",
+      "requirement": "两端main、p3-02附注对象/目标与本地一致、工作区干净",
+      "status": "pending",
+      "evidence": [
+        "release-verification.local.json generated after commit/tag/push and live reference checks"
+      ]
+    }
+  ],
+  "p302Complete": false,
+  "next": "Publish p3-02 and verify both remotes; final report release-verification.local.json",
+  "localPassed": 25,
+  "total": 26,
+  "manualOperations": "passed",
+  "screenshotException": {
+    "confirmedAt": "2026-11-07T11:30:38.489906+00:00",
+    "source": "explicit user instruction",
+    "userReply": "接受此前实际查看记录与本轮人工确认，免补弹窗图",
+    "scope": "Only replacement of the overwritten modal PNG; no waiver of feature tests, final logout, data protection or dual-remote verification.",
+    "priorObservation": "manual-review.json retains original modal SHA256 and actual viewing conclusion; original image was overwritten.",
+    "evidenceLevel": "previous assistant visual inspection plus this run user confirmation; current PNG is a login page, not modal proof"
+  },
+  "counts": {
+    "users": 9,
+    "categories": 7,
+    "clothes": 24,
+    "outfits": 8,
+    "outfit_items": 37,
+    "diaries": 12,
+    "diary_items": 53
+  }
+}

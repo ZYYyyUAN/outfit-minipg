@@ -1,7 +1,11 @@
 <view class="page">
   <view class="eyebrow">个人衣橱与穿搭日记</view>
   <view class="title">我的</view>
-  <view class="description">账号功能待接入，当前未登录。</view>
+  <view wx:if="{{user}}"><view class="avatar-placeholder">衣</view><view class="section-title break-text">{{user.nickname}}</view>
+<view class="hint break-text">账号：{{user.username}}</view><view class="hint">头像上传与显示将在后续接入。</view>
+<button class="button" bindtap="editProfile" disabled="{{busy}}">编辑资料</button>
+<button class="button secondary" bindtap="logout" disabled="{{busy}}" loading="{{busy}}">退出登录</button></view>
+<view wx:if="{{error}}" class="error" role="alert">{{error}}</view>
   <view class="section">
     <view class="section-title">本地连接</view>
     <view class="hint">本阶段用于检查小程序与本机服务是否连通。</view>

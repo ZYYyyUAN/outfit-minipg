@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-11-07T10:56:19.109132+00:00",
+  "source": "user confirmation",
+  "toolVersion": "2.02.2609250 (user reports unchanged)",
+  "baseLibrary": "3.18.0 (user reports unchanged)",
+  "reportedResult": "操作全部通过、无本项目异常、四张图保存",
+  "reportedSteps": [
+    "注册后仍需登录",
+    "错误密码反馈",
+    "四入口切换",
+    "我的健康检查成功",
+    "昵称非法输入及保存",
+    "取消拒绝放弃保留草稿",
+    "原生顶部返回提示",
+    "375/430及460较矮高度",
+    "重新编译恢复身份",
+    "退出、再次登录、最终退出"
+  ],
+  "assistantObservedDifferences": [
+    "Only three PNGs located in specified directory; fourth path requested",
+    "DB shows UI user still signed in; final logout requested",
+    "Additional zyyuan account is signed out but ownership confirmation requested"
+  ],
+  "status": "passed with explicit screenshot exception",
+  "followUp": {
+    "userReply": "ok 是的 已经补充",
+    "accountOwnership": "zyyuan confirmed as user manual registration",
+    "finalLogout": "DB confirmed both manual accounts auth pair NULL",
+    "authScreenshot": "430-auth.png found and viewed, empty password"
+  },
+  "finalStatus": {
+    "allRequiredOperations": "user confirmed passed",
+    "bothManualAccountsLoggedOut": "independent DB read confirmed NULL auth pair",
+    "screenshotException": "evidence-exception.json"
+  }
+}

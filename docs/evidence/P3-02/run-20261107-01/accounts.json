@@ -1,0 +1,26 @@
+{
+  "runId": "run-20261107-01",
+  "accounts": [
+    {
+      "runId": "run-20261107-01",
+      "username": "p302_dhiajadd_a",
+      "id": 12,
+      "purpose": "HTTP",
+      "state": "logged-out"
+    },
+    {
+      "runId": "run-20261107-01",
+      "username": "p302_dhiajadd_b",
+      "id": 13,
+      "purpose": "HTTP",
+      "state": "logged-out"
+    },
+    {
+      "runId": "run-20261107-01",
+      "username": "p302_dhiajadd_u",
+      "id": null,
+      "purpose": "manual",
+      "state": "reserved"
+    }
+  ]
+}

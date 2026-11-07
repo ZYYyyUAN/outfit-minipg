@@ -1,0 +1,14 @@
+<view class="page auth-page"><view class="eyebrow">个人衣橱与穿搭日记</view><view class="title">欢迎回来</view><view class="description">登录后，继续整理属于你的日常。</view>
+<view wx:if="{{restoring}}" class="status">正在确认登录状态…</view>
+<view wx:elif="{{restoreError}}" class="section"><view class="error">{{restoreError}}</view><view class="hint">已保留登录状态，连接恢复后可重试。</view><button class="button" bindtap="retry">重新连接</button></view>
+<view wx:else class="form">
+<label class="field-label" for="username">用户名 <text class="required">*</text></label>
+<input id="username" class="field"  value="{{username}}" data-field="username" bindinput="input" maxlength="-1" disabled="{{busy}}" focus="{{focusField === 'username'}}" placeholder="4～20位字母、数字或下划线" adjust-position="{{true}}" />
+<view wx:if="{{fields.username}}" class="error">{{fields.username}}</view>
+<label class="field-label" for="password">密码 <text class="required">*</text></label>
+<input id="password" class="field" password value="{{password}}" data-field="password" bindinput="input" maxlength="-1" disabled="{{busy}}" focus="{{focusField === 'password'}}" placeholder="8～64个字符" adjust-position="{{true}}" />
+<view wx:if="{{fields.password}}" class="error">{{fields.password}}</view>
+<view wx:if="{{error}}" class="error" role="alert">{{error}}</view>
+<button class="button" bindtap="submit" loading="{{busy}}" disabled="{{busy}}">登录</button>
+<button class="button secondary" bindtap="register" disabled="{{busy}}">创建账号</button>
+</view></view>

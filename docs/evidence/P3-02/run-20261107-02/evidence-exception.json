@@ -1,0 +1,8 @@
+{
+  "confirmedAt": "2026-11-07T11:30:38.489906+00:00",
+  "source": "explicit user instruction",
+  "userReply": "接受此前实际查看记录与本轮人工确认，免补弹窗图",
+  "scope": "Only replacement of the overwritten modal PNG; no waiver of feature tests, final logout, data protection or dual-remote verification.",
+  "priorObservation": "manual-review.json retains original modal SHA256 and actual viewing conclusion; original image was overwritten.",
+  "evidenceLevel": "previous assistant visual inspection plus this run user confirmation; current PNG is a login page, not modal proof"
+}

@@ -1,0 +1,17 @@
+<view class="page auth-page"><view class="eyebrow">个人衣橱与穿搭日记</view><view class="title">创建你的账号</view><view class="description">注册成功后返回登录。密码中的空格会原样保留。</view>
+<view class="form">
+<label class="field-label" for="username">用户名 <text class="required">*</text></label>
+<input id="username" class="field"  value="{{username}}" data-field="username" bindinput="input" maxlength="-1" disabled="{{busy}}" focus="{{focusField === 'username'}}" placeholder="4～20位字母、数字或下划线" adjust-position="{{true}}" />
+<view wx:if="{{fields.username}}" class="error">{{fields.username}}</view>
+<label class="field-label" for="nickname">昵称 <text class="required">*</text><text class="count">{{nicknameCount}}/20</text></label>
+<input id="nickname" class="field"  value="{{nickname}}" data-field="nickname" bindinput="input" maxlength="-1" disabled="{{busy}}" focus="{{focusField === 'nickname'}}" placeholder="你希望如何被称呼" adjust-position="{{true}}" />
+<view wx:if="{{fields.nickname}}" class="error">{{fields.nickname}}</view>
+<label class="field-label" for="password">密码 <text class="required">*</text></label>
+<input id="password" class="field" password value="{{password}}" data-field="password" bindinput="input" maxlength="-1" disabled="{{busy}}" focus="{{focusField === 'password'}}" placeholder="8～64个字符" adjust-position="{{true}}" />
+<view wx:if="{{fields.password}}" class="error">{{fields.password}}</view>
+<label class="field-label" for="confirmation">确认密码 <text class="required">*</text></label>
+<input id="confirmation" class="field" password value="{{confirmation}}" data-field="confirmation" bindinput="input" maxlength="-1" disabled="{{busy}}" focus="{{focusField === 'confirmation'}}" placeholder="再次输入密码" adjust-position="{{true}}" />
+<view wx:if="{{fields.confirmation}}" class="error">{{fields.confirmation}}</view>
+<view wx:if="{{error}}" class="error" role="alert">{{error}}</view>
+<button class="button" bindtap="submit" loading="{{busy}}" disabled="{{busy}}">注册</button>
+</view></view>

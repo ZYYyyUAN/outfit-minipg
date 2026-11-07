@@ -1,0 +1,34 @@
+{
+  "runId": "run-20261107-02",
+  "accounts": [
+    {
+      "runId": "run-20261107-02",
+      "username": "p302_abbadjea_a",
+      "id": 15,
+      "purpose": "HTTP",
+      "state": "logged-out"
+    },
+    {
+      "runId": "run-20261107-02",
+      "username": "p302_abbadjea_b",
+      "id": 16,
+      "purpose": "HTTP",
+      "state": "logged-out"
+    },
+    {
+      "runId": "run-20261107-02",
+      "username": "p302_abbadjea_u",
+      "id": 22,
+      "purpose": "manual",
+      "state": "logged-out",
+      "confirmation": "User completed final logout; DB auth pair NULL"
+    },
+    {
+      "runId": "run-20261107-02",
+      "username": "zyyuan",
+      "id": 21,
+      "purpose": "manual-extra; ownership confirmed by user",
+      "state": "logged-out"
+    }
+  ]
+}
