@@ -9,10 +9,12 @@ function restore() {
 function adopt(login) { epoch++; token = login.token; expiresAt = login.expiresAt; user = login.user; wx.setStorageSync(key, { token, expiresAt }); }
 function setUser(value) { user = value; }
 function clear() { epoch++; token = null; expiresAt = null; user = null; wx.removeStorageSync(key); }
+function isCurrent(sent) { return sent.epoch === epoch; }
+function expire(redirect = true) { clear(); if (redirect) showLogin(); }
 function showLogin() {
   if (navigating) return;
   navigating = true;
   wx.reLaunch({ url: '/pages/auth/login/index', complete: () => { navigating = false; } });
 }
 async function guard() { await getApp().authReady; if (!token || !user) { showLogin(); return false; } return true; }
-module.exports = { snapshot, restore, adopt, setUser, clear, showLogin, guard };
+module.exports = { snapshot, restore, adopt, setUser, clear, showLogin, guard, isCurrent, expire };

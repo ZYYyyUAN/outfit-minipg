@@ -1,0 +1,376 @@
+{
+  "state": "local-passed-pending-release",
+  "p303Complete": false,
+  "stage3Complete": false,
+  "unitTests": 119,
+  "realHttpCases": 122,
+  "migratedAuthHttpCases": 66,
+  "implementation": {
+    "server/.env.example": "f6c3de3bc1c606519509c8b18e6441afb0a7b4831291b9501103929a724d18c6",
+    "server/package-lock.json": "6d8dd20a2b71cecd89a3887b140605c658f77a52efb420aafed376ed07ea0e1c",
+    "server/package.json": "0f1cf75ad59cb2fcdb3a994dccb166ba50538c2d31f677fd0df2fca7658fb441",
+    "server/scripts/verify-auth.mjs": "c3df548434af8283d019a8a53f14d5632b277a0214e371848c37cd6cd36a4d14",
+    "server/scripts/verify-foundation.mjs": "d966ac053926faf2f76f8e54ee51104d83cfe6d7c384a0cc649954151eb00251",
+    "server/scripts/verify-media.mjs": "437b5025da5d8bc83c3839cf8c18c745edc2570407c50838b1b449509b574f01",
+    "server/src/app.js": "9880665cb5485c1c67c6e7a2c93dbc6a7f184ea5e7f0f49f63e75353e42faae3",
+    "server/src/config.js": "a4ed05c3ec958bc2021a609b0f49c3aff0743edef0533c106f2337ec79af5600",
+    "server/src/db.js": "b196e3f497f04044349e91992e1305c3313bd807e0022e88ecdc864f0444f469",
+    "server/src/index.js": "3985d0df88a7fec509574a451eb72fb2de20681b07388390b3e706e2ba17204f",
+    "server/src/middleware/auth.js": "61c9fa4dadec7069235f1fd8df32f2e2c6010a8bac680902b0b63bb57ad4f52c",
+    "server/src/routes/account.js": "93392b1dc0f45a82d7070b4bc5258d738ba7c8c8c4b08f5aecc01a7439a73e24",
+    "server/src/routes/media.js": "37eb2635b8d5c82328e34d741d04b282611cd5b19b5b0efb2402e1c585133d3f",
+    "server/src/services/account.js": "623ca1bff9d524e3df72fa86f343039d876c51bbf10916e147d255932cf74a3b",
+    "server/src/services/media.js": "98312fa070f96c27732fe426192af11d4519e6a236959d9283a2560c1b1b9a54",
+    "server/src/utils/business-error.js": "ca8bd173dbc365071357120e01b41c0a852ed4c74f83af0f2d6a88e9d2304849",
+    "server/src/utils/image-reference.js": "a9fb630662879e45e3fe67b2fd182b66a3d1de1ae69153e99107d463308e04cb",
+    "server/test/auth.test.mjs": "700d010fc9d2ac8a10c074df24abb60e3c8e9099f3497c247ea98e4c2b7e23a7",
+    "server/test/client-harness.mjs": "16017d8a63309eeffc95b88dbd2a03e4b2333c75c479c8ac9650f13f10c754c2",
+    "server/test/foundation.test.mjs": "c07b3210ae1db211c6237f8c49aedb11dd82403cf9c2bdeb12cea08deedb9994",
+    "server/test/media-fixtures.mjs": "bdf57853e9a5a9c5b8ce6473ad3a669cf3cfc932c05a4ae3926108f4d9e658e1",
+    "server/test/media.test.mjs": "fee8df880500723492f0611f8073b1061dadda159abf10694dd650978a16b944",
+    "miniprogram/app.js": "3f7a8d8a5377d1ad05a9d217249eec4b1971f8f8b99869f965bc4905a5d1fe66",
+    "miniprogram/app.json": "510f97965c994e30b26f7cc197710c059767c8732188a2ce3d11813976160ba2",
+    "miniprogram/app.wxss": "ee59db8af2e7879f713018423f549fea0527a00bede88058a937f019584e4d78",
+    "miniprogram/assets/tab-diary-active.png": "8b8f23055c92f0644d5ba69149dfe56c08eac1d07bb03ec88c01377c43268e05",
+    "miniprogram/assets/tab-diary.png": "cf3cb260b4654f8aa25d545b35b4b967d9cecb3c68bd80e07343a7337b87ff39",
+    "miniprogram/assets/tab-me-active.png": "684c7260f66dfc9c7a895c9e9b8910fd5bda1693d5fd1b68c58ccd8f8aa957ed",
+    "miniprogram/assets/tab-me.png": "4189be6766b6e3b66d8567e7e106ec65a9df7d1d9ed77c6599dfa42752a08931",
+    "miniprogram/assets/tab-outfits-active.png": "a448df4045f31896e619f85aac713fbf1cc97f53abcf81d02eccfb8a6a9063a3",
+    "miniprogram/assets/tab-outfits.png": "c4731711bc4ede80d3cc1c07085f855d908c5ae8abb2267f1e12f6859500deed",
+    "miniprogram/assets/tab-wardrobe-active.png": "7a6f216badb9a798ce772cecb5e79a5b438b304d146e4e904700bbec0bdac0b7",
+    "miniprogram/assets/tab-wardrobe.png": "abf460c3c03048a5d5b00db5826e6b159edea9f460c4d9764106d6afa2191615",
+    "miniprogram/config.js": "f5daec78b68f3a80478d53aac7b7f012e99f24f268cce01ca8dd0d6d9bc461c9",
+    "miniprogram/pages/auth/login/index.js": "a9c443335628606598535896d4a100120cf8dc3d63ade6765417ebf80a9138d7",
+    "miniprogram/pages/auth/login/index.json": "01baa9e5ad226f02125d9437c005ce3730825dee840f97bfabe9dfc73cd1a366",
+    "miniprogram/pages/auth/login/index.wxml": "d28bb42589ed7e84662869484d9d833a25fdf38b4d6afd50167c21f734199e14",
+    "miniprogram/pages/auth/login/index.wxss": "df35014bb1eeecdd59f60d38a493694f405c79bf06e2bb425c11fa9a8411dd1a",
+    "miniprogram/pages/auth/register/index.js": "e97019be204351e08da7a2da129e66ea8a06fb97c04c50c4dfd49157f7cd33c8",
+    "miniprogram/pages/auth/register/index.json": "da728f9db871d3db902a5f5e1b2e17ce02fe9b745332036490793032aba038ca",
+    "miniprogram/pages/auth/register/index.wxml": "ed53e2ebc37641b7fad58d5e68dcba7b613e5cdcfa185fcf70ab438ee6fbc182",
+    "miniprogram/pages/auth/register/index.wxss": "df35014bb1eeecdd59f60d38a493694f405c79bf06e2bb425c11fa9a8411dd1a",
+    "miniprogram/pages/diary/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/diary/index.json": "c313b918dbd2ba0b068a92809676722d8d1b5142c6606d614a60a8f8002e4384",
+    "miniprogram/pages/diary/index.wxml": "ea88c365b6d89d883055c8ec5b9bb1faf5e9d10537979ab82a6c08a7fcc09abe",
+    "miniprogram/pages/diary/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/me/index.js": "28da0580d5256a439b8b7eed5cac8f18534c18d2a92971fe85c9b52c6a0e2676",
+    "miniprogram/pages/me/index.json": "a465281f644c1694ebbe3d38aade68e78a16b5a63e7a3e11c28cda4b7103b543",
+    "miniprogram/pages/me/index.wxml": "a4d5f1a259b8c214914abd9e72b8b21b6fd6223bb847bb94d7d52644351dbf39",
+    "miniprogram/pages/me/index.wxss": "e14d7a034566dfc795f80a998418f56b06b2952a13dbf22d784faa273a8a1316",
+    "miniprogram/pages/outfits/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/outfits/index.json": "18981933cc4956df66cb7a22d73b2c4350f0ce126076269370d05292b19ea814",
+    "miniprogram/pages/outfits/index.wxml": "b4f1e4adab85ce0c1cb002d9522601517cea2a705969db1711ec11e8dc1e0f54",
+    "miniprogram/pages/outfits/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/profile/index.js": "bd5016209aaa8588761a345906fa763d5417b9acc44194a81cc64e72e0f9ff95",
+    "miniprogram/pages/profile/index.json": "975897489e6248d68ba184b940c69bb908c880ebe6271d767ca8f4d5929706a6",
+    "miniprogram/pages/profile/index.wxml": "8ef8009bb4f743abb58135d16e16cf79bcfdceab4c98ace0a219e8763f4253ef",
+    "miniprogram/pages/profile/index.wxss": "f757304ea40853d59e3913b685d6884fdaa552c1c61a1012778efeb9aea81b34",
+    "miniprogram/pages/wardrobe/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/wardrobe/index.json": "9030e20b6faa91aac0b8b92d4790347306392c4c85db4aaf56859b0faeabd56a",
+    "miniprogram/pages/wardrobe/index.wxml": "13de7c37ec3abcd65755ef26c620edd31d9bd7df15a35fc42a345d0080607ecb",
+    "miniprogram/pages/wardrobe/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/project.config.example.json": "7000d6bcb091e61eb06273cc406a85b2b31fd297405b2261e22c2aa023b4edfd",
+    "miniprogram/utils/media.js": "458dee77bb91966579125b371deed345e377bb7ce9140362e6d0d10d10b88be8",
+    "miniprogram/utils/request.js": "66c3d7ccd6896497fdcedcc2fd1e48b5c92b7acde85671d7fd01cd580178c190",
+    "miniprogram/utils/session.js": "d20193b3f572c6c18fea27ee36f003dbd0c9e14feb37b3610720fef6b8b2b010"
+  },
+  "runId": "run-20261108-01",
+  "checks": [
+    {
+      "id": "P303-V01",
+      "requirement": "重新核对实施HEAD、真实实例/U0/7表与当前文件集合；归属和允许变化明确",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "baseline.json",
+        "protection-latest.json",
+        "run-20261108-01/accounts.json",
+        "run-20261108-01/files-manifest.json"
+      ]
+    },
+    {
+      "id": "P303-V02",
+      "requirement": "两个候选包锁定、Windows加载/完整解码及npm ci可复现，原Express/mysql2不漂移",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "dependency-check.json"
+      ]
+    },
+    {
+      "id": "P303-V03",
+      "requirement": "A06匿名/过期401，登录7分类/顺序正确，多余参数400，全表只读",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V04",
+      "requirement": "A07未登录/过期先401，包括坏multipart/错误JSON/超限体，不建目录或文件",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V05",
+      "requirement": "有效JPEG和PNG上传201，UUID/当前用户目录、真实mime/size、URL字段正确，不直接更新头像",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V06",
+      "requirement": "5242879/5242880字节有效PNG可上传，5242881拒绝413，失败无文件",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V07",
+      "requirement": "缺file400 IMAGE_REQUIRED；空文件415；错字段/多文件/额外字段/坏multipart400 INVALID_INPUT，已知解析身份正确",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V08",
+      "requirement": "GIF/SVG/HTML/假头/截断JPEG及PNG拒绝415；合法PNG错后缀按真实格式处理",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V09",
+      "requirement": "独占写入不覆盖；写入失败仅清本次未完成文件，旧/成功文件不动",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V10",
+      "requirement": "A08本人200正确二进制/MIME/长度/no-store，下载SHA等于上传原字节，不是raw像素或JSON",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V11",
+      "requirement": "A08匿名/过期401，B读取A的文件404，双方自己的文件仍可读",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V12",
+      "requirement": "非法UUID、编码斜线/父目录、无文件404；query400；未知IO500且不泄路径",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V13",
+      "requirement": "真实应用进程重启后原A04引用/有效期不变、同令牌A08原图SHA相同",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V14",
+      "requirement": "同属账号A07→A05非空保存→A04→A08完整成功，其他用户/业务不变",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V15",
+      "requirement": "替换后新引用/新图成功；移除后null；取消不改原资料，成功文件均保留",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V16",
+      "requirement": "uploadFile带头/file字段、响应字符串JSON/201检查、无手写JSON或multipart头；坏响应/超时/断网标准拒绝",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json"
+      ]
+    },
+    {
+      "id": "P303-V17",
+      "requirement": "downloadFile带头、仅200临时路径供显示，401/404/5xx/坏状态及图片binderror不显示错误JSON",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json"
+      ]
+    },
+    {
+      "id": "P303-V18",
+      "requirement": "JSON/上传/下载统一401失效；多个401单次导航、登录密码错误仍留表单",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V19",
+      "requirement": "旧账号/旧图片操作/离页后迟到回包不覆盖新图、新账号或再次返回",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V20",
+      "requirement": "无图→选择→上传→保存→我的→重新进入/编译恢复可显示，先前本地预览不冒充重新下载",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json"
+      ]
+    },
+    {
+      "id": "P303-V21",
+      "requirement": "选择取消、上传/保存失败、手动重试、放弃本次选图、整体取消、脏返回及仅改昵称保持头像正确",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json"
+      ]
+    },
+    {
+      "id": "P303-V22",
+      "requirement": "375×812、430×932、460较矮高度下预览完整、长昵称/错误/按钮可滚动、底部无遮挡",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json"
+      ]
+    },
+    {
+      "id": "P303-V23",
+      "requirement": "账号U0+实际注册增量、允许列与所有新增文件清单一致，最终专用账号退出",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "baseline.json",
+        "protection-latest.json",
+        "run-20261108-01/accounts.json",
+        "run-20261108-01/files-manifest.json"
+      ]
+    },
+    {
+      "id": "P303-V24",
+      "requirement": "原6表/7表结构/原文件和历史材料不变，新增集合恰与manifest相等，源码与测试SHA一致",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "baseline.json",
+        "protection-latest.json",
+        "run-20261108-01/accounts.json",
+        "run-20261108-01/files-manifest.json"
+      ]
+    },
+    {
+      "id": "P303-V25",
+      "requirement": "适用P3-02单元/HTTP回归通过，health匿名、未实现CRUD仍404/占位；旧只读断言迁移正确",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P303-V26",
+      "requirement": "私有配置/密码/token/派生值未入Git/日志/截图，临时显示路径不写DB/storage",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json",
+        "secret-review.json"
+      ]
+    },
+    {
+      "id": "P303-V27",
+      "requirement": "文档/界面/真实能力一致，P3-02非空头像待测必修已闭环，剩余条件项明确",
+      "status": "passed",
+      "evidence": [
+        "run-20261108-01/automated-results.json",
+        "unit-regression-results.txt",
+        "run-20261108-01/manual-confirmation.json",
+        "run-20261108-01/manual-review.json",
+        "../../P3-03执行与验收记录.md",
+        "../../本地启动与演示说明.md"
+      ]
+    },
+    {
+      "id": "P303-V28",
+      "requirement": "两端main、附注p3-03对象/目标与本地一致、工作区干净",
+      "status": "pending",
+      "evidence": [
+        "release-verification.local.json generated only after commit/tag/push/live checks"
+      ]
+    }
+  ],
+  "localPassed": 27,
+  "total": 28,
+  "manualResult": "passed",
+  "counts": {
+    "users": 12,
+    "categories": 7,
+    "clothes": 24,
+    "outfits": 8,
+    "outfit_items": 37,
+    "diaries": 12,
+    "diary_items": 53
+  },
+  "originalImages": 50,
+  "newImages": 9,
+  "totalImages": 59,
+  "next": "Commit and annotated p3-03, push both remotes and verify V28"
+}

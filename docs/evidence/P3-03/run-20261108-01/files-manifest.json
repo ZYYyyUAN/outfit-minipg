@@ -1,0 +1,144 @@
+{
+  "runId": "run-20261108-01",
+  "files": [
+    {
+      "runId": "run-20261108-01",
+      "userId": 23,
+      "imagePath": "users/23/fd39d0b3-12dd-4b80-af83-4e7ad3a4ea66.jpg",
+      "filename": "fd39d0b3-12dd-4b80-af83-4e7ad3a4ea66.jpg",
+      "mimeType": "image/jpeg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "source": {
+        "kind": "assets/clothes/clothing-001.jpg",
+        "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 23,
+      "imagePath": "users/23/fb73f2ff-14b3-4fa4-9fc9-d9ccfd20b730.png",
+      "filename": "fb73f2ff-14b3-4fa4-9fc9-d9ccfd20b730.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "generated PNG",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 24,
+      "imagePath": "users/24/d8e26d12-f716-48ae-993b-e33a1e1b3259.png",
+      "filename": "d8e26d12-f716-48ae-993b-e33a1e1b3259.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "generated PNG",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 23,
+      "imagePath": "users/23/79847617-77b6-42c2-8014-1cbd06f8263e.png",
+      "filename": "79847617-77b6-42c2-8014-1cbd06f8263e.png",
+      "mimeType": "image/png",
+      "size": 5242879,
+      "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7",
+      "source": {
+        "kind": "valid PNG tEXt boundary",
+        "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 23,
+      "imagePath": "users/23/677639d7-ef18-4b5f-971a-9fe3e391650b.png",
+      "filename": "677639d7-ef18-4b5f-971a-9fe3e391650b.png",
+      "mimeType": "image/png",
+      "size": 5242880,
+      "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4",
+      "source": {
+        "kind": "valid PNG tEXt boundary",
+        "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 26,
+      "imagePath": "users/26/006dcb64-7a10-4561-8f30-3e4a6ef8252c.png",
+      "filename": "006dcb64-7a10-4561-8f30-3e4a6ef8252c.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "manual known fixture",
+        "path": "docs/evidence/P3-03/run-20261108-01/fixtures/ui-avatar.png",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful manual upload retained",
+      "avatarReferenced": true
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 26,
+      "imagePath": "users/26/98ed3dd5-cece-43f7-9fc2-f21c96fa2a15.png",
+      "filename": "98ed3dd5-cece-43f7-9fc2-f21c96fa2a15.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "manual known fixture",
+        "path": "docs/evidence/P3-03/run-20261108-01/fixtures/ui-avatar.png",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful manual upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 26,
+      "imagePath": "users/26/b2c692a7-1f12-4951-9609-0116ed288023.png",
+      "filename": "b2c692a7-1f12-4951-9609-0116ed288023.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "manual known fixture",
+        "path": "docs/evidence/P3-03/run-20261108-01/fixtures/ui-avatar.png",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful manual upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261108-01",
+      "userId": 26,
+      "imagePath": "users/26/cb8ba20e-b6c3-4bcf-ba7b-73a1083e6a96.jpg",
+      "filename": "cb8ba20e-b6c3-4bcf-ba7b-73a1083e6a96.jpg",
+      "mimeType": "image/jpeg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "source": {
+        "kind": "manual known fixture",
+        "path": "assets/clothes/clothing-001.jpg",
+        "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a"
+      },
+      "retention": "successful manual upload retained",
+      "avatarReferenced": false
+    }
+  ]
+}

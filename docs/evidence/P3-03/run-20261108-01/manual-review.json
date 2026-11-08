@@ -1,0 +1,36 @@
+{
+  "reviewedAt": "2026-11-08T06:42:52.767468+00:00",
+  "images": [
+    {
+      "file": "manual/375-profile-uploaded.png",
+      "width": 345,
+      "height": 749,
+      "sha256": "b61bf988de20516fcfae2c60387395015f98bc10684952264e729d83fce86a0a",
+      "viewed": true,
+      "finding": "JPEG衣物完整预览、图片已就绪提示、昵称与保存/取消均完整，无明显横向溢出。",
+      "secretReview": "No visible password, token, AppID or private headers"
+    },
+    {
+      "file": "manual/375-me-avatar-reloaded.png",
+      "width": 340,
+      "height": 746,
+      "sha256": "7decde6fd47cb3216109045507bd79a22a053b41662491d1dab6a4a7680284fb",
+      "viewed": true,
+      "finding": "我的页显示粉色PNG格子头像及实际账号/昵称，四tab及操作按钮完整；重新编译事实依用户确认。截图中健康为尚未检查，不以此图证明健康成功。",
+      "secretReview": "No visible password, token, AppID or private headers"
+    },
+    {
+      "file": "manual/430-profile-unsaved-dialog.png",
+      "width": 354,
+      "height": 756,
+      "sha256": "c7fca9a10014994ff8ca0b4f75d46f1b6d5a562b9518e84974f8d615237b5303",
+      "viewed": true,
+      "finding": "自定义页面取消的放弃修改弹窗及两个操作完整，背景头像/草稿可见；不是原生顶部返回截图。",
+      "secretReview": "No visible password, token, AppID or private headers"
+    }
+  ],
+  "status": "passed",
+  "logicalSizeProof": "User-confirmed tool settings; no claim that scaled PNG dimensions equal logical viewports.",
+  "nativeBackAndFullFlow": "user confirmation, not independently proven by the custom cancel screenshot",
+  "exceptions": []
+}

@@ -2,12 +2,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { serverRoot } from '../src/config.js';
-export function clientHarness(request) {
+export function clientHarness(request, extraWx = {}) {
   const cache = new Map(), storage = new Map(), calls = [];
   let app, currentPages = [];
-  const wx = { request, getStorageSync: k => storage.get(k), setStorageSync: (k,v) => storage.set(k,v), removeStorageSync: k => storage.delete(k),
+  const wx = { request, uploadFile: o => o.fail({ errMsg: 'fixture unavailable' }), downloadFile: o => o.fail({ errMsg: 'fixture unavailable' }), chooseMedia: o => o.fail({ errMsg: 'chooseMedia:fail cancel' }), getStorageSync: k => storage.get(k), setStorageSync: (k,v) => storage.set(k,v), removeStorageSync: k => storage.delete(k),
     reLaunch: o => calls.push(['reLaunch',o]), switchTab: o => calls.push(['switchTab',o]), navigateTo: o => calls.push(['navigateTo',o]), navigateBack: o => calls.push(['navigateBack',o]),
-    showModal: o => calls.push(['modal',o]), enableAlertBeforeUnload: o => calls.push(['enableAlert',o]), disableAlertBeforeUnload: () => calls.push(['disableAlert']) };
+    showModal: o => calls.push(['modal',o]), enableAlertBeforeUnload: o => calls.push(['enableAlert',o]), disableAlertBeforeUnload: () => calls.push(['disableAlert']), ...extraWx };
   function load(relative) {
     const filename = path.resolve(serverRoot, '../miniprogram', relative);
     if (cache.has(filename)) return cache.get(filename).exports;

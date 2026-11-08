@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-07T17:38:20.562Z",
+  "node": "v24.16.0",
+  "platform": "win32",
+  "arch": "x64",
+  "npmCi": "completed successfully in this execution",
+  "versions": {
+    "multer": "2.5.0",
+    "sharp": "0.35.5",
+    "express": "5.3.0",
+    "mysql2": "3.24.6"
+  },
+  "decoderEvidence": "unit-regression-results.txt; real valid JPEG/PNG and PNG 5MiB boundary HTTP checks",
+  "httpCases": 122,
+  "actualProcessRestarts": {
+    "oldPid": 80704,
+    "newPid": 79116,
+    "avatarPreserved": true,
+    "byteHashPreserved": true,
+    "expiryUnchanged": true
+  },
+  "implementationFiles": 66
+}

@@ -1,0 +1,44 @@
+{
+  "runId": "run-20261108-01",
+  "accounts": [
+    {
+      "runId": "run-20261108-01",
+      "username": "p303_fa05b2ac_a",
+      "id": 23,
+      "purpose": "HTTP",
+      "state": "logged-out",
+      "immutable": {
+        "id": "535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790",
+        "username": "577a9925bd264a37c8602f4820717b6e30cd3b003047dde993d032886eed1800",
+        "password_hash": "1f0323fa00f4ef8b13c895fdf00e6b07fe990afa85264163e606d54f4a6e9706",
+        "created_at": "640f4eb2e8094b896b5e6c399a56fa72cd0e9c60898993cf41e7c506895fd225"
+      }
+    },
+    {
+      "runId": "run-20261108-01",
+      "username": "p303_fa05b2ac_b",
+      "id": 24,
+      "purpose": "HTTP",
+      "state": "logged-out",
+      "immutable": {
+        "id": "c2356069e9d1e79ca924378153cfbbfb4d4416b1f99d41a2940bfdb66c5319db",
+        "username": "32b7c8709dd305bcd1bc65e114e11eab3723779d8a53944844bedc9f71b68ba2",
+        "password_hash": "8c03bba2fd351239aaac8a5c82cac956bdb28555fb47a9d4ea2ead21fc02c149",
+        "created_at": "6a6a3322c3d84022dbdaf97d1659c1475dde9f7d07e72478065dab50813dc403"
+      }
+    },
+    {
+      "runId": "run-20261108-01",
+      "username": "p303_fa05b2ac_u",
+      "id": 26,
+      "purpose": "manual",
+      "state": "logged-out",
+      "immutable": {
+        "id": "5f9c4ab08cac7457e9111a30e4664920607ea2c115a1433d7be98e97e64244ca",
+        "username": "8d1ba8d4888b96fac7478871d1a358eb6f3c64a3422ea12d8875b5b94fac0bc1",
+        "password_hash": "c6334745a184b9812401e8871ee1a63057687e38ffc0bc25a33a2ce037cba0c5",
+        "created_at": "95dc67f94cdcba730a7076a79233dd77a6b2fdb6bc781f2793ce175a4e350f2b"
+      }
+    }
+  ]
+}

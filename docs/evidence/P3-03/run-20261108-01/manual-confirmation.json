@@ -1,0 +1,79 @@
+{
+  "recordedAt": "2026-11-08T06:42:52.767468+00:00",
+  "source": "user manual confirmation",
+  "reply": "页面取消弹窗 全部通过 无异常 与上次相同 三图保存 最终退出",
+  "toolVersion": "2.02.2609250 (user confirms unchanged)",
+  "baseLibrary": "3.18.0 (user confirms unchanged)",
+  "logicalViewports": [
+    "375x812",
+    "430x932",
+    "460px shorter usable height"
+  ],
+  "viewportsEvidence": "user setup and operation confirmation; exported PNG sizes are recorded separately",
+  "steps": [
+    {
+      "step": "本轮新账号注册登录",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "取消选图无修改",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "JPEG预览上传并保存",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "PNG替换草稿取消拒绝/确认放弃",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "重新进入保存PNG",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "重新编译恢复身份并显示PNG头像",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "原生顶部返回与页面取消提示",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "较矮高度/键盘/错误和底部按钮",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "移除保存后占位",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "重加头像并保存",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "四入口/健康检查/无项目异常",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    },
+    {
+      "step": "最终退出",
+      "status": "passed",
+      "evidenceLevel": "user confirmation"
+    }
+  ],
+  "dialogType": "page custom cancel modal (not native-back screenshot)",
+  "exceptions": [],
+  "status": "passed",
+  "independentFinalLogout": true
+}

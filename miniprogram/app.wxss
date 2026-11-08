@@ -27,3 +27,5 @@ view, text, button { box-sizing: border-box; }
 .button.secondary[disabled] { color: #83757A; border-color: #DCC7CF; }
 .avatar-placeholder { display: flex; align-items: center; justify-content: center; width: 108rpx; height: 108rpx; border-radius: 54rpx; background: #F6E7ED; color: #A34F69; font-size: 36rpx; margin: 24rpx 0; }
 .break-text { overflow-wrap: anywhere; word-break: break-all; }
+
+.avatar-image { display: block; width: 108rpx; height: 108rpx; margin: 24rpx 0; background: #FFFFFF; border-radius: 8rpx; }
