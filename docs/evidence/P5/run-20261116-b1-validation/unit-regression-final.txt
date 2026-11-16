@@ -1,0 +1,1306 @@
+TAP version 13
+# Subtest: entry normalization, Unicode count and untrimmed password
+ok 1 - entry normalization, Unicode count and untrimmed password
+  ---
+  duration_ms: 3.6567
+  type: 'test'
+  ...
+# Subtest: shared scrypt random salts, positive/negative verification
+ok 2 - shared scrypt random salts, positive/negative verification
+  ---
+  duration_ms: 309.123
+  type: 'test'
+  ...
+# Subtest: only username unique constraint is mapped
+ok 3 - only username unique constraint is mapped
+  ---
+  duration_ms: 0.6045
+  type: 'test'
+  ...
+# Subtest: authentication binds injected UTC clock to strict expiry comparison
+ok 4 - authentication binds injected UTC clock to strict expiry comparison
+  ---
+  duration_ms: 4.2487
+  type: 'test'
+  ...
+# Subtest: bearer format and combined headers
+ok 5 - bearer format and combined headers
+  ---
+  duration_ms: 1.2381
+  type: 'test'
+  ...
+# Subtest: nonnull avatar validator and service/DTO positive branch using temporary fixture
+ok 6 - nonnull avatar validator and service/DTO positive branch using temporary fixture
+  ---
+  duration_ms: 66.6102
+  type: 'test'
+  ...
+# Subtest: atomic logout rejects stale hash without clearing newer login
+ok 7 - atomic logout rejects stale hash without clearing newer login
+  ---
+  duration_ms: 0.7995
+  type: 'test'
+  ...
+# Subtest: request prefix, auth headers and storage isolation
+ok 8 - request prefix, auth headers and storage isolation
+  ---
+  duration_ms: 8.7107
+  type: 'test'
+  ...
+# Subtest: request bad 2xx
+ok 9 - request bad 2xx
+  ---
+  duration_ms: 10.2879
+  type: 'test'
+  ...
+# Subtest: request bad 500
+ok 10 - request bad 500
+  ---
+  duration_ms: 7.54
+  type: 'test'
+  ...
+# Subtest: request credentials
+ok 11 - request credentials
+  ---
+  duration_ms: 4.9319
+  type: 'test'
+  ...
+# Subtest: network TIMEOUT keeps session and does not retry
+ok 12 - network TIMEOUT keeps session and does not retry
+  ---
+  duration_ms: 6.2906
+  type: 'test'
+  ...
+# Subtest: network NETWORK_ERROR keeps session and does not retry
+ok 13 - network NETWORK_ERROR keeps session and does not retry
+  ---
+  duration_ms: 4.4658
+  type: 'test'
+  ...
+# Subtest: concurrent 401 clears once and navigates once
+ok 14 - concurrent 401 clears once and navigates once
+  ---
+  duration_ms: 7.9858
+  type: 'test'
+  ...
+# Subtest: late success cannot affect newer session
+ok 15 - late success cannot affect newer session
+  ---
+  duration_ms: 6.625
+  type: 'test'
+  ...
+# Subtest: late 401 cannot affect newer session
+ok 16 - late 401 cannot affect newer session
+  ---
+  duration_ms: 5.9483
+  type: 'test'
+  ...
+# Subtest: late network cannot affect newer session
+ok 17 - late network cannot affect newer session
+  ---
+  duration_ms: 4.8912
+  type: 'test'
+  ...
+# Subtest: bootstrap none without early navigation
+ok 18 - bootstrap none without early navigation
+  ---
+  duration_ms: 8.459
+  type: 'test'
+  ...
+# Subtest: bootstrap valid without early navigation
+ok 19 - bootstrap valid without early navigation
+  ---
+  duration_ms: 6.5319
+  type: 'test'
+  ...
+# Subtest: bootstrap 401 without early navigation
+ok 20 - bootstrap 401 without early navigation
+  ---
+  duration_ms: 6.608
+  type: 'test'
+  ...
+# Subtest: bootstrap network without early navigation
+ok 21 - bootstrap network without early navigation
+  ---
+  duration_ms: 8.0058
+  type: 'test'
+  ...
+# Subtest: late login after hiding/reopening page cannot adopt identity
+ok 22 - late login after hiding/reopening page cannot adopt identity
+  ---
+  duration_ms: 15.2738
+  type: 'test'
+  ...
+# Subtest: register confirms locally, sends no confirmation and clears password
+ok 23 - register confirms locally, sends no confirmation and clears password
+  ---
+  duration_ms: 9.1423
+  type: 'test'
+  ...
+# Subtest: profile dirty cancel and save preserve current avatar
+ok 24 - profile dirty cancel and save preserve current avatar
+  ---
+  duration_ms: 13.5189
+  type: 'test'
+  ...
+# Subtest: invalid nickname and revert do not write; cancel disables native alert first
+ok 25 - invalid nickname and revert do not write; cancel disables native alert first
+  ---
+  duration_ms: 11.0908
+  type: 'test'
+  ...
+# Subtest: logout network failure keeps identity, server confirmation clears it
+ok 26 - logout network failure keeps identity, server confirmation clears it
+  ---
+  duration_ms: 17.6707
+  type: 'test'
+  ...
+# Subtest: login duplicate submit is suppressed and invalid credentials keep form
+ok 27 - login duplicate submit is suppressed and invalid credentials keep form
+  ---
+  duration_ms: 6.365
+  type: 'test'
+  ...
+# Subtest: failed profile save keeps draft and dirty protection
+ok 28 - failed profile save keeps draft and dirty protection
+  ---
+  duration_ms: 9.9664
+  type: 'test'
+  ...
+# Subtest: unknown SyntaxError remains private internal failure
+ok 29 - unknown SyntaxError remains private internal failure
+  ---
+  duration_ms: 63.4983
+  type: 'test'
+  ...
+# Subtest: older login completion cannot release a newer submit button
+ok 30 - older login completion cannot release a newer submit button
+  ---
+  duration_ms: 9.8739
+  type: 'test'
+  ...
+# Subtest: profile completion after leaving cannot navigate back a second time
+ok 31 - profile completion after leaving cannot navigate back a second time
+  ---
+  duration_ms: 11.5538
+  type: 'test'
+  ...
+# Subtest: clothes form cancel stays a draft; invalid inputs do not POST
+ok 32 - clothes form cancel stays a draft; invalid inputs do not POST
+  ---
+  duration_ms: 26.6346
+  type: 'test'
+  ...
+# Subtest: clothes form failed save preserves stable image and dirty draft
+ok 33 - clothes form failed save preserves stable image and dirty draft
+  ---
+  duration_ms: 11.132
+  type: 'test'
+  ...
+# Subtest: clothes late successful save after unloading never navigates
+ok 34 - clothes late successful save after unloading never navigates
+  ---
+  duration_ms: 13.7362
+  type: 'test'
+  ...
+# Subtest: wardrobe obsolete filter response cannot replace current query
+ok 35 - wardrobe obsolete filter response cannot replace current query
+  ---
+  duration_ms: 13.7384
+  type: 'test'
+  ...
+# Subtest: wardrobe failed next page retains data and retries same page
+ok 36 - wardrobe failed next page retains data and retries same page
+  ---
+  duration_ms: 15.4661
+  type: 'test'
+  ...
+# Subtest: wardrobe hidden response and older account never populate page
+ok 37 - wardrobe hidden response and older account never populate page
+  ---
+  duration_ms: 11.5698
+  type: 'test'
+  ...
+# Subtest: wardrobe filter cancel preserves applied conditions and clear retains archive scope
+ok 38 - wardrobe filter cancel preserves applied conditions and clear retains archive scope
+  ---
+  duration_ms: 13.8999
+  type: 'test'
+  ...
+# Subtest: clothes successful replacement upload stays a draft and cancel makes no business write
+ok 39 - clothes successful replacement upload stays a draft and cancel makes no business write
+  ---
+  duration_ms: 13.9229
+  type: 'test'
+  ...
+# Subtest: clothes replacement save sends stable uploaded path and failed upload can be abandoned
+ok 40 - clothes replacement save sends stable uploaded path and failed upload can be abandoned
+  ---
+  duration_ms: 16.9897
+  type: 'test'
+  ...
+# Subtest: clothes filters normalize only known inputs and retain literal keyword
+ok 41 - clothes filters normalize only known inputs and retain literal keyword
+  ---
+  duration_ms: 3.2391
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"page":""}
+ok 42 - clothes rejects query {"page":""}
+  ---
+  duration_ms: 0.9773
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"page":"0"}
+ok 43 - clothes rejects query {"page":"0"}
+  ---
+  duration_ms: 0.3421
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"page":"1e2"}
+ok 44 - clothes rejects query {"page":"1e2"}
+  ---
+  duration_ms: 0.2446
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"page":"1.5"}
+ok 45 - clothes rejects query {"page":"1.5"}
+  ---
+  duration_ms: 0.2404
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"page":"9007199254740992"}
+ok 46 - clothes rejects query {"page":"9007199254740992"}
+  ---
+  duration_ms: 0.2617
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"page":"9007199254740991","pageSize":"50"}
+ok 47 - clothes rejects query {"page":"9007199254740991","pageSize":"50"}
+  ---
+  duration_ms: 0.2286
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"pageSize":"51"}
+ok 48 - clothes rejects query {"pageSize":"51"}
+  ---
+  duration_ms: 0.1704
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"pageSize":["1","2"]}
+ok 49 - clothes rejects query {"pageSize":["1","2"]}
+  ---
+  duration_ms: 0.2044
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"archived":""}
+ok 50 - clothes rejects query {"archived":""}
+  ---
+  duration_ms: 5.3346
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"archived":"false"}
+ok 51 - clothes rejects query {"archived":"false"}
+  ---
+  duration_ms: 0.3793
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"season":"春秋"}
+ok 52 - clothes rejects query {"season":"春秋"}
+  ---
+  duration_ms: 0.239
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"categoryId":"other"}
+ok 53 - clothes rejects query {"categoryId":"other"}
+  ---
+  duration_ms: 0.1572
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"color":""}
+ok 54 - clothes rejects query {"color":""}
+  ---
+  duration_ms: 0.1864
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"keyword":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+ok 55 - clothes rejects query {"keyword":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+  ---
+  duration_ms: 0.212
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"sort":"id"}
+ok 56 - clothes rejects query {"sort":"id"}
+  ---
+  duration_ms: 0.1798
+  type: 'test'
+  ...
+# Subtest: clothes rejects query {"keyword":{"value":"a"}}
+ok 57 - clothes rejects query {"keyword":{"value":"a"}}
+  ---
+  duration_ms: 0.1218
+  type: 'test'
+  ...
+# Subtest: clothes decimal IDs, paging defaults and page offsets
+ok 58 - clothes decimal IDs, paging defaults and page offsets
+  ---
+  duration_ms: 0.4953
+  type: 'test'
+  ...
+# Subtest: clothes full form preserves note and counts Unicode codepoints
+ok 59 - clothes full form preserves note and counts Unicode codepoints
+  ---
+  duration_ms: 0.9522
+  type: 'test'
+  ...
+# Subtest: clothes dates explicitly preserve UTC and Shanghai natural-day boundary
+ok 60 - clothes dates explicitly preserve UTC and Shanghai natural-day boundary
+  ---
+  duration_ms: 91.0098
+  type: 'test'
+  ...
+# Subtest: clothes authentication precedes malformed and oversized JSON parsing
+ok 61 - clothes authentication precedes malformed and oversized JSON parsing
+  ---
+  duration_ms: 172.8686
+  type: 'test'
+  ...
+# Subtest: config defaults and paths are independent of caller cwd
+ok 62 - config defaults and paths are independent of caller cwd
+  ---
+  duration_ms: 3.2837
+  type: 'test'
+  ...
+# Subtest: missing config PUBLIC_BASE_URL
+ok 63 - missing config PUBLIC_BASE_URL
+  ---
+  duration_ms: 1.2559
+  type: 'test'
+  ...
+# Subtest: missing config DB_HOST
+ok 64 - missing config DB_HOST
+  ---
+  duration_ms: 0.3144
+  type: 'test'
+  ...
+# Subtest: missing config DB_PORT
+ok 65 - missing config DB_PORT
+  ---
+  duration_ms: 0.2753
+  type: 'test'
+  ...
+# Subtest: missing config DB_NAME
+ok 66 - missing config DB_NAME
+  ---
+  duration_ms: 0.2866
+  type: 'test'
+  ...
+# Subtest: missing config DB_USER
+ok 67 - missing config DB_USER
+  ---
+  duration_ms: 0.2062
+  type: 'test'
+  ...
+# Subtest: missing config DB_PASSWORD
+ok 68 - missing config DB_PASSWORD
+  ---
+  duration_ms: 0.5014
+  type: 'test'
+  ...
+# Subtest: missing config UPLOAD_ROOT
+ok 69 - missing config UPLOAD_ROOT
+  ---
+  duration_ms: 0.166
+  type: 'test'
+  ...
+# Subtest: reject invalid PORT variant 0
+ok 70 - reject invalid PORT variant 0
+  ---
+  duration_ms: 0.3772
+  type: 'test'
+  ...
+# Subtest: reject invalid PORT variant 65536
+ok 71 - reject invalid PORT variant 65536
+  ---
+  duration_ms: 0.3192
+  type: 'test'
+  ...
+# Subtest: reject invalid PORT variant 
+ok 72 - reject invalid PORT variant 
+  ---
+  duration_ms: 0.2133
+  type: 'test'
+  ...
+# Subtest: reject invalid DB_PORT variant oops
+ok 73 - reject invalid DB_PORT variant oops
+  ---
+  duration_ms: 0.1421
+  type: 'test'
+  ...
+# Subtest: reject invalid DB_HOST variant localhost
+ok 74 - reject invalid DB_HOST variant localhost
+  ---
+  duration_ms: 0.1498
+  type: 'test'
+  ...
+# Subtest: reject invalid DB_NAME variant other_database
+ok 75 - reject invalid DB_NAME variant other_database
+  ---
+  duration_ms: 0.2018
+  type: 'test'
+  ...
+# Subtest: reject invalid PUBLIC_BASE_URL variant invalid
+ok 76 - reject invalid PUBLIC_BASE_URL variant invalid
+  ---
+  duration_ms: 0.1642
+  type: 'test'
+  ...
+# Subtest: reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3000/api
+ok 77 - reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3000/api
+  ---
+  duration_ms: 0.1858
+  type: 'test'
+  ...
+# Subtest: reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3001
+ok 78 - reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3001
+  ---
+  duration_ms: 0.1342
+  type: 'test'
+  ...
+# Subtest: reject invalid PUBLIC_BASE_URL variant http://redacted@127.0.0.1:3000
+ok 79 - reject invalid PUBLIC_BASE_URL variant http://redacted@127.0.0.1:3000
+  ---
+  duration_ms: 0.1753
+  type: 'test'
+  ...
+# Subtest: reject invalid UPLOAD_ROOT variant ../assets
+ok 80 - reject invalid UPLOAD_ROOT variant ../assets
+  ---
+  duration_ms: 0.1749
+  type: 'test'
+  ...
+# Subtest: private values are untrimmed and never included in safe errors
+ok 81 - private values are untrimmed and never included in safe errors
+  ---
+  duration_ms: 2.8845
+  type: 'test'
+  ...
+# Subtest: Node native env file keeps process environment precedence from another cwd
+ok 82 - Node native env file keeps process environment precedence from another cwd
+  ---
+  duration_ms: 217.0193
+  type: 'test'
+  ...
+# Subtest: health is anonymous and independent from DB; unsupported paths return JSON 404
+ok 83 - health is anonymous and independent from DB; unsupported paths return JSON 404
+  ---
+  duration_ms: 150.4342
+  type: 'test'
+  ...
+# Subtest: unknown request error boundary never serializes SQL, secrets or stack
+ok 84 - unknown request error boundary never serializes SQL, secrets or stack
+  ---
+  duration_ms: 0.6421
+  type: 'test'
+  ...
+# Subtest: missing configuration exits before binding even from another cwd
+ok 85 - missing configuration exits before binding even from another cwd
+  ---
+  duration_ms: 1002.0502
+  type: 'test'
+  ...
+# Subtest: real refused DB connection exits and does not leave a listener
+ok 86 - real refused DB connection exits and does not leave a listener
+  ---
+  duration_ms: 563.5869
+  type: 'test'
+  ...
+# Subtest: occupied HTTP port exits, releases pool, and preserves the occupying fixture
+ok 87 - occupied HTTP port exits, releases pool, and preserves the occupying fixture
+  ---
+  duration_ms: 430.1385
+  type: 'test'
+  ...
+# Subtest: page request has one api prefix and disabled checking state
+ok 88 - page request has one api prefix and disabled checking state
+  ---
+  duration_ms: 4.9336
+  type: 'test'
+  ...
+# Subtest: page rejects HTTP500
+ok 89 - page rejects HTTP500
+  ---
+  duration_ms: 4.0583
+  type: 'test'
+  ...
+# Subtest: page rejects HTML
+ok 90 - page rejects HTML
+  ---
+  duration_ms: 3.2642
+  type: 'test'
+  ...
+# Subtest: page rejects wrong health
+ok 91 - page rejects wrong health
+  ---
+  duration_ms: 3.5059
+  type: 'test'
+  ...
+# Subtest: page failure restores action request:fail timeout
+ok 92 - page failure restores action request:fail timeout
+  ---
+  duration_ms: 3.4017
+  type: 'test'
+  ...
+# Subtest: page failure restores action request:fail connection refused
+ok 93 - page failure restores action request:fail connection refused
+  ---
+  duration_ms: 3.2883
+  type: 'test'
+  ...
+# Subtest: page judges real HTTP responses rather than callback success alone
+ok 94 - page judges real HTTP responses rather than callback success alone
+  ---
+  duration_ms: 21.819
+  type: 'test'
+  ...
+# Subtest: media auth runs before JSON/multipart parsing
+ok 95 - media auth runs before JSON/multipart parsing
+  ---
+  duration_ms: 177.8551
+  type: 'test'
+  ...
+# Subtest: categories authentication, mapping and query validation
+ok 96 - categories authentication, mapping and query validation
+  ---
+  duration_ms: 28.8415
+  type: 'test'
+  ...
+# Subtest: valid JPEG stored byte-for-byte and privately readable
+ok 97 - valid JPEG stored byte-for-byte and privately readable
+  ---
+  duration_ms: 122.3534
+  type: 'test'
+  ...
+# Subtest: valid PNG stored byte-for-byte and privately readable
+ok 98 - valid PNG stored byte-for-byte and privately readable
+  ---
+  duration_ms: 45.3789
+  type: 'test'
+  ...
+# Subtest: real PNG byte boundary 5242879
+ok 99 - real PNG byte boundary 5242879
+  ---
+  duration_ms: 64.3705
+  type: 'test'
+  ...
+# Subtest: real PNG byte boundary 5242880
+ok 100 - real PNG byte boundary 5242880
+  ---
+  duration_ms: 74.1036
+  type: 'test'
+  ...
+# Subtest: real PNG byte boundary 5242881
+ok 101 - real PNG byte boundary 5242881
+  ---
+  duration_ms: 64.154
+  type: 'test'
+  ...
+# Subtest: upload rejects no multipart
+ok 102 - upload rejects no multipart
+  ---
+  duration_ms: 9.2797
+  type: 'test'
+  ...
+# Subtest: upload rejects no file
+ok 103 - upload rejects no file
+  ---
+  duration_ms: 10.3002
+  type: 'test'
+  ...
+# Subtest: upload rejects empty file
+ok 104 - upload rejects empty file
+  ---
+  duration_ms: 16.1283
+  type: 'test'
+  ...
+# Subtest: upload rejects wrong field
+ok 105 - upload rejects wrong field
+  ---
+  duration_ms: 13.4462
+  type: 'test'
+  ...
+# Subtest: upload rejects missing boundary
+ok 106 - upload rejects missing boundary
+  ---
+  duration_ms: 11.0132
+  type: 'test'
+  ...
+# Subtest: upload rejects truncated multipart
+ok 107 - upload rejects truncated multipart
+  ---
+  duration_ms: 19.0971
+  type: 'test'
+  ...
+# Subtest: upload rejects two files
+ok 108 - upload rejects two files
+  ---
+  duration_ms: 18.6295
+  type: 'test'
+  ...
+# Subtest: upload rejects text field
+ok 109 - upload rejects text field
+  ---
+  duration_ms: 12.2879
+  type: 'test'
+  ...
+# Subtest: upload rejects query
+ok 110 - upload rejects query
+  ---
+  duration_ms: 12.1065
+  type: 'test'
+  ...
+# Subtest: full decoding rejects GIF
+ok 111 - full decoding rejects GIF
+  ---
+  duration_ms: 22.4661
+  type: 'test'
+  ...
+# Subtest: full decoding rejects SVG
+ok 112 - full decoding rejects SVG
+  ---
+  duration_ms: 57.8563
+  type: 'test'
+  ...
+# Subtest: full decoding rejects HTML
+ok 113 - full decoding rejects HTML
+  ---
+  duration_ms: 21.1973
+  type: 'test'
+  ...
+# Subtest: full decoding rejects fake JPEG header
+ok 114 - full decoding rejects fake JPEG header
+  ---
+  duration_ms: 28.5786
+  type: 'test'
+  ...
+# Subtest: full decoding rejects truncated JPEG
+ok 115 - full decoding rejects truncated JPEG
+  ---
+  duration_ms: 14.7786
+  type: 'test'
+  ...
+# Subtest: full decoding rejects truncated PNG
+ok 116 - full decoding rejects truncated PNG
+  ---
+  duration_ms: 16.7565
+  type: 'test'
+  ...
+# Subtest: read missing/illegal invalid.png
+ok 117 - read missing/illegal invalid.png
+  ---
+  duration_ms: 5.4695
+  type: 'test'
+  ...
+# Subtest: read missing/illegal ../12345678-1234-1234-1234-123456789abc.png
+ok 118 - read missing/illegal ../12345678-1234-1234-1234-123456789abc.png
+  ---
+  duration_ms: 5.2667
+  type: 'test'
+  ...
+# Subtest: read missing/illegal users%2F42%2F12345678-1234-1234-1234-123456789abc.png
+ok 119 - read missing/illegal users%2F42%2F12345678-1234-1234-1234-123456789abc.png
+  ---
+  duration_ms: 5.5402
+  type: 'test'
+  ...
+# Subtest: read missing/illegal 12345678-1234-1234-1234-123456789abc.png
+ok 120 - read missing/illegal 12345678-1234-1234-1234-123456789abc.png
+  ---
+  duration_ms: 4.2556
+  type: 'test'
+  ...
+# Subtest: media read rejects query, anonymous read and public uploads
+ok 121 - media read rejects query, anonymous read and public uploads
+  ---
+  duration_ms: 8.3446
+  type: 'test'
+  ...
+# Subtest: owned file write failure is explicit and isolated
+ok 122 - owned file write failure is explicit and isolated
+  ---
+  duration_ms: 20.064
+  type: 'test'
+  ...
+# Subtest: owned file close failure is explicit and isolated
+ok 123 - owned file close failure is explicit and isolated
+  ---
+  duration_ms: 18.4325
+  type: 'test'
+  ...
+# Subtest: owned file cleanup failure is explicit and isolated
+ok 124 - owned file cleanup failure is explicit and isolated
+  ---
+  duration_ms: 18.9238
+  type: 'test'
+  ...
+# Subtest: exclusive open never deletes or overwrites an existing successful file
+ok 125 - exclusive open never deletes or overwrites an existing successful file
+  ---
+  duration_ms: 14.9616
+  type: 'test'
+  ...
+# Subtest: unknown read IO failure is safe 500
+ok 126 - unknown read IO failure is safe 500
+  ---
+  duration_ms: 11.8355
+  type: 'test'
+  ...
+# Subtest: upload transport uses native multipart header and exact path/201 JSON
+ok 127 - upload transport uses native multipart header and exact path/201 JSON
+  ---
+  duration_ms: 9.4294
+  type: 'test'
+  ...
+# Subtest: upload transport rejects HTML
+ok 128 - upload transport rejects HTML
+  ---
+  duration_ms: 7.8271
+  type: 'test'
+  ...
+# Subtest: upload transport rejects wrong status
+ok 129 - upload transport rejects wrong status
+  ---
+  duration_ms: 5.9605
+  type: 'test'
+  ...
+# Subtest: upload transport rejects bad payload
+ok 130 - upload transport rejects bad payload
+  ---
+  duration_ms: 4.1649
+  type: 'test'
+  ...
+# Subtest: upload transport rejects too large
+ok 131 - upload transport rejects too large
+  ---
+  duration_ms: 5.4457
+  type: 'test'
+  ...
+# Subtest: download rejects HTTP 401 without displaying JSON file
+ok 132 - download rejects HTTP 401 without displaying JSON file
+  ---
+  duration_ms: 7.9667
+  type: 'test'
+  ...
+# Subtest: download rejects HTTP 404 without displaying JSON file
+ok 133 - download rejects HTTP 404 without displaying JSON file
+  ---
+  duration_ms: 5.4943
+  type: 'test'
+  ...
+# Subtest: download rejects HTTP 500 without displaying JSON file
+ok 134 - download rejects HTTP 500 without displaying JSON file
+  ---
+  duration_ms: 6.8112
+  type: 'test'
+  ...
+# Subtest: download rejects HTTP 204 without displaying JSON file
+ok 135 - download rejects HTTP 204 without displaying JSON file
+  ---
+  duration_ms: 7.4908
+  type: 'test'
+  ...
+# Subtest: download uses Authorization, temporary path and no persistent storage
+ok 136 - download uses Authorization, temporary path and no persistent storage
+  ---
+  duration_ms: 6.2251
+  type: 'test'
+  ...
+# Subtest: upload network rejects without stale identity writes
+ok 137 - upload network rejects without stale identity writes
+  ---
+  duration_ms: 5.5656
+  type: 'test'
+  ...
+# Subtest: upload timeout rejects without stale identity writes
+ok 138 - upload timeout rejects without stale identity writes
+  ---
+  duration_ms: 5.2847
+  type: 'test'
+  ...
+# Subtest: upload stale rejects without stale identity writes
+ok 139 - upload stale rejects without stale identity writes
+  ---
+  duration_ms: 4.9908
+  type: 'test'
+  ...
+# Subtest: download network rejects without stale identity writes
+ok 140 - download network rejects without stale identity writes
+  ---
+  duration_ms: 6.8647
+  type: 'test'
+  ...
+# Subtest: download timeout rejects without stale identity writes
+ok 141 - download timeout rejects without stale identity writes
+  ---
+  duration_ms: 6.7769
+  type: 'test'
+  ...
+# Subtest: download stale rejects without stale identity writes
+ok 142 - download stale rejects without stale identity writes
+  ---
+  duration_ms: 6.3267
+  type: 'test'
+  ...
+# Subtest: JSON/upload/download concurrent 401 share one invalidation and navigation
+ok 143 - JSON/upload/download concurrent 401 share one invalidation and navigation
+  ---
+  duration_ms: 5.8437
+  type: 'test'
+  ...
+# Subtest: profile selection cancellation and oversize leave saved avatar untouched
+ok 144 - profile selection cancellation and oversize leave saved avatar untouched
+  ---
+  duration_ms: 9.6127
+  type: 'test'
+  ...
+# Subtest: profile upload success is only a draft; cancel and remove never send a delete
+ok 145 - profile upload success is only a draft; cancel and remove never send a delete
+  ---
+  duration_ms: 17.6449
+  type: 'test'
+  ...
+# Subtest: profile failed upload can retry or discard; failed save reuses stable path
+ok 146 - profile failed upload can retry or discard; failed save reuses stable path
+  ---
+  duration_ms: 11.4126
+  type: 'test'
+  ...
+# Subtest: leaving profile or changing identity ignores late uploaded image
+ok 147 - leaving profile or changing identity ignores late uploaded image
+  ---
+  duration_ms: 12.044
+  type: 'test'
+  ...
+# Subtest: profile old image download cannot replace a newer candidate preview
+ok 148 - profile old image download cannot replace a newer candidate preview
+  ---
+  duration_ms: 18.2568
+  type: 'test'
+  ...
+# Subtest: my page hide rejects late identity/image and clears visible avatar
+ok 149 - my page hide rejects late identity/image and clears visible avatar
+  ---
+  duration_ms: 10.1566
+  type: 'test'
+  ...
+# Subtest: outfit verification CLI defaults to help and only accepts explicit safe read modes
+ok 150 - outfit verification CLI defaults to help and only accepts explicit safe read modes
+  ---
+  duration_ms: 5.2228
+  type: 'test'
+  ...
+# Subtest: help and unsupported modes work without database/private configuration from another cwd
+ok 151 - help and unsupported modes work without database/private configuration from another cwd
+  ---
+  duration_ms: 1548.4878
+  type: 'test'
+  ...
+# Subtest: evidence run reservation refuses any existing directory and preserves its bytes
+ok 152 - evidence run reservation refuses any existing directory and preserves its bytes
+  ---
+  duration_ms: 21.4771
+  type: 'test'
+  ...
+# Subtest: zero-increment protection detects changed, added or missing rows/images/files, schema and identity
+ok 153 - zero-increment protection detects changed, added or missing rows/images/files, schema and identity
+  ---
+  duration_ms: 5.3177
+  type: 'test'
+  ...
+# Subtest: outfit filters retain literal search, exact occasion and safe pagination defaults
+ok 154 - outfit filters retain literal search, exact occasion and safe pagination defaults
+  ---
+  duration_ms: 5.5233
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"keyword":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+ok 155 - outfit query rejects {"keyword":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+  ---
+  duration_ms: 1.7645
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"keyword":null}
+ok 156 - outfit query rejects {"keyword":null}
+  ---
+  duration_ms: 0.3481
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"keyword":["a","b"]}
+ok 157 - outfit query rejects {"keyword":["a","b"]}
+  ---
+  duration_ms: 0.2757
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"keyword":{"value":"a"}}
+ok 158 - outfit query rejects {"keyword":{"value":"a"}}
+  ---
+  duration_ms: 0.3177
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"occasion":""}
+ok 159 - outfit query rejects {"occasion":""}
+  ---
+  duration_ms: 0.2932
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"occasion":"   "}
+ok 160 - outfit query rejects {"occasion":"   "}
+  ---
+  duration_ms: 0.2614
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"occasion":"a\\nb"}
+ok 161 - outfit query rejects {"occasion":"a\\nb"}
+  ---
+  duration_ms: 0.1837
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"occasion":"aaaaaaaaaaaaaaaaaaaaa"}
+ok 162 - outfit query rejects {"occasion":"aaaaaaaaaaaaaaaaaaaaa"}
+  ---
+  duration_ms: 0.1932
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"occasion":null}
+ok 163 - outfit query rejects {"occasion":null}
+  ---
+  duration_ms: 0.2422
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"archived":""}
+ok 164 - outfit query rejects {"archived":""}
+  ---
+  duration_ms: 0.1988
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"archived":null}
+ok 165 - outfit query rejects {"archived":null}
+  ---
+  duration_ms: 0.1928
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"archived":"true"}
+ok 166 - outfit query rejects {"archived":"true"}
+  ---
+  duration_ms: 0.1292
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":""}
+ok 167 - outfit query rejects {"page":""}
+  ---
+  duration_ms: 0.1361
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":"0"}
+ok 168 - outfit query rejects {"page":"0"}
+  ---
+  duration_ms: 0.1647
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":"-1"}
+ok 169 - outfit query rejects {"page":"-1"}
+  ---
+  duration_ms: 0.1881
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":"1.5"}
+ok 170 - outfit query rejects {"page":"1.5"}
+  ---
+  duration_ms: 0.0849
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":"1e2"}
+ok 171 - outfit query rejects {"page":"1e2"}
+  ---
+  duration_ms: 0.0842
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":"9007199254740992"}
+ok 172 - outfit query rejects {"page":"9007199254740992"}
+  ---
+  duration_ms: 0.0876
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"page":"9007199254740991","pageSize":"50"}
+ok 173 - outfit query rejects {"page":"9007199254740991","pageSize":"50"}
+  ---
+  duration_ms: 0.1085
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"pageSize":"0"}
+ok 174 - outfit query rejects {"pageSize":"0"}
+  ---
+  duration_ms: 0.107
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"pageSize":"51"}
+ok 175 - outfit query rejects {"pageSize":"51"}
+  ---
+  duration_ms: 0.1196
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"pageSize":["1","2"]}
+ok 176 - outfit query rejects {"pageSize":["1","2"]}
+  ---
+  duration_ms: 0.0954
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"userId":"7"}
+ok 177 - outfit query rejects {"userId":"7"}
+  ---
+  duration_ms: 0.1064
+  type: 'test'
+  ...
+# Subtest: outfit query rejects {"sort":"name"}
+ok 178 - outfit query rejects {"sort":"name"}
+  ---
+  duration_ms: 0.1033
+  type: 'test'
+  ...
+# Subtest: outfit full form normalizes single lines, preserves note and ordered IDs without sharing arrays
+ok 179 - outfit full form normalizes single lines, preserves note and ordered IDs without sharing arrays
+  ---
+  duration_ms: 0.7673
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 1
+ok 180 - outfit form rejects malformed name case 1
+  ---
+  duration_ms: 0.2387
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 2
+ok 181 - outfit form rejects malformed name case 2
+  ---
+  duration_ms: 0.1514
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 3
+ok 182 - outfit form rejects malformed name case 3
+  ---
+  duration_ms: 0.1619
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 4
+ok 183 - outfit form rejects malformed name case 4
+  ---
+  duration_ms: 0.1918
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 5
+ok 184 - outfit form rejects malformed name case 5
+  ---
+  duration_ms: 0.2141
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 6
+ok 185 - outfit form rejects malformed name case 6
+  ---
+  duration_ms: 0.1199
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 7
+ok 186 - outfit form rejects malformed name case 7
+  ---
+  duration_ms: 0.1351
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed name case 8
+ok 187 - outfit form rejects malformed name case 8
+  ---
+  duration_ms: 0.1237
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed occasion case 9
+ok 188 - outfit form rejects malformed occasion case 9
+  ---
+  duration_ms: 0.1299
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed occasion case 10
+ok 189 - outfit form rejects malformed occasion case 10
+  ---
+  duration_ms: 0.2728
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed occasion case 11
+ok 190 - outfit form rejects malformed occasion case 11
+  ---
+  duration_ms: 0.1247
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed note case 12
+ok 191 - outfit form rejects malformed note case 12
+  ---
+  duration_ms: 0.0939
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed note case 13
+ok 192 - outfit form rejects malformed note case 13
+  ---
+  duration_ms: 0.0883
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed note case 14
+ok 193 - outfit form rejects malformed note case 14
+  ---
+  duration_ms: 0.1992
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed userId case 15
+ok 194 - outfit form rejects malformed userId case 15
+  ---
+  duration_ms: 0.1339
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed id case 16
+ok 195 - outfit form rejects malformed id case 16
+  ---
+  duration_ms: 0.1537
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed isArchived case 17
+ok 196 - outfit form rejects malformed isArchived case 17
+  ---
+  duration_ms: 0.0984
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed createdAt case 18
+ok 197 - outfit form rejects malformed createdAt case 18
+  ---
+  duration_ms: 0.1413
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 19
+ok 198 - outfit form rejects malformed clothingIds case 19
+  ---
+  duration_ms: 0.1159
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 20
+ok 199 - outfit form rejects malformed clothingIds case 20
+  ---
+  duration_ms: 0.1051
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 21
+ok 200 - outfit form rejects malformed clothingIds case 21
+  ---
+  duration_ms: 0.1055
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 22
+ok 201 - outfit form rejects malformed clothingIds case 22
+  ---
+  duration_ms: 0.0878
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 23
+ok 202 - outfit form rejects malformed clothingIds case 23
+  ---
+  duration_ms: 0.2883
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 24
+ok 203 - outfit form rejects malformed clothingIds case 24
+  ---
+  duration_ms: 0.183
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 25
+ok 204 - outfit form rejects malformed clothingIds case 25
+  ---
+  duration_ms: 0.1408
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 26
+ok 205 - outfit form rejects malformed clothingIds case 26
+  ---
+  duration_ms: 0.1579
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 27
+ok 206 - outfit form rejects malformed clothingIds case 27
+  ---
+  duration_ms: 0.1185
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 28
+ok 207 - outfit form rejects malformed clothingIds case 28
+  ---
+  duration_ms: 0.0884
+  type: 'test'
+  ...
+# Subtest: outfit form rejects malformed clothingIds case 29
+ok 208 - outfit form rejects malformed clothingIds case 29
+  ---
+  duration_ms: 0.0897
+  type: 'test'
+  ...
+# Subtest: outfit full POST/PUT reject missing fields and invalid body shape
+ok 209 - outfit full POST/PUT reject missing fields and invalid body shape
+  ---
+  duration_ms: 0.8301
+  type: 'test'
+  ...
+# Subtest: outfit selection cardinality or duplicates 0
+ok 210 - outfit selection cardinality or duplicates 0
+  ---
+  duration_ms: 0.412
+  type: 'test'
+  ...
+# Subtest: outfit selection cardinality or duplicates 2
+ok 211 - outfit selection cardinality or duplicates 2
+  ---
+  duration_ms: 0.1372
+  type: 'test'
+  ...
+# Subtest: outfit selection cardinality or duplicates 21
+ok 212 - outfit selection cardinality or duplicates 21
+  ---
+  duration_ms: 0.128
+  type: 'test'
+  ...
+# Subtest: six isolated entry routes pass only authenticated identity and normalized parameters to stub services
+ok 213 - six isolated entry routes pass only authenticated identity and normalized parameters to stub services
+  ---
+  duration_ms: 279.9685
+  type: 'test'
+  ...
+# Subtest: anonymous and expired auth precede malformed/oversized JSON on all six isolated routes
+ok 214 - anonymous and expired auth precede malformed/oversized JSON on all six isolated routes
+  ---
+  duration_ms: 107.1017
+  type: 'test'
+  ...
+# Subtest: isolated routes reject queries, IDs, complete forms and archive types before stub invocation
+ok 215 - isolated routes reject queries, IDs, complete forms and archive types before stub invocation
+  ---
+  duration_ms: 192.7211
+  type: 'test'
+  ...
+# Subtest: Batch 1 production app keeps outfits, diaries and statistics unimplemented
+ok 216 - Batch 1 production app keeps outfits, diaries and statistics unimplemented
+  ---
+  duration_ms: 24.8219
+  type: 'test'
+  ...
+1..216
+# tests 216
+# suites 0
+# pass 216
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3175.9742

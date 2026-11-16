@@ -1,0 +1,20 @@
+{
+  "capturedAt": "2026-11-16T14:29:16.847Z",
+  "gitBase": "dd4c067d2565291f1820a69f8cd762c801b6f58f",
+  "batch": 1,
+  "supersedes": "delivery-hashes.json",
+  "files": {
+    "README.md": "02395a834f70fbc288dcc99cfd78929bd6a6f467a9e73612daf562a79d99145d",
+    "docs/执行计划.md": "d4f246c5300ffa1c17b1014c303468d8dc6852fdc075c258e064315dc4aaa6df",
+    "docs/接口说明.md": "90d96cf23309c2c30a860cefcdc1894784fdcc4ad90de17148efe65e0329387e",
+    "docs/P5执行与验收记录.md": "8dac76a8d337207caf250d399cf37684d26795f700f1ad775aabd609cbb63e4a",
+    "docs/evidence/P5/run-20261116-b1-validation/review-results.json": "c2f6dd009479690a794c2f0d05b73e5c0e652f0081f879abe55ce21fe95ee92f",
+    "docs/evidence/P5/run-20261116-b1-validation/environment-correction.json": "d6ee1f6379eb8317f746f5d4201a52910a7d01f0ad35bd4225e266e4fe185b9d",
+    "docs/evidence/P5/run-20261116-b1-validation/validation-results.json": "0225ffa5946a717c1d0d4288832ab0552f7ecfa486d40e11e681eb3f990525da",
+    "docs/evidence/P5/run-20261116-b1-validation/implementation-hashes.json": "5d68c1918139403267979c46232a4fdb62b2dcf9bbf99ac8261b0f4bd1986ea9",
+    "docs/evidence/P5/run-20261116-b1-final/results.json": "187fd3ac4f113a1a3dbd996edd909518b2fe692866589c083c71e9dfc57137d5",
+    "docs/evidence/P5/run-20261116-b1-baseline/baseline.json": "b1bb7db2a91b611f5e2e5d88db7712d0a3d1956a127a202cfbcf54fa8245c2a1",
+    "docs/evidence/P5/run-20261116-b1-baseline/historical-release-hashes.json": "91929db6a97e4d40e01132dd38d9369e510a75999b3b4d9e77e084baa51bf416",
+    "docs/evidence/P5/run-20261116-b1-validation/precommit-checks.json": "351e36679669a046f4ae060690a46daccffef23e64c191d3f65255e721e0d4ed"
+  }
+}

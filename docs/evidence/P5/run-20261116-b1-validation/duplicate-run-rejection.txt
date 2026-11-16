@@ -1,0 +1,16 @@
+node:internal/fs/promises:859
+  return await PromisePrototypeThen(
+         ^
+
+Error: EEXIST: file already exists, mkdir 'Z:\outfit\personal-wardrobe\docs\evidence\P5\run-20261116-b1-baseline'
+    at async Object.mkdir (node:internal/fs/promises:859:10)
+    at async reserveRun (file:///Z:/outfit/personal-wardrobe/server/scripts/verify-outfits.mjs:33:3)
+    at async main (file:///Z:/outfit/personal-wardrobe/server/scripts/verify-outfits.mjs:116:21)
+    at async file:///Z:/outfit/personal-wardrobe/server/scripts/verify-outfits.mjs:150:23 {
+  errno: -4075,
+  code: 'EEXIST',
+  syscall: 'mkdir',
+  path: 'Z:\\outfit\\personal-wardrobe\\docs\\evidence\\P5\\run-20261116-b1-baseline'
+}
+
+Node.js v24.16.0

@@ -1,0 +1,10 @@
+阶段5验证（从server目录运行，私有配置使用 --env-file-if-exists=.env）
+  node --env-file-if-exists=.env scripts/verify-outfits.mjs
+  node --env-file-if-exists=.env scripts/verify-outfits.mjs --preflight <唯一runId>
+  node --env-file-if-exists=.env scripts/verify-outfits.mjs --audit <唯一runId>
+无参数/--help：仅帮助，不读取配置、不连接数据库、不写输出。
+preflight：首次建立阶段基线，以后核对同一基线；audit：核对已有基线。
+两者只读数据库/上传图，独占创建P5批次目录，拒绝覆盖。
+Batch 1只允许零业务增量；Batch 2写入前须扩展累计manifest审计。
+--http / --prepare-ui / --restart 尚未实现，明确拒绝，不执行写操作。
+

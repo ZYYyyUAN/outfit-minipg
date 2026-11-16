@@ -1,0 +1,159 @@
+{
+  "batch": 1,
+  "runId": "run-20261116-b1-validation",
+  "checkedAt": "2026-11-16T14:24:44.748Z",
+  "stage5Complete": false,
+  "unit": {
+    "command": "node --env-file-if-exists=.env --test --test-reporter=tap test/*.test.mjs",
+    "evidence": "unit-regression-final.txt",
+    "sha256": "a28b403cf4720ff462214e5457bc2bae168a94bc2a5724e8d64b3aeb4fad7e43",
+    "passed": 216,
+    "failed": 0,
+    "skipped": 0,
+    "existing": 149,
+    "added": 67
+  },
+  "implementationHashes": "implementation-hashes.json",
+  "baseline": "../run-20261116-b1-baseline/baseline.json",
+  "finalProtection": "../run-20261116-b1-final/results.json",
+  "duplicateRun": {
+    "exitCode": 1,
+    "evidence": "duplicate-run-rejection.txt",
+    "baselineUnchanged": true
+  },
+  "checks": [
+    {
+      "id": "O01",
+      "method": "GET",
+      "path": "/api/outfits",
+      "evidence": "outfits.test.mjs; isolated entry routes",
+      "verified": [
+        "defaults 1/12/active",
+        "literal keyword and exact occasion passed to stub",
+        "Unicode 40/20",
+        "unknown/duplicate/object/empty query rejection",
+        "safe pagination/offset"
+      ],
+      "pending": [
+        "real SQL literal LIKE",
+        "AND filtering",
+        "read snapshot",
+        "OutfitSummary mapping"
+      ]
+    },
+    {
+      "id": "O02",
+      "method": "GET",
+      "path": "/api/outfits/facets",
+      "verified": [
+        "fixed route before ID",
+        "archived only/default scope",
+        "duplicate/unknown/empty query rejection"
+      ],
+      "pending": [
+        "real owner-scoped distinct sorted occasions"
+      ]
+    },
+    {
+      "id": "O03",
+      "method": "GET",
+      "path": "/api/outfits/:id",
+      "verified": [
+        "decimal positive ID boundary",
+        "no extra query",
+        "authenticated identity only"
+      ],
+      "pending": [
+        "real ownership/404",
+        "complete ordered OutfitDetail"
+      ]
+    },
+    {
+      "id": "O04",
+      "method": "POST",
+      "path": "/api/outfits",
+      "verified": [
+        "complete four-field body",
+        "201 and data wrapper from stub",
+        "name40/occasion20/note500 Unicode",
+        "trim single lines and preserve note",
+        "clothingIds1/20 valid; 0/21/duplicate INVALID_SELECTION; malformed INVALID_INPUT"
+      ],
+      "pending": [
+        "insertId/current owner/UTC defaults",
+        "foreign/missing/archived choices",
+        "transaction/fault rollback",
+        "no diary writes"
+      ]
+    },
+    {
+      "id": "O05",
+      "method": "PUT",
+      "path": "/api/outfits/:id",
+      "verified": [
+        "full body and ID",
+        "order passed without shared mutable input array",
+        "missing/unknown fields rejected"
+      ],
+      "pending": [
+        "real parent ownership before selection",
+        "replace details atomically",
+        "preserve diary rows/stats"
+      ]
+    },
+    {
+      "id": "O06",
+      "method": "PATCH",
+      "path": "/api/outfits/:id/archive",
+      "verified": [
+        "only real boolean isArchived",
+        "true/false passed to stub",
+        "ID and no extra query"
+      ],
+      "pending": [
+        "real parent transaction lock",
+        "idempotent updated_at",
+        "retained associations"
+      ]
+    }
+  ],
+  "sharedChecks": [
+    "six routes anonymous/expired auth rejected without service calls",
+    "anonymous malformed/oversized JSON remains401",
+    "authenticated malformed400/oversized413",
+    "production O/D/S stay404",
+    "CLI help without private configuration",
+    "unsupported write modes refuse before output/config/DB",
+    "exclusive run reservation keeps existing evidence bytes",
+    "zero-increment comparison detects row/file/image/schema/identity changes"
+  ],
+  "acceptance": [
+    {
+      "id": "V01",
+      "status": "batch1_complete_stage_closure_pending"
+    },
+    {
+      "id": "V02",
+      "status": "entry_contract_only"
+    },
+    {
+      "id": "V07,V11,V12,V13",
+      "status": "offline_stub_subchecks_only"
+    },
+    {
+      "id": "V31,V32,V33",
+      "status": "batch1_zero_increment_protection_only"
+    },
+    {
+      "id": "V34",
+      "status": "pending_batch7"
+    }
+  ],
+  "notPerformed": [
+    "real O service/transactions/SQL business writes",
+    "registration/login/upload/fixture",
+    "native compile/UI/screenshots",
+    "restart integration",
+    "phase p5 release"
+  ]
+}

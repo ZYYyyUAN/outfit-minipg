@@ -1,0 +1,19 @@
+{
+  "capturedAt": "2026-11-16T14:24:44.746Z",
+  "batch": 1,
+  "gitBase": "dd4c067d2565291f1820a69f8cd762c801b6f58f",
+  "files": {
+    "server/src/utils/input-validation.js": "fded228e4927aafcf6cb8fdf35a326fe39403ee7b10d7914110044167ea43f5a",
+    "server/src/routes/account.js": "f6d1b3907a2b4da18888d9444f0d905c54a8ed07315de60ec23f09d6ea149d1d",
+    "server/src/routes/clothes.js": "67968a59b1cd2d6882404c0d24b5cfe5739bd9245104a64673b8069ed67d189c",
+    "server/src/routes/outfits.js": "191cc07896705b300ffdefcd16230a9bd118f14a3134b8b0735daa3b0583f56c",
+    "server/src/app.js": "088b5b30cd1762592c4bd1bedb3fdb7483ee393ce0dff888392ef2c2480f0ba9",
+    "server/src/index.js": "85cb818367b17e1291b193592e99068ef22a23892afb969ec32d66dedc429b35",
+    "server/scripts/verify-outfits.mjs": "0c1b2b023979e97be6fe3f8d7f7bdbb925590c083b3f5a0bd005db6b0351b2d5",
+    "server/test/outfits.test.mjs": "2f57a569cf261aa141e888af04bd04b053e42c93498645bf50706ba3fdaa48c3",
+    "server/test/outfits-verifier.test.mjs": "f46c7372d24f45859ed837ecf81e5b831ac5c7f18f686127929292d573222ea1",
+    "server/package.json": "0f1cf75ad59cb2fcdb3a994dccb166ba50538c2d31f677fd0df2fca7658fb441",
+    "server/package-lock.json": "6d8dd20a2b71cecd89a3887b140605c658f77a52efb420aafed376ed07ea0e1c",
+    ".gitignore": "d1cfd6068b2bf185d16dc62aaff7c79547c60b92218b0ad733a8b6ce39935358"
+  }
+}

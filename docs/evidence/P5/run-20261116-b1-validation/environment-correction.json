@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-16T14:27:59.2013798Z",
+  "corrects": "environment.json: devtoolsRunning",
+  "earlierBroadMatch": "wechat|weixin|devtools",
+  "earlierMatchedNames": [
+    "Weixin.exe",
+    "WeChatAppEx.exe"
+  ],
+  "devtoolsInstallRoot": "Z:\\Tencent\\微信web开发者工具",
+  "preciseMatches": [],
+  "devtoolsRunning": false,
+  "source": "uninstall DisplayIcon directory plus precise executable names and CIM paths; no command lines",
+  "servicePortStartedOrChanged": false,
+  "compilation": "not performed; Batch 7",
+  "explanation": "Earlier true was caused by Weixin/WeChatAppEx client processes; this report supersedes that field only."
+}

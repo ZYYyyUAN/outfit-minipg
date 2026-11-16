@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-16T14:29:16.830Z",
+  "batch": 1,
+  "stagedPathsReviewed": 30,
+  "onlyAllowedBatch1Paths": true,
+  "privateAppIdAbsent": true,
+  "passwordTokenPatternsAbsent": true,
+  "sourceDocsJsonWhitespaceCheckPassed": true,
+  "excludedRawTextCaptures": [
+    "docs/evidence/P5/run-20261116-b1-validation/help.txt",
+    "docs/evidence/P5/run-20261116-b1-validation/unit-regression-results.txt",
+    "docs/evidence/P5/run-20261116-b1-validation/unit-regression-final.txt"
+  ],
+  "reason": "Immutable captured TAP contains trailing spaces from historical empty PORT test names; raw help contains one final blank line. Captures retained unchanged.",
+  "protectedHistoricalPathsStaged": false,
+  "phaseTagCreatedOrMoved": false,
+  "implementationHashes": "implementation-hashes.json",
+  "stage5Complete": false
+}

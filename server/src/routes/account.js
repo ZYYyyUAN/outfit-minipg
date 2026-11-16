@@ -1,12 +1,9 @@
 import { Router } from 'express';
 import { invalid } from '../utils/business-error.js';
 import { requireAuth } from '../middleware/auth.js';
+import { validateBody } from '../utils/input-validation.js';
+export { validateBody } from '../utils/input-validation.js';
 
-export function validateBody(body, fields) {
-  if (!body || typeof body !== 'object' || Array.isArray(body)) throw invalid('body', '请提交JSON对象');
-  if (Object.keys(body).some(k => !fields.includes(k))) throw invalid('body', '包含不允许的字段');
-  if (fields.some(k => !Object.hasOwn(body, k))) throw invalid('body', '请填写所有必填项');
-}
 export function username(value) {
   if (typeof value !== 'string' || !/^[a-z0-9_]{4,20}$/.test(value.trim().toLowerCase())) throw invalid('username', '用户名为4～20位字母、数字或下划线');
   return value.trim().toLowerCase();

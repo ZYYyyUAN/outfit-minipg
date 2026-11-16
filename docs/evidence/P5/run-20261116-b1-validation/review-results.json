@@ -1,0 +1,36 @@
+{
+  "batch": 1,
+  "reviewedAt": "2026-11-16T14:28:28.249Z",
+  "reviewerLaunches": 1,
+  "reviewers": [
+    {
+      "task": "/root/batch1_contract_review",
+      "scope": "contract/code/data protection",
+      "readOnly": true,
+      "findings": []
+    },
+    {
+      "task": "/root/batch1_scope_review",
+      "scope": "batch scope/evidence/handoff",
+      "readOnly": true,
+      "findings": [
+        {
+          "priority": "P2",
+          "issue": "Broad process matching counted Weixin/WeChatAppEx as developer tools and conflicted with the document.",
+          "resolution": "Read-only uninstall install-directory and exact executable/CIM-path verification found no developer-tools processes; retained old report, added environment-correction.json and corrected execution record.",
+          "evidence": "environment-correction.json",
+          "status": "resolved"
+        }
+      ]
+    }
+  ],
+  "openIssues": 0,
+  "implementationChangedAfterReview": false,
+  "revalidation": {
+    "implementationHashesVerified": 12,
+    "sourceTests": "unit-regression-final.txt:216/216",
+    "testsRerunAfterDocumentationCorrection": false,
+    "reason": "Only environment evidence and documentation corrected; no source or behavior changed."
+  },
+  "stage5Complete": false
+}

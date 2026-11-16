@@ -14,3 +14,7 @@ docs/evidence/P3-03/release-verification.local.json
 
 # P4 post-publication report points to the committed implementation.
 docs/evidence/P4/release-verification.local.json
+
+# P5 per-batch and final post-publication reports bind the published commit.
+docs/evidence/P5/*/batch-release-verification.local.json
+docs/evidence/P5/release-verification.local.json

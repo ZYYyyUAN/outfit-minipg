@@ -1,0 +1,47 @@
+{
+  "runId": "run-20261116-b1-final",
+  "batch": 1,
+  "mode": "preflight",
+  "checkedAt": "2026-11-16T14:23:52.994Z",
+  "stage5Complete": false,
+  "passed": true,
+  "baseline": "docs/evidence/P5/run-20261116-b1-baseline/baseline.json",
+  "baselineSha256": "b1bb7db2a91b611f5e2e5d88db7712d0a3d1956a127a202cfbcf54fa8245c2a1",
+  "counts": {
+    "users": 21,
+    "categories": 7,
+    "clothes": 59,
+    "outfits": 14,
+    "outfit_items": 53,
+    "diaries": 18,
+    "diary_items": 65
+  },
+  "totalImages": 71,
+  "protectedFiles": 477,
+  "protection": {
+    "allRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "allImagesUnchanged": true,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0,
+    "historicalLocalReportsUnchanged": true,
+    "historicalLocalReportCount": 6
+  },
+  "historicalReleaseBaselineSha256": "91929db6a97e4d40e01132dd38d9369e510a75999b3b4d9e77e084baa51bf416",
+  "manifest": {
+    "accounts": [],
+    "rows": [],
+    "images": [],
+    "sessionsOpened": 0,
+    "ownedApplicationProcesses": [],
+    "databaseWrites": false,
+    "uploadWrites": false
+  },
+  "pending": [
+    "真实O01～O06服务与事务",
+    "累计增量manifest审计（写入前扩展）",
+    "原生页面/工具/视觉",
+    "V34阶段发布"
+  ]
+}

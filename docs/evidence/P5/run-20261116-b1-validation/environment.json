@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-11-16T14:23:49.8767226Z",
+  "nodeVersion": "v24.16.0",
+  "npmVersion": "11.14.1",
+  "installedDevtools": [
+    {
+      "DisplayName": "微信开发者工具 2.02.2609250",
+      "DisplayVersion": "2.02.2609250"
+    }
+  ],
+  "localProjectLibrary": "3.18.0",
+  "localAppIdConfigured": true,
+  "appIdValueRecorded": false,
+  "devtoolsRunning": true,
+  "listeners": [
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 10116
+    }
+  ],
+  "devtoolsServicePortStartedOrChanged": false,
+  "applicationProcessesStarted": [],
+  "compilation": "not performed; Batch 7",
+  "channel": "installed registry does not verify active channel",
+  "source": "read-only uninstall registry, selected project config fields, CIM process and TCP listeners"
+}

@@ -1,0 +1,2308 @@
+{
+  "runId": "run-20261116-b1-final",
+  "batch": 1,
+  "git": {
+    "startCommit": "dd4c067d2565291f1820a69f8cd762c801b6f58f",
+    "local": {
+      "refs/heads/main": "dd4c067d2565291f1820a69f8cd762c801b6f58f",
+      "refs/tags/p4": "169dc8aff9e8e533eba74e469eb6295f17932b6a",
+      "refs/tags/p4^{}": "3e2868c1910afd1c174309e0bf8ee93423694077",
+      "refs/tags/p5-plan": "34d13d6d9e1aa9092610c222b6f1e4e3aa4c489a",
+      "refs/tags/p5-plan^{}": "a3dc8d6b6b9d27a2712e8b510d4ed6005ceb9cc3"
+    },
+    "remotes": {
+      "origin": {
+        "refs/heads/main": "dd4c067d2565291f1820a69f8cd762c801b6f58f",
+        "refs/tags/p4": "169dc8aff9e8e533eba74e469eb6295f17932b6a",
+        "refs/tags/p4^{}": "3e2868c1910afd1c174309e0bf8ee93423694077",
+        "refs/tags/p5-plan": "34d13d6d9e1aa9092610c222b6f1e4e3aa4c489a",
+        "refs/tags/p5-plan^{}": "a3dc8d6b6b9d27a2712e8b510d4ed6005ceb9cc3"
+      },
+      "gitee": {
+        "refs/heads/main": "dd4c067d2565291f1820a69f8cd762c801b6f58f",
+        "refs/tags/p4": "169dc8aff9e8e533eba74e469eb6295f17932b6a",
+        "refs/tags/p4^{}": "3e2868c1910afd1c174309e0bf8ee93423694077",
+        "refs/tags/p5-plan": "34d13d6d9e1aa9092610c222b6f1e4e3aa4c489a",
+        "refs/tags/p5-plan^{}": "a3dc8d6b6b9d27a2712e8b510d4ed6005ceb9cc3"
+      }
+    },
+    "p4": {
+      "stage4Complete": true,
+      "passed": 38,
+      "commit": "3e2868c1910afd1c174309e0bf8ee93423694077",
+      "tagObject": "169dc8aff9e8e533eba74e469eb6295f17932b6a"
+    },
+    "worktreeAtCapture": "M .gitignore\n M README.md\n M \"docs/\\346\\211\\247\\350\\241\\214\\350\\256\\241\\345\\210\\222.md\"\n M \"docs/\\346\\216\\245\\345\\217\\243\\350\\257\\264\\346\\230\\216.md\"\n M server/src/routes/account.js\n M server/src/routes/clothes.js\n?? \"docs/P5\\346\\211\\247\\350\\241\\214\\344\\270\\216\\351\\252\\214\\346\\224\\266\\350\\256\\260\\345\\275\\225.md\"\n?? docs/evidence/P5/\n?? server/scripts/verify-outfits.mjs\n?? server/src/routes/outfits.js\n?? server/src/utils/input-validation.js\n?? server/test/outfits-verifier.test.mjs\n?? server/test/outfits.test.mjs"
+  },
+  "capturedAt": "2026-11-16T14:23:52.901Z",
+  "identity": {
+    "version": "8.0.28",
+    "hostname": "DESKTOP-D97LI2N",
+    "port": 3306,
+    "account": "root@localhost",
+    "db": "wardrobe_demo",
+    "connectionId": 15,
+    "timeZone": "+00:00",
+    "clientCharset": "utf8mb4",
+    "connectionCharset": "utf8mb4",
+    "resultsCharset": "utf8mb4",
+    "connectionCollation": "utf8mb4_0900_as_cs"
+  },
+  "grants": [
+    "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE, DROP ROLE ON *.* TO `root`@`localhost` WITH GRANT OPTION",
+    "GRANT APPLICATION_PASSWORD_ADMIN,AUDIT_ABORT_EXEMPT,AUDIT_ADMIN,AUTHENTICATION_POLICY_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,BINLOG_ENCRYPTION_ADMIN,CLONE_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,FLUSH_OPTIMIZER_COSTS,FLUSH_STATUS,FLUSH_TABLES,FLUSH_USER_RESOURCES,GROUP_REPLICATION_ADMIN,GROUP_REPLICATION_STREAM,INNODB_REDO_LOG_ARCHIVE,INNODB_REDO_LOG_ENABLE,PASSWORDLESS_USER_ADMIN,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_APPLIER,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,RESOURCE_GROUP_USER,ROLE_ADMIN,SERVICE_CONNECTION_ADMIN,SESSION_VARIABLES_ADMIN,SET_USER_ID,SHOW_ROUTINE,SYSTEM_USER,SYSTEM_VARIABLES_ADMIN,TABLE_ENCRYPTION_ADMIN,XA_RECOVER_ADMIN ON *.* TO `root`@`localhost` WITH GRANT OPTION",
+    "GRANT PROXY ON ``@`` TO `root`@`localhost` WITH GRANT OPTION"
+  ],
+  "columns": [
+    {
+      "tableName": "categories",
+      "columnName": "id",
+      "columnType": "varchar(16)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "categories",
+      "columnName": "name",
+      "columnType": "varchar(20)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "categories",
+      "columnName": "sort_order",
+      "columnType": "smallint unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "user_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "category_id",
+      "columnType": "varchar(16)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "name",
+      "columnType": "varchar(40)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "image_path",
+      "columnType": "varchar(255)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "color",
+      "columnType": "varchar(20)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "season",
+      "columnType": "varchar(8)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "note",
+      "columnType": "varchar(500)",
+      "nullable": "NO",
+      "defaultValue": ""
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "is_archived",
+      "columnType": "tinyint unsigned",
+      "nullable": "NO",
+      "defaultValue": "0"
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "created_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "clothes",
+      "columnName": "updated_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "user_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "wear_date",
+      "columnType": "date",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "source_outfit_id",
+      "columnType": "int unsigned",
+      "nullable": "YES",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "occasion",
+      "columnType": "varchar(20)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "mood",
+      "columnType": "varchar(12)",
+      "nullable": "YES",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "photo_path",
+      "columnType": "varchar(255)",
+      "nullable": "YES",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "note",
+      "columnType": "varchar(1000)",
+      "nullable": "NO",
+      "defaultValue": ""
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "created_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diaries",
+      "columnName": "updated_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diary_items",
+      "columnName": "diary_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diary_items",
+      "columnName": "clothing_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "diary_items",
+      "columnName": "sort_order",
+      "columnType": "smallint unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfit_items",
+      "columnName": "outfit_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfit_items",
+      "columnName": "clothing_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfit_items",
+      "columnName": "sort_order",
+      "columnType": "smallint unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "user_id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "name",
+      "columnType": "varchar(40)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "occasion",
+      "columnType": "varchar(20)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "note",
+      "columnType": "varchar(500)",
+      "nullable": "NO",
+      "defaultValue": ""
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "is_archived",
+      "columnType": "tinyint unsigned",
+      "nullable": "NO",
+      "defaultValue": "0"
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "created_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "outfits",
+      "columnName": "updated_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "id",
+      "columnType": "int unsigned",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "username",
+      "columnType": "varchar(20)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "password_hash",
+      "columnType": "varchar(255)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "nickname",
+      "columnType": "varchar(20)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "avatar_path",
+      "columnType": "varchar(255)",
+      "nullable": "YES",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "auth_token_hash",
+      "columnType": "char(64)",
+      "nullable": "YES",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "auth_expires_at",
+      "columnType": "datetime(3)",
+      "nullable": "YES",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "created_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    },
+    {
+      "tableName": "users",
+      "columnName": "updated_at",
+      "columnType": "datetime(3)",
+      "nullable": "NO",
+      "defaultValue": null
+    }
+  ],
+  "U0": 21,
+  "tables": {
+    "users": {
+      "count": 21,
+      "structure": "CREATE TABLE `users` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `username` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `password_hash` varchar(255) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `nickname` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `avatar_path` varchar(255) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `auth_token_hash` char(64) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `auth_expires_at` datetime(3) DEFAULT NULL,\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_users_username` (`username`),\n  UNIQUE KEY `uq_users_auth_token_hash` (`auth_token_hash`),\n  CONSTRAINT `ck_users_auth_pair` CHECK ((((`auth_token_hash` is null) and (`auth_expires_at` is null)) or ((`auth_token_hash` is not null) and (`auth_expires_at` is not null))))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": 11,
+          "sha256": "b7669b6325a40de9dca3174be6e8dc67b42029674f872f6350319cf8fba6b2bd"
+        },
+        {
+          "key": 12,
+          "sha256": "8922e3571781bdecab5f2106f2fa8a1e95cdbf4f40c776267a45b5cd4598bb30"
+        },
+        {
+          "key": 13,
+          "sha256": "53d93c64f12d6df7a41097d6e066719f5f61c9ba0fb66fa231c47508023db6a5"
+        },
+        {
+          "key": 15,
+          "sha256": "2c5962695ddfb1785352f1318a4f05c1d94b4ffc719a8754b9c6a4390d50924b"
+        },
+        {
+          "key": 16,
+          "sha256": "95e6e37beca3b526ff3a633505b0e2ba7084c3b780e2d6d760d2f111beb01c91"
+        },
+        {
+          "key": 18,
+          "sha256": "7f2d7c725ff7979838b5ae478b9e92f0065738ae76986e27bda05986192f4883"
+        },
+        {
+          "key": 19,
+          "sha256": "8c999dce1a4d3b5ac56e344788c2ce8bab60462e03d538858a21225966ac5ea0"
+        },
+        {
+          "key": 21,
+          "sha256": "27f7d10d4d725c7ce29463766077e3cec79d1489aa9dbe4bb2d34dfebe4a0e20"
+        },
+        {
+          "key": 22,
+          "sha256": "3c138d518a9c1723df500eedf7262fdec208cacedf9d66c5786bd2bb5992a0a9"
+        },
+        {
+          "key": 23,
+          "sha256": "adbde1d6c95dd7192388b9bf2e826f215d4894fa0c50bad9c42a8ec72bb9ef53"
+        },
+        {
+          "key": 24,
+          "sha256": "3e340823d09c072ee381c270225f39acf7b313d968e83668a3ff23d077031ce8"
+        },
+        {
+          "key": 26,
+          "sha256": "8bfb99be8a2c4ef579ad63da088013d532c816a5012227d1ca0d4c75ff0cde82"
+        },
+        {
+          "key": 27,
+          "sha256": "d12d17d641da55a00c8200223e9aca6efe6c6468b9e8d7030b891c5311b9c740"
+        },
+        {
+          "key": 28,
+          "sha256": "712ee4cd8964778067383123b9734f1d16315f49bbd04d9625c75cccfd8ad31f"
+        },
+        {
+          "key": 29,
+          "sha256": "14cb6772a11dfc4584e475c460d290ce6b183dbcdd567d7aeadc28e6d84ff8b5"
+        },
+        {
+          "key": 30,
+          "sha256": "f73b9f13782607506991bad5c59587d6753e93a41ae15e6647998af7457b111a"
+        },
+        {
+          "key": 31,
+          "sha256": "73f171df47a22427e65f1f31d8731b5c50168ac45b69b8d4ebdd135066b9e8c2"
+        },
+        {
+          "key": 32,
+          "sha256": "6ae805b2a324e4f879ffd3582a5b9e92bb9d9d650cb14bc79c08d2ae897a8628"
+        },
+        {
+          "key": 33,
+          "sha256": "26d6479e5060911a7560eb43877a167d3727dde0bd7df05b9ee7818c0b88ccd6"
+        },
+        {
+          "key": 35,
+          "sha256": "240e8933be9d902932c6aec7fbaa697521d8ab99063376f7c1cf1b7f5536e413"
+        },
+        {
+          "key": 36,
+          "sha256": "a85488a57fb01015eada47ad8376bf3173d0a1c4c51a9eef5ed31190b4cd46c3"
+        }
+      ]
+    },
+    "categories": {
+      "count": 7,
+      "structure": "CREATE TABLE `categories` (\n  `id` varchar(16) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `name` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `sort_order` smallint unsigned NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_categories_name` (`name`),\n  CONSTRAINT `ck_categories_sort` CHECK ((`sort_order` between 1 and 7))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": "accessories",
+          "sha256": "cd0a837673cda99d57e971019cc8e912e6c5a7d804751f723d883757347e73ad"
+        },
+        {
+          "key": "bags",
+          "sha256": "f05cd5555e316fe004f01f660e2f1a06dfe0d305bd4b45304f90502bb35bb9b3"
+        },
+        {
+          "key": "bottoms",
+          "sha256": "1953e32e2c42929c1cd412d4a8b0749fe6e3c724be3968aca51ffc749266d4e5"
+        },
+        {
+          "key": "dresses",
+          "sha256": "8baa76bdbe373b89cff1ca12a572f62132f536313ee46607a04fdbb58638a0ce"
+        },
+        {
+          "key": "outerwear",
+          "sha256": "cdce516df8514cff907388cd1e47d5121505cdb273da74b1ddfee73872548aaa"
+        },
+        {
+          "key": "shoes",
+          "sha256": "2a8542488b8aa22bc87ef0642d12b35817e93afb7d5dac8af056a3c21d5eb669"
+        },
+        {
+          "key": "tops",
+          "sha256": "43aaf726845ec731591e4b12a92c1cc2f15e370c9305b59da4950ff91a83bf70"
+        }
+      ]
+    },
+    "clothes": {
+      "count": 59,
+      "structure": "CREATE TABLE `clothes` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `user_id` int unsigned NOT NULL,\n  `category_id` varchar(16) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `name` varchar(40) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `image_path` varchar(255) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `color` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `season` varchar(8) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `note` varchar(500) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\n  `is_archived` tinyint unsigned NOT NULL DEFAULT '0',\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  KEY `idx_clothes_user_archived_id` (`user_id`,`is_archived`,`id`),\n  KEY `idx_clothes_category` (`category_id`),\n  CONSTRAINT `fk_clothes_category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_clothes_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `ck_clothes_archived` CHECK ((`is_archived` in (0,1))),\n  CONSTRAINT `ck_clothes_season` CHECK ((`season` in (_utf8mb4'春',_utf8mb4'夏',_utf8mb4'秋',_utf8mb4'冬',_utf8mb4'春夏',_utf8mb4'春秋',_utf8mb4'秋冬',_utf8mb4'四季')))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": 107,
+          "sha256": "78d3a0c2d63bae0532350c10d5840b3a59b1938e332970c70a69a9353439d8ff",
+          "userId": 31
+        },
+        {
+          "key": 108,
+          "sha256": "fe7e24d0a34ee9a47b9bbe37ab089b429e2594f6c0bb7838f7ecd88d10ffbdc2",
+          "userId": 35
+        },
+        {
+          "key": 109,
+          "sha256": "6ca913975ea7d7173b6247396dd909c13fae204a9ba20092d93b84a51f60cab8",
+          "userId": 35
+        },
+        {
+          "key": 110,
+          "sha256": "2e27adb289ee7e596f0bd7f30aa38bf6c29fd34e1f13d1a2d25b3a082aa54c2c",
+          "userId": 35
+        },
+        {
+          "key": 111,
+          "sha256": "0cb9b70b4ffd00a7332f72628c19a4fbbde210878420dd32d93a4e0cddded4fb",
+          "userId": 35
+        },
+        {
+          "key": 112,
+          "sha256": "eb991bb3c001a288fb5ebb03825ce162f8bffb7d7b1fea2ca01278ae5295132e",
+          "userId": 35
+        },
+        {
+          "key": 113,
+          "sha256": "5f2f53155246bfcb680a3a0ba2fe8c4a3ae9af4b3820d156e10767067895a6fa",
+          "userId": 35
+        },
+        {
+          "key": 114,
+          "sha256": "ad48ca523c4fee3ae57ef657251de498709c47719a7c42202f5409bbe1776523",
+          "userId": 35
+        },
+        {
+          "key": 115,
+          "sha256": "a1f542310d3297691b17c4ba75a04ecb0d50d0801880e2f41a70071df37e54ac",
+          "userId": 35
+        },
+        {
+          "key": 116,
+          "sha256": "66ad1302f3c615343fac67d81e086762ad5eb95db75c58807369eb42a0db1303",
+          "userId": 35
+        },
+        {
+          "key": 117,
+          "sha256": "b352e61241a3a4d3668413bb28d2e461fcd54a829d530279aec44bb901d47d96",
+          "userId": 35
+        },
+        {
+          "key": 118,
+          "sha256": "9d6aa9d9a1b17e805b3f86c5a24564a3688c247c55e90ae6c409c01f4756172d",
+          "userId": 35
+        },
+        {
+          "key": 119,
+          "sha256": "ed5d49191d01c5e3e86ca1ab917282b366adde32ffe68fb2b41b349a52fa176b",
+          "userId": 35
+        },
+        {
+          "key": 120,
+          "sha256": "294d6d8c0535d6e608e77e287966c6a721d199b5f105e459988e68ff45856dcb",
+          "userId": 35
+        },
+        {
+          "key": 121,
+          "sha256": "73c9f49abb7143592c464b74def225cc0e151fd8c57e99271b0c68f6631111ba",
+          "userId": 35
+        },
+        {
+          "key": 122,
+          "sha256": "bf469d70476f9d07731846ab1da4adc36da247e44356a1bc938b74e0eec0bbf9",
+          "userId": 35
+        },
+        {
+          "key": 34,
+          "sha256": "24d5058ead822801610cb6345c0c4ac9eecbfa8a74b04aecbf7aefd7c7c5e172",
+          "userId": 11
+        },
+        {
+          "key": 35,
+          "sha256": "1f14e922b220d478c76ea480aa9d65bdedf45677c869d90222b39dc225fa5cd4",
+          "userId": 11
+        },
+        {
+          "key": 36,
+          "sha256": "cc7d6176de132911e342212e645309330509077391b81413d44e6e3d52522a02",
+          "userId": 11
+        },
+        {
+          "key": 37,
+          "sha256": "3da5229d0136a3964f2f2038b38b35e32061aa1d9c673f5909b32382faca7182",
+          "userId": 11
+        },
+        {
+          "key": 38,
+          "sha256": "fd13fe0306ac356ca43c9159ed4f15c10a29bc12745c0dc8af10c5f4a76d47d2",
+          "userId": 11
+        },
+        {
+          "key": 39,
+          "sha256": "e25b2f1fff3533668cd2957348511b1e863786382ca560c23193b5dc377c0e81",
+          "userId": 11
+        },
+        {
+          "key": 40,
+          "sha256": "3deb312d8ef7989da868172bb846226b992bf8176540c444d919d838290db459",
+          "userId": 11
+        },
+        {
+          "key": 41,
+          "sha256": "26e4314b080ec6eccf43a0f51e15bef3f2e0c58edab72226a7503c4904ed0392",
+          "userId": 11
+        },
+        {
+          "key": 42,
+          "sha256": "bb85c7c6106e0684216111d0c573e88f3a25dafa0e1a971aa7a0f069e6416c44",
+          "userId": 11
+        },
+        {
+          "key": 43,
+          "sha256": "6ce6c5fbaaa5ad574d381c2a0e6913bf8d9eef56f836f6c76054d303039f8025",
+          "userId": 11
+        },
+        {
+          "key": 44,
+          "sha256": "e3aca17be5acc08cad8fd1bd55520d2c7e769e87d161cdf736c02bc2e5053730",
+          "userId": 11
+        },
+        {
+          "key": 45,
+          "sha256": "f58bbe51628c1d3861b1e82327378c13146c1adab7d2c71de2dab2eab2b0a798",
+          "userId": 11
+        },
+        {
+          "key": 46,
+          "sha256": "f6caa027c379513043bffe7591a439005203d3f0665cbc0f7121c57529bc9d8d",
+          "userId": 11
+        },
+        {
+          "key": 47,
+          "sha256": "a3a04e3732e47e99b163b8fed5622b7f56fd722cbf3f66614eea77325acca268",
+          "userId": 11
+        },
+        {
+          "key": 48,
+          "sha256": "5e86f897eccb6d14db96fab8980294136817c22047ef67fcf838f3206282a36b",
+          "userId": 11
+        },
+        {
+          "key": 49,
+          "sha256": "7774efa8756bdf9cb83b5cc4375972d3123f4ba61d18a0cccfebcdbedcb048e0",
+          "userId": 11
+        },
+        {
+          "key": 50,
+          "sha256": "c7fca48515c9c09674983f6de476045ff6b3348c0aa85debf10d71d7de9afb9c",
+          "userId": 11
+        },
+        {
+          "key": 51,
+          "sha256": "5f8027750e9e6734cf31251b38a11b67671b4245eddffe17e3bc51241e8ff901",
+          "userId": 11
+        },
+        {
+          "key": 52,
+          "sha256": "15e01821f7e1d15ae96cf65e94c1f6da36f6f772b37d4bfa3dd62c6ceabb9961",
+          "userId": 11
+        },
+        {
+          "key": 53,
+          "sha256": "fe72d808692ee6f9779828bcfa368a62ab23e5e7d7241f15cfd06918efc9dae8",
+          "userId": 11
+        },
+        {
+          "key": 54,
+          "sha256": "07644e223326264aee0dfd23255a1a278cc746cdc09b5014728463e77b4e0f3a",
+          "userId": 11
+        },
+        {
+          "key": 55,
+          "sha256": "6af2fdbea2af65a229d3d57cf0e022ff518ace4e353cea7465b6c1919240c2ae",
+          "userId": 11
+        },
+        {
+          "key": 56,
+          "sha256": "67ff8725226fcdb28bd0f1ab726b5903370f1f5004714d2ce1839aed27466be6",
+          "userId": 11
+        },
+        {
+          "key": 57,
+          "sha256": "f81d75a0400b34c8b4da2878596d47125144c64dc9669fc649ee284c6788607d",
+          "userId": 11
+        },
+        {
+          "key": 58,
+          "sha256": "8f4e3a88f416702fc931bf8633c1208d8943072e86ba328facc34f67f861fc91",
+          "userId": 27
+        },
+        {
+          "key": 59,
+          "sha256": "6be036da641c65218332eb3a1b135c214bc6f987498243cd14b0ca802a249819",
+          "userId": 27
+        },
+        {
+          "key": 60,
+          "sha256": "f14be542d6f409b419368a5802bcd797f6dea182694983d0b3ca1c655e6b894c",
+          "userId": 29
+        },
+        {
+          "key": 61,
+          "sha256": "830a776ddffb78756d18d2a90d263b86d79951b39da3f5e93f1015f7ef1dd23e",
+          "userId": 29
+        },
+        {
+          "key": 77,
+          "sha256": "cb8283c7130d200783c7f34cd211ab4f5f4ebae35f0df02383cb3f561afe6e4a",
+          "userId": 30
+        },
+        {
+          "key": 78,
+          "sha256": "09d9381600b5d91a232ad1496a05da3eec75bd175724e19d2876bec5e67c57e3",
+          "userId": 30
+        },
+        {
+          "key": 79,
+          "sha256": "a03f6c0a71f5d3914842ee5016968b9d62e89f15f120a1b59ad13e64a5ecb100",
+          "userId": 30
+        },
+        {
+          "key": 80,
+          "sha256": "a6401148b4824e99c14b9c77f0972847c23a9515e34ff8c18f4479062512828e",
+          "userId": 30
+        },
+        {
+          "key": 81,
+          "sha256": "c90d9cf5af95399a50450257f9fd4982f0f1b944c1da7380544235dceaa0ce03",
+          "userId": 30
+        },
+        {
+          "key": 82,
+          "sha256": "4b9ab10deb8a08270ba956519b44e2adde96a56347b588c7b7eb916771e1c473",
+          "userId": 30
+        },
+        {
+          "key": 83,
+          "sha256": "409c24432650d7fee3189236dbde6d18d082811c0e61e4483ff0ae3100c4bf88",
+          "userId": 30
+        },
+        {
+          "key": 84,
+          "sha256": "0dcd3d9735d08c6203ad186d406e280103a86c4ceb197847903de770490571d8",
+          "userId": 30
+        },
+        {
+          "key": 85,
+          "sha256": "d9d45b15025d667838fa8074a059f17fef5419b7fa3190500df94674b2f013aa",
+          "userId": 30
+        },
+        {
+          "key": 86,
+          "sha256": "705c5a5d0b06b4e58d4957ae545499345f67f2bc8e6f4cba30050a78c67b1d2c",
+          "userId": 30
+        },
+        {
+          "key": 87,
+          "sha256": "b2e681c32f4d3ca65388da469fa9dc63c4314f5a3d0116422eb075163e4966f5",
+          "userId": 30
+        },
+        {
+          "key": 88,
+          "sha256": "a4b9462a1497fbb9969720f6e83f9d1172e88a9cee19550c675c4e13231e7337",
+          "userId": 30
+        },
+        {
+          "key": 89,
+          "sha256": "4d43d4db4f0d7df41c157118d557b672178ef541a3fbbe4a5b7c233743df306b",
+          "userId": 30
+        },
+        {
+          "key": 90,
+          "sha256": "2fc6352192ae98870b813aa2c53c31ef707e057f4cd6929f49b623a7adfe4eee",
+          "userId": 30
+        },
+        {
+          "key": 91,
+          "sha256": "7ed86a81d0e0e49e942d3062411f2b5bd60184fe47c06709c24bd7ae9c868990",
+          "userId": 30
+        }
+      ]
+    },
+    "outfits": {
+      "count": 14,
+      "structure": "CREATE TABLE `outfits` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `user_id` int unsigned NOT NULL,\n  `name` varchar(40) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `occasion` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `note` varchar(500) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\n  `is_archived` tinyint unsigned NOT NULL DEFAULT '0',\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  KEY `idx_outfits_user_archived_id` (`user_id`,`is_archived`,`id`),\n  CONSTRAINT `fk_outfits_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `ck_outfits_archived` CHECK ((`is_archived` in (0,1)))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": 18,
+          "sha256": "842590468fa5eb50f401f33ac64ae43e352c29271eeb6cb6026c1bd2787f9541",
+          "userId": 11
+        },
+        {
+          "key": 19,
+          "sha256": "9d319f298b26cc30b258e85ba05c2a551082bcff1cd64fc624fd353e770722ee",
+          "userId": 11
+        },
+        {
+          "key": 20,
+          "sha256": "1507f781cc4ef5ac9f3e495a2b662e3476da096328df85767d46a1fc656e49d6",
+          "userId": 11
+        },
+        {
+          "key": 21,
+          "sha256": "8a9db865a73d9fa0e3edf5185f1ed63504e97435000ef4347b9b6eb0b5eb10a9",
+          "userId": 11
+        },
+        {
+          "key": 22,
+          "sha256": "990db8bcd5a74987370e9c4b9ac8ee6b38f95996596b46347dfd85bfd1bb30c0",
+          "userId": 11
+        },
+        {
+          "key": 23,
+          "sha256": "1031374aa0ee0d5dcff895e895960bfd3b17adb5214767c81e1a86d13008ad3f",
+          "userId": 11
+        },
+        {
+          "key": 24,
+          "sha256": "fce356cdb5f343839c94afc986d07d196fbd889789749f39a06df7a87f53f4f1",
+          "userId": 11
+        },
+        {
+          "key": 25,
+          "sha256": "7a51e7ca75786e282877b438599d627001cfda9b811771303df7ec1980c2d2d3",
+          "userId": 11
+        },
+        {
+          "key": 26,
+          "sha256": "c2f2c364f4e3e43d13aac3614853593ca4a683260df15011be93967cb8af0cff",
+          "userId": 30
+        },
+        {
+          "key": 27,
+          "sha256": "51c02061bccbe1391276ca2ea9ed91e027fe2ae5d1cd873d0219ccbcbfd3af31",
+          "userId": 30
+        },
+        {
+          "key": 28,
+          "sha256": "242f2ce77dd10f4bd023aebf98dc608f7d97dc8b2ce266b76bc0600c47f243e9",
+          "userId": 30
+        },
+        {
+          "key": 29,
+          "sha256": "ebc492045d913056f2c2c184b8d2d6fab9024a6f3663ddde3a9fc5ca0f5cd03c",
+          "userId": 35
+        },
+        {
+          "key": 30,
+          "sha256": "3988137f23dbadab02bcf72d7bbeafa9d015914d2b59ff208e8e5746fb333988",
+          "userId": 35
+        },
+        {
+          "key": 31,
+          "sha256": "4dab3253a6c0599ec1ca9664e8dc135cf17000ba750ff0918e4c2d7f3459a607",
+          "userId": 35
+        }
+      ]
+    },
+    "outfit_items": {
+      "count": 53,
+      "structure": "CREATE TABLE `outfit_items` (\n  `outfit_id` int unsigned NOT NULL,\n  `clothing_id` int unsigned NOT NULL,\n  `sort_order` smallint unsigned NOT NULL,\n  PRIMARY KEY (`outfit_id`,`clothing_id`),\n  UNIQUE KEY `uq_outfit_items_order` (`outfit_id`,`sort_order`),\n  KEY `idx_outfit_items_clothing` (`clothing_id`,`outfit_id`),\n  CONSTRAINT `fk_outfit_items_clothing` FOREIGN KEY (`clothing_id`) REFERENCES `clothes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_outfit_items_outfit` FOREIGN KEY (`outfit_id`) REFERENCES `outfits` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `ck_outfit_items_sort` CHECK ((`sort_order` >= 1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": "18:34",
+          "sha256": "80390e92479e9c74357f8d0981e3c79eaeb30756859486627d9658b103acec44"
+        },
+        {
+          "key": "18:45",
+          "sha256": "a8a0fe60fbfbcda4f376e9f302e2164aa54c39888f13af7ed9e89dadda9d5474"
+        },
+        {
+          "key": "18:51",
+          "sha256": "fbf2a0eb19bf6607c81314056f8e80fb8d47f6099945712bcd3eed0f3ffc35ab"
+        },
+        {
+          "key": "18:54",
+          "sha256": "3abaddfc20de18fb6c03014f912279218b5e937de91c4d3bb95e7eeca7033470"
+        },
+        {
+          "key": "19:35",
+          "sha256": "2bbec35d5b5fdda4de02f9dbd159d200ea614a943bfd4bf51c37d4b9b77efb50"
+        },
+        {
+          "key": "19:49",
+          "sha256": "78a90ea7eeb839341fb28ac7588d1507ff5fb71136e2e7d9b246410ea58d15bd"
+        },
+        {
+          "key": "19:52",
+          "sha256": "35b8388734f046615d24e7588e1bd1c5647026d37bf88134c7f485aa194f6491"
+        },
+        {
+          "key": "19:53",
+          "sha256": "25df284135fe962f2de3e1d67dcddc01de3060f3e7498b029d570404ae290a39"
+        },
+        {
+          "key": "20:39",
+          "sha256": "3d82d40e36ee52be38a72cbc3e689087306973c0fd89fff55d202de6b49138dd"
+        },
+        {
+          "key": "20:46",
+          "sha256": "f5619ae52b39e4e09b8dfd6620c42346b4ced64473ba25c46b2960ec206cdb8b"
+        },
+        {
+          "key": "20:51",
+          "sha256": "1093bd27222215c1b0366f240aa586ebd9c752382543e02a1cdc466a5f1a51cc"
+        },
+        {
+          "key": "20:54",
+          "sha256": "97ba3d3e0c0a8f3e219989b6f58f343b76ff6a1ff0689a08d7c5345b8503fdb8"
+        },
+        {
+          "key": "20:57",
+          "sha256": "1b0270dbb3b542998349a598022cea7c9706f0257d7babe735c89bf08692a660"
+        },
+        {
+          "key": "21:38",
+          "sha256": "dc133f5e18bf337f82635e754a1374b43f35cba3cae34e027f0fb58d79a87105"
+        },
+        {
+          "key": "21:41",
+          "sha256": "c8a39f06b40db0a57e1c4adef45041dbe933528e37db641d93f32692c83e0c2c"
+        },
+        {
+          "key": "21:48",
+          "sha256": "0f3951d6d707bd8b9c93c21f8cb8e5a160053ccf8fc57b44c0853c523adc13f0"
+        },
+        {
+          "key": "21:52",
+          "sha256": "461399d1003d003c489def35f54d812111b77f53abe52728049822746f7d4c9c"
+        },
+        {
+          "key": "21:53",
+          "sha256": "d41796767463528584b534eefc10a5e6e030a4bfec0bb3313fef60c77ee8c0ad"
+        },
+        {
+          "key": "22:36",
+          "sha256": "2aa624f8901f15e7ce83a8774764e3d1c607bc2b0a9e3d30679ffc8c88e970bc"
+        },
+        {
+          "key": "22:47",
+          "sha256": "b2d050f131883d9c638ec36e589da63afb6deb4ab378135dae486a86e6816d67"
+        },
+        {
+          "key": "22:52",
+          "sha256": "d42cdab1a9514c30fef32bd4da1447684907bb5c86b484173329dad49d48603b"
+        },
+        {
+          "key": "22:53",
+          "sha256": "bb63576ecd7dab4e4db4d9cc94db529492648aa4b9bbae0e46f5b169e7644241"
+        },
+        {
+          "key": "23:37",
+          "sha256": "8f9004529140b8220a4d2be22652019083fa22fba40674ca71e689811e9a1591"
+        },
+        {
+          "key": "23:46",
+          "sha256": "cc1a0031f55984fcc059290ea0207db32c2f59f1522d978d16a7907050cac48b"
+        },
+        {
+          "key": "23:51",
+          "sha256": "a0eb303d97a07c7b1a48f8490c48617a673c28bfc22bef0e8b0f3be9c2e89df6"
+        },
+        {
+          "key": "23:54",
+          "sha256": "817ea047be766a135d5d9967589a0fccc7b9762981058a07a3d31a6c67535b33"
+        },
+        {
+          "key": "23:55",
+          "sha256": "485680a0db553c28f1f49a0d678068aa4652871a370df1b3706ba53876b8f530"
+        },
+        {
+          "key": "23:56",
+          "sha256": "3eaeab32d4c460975447a8b4a58a4d9d98212a4c3854e917048da938d3c1f55f"
+        },
+        {
+          "key": "24:40",
+          "sha256": "a719af8155532e02042af5d868f1de1bdf69f0f523a6f80d1425c2986b6da122"
+        },
+        {
+          "key": "24:50",
+          "sha256": "45117f0f1299680b97f0d51d96b28a97f3a03d56832bc1f636cfc5a76fee51b0"
+        },
+        {
+          "key": "24:52",
+          "sha256": "8c144513d845bdc3609982a782b9a9209f9061a7bd152d08327955b34f2f5942"
+        },
+        {
+          "key": "24:53",
+          "sha256": "ac5150925716c84a9620ceea52785ac4288db18672320b2ca4311b84c4ff2308"
+        },
+        {
+          "key": "25:42",
+          "sha256": "78fd98d0d3f7d2505aa9e8a91af10d0fbdde3f5b0f2410d07fcdedd2d48fc711"
+        },
+        {
+          "key": "25:45",
+          "sha256": "f5cda9ca2fe3fd685f860ef6295f81e9f5044e05eb51876d24fb854e38c87187"
+        },
+        {
+          "key": "25:51",
+          "sha256": "4e85ad2db9c841baa314f9ef9743130fb10695355e7337715ae2984deb2959ce"
+        },
+        {
+          "key": "25:53",
+          "sha256": "0401ec9a1fbe64d67b45057cd5e8f5c28668b4d7c99fee3c8e400a7786fe944d"
+        },
+        {
+          "key": "25:56",
+          "sha256": "3abf533cb09e5a93e752612fecc63c928e71207049868387faa3b1b5a89245db"
+        },
+        {
+          "key": "26:77",
+          "sha256": "a6ce64cf85f6ebf4cf0d0f792dbf563005eb0f348beb4758eb8980e664f71d00"
+        },
+        {
+          "key": "26:78",
+          "sha256": "5ce9493a318deee0f4239a5ecd8b7fd7bbd70ddfdb9f667492cdbddfd1bb62ad"
+        },
+        {
+          "key": "26:79",
+          "sha256": "da752138988519db2174d45f803e2923243fd3de23c1aebaa0717f08d0e35710"
+        },
+        {
+          "key": "26:80",
+          "sha256": "a93d5176df488e30a3c0f0532c4c095508cf9e9228c8b007ca43eb80e468b114"
+        },
+        {
+          "key": "26:81",
+          "sha256": "22476b0a57287a6f678c3a5c97e2282e4c4d35f0a2bc5da0cd6b6e9d004e0f66"
+        },
+        {
+          "key": "27:77",
+          "sha256": "ffc94b07f737faee103a26ed08472aac1309db70c81888eac010ab027b8d1f9f"
+        },
+        {
+          "key": "27:78",
+          "sha256": "a60fa9700d867619bde7b3ab29e093414db272b8f4c0a923b842fd5097a0a181"
+        },
+        {
+          "key": "28:77",
+          "sha256": "0644282641340f787d5f68f04d26fce6d2de58cf93393a7838007249a08c6847"
+        },
+        {
+          "key": "29:108",
+          "sha256": "24a07e604abe9ba9c23fe99a876e507b84313cf1c058d42a971f7f46118a493d"
+        },
+        {
+          "key": "29:109",
+          "sha256": "4a9a679f5b1cfe0ff7a48df8314738568fe60d5964b42672b40b47680c06a60f"
+        },
+        {
+          "key": "29:110",
+          "sha256": "c8c80a1a9f8faa6ff37ef9df4859fdf7a699cb8b0ee764aa1e1dbcaed7c5dec8"
+        },
+        {
+          "key": "29:111",
+          "sha256": "8fb55e6cb037e05bbab94214d6312944fb550d71f2c6116d0e838033a098c0a2"
+        },
+        {
+          "key": "29:112",
+          "sha256": "f7f86e679d7b236d97e3d2489b844ad2ae24c800f612e24cbee8077eb23817d1"
+        },
+        {
+          "key": "30:108",
+          "sha256": "bebb269a7b769712bdbfb6eb3c3f2e404b8ef1a9eda16784da9c341bd3b7465a"
+        },
+        {
+          "key": "30:109",
+          "sha256": "5f796d97a94df5719e01171af7055cb38a94fbbd93a09cee6787680b6dc62874"
+        },
+        {
+          "key": "31:108",
+          "sha256": "114ab67d8696d96de18f620d3b06b26b02ec80bd106ebdbc43c45183c4108e79"
+        }
+      ]
+    },
+    "diaries": {
+      "count": 18,
+      "structure": "CREATE TABLE `diaries` (\n  `id` int unsigned NOT NULL AUTO_INCREMENT,\n  `user_id` int unsigned NOT NULL,\n  `wear_date` date NOT NULL,\n  `source_outfit_id` int unsigned DEFAULT NULL,\n  `occasion` varchar(20) COLLATE utf8mb4_0900_as_cs NOT NULL,\n  `mood` varchar(12) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `photo_path` varchar(255) COLLATE utf8mb4_0900_as_cs DEFAULT NULL,\n  `note` varchar(1000) COLLATE utf8mb4_0900_as_cs NOT NULL DEFAULT '',\n  `created_at` datetime(3) NOT NULL,\n  `updated_at` datetime(3) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_diaries_user_date` (`user_id`,`wear_date`),\n  KEY `idx_diaries_source_outfit` (`source_outfit_id`),\n  CONSTRAINT `fk_diaries_source` FOREIGN KEY (`source_outfit_id`) REFERENCES `outfits` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_diaries_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": 31,
+          "sha256": "0832baf2fa6674304b6ee98c23833226a840429955db51207ec35139c1b1f9a2",
+          "userId": 11
+        },
+        {
+          "key": 32,
+          "sha256": "466808536040cd736b91a867c03b9b4e3f04abae738c17b440ffeb50778f8c23",
+          "userId": 11
+        },
+        {
+          "key": 33,
+          "sha256": "54e48b37e7fa8187ad1c1e60c043c5cfedf9990eb7ff8661c6972ad439a4a932",
+          "userId": 11
+        },
+        {
+          "key": 34,
+          "sha256": "16ff6d2ccfc35b33aa2c7f501c377298678fb04ea252ffb766f184a14514fdc6",
+          "userId": 11
+        },
+        {
+          "key": 35,
+          "sha256": "f90884bb104d6f5a2e5c0810575828ff2a3c36259c5efe811aa55e86d40cd76a",
+          "userId": 11
+        },
+        {
+          "key": 36,
+          "sha256": "52c6097709fe58fa0a6455ee6ff155a9f3e6b2cd2b50362c259a72226cae5754",
+          "userId": 11
+        },
+        {
+          "key": 37,
+          "sha256": "10224af6e801af60a03663c6df8c179197bddb0f02c122a2d2a0c4603c692583",
+          "userId": 11
+        },
+        {
+          "key": 38,
+          "sha256": "c58ae2329216444ef91d1a26e44df1cff6e83c8869b6e6e64550bd1dca3eea95",
+          "userId": 11
+        },
+        {
+          "key": 39,
+          "sha256": "9165bb19609c3fe23c1fc790e7d82501a7bb3a9eaedfdb22968c1404a106cc02",
+          "userId": 11
+        },
+        {
+          "key": 40,
+          "sha256": "6097988017e1e8045e1235717c8b85fdc0cf853a835a5eaeeb8699929f9719b1",
+          "userId": 11
+        },
+        {
+          "key": 41,
+          "sha256": "eb64ccb191529c6569d2df3ae6761164e647979ba64ce1b0ac2000c0d6c28136",
+          "userId": 11
+        },
+        {
+          "key": 42,
+          "sha256": "e98711b5e35d6d22caa029a9a9634acb4493734afbd8bd64dd05fceb47e05f51",
+          "userId": 11
+        },
+        {
+          "key": 43,
+          "sha256": "ded71c036a7ed2f806e47f1801c3dbadb7a69b072c7b4072c4939af736e829d0",
+          "userId": 30
+        },
+        {
+          "key": 44,
+          "sha256": "6b12088a0babae296a67dcea6dcbac301f9207dea21c1f592b2435e16bcbeb8f",
+          "userId": 30
+        },
+        {
+          "key": 45,
+          "sha256": "d05d56feac0e6446390204193251370e0c9ffe232058bcb0a2ffbcc606aee818",
+          "userId": 30
+        },
+        {
+          "key": 46,
+          "sha256": "5da14bb62b65a27e4580de48cf18697e90a7eb53923b0377700a65e4dd146f07",
+          "userId": 35
+        },
+        {
+          "key": 47,
+          "sha256": "5fbb00ea5522e0918d2e3701438d6beabfdd48b60a7bccd19ae8703a149b75d1",
+          "userId": 35
+        },
+        {
+          "key": 48,
+          "sha256": "94ea7095cacf98fef2331b095c631f0e782505ff6f86a73abfd2c484f62a0c60",
+          "userId": 35
+        }
+      ]
+    },
+    "diary_items": {
+      "count": 65,
+      "structure": "CREATE TABLE `diary_items` (\n  `diary_id` int unsigned NOT NULL,\n  `clothing_id` int unsigned NOT NULL,\n  `sort_order` smallint unsigned NOT NULL,\n  PRIMARY KEY (`diary_id`,`clothing_id`),\n  UNIQUE KEY `uq_diary_items_order` (`diary_id`,`sort_order`),\n  KEY `idx_diary_items_clothing` (`clothing_id`,`diary_id`),\n  CONSTRAINT `fk_diary_items_clothing` FOREIGN KEY (`clothing_id`) REFERENCES `clothes` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,\n  CONSTRAINT `fk_diary_items_diary` FOREIGN KEY (`diary_id`) REFERENCES `diaries` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT,\n  CONSTRAINT `ck_diary_items_sort` CHECK ((`sort_order` >= 1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_as_cs",
+      "rows": [
+        {
+          "key": "31:34",
+          "sha256": "28bc16930652eb9967faa85485ab4b5ca98c8d7f95244bc6fe101f5724a16614"
+        },
+        {
+          "key": "31:45",
+          "sha256": "3d8bf6853b67980ab24e76a8f127b1b9f94b0fda928d689708f535857915e57f"
+        },
+        {
+          "key": "31:51",
+          "sha256": "6315a6e8409a570d02578b60a06927c86dcfdf3dadf6da87354869d47a55816b"
+        },
+        {
+          "key": "31:54",
+          "sha256": "59cf6d0263de4732b03c1c14f7daf8f5f4282f1da1b9b009a8a514e409f688ee"
+        },
+        {
+          "key": "32:35",
+          "sha256": "776a4720a6d56ff551ae3151df19b90914edb6ceaeb25837969d2ffb38df8b59"
+        },
+        {
+          "key": "32:49",
+          "sha256": "f7d84bf39ee8fcb741314f008ba07213a94b2e41f9e0d415b3cabb3772bb54cb"
+        },
+        {
+          "key": "32:52",
+          "sha256": "9b812a13973e9e4a95e5ea0a5e338d5f2d7484906fe4daa7442cd459b8812dfd"
+        },
+        {
+          "key": "32:53",
+          "sha256": "871a7e2807cede1ad4ae270796b6f28f0fb6a05cf1463223a2c8ecb55c135a69"
+        },
+        {
+          "key": "33:39",
+          "sha256": "f1646cc87a0f6ee61f2f1362e884dabbc9ca25f1bc3fe213b0a200e701289c84"
+        },
+        {
+          "key": "33:46",
+          "sha256": "dd3f4482e750288384091dce5a6aac5f5c6fe97e70bd51c175f93b5b72be1c03"
+        },
+        {
+          "key": "33:51",
+          "sha256": "d1ad328d78d0da0c54f7f1f42579d383eb1b45cad60d10d793d18dec7678e451"
+        },
+        {
+          "key": "33:54",
+          "sha256": "1a2fa44986a558abc59045266a47874ee90b4988692a7e6de113d104848b3763"
+        },
+        {
+          "key": "33:57",
+          "sha256": "aae0b573e106ad2b508844d708bd647274fdca3f20d10ed8b20d71bbf3511a7e"
+        },
+        {
+          "key": "34:34",
+          "sha256": "d38cb00a64643f3739b6c312457c1fa46c39c0075f3194254fefa54ca0a1e2ef"
+        },
+        {
+          "key": "35:38",
+          "sha256": "6b24af4de3cae0ec8dda2e2cfb79c21fa7f38276d31b36dfdf018e549fea6903"
+        },
+        {
+          "key": "35:41",
+          "sha256": "2243b33dcdc13c572b4b5045cd4c9c525270a962fc549937084fc854987961c3"
+        },
+        {
+          "key": "35:48",
+          "sha256": "ed8207ff302ec3e7d1650126159abd1f8fa9289041c4d46bea6c5e5aafbf211c"
+        },
+        {
+          "key": "35:52",
+          "sha256": "956519f946ee406bd00000c4a86b1e511ca339c9383fdd86d77c33dc6e8a296d"
+        },
+        {
+          "key": "35:53",
+          "sha256": "55dd2172f23e0047157aa80ddcfc9758cc46e8a766408d53e124bff4a5e7334e"
+        },
+        {
+          "key": "36:36",
+          "sha256": "81a058dfaf49d9ee17b2ef9d605f8c8c7d1526ab3e6080dd00de0a55703231eb"
+        },
+        {
+          "key": "36:47",
+          "sha256": "cf0b5cb69a68d119d04dbc78a39241032dfd73e8104cb6d71afe6ab23b402d91"
+        },
+        {
+          "key": "36:52",
+          "sha256": "7e107fb27e4204b33774216c88a2587e76a0ff954136146b71c897f9464551a9"
+        },
+        {
+          "key": "36:53",
+          "sha256": "cd0b6ef8f13087c2720a236f52935a900e37cc84aa3d917c43e96a264fafbb3f"
+        },
+        {
+          "key": "37:34",
+          "sha256": "7ed14b7c96be6c936c1c84e4147731a84426d13170fbd6d575e04c3782907b22"
+        },
+        {
+          "key": "37:45",
+          "sha256": "ed05cfe30d8cbf0b02ffead04d613faeaf6b5b305a4ecd5006d1cfa529c944d4"
+        },
+        {
+          "key": "37:51",
+          "sha256": "772fb01586c21c8c760ea15e81d6709ad15072d1532d426bf16c97b4f98b9180"
+        },
+        {
+          "key": "37:54",
+          "sha256": "15e621c8cdb76e94de3c7a1f3d7fe10a4a12ad2f84abe26b68d12c066821555d"
+        },
+        {
+          "key": "38:37",
+          "sha256": "2e206c84c3e4a70c46709529d171391e77849c6bc24474b1ea85d2427849491b"
+        },
+        {
+          "key": "38:46",
+          "sha256": "1e821703af3d788700f1172e294566fb00ffd4d4d481f7ad8cbc05609584dddc"
+        },
+        {
+          "key": "38:51",
+          "sha256": "eb2608fef21ae0a5210293014e3c875f83fd40ce83acbed9621d53b23a09f242"
+        },
+        {
+          "key": "38:54",
+          "sha256": "72de4686ff390e27f9a07916391df1db611cfc844df472d541a6eeb3e374380d"
+        },
+        {
+          "key": "38:55",
+          "sha256": "7cc12ec92fd2abf71ea1959a19cf07f7d08884fa93493c2b52eafe9fe6ba7812"
+        },
+        {
+          "key": "38:56",
+          "sha256": "5f3dc41adc02fae35818ab1d5d92174d1f20817e40fa58e6c93b7898b740ede0"
+        },
+        {
+          "key": "39:42",
+          "sha256": "e09cce3c94752b06e61511da8a70eb1981f92e839d03ef899aabdd0730789526"
+        },
+        {
+          "key": "39:45",
+          "sha256": "ff78ecd742425e7f0a24b793f5b7a99ea3efe7860a1561bd4ac467f2f9528469"
+        },
+        {
+          "key": "39:51",
+          "sha256": "ba3aca7513c1b0fb0fbbf907b880eec810dc78d9a9c2b3d4cb6b6b70d4474642"
+        },
+        {
+          "key": "39:53",
+          "sha256": "69ed8d52b5b282e9c8dda4802d0a9a7ee43fb2f29a73a84eeef2ea9ee42834c3"
+        },
+        {
+          "key": "39:56",
+          "sha256": "7ded1f3d82d465ae7feb6d59613a97b87a0b5cd2ab9d39c34adb3d3319bec102"
+        },
+        {
+          "key": "40:38",
+          "sha256": "29eb0d09dbe9600d1eeb8b789f748f477f4df9a365ce72c0d08d04b646f8da39"
+        },
+        {
+          "key": "40:41",
+          "sha256": "d02f0a3241711234323573adaa040970319703b35428d22f799073fda42a64da"
+        },
+        {
+          "key": "40:48",
+          "sha256": "1abd4db1d37f0f341785d6da7029e3e47e9642954b2971e6352771d3ed805df8"
+        },
+        {
+          "key": "40:52",
+          "sha256": "b1fb62834ddd0dd771a3e4837120ccc057eb05b1321f5a21e88228bce9a17915"
+        },
+        {
+          "key": "40:53",
+          "sha256": "714e60868516585a6088f62a31d9248e639b18bc9d6ada15017995cc330b22f8"
+        },
+        {
+          "key": "41:35",
+          "sha256": "a7fd2b63dba25a9efc2ae53ad7120dbd1a89606ec53bf559d3698069045850d3"
+        },
+        {
+          "key": "41:49",
+          "sha256": "c50861545c3c8b20366c1f318e5831d2d81099e2b1956c74db983d2e87efa6e6"
+        },
+        {
+          "key": "41:52",
+          "sha256": "a40dddc30f6510571cde533b9b419bf75a191daea2b69e17736e2381c429488b"
+        },
+        {
+          "key": "41:53",
+          "sha256": "322a2ee842d4ed506956794b3136b2d74c67e28ff8a884c1af1d7aa7869c74f3"
+        },
+        {
+          "key": "42:37",
+          "sha256": "3fb2c2da342eaeb2d0873c07d6806e3d0e60988166cefe2ff56393f7a6281558"
+        },
+        {
+          "key": "42:46",
+          "sha256": "a56d3f02cf6c90a649c6ae51bde687dbd6604bdbe1fb678c69cdfac1fd11831a"
+        },
+        {
+          "key": "42:51",
+          "sha256": "031254ea5f00c6289f17e1f315a04f8012dbb7e593c77c9d5bbcc2cf80341527"
+        },
+        {
+          "key": "42:54",
+          "sha256": "090694df43f9fb68019c8b86d6daaf46918bc38f05db0695c6b3ac6c9063283f"
+        },
+        {
+          "key": "42:55",
+          "sha256": "462344ccc6b0c03b7186732b27ba08917ba69ca8bbde3afe27a6f359b9ecbd82"
+        },
+        {
+          "key": "42:56",
+          "sha256": "0ae9017604738f72c2b0b9b85d7f73a1236f3cd09df799f239b00400fd401720"
+        },
+        {
+          "key": "43:77",
+          "sha256": "65647267ba371053bad6a1bed9ab67f9df7c64ffb97d5f5d2adf2969ec7c66b9"
+        },
+        {
+          "key": "43:79",
+          "sha256": "fae714f28046ccf8d1a7c5c132b8f1e1f2179fff8eb47819f887c188934a00fe"
+        },
+        {
+          "key": "43:80",
+          "sha256": "43f13db87da72f59f46c5a52e4b15730d995afe70fed793975587b375b022bc3"
+        },
+        {
+          "key": "44:77",
+          "sha256": "4bac39e0f32097e4307a1bd3366cfda06379af0e952449888f1b363c0f94d2db"
+        },
+        {
+          "key": "45:77",
+          "sha256": "5b4fdafdc786b4af9c2ae5fde257ed70ebf86a43544f5e354755d25b7ec954a8"
+        },
+        {
+          "key": "45:78",
+          "sha256": "04a6a24c494a7f55957508a898e2d33f1d989f94279c2e85aef1d51c783e19f5"
+        },
+        {
+          "key": "46:108",
+          "sha256": "e495d7af733e20feaeba79efb386d297423a2c83dbf1ca20540e029f3cc49ac4"
+        },
+        {
+          "key": "46:110",
+          "sha256": "5257fb8eab6999fdfc3182537f56c09f5f788673a249b295fa78465003a406a7"
+        },
+        {
+          "key": "46:111",
+          "sha256": "251c9d2285e835d12f2c8f45267d0c60cf83ccabc8abd8eadf40b03cfa44dde4"
+        },
+        {
+          "key": "47:108",
+          "sha256": "900b87669e6b05d03048e96c8e90d10ea96535180baa0b976d417b6f2e2b358e"
+        },
+        {
+          "key": "48:108",
+          "sha256": "af5ddf21297e3cae2c540ad038597df73bec60e648a9814b9b3a8e7cb52f3ddf"
+        },
+        {
+          "key": "48:109",
+          "sha256": "68dfb866335455408999dceb60af4088f37aae7c6d28158d764092bd64154ce6"
+        }
+      ]
+    }
+  },
+  "protectedFiles": {
+    "assets/SOURCES.md": "6f8293d9ccebb654d434937a3ce7803dbd6379d05bd457d8708eace9dbf4ccd7",
+    "assets/clothes/clothing-001.jpg": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+    "assets/clothes/clothing-002.jpg": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+    "assets/clothes/clothing-003.jpg": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+    "assets/clothes/clothing-004.jpg": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+    "assets/clothes/clothing-005.jpg": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+    "assets/clothes/clothing-006.jpg": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+    "assets/clothes/clothing-007.jpg": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+    "assets/clothes/clothing-008.jpg": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+    "assets/clothes/clothing-009.jpg": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+    "assets/clothes/clothing-010.jpg": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+    "assets/clothes/clothing-011.jpg": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+    "assets/clothes/clothing-012.jpg": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+    "assets/clothes/clothing-013.jpg": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+    "assets/clothes/clothing-014.jpg": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+    "assets/clothes/clothing-015.jpg": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+    "assets/clothes/clothing-016.jpg": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+    "assets/clothes/clothing-017.jpg": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+    "assets/clothes/clothing-018.jpg": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+    "assets/clothes/clothing-019.jpg": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+    "assets/clothes/clothing-020.jpg": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+    "assets/clothes/clothing-021.jpg": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2",
+    "assets/clothes/clothing-022.jpg": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46",
+    "assets/clothes/clothing-023.jpg": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc",
+    "assets/clothes/clothing-024.jpg": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18",
+    "assets/diaries/diary-004.jpg": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+    "assets/diary-photo-manifest.json": "335f338fb8eaf7c5dce1ba1a098b18b335fec46386b139a9e68f9ac5cc02e6d3",
+    "assets/previews/clothes-overview-1.jpg": "2c685bfb63ddaee83d5969a2313fa2b5f9e21e183efff66e71cca3f441abfeea",
+    "assets/previews/clothes-overview-2.jpg": "56d164f65a0019f62ccdd686ab4600e9ea5a23dc4cedc7df0e814fdbff01fcff",
+    "assets/previews/korean-wardrobe-overview.jpg": "9c42c0cee49483c792b7e7ef996ff458c6504efe1b48783505f70f51d9c2a3bf",
+    "assets/previews/outfits-overview.jpg": "87f8d0db7fe797e696721c1741b8afef2e09bffa5ce6d511afd445acb7a23e5d",
+    "assets/references/korean-daily/KR01.jpg": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+    "assets/references/korean-daily/KR02.jpg": "ba9c80a1254fde3b2f003960823f340c9a77a57d25f4c8c0b0cd65d8039014a1",
+    "assets/references/korean-daily/KR03.jpg": "bdfeaacaadd815aaa1a3a45501a9d9c1549f3c03dfc58137507b29eceb35c92f",
+    "assets/references/korean-daily/KR04.jpg": "3b427b93860396cd72d07a8803499361580c3f7a4fb75a6c7ce07daafaf487c2",
+    "assets/references/korean-daily/KR05.jpg": "f9fe7832433f3de0d5acabc9a907edfc885becdee70d12d31410ddcb70730544",
+    "assets/references/korean-daily/KR06.jpg": "b81168c5adfe81b169c1fcda8cfe20f9e4d5f1c075bee7cf721c7d1f4297b6ef",
+    "assets/references/korean-daily/KR07.jpg": "2fd7ad6eda38f658c98009e9bd7c69111e756e9bc98ab00adf18050ea6ae90b5",
+    "assets/references/korean-daily/KR08.jpg": "22594e0cb79283e9d155ce52721687360bd70ebf07bdc13b54da3c44520013d6",
+    "assets/references/korean-daily/KR09.jpg": "2078f45b60a4041566ef0d85d55b94e2369db198546cd63189154735c25b4e2b",
+    "assets/references/korean-daily/KR10.jpg": "aa9b4e110f02bd58689a32c2db095bd2e1e77a4fde37a9c286418718ecfca1d3",
+    "assets/references/korean-daily/KR11.jpg": "1d42cad48c70caf82b8faab037d08afd47e23c6bf02b1baf205da404ad946d8f",
+    "assets/references/korean-daily/KR12.jpg": "822d56c500c35fa363f661f7b9a8d453e84ab26ed96d5036748b6269b30eaab3",
+    "assets/references/korean-daily/README.md": "1ff3ed53146ef0d86055e7a0a3c63c0d5ac68d5a6cf54b09275d6958d872ed04",
+    "assets/references/korean-daily/reference-board.jpg": "98ae24a075b60659f36888df2a6a3552ce4ef7e32262ca0f5875e65d00223622",
+    "assets/references/korean-daily/source-manifest.json": "68e8a860ee122d0bb63b995a381ada6d395fd121a8c5be4bb9054bbf04778b5a",
+    "assets/source-manifest.json": "c2c3bccbc9c8f7f073c3786a764ef743012e1c6ddb0d5f2bd86304b19229cd96",
+    "data/demo-data.json": "f2666225d977b4eaf4a0669cd106b43fd150dfb4f50d187246b3eb95984b15df",
+    "data/demo-summary.json": "687d01817d4dc4bca0936ca83f06be22e74de8730637f64899a85e54f404686b",
+    "data/verification-result.json": "6717dd88bae3ea37772ddde7033abf658c70d6b35c12af5bf180312f54207603",
+    "database/demo-common.mjs": "eb0cc971f390284c6d2332ffb9d7107dd3e4ade489f31b5fa2d77637ffa9d3a2",
+    "database/demo-tools.test.mjs": "48f8f336f612be1766bf2f94564ac1513003aebd92e2f862c0424e454673f807",
+    "database/package-lock.json": "b463243de1becf87360b5138765fb1272e472207275ee6f51298ab4c89e8da91",
+    "database/package.json": "7ed8f69dfea49e1d33e62921ed75152f4302f1b335fc62b9bbef0d8a7d3a60d8",
+    "database/run-demo-local.mjs": "b7999ea1bb5628065df49c71694e3f795f7a79ffc19459a6e15eba8471d87964",
+    "database/run-demo-local.ps1": "5d0f26c3c18829b04fdb5e373dac328f08152d3fedf8fc64e3210944b9e19c97",
+    "database/schema.sql": "b6b570ca251f9ee70ca6e725b52ce4c8a76c6890e5ad156c570b2984ef9a9d0c",
+    "database/seed-demo.mjs": "73bea19da711d7f7c09155948095b0b983131b23913d9fe3a7bcd9ca9625548c",
+    "database/verify-demo.mjs": "6fc33c3481eab268eeea43a67cb1eb53b15664dc86e6a03ad07f2cf2b0df42a0",
+    "database/verify-schema.mjs": "8b21e63d1c4fb34d3f4c3575f42cff8d726726df3da69bfdd5f1349b7ea29816",
+    "docs/P1-01四入口原型实施计划.md": "a594794dedb8124e912dd67c2b8d9cca9865502668b9b022a6272d14358a1318",
+    "docs/P1-01执行与验收记录.md": "7c0b8347f738a40e4a420e47b3ace1c4ab6f928deba2a617ab678012f777c042",
+    "docs/P1-02执行与验收记录.md": "a56d6d9bb1bc761db52b0919a03e457302001f2cf689681cadad7e84134c2073",
+    "docs/P1-02衣物维护与搭配编辑实施计划.md": "66e146f63e01d33428de93abc397e5cf9a4eac7d29c7256550d22ff6e44325d0",
+    "docs/P1-03执行与验收记录.md": "312c102df2409fd382f04edb2e47b3bff962a7aa82c37ddb13d382c71610978d",
+    "docs/P1-03日记与统计原型实施计划.md": "d3fe06282c345e9b35f4deca95b362bb70655557cc1399760851920f18d89af7",
+    "docs/P1-04原型核对与视觉定稿实施计划.md": "e9bf6e916c5de9482b0ceb85b623abc994e367a0f53399526014e9e13781be88",
+    "docs/P1-04执行与验收记录.md": "636762b26a45977cdac0081712d8206780b982d0685d9199ff33c5e1901ed21f",
+    "docs/P2-01执行与核对记录.md": "abe0be702560edb7904c4f756319f46ea7cde7cf48d36f30af09da75439a3ee4",
+    "docs/P2-01设计确认与本机连接实施计划.md": "6332646bb4681915ba394f630f60ed3f62a3b4a064baee861c2ac88dcf8e6a58",
+    "docs/P2-02建表与结构验证实施计划.md": "709addb9309dece5ecd0a49bf2ff35a6cf96d632c5d11cd98f26303986841129",
+    "docs/P2-02执行与验收记录.md": "ad010e9d53b635236f0fd304c1540ae620725f2dd471b8dc685e9645a40f5d72",
+    "docs/P2-03执行与验收记录.md": "de142c56596d3457d52c43cb19312ddde073f30a6b7f78f250396c760183387c",
+    "docs/P2-03样例导入与数据库核对实施计划.md": "e2add9a20cffa3225d52b95f8671c1307a4255e325f6302001b7668e4748e05b",
+    "docs/P3-01工程创建与配置实施计划.md": "c15ed1226677f99d679ae7b096c7dea28239b18bc32cf60c5fcd8668ff9b08ed",
+    "docs/P3-01执行与验收记录.md": "d0dbe88ef770c0a3e07f55c77e87f12da359e90593ece9ddabe5d1112c5588de",
+    "docs/P3-02执行与验收记录.md": "6609d6dc5aa58ec5ab1ee258e73e2aca9f5ff79fbad77a6567a73c13f26d2027",
+    "docs/P3-02登录身份与资料实施计划.md": "c57e7f6557b065a816051e907dbd53cd8015004d26c77eeb66021e0fde3ba2ba",
+    "docs/P3-03分类与图片上传鉴权实施计划.md": "4e94828abf17f7d5086506cd038b2e076cc33ab9faf1dbc9b1e2dca3a2de0a65",
+    "docs/P3-03执行与验收记录.md": "ab8b597e891f93509acce8ae42981cc4565be80a806a749cdc72415aec40def7",
+    "docs/P4执行与验收记录.md": "dd9d74d54cd09d206e896943606be34144c7af9422d443c7ec83f17116ddd326",
+    "docs/evidence/P1-01/375-diary-november.png": "71edc0da762cf57b66a8e4bd88195dd9c7098958ce773ef3c5c6d59108c65f9b",
+    "docs/evidence/P1-01/375-diary-october.png": "7c8cb9969318a59ec60ee04f9021bdf17cb8e9b916010491645d3a1bee7ea5cd",
+    "docs/evidence/P1-01/375-diary-photo.png": "e65d9d4884b0c8501f926712469a251e30943ee0650ebab50c7e17763b95fbfd",
+    "docs/evidence/P1-01/375-diary.png": "333d7c4dfe9fe3ac966fc0d1143b2cdca425d2f40f4e7a948a463f9159d0470f",
+    "docs/evidence/P1-01/375-me-expanded.png": "9329462407454c8894159c6e35858eba25ba8eefa701b8ef370451fda45469cf",
+    "docs/evidence/P1-01/375-me.png": "ac0c236f08697cf765ab96ec9cd31b4843a9c90bf91c6c426711dae0e54692fa",
+    "docs/evidence/P1-01/375-outfit-six-items-bottom.png": "7e3ef7605d3fbcbdd8fc3be0d6a281667c5387a6d9756d4f7aebe0ca112d0d69",
+    "docs/evidence/P1-01/375-outfit-six-items.png": "4ebf67eae2f051f685b0763fcc849f23c6db9cecabf6faa5a77b87824ff938ed",
+    "docs/evidence/P1-01/375-outfits.png": "6892936cf8a8313b47758309df2f68edacc474835a9ca1c85a66113bbe5baeac",
+    "docs/evidence/P1-01/375-preview-CLO011.png": "4bf9c97687bcf4fa3558420a54de38fe96cb2cfae2e5748746d769839fdcc43e",
+    "docs/evidence/P1-01/375-preview-CLO015.png": "94ca90162455c8b6750829566b5aab97f56699a1190d61f2cb9014a3af386f8b",
+    "docs/evidence/P1-01/375-preview-CLO018.png": "5809a31f6e08705bac50cee6aae5c6514f8aa5234a0cfdf2c040a2234778c262",
+    "docs/evidence/P1-01/375-preview-CLO023.png": "7e819dd02f977ee0e648c6c12a8d3dea59556928bceb4da4f0085a999b84119a",
+    "docs/evidence/P1-01/375-preview-long-name.png": "0cb93d455b53571d8f3ba2db3fbf90eb5db64ad366febfbd6dc0cc4a4da607d8",
+    "docs/evidence/P1-01/375-wardrobe.png": "4ad5986d5a986c0a0d08603995ef21ffe9140916003a9f2851c362ed65360245",
+    "docs/evidence/P1-01/430-diary-november.png": "dfdf80ede683ba136710d8bea566ba3ade2d9b43a3a29a97c87dd3c82b2c5724",
+    "docs/evidence/P1-01/430-diary.png": "cc3ef638b019accbb4699b4658b886474f3cc8a222061640a8e08a79a318c97f",
+    "docs/evidence/P1-01/430-me-expanded.png": "63bcdf39da3dde426560c8de5bbba0b723cf79ff51f83d0577ca37091cc02e9e",
+    "docs/evidence/P1-01/430-me.png": "9f6b6303ad66eaa6ba618500cd7e3fec0a4717fb2cd3bd849f1170618b0475c5",
+    "docs/evidence/P1-01/430-outfits.png": "84305b08b31b74ed42224e0fe0b35bab15bc29996c3b15ee46327b0192c4ae72",
+    "docs/evidence/P1-01/430-preview-long-name.png": "28f25ccc3945de701e62fd5103c93d50660883b652d38698bb589d2bf2cfa120",
+    "docs/evidence/P1-01/430-wardrobe.png": "9d70945b6a88fe7e7685cd98d863abc1702963690557040270b018fb725acb64",
+    "docs/evidence/P1-01/acceptance-results.json": "5e189435e335087a73dc2ae1e84c0278127fc237016769fc77c1143b2b28193f",
+    "docs/evidence/P1-01/data-load-error.png": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+    "docs/evidence/P1-01/final-wardrobe.png": "4ad5986d5a986c0a0d08603995ef21ffe9140916003a9f2851c362ed65360245",
+    "docs/evidence/P1-01/image-load-error.png": "df489d6ebc0d6245bfd7e94d1e85c92a89e6793ce2a83eb771b7acec9a04a970",
+    "docs/evidence/P1-02/375-clothing-detail.png": "3065e3eb47912fdc1b4808a1a2f4c18e4dbd1f5f4a6b0c3993195d15258aba4d",
+    "docs/evidence/P1-02/375-clothing-editor.png": "4f2613c49967399ee375238af178bb4e2c118e69b12b00f2cea5ca394016a72e",
+    "docs/evidence/P1-02/375-diary.png": "71edc0da762cf57b66a8e4bd88195dd9c7098958ce773ef3c5c6d59108c65f9b",
+    "docs/evidence/P1-02/375-field-error.png": "91898d45bdaf8704d91000cc02b6b364881328f3b0205b90651a510e9dc19184",
+    "docs/evidence/P1-02/375-keyboard-height.png": "8de149f394f8de066bfc27dad165883096a76ede3e01875df33e95a4703c0d23",
+    "docs/evidence/P1-02/375-me.png": "4aed87601d71e59156de1dc89a5084219c3642f05a17942069f39f801cd09bee",
+    "docs/evidence/P1-02/375-outfit-detail-bottom.png": "75751ebf47470693b08368870607429c31b3ebc879264051c37339032b2df0b8",
+    "docs/evidence/P1-02/375-outfit-detail.png": "a260549115bd2870665d7199bdddb2de6217d7063e02b37e5a651bf99aa03576",
+    "docs/evidence/P1-02/375-outfit-editor-bottom.png": "2bfacf844330e18002f2c8113873f71d0ef786ca9c8415e23f38adbcb9287f92",
+    "docs/evidence/P1-02/375-outfit-editor.png": "3e14ebfb71bed0e80af7dbd562f80d815a08bc49e0e9a699b6afcf3db20c709d",
+    "docs/evidence/P1-02/375-outfits.png": "14e8b33c338980eda75240e943e16d9814730afa8da0958182608b3c6de2becb",
+    "docs/evidence/P1-02/375-picker-top.png": "d4375ad54a188d3e75f090df194dd0102d037886ad84e8b1112d0ee054833312",
+    "docs/evidence/P1-02/375-picker.png": "df4776bf27166afee83e63dca4fb14def98e526a60cbb2e1a2634c52725a4162",
+    "docs/evidence/P1-02/375-wardrobe.png": "146922085e6bb8de9ce4c613385d456da894e30da2b1dc0fb7e031f194cb7731",
+    "docs/evidence/P1-02/430-clothing-detail.png": "09da875440f007a1a9e90145206d22d9a6567f946d9ef2df8b5cff4233227d78",
+    "docs/evidence/P1-02/430-clothing-editor.png": "318f7eaa8d70ef566ef5cff58a5813340ab804f859b119ada60bf4dc28f163b8",
+    "docs/evidence/P1-02/430-diary.png": "dfdf80ede683ba136710d8bea566ba3ade2d9b43a3a29a97c87dd3c82b2c5724",
+    "docs/evidence/P1-02/430-field-error.png": "8ba7f4beafda90ff2d727e94a1dcf9ede6f6e0f5381e091d6796aa5bfe54438f",
+    "docs/evidence/P1-02/430-keyboard-height.png": "ff5024abff60e549cbd87eab811f837377eaa9283b4e32252526712b1bef3739",
+    "docs/evidence/P1-02/430-me.png": "db98c4e9c879b739d93a4536d765f36e62a52f8fd933ba67e8a3259e34fa2050",
+    "docs/evidence/P1-02/430-outfit-detail-bottom.png": "e5d835ac2532e8b51bd3b6bc36ed576c1cc305700e32f9ee6ac106a8b3a7c3d2",
+    "docs/evidence/P1-02/430-outfit-detail.png": "2a105a57b8f83efabe2a0953c7ebff4df3ed76b3db25d57d3f5dadaf13f8155c",
+    "docs/evidence/P1-02/430-outfit-editor-bottom.png": "509cbb8c14c813e7dd4b1d65ffcaa3dc61996808eaaa77fec120828117a307a5",
+    "docs/evidence/P1-02/430-outfit-editor.png": "f48db9359274aa6fc57524c56052b9982f652ad3495d5dcc16fb0f29ef031af0",
+    "docs/evidence/P1-02/430-outfits.png": "52189ad76cb722165262d9c4c76846d65dc550131ee2ffcc0699f2c24156848f",
+    "docs/evidence/P1-02/430-picker-top.png": "c5fbd1c9ef997f15e2f958697076d57bcc5a3584c106e4874ae57043fd0f74fb",
+    "docs/evidence/P1-02/430-picker.png": "184020e0de1db393770e3bd10ac19ad6f5bd67ba74d8362ea6d2236ae5688f6b",
+    "docs/evidence/P1-02/430-wardrobe.png": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+    "docs/evidence/P1-02/acceptance-results.json": "fe9d41979a9b0d8db0cb3ff62940203a983c9592d6bf4ba8b29db598e2f0aef9",
+    "docs/evidence/P1-03/375-clothing-detail.png": "3065e3eb47912fdc1b4808a1a2f4c18e4dbd1f5f4a6b0c3993195d15258aba4d",
+    "docs/evidence/P1-03/375-clothing-editor.png": "4f2613c49967399ee375238af178bb4e2c118e69b12b00f2cea5ca394016a72e",
+    "docs/evidence/P1-03/375-date-conflict.png": "b61407a77f6c0a95305ddebb941f02c6243e48cbc0dd0772f805946489df4b79",
+    "docs/evidence/P1-03/375-diary-detail-no-photo.png": "7085b2541f827808b196261635b6c0afc682ea770fb9d4d4d5f27de35228f8ae",
+    "docs/evidence/P1-03/375-diary-detail-photo.png": "b5dbe2d5b0a73dce3d5849df0e14093b56d6be4085834af6b19e11bfa83699be",
+    "docs/evidence/P1-03/375-diary-editor-bottom.png": "be5a741f0e5487cc4fd0d6b908d98f4349379e6a65351569fd2dbe78b4a9ec8c",
+    "docs/evidence/P1-03/375-diary-editor-top.png": "18d158b4e0a4387f1ff19f1ce7a9cb842db68b77a54e39be121401f14c98d14d",
+    "docs/evidence/P1-03/375-diary-editor.png": "a5c019ed4854e6a205a607551dffad8c0c8096a0fa55c005f55dcc4cc8290329",
+    "docs/evidence/P1-03/375-diary-keyboard.png": "dfc885a15ba5462240f23df77f276601c8a27d2eab0467d1620deb4c12faa35b",
+    "docs/evidence/P1-03/375-diary-picker.png": "ff761d3b0ca107a4e3752df615ff9eb91a199d7314536ea5a83d3c7c0d8e2973",
+    "docs/evidence/P1-03/375-diary.png": "56789caecce612f11b5cbb80728de3c1fd863b84e538f38b9a636c3de50a80ab",
+    "docs/evidence/P1-03/375-field-error.png": "91898d45bdaf8704d91000cc02b6b364881328f3b0205b90651a510e9dc19184",
+    "docs/evidence/P1-03/375-keyboard-height.png": "8de149f394f8de066bfc27dad165883096a76ede3e01875df33e95a4703c0d23",
+    "docs/evidence/P1-03/375-me.png": "e781d3e80c891608cf626afa4ff61a6971cd424d3fdeba767eee0d3a82c5904a",
+    "docs/evidence/P1-03/375-outfit-detail-bottom.png": "75751ebf47470693b08368870607429c31b3ebc879264051c37339032b2df0b8",
+    "docs/evidence/P1-03/375-outfit-detail.png": "8da75e017716e13b8d23b3a11748709edb6acda199aea19ec836930b924336bf",
+    "docs/evidence/P1-03/375-outfit-editor-bottom.png": "2bfacf844330e18002f2c8113873f71d0ef786ca9c8415e23f38adbcb9287f92",
+    "docs/evidence/P1-03/375-outfit-editor.png": "3e14ebfb71bed0e80af7dbd562f80d815a08bc49e0e9a699b6afcf3db20c709d",
+    "docs/evidence/P1-03/375-outfits.png": "14e8b33c338980eda75240e943e16d9814730afa8da0958182608b3c6de2becb",
+    "docs/evidence/P1-03/375-photo-enlarged.png": "2569221bf2882161f26227b5a3135a6e91cf179c47455fe117ac72387612a58d",
+    "docs/evidence/P1-03/375-picker-top.png": "d4375ad54a188d3e75f090df194dd0102d037886ad84e8b1112d0ee054833312",
+    "docs/evidence/P1-03/375-picker.png": "df4776bf27166afee83e63dca4fb14def98e526a60cbb2e1a2634c52725a4162",
+    "docs/evidence/P1-03/375-statistics-bottom.png": "266b3775aa397e8e13691362b833a58e6823b715ed99b41e59fb27b5d7e52c04",
+    "docs/evidence/P1-03/375-statistics.png": "bc75309b5b5f1555677918a8736cea237a2105573ab24c4efd83d40662dc2999",
+    "docs/evidence/P1-03/375-wardrobe.png": "146922085e6bb8de9ce4c613385d456da894e30da2b1dc0fb7e031f194cb7731",
+    "docs/evidence/P1-03/430-clothing-detail.png": "2c191f8f6540d519430c343ff6a0641613c823d280fe3bde95136e31e67fa50d",
+    "docs/evidence/P1-03/430-clothing-editor.png": "318f7eaa8d70ef566ef5cff58a5813340ab804f859b119ada60bf4dc28f163b8",
+    "docs/evidence/P1-03/430-diary-detail-photo.png": "4df925807c529995ca1c3b91634fa63cba8cd8fcf9b1fdc34153b689d339de71",
+    "docs/evidence/P1-03/430-diary-editor-bottom.png": "36804296f4683a82b241a7336e5fb04fca884184497ba03f30c0d51a2f5b53a0",
+    "docs/evidence/P1-03/430-diary-editor-top.png": "0453219d458379d3f3a52534529214a629b5333e083e8a605b6a8120289847fb",
+    "docs/evidence/P1-03/430-diary-editor.png": "404766997c548bc2932f1be35edfcbd2db267a3a6f0d4685554e98916f606f52",
+    "docs/evidence/P1-03/430-diary-keyboard.png": "96279be8f78ed4aa3f5d973075650d192c18d364f849a56fca42e088ba0f5107",
+    "docs/evidence/P1-03/430-diary-picker.png": "f176e749e99b81b9d3bc16757ab76cf9feddbbefef13fbae3e6f234ca1677578",
+    "docs/evidence/P1-03/430-diary.png": "2e94d19b535aad70f0b3fbdfff758d56582821c28e7c30ef99c6f21e50da9527",
+    "docs/evidence/P1-03/430-field-error.png": "8ba7f4beafda90ff2d727e94a1dcf9ede6f6e0f5381e091d6796aa5bfe54438f",
+    "docs/evidence/P1-03/430-keyboard-height.png": "ff5024abff60e549cbd87eab811f837377eaa9283b4e32252526712b1bef3739",
+    "docs/evidence/P1-03/430-me.png": "86138b135ce32fd23265a20884318689b4f683a3d289d589e6b9c724c9e55f5b",
+    "docs/evidence/P1-03/430-outfit-detail-bottom.png": "e5d835ac2532e8b51bd3b6bc36ed576c1cc305700e32f9ee6ac106a8b3a7c3d2",
+    "docs/evidence/P1-03/430-outfit-detail.png": "23668ebe6c1150b891756e5bfee15f64cd7ef1a093c5eef6bec48b26ec47203f",
+    "docs/evidence/P1-03/430-outfit-editor-bottom.png": "509cbb8c14c813e7dd4b1d65ffcaa3dc61996808eaaa77fec120828117a307a5",
+    "docs/evidence/P1-03/430-outfit-editor.png": "f48db9359274aa6fc57524c56052b9982f652ad3495d5dcc16fb0f29ef031af0",
+    "docs/evidence/P1-03/430-outfits.png": "52189ad76cb722165262d9c4c76846d65dc550131ee2ffcc0699f2c24156848f",
+    "docs/evidence/P1-03/430-photo-enlarged.png": "f0bc0093f6370399e873b316f08829d2254012d1be9001b9757910757583d14f",
+    "docs/evidence/P1-03/430-picker-top.png": "c5fbd1c9ef997f15e2f958697076d57bcc5a3584c106e4874ae57043fd0f74fb",
+    "docs/evidence/P1-03/430-picker.png": "184020e0de1db393770e3bd10ac19ad6f5bd67ba74d8362ea6d2236ae5688f6b",
+    "docs/evidence/P1-03/430-statistics-bottom.png": "920c5cd307c7085014546e3ff5acf02e25817a0e664b34d1b75c6b229bce4462",
+    "docs/evidence/P1-03/430-statistics.png": "bc6158cb22353d861338bcfca005c59109de35349e95e820e1b96d83e6c9e68f",
+    "docs/evidence/P1-03/430-wardrobe.png": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+    "docs/evidence/P1-03/acceptance-results.json": "641f9fa70bef4dc3c77906d7f3b2f0d0e55e05e2ed002c13caeddec61ae1d620",
+    "docs/evidence/P1-04/375-P01-list.png": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+    "docs/evidence/P1-04/375-P02-detail.png": "f907fd1594db9fffc4513f23a278cab7fed32f34ad1870231e6c7c29c91efe94",
+    "docs/evidence/P1-04/375-P03-edit-top.png": "2371454ddbd94735bed52aafd43280cd710e9441010b6e2e7c6bbb2d3651f58a",
+    "docs/evidence/P1-04/375-P03-new-top.png": "d7bba3cadbe9ce26c856f031e791a9306e863da9bed0325e0bcf7939280c25cd",
+    "docs/evidence/P1-04/375-P04-list.png": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+    "docs/evidence/P1-04/375-P05-detail.png": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+    "docs/evidence/P1-04/375-P06-edit-top.png": "0172031efe08695720baec8f0f1d450f4903544a1cfc926dce327fe6009f3364",
+    "docs/evidence/P1-04/375-P06-new-top.png": "a8867f599b68116c77d09198da44640698bb0e5934241dfba5663856b8c8f676",
+    "docs/evidence/P1-04/375-P07-calendar.png": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+    "docs/evidence/P1-04/375-P08-photo.png": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+    "docs/evidence/P1-04/375-P09-conflict.png": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+    "docs/evidence/P1-04/375-P09-edit-top.png": "32291b097911c5950c97a9c0147efaf3f942ef0abcd170d69e0066a7e9f46b14",
+    "docs/evidence/P1-04/375-P09-max-bottom.png": "a7ec9008f1f46c7692961a05213c50cee759f810f74a74dda09385df2e1c4e50",
+    "docs/evidence/P1-04/375-P09-max-top.png": "4437bebd7d4b44c05a91deed89e33000599a65a74bcfcc65cffce86f4dd1bc6c",
+    "docs/evidence/P1-04/375-P09-new-top.png": "4a175adf63ed4fc2814756ace15c943ae4db9c7c61b028847a065c6be6eea391",
+    "docs/evidence/P1-04/375-P10-bottom.png": "cf6555bbbe64c5553dc4e0ea5f0ba0bd463ff15dc004fec6376a5204086aadf2",
+    "docs/evidence/P1-04/375-P10-statistics.png": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+    "docs/evidence/P1-04/375-archive-summary-bottom.png": "6feed1193ae19928a75b3f7fb93ca617754ed0824b36d1345c0d877ef4cb8070",
+    "docs/evidence/P1-04/375-archive-summary.png": "9f27e89aeb05fb587f9d964336e98a5fd5ba66a379879e839d88b04bff5e7aa9",
+    "docs/evidence/P1-04/375-calendar-empty.png": "1ca9cd7b46a0a200c62b9b637fb4eff14df796dd19b54fb7be95181767874827",
+    "docs/evidence/P1-04/375-clothing-detail.png": "f81c7edacb5cb780b4ab060df8599b720db6f568bb692f4da097f521ca9980ea",
+    "docs/evidence/P1-04/375-clothing-editor.png": "07db0d7903947185053304d8d7c4bc8bf9aabb1b14410b3845498edf3e8f04b7",
+    "docs/evidence/P1-04/375-clothing-keyboard-height.png": "7249cd71ba53335d40eeddd496ccbf620196fd11ae8702954ee1311a542f5868",
+    "docs/evidence/P1-04/375-clothing-long-bottom.png": "8e26c22109d892798ef8af73ab5448e08008de76f703bc9fd9b2f3111f24bf4f",
+    "docs/evidence/P1-04/375-data-error.png": "a8a87dd2dd68f3bd724c7939b232313da1e73e05a46b703fd54977f858958a02",
+    "docs/evidence/P1-04/375-date-conflict.png": "4402b583db0ac48c03e0528b6d3eee954576e1501e89e790777873256cd282af",
+    "docs/evidence/P1-04/375-diary-detail-no-photo.png": "ce825783dd1e6cda446aa8a8167a9e6fd71f0a5bd204c1003b7e659ee9db7c6d",
+    "docs/evidence/P1-04/375-diary-detail-photo.png": "46f4cbc91ca55497d41ef8cbb8e3a5d9b023177cea9ee5350312f110c713053e",
+    "docs/evidence/P1-04/375-diary-editor-bottom.png": "0c931bfa8ab8fa6dd5db1b12d9dc28b8228f4c353a595caace358ef323765af5",
+    "docs/evidence/P1-04/375-diary-editor-top.png": "10a6cba1052dfe81860c7b3609195a123a57336ad45d66b62a2b43f41890a093",
+    "docs/evidence/P1-04/375-diary-editor.png": "0f7051df5fc367d1e06a5bb8be2a51eb92a38f9f9d9da727e2edd840ccd23772",
+    "docs/evidence/P1-04/375-diary-keyboard-height.png": "0578f7fcb66990ac0ec16514c3b303a3808040ec90c31f4fdb75aec6a47e8728",
+    "docs/evidence/P1-04/375-diary-keyboard.png": "5f82a3763a32209c9a15c862a11216d6a66e2e0b0083ce2ff9233fa6c2b1b481",
+    "docs/evidence/P1-04/375-diary-long-bottom.png": "0c931bfa8ab8fa6dd5db1b12d9dc28b8228f4c353a595caace358ef323765af5",
+    "docs/evidence/P1-04/375-diary-picker.png": "4c666964754180dc4f11fb2f076f81968c0c54f51cab6826d5b3005ace51e4d6",
+    "docs/evidence/P1-04/375-diary.png": "265bf2b77edf93065702a6fab90da275a49b107a209ef3f517973abb4898d805",
+    "docs/evidence/P1-04/375-field-error.png": "5beea6eac37f874148f05d10ea89c4e4ddf27b7582011391477c055d5a8a0b1d",
+    "docs/evidence/P1-04/375-filter-empty.png": "5eb241b2a65ea2f23f60708e15f63d3ce47a5b132cda134f6d557ec262b20353",
+    "docs/evidence/P1-04/375-flow-delete-statistics.png": "a0584a5ca6207fce51e2864de2704aaf817b306b175d83685dc2b3bd4d5417e1",
+    "docs/evidence/P1-04/375-flow-record-statistics.png": "487c92ff49b10c94636526d249601e772a8a4654b3098cf2827c205922aa708b",
+    "docs/evidence/P1-04/375-image-error.png": "7055162d855c8c71fd632fd5ad40641fa252a539a6ba3db84b08366e0b5acd3e",
+    "docs/evidence/P1-04/375-keyboard-height.png": "7b025b90ae472ae5a7e21987c9451332655afa88e5cb50a2c61d431038459834",
+    "docs/evidence/P1-04/375-long-picker-latin.png": "f69f1b6596042d95713ddc1991385b6ac4310b8c8baf8c6daac6d922c119db1b",
+    "docs/evidence/P1-04/375-long-picker-zh.png": "8c308170e8abe7a82211df27405eaf144483d3f002ffb83138f9a3485e8f561d",
+    "docs/evidence/P1-04/375-long-related-bottom.png": "8c535f2e885e31990063e0505af5e3ec9c8b00b2d37f162d3044dbc2a14fc505",
+    "docs/evidence/P1-04/375-long-related-latin.png": "4051138859ffb4ec28b0342eac56606d9be77e405c9efd08477ec5ee1946b7d2",
+    "docs/evidence/P1-04/375-long-related-zh.png": "1a9085e89b1a083f4e67e3bc0f4d60233aeae7079c6816390ffbdff5b1ff7049",
+    "docs/evidence/P1-04/375-me.png": "3da7baf6f9684a438edac13eaab90e34139e69feb42f45e5f4cc99d1f60f8acf",
+    "docs/evidence/P1-04/375-modal-login.png": "f456a45519eff9f7a2e5c95922fe0960c6854a833e67c6f46ddb1d882558dcd2",
+    "docs/evidence/P1-04/375-modal-photo.png": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+    "docs/evidence/P1-04/375-modal-profile.png": "85040f78aad9429974f20baa16367d14870f3a7d7bbb91d18c2fdb04bc78ed68",
+    "docs/evidence/P1-04/375-outfit-detail-bottom.png": "3c5545615cdb4bbc31cad6a115cf4d21ee5089bf6cb16717b7a44bfc09412aca",
+    "docs/evidence/P1-04/375-outfit-detail.png": "2d7d459843b0fc2b475698061302d3734363ad93bebf21a0f8755a5abc430d36",
+    "docs/evidence/P1-04/375-outfit-editor-bottom.png": "f960ee62dd6639e4e39eea9a2679b6ce6b7386388cd0d343ea1652b6abdef3b8",
+    "docs/evidence/P1-04/375-outfit-editor.png": "5d73eac00729d139d04cdbc5bac68f774551b7668b2804c6955aa69706ee19be",
+    "docs/evidence/P1-04/375-outfit-keyboard-height.png": "43a8ba867a733dcd15ce386832e79cb4d6b4a11fbe83f6d2f862067bf9bfa152",
+    "docs/evidence/P1-04/375-outfit-long-bottom.png": "f960ee62dd6639e4e39eea9a2679b6ce6b7386388cd0d343ea1652b6abdef3b8",
+    "docs/evidence/P1-04/375-outfits.png": "4de72985de2dde9248cc236c98684b25dec3734d63fe5be9cc36d1526bf58d5f",
+    "docs/evidence/P1-04/375-photo-enlarged.png": "4bd1052d01833519358c39b1878605b44bca7237bddd3260bdd4c0d27599d808",
+    "docs/evidence/P1-04/375-picker-top.png": "d7bf69a44d811d9963b0d2716ee6953d434a785ab19b3dae586ee0280c051eef",
+    "docs/evidence/P1-04/375-picker.png": "5e0b8261a92417b737f6d5b0871d794c2bd20356dec9c0fc5e4f47291f2827d7",
+    "docs/evidence/P1-04/375-statistics-bottom.png": "fde1d24df128ac65bbee3e838bb5e66de5691d629f924101350db1fffe4741d6",
+    "docs/evidence/P1-04/375-statistics-empty.png": "a1288aa2b1cd3417f7c3e4243756f29b4cb94caad33fd4d4bd1bad95da647e57",
+    "docs/evidence/P1-04/375-statistics.png": "226d9ea6a53adc8e9aff222de4840786fc5438e86efcdffc20d47675580ac01c",
+    "docs/evidence/P1-04/375-wardrobe.png": "bab60a4e5ac87ee0c1fc9eaf613876435e2ac0ffcf3cadc32a1bcfe8e3dbc54e",
+    "docs/evidence/P1-04/430-P01-list.png": "92b215d49c8c321ed4a4cbef7d6c47d4c85c9198e5ba261da94ef8e8676977e7",
+    "docs/evidence/P1-04/430-P02-detail.png": "ace5c0b8fae19e9f04393bb4e136696a9fac2375665db1c73c125a99516354a6",
+    "docs/evidence/P1-04/430-P03-edit-top.png": "fc2d70b9366563557fdb8b2ccb7aa55c796ec0e925dbe93f634253850a1f0567",
+    "docs/evidence/P1-04/430-P03-new-top.png": "e565f89aa952b71d0fab52f643cf7af1ced397b4e334715d44c93be9c7bf15fe",
+    "docs/evidence/P1-04/430-P04-list.png": "8f08850effa647756307f57b3259d26101c0f768fec5ad5a78f59756dfb0a20f",
+    "docs/evidence/P1-04/430-P05-detail.png": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+    "docs/evidence/P1-04/430-P06-edit-top.png": "aa9d332330fa70a06d9d600d58063304e35351ee06f08ac7317c71fec149d897",
+    "docs/evidence/P1-04/430-P06-new-top.png": "c150326b5550284041426c18768fa24615da2d28aa01695cace616c27bcbf32e",
+    "docs/evidence/P1-04/430-P07-calendar.png": "5d2c157ffec1993538a70b52cd71bb23b474587a6ad244b131a011e43701bc6b",
+    "docs/evidence/P1-04/430-P08-photo.png": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+    "docs/evidence/P1-04/430-P09-edit-top.png": "f0ee28de71bb4675835a2d845d98501b5b57f3068d018efe4d67996311198584",
+    "docs/evidence/P1-04/430-P09-new-top.png": "7953a88b0e04e145360707c62da8fd0a0cbff78c83e53c823b0f2b4031ec611e",
+    "docs/evidence/P1-04/430-P10-bottom.png": "05c38dccede963cf69557c83a638d252790e548e3c2e4711a6e7f22250ce5479",
+    "docs/evidence/P1-04/430-P10-statistics.png": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+    "docs/evidence/P1-04/430-clothing-detail.png": "5a339534fb509064c62275c619471bfaf006f6eeb6e2c71b8b333f6085a4887d",
+    "docs/evidence/P1-04/430-clothing-editor.png": "9b6403e4c8b9ede0f90cdb3000286ddea6f09b132f33e43506faf79332250275",
+    "docs/evidence/P1-04/430-clothing-keyboard-height.png": "0c57613e896f95f983b5ab756438cc697a585d1df87a4878f398649ed14717ea",
+    "docs/evidence/P1-04/430-clothing-long-bottom.png": "97cb7093f8fc0e2008f0d49db6d28d78fa57c05e5a4b72eb4aecaab0aad4e8f6",
+    "docs/evidence/P1-04/430-diary-detail-photo.png": "c35cbe1975875820f9a5c131cb42d4755ebd7c5951a6f952f9dd2a075227198f",
+    "docs/evidence/P1-04/430-diary-editor-bottom.png": "a92c5a05ce15e50fcfa1efba1be024f970c2cab307f182ac6e06862708d9285b",
+    "docs/evidence/P1-04/430-diary-editor-top.png": "66ab0036fc34fe46e86d47ff4ac1885c01560a3abe8ae55039293af741707ccf",
+    "docs/evidence/P1-04/430-diary-editor.png": "05f4265f172e0bf7b69de3f88606a3fb54957292b3af3f0c0900e416c6e36054",
+    "docs/evidence/P1-04/430-diary-keyboard-height.png": "bb552970bae5ce5431f6faa473bde9952f3c7f3a4020f98585c0dbe4435d4fb2",
+    "docs/evidence/P1-04/430-diary-keyboard.png": "119435562c3d1a8a283856af74c1a95cd7b8b1f2e5aebd08aeaa0d420e12623c",
+    "docs/evidence/P1-04/430-diary-long-bottom.png": "24291ea3a830938f1fb9e51d3c9f133e6e24fd67ba6aa90b74555a3ee097026f",
+    "docs/evidence/P1-04/430-diary-picker.png": "71e0f5edb8b32b065c2421f2a8f43b2c7a63c49ea0d3ba1c09a83ac87914835a",
+    "docs/evidence/P1-04/430-diary.png": "a9df4225eca862798d993ed3249cbdba832c9867551c2b8bf7167eafc35672aa",
+    "docs/evidence/P1-04/430-field-error.png": "678bc9eeba8317a72788c098fd8b9336adc08b3e22510df2dcf1c9108d67055b",
+    "docs/evidence/P1-04/430-flow-delete-statistics.png": "f72af2b8d503f74c7bace73c95ffd8d371e73d72c7231aea9bc4ccb5d33518b5",
+    "docs/evidence/P1-04/430-flow-record-statistics.png": "b628c85dc9abadccb380a0ac0ceb64378e04634913d75ac5849a57cd78bf94fd",
+    "docs/evidence/P1-04/430-keyboard-height.png": "4a227b8dfa4d721508ef92c904ca1f3979fc85fe6b34d21693f62bad3d34fe43",
+    "docs/evidence/P1-04/430-long-picker-latin.png": "bc9ab9677648a2cc6cfcc3f8467fa3518945f4568b89c300dd63c816ea7e04ff",
+    "docs/evidence/P1-04/430-long-picker-zh.png": "3f53f28f44af1aaf0f73c729d2470304287b6d4c54121cac19145bb5fc97b0ee",
+    "docs/evidence/P1-04/430-long-related-bottom.png": "fb66e7559fad18cb2c71acd138b4c3c9b740c6506c1b97ce8097357964e2a1e6",
+    "docs/evidence/P1-04/430-long-related-latin.png": "5dda5e5205c6d56eeaed786a5c8f1390969ba252ae1f7dfcb38f641fcf55e524",
+    "docs/evidence/P1-04/430-long-related-zh.png": "8a4c770fb497d8f717a3773f143010354cfa0845050bedd6e2b5e440cbc9728f",
+    "docs/evidence/P1-04/430-me.png": "a72bb7f33ac954fa4d0a6b66a9e11b1bd8234a1e4146af39b16ba2f810b968b4",
+    "docs/evidence/P1-04/430-modal-login.png": "4ccc404aa2c7c27775ced270c3d7b9e6aa6c79a3cba38d91f9d42e4c9c9a2145",
+    "docs/evidence/P1-04/430-modal-photo.png": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+    "docs/evidence/P1-04/430-modal-profile.png": "c67af2eb80e1c843c7f23491fdeecf2e59daa07ac07d76ae256be564ba5e052c",
+    "docs/evidence/P1-04/430-outfit-detail-bottom.png": "80685e04523256022433837492d91a7c26ec225b364aebf5ad8246d011738932",
+    "docs/evidence/P1-04/430-outfit-detail.png": "6d944c7dfb02c895f706375c7857f46ff032e5ee2bd47945667851f607502fa6",
+    "docs/evidence/P1-04/430-outfit-editor-bottom.png": "6bd296197e91d5c11f9dc8e8770b0002ec5584f023d58c6f2d81ede0b0fa60c9",
+    "docs/evidence/P1-04/430-outfit-editor.png": "d8745741567f6493b58d160737b57f042b4cc78256ad2fe8d065208175ba90bd",
+    "docs/evidence/P1-04/430-outfit-keyboard-height.png": "d2c73b38dcb7866ed0ca9a884a339be1c7ce8ce2ad910b8473bd9641020b1173",
+    "docs/evidence/P1-04/430-outfit-long-bottom.png": "47a86be892fe5fd6e31cf9e0a1e96fe6869094b5e115dd7dac9dbcda757f7954",
+    "docs/evidence/P1-04/430-outfits.png": "9e5ea1adcd97cc2f9a828b42a2072aab326f98a6dbde67144c16317b2a481af7",
+    "docs/evidence/P1-04/430-photo-enlarged.png": "28157dac5bc5eb7641dbb2848600ff933eae4eb73416940645cdee9f2b439efc",
+    "docs/evidence/P1-04/430-picker-top.png": "33e4318fc7adb1ddaa12b2cb43f2b05d251354e1f9aa2d8542049c9873932a79",
+    "docs/evidence/P1-04/430-picker.png": "203ac6c1cc08944f478e78df10eb533c89af2cff940e19adab9137eb2fd5ab5a",
+    "docs/evidence/P1-04/430-statistics-bottom.png": "95f6123b149f6f6a0d548073389120768edaf86e00f8d74bb26a92cff6122c64",
+    "docs/evidence/P1-04/430-statistics.png": "7b03c3ea1fa29a7fbaebefa3195f215c7a02706d8d55c69bcc36f664310772d4",
+    "docs/evidence/P1-04/430-wardrobe.png": "154984c5660bc20beadba62abb79d215d299e12b22bd5a885fda8c95befa3bdb",
+    "docs/evidence/P1-04/acceptance-results.json": "92b8ceb9b48c5315e7ab947c20e298071b64122cc6b0ac81a2a6eaa5d4a92eef",
+    "docs/evidence/P1-04/automated-results.json": "ac4679e29992a3c6659fe0ae4be2b3b4fb068bf2a992b9d124b40bb2d87cd8d2",
+    "docs/evidence/P1-04/finalizer-validation.json": "125f2bc95a51a93a78818179aa72c5e670a8c35200d89ce970465ecf68649128",
+    "docs/evidence/P1-04/layout-measurements.json": "756dbf900ae590abc120eb1b0b7305fe56013f294773bcfb35ee5dfb3646c3a6",
+    "docs/evidence/P1-04/manual-review.json": "72aa6667fa11ca0f2ede8d2b1651330ed3f069b6bf0f2b7807d8726f6fab9725",
+    "docs/evidence/P1-04/visual-comparison.json": "0191096f195a0f866d6f497840e8f20a70ca401cccee63b7ec5e874c62663ce3",
+    "docs/evidence/P2-01/acceptance-results.json": "42e16f9b318a6c35175173c7861323be15653320081ffeb0c103392335fba110",
+    "docs/evidence/P2-01/baseline-hashes.json": "32c56fa43140f6b908b49d0cda79003dc0c5296b84073a5668b745c175ebe094",
+    "docs/evidence/P2-01/design-checks.json": "69da67aa11ad713610fc8bcccb7318dff5004a9098c345038f482a669c2be468",
+    "docs/evidence/P2-01/environment-check.json": "e99ce2ef830ebf3b2c8ec004b43bd510e48c28011b04feadb71199110a2e1efe",
+    "docs/evidence/P2-02/20261106-final/constraints.json": "1bad4f4e841f2d4409d7a5b617fae164f98c64dc8f2f7c310908dfc2716b9dc6",
+    "docs/evidence/P2-02/20261106-final/preflight.json": "c1d4d9bcae3a8dff4ae95a1870486e7dd5389c64db2363795845b5bf69c2c0bb",
+    "docs/evidence/P2-02/20261106-final/structure-before.json": "742e0332bceabfc444b07299268842bc7a52468110e0dbd14d7056f6fc3156c6",
+    "docs/evidence/P2-02/20261106-final/structure.json": "e4320c1d38bd404b4b4b658953febef3ba14c763b140b714bfc74c1c4fe7c534",
+    "docs/evidence/P2-02/20261106-r1/preflight.json": "d7826c1516276a2dae57bfed9a3098bd533e12fe2ae4fbf2fe202f8e45b9fafb",
+    "docs/evidence/P2-02/20261106-r2/preflight.json": "8259445a78e51fd22d8d2a6b0413dc3081092ef9ad6212a0d3e2807bfa9a80d5",
+    "docs/evidence/P2-02/20261106-r2/structure.json": "d371750d86c7f8b23db7896df4b3b72129077d2f2696d561b14944a81ceccc7d",
+    "docs/evidence/P2-02/20261106-r3/preflight.json": "d1a89060420c5087a10c6b48375540ce08e227a35719da87f2d1f770bb21a091",
+    "docs/evidence/P2-02/20261106-r4/constraints.json": "76c7d0385708e2b4be6504a1dde5c270099f4264eb6fe9f785df00148a67be9b",
+    "docs/evidence/P2-02/20261106-r4/preflight.json": "18b8511ef5b90e4b89eaea65b92394702da816baacb1fb3d50bb4297023d90a5",
+    "docs/evidence/P2-02/20261106-r4/structure-before.json": "131a83ecb6deba2ab288d4948e92efa722596c894d80f1e4af93b5e45b2dcc81",
+    "docs/evidence/P2-02/20261106-r4/structure.json": "6c14065a7473038ede22cfb7d9783489b662f53e1f22482f268aea42bed7a126",
+    "docs/evidence/P2-02/20261106-r5/constraints.json": "34eca06ca56274fede086e73dc8173d941f2e8b7cac34f07bf06c490c821df88",
+    "docs/evidence/P2-02/20261106-r5/preflight.json": "e534c7099a156cfc5962b3f82ded91d2ae0db71502c9e076d7572398f9963465",
+    "docs/evidence/P2-02/20261106-r5/structure-before.json": "fe4c0766f9b0c269c2dfce4a23f337e7cbf8260d9287c1b77146fdb2e288b4d3",
+    "docs/evidence/P2-02/20261106-r5/structure.json": "e4c59c6ad9aea7f24d47ed0a71f8a47802ef8993d0b08feffd1715d604e13c44",
+    "docs/evidence/P2-02/acceptance-results.json": "cc428ae6c7b81632d325c01718d4a972ddaa9e9c51f527b1c1a309d3bea5df2d",
+    "docs/evidence/P2-02/baseline-hashes.json": "aef5e02e77764aff849a67157e2ea264c01c1d638a7ed8f3e6bf2dd2c4abbf66",
+    "docs/evidence/P2-02/ddl-execution.json": "31473a1cc5f37284025f811467f8a8cb4da38bf8d44df0c8933c1b73058a5181",
+    "docs/evidence/P2-02/protection.json": "a5cf20a570b19fab6d65bcdc9a75f43b4fa98422174624467f6d8f432fcd5fca",
+    "docs/evidence/P2-02/schema-review.json": "170a65423628db2abd7108332d1d4024a7a641ffa7dc71f7cbb0eb85bd364d8e",
+    "docs/evidence/P2-02/season-metadata-review.json": "9d375ac962d8caddeced94f6dc606e8c839adbc04db4dfa3da62d57b0a81d675",
+    "docs/evidence/P2-03/2026-11-06T16-38-17-010Z-check-63f3f033/import-result.json": "df57ee3ecd80ef78a03ec46d1604d9b50e20973b9ee683a711b4de5214dfd7dd",
+    "docs/evidence/P2-03/2026-11-06T16-40-41-083Z-local-runner-00623701/runner-result.json": "597ee621b97f4e3c93283f9bc1517f9dd184bb473c2dc45f64add6e449587508",
+    "docs/evidence/P2-03/2026-11-06T16-40-41-089Z-check-13827114/import-result.json": "2b2d66c2fce5493ece042282682b9ae345e731843ea3f810ed4c91577b86243e",
+    "docs/evidence/P2-03/2026-11-06T16-40-41-164Z-rollback-check-2e00b8b2/import-result.json": "c56aa8a6c62709add6d2fce1d18da1d653d47d86f52ac24f8b3432f524ff6b21",
+    "docs/evidence/P2-03/2026-11-06T16-41-26-741Z-local-runner-90b6f3e9/runner-result.json": "a0856392a6f6dd7a5bd834cb081895e7f5989addb51a8587896d5645d7654dd9",
+    "docs/evidence/P2-03/2026-11-06T16-41-26-746Z-check-e2cf7e5d/import-result.json": "464319ad81096bb7702e39a20cb6dac38beaa1d9c0be7ad25126d8e53fd19a39",
+    "docs/evidence/P2-03/2026-11-06T16-41-26-829Z-rollback-check-24601d54/import-result.json": "f698e16ad2ba515dd58aef98bfb9e9426f525e87d6ce3646b2942538d1508938",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-164Z-local-runner-d4210ecd/runner-result.json": "68a30394dcf3c72edb67d862cbc59a6bf29968c5e3cc9b14dbcb537eb7b96d26",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-169Z-check-313e9994/import-result.json": "cf033e3b5694b2f2c737c9a4aed5d870ba0cae3727eb29478edbaeb5d7e25aef",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-244Z-rollback-check-ef6427cb/import-result.json": "94d3e879635637d56637625cd59d5c73f7b1be141f4af8f5876a40c7c440b8cf",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-244Z-rollback-check-ef6427cb/prepared-files.json": "90308394da030ca3d93b984c3be6a6215ec7d56fb631475bb413ff719637baf9",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-244Z-rollback-check-ef6427cb/prepared-id-map.json": "48c20842e49e22152bad4a9f316dd9d263c7f331cb16fa5e35d73cfafeb00b38",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-726Z-apply-5b84797b/files-manifest.json": "84cdc3d5b1195445d60ac8a05914ec02ef328c677434a164e8225f512473bf51",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-726Z-apply-5b84797b/id-map.json": "3af1ad76bf1f9a57637ae3baf063c926eb7047c12822350ba532393a4311cfff",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-726Z-apply-5b84797b/import-result.json": "47cfd14c765ff47c4858cc76c874aeabd6b4515231482c1c6ac149b17f69ee19",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-726Z-apply-5b84797b/prepared-files.json": "3c8bbcfe2c2214d95eabb4aee58d1ced687fa5e2b3ac7dde98708e2796620ac3",
+    "docs/evidence/P2-03/2026-11-06T16-42-33-726Z-apply-5b84797b/prepared-id-map.json": "e204fa2fff4a78efa3a98941afebed34e4a3720990ba8a3b96aa576ab18ad6be",
+    "docs/evidence/P2-03/2026-11-06T16-42-34-157Z-verify-cb2d84cd/verification.json": "d6d39fdf6efbc6ee0eb8eb82f9b538e2918f1975874a057d09e6c8988889f335",
+    "docs/evidence/P2-03/2026-11-06T16-45-10-969Z-local-runner-505d737d/runner-result.json": "5fd08854b8a48a3e5cec7975098c931df6ca6e71476c78b4e700daadff1b8095",
+    "docs/evidence/P2-03/2026-11-06T16-45-10-974Z-verify-5c27304f/verification.json": "a353171223fa238a39d2c0d05505b85f43bd62f74d26a2c93e40cfd3204e8310",
+    "docs/evidence/P2-03/2026-11-06T16-45-11-235Z-check-1e202fe2/import-result.json": "5245e3a7b0603dc9add7e0e2868431356c03c7a590868fb5b32115ec1dd50bf6",
+    "docs/evidence/P2-03/2026-11-06T16-45-11-286Z-apply-d188ca26/import-result.json": "afa5cab96f8988eb1dc1756d096013594c42eaad668b9ca49f4f151e23342d8b",
+    "docs/evidence/P2-03/acceptance-results.json": "1a0a7c0419ae3ef2b39088e2c5fc2d3f1731eb677e46ed3c9d8081a29dd6160a",
+    "docs/evidence/P2-03/baseline-hashes.json": "5f2fc26fb801c117b3be7781e3c9f06357eb466127ea5771003c586a9ae03427",
+    "docs/evidence/P2-03/delivery-hashes.json": "8280bab5732ec9215d93b2669ed47d5e1c514ea007d8d66e8a6fc590ffcccaa9",
+    "docs/evidence/P2-03/evidence-hashes.json": "da530e297163cba864afed363e1b75a60583afafa23edd3fd2aabebf02c71d8d",
+    "docs/evidence/P2-03/offline-tests.txt": "6fcff95f14727ab2eef2e4ffe37c2c181474ed41659e4796b2795de2d17e720f",
+    "docs/evidence/P2-03/protected-files.json": "54b0dc9f4752b43ac8e418abcfe7dbef7878386be800e9d8a3ea7cf00041d139",
+    "docs/evidence/P2-03/rollback-files.json": "0303eb4e48c9bf115ec3f6f9fe87920f2645e8e0ba6ba5634717eb63300d28a3",
+    "docs/evidence/P2-03/source-verification.json": "e2118bd3eb1d32be43ed07e787eb27c2f8f4bebbfbe1c69929f3f30dcbd7aa53",
+    "docs/evidence/P3-01/acceptance-results.json": "1c07912fd88aac0456c724e5021a8f94e1a4a693b673253bfecbdf3877451bec",
+    "docs/evidence/P3-01/baseline-hashes.json": "53c27d2792f288ba2fad355b8fbb1444707c255a93c940cd23f5d57896490d85",
+    "docs/evidence/P3-01/database-baseline.json": "6c79273061be0c43fea900636baa935e52294e47571c548e745ae4df32be399a",
+    "docs/evidence/P3-01/delivery-hashes.json": "f69a76037bb72e8fb531cf445e0a38421c6805987470b7bba741e4128e50fd17",
+    "docs/evidence/P3-01/foundation-final/automated-results.json": "aff5176659e85cbb19d1873d10dc0cbc526bcf20ff42d77931eaf60230ff16b5",
+    "docs/evidence/P3-01/foundation-initial/automated-results.json": "181d86e665ac00785a6619872243b9bbb05044f695b48f60c0aae4c3d39c9986",
+    "docs/evidence/P3-01/foundation-reviewed/automated-results.json": "96c7914c4dfba99821cef1a20f34488462619c311cb0751a6d77815672289b95",
+    "docs/evidence/P3-01/foundation-tests.txt": "c8846e214557adf76d4dc53285ff6ac86a4f187a8e17be9ff4e027fa1d865add",
+    "docs/evidence/P3-01/lifecycle-initial.json": "f45776551963303cb55be04a6ea6e12a30a4a820e0d0d51612f3fc7c8e738f81",
+    "docs/evidence/P3-01/manual-a-review.json": "7b0a93de431275fd171c3b6e8375f6aa25bddb84b61fc5975bbc051b93880604",
+    "docs/evidence/P3-01/manual-acceptance-guide.md": "5373a9c1878ef19a446e200aed3790055af386dfafe5b53ed9ab352d31d7108a",
+    "docs/evidence/P3-01/manual-b-backend-off.json": "6605413ae1b3a25e2c554f266709f8a082411980bcb097f7ad79f573711d6957",
+    "docs/evidence/P3-01/manual-b-review.json": "1cdce89dc5adbfda03caa21d85183b94f5eea4ea78b7e3eb09b216f8d59ac064",
+    "docs/evidence/P3-01/manual-c-review.json": "6188528cd84ca139c71c9856bc179c55d10d928fc49b23f665712a3ace20454a",
+    "docs/evidence/P3-01/manual/375-diary.png": "788daebc800aa6bfc35c8bdb19c56c8f8dff7fb7312658c7a4438a965d298b38",
+    "docs/evidence/P3-01/manual/375-health-stopped.png": "561f7a7b1f204629cdd5ba2ed6a3bf999c34f91ab3a9849d738049c7bbf114a9",
+    "docs/evidence/P3-01/manual/375-health-success.png": "a5dd712b802f2f541349ae3bb7e851589ce049ae4fcdb80d5169d6ea9da6e858",
+    "docs/evidence/P3-01/manual/375-me.png": "c69bd44b2b5bb2aa22c0532490c986be03743e386b6370f0f2f3ad230476dafc",
+    "docs/evidence/P3-01/manual/375-outfits.png": "e0ea701eae14b8417cb390639695c9500d403e8bc07e9a522845dd75d2898022",
+    "docs/evidence/P3-01/manual/375-wardrobe.png": "ee93c68383ecc55d391c07e4e7089b69d3f5315c5439265dfbd5805f78542174",
+    "docs/evidence/P3-01/manual/compile-info.png": "f93d8fcb2593fc9d9e72f1a23006b96925e429ed4a77b0dd620697785c65a9f4",
+    "docs/evidence/P3-01/manual/health-recovered.png": "35a1c59d3842657e3596089bd84eb5876077ed04fa335dc5070e715abd89b14a",
+    "docs/evidence/P3-01/tool-progress.json": "1e4bd71960d6027cb011f86f593760f846206c2eea2724fbe24dbf5531e7ea69",
+    "docs/evidence/P3-01/wardrobe-initial.png": "9cd3e45c054df1921c8022532120cb978778644d76d38ad7a8542626ebec5668",
+    "docs/evidence/P3-02/acceptance-results.json": "9c36e9455c7eecee6e7179a2eb1d79155c9caf0e040b5cdfb0535b6cef203b94",
+    "docs/evidence/P3-02/baseline.json": "96548f0b8dac0dd86e52cbcc072d6d4e37baa6339a115bb9a75a62941d46893f",
+    "docs/evidence/P3-02/manual-acceptance-guide.md": "0920dc6f380d2effa48878e06b9b1fe5833a6a2d886ea97add5289139f8b8b50",
+    "docs/evidence/P3-02/protection-latest.json": "0f570fd07f1f8db3be88dccc3a6a31a24fc87d6a16dffe27b8261eb3318d3bdd",
+    "docs/evidence/P3-02/run-20261107-01/accounts.json": "ac3d5825d2762a64ec4cd500f933f514df8f7eba05290bf25182ecb85c70944e",
+    "docs/evidence/P3-02/run-20261107-01/automated-results.json": "ee3a389d26091f0947ce0e5e1d341f54e6f3b2e4c4cc0c1ac9b310fbe55c7245",
+    "docs/evidence/P3-02/run-20261107-02/accounts.json": "5df11f495c169cc477bfa92d85db29298e2dd5f441018298aa158ad9384d88ca",
+    "docs/evidence/P3-02/run-20261107-02/automated-results.json": "8cfe94788905385ac27c7cfabaa61e14e315e4cef5127ca0cbdd6e0d88ae4268",
+    "docs/evidence/P3-02/run-20261107-02/evidence-exception.json": "4622641414f6bc393b8bb0ac9063983e5fa3a2eda359eabec3795cc31f33187f",
+    "docs/evidence/P3-02/run-20261107-02/manual-confirmation.json": "74c0893fe81dd25a7510919cc5c59617062f9a5b3da58fcddabb588eb166501d",
+    "docs/evidence/P3-02/run-20261107-02/manual-final-review.json": "e62fff592ad723c1a70af32d7caae80a211797f5419fe95c1fcf289c2cf76aad",
+    "docs/evidence/P3-02/run-20261107-02/manual-review.json": "a2b99a7bacb29c997548707c489ed923dc865a14664376a33e3126fa5e33d325",
+    "docs/evidence/P3-02/run-20261107-02/manual/375-me.png": "50011b75b7b754e63e4fd406e882fc29d89432a90704c31a525a9339f514f32c",
+    "docs/evidence/P3-02/run-20261107-02/manual/375-profile·png.png": "7ef108d8b92330b5de8d2a94ec0b73cb3fb8289cdd6b6c6e8591c138bb921a00",
+    "docs/evidence/P3-02/run-20261107-02/manual/430-auth.png": "6df6c8faf560a118ddf4926b1478097376dda8f7ffa9a984648683bd1ef1bec3",
+    "docs/evidence/P3-02/run-20261107-02/manual/430-unsaved.png": "65a835be9a1da2415e1970ca4ea4e45e3b8b96965e76d62f3a3d9fa9906bdcf0",
+    "docs/evidence/P3-02/run-20261107-03/accounts.json": "fa297607c171885103b03256bc91be19ccf9ef51bc696ac6a49dcd7d3776b811",
+    "docs/evidence/P3-02/run-20261107-03/automated-results.json": "21df546843d567f6dcd7529e4a1e4a1bbbc3970e5f3a9525770c8254c59ec8b2",
+    "docs/evidence/P3-02/secret-review.json": "4ee355aaf91cb9c396230972f63846ea17918da6dd13049324fcf8b86f98f50f",
+    "docs/evidence/P3-02/unit-regression-results.txt": "1c6aba0aefa8d12908ee325e27dd581bd3127e6430316ab1b241f88709a066a6",
+    "docs/evidence/P3-03/acceptance-results.json": "a9572222b003b85774e84d60d5b3e1492a9fb2c38f50a57b3abcc4ed76c61449",
+    "docs/evidence/P3-03/baseline.json": "90c4e1d1f5c4c38ca2d0dcb38e4453acfb2ed2f668c1c40cf403e03b8ea5e475",
+    "docs/evidence/P3-03/dependency-check.json": "f8811ffd00d7e294d32933977f603250701ca73ed8bfd8c524f5a1b83db5c64a",
+    "docs/evidence/P3-03/manual-acceptance-guide.md": "75848982fbb5ff030e1f294676a69fe304a21a407f5035196bb9e193a81585d1",
+    "docs/evidence/P3-03/protection-latest.json": "edbccfc0b8b0528b919f8b4589823159b56870d4670b0be0af11ba23132a8779",
+    "docs/evidence/P3-03/run-20261108-01/accounts.json": "3219dd3fb996119f9f5aa703897e4e56ee020eef0f482648de72598d73bf80c9",
+    "docs/evidence/P3-03/run-20261108-01/audit-1794120104016.json": "edbccfc0b8b0528b919f8b4589823159b56870d4670b0be0af11ba23132a8779",
+    "docs/evidence/P3-03/run-20261108-01/automated-results.json": "97e2242192b6fc04e161247bc390df6b59ebaf07033a93c6718a48e8676c7af4",
+    "docs/evidence/P3-03/run-20261108-01/files-manifest.json": "a05ea8836f5b9d9d17d3c12e32e074e2a5b3f6b6ab63b4d8df68fcadc06ddc14",
+    "docs/evidence/P3-03/run-20261108-01/fixtures/ui-avatar.png": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+    "docs/evidence/P3-03/run-20261108-01/manual-confirmation.json": "9eb27e701e1e7498557bdf0fdaf9eb623c31ceb82e288c7d9d625a256d4a48ee",
+    "docs/evidence/P3-03/run-20261108-01/manual-review.json": "68b9c25a1c2a198a17d199c30a62fbd30637c36d6eb9d2b7b21e633085cc4c71",
+    "docs/evidence/P3-03/run-20261108-01/manual/375-me-avatar-reloaded.png": "7decde6fd47cb3216109045507bd79a22a053b41662491d1dab6a4a7680284fb",
+    "docs/evidence/P3-03/run-20261108-01/manual/375-profile-uploaded.png": "b61bf988de20516fcfae2c60387395015f98bc10684952264e729d83fce86a0a",
+    "docs/evidence/P3-03/run-20261108-01/manual/430-profile-unsaved-dialog.png": "c7fca9a10014994ff8ca0b4f75d46f1b6d5a562b9518e84974f8d615237b5303",
+    "docs/evidence/P3-03/run-20261108-01/ui-fixtures.json": "95c0f9a1d212a3d46b6e2b36eb8ca2aa43e95cc59718f22c933b76d561e230e1",
+    "docs/evidence/P3-03/secret-review.json": "cd8dc3c40801b2c8e1bc18d8ec5495cf423ec5b263b60a97202d8df26db5fb28",
+    "docs/evidence/P3-03/unit-regression-results.txt": "2b3a6804a787d774684bae5c05abd7f5648c7bea4e50f56560b03ec9c3f752b0",
+    "docs/evidence/P4/acceptance-results.json": "a760081d755476ae69a46befa33d5751571a264b62a764ac33b4d23571a8143f",
+    "docs/evidence/P4/audit-latest.json": "57b91e11d66294d0061edf7ec3281c3f4802b38d6e0f46c1680a7934af2954d8",
+    "docs/evidence/P4/baseline.json": "45628e1df63cbcc648b2f6663b2c351a0d3568ece0c96c5e1253186087488b0d",
+    "docs/evidence/P4/boundary-results.json": "b4c5947c71338547ef0e3bcf1e6ead8b7e9f09ca695c5be38ec36b3ea6ee4da1",
+    "docs/evidence/P4/http-error-code-review.json": "5bb5570bdb52b81c8293913efc3d51ce3c9ff63848ab4b8fad5e4727e145f340",
+    "docs/evidence/P4/implementation-hashes.json": "61d305daf4c3f859ebc0f879605591b7db98bea2f8fd3980a0889ec71b26d47a",
+    "docs/evidence/P4/manual-prerequisite-check.json": "b4287385b4b49380acc67ba11fe75d550361ba53e3cbb766a14ddfbdd6913a9c",
+    "docs/evidence/P4/native-static-checks.json": "f02f0d6e8cf73505c9ee661245e730e1c0702930a5b74952c2c1c0919c8cc1f5",
+    "docs/evidence/P4/readonly-service-results.json": "25405a7857fc3db2c96d96f6e2deeebff9bf6d593117cbe412bd5343c30025d5",
+    "docs/evidence/P4/run-20261115-01/accounts.json": "64a294e7df120c3ddfdee9ef6ff91a631ca1b38316561a36da91fa755b8370cb",
+    "docs/evidence/P4/run-20261115-01/clothes-manifest.json": "a9372c2e0b82ca49025e561c2405092e63353950691635144c42e1b3e06bb33a",
+    "docs/evidence/P4/run-20261115-01/files-manifest.json": "4236b549f03a8074b885ab7f9cec9b6e10b2e4a9e04fdb6516f1c397bd8fe0a9",
+    "docs/evidence/P4/run-20261115-01/fixture-fault-rollback.json": "be0a4dec7bde777f8041b777e24e904f401b30be998a72e0e19a86ce190a6e40",
+    "docs/evidence/P4/run-20261115-01/http-results.json": "ad640344cd8ab71927da9515d7004c667a50c0c147b7c53f8a7c537441e51adb",
+    "docs/evidence/P4/run-20261115-01/protection.json": "1419e0511a892ff3059c68dee00faeda5cf9207c70be149b519e812914db0528",
+    "docs/evidence/P4/run-20261115-01/run-state.json": "acbadf60839378591f18d2de891604e914f8ebdb59fc03184ebb5336eb7d383f",
+    "docs/evidence/P4/run-20261115-02/accounts.json": "945771edd203c2b26498108cc38e885e282bc9e51f52597de949abe1143fe03c",
+    "docs/evidence/P4/run-20261115-02/clothes-manifest.json": "42f6e62464cce6515c23872230d80ba73d53a5e9020ec171b924ae960a93c1b0",
+    "docs/evidence/P4/run-20261115-02/files-manifest.json": "97015a29e18519967f8ff61c1fdf87a6bf0a298328c4a6a3925ab90b52288187",
+    "docs/evidence/P4/run-20261115-02/fixture-map.json": "64f847a8a65fd0c01efe443a365d9cc02b017afec8def365a6c03e56b425419a",
+    "docs/evidence/P4/run-20261115-02/fixture-rollback.json": "07ecd8f7427c53f6adc11fb951d6796a9bc48bd7e97398c78534cc932d191d23",
+    "docs/evidence/P4/run-20261115-02/http-results.json": "826d47ea6d99327d2e881d17749aeeff11ce8c25fdefa9c64c4d73c670859ee7",
+    "docs/evidence/P4/run-20261115-02/protection.json": "1419e0511a892ff3059c68dee00faeda5cf9207c70be149b519e812914db0528",
+    "docs/evidence/P4/run-20261115-02/run-state.json": "4cfcdf4595bde3b99de2bb972be746143991ae954137cf26f7d3e031063ddfec",
+    "docs/evidence/P4/run-20261115-foundation/accounts.json": "8a5020472d41b8d762371d98c1ce5bb152bf0e86bd4140fffae74f83c2cb927d",
+    "docs/evidence/P4/run-20261115-foundation/automated-results.json": "b180ae6cb394bc588e5b3c9e583111c7edbe79f97b77c82bf72c5df7ecaca32c",
+    "docs/evidence/P4/run-20261115-foundation/files-manifest.json": "b9f5822e76c82fd3b2d0ff0827e9e4f87dceb15c158a16655a8d0c9cb8f50de0",
+    "docs/evidence/P4/run-20261115-foundation/fixtures/ui-avatar.png": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+    "docs/evidence/P4/run-20261115-foundation/ui-fixtures.json": "c64cb24340c1753126c9a6d2216ec9006da1fff4264e34817602930d9d5297d1",
+    "docs/evidence/P4/run-20261115-restart/accounts.json": "e1aa5e819313de05dfedd68ac3c3879f047864be77a448878fe746f079870e01",
+    "docs/evidence/P4/run-20261115-restart/clothes-manifest.json": "5ea3f1a3ad094c4f75db5919f44a87fac724ede20632d5292bf447236a2044a2",
+    "docs/evidence/P4/run-20261115-restart/files-manifest.json": "b6804455a70d1fa4863d326c5446c4c24d5e889e481f8459a4e33dc891043dfd",
+    "docs/evidence/P4/run-20261115-restart/restart-results.json": "2cc5d2445b6ae1ca8e4a4b58f929556409def025e270bebfc131b68dbdfcf96e",
+    "docs/evidence/P4/run-20261115-ui/accounts.json": "4887ed5804ed97c453ba253e0d6036ffe5c2557fa795175359ba33050884f25d",
+    "docs/evidence/P4/run-20261115-ui/clothes-manifest.json": "1aba7641dcb895c6a310870fb686294b48bbde5ac88a969d94765b31fbe25de9",
+    "docs/evidence/P4/run-20261115-ui/files-manifest.json": "6eb02debc187c12b7a29c257c0c331e8c1e3583ea759dc56a50c8ee07b928f7d",
+    "docs/evidence/P4/run-20261115-ui/fixture-map.json": "f2bad3e08b1f9cf378910e177e1cf222ca4b366503a4a4fae7f0466b0068b5b0",
+    "docs/evidence/P4/run-20261115-ui/manual-acceptance-guide.md": "ff70fee86f02ca9a259ea116042e77f60ffb4c099133b886dc23538616beaab3",
+    "docs/evidence/P4/run-20261115-ui/manual-data-check.json": "a47553b6251ca932a197ddaee88b9a4994569aa182ae8bbd889effaf6d724394",
+    "docs/evidence/P4/run-20261115-ui/manual-results.json": "1014973b138107782798fee68072f0c3a42646100df4dbaa3e58fc1ec50e56ce",
+    "docs/evidence/P4/run-20261115-ui/manual/375-detail-history.png": "a2c560cf6f79559f03a8f8c24ca6fc5af7b765cd8d1a3b3b8b5c534a2669f06b",
+    "docs/evidence/P4/run-20261115-ui/manual/375-wardrobe.png": "a6f16d11bdea51dab257199485ff3d3efcde0cd1b86f4ea03b1f1932682544c0",
+    "docs/evidence/P4/run-20261115-ui/manual/430-clothes-edit.png": "3c9983806fc567159c2975bf86225a7de64b07427106909a67a6bc35221091dd",
+    "docs/evidence/P4/run-20261115-ui/manual/430-unsaved.png": "3b4c71bdeea4210e40f408445c14634938425dcdcaa63be508d8a70e6c326d1f",
+    "docs/evidence/P4/sealed-automatic-rows.json": "404d8d2441c6a33a1a58cdaffcadbe0e9f1ecc8e83a36d1264b3f5157c15f09c",
+    "docs/evidence/P4/unit-regression-results.txt": "28bdeea63d08ce411203f1655473125acc002a6894e2d395b1109bb578232bff",
+    "prototype/app.js": "439879e0095ef351a37d55abf3985e6038da8b0b4e880cfa5b4a8681b25f38cb",
+    "prototype/index.html": "017d6ca076ea786d61124e357b0086efa95bd154fbd3ea55b34e6cfdb74f0b58",
+    "prototype/styles.css": "5b528fc557fecd959e4cf17b96642448fadf511195903e3061d535f06377ad27",
+    "server/package-lock.json": "6d8dd20a2b71cecd89a3887b140605c658f77a52efb420aafed376ed07ea0e1c"
+  },
+  "images": {
+    "users/10/1b5f4a83-2b70-427a-ac66-e79941a2e5af.jpg": {
+      "size": 102089,
+      "sha256": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/265e1f90-4b30-4a36-9f0d-e55fd8ca3ef7.jpg": {
+      "size": 210293,
+      "sha256": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/27e658fb-6996-4f24-a0ec-8b96b924dc48.jpg": {
+      "size": 15187,
+      "sha256": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/2f88edf0-8e8a-46d6-890f-36e57bf866d3.jpg": {
+      "size": 71670,
+      "sha256": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/37d94985-d2a6-48b2-a86c-f706b3555373.jpg": {
+      "size": 38160,
+      "sha256": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/42d49022-eb78-42e8-a125-bc99b346b70e.jpg": {
+      "size": 26241,
+      "sha256": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/5050f5ae-b776-40d0-a6c0-048b9a6f85da.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/5f41c599-eefe-4c41-aee5-a93eb288ae6c.jpg": {
+      "size": 42225,
+      "sha256": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/6c1e46e1-4708-4b68-8b25-272be6097dac.jpg": {
+      "size": 46926,
+      "sha256": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/6ed3cdc5-8fd8-4921-896b-0bc8f8b476e7.jpg": {
+      "size": 172454,
+      "sha256": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/7dca00d7-bb7c-4bdb-bb95-d1e5837d49a2.jpg": {
+      "size": 116567,
+      "sha256": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/815b6f00-24fd-437a-85bb-8e2dcae99989.jpg": {
+      "size": 188050,
+      "sha256": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/81c0e97e-647b-4526-b9f9-5240dd6f40eb.jpg": {
+      "size": 105810,
+      "sha256": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/8f3fd969-94df-4c59-be41-e121e836c6b6.jpg": {
+      "size": 170395,
+      "sha256": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/a327647c-218b-474a-8d7a-c84739a3bfc0.jpg": {
+      "size": 204461,
+      "sha256": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/a67de01e-3dfe-4b8e-b62a-2789f5d2d2e6.jpg": {
+      "size": 89360,
+      "sha256": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/af4ea907-b5ea-46f7-ad50-7dd7ce1b60fe.jpg": {
+      "size": 176798,
+      "sha256": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/b202586a-c56d-4bab-a592-a9f207b87464.jpg": {
+      "size": 28660,
+      "sha256": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/b544a96d-8690-410d-ae30-d74b36fdcad1.jpg": {
+      "size": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/c2f0b584-76fd-4af6-8935-bacc4b57c1a5.jpg": {
+      "size": 146962,
+      "sha256": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/c7c4f54f-7640-40e6-98e8-0feddc4b7a26.jpg": {
+      "size": 143845,
+      "sha256": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/eef772d8-5577-4d4f-a61a-c32989a026ff.jpg": {
+      "size": 246083,
+      "sha256": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/f2321c3c-c21a-4c08-a381-ff2f499b125c.jpg": {
+      "size": 26218,
+      "sha256": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/f5b52858-b50d-4c42-8bf0-bafd1e350d16.jpg": {
+      "size": 163542,
+      "sha256": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "mimeType": "image/jpeg"
+    },
+    "users/10/f9e59c63-60f6-4ec0-8754-63a833a81a89.jpg": {
+      "size": 46462,
+      "sha256": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/04c82ddb-a122-44e5-ade1-012539affb3c.jpg": {
+      "size": 28660,
+      "sha256": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/07e7a91f-9e26-4a4e-bf13-1a08754d5e28.jpg": {
+      "size": 116567,
+      "sha256": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/0dffa7f8-ecbc-45b0-8f55-650c56432fae.jpg": {
+      "size": 170395,
+      "sha256": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/1758b8f6-3006-4116-afa0-4d09ec42160a.jpg": {
+      "size": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/1c1e128f-aec1-4948-ab96-d3a640788109.jpg": {
+      "size": 246083,
+      "sha256": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/1d8ac382-ad0a-4f8a-be84-f675c9194d72.jpg": {
+      "size": 46926,
+      "sha256": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/2dce84aa-ced8-4885-a21f-de77d6baee62.jpg": {
+      "size": 204461,
+      "sha256": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/4c03cc86-6c15-46f9-afa8-c843f6ba43f6.jpg": {
+      "size": 163542,
+      "sha256": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/6c0cf21d-910a-4896-be39-b0e01a6e7693.jpg": {
+      "size": 172454,
+      "sha256": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/78425f99-3716-4360-9cf5-c7c9bed52f3b.jpg": {
+      "size": 42225,
+      "sha256": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/87b67c9b-41c2-4ef4-9600-11df5ccb0b50.jpg": {
+      "size": 146962,
+      "sha256": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/908fb98d-708c-494d-9a76-c3cbb5d739d3.jpg": {
+      "size": 188050,
+      "sha256": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/93c9ff10-2212-4ebe-b642-ad21e029cd96.jpg": {
+      "size": 143845,
+      "sha256": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/ac403c2d-cb8b-48f7-8fca-0c1a0c0febf6.jpg": {
+      "size": 71670,
+      "sha256": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/bc024c67-3a4c-48e4-a365-172a8db114dd.jpg": {
+      "size": 46462,
+      "sha256": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/be415b92-f6ae-47b5-ac9e-f7319bbefa0d.jpg": {
+      "size": 102089,
+      "sha256": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/c3d2d631-77ee-489f-a2bd-6dcdcdd65020.jpg": {
+      "size": 105810,
+      "sha256": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/c91583af-49bd-443e-aac3-79f6829ba731.jpg": {
+      "size": 26218,
+      "sha256": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/cd00fb8a-2275-4ce5-a854-958302011a50.jpg": {
+      "size": 210293,
+      "sha256": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/e7036f72-5506-4839-a94e-83d637362ff0.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/ef78faaf-c408-4cc0-a81e-ef70046e3dfe.jpg": {
+      "size": 15187,
+      "sha256": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/f567f384-ccb8-41da-8adc-bb4fa57db25f.jpg": {
+      "size": 176798,
+      "sha256": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/f5ccdd69-c885-4740-864d-2d4eec79db43.jpg": {
+      "size": 26241,
+      "sha256": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/fa6dda30-7668-450c-9800-febe4cc3332b.jpg": {
+      "size": 89360,
+      "sha256": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc",
+      "mimeType": "image/jpeg"
+    },
+    "users/11/fe7ac251-69ab-42b7-8997-5e73d8ae12c5.jpg": {
+      "size": 38160,
+      "sha256": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18",
+      "mimeType": "image/jpeg"
+    },
+    "users/23/677639d7-ef18-4b5f-971a-9fe3e391650b.png": {
+      "size": 5242880,
+      "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4",
+      "mimeType": "image/png"
+    },
+    "users/23/79847617-77b6-42c2-8014-1cbd06f8263e.png": {
+      "size": 5242879,
+      "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7",
+      "mimeType": "image/png"
+    },
+    "users/23/fb73f2ff-14b3-4fa4-9fc9-d9ccfd20b730.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/23/fd39d0b3-12dd-4b80-af83-4e7ad3a4ea66.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/24/d8e26d12-f716-48ae-993b-e33a1e1b3259.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/26/006dcb64-7a10-4561-8f30-3e4a6ef8252c.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/26/98ed3dd5-cece-43f7-9fc2-f21c96fa2a15.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/26/b2c692a7-1f12-4951-9609-0116ed288023.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/26/cb8ba20e-b6c3-4bcf-ba7b-73a1083e6a96.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/27/b2b3f076-1116-4892-8770-1735e06fac6f.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/28/fbf836cc-b476-479b-bc66-25e3df042cb6.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/29/ba374c11-48f6-4633-b7e5-8a0729f370af.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/31/3180506e-ac83-4dde-b618-245282c72e34.jpg": {
+      "size": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "mimeType": "image/jpeg"
+    },
+    "users/32/125f4278-51ad-4d01-bcba-469b2bbfd987.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/32/12e28568-20ca-4901-af70-3a090fc608b4.png": {
+      "size": 5242879,
+      "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7",
+      "mimeType": "image/png"
+    },
+    "users/32/4fab9c92-ab0e-438c-b5e9-00dbef84e015.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/32/99ba9a02-ea2c-430b-9f98-fa5ef1cf4249.png": {
+      "size": 5242880,
+      "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4",
+      "mimeType": "image/png"
+    },
+    "users/33/41a79cb8-efa0-47dd-9755-87868f6f750f.png": {
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png"
+    },
+    "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg": {
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg"
+    },
+    "users/35/6c3cc2b7-41e5-418e-ae2e-8eb0e62584e8.jpg": {
+      "size": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "mimeType": "image/jpeg"
+    }
+  },
+  "nodeVersion": "v24.16.0"
+}
