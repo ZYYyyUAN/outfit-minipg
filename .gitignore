@@ -11,3 +11,6 @@ miniprogram/project.private.config.json
 docs/evidence/P3-01/release-verification.local.json
 docs/evidence/P3-02/release-verification.local.json
 docs/evidence/P3-03/release-verification.local.json
+
+# P4 post-publication report points to the committed implementation.
+docs/evidence/P4/release-verification.local.json

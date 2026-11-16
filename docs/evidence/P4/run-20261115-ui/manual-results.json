@@ -1,0 +1,60 @@
+{
+  "confirmedByUser": true,
+  "reportedAllPassed": true,
+  "reportedNoProjectExceptions": true,
+  "toolAndBaseLibraryReportedUnchanged": true,
+  "unsavedDialogTrigger": "page cancel button; no native-back claim",
+  "logicalViewportsSource": "user confirmation; not inferred from exported PNG pixels",
+  "screenshots": [
+    {
+      "file": "manual/375-wardrobe.png",
+      "physicalPixels": [
+        337,
+        732
+      ],
+      "sha256": "a6f16d11bdea51dab257199485ff3d3efcde0cd1b86f4ea03b1f1932682544c0",
+      "actuallyViewed": true
+    },
+    {
+      "file": "manual/375-detail-history.png",
+      "physicalPixels": [
+        336,
+        1477
+      ],
+      "sha256": "a2c560cf6f79559f03a8f8c24ca6fc5af7b765cd8d1a3b3b8b5c534a2669f06b",
+      "actuallyViewed": true
+    },
+    {
+      "file": "manual/430-clothes-edit.png",
+      "physicalPixels": [
+        341,
+        727
+      ],
+      "sha256": "3c9983806fc567159c2975bf86225a7de64b07427106909a67a6bc35221091dd",
+      "actuallyViewed": true
+    },
+    {
+      "file": "manual/430-unsaved.png",
+      "physicalPixels": [
+        341,
+        731
+      ],
+      "sha256": "3b4c71bdeea4210e40f408445c14634938425dcdcaa63be508d8a70e6c326d1f",
+      "actuallyViewed": true
+    }
+  ],
+  "visualFindings": [
+    "完整单品图可见",
+    "相关搭配/穿着历史数量与归档标记可见",
+    "表单与页面取消弹窗文字和操作可见"
+  ],
+  "longTextAndShortHeightEvidence": "user confirmation; screenshots do not directly show 500-character text or keyboard",
+  "pendingTargetedFollowup": null,
+  "stage4Complete": false,
+  "targetedFollowupResolution": {
+    "userInstruction": "这轮无需确认",
+    "handling": "不再追加人工确认；采用此前B组整体人工确认及衣物专用换图回调/真实上传协议证据",
+    "directAdditionalManualUploadEvidence": false,
+    "additionalUploadNotClaimed": true
+  }
+}

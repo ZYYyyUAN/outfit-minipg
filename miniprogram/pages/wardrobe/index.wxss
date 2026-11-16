@@ -1,1 +1,16 @@
-/* Shared page styles are defined in app.wxss. */
+.wardrobe { padding-top:36rpx; }
+.heading { display:flex;align-items:center;justify-content:space-between;gap:20rpx; }
+.heading .title { margin-bottom:20rpx; }.heading .eyebrow { font-size:24rpx; }
+.add { flex-shrink:0;padding:18rpx;min-height:88rpx;margin:0;background:#A34F69;color:white;font-size:26rpx;border-radius:12rpx; }
+.search { display:flex;align-items:center;background:#fff;border:1rpx solid #D8CBD0;border-radius:12rpx;padding:0 12rpx; }
+.search input { flex:1;min-width:0;height:96rpx;font-size:28rpx; }.search button { margin:0;background:transparent;color:#A34F69;font-size:26rpx;padding:20rpx 12rpx;min-height:88rpx; }
+button::after { border:none; }.scopes,.options,.actions { display:flex;flex-wrap:wrap;gap:12rpx; }.scopes { margin-top:26rpx; }
+.chip { margin:0;background:transparent;color:#6D6670;border:1rpx solid #D8CBD0;border-radius:12rpx;min-height:88rpx;padding:18rpx 22rpx;font-size:26rpx;line-height:1.8;white-space:normal;overflow-wrap:anywhere;max-width:100%; }
+.chip.selected { background:#F6E7ED;color:#A34F69;border-color:#A34F69; }
+.category-strip { margin-top:20rpx;white-space:nowrap;width:100%; }.inline-options { display:inline-flex;gap:12rpx; }.inline-options .chip { flex-shrink:0;white-space:nowrap; }
+.text-button { margin:0;background:transparent;color:#A34F69;min-height:88rpx;padding:20rpx 12rpx;font-size:26rpx;line-height:1.8; }
+.filter-row,.result-row { display:flex;align-items:center;justify-content:space-between;gap:12rpx; }.filter-row .hint { min-width:0;overflow-wrap:anywhere; }.filter-row .text-button { flex-shrink:0; }
+.filter-panel { padding:24rpx 0;border-top:1rpx solid #E8E2E3;border-bottom:1rpx solid #E8E2E3; }.actions { justify-content:flex-end;align-items:center; }.actions .button { margin:0;padding:18rpx 32rpx; }
+.clothes-grid { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32rpx 22rpx; }.clothing { min-width:0; }.picture { width:100%;aspect-ratio:4/5;background:#fff;display:flex;align-items:center;justify-content:center;border-radius:10rpx;overflow:hidden; }.picture image { width:100%;height:100%; }.picture .hint { padding:20rpx; }
+.clothing-name { font-size:28rpx;font-weight:500;line-height:1.5;overflow-wrap:anywhere;min-height:88rpx;padding-top:16rpx; }.archive-label { display:inline-block;background:#F6E7ED;color:#A34F69;font-size:24rpx;padding:4rpx 12rpx;margin-bottom:8rpx; }
+.empty { padding:48rpx 0;text-align:center; }

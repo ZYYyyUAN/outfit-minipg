@@ -1,0 +1,19 @@
+{
+  "runId": "run-20261115-02",
+  "accounts": [
+    {
+      "username": "p4_fb83263d_a",
+      "role": "a",
+      "id": 29,
+      "loggedOut": true,
+      "imagePath": "users/29/ba374c11-48f6-4633-b7e5-8a0729f370af.jpg"
+    },
+    {
+      "username": "p4_fb83263d_b",
+      "role": "b",
+      "id": 30,
+      "loggedOut": true,
+      "imagePath": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg"
+    }
+  ]
+}

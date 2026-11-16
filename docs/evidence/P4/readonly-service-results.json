@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-11-14T14:17:42.060Z",
+  "identity": {
+    "version": "8.0.28",
+    "hostname": "DESKTOP-D97LI2N",
+    "port": 3306,
+    "account": "root@localhost",
+    "db": "wardrobe_demo",
+    "connectionId": 10,
+    "timeZone": "+00:00",
+    "clientCharset": "utf8mb4",
+    "connectionCharset": "utf8mb4",
+    "resultsCharset": "utf8mb4",
+    "connectionCollation": "utf8mb4_0900_as_cs"
+  },
+  "mode": "database-service-readonly-not-http",
+  "listTotal": 24,
+  "pageLengths": [
+    12,
+    12,
+    0
+  ],
+  "facets": {
+    "colors": [
+      "奶油色",
+      "棕色",
+      "水洗蓝",
+      "浅粉色",
+      "浅紫色",
+      "浅蓝色",
+      "深棕色",
+      "深靛蓝",
+      "灰米色",
+      "灰色",
+      "白色",
+      "米白与黑色",
+      "米白色",
+      "粉蓝与浅绿色",
+      "薄荷蓝",
+      "藏蓝与灰色",
+      "藏蓝与米白色",
+      "黑色"
+    ]
+  },
+  "details": [
+    {
+      "id": 57,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-12",
+      "relatedOutfits": 1,
+      "relatedDiaries": 1
+    },
+    {
+      "id": 56,
+      "wearCount": 3,
+      "lastWornDate": "2026-11-05",
+      "relatedOutfits": 2,
+      "relatedDiaries": 3
+    },
+    {
+      "id": 55,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-05",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 54,
+      "wearCount": 5,
+      "lastWornDate": "2026-11-05",
+      "relatedOutfits": 3,
+      "relatedDiaries": 5
+    },
+    {
+      "id": 53,
+      "wearCount": 6,
+      "lastWornDate": "2026-11-03",
+      "relatedOutfits": 5,
+      "relatedDiaries": 6
+    },
+    {
+      "id": 52,
+      "wearCount": 5,
+      "lastWornDate": "2026-11-03",
+      "relatedOutfits": 4,
+      "relatedDiaries": 5
+    },
+    {
+      "id": 51,
+      "wearCount": 6,
+      "lastWornDate": "2026-11-05",
+      "relatedOutfits": 4,
+      "relatedDiaries": 6
+    },
+    {
+      "id": 50,
+      "wearCount": 0,
+      "lastWornDate": null,
+      "relatedOutfits": 1,
+      "relatedDiaries": 0
+    },
+    {
+      "id": 49,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-03",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 48,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-01",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 47,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-21",
+      "relatedOutfits": 1,
+      "relatedDiaries": 1
+    },
+    {
+      "id": 46,
+      "wearCount": 3,
+      "lastWornDate": "2026-11-05",
+      "relatedOutfits": 2,
+      "relatedDiaries": 3
+    },
+    {
+      "id": 45,
+      "wearCount": 3,
+      "lastWornDate": "2026-10-30",
+      "relatedOutfits": 2,
+      "relatedDiaries": 3
+    },
+    {
+      "id": 44,
+      "wearCount": 0,
+      "lastWornDate": null,
+      "relatedOutfits": 0,
+      "relatedDiaries": 0
+    },
+    {
+      "id": 43,
+      "wearCount": 0,
+      "lastWornDate": null,
+      "relatedOutfits": 0,
+      "relatedDiaries": 0
+    },
+    {
+      "id": 42,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-30",
+      "relatedOutfits": 1,
+      "relatedDiaries": 1
+    },
+    {
+      "id": 41,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-01",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 40,
+      "wearCount": 0,
+      "lastWornDate": null,
+      "relatedOutfits": 1,
+      "relatedDiaries": 0
+    },
+    {
+      "id": 39,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-12",
+      "relatedOutfits": 1,
+      "relatedDiaries": 1
+    },
+    {
+      "id": 38,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-01",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 37,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-05",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 36,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-21",
+      "relatedOutfits": 1,
+      "relatedDiaries": 1
+    },
+    {
+      "id": 35,
+      "wearCount": 2,
+      "lastWornDate": "2026-11-03",
+      "relatedOutfits": 1,
+      "relatedDiaries": 2
+    },
+    {
+      "id": 34,
+      "wearCount": 3,
+      "lastWornDate": "2026-10-24",
+      "relatedOutfits": 1,
+      "relatedDiaries": 3
+    }
+  ],
+  "baselineRowsUnchanged": true
+}

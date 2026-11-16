@@ -1,0 +1,24 @@
+{
+  "runId": "run-20261115-restart",
+  "processes": [
+    {
+      "pid": 47504,
+      "startedAt": "2026-11-14T17:02:26.707Z",
+      "origin": "http://127.0.0.1:59697",
+      "stoppedAt": "2026-11-14T17:02:27.229Z",
+      "stopMode": "owned child termination; not a graceful shutdown claim"
+    },
+    {
+      "pid": 38084,
+      "startedAt": "2026-11-14T17:02:27.256Z",
+      "origin": "http://127.0.0.1:59697",
+      "stoppedAt": "2026-11-14T17:02:27.623Z",
+      "stopMode": "owned child termination; not a graceful shutdown claim"
+    }
+  ],
+  "passed": true,
+  "clothingId": 107,
+  "detailPersisted": true,
+  "imagePersisted": true,
+  "tokenSurvivedRestart": true
+}

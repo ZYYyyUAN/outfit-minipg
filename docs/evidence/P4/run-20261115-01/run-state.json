@@ -1,0 +1,6 @@
+{
+  "runId": "run-20261115-01",
+  "status": "http-core-passed",
+  "checks": 48,
+  "remaining": "paging fixtures, nonempty histories, process restart, native UI and final audit"
+}

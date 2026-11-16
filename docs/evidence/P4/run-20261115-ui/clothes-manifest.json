@@ -1,0 +1,80 @@
+{
+  "runId": "run-20261115-ui",
+  "clothes": [
+    {
+      "id": 108,
+      "userId": 35,
+      "role": "manual-C1"
+    },
+    {
+      "id": 109,
+      "userId": 35,
+      "role": "manual-C2"
+    },
+    {
+      "id": 110,
+      "userId": 35,
+      "role": "manual-C3"
+    },
+    {
+      "id": 111,
+      "userId": 35,
+      "role": "manual-C4"
+    },
+    {
+      "id": 112,
+      "userId": 35,
+      "role": "manual-C5"
+    },
+    {
+      "id": 113,
+      "userId": 35,
+      "role": "manual-C6"
+    },
+    {
+      "id": 114,
+      "userId": 35,
+      "role": "manual-C7"
+    },
+    {
+      "id": 115,
+      "userId": 35,
+      "role": "manual-C8"
+    },
+    {
+      "id": 116,
+      "userId": 35,
+      "role": "manual-C9"
+    },
+    {
+      "id": 117,
+      "userId": 35,
+      "role": "manual-C10"
+    },
+    {
+      "id": 118,
+      "userId": 35,
+      "role": "manual-C11"
+    },
+    {
+      "id": 119,
+      "userId": 35,
+      "role": "manual-C12"
+    },
+    {
+      "id": 120,
+      "userId": 35,
+      "role": "manual-C13"
+    },
+    {
+      "id": 121,
+      "userId": 35,
+      "role": "manual-C14"
+    },
+    {
+      "id": 122,
+      "userId": 35,
+      "role": "manual-C15"
+    }
+  ]
+}

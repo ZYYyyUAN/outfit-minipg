@@ -1,0 +1,13 @@
+{
+  "runId": "run-20261115-foundation",
+  "files": [
+    {
+      "path": "assets/clothes/clothing-001.jpg",
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a"
+    },
+    {
+      "path": "docs/evidence/P4/run-20261115-foundation/fixtures/ui-avatar.png",
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+    }
+  ]
+}

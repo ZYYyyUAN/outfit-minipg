@@ -1,0 +1,21 @@
+{
+  "runId": "run-20261115-02",
+  "files": [
+    {
+      "userId": 29,
+      "imagePath": "users/29/ba374c11-48f6-4633-b7e5-8a0729f370af.jpg",
+      "mimeType": "image/jpeg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retained": true
+    },
+    {
+      "userId": 30,
+      "imagePath": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "mimeType": "image/jpeg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retained": true
+    }
+  ]
+}

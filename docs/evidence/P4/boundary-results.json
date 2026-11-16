@@ -1,0 +1,139 @@
+{
+  "checkedAt": "2026-11-14T17:10:25.787Z",
+  "mode": "readonly-service-boundaries-not-public-asOf",
+  "passed": true,
+  "checks": [
+    {
+      "id": "DATE-0",
+      "instant": "2026-10-07T00:00:00Z",
+      "count": 1,
+      "last": "2026-10-07",
+      "passed": true
+    },
+    {
+      "id": "DATE-1",
+      "instant": "2026-10-08T00:00:00Z",
+      "count": 2,
+      "last": "2026-10-08",
+      "passed": true
+    },
+    {
+      "id": "DATE-2",
+      "instant": "2026-11-04T15:59:59.999Z",
+      "count": 2,
+      "last": "2026-10-08",
+      "passed": true
+    },
+    {
+      "id": "DATE-3",
+      "instant": "2026-11-04T16:00:00Z",
+      "count": 3,
+      "last": "2026-11-05",
+      "passed": true
+    },
+    {
+      "id": "SEASON-春",
+      "matchedKeys": [
+        "C1",
+        "C2",
+        "C6",
+        "C8",
+        "C9",
+        "C12"
+      ],
+      "passed": true
+    },
+    {
+      "id": "SEASON-夏",
+      "matchedKeys": [
+        "C2",
+        "C4",
+        "C6",
+        "C8",
+        "C11"
+      ],
+      "passed": true
+    },
+    {
+      "id": "SEASON-秋",
+      "matchedKeys": [
+        "C1",
+        "C2",
+        "C3",
+        "C5",
+        "C6",
+        "C12",
+        "C13"
+      ],
+      "passed": true
+    },
+    {
+      "id": "SEASON-冬",
+      "matchedKeys": [
+        "C2",
+        "C5",
+        "C6",
+        "C7",
+        "C10"
+      ],
+      "passed": true
+    },
+    {
+      "id": "FILTER-8",
+      "query": {
+        "keyword": "_%!alpha"
+      },
+      "matchedKeys": [
+        "C1"
+      ],
+      "passed": true
+    },
+    {
+      "id": "FILTER-9",
+      "query": {
+        "categoryId": "tops",
+        "color": "浅粉色",
+        "season": "秋"
+      },
+      "matchedKeys": [
+        "C1"
+      ],
+      "passed": true
+    },
+    {
+      "id": "FILTER-10",
+      "query": {
+        "categoryId": "tops",
+        "color": "浅粉色",
+        "season": "秋",
+        "archived": "all"
+      },
+      "matchedKeys": [
+        "C1",
+        "C14"
+      ],
+      "passed": true
+    },
+    {
+      "id": "FILTER-11",
+      "query": {
+        "keyword": "\\"
+      },
+      "matchedKeys": [],
+      "passed": true
+    },
+    {
+      "id": "FILTER-12",
+      "query": {
+        "keyword": "' OR 1=1 --"
+      },
+      "matchedKeys": [],
+      "passed": true
+    }
+  ],
+  "neverWorn": {
+    "id": 81,
+    "count": 0,
+    "last": null
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "runId": "run-20261115-02",
+  "checks": [
+    {
+      "id": "HTTP-001",
+      "label": "register a",
+      "method": "POST",
+      "path": "/auth/register",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-002",
+      "label": "login a",
+      "method": "POST",
+      "path": "/auth/login",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-003",
+      "label": "own upload a",
+      "method": "POST",
+      "path": "/uploads",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-004",
+      "label": "register b",
+      "method": "POST",
+      "path": "/auth/register",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-005",
+      "label": "login b",
+      "method": "POST",
+      "path": "/auth/login",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-006",
+      "label": "own upload b",
+      "method": "POST",
+      "path": "/uploads",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-007",
+      "label": "anonymous clothes",
+      "method": "GET",
+      "path": "/clothes",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "passed": true,
+      "errorCode": "UNAUTHENTICATED"
+    },
+    {
+      "id": "HTTP-008",
+      "label": "new owner empty",
+      "method": "GET",
+      "path": "/clothes",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-009",
+      "label": "create clothing",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-010",
+      "label": "create same name allowed",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-011",
+      "label": "literal search",
+      "method": "GET",
+      "path": "/clothes?keyword=_%25!alpha",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-012",
+      "label": "season AND exact color",
+      "method": "GET",
+      "path": "/clothes?season=%E7%A7%8B&color=%E6%B5%85%E7%B2%89%E8%89%B2&categoryId=tops",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-013",
+      "label": "no partial color",
+      "method": "GET",
+      "path": "/clothes?color=%E7%B2%89%E8%89%B2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-014",
+      "label": "other owner empty",
+      "method": "GET",
+      "path": "/clothes",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-015",
+      "label": "foreign read ",
+      "method": "GET",
+      "path": "/clothes/60",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "passed": true,
+      "errorCode": "NOT_FOUND"
+    },
+    {
+      "id": "HTTP-016",
+      "label": "foreign read /outfits",
+      "method": "GET",
+      "path": "/clothes/60/outfits",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "passed": true,
+      "errorCode": "NOT_FOUND"
+    },
+    {
+      "id": "HTTP-017",
+      "label": "foreign read /diaries",
+      "method": "GET",
+      "path": "/clothes/60/diaries",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "passed": true,
+      "errorCode": "NOT_FOUND"
+    },
+    {
+      "id": "HTTP-018",
+      "label": "foreign edit",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "passed": true,
+      "errorCode": "NOT_FOUND"
+    },
+    {
+      "id": "HTTP-019",
+      "label": "foreign archive",
+      "method": "PATCH",
+      "path": "/clothes/60/archive",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "passed": true,
+      "errorCode": "NOT_FOUND"
+    },
+    {
+      "id": "HTTP-020",
+      "label": "foreign image reference",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_IMAGE_REF"
+    },
+    {
+      "id": "HTTP-021",
+      "label": "reject query ?page=0",
+      "method": "GET",
+      "path": "/clothes?page=0",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-022",
+      "label": "reject query ?pageSize=51",
+      "method": "GET",
+      "path": "/clothes?pageSize=51",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-023",
+      "label": "reject query ?page=1e2",
+      "method": "GET",
+      "path": "/clothes?page=1e2",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-024",
+      "label": "reject query ?page=1&page=2",
+      "method": "GET",
+      "path": "/clothes?page=1&page=2",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-025",
+      "label": "reject query ?sort=id",
+      "method": "GET",
+      "path": "/clothes?sort=id",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-026",
+      "label": "reject query ?season=%E6%98%A5%E7%A7%8B",
+      "method": "GET",
+      "path": "/clothes?season=%E6%98%A5%E7%A7%8B",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-027",
+      "label": "reject query ?asOf=2026-11-06",
+      "method": "GET",
+      "path": "/clothes?asOf=2026-11-06",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-028",
+      "label": "extra POST query",
+      "method": "POST",
+      "path": "/clothes?extra=1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-029",
+      "label": "partial PUT rejected",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-030",
+      "label": "reject form name",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-031",
+      "label": "reject form note",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-032",
+      "label": "reject form categoryId",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-033",
+      "label": "reject form imagePath",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_IMAGE_REF"
+    },
+    {
+      "id": "HTTP-034",
+      "label": "reject form season",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-035",
+      "label": "reject form userId",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "passed": true,
+      "errorCode": "INVALID_INPUT"
+    },
+    {
+      "id": "HTTP-036",
+      "label": "edit persisted",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-037",
+      "label": "same PUT allowed",
+      "method": "PUT",
+      "path": "/clothes/60",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-038",
+      "label": "archive",
+      "method": "PATCH",
+      "path": "/clothes/60/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-039",
+      "label": "repeat archive",
+      "method": "PATCH",
+      "path": "/clothes/60/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-040",
+      "label": "active excludes archive",
+      "method": "GET",
+      "path": "/clothes",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-041",
+      "label": "archive scope",
+      "method": "GET",
+      "path": "/clothes?archived=archived",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-042",
+      "label": "all scope",
+      "method": "GET",
+      "path": "/clothes?archived=all",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-043",
+      "label": "archived detail readable",
+      "method": "GET",
+      "path": "/clothes/60",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-044",
+      "label": "restore",
+      "method": "PATCH",
+      "path": "/clothes/60/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-045",
+      "label": "own facets",
+      "method": "GET",
+      "path": "/clothes/facets",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-046",
+      "label": "other facets",
+      "method": "GET",
+      "path": "/clothes/facets",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-047",
+      "label": "own empty history outfits",
+      "method": "GET",
+      "path": "/clothes/60/outfits",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-048",
+      "label": "own empty history diaries",
+      "method": "GET",
+      "path": "/clothes/60/diaries",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-049",
+      "label": "fixture first page 12",
+      "method": "GET",
+      "path": "/clothes",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-050",
+      "label": "fixture second page 1",
+      "method": "GET",
+      "path": "/clothes?page=2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-051",
+      "label": "fixture outfits page one",
+      "method": "GET",
+      "path": "/clothes/77/outfits?pageSize=2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-052",
+      "label": "fixture outfits page two",
+      "method": "GET",
+      "path": "/clothes/77/outfits?pageSize=2&page=2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-053",
+      "label": "fixture diary page one",
+      "method": "GET",
+      "path": "/clothes/77/diaries?pageSize=2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-054",
+      "label": "fixture diary page two",
+      "method": "GET",
+      "path": "/clothes/77/diaries?pageSize=2&page=2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-055",
+      "label": "fixture wear aggregate",
+      "method": "GET",
+      "path": "/clothes/77",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-056",
+      "label": "fixture archive preserves graph",
+      "method": "PATCH",
+      "path": "/clothes/77/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-057",
+      "label": "fixture archived history",
+      "method": "GET",
+      "path": "/clothes/77/diaries",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-058",
+      "label": "fixture restore",
+      "method": "PATCH",
+      "path": "/clothes/77/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    }
+  ]
+}

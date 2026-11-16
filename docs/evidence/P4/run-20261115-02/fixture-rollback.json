@@ -1,0 +1,24 @@
+{
+  "userId": 30,
+  "clothes": {
+    "C1": 62,
+    "C2": 63,
+    "C3": 64,
+    "C4": 65,
+    "C5": 66,
+    "C6": 67,
+    "C7": 68,
+    "C8": 69,
+    "C9": 70,
+    "C10": 71,
+    "C11": 72,
+    "C12": 73,
+    "C13": 74,
+    "C14": 75,
+    "C15": 76
+  },
+  "outfits": {},
+  "diaries": {},
+  "state": "controlled-rollback-confirmed",
+  "purpose": "offline-test-fixture-not-business-api"
+}

@@ -1,0 +1,31 @@
+{
+  "runId": "run-20261115-foundation",
+  "accounts": [
+    {
+      "runId": "run-20261115-foundation",
+      "username": "p4_07071f90_a",
+      "id": 32,
+      "purpose": "HTTP",
+      "state": "logged-out",
+      "immutable": {
+        "id": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b",
+        "username": "dd59c727516505ac06a9f62dfd019072e412c576d9a7f856a6042044625091fe",
+        "password_hash": "e929ea5fddd9decca452c0ee44f3e6d8479af230fce37e3cbf2106a132e1ede0",
+        "created_at": "2684f631b5cef212f8474bc7b9dd01af9ef31b4a4f8520bd7ccca73a15c7ed2d"
+      }
+    },
+    {
+      "runId": "run-20261115-foundation",
+      "username": "p4_07071f90_b",
+      "id": 33,
+      "purpose": "HTTP",
+      "state": "logged-out",
+      "immutable": {
+        "id": "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894",
+        "username": "36821c5fc6e1f04e5d8138b3ed60bbab1e600099eff6b7b05f58688a34ee9b7d",
+        "password_hash": "625266e111662cc6e2695ed8ae91d304aad00616f2d4ca0bdaf7e9af5c26183e",
+        "created_at": "9d9b23ad99cc209b78ca7e335de7556dd5474020dd6fe9ab69a2cb37ac07ee58"
+      }
+    }
+  ]
+}

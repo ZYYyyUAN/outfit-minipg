@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-15T16:25:25.065Z",
+  "states": [
+    {
+      "id": 35,
+      "username": "p4_1511a001_u",
+      "loggedOut": true,
+      "clothingCount": 15,
+      "activeCount": 13
+    },
+    {
+      "id": 36,
+      "username": "p4_1511a002_u",
+      "loggedOut": true,
+      "clothingCount": 0,
+      "activeCount": 0
+    }
+  ],
+  "registeredImages": 2,
+  "passed": true
+}

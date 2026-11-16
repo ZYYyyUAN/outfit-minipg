@@ -1,0 +1,748 @@
+{
+  "scope": "existing-real-http-evidence-status-and-error-code-review",
+  "passed": true,
+  "checks": [
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-001",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-002",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-003",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-004",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-005",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-006",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-007",
+      "expectedStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-008",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-009",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-010",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-011",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-012",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-013",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-014",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-015",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-016",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-017",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-018",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-019",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-020",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-021",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-022",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-023",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-024",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-025",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-026",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-027",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-028",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-029",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-030",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-031",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-032",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-033",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-034",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-035",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-036",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-037",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-038",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-039",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-040",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-041",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-042",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-043",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-044",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-045",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-046",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-047",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-01",
+      "id": "HTTP-048",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-001",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-002",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-003",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-004",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-005",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-006",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-007",
+      "expectedStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-008",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-009",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-010",
+      "expectedStatus": 201,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-011",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-012",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-013",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-014",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-015",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-016",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-017",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-018",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-019",
+      "expectedStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-020",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-021",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-022",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-023",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-024",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-025",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-026",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-027",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-028",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-029",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-030",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-031",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-032",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-033",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-034",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-035",
+      "expectedStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-036",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-037",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-038",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-039",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-040",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-041",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-042",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-043",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-044",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-045",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-046",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-047",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-048",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-049",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-050",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-051",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-052",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-053",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-054",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-055",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-056",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-057",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    },
+    {
+      "runId": "run-20261115-02",
+      "id": "HTTP-058",
+      "expectedStatus": 200,
+      "expectedErrorCode": null,
+      "passed": true
+    }
+  ]
+}

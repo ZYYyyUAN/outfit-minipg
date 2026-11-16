@@ -1,0 +1,27 @@
+{
+  "userId": 28,
+  "clothes": {
+    "C1": 92,
+    "C2": 93,
+    "C3": 94,
+    "C4": 95,
+    "C5": 96,
+    "C6": 97,
+    "C7": 98,
+    "C8": 99,
+    "C9": 100,
+    "C10": 101,
+    "C11": 102,
+    "C12": 103,
+    "C13": 104,
+    "C14": 105,
+    "C15": 106
+  },
+  "outfits": {},
+  "diaries": {},
+  "state": "injected-failure-rollback-confirmed",
+  "purpose": "offline-test-fixture-not-business-api",
+  "expectedError": "P4_EXPECTED_ROLLBACK",
+  "sameConnectionRows": 0,
+  "newConnectionRows": 0
+}

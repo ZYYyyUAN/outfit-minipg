@@ -1,0 +1,381 @@
+{
+  "stage": "P4",
+  "stage4Complete": false,
+  "status": "local-37-passed-publication-pending",
+  "checks": [
+    {
+      "id": "P4-V01",
+      "requirement": "重新核对起点、P3-03发布后状态、实例、U0、结构、行及文件基线；当前事实与历史观察分开",
+      "plannedEvidenceType": "Git/环境/基线",
+      "status": "passed",
+      "evidence": [
+        "baseline.json",
+        "audit-latest.json"
+      ]
+    },
+    {
+      "id": "P4-V02",
+      "requirement": "7表不变，C01～C08与DTO/参数/状态码一致，无O/D/S新增接口、未知接口仍404",
+      "plannedEvidenceType": "契约审查、HTTP",
+      "status": "passed",
+      "evidence": [
+        "native-static-checks.json",
+        "run-20261115-02/http-results.json",
+        "run-20261115-foundation/automated-results.json"
+      ]
+    },
+    {
+      "id": "P4-V03",
+      "requirement": "C01匿名/过期401；A/B各只返回自有衣物；空U=0；默认active、id倒序、page=1/12",
+      "plannedEvidenceType": "HTTP",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-01/http-results.json",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V04",
+      "requirement": "名称、分类、完整颜色、单季、归档按AND；浅蓝与藏蓝不混为色系；表中组合结果正确",
+      "plannedEvidenceType": "HTTP/独立SQL",
+      "status": "passed",
+      "evidence": [
+        "boundary-results.json"
+      ]
+    },
+    {
+      "id": "P4-V05",
+      "requirement": "大小写、字面%、_、!、反斜杠、SQL片段及40码点边界正确；数据不被检索输入改变",
+      "plannedEvidenceType": "单元、HTTP",
+      "status": "passed",
+      "evidence": [
+        "boundary-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P4-V06",
+      "requirement": "四个季节查询的全部映射与8个表单值分开验证，无漏项/多项",
+      "plannedEvidenceType": "参数化测试/HTTP",
+      "status": "passed",
+      "evidence": [
+        "boundary-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P4-V07",
+      "requirement": "facets按当前用户和归档范围去重/排序，keyword/分类不影响其定义；他人颜色不泄露",
+      "plannedEvidenceType": "HTTP",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json"
+      ]
+    },
+    {
+      "id": "P4-V08",
+      "requirement": "空/缺失/重复/对象参数、未知字段、非法ID/分页/枚举/溢出offset明确400，缺省只用于未传",
+      "plannedEvidenceType": "参数化HTTP",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "http-error-code-review.json"
+      ]
+    },
+    {
+      "id": "P4-V09",
+      "requirement": "active13验证12+1，无重复/遗漏；pageSize=1/50及页外items=[]保留total正确",
+      "plannedEvidenceType": "HTTP/SQL",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json",
+        "boundary-results.json"
+      ]
+    },
+    {
+      "id": "P4-V10",
+      "requirement": "真空态、筛选无结果、首屏失败、下一页失败及手动重试有正确反馈，不以假数据填充",
+      "plannedEvidenceType": "回调测试、UI",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V11",
+      "requirement": "搜索确认、面板应用/取消/重置、归档范围、清除筛选语义正确；未写入返回保留筛选及滚动",
+      "plannedEvidenceType": "回调测试、UI",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V12",
+      "requirement": "快速换筛选、同页重复触发、图片失败重试与迟到回调不污染新列表，分页失败不推进页码",
+      "plannedEvidenceType": "回调测试、UI",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P4-V13",
+      "requirement": "C03字段/数字/boolean正确，无日记0/null；关联聚合不受搭配数量放大",
+      "plannedEvidenceType": "HTTP/SQL",
+      "status": "passed",
+      "evidence": [
+        "readonly-service-results.json",
+        "boundary-results.json"
+      ]
+    },
+    {
+      "id": "P4-V14",
+      "requirement": "UTC响应带毫秒Z，上海日期边界及内部asOf用例正确；公共asOf拒绝；真实HTTP不用固定演示日",
+      "plannedEvidenceType": "单元/HTTP",
+      "status": "passed",
+      "evidence": [
+        "boundary-results.json",
+        "unit-regression-results.txt"
+      ]
+    },
+    {
+      "id": "P4-V15",
+      "requirement": "自有/他人/不存在/归档详情分别200/404/404/200；错误无他人信息",
+      "plannedEvidenceType": "HTTP",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json"
+      ]
+    },
+    {
+      "id": "P4-V16",
+      "requirement": "C04真实201、insertId及未归档/当前用户/时间正确，重复名称允许，重开可读",
+      "plannedEvidenceType": "HTTP/SQL",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json"
+      ]
+    },
+    {
+      "id": "P4-V17",
+      "requirement": "name40/color20/note500码点边界、必填、换行、分类/季节、note空串及完整PUT正确",
+      "plannedEvidenceType": "参数化测试/HTTP",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-02/http-results.json"
+      ]
+    },
+    {
+      "id": "P4-V18",
+      "requirement": "A07上传后稳定路径可保存；外部/TMP/blob/微信临时/其他用户/缺失/无效文件拒绝，上传失败不能保存候选",
+      "plannedEvidenceType": "HTTP/回调/UI",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-foundation/automated-results.json"
+      ],
+      "evidenceScopeNote": "原生整体按用户确认；不再追加换图确认依本轮指示；无额外文件证据，不声称已额外补测。换图状态另有衣物专用回调及真实上传协议证据。"
+    },
+    {
+      "id": "P4-V19",
+      "requirement": "C05字段持久化、创建时间/归属不变、同值PUT成功；已有预览使用当前名称/图片",
+      "plannedEvidenceType": "HTTP/SQL",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V20",
+      "requirement": "表单取消/未保存继续或放弃、选择取消、候选失败恢复、保存失败保留；不产生额外C04/C05",
+      "plannedEvidenceType": "回调测试、UI/请求记录",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-ui/manual-results.json"
+      ],
+      "evidenceScopeNote": "原生整体按用户确认；不再追加换图确认依本轮指示；无额外文件证据，不声称已额外补测。换图状态另有衣物专用回调及真实上传协议证据。"
+    },
+    {
+      "id": "P4-V21",
+      "requirement": "实际停止并重启本轮独立后端，新连接读回衣物与原字节图片；非原进程内复查",
+      "plannedEvidenceType": "进程及HTTP记录",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-restart/restart-results.json"
+      ]
+    },
+    {
+      "id": "P4-V22",
+      "requirement": "归档取消无写入，归档/恢复成功，重复同目标成功且更新时间稳定，无DELETE",
+      "plannedEvidenceType": "HTTP/SQL/UI",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V23",
+      "requirement": "写入后列表失效重查，保留条件、回第一页，末页最后项及保存项不满足筛选均反馈正确",
+      "plannedEvidenceType": "回调测试、UI",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V24",
+      "requirement": "C07相关总数3，独立2+1分页，O1数量5/前4有序且不含目标仍返回，归档搭配标记正确",
+      "plannedEvidenceType": "HTTP/SQL/UI",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V25",
+      "requirement": "C08日期排序、实际diary_items前3/数量正确，来源不替代实际集合，mood/photoUrl空值正确",
+      "plannedEvidenceType": "HTTP/SQL/UI",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json"
+      ]
+    },
+    {
+      "id": "P4-V26",
+      "requirement": "C07/C08他人/缺失父衣物404；父列表、计数、预览均按用户隔离，不因目标条件截掉其他预览衣物",
+      "plannedEvidenceType": "HTTP/代码审查",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json",
+        "audit-latest.json"
+      ]
+    },
+    {
+      "id": "P4-V27",
+      "requirement": "C1次数/最近日期正确，归档不删关联，改名换图不改衣物集合/顺序，无历史属性版本伪承诺",
+      "plannedEvidenceType": "HTTP/前后行比较",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-02/http-results.json",
+        "audit-latest.json",
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V28",
+      "requirement": "A/B/U账号、真实ID、受控3搭配/3日记及8/6明细、API新增衣物均登记；未更改原样例",
+      "plannedEvidenceType": "manifest/SQL",
+      "status": "passed",
+      "evidence": [
+        "audit-latest.json"
+      ]
+    },
+    {
+      "id": "P4-V29",
+      "requirement": "夹具指定失败只回滚该事务，重连无本次行；正常HTTP写入保留，自增空缺不重置",
+      "plannedEvidenceType": "故障/回滚记录",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-01/fixture-fault-rollback.json"
+      ]
+    },
+    {
+      "id": "P4-V30",
+      "requirement": "按A/B两组同一账号连续完成创建→详情→编辑→取消→保存→归档→历史→恢复→重新编译→退出",
+      "plannedEvidenceType": "人工步骤及实际看图",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-ui/manual-results.json"
+      ],
+      "evidenceScopeNote": "原生整体按用户确认；不再追加换图确认依本轮指示；无额外文件证据，不声称已额外补测。换图状态另有衣物专用回调及真实上传协议证据。"
+    },
+    {
+      "id": "P4-V31",
+      "requirement": "375×812、430×932、460px可用高度；长名/颜色/500字、键盘、弹层/面板、底部按钮、完整图及末尾无阻挡",
+      "plannedEvidenceType": "人工尺寸记录/截图",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-ui/manual-results.json"
+      ],
+      "evidenceScopeNote": "原生整体按用户确认；不再追加换图确认依本轮指示；无额外文件证据，不声称已额外补测。换图状态另有衣物专用回调及真实上传协议证据。"
+    },
+    {
+      "id": "P4-V32",
+      "requirement": "适用119项测试及122项HTTP语义迁移回归A01～A09；旧业务404断言仅更新C接口，其余仍404",
+      "plannedEvidenceType": "新回归报告",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-foundation/automated-results.json"
+      ]
+    },
+    {
+      "id": "P4-V33",
+      "requirement": "上传/下载/request的401、切账号、页面离开和迟到结果处理一致，无前账号图片/数据或旧回调覆盖",
+      "plannedEvidenceType": "会话回调测试、HTTP/UI",
+      "status": "passed",
+      "evidence": [
+        "unit-regression-results.txt",
+        "run-20261115-foundation/automated-results.json"
+      ]
+    },
+    {
+      "id": "P4-V34",
+      "requirement": "所有原有行、结构、当前全部既有图片/素材/JSON/原型/历史证据保持；新增行/图全集由清单解释",
+      "plannedEvidenceType": "逐主键/文件保护报告",
+      "status": "passed",
+      "evidence": [
+        "audit-latest.json"
+      ]
+    },
+    {
+      "id": "P4-V35",
+      "requirement": ".env/AppID/密码/令牌/哈希不进Git、证据或截图；稳定路径与临时路径区分，uploads不公开挂载",
+      "plannedEvidenceType": "忽略规则/暂存/证据审查",
+      "status": "passed",
+      "evidence": [
+        "run-20261115-ui/manual-results.json"
+      ]
+    },
+    {
+      "id": "P4-V36",
+      "requirement": "文档、页面、截图、启动方式与当前能力一致，关联详情跳转及O/D/S明确留后续，证据绑定当前实现哈希",
+      "plannedEvidenceType": "文档/证据一致性",
+      "status": "passed",
+      "evidence": [
+        "native-static-checks.json",
+        "implementation-hashes.json"
+      ]
+    },
+    {
+      "id": "P4-V37",
+      "requirement": "本轮账号最终均A03退出，新行/文件保留清单与最终表数吻合，无未知写入或临时无用文件",
+      "plannedEvidenceType": "最终审计",
+      "status": "passed",
+      "evidence": [
+        "audit-latest.json"
+      ]
+    },
+    {
+      "id": "P4-V38",
+      "requirement": "实施提交/附注p4已推两端；分别实时核对main、标签对象及目标与本地一致，工作区干净",
+      "plannedEvidenceType": "发布后引用核对",
+      "status": "pending-publication",
+      "evidence": []
+    }
+  ],
+  "note": "本地P4-V01～37逐项核对通过；P4-V38仅在双端发布引用实查后于本机发布报告记录，不预填发布成功。",
+  "passed": 37,
+  "total": 38,
+  "unitTests": 149,
+  "implementationBinding": "HTTP及人工报告对应原先已验证代码；最后仅调整clothes鉴权/JSON解析顺序，新增当前实现真实HTTP回归且149项通过；未改变正常已登录业务、页面或数据。最终实现摘要见implementation-hashes.json。"
+}

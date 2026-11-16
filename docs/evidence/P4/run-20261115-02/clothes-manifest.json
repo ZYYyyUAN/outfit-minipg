@@ -1,0 +1,90 @@
+{
+  "runId": "run-20261115-02",
+  "clothes": [
+    {
+      "id": 60,
+      "userId": 29,
+      "role": "primary"
+    },
+    {
+      "id": 61,
+      "userId": 29,
+      "role": "duplicate-name"
+    },
+    {
+      "id": 77,
+      "userId": 30,
+      "role": "fixture-C1"
+    },
+    {
+      "id": 78,
+      "userId": 30,
+      "role": "fixture-C2"
+    },
+    {
+      "id": 79,
+      "userId": 30,
+      "role": "fixture-C3"
+    },
+    {
+      "id": 80,
+      "userId": 30,
+      "role": "fixture-C4"
+    },
+    {
+      "id": 81,
+      "userId": 30,
+      "role": "fixture-C5"
+    },
+    {
+      "id": 82,
+      "userId": 30,
+      "role": "fixture-C6"
+    },
+    {
+      "id": 83,
+      "userId": 30,
+      "role": "fixture-C7"
+    },
+    {
+      "id": 84,
+      "userId": 30,
+      "role": "fixture-C8"
+    },
+    {
+      "id": 85,
+      "userId": 30,
+      "role": "fixture-C9"
+    },
+    {
+      "id": 86,
+      "userId": 30,
+      "role": "fixture-C10"
+    },
+    {
+      "id": 87,
+      "userId": 30,
+      "role": "fixture-C11"
+    },
+    {
+      "id": 88,
+      "userId": 30,
+      "role": "fixture-C12"
+    },
+    {
+      "id": 89,
+      "userId": 30,
+      "role": "fixture-C13"
+    },
+    {
+      "id": 90,
+      "userId": 30,
+      "role": "fixture-C14"
+    },
+    {
+      "id": 91,
+      "userId": 30,
+      "role": "fixture-C15"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "runId": "run-20261115-02",
+  "status": "http-and-fixture-passed",
+  "checks": 58,
+  "remaining": "process restart, native UI and final audit"
+}

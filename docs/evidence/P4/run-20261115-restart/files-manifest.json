@@ -1,0 +1,13 @@
+{
+  "runId": "run-20261115-restart",
+  "files": [
+    {
+      "userId": 31,
+      "imagePath": "users/31/3180506e-ac83-4dde-b618-245282c72e34.jpg",
+      "mimeType": "image/jpeg",
+      "size": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "retained": true
+    }
+  ]
+}

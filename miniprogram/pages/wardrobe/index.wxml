@@ -1,7 +1,20 @@
-<view class="page">
-  <view class="eyebrow">个人衣橱与穿搭日记</view>
-  <view class="title">衣橱</view>
-  <view class="description">衣物列表与维护将在衣橱模块接入。</view>
-  <view class="label">功能待开发</view>
-  <view class="section"><view class="section-title">从一件衣物开始</view><view class="hint">这里将用于整理日常单品，查看资料与穿着记录。</view></view>
+<view class="page wardrobe">
+  <view class="heading"><view><view class="eyebrow">日常单品 · 慢慢整理</view><view class="title">我的衣橱</view></view><button class="add" bindtap="create">＋ 新增</button></view>
+  <view class="search"><input value="{{keywordDraft}}" maxlength="-1" placeholder="搜索衣物名称" confirm-type="search" bindinput="keywordInput" bindconfirm="search"/><button bindtap="search">搜索</button><button wx:if="{{keywordDraft || keyword}}" bindtap="clearSearch">清空</button></view>
+  <view class="scopes"><button wx:for="{{scopes}}" wx:key="id" data-id="{{item.id}}" class="chip {{archived === item.id ? 'selected' : ''}}" bindtap="scope">{{item.name}}</button></view>
+  <scroll-view scroll-x class="category-strip"><view class="inline-options"><button class="chip {{!categoryId ? 'selected' : ''}}" data-id="" bindtap="category">全部分类</button><button wx:for="{{categories}}" wx:key="id" data-id="{{item.id}}" class="chip {{categoryId === item.id ? 'selected' : ''}}" bindtap="category">{{item.name}}</button></view></scroll-view>
+  <view wx:if="{{categoryError}}" class="error">{{categoryError}}<button class="text-button" bindtap="loadCategories">重试分类</button></view>
+  <view class="filter-row"><text class="hint">{{color || '全部颜色'}} · {{season || '全部季节'}}</text><button class="text-button" bindtap="openPanel">更多筛选</button></view>
+  <view wx:if="{{panel}}" class="filter-panel">
+    <view class="section-title">筛选衣物</view><view class="field-label">颜色</view><view class="options"><button class="chip {{!draftColor ? 'selected' : ''}}" data-value="" bindtap="chooseColor">全部</button><button wx:for="{{colors}}" wx:key="*this" class="chip {{draftColor === item ? 'selected' : ''}}" data-value="{{item}}" bindtap="chooseColor">{{item}}</button></view>
+    <view wx:if="{{draftColor}}" class="hint break-text">已选：{{draftColor}}</view><view wx:if="{{facetError}}" class="error">{{facetError}}<button class="text-button" bindtap="loadFacets">重试颜色</button></view>
+    <view class="field-label">适用季节</view><view class="options"><button class="chip {{!draftSeason ? 'selected' : ''}}" data-value="" bindtap="chooseSeason">全部</button><button wx:for="{{seasons}}" wx:key="*this" data-value="{{item}}" class="chip {{draftSeason === item ? 'selected' : ''}}" bindtap="chooseSeason">{{item}}</button></view>
+    <view class="actions"><button class="text-button" bindtap="resetPanel">重置</button><button class="text-button" bindtap="closePanel">取消</button><button class="button" bindtap="applyPanel">应用</button></view>
+  </view>
+  <view class="result-row"><text class="hint">{{page ? '共 ' + total + ' 件衣物' : '正在整理衣橱'}}</text><button wx:if="{{keyword || categoryId || color || season}}" class="text-button" bindtap="clearFilters">清除筛选</button></view>
+  <view class="clothes-grid"><view wx:for="{{items}}" wx:key="id" class="clothing"><view class="picture" data-id="{{item.id}}" bindtap="detail"><image wx:if="{{item.src}}" src="{{item.src}}" mode="aspectFit" data-id="{{item.id}}" binderror="imageError"/><text wx:else class="hint">{{item.imageState === 'failed' ? '图片暂不可用' : '图片读取中'}}</text></view><button wx:if="{{item.imageState === 'failed'}}" class="text-button" data-id="{{item.id}}" bindtap="retryImage">重试图片</button><view class="clothing-name" data-id="{{item.id}}" bindtap="detail">{{item.name}}</view><text wx:if="{{item.isArchived}}" class="archive-label">已归档</text><view class="hint break-text">{{item.color}} · {{item.season}}</view></view></view>
+  <view wx:if="{{error}}" class="status failed"><view class="error">{{error}}</view><button class="button secondary" bindtap="retry" disabled="{{busy}}">重新加载</button></view>
+  <view wx:if="{{busy}}" class="empty hint">正在读取衣物…</view>
+  <view wx:if="{{page && !items.length && !busy && !error}}" class="empty"><view class="section-title">{{keyword || categoryId || color || season ? '没有符合条件的衣物' : '这里还没有衣物'}}</view><view class="hint">{{keyword || categoryId || color || season ? '换个条件，看看其他单品。' : '从一件喜欢的日常单品开始。'}}</view><button wx:if="{{keyword || categoryId || color || season}}" class="button secondary" bindtap="clearFilters">清除筛选</button><button wx:else class="button" bindtap="create">新增衣物</button></view>
+  <button wx:if="{{page && items.length < total && !error}}" class="button secondary" bindtap="more" disabled="{{busy}}">{{busy ? '正在加载' : '加载更多'}}</button><view wx:if="{{page && items.length && items.length >= total}}" class="empty hint">已全部显示</view>
 </view>

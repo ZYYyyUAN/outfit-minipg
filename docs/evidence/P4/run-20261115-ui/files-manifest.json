@@ -1,0 +1,42 @@
+{
+  "runId": "run-20261115-ui",
+  "files": [
+    {
+      "userId": 35,
+      "imagePath": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "mimeType": "image/jpeg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retained": true,
+      "source": "manual successful upload; locally selected image",
+      "clothingIds": [
+        108,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122
+      ]
+    },
+    {
+      "userId": 35,
+      "imagePath": "users/35/6c3cc2b7-41e5-418e-ae2e-8eb0e62584e8.jpg",
+      "mimeType": "image/jpeg",
+      "size": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "retained": true,
+      "source": "manual successful upload; locally selected image",
+      "clothingIds": [
+        109
+      ]
+    }
+  ]
+}

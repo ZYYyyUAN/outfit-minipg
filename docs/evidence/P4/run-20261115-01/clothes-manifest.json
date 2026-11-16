@@ -1,0 +1,15 @@
+{
+  "runId": "run-20261115-01",
+  "clothes": [
+    {
+      "id": 58,
+      "userId": 27,
+      "role": "primary"
+    },
+    {
+      "id": 59,
+      "userId": 27,
+      "role": "duplicate-name"
+    }
+  ]
+}

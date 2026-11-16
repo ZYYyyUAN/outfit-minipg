@@ -1,0 +1,67 @@
+{
+  "scope": "file-registration-and-event-binding-only-not-native-compile",
+  "pages": [
+    {
+      "page": "pages/wardrobe/index",
+      "eventHandlers": [
+        "applyPanel",
+        "category",
+        "chooseColor",
+        "chooseSeason",
+        "clearFilters",
+        "clearSearch",
+        "closePanel",
+        "create",
+        "detail",
+        "imageError",
+        "keywordInput",
+        "loadCategories",
+        "loadFacets",
+        "more",
+        "openPanel",
+        "resetPanel",
+        "retry",
+        "retryImage",
+        "scope",
+        "search"
+      ],
+      "staticBindingsValid": true
+    },
+    {
+      "page": "pages/clothes/detail/index",
+      "eventHandlers": [
+        "archive",
+        "back",
+        "edit",
+        "imageFailed",
+        "load",
+        "moreDiaries",
+        "moreOutfits",
+        "preview",
+        "previewFailed",
+        "readImage",
+        "retryPreview"
+      ],
+      "staticBindingsValid": true
+    },
+    {
+      "page": "pages/clothes/edit/index",
+      "eventHandlers": [
+        "cancel",
+        "category",
+        "choose",
+        "discardCandidate",
+        "imageFailed",
+        "input",
+        "load",
+        "loadCategories",
+        "preview",
+        "readImage",
+        "save",
+        "season",
+        "upload"
+      ],
+      "staticBindingsValid": true
+    }
+  ]
+}
