@@ -1,0 +1,9 @@
+{
+  "batch": 6,
+  "gitBase": "a22d0068708c875f83475ec3e5ec144147bd481b",
+  "reuseAccount": 37,
+  "allowedExistingFields": [
+    "users.37.updated_at (login/logout only)"
+  ],
+  "businessWrites": false
+}

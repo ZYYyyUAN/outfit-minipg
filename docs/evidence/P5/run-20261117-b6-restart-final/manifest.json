@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "sequence": 12,
+  "runId": "run-20261117-b6-restart-final",
+  "batch": 6,
+  "accounts": [],
+  "rows": [
+    {
+      "table": "users",
+      "ownerId": 44,
+      "row": {
+        "key": 44,
+        "sha256": "29e600a1b184b2da9c6fcd1a4979019a46cff65d9c56c35aef83bbdd4ab53437"
+      },
+      "beforeSha256": "048f0dc1c512fc9aa70f20d16dcab1dbd31d38861ae3e6ca862f063934b192c7",
+      "transition": "logged-out-session",
+      "proof": {
+        "beforeUpdatedAt": "2026-11-17 12:58:56.018",
+        "afterUpdatedAt": "2026-11-17 12:59:19.381",
+        "beforeSha256": "048f0dc1c512fc9aa70f20d16dcab1dbd31d38861ae3e6ca862f063934b192c7",
+        "afterSha256": "29e600a1b184b2da9c6fcd1a4979019a46cff65d9c56c35aef83bbdd4ab53437"
+      }
+    },
+    {
+      "table": "users",
+      "ownerId": 45,
+      "row": {
+        "key": 45,
+        "sha256": "e8570799fa5bd3be96c42b61400cd247f23adbf3540775c8005c0fc1931a50d8"
+      },
+      "beforeSha256": "0a9706ec6e494494c8ffcaf9fe4806a02f40e6e22fb312e0f5d8eb87a9580e36",
+      "transition": "logged-out-session",
+      "proof": {
+        "beforeUpdatedAt": "2026-11-17 12:58:56.027",
+        "afterUpdatedAt": "2026-11-17 12:59:19.389",
+        "beforeSha256": "0a9706ec6e494494c8ffcaf9fe4806a02f40e6e22fb312e0f5d8eb87a9580e36",
+        "afterSha256": "e8570799fa5bd3be96c42b61400cd247f23adbf3540775c8005c0fc1931a50d8"
+      }
+    }
+  ],
+  "images": [],
+  "referencedFixtureRunId": "run-20261117-b6-integration-final",
+  "processes": [
+    {
+      "pid": 73012,
+      "origin": "http://127.0.0.1:50869",
+      "startedAt": "2026-11-17T12:59:18.465Z",
+      "stoppedAt": "2026-11-17T12:59:18.961Z",
+      "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+    },
+    {
+      "pid": 50148,
+      "origin": "http://127.0.0.1:50869",
+      "startedAt": "2026-11-17T12:59:18.996Z",
+      "stoppedAt": "2026-11-17T12:59:19.404Z",
+      "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+    }
+  ],
+  "allAccountsLoggedOut": true
+}

@@ -1,0 +1,285 @@
+{
+  "sourceRunId": "run-20261117-b6-integration-final",
+  "accounts": {
+    "a": {
+      "id": 44,
+      "username": "p5_57220b6c_a",
+      "createdByRunId": "run-20261117-b6-integration-final"
+    },
+    "b": {
+      "id": 45,
+      "username": "p5_57220b6c_b",
+      "createdByRunId": "run-20261117-b6-integration-final"
+    }
+  },
+  "outfits": [
+    {
+      "id": 67,
+      "user_id": 44,
+      "name": "Alpha_%!日常",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    {
+      "id": 68,
+      "user_id": 44,
+      "name": "ALPHA日常",
+      "occasion": "通勤长",
+      "is_archived": 0
+    },
+    {
+      "id": 69,
+      "user_id": 44,
+      "name": "P5五件",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    {
+      "id": 70,
+      "user_id": 44,
+      "name": "P5二十件",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    {
+      "id": 71,
+      "user_id": 44,
+      "name": "更新后的搭配",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    {
+      "id": 72,
+      "user_id": 44,
+      "name": "P5重复",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    {
+      "id": 73,
+      "user_id": 44,
+      "name": "P5分页1",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    {
+      "id": 74,
+      "user_id": 44,
+      "name": "P5分页2",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    {
+      "id": 75,
+      "user_id": 44,
+      "name": "P5分页3",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    {
+      "id": 76,
+      "user_id": 44,
+      "name": "P5分页4",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    {
+      "id": 77,
+      "user_id": 44,
+      "name": "P5分页5",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    {
+      "id": 78,
+      "user_id": 44,
+      "name": "P5分页6",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    {
+      "id": 79,
+      "user_id": 44,
+      "name": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+      "is_archived": 0
+    },
+    {
+      "id": 80,
+      "user_id": 44,
+      "name": "P5归档一",
+      "occasion": "仅归档",
+      "is_archived": 1
+    },
+    {
+      "id": 81,
+      "user_id": 44,
+      "name": "P5归档二",
+      "occasion": "通勤",
+      "is_archived": 1
+    },
+    {
+      "id": 82,
+      "user_id": 45,
+      "name": "B隔离搭配",
+      "occasion": "B专属场景",
+      "is_archived": 0
+    }
+  ],
+  "clothes": [
+    {
+      "id": 167,
+      "user_id": 44,
+      "name": "Batch6当前衣物_%!",
+      "image_path": "users/44/99380d86-e8b8-4115-86ed-6605ebaf8cc9.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 168,
+      "user_id": 44,
+      "name": "P5衣物2",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 169,
+      "user_id": 44,
+      "name": "P5衣物3",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 170,
+      "user_id": 44,
+      "name": "P5衣物4",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 171,
+      "user_id": 44,
+      "name": "P5衣物5",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 172,
+      "user_id": 44,
+      "name": "P5衣物6",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 173,
+      "user_id": 44,
+      "name": "P5衣物7",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 174,
+      "user_id": 44,
+      "name": "P5衣物8",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 175,
+      "user_id": 44,
+      "name": "P5衣物9",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 176,
+      "user_id": 44,
+      "name": "P5衣物10",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 177,
+      "user_id": 44,
+      "name": "P5衣物11",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 178,
+      "user_id": 44,
+      "name": "P5衣物12",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 179,
+      "user_id": 44,
+      "name": "P5衣物13",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 180,
+      "user_id": 44,
+      "name": "P5衣物14",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 181,
+      "user_id": 44,
+      "name": "P5衣物15",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 182,
+      "user_id": 44,
+      "name": "P5衣物16",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 183,
+      "user_id": 44,
+      "name": "P5衣物17",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 184,
+      "user_id": 44,
+      "name": "P5衣物18",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 185,
+      "user_id": 44,
+      "name": "P5衣物19",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 186,
+      "user_id": 44,
+      "name": "P5衣物20",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 1
+    },
+    {
+      "id": 187,
+      "user_id": 44,
+      "name": "P5衣物21",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "is_archived": 0
+    },
+    {
+      "id": 188,
+      "user_id": 45,
+      "name": "B专属衣物",
+      "image_path": "users/45/986338b8-7e25-48b4-af43-027c1d8cfebf.jpg",
+      "is_archived": 0
+    }
+  ]
+}

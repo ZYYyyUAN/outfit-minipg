@@ -1,0 +1,10 @@
+{
+  "diariesSha256": "468e0406606e68440ea13db3209c99e24bc292baf208c6847c86f7b2d6b54f7f",
+  "diaryItemsSha256": "484b789ea6b0c568bde75acfe38c6cf43a94c13517176f2cef4bc07fb28b352e",
+  "unchanged": true,
+  "clothingId": 123,
+  "wearCountBefore": 0,
+  "wearCountAfter": 0,
+  "lastWornDateBefore": null,
+  "lastWornDateAfter": null
+}

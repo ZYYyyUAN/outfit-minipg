@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "sequence": 10,
+  "runId": "run-20261117-b6-source",
+  "batch": 6,
+  "accounts": [],
+  "rows": [
+    {
+      "table": "users",
+      "ownerId": 37,
+      "row": {
+        "key": 37,
+        "sha256": "a08aa270d9e8eb6653ee41f85ef9fc9b567343b59b5ce324f04ca6865431aed9"
+      },
+      "beforeSha256": "ccc7e9e89a5b5a3891e96c7a162d1d925b82a3b240d6a30e6c4e2dad709e6330",
+      "transition": "logged-out-session",
+      "proof": {
+        "beforeUpdatedAt": "2026-11-17 12:49:32.425",
+        "afterUpdatedAt": "2026-11-17 12:57:15.835",
+        "beforeSha256": "ccc7e9e89a5b5a3891e96c7a162d1d925b82a3b240d6a30e6c4e2dad709e6330",
+        "afterSha256": "a08aa270d9e8eb6653ee41f85ef9fc9b567343b59b5ce324f04ca6865431aed9"
+      },
+      "allowedFields": [
+        "updated_at"
+      ],
+      "changedFields": [
+        "updated_at"
+      ]
+    }
+  ],
+  "images": [],
+  "referencedFixtureRunId": "run-20261117-b2-http2",
+  "referencedAccountIds": [
+    37,
+    38
+  ],
+  "sessionsOpened": 1,
+  "allAccountsLoggedOut": true,
+  "processClosed": true
+}

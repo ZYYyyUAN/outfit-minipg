@@ -22,12 +22,14 @@ audit/preflight按阶段基线及全部已登记manifest核对旧行、结构、
   node --env-file-if-exists=.env scripts/verify-outfits.mjs --http <唯一runId>
 http：显式注册专用A/B、上传、准备21件衣物及搭配/独立日记夹具，执行后端定向验证。
 成功数据/上传保留，凭据仅保存本机忽略目录，最终退出；不操作开发者工具。
---prepare-ui / --restart 尚未实现，明确拒绝，不执行写操作。
+--integrate <runId>：Batch6完整HTTP/SQL/故障及C回归。
+--restart <runId>：复用最新Batch6夹具，实际双子进程重启/会话/图片检查。
+--prepare-ui 尚未实现；Batch7使用本批生成的manual指南。
 `;
 export function parseArgs(args) {
   if (args.length === 0 || (args.length === 1 && args[0] === '--help')) return { mode: 'help' };
-  if (['--prepare-ui', '--restart'].includes(args[0])) throw Object.assign(new Error('此批次尚未实现该模式'), { code: 'UNSUPPORTED_MODE' });
-  if (args.length !== 2 || !['--preflight', '--audit', '--http'].includes(args[0]) || !/^[a-z0-9][a-z0-9_-]{0,79}$/.test(args[1])) throw Object.assign(new Error('请使用帮助中的模式及安全唯一runId'), { code: 'INVALID_ARGUMENTS' });
+  if (['--prepare-ui'].includes(args[0])) throw Object.assign(new Error('此批次尚未实现该模式'), { code: 'UNSUPPORTED_MODE' });
+  if (args.length !== 2 || !['--preflight', '--audit', '--http', '--integrate', '--restart'].includes(args[0]) || !/^[a-z0-9][a-z0-9_-]{0,79}$/.test(args[1])) throw Object.assign(new Error('请使用帮助中的模式及安全唯一runId'), { code: 'INVALID_ARGUMENTS' });
   return { mode: args[0].slice(2), runId: args[1] };
 }
 export async function reserveRun(directory, runId) {
@@ -210,16 +212,20 @@ export async function main(args = process.argv.slice(2)) {
   if (options.mode === 'help') { console.log(help); return; }
   const directory = await reserveRun(evidence, options.runId);
   const baselineFile = await findBaseline();
-  if (['audit', 'http'].includes(options.mode)) assert.ok(baselineFile, 'BASELINE_REQUIRED');
+  if (['audit', 'http', 'integrate', 'restart'].includes(options.mode)) assert.ok(baselineFile, 'BASELINE_REQUIRED');
   const gitState = await gitPrerequisites();
   const { readConfig } = await import('../src/config.js');
   const { createDatabase } = await import('../src/db.js');
   const config = readConfig(), database = createDatabase(config);
   try {
-    if (options.mode === 'http') {
+    if (options.mode === 'restart') {
+      const {verifyRestart}=await import('./outfit-restart.mjs');
+      await verifyRestart({runId:options.runId,directory,baselineFile,config,database,gitState,verification:{captureSnapshot,compareCumulative,loadManifests,sessionTransitionProof}});return;
+    }
+    if (['http','integrate'].includes(options.mode)) {
       const { verifyOutfitHttp } = await import('./outfit-http.mjs');
       await verifyOutfitHttp({ runId: options.runId, directory, baselineFile, config, database, gitState,
-        verification: { captureSnapshot, compareCumulative, loadManifests, historicalReleaseHashes } });
+        batch:options.mode==='integrate'?6:2, verification: { captureSnapshot, compareCumulative, loadManifests, historicalReleaseHashes } });
       return;
     }
     if (!baselineFile) {

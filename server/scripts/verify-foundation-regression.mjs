@@ -14,15 +14,19 @@ import {verifyPassword} from '../../shared/password.mjs';
 import {implementationHashes} from './verify-auth.mjs';
 import {makeFixtures} from '../test/media-fixtures.mjs';
 import {verifyOriginals} from './verify-wardrobe.mjs';
-const root=path.dirname(serverRoot),evidence=path.join(root,'docs/evidence/P4');
+import {captureSnapshot,compareCumulative,loadManifests,historicalReleaseHashes} from './verify-outfits.mjs';
+import {fixtureManifestRows} from './outfit-http.mjs';
+const root=path.dirname(serverRoot);
+let evidence=path.join(root,'docs/evidence/P4');
 const hash=x=>createHash('sha256').update(x).digest('hex');
 const read=async p=>JSON.parse(await fs.readFile(p,'utf8'));
 const write=(p,value)=>fs.writeFile(p,JSON.stringify(value,null,2)+'\n');
 async function uploadFiles(){const files={};async function walk(folder){for(const e of await fs.readdir(path.join(root,folder),{withFileTypes:true})){const f=folder+'/'+e.name;if(e.isDirectory())await walk(f);else{const bytes=await fs.readFile(path.join(root,f));files[f]={sha256:hash(bytes),bytes:bytes.length};}}}await walk('server/uploads');return files;}
 async function audit(database){return verifyOriginals(database);}
 async function main(){
-  const args=process.argv.slice(2);if(!args.length){console.log('Usage: verify-foundation-regression.mjs --run-id <unique-id> | --audit <existing-run-id>');return;}
+  const args=process.argv.slice(2);const p5=args[0]==='--p5';if(p5){args.shift();evidence=path.join(root,'docs/evidence/P5');}if(!args.length){console.log('Usage: verify-foundation-regression.mjs --run-id <unique-id> | --audit <existing-run-id>');return;}
   assert.ok(args.length===2&&['--run-id','--audit'].includes(args[0])&&/^[A-Za-z0-9_-]+$/.test(args[1]),'INVALID_ARGUMENTS');
+  assert.ok(!p5||args[0]==='--run-id','P5_REQUIRES_NEW_RUN');
   const runId=args[1],dir=path.join(evidence,runId),config=readConfig(),database=createDatabase(config);
   if(args[0]==='--audit'){
     const report={runId,at:new Date().toISOString(),state:'running'};
@@ -31,12 +35,16 @@ async function main(){
     finally{await database.end();await fs.writeFile(path.join(dir,'audit-'+Date.now()+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});}
     console.log(JSON.stringify({state:report.state,counts:report.protection?.counts,newImages:report.protection?.newImages,failure:report.failure}));return;
   }
+  const prior=p5?await loadManifests():[];
+  const baseline=p5?await read(path.join(root,'docs/evidence/P5/run-20261116-b1-baseline/baseline.json')):null;
+  const releases=p5?await historicalReleaseHashes():null;
+  const checkProtection=async()=>p5?compareCumulative(baseline,await captureSnapshot(database,config.uploadRoot),await loadManifests()):audit(database);
   await fs.mkdir(dir);await fs.mkdir(path.join(dir,'fixtures'));await fs.mkdir(path.join(dir,'manual'));
   const suffix=randomBytes(4).toString('hex'),accounts=['a','b'].map(part=>({runId,username:'p4_'+suffix+'_'+part,id:null,purpose:part==='u'?'manual':'HTTP',state:'reserved'})),files=[];
   const passwords=[' '+randomBytes(12).toString('base64url')+' ',randomBytes(16).toString('base64url')],active=new Map();
   const saveAccounts=()=>write(path.join(dir,'accounts.json'),{runId,accounts}),saveFiles=()=>write(path.join(dir,'files-manifest.json'),{runId,files});await saveAccounts();await saveFiles();
   const fixtures=await makeFixtures();await fs.writeFile(path.join(dir,'fixtures/ui-avatar.png'),fixtures.png);
-  const ui={runId,files:[{path:'assets/clothes/clothing-001.jpg',sha256:hash(fixtures.jpeg)},{path:'docs/evidence/P4/'+runId+'/fixtures/ui-avatar.png',sha256:hash(fixtures.png)}]};await write(path.join(dir,'ui-fixtures.json'),ui);
+  const ui={runId,files:[{path:'assets/clothes/clothing-001.jpg',sha256:hash(fixtures.jpeg)},{path:(p5?'docs/evidence/P5/':'docs/evidence/P4/')+runId+'/fixtures/ui-avatar.png',sha256:hash(fixtures.png)}]};await write(path.join(dir,'ui-fixtures.json'),ui);
   const report={runId,startedAt:new Date().toISOString(),state:'running',cases:[],implementation:await implementationHashes(),processes:[]};
   let server,connection;const reserve=createServer();await new Promise(r=>reserve.listen(0,'127.0.0.1',r));const port=reserve.address().port;await new Promise(r=>reserve.close(r));const origin='http://127.0.0.1:'+port;
   async function listen(){
@@ -54,10 +62,11 @@ async function main(){
   async function upload(label,bytes,i,source){const value=await call(label,{url:'/api/uploads',method:'POST',form:form(bytes),token:active.get(i),status:201});assert.match(value.imagePath,/^users\/[1-9]\d*\/[0-9a-f-]{36}\.(jpg|png)$/);assert.equal(value.imagePath.split('/')[1],String(accounts[i].id));assert.equal(value.imageUrl,origin+'/api/media/'+path.basename(value.imagePath));assert.equal(value.size,bytes.length);assert.equal(hash(await fs.readFile(path.join(config.uploadRoot,value.imagePath))),hash(bytes));files.push({runId,userId:accounts[i].id,imagePath:value.imagePath,filename:path.basename(value.imagePath),mimeType:value.mimeType,size:bytes.length,sha256:hash(bytes),source:{kind:source,sha256:hash(bytes)},retention:'successful HTTP upload retained',avatarReferenced:false});await saveFiles();return value;}
   async function image(label,value,i){const r=await fetch(origin+'/api/media/'+path.basename(value.imagePath),{headers:{Authorization:'Bearer '+active.get(i)}});assert.equal(r.status,200,label+':STATUS');const bytes=Buffer.from(await r.arrayBuffer());const recorded=files.find(f=>f.imagePath===value.imagePath);assert.equal(hash(bytes),recorded.sha256);assert.equal(r.headers.get('content-type'),recorded.mimeType);assert.equal(r.headers.get('content-length'),String(recorded.size));assert.equal(r.headers.get('cache-control'),'private, no-store');assert.equal(r.headers.get('etag'),null);report.cases.push({id:'HTTP-'+String(report.cases.length+1).padStart(3,'0'),label,status:200,sha256:hash(bytes),bytes:bytes.length,passed:true});}
   try{
-    connection=await database.getConnection();report.identity=await probe(connection);await audit(database);for(const a of accounts){const [rows]=await connection.execute('SELECT id FROM users WHERE username=?',[a.username]);assert.equal(rows.length,0,'ACCOUNT_COLLISION');}
+    connection=await database.getConnection();report.identity=await probe(connection);await checkProtection();for(const a of accounts){const [rows]=await connection.execute('SELECT id FROM users WHERE username=?',[a.username]);assert.equal(rows.length,0,'ACCOUNT_COLLISION');}
     await listen();
     await call('anonymous health',{url:'/api/health'});
-    for(const url of ['/api/outfits','/api/diaries','/api/statistics','/uploads/users/11/file.jpg','/api/api/health'])await call('unimplemented '+url,{url,status:404,code:'NOT_FOUND'});
+    for(const url of ['/api/diaries','/api/statistics','/uploads/users/11/file.jpg','/api/api/health'])await call('unimplemented '+url,{url,status:404,code:'NOT_FOUND'});
+    await call('outfits anonymous authentication migrated from old 404',{url:'/api/outfits',status:401,code:'UNAUTHENTICATED'});
     for(let i=0;i<2;i++){
       const user=await call('register '+i,{url:'/api/auth/register',method:'POST',body:{username:i?' '+accounts[i].username.toUpperCase()+' ':accounts[i].username,password:passwords[i],nickname:i?'隔离账号':'衣😀'.repeat(10)},status:201});
       accounts[i].id=user.id;accounts[i].state='registered';await write(path.join(dir,'accounts.json'),{runId,accounts});
@@ -117,11 +126,24 @@ async function main(){
     const [expired]=await connection.execute("UPDATE users SET auth_expires_at='2000-01-01 00:00:00.000' WHERE id=? AND auth_token_hash=?",[accounts[0].id,tokenHash(a.token)]);assert.equal(expired.affectedRows,1);report.mediaExpiryFixture={id:accounts[0].id,column:'auth_expires_at',affectedRows:1};
     for(const [route,method,body]of [['/api/categories','GET'],['/api/media/'+path.basename(jpeg.imagePath),'GET'],['/api/uploads','POST',form(fixtures.png)]]){const prior=await uploadFiles();await call('expired media '+route,{url:route,method,form:body,token:a.token,status:401,code:'UNAUTHENTICATED'});assert.deepEqual(await uploadFiles(),prior);}a=await loginAs(0);
     for(const i of [0,1]){await call('final media logout '+i,{url:'/api/auth/logout',method:'POST',token:active.get(i)});active.delete(i);accounts[i].state='logged-out';await saveAccounts();}
-    report.protection=await audit(database,{recordManual:true});report.state='automated-passed';
+    report.state='automated-passed';
   }catch(error){report.state='failed';report.failure={code:error.code??'CHECK_FAILED',check:error.code==='ERR_ASSERTION'?error.message.split('\n')[0]:'Sensitive exception omitted'};process.exitCode=1;}
   finally{
     if(server&&server.exitCode===null){for(const [i,token]of active){try{await call('failure cleanup logout '+i,{url:'/api/auth/logout',method:'POST',token});accounts[i].state='logged-out';}catch(error){report.cleanupFailure=true;process.exitCode=1;}}await close();}
-    connection?.release();await database.end();await saveAccounts();await saveFiles();report.completedAt=new Date().toISOString();await write(path.join(dir,'automated-results.json'),report);
+    connection?.release();
+    if(p5){
+      try{
+        const snapshot=await captureSnapshot(database,config.uploadRoot);
+        const c=await database.getConnection();let all={};try{for(const table of ['users','clothes','outfits','outfit_items','diaries','diary_items'])all[table]=(await c.query('SELECT * FROM '+table))[0];}finally{c.release();}
+        const fixture={accounts:Object.fromEntries(accounts.filter(a=>a.id).map((a,i)=>[i,a])),clothes:{},outfits:{},diaries:{}};
+        const inventory=fixtureManifestRows(all,fixture);assert.deepEqual(inventory.unknownRows,[]);assert.deepEqual(inventory.missingRows,[]);
+        const manifest={version:1,sequence:Math.max(...prior.map(m=>m.sequence))+1,runId,batch:6,accounts:accounts.filter(a=>a.id).map(a=>({id:a.id,createdByRunId:runId})),rows:inventory.rows,images:files.map(f=>({userId:f.userId,path:f.imagePath,size:f.size,sha256:f.sha256,mimeType:f.mimeType,references:[],retention:f.retention})),allAccountsLoggedOut:accounts.every(a=>a.state==='logged-out'),processClosed:report.processes.every(p=>p.stoppedAt)};
+        assert.ok(manifest.allAccountsLoggedOut);assert.ok(manifest.processClosed);await write(path.join(dir,'manifest.json'),manifest);
+        report.protection=compareCumulative(baseline,snapshot,[...prior,manifest]);assert.deepEqual(await historicalReleaseHashes(),releases);await write(path.join(dir,'snapshot.json'),snapshot);
+        await fs.mkdir(path.join(serverRoot,'.p5-private'),{recursive:true});await write(path.join(serverRoot,'.p5-private',runId+'.json'),{accounts:accounts.map((a,i)=>({id:a.id,username:a.username,password:passwords[i]}))});
+      }finally{await database.end();}
+    }else{await database.end();}
+    await saveAccounts();await saveFiles();report.completedAt=new Date().toISOString();await write(path.join(dir,'automated-results.json'),report);
   }
   console.log(JSON.stringify({runId,state:report.state,httpCases:report.cases.length,regressionCases:report.migratedAuthCases,newImages:files.length,failure:report.failure}));
 }

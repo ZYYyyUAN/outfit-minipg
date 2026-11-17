@@ -1,0 +1,462 @@
+[
+  {
+    "key": "A1",
+    "outfitId": 67,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 332,
+    "parent": {
+      "id": 67,
+      "user_id": 44,
+      "name": "Alpha_%!日常",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 167,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A2",
+    "outfitId": 68,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 333,
+    "parent": {
+      "id": 68,
+      "user_id": 44,
+      "name": "ALPHA日常",
+      "occasion": "通勤长",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 167,
+        "sort_order": 1
+      },
+      {
+        "clothing_id": 168,
+        "sort_order": 2
+      },
+      {
+        "clothing_id": 169,
+        "sort_order": 3
+      },
+      {
+        "clothing_id": 170,
+        "sort_order": 4
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A3",
+    "outfitId": 69,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 334,
+    "parent": {
+      "id": 69,
+      "user_id": 44,
+      "name": "P5五件",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 171,
+        "sort_order": 1
+      },
+      {
+        "clothing_id": 168,
+        "sort_order": 2
+      },
+      {
+        "clothing_id": 186,
+        "sort_order": 3
+      },
+      {
+        "clothing_id": 170,
+        "sort_order": 4
+      },
+      {
+        "clothing_id": 167,
+        "sort_order": 5
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A4",
+    "outfitId": 70,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 335,
+    "parent": {
+      "id": 70,
+      "user_id": 44,
+      "name": "P5二十件",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 186,
+        "sort_order": 1
+      },
+      {
+        "clothing_id": 185,
+        "sort_order": 2
+      },
+      {
+        "clothing_id": 184,
+        "sort_order": 3
+      },
+      {
+        "clothing_id": 183,
+        "sort_order": 4
+      },
+      {
+        "clothing_id": 182,
+        "sort_order": 5
+      },
+      {
+        "clothing_id": 181,
+        "sort_order": 6
+      },
+      {
+        "clothing_id": 180,
+        "sort_order": 7
+      },
+      {
+        "clothing_id": 179,
+        "sort_order": 8
+      },
+      {
+        "clothing_id": 178,
+        "sort_order": 9
+      },
+      {
+        "clothing_id": 177,
+        "sort_order": 10
+      },
+      {
+        "clothing_id": 176,
+        "sort_order": 11
+      },
+      {
+        "clothing_id": 175,
+        "sort_order": 12
+      },
+      {
+        "clothing_id": 174,
+        "sort_order": 13
+      },
+      {
+        "clothing_id": 173,
+        "sort_order": 14
+      },
+      {
+        "clothing_id": 172,
+        "sort_order": 15
+      },
+      {
+        "clothing_id": 171,
+        "sort_order": 16
+      },
+      {
+        "clothing_id": 170,
+        "sort_order": 17
+      },
+      {
+        "clothing_id": 169,
+        "sort_order": 18
+      },
+      {
+        "clothing_id": 168,
+        "sort_order": 19
+      },
+      {
+        "clothing_id": 167,
+        "sort_order": 20
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A5",
+    "outfitId": 71,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 336,
+    "parent": {
+      "id": 71,
+      "user_id": 44,
+      "name": "更新后的搭配",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 171,
+        "sort_order": 1
+      },
+      {
+        "clothing_id": 169,
+        "sort_order": 2
+      },
+      {
+        "clothing_id": 167,
+        "sort_order": 3
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A6",
+    "outfitId": 72,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 337,
+    "parent": {
+      "id": 72,
+      "user_id": 44,
+      "name": "P5重复",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 168,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A7",
+    "outfitId": 73,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 338,
+    "parent": {
+      "id": 73,
+      "user_id": 44,
+      "name": "P5分页1",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 167,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A8",
+    "outfitId": 74,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 339,
+    "parent": {
+      "id": 74,
+      "user_id": 44,
+      "name": "P5分页2",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 168,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A9",
+    "outfitId": 75,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 340,
+    "parent": {
+      "id": 75,
+      "user_id": 44,
+      "name": "P5分页3",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 169,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A10",
+    "outfitId": 76,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 341,
+    "parent": {
+      "id": 76,
+      "user_id": 44,
+      "name": "P5分页4",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 170,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A11",
+    "outfitId": 77,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 342,
+    "parent": {
+      "id": 77,
+      "user_id": 44,
+      "name": "P5分页5",
+      "occasion": "通勤",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 171,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A12",
+    "outfitId": 78,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 343,
+    "parent": {
+      "id": 78,
+      "user_id": 44,
+      "name": "P5分页6",
+      "occasion": "休闲",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 172,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A13",
+    "outfitId": 79,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 344,
+    "parent": {
+      "id": 79,
+      "user_id": 44,
+      "name": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 186,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A14",
+    "outfitId": 80,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 345,
+    "parent": {
+      "id": 80,
+      "user_id": 44,
+      "name": "P5归档一",
+      "occasion": "仅归档",
+      "is_archived": 1
+    },
+    "items": [
+      {
+        "clothing_id": 167,
+        "sort_order": 1
+      },
+      {
+        "clothing_id": 168,
+        "sort_order": 2
+      },
+      {
+        "clothing_id": 169,
+        "sort_order": 3
+      },
+      {
+        "clothing_id": 170,
+        "sort_order": 4
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "A15",
+    "outfitId": 81,
+    "userId": 44,
+    "newPhysicalConnection": true,
+    "connectionId": 346,
+    "parent": {
+      "id": 81,
+      "user_id": 44,
+      "name": "P5归档二",
+      "occasion": "通勤",
+      "is_archived": 1
+    },
+    "items": [
+      {
+        "clothing_id": 186,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  },
+  {
+    "key": "B1",
+    "outfitId": 82,
+    "userId": 45,
+    "newPhysicalConnection": true,
+    "connectionId": 347,
+    "parent": {
+      "id": 82,
+      "user_id": 45,
+      "name": "B隔离搭配",
+      "occasion": "B专属场景",
+      "is_archived": 0
+    },
+    "items": [
+      {
+        "clothing_id": 188,
+        "sort_order": 1
+      }
+    ],
+    "passed": true
+  }
+]

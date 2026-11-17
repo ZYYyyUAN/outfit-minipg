@@ -1,0 +1,13 @@
+[
+  {
+    "label": "O03 current attributes and ordered relation",
+    "newConnection": true,
+    "outfitId": 49,
+    "clothingIds": [
+      142,
+      125,
+      123
+    ],
+    "passed": true
+  }
+]

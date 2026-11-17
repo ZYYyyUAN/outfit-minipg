@@ -1,0 +1,58 @@
+[
+  {
+    "label": "reuse A login",
+    "method": "POST",
+    "path": "/auth/login",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "C03 before source entry",
+    "method": "GET",
+    "path": "/clothes/123",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O03 source and current full clothes",
+    "method": "GET",
+    "path": "/outfits/49",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "C07 current outfit relation",
+    "method": "GET",
+    "path": "/clothes/123/outfits?pageSize=50",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O01 current previews",
+    "method": "GET",
+    "path": "/outfits?archived=all",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O02 facets",
+    "method": "GET",
+    "path": "/outfits/facets?archived=all",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "C03 after source entry",
+    "method": "GET",
+    "path": "/clothes/123",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "A03 final logout",
+    "method": "POST",
+    "path": "/auth/logout",
+    "expected": 200,
+    "actual": 200
+  }
+]

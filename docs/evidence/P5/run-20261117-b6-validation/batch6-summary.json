@@ -1,0 +1,208 @@
+{
+  "batch": 6,
+  "gitBase": "a22d0068708c875f83475ec3e5ec144147bd481b",
+  "stage5Complete": false,
+  "automaticPassed": true,
+  "unitTests": 313,
+  "historicalSemantics": {
+    "retained": 149,
+    "updated": 0,
+    "notApplicable": 0,
+    "mapping": "historical-149-map.json"
+  },
+  "runs": {
+    "integration": {
+      "runId": "run-20261117-b6-integration-final",
+      "httpCases": 302,
+      "rollbackCases": 2,
+      "historicalFreshOrderCalls": 17,
+      "intermediateSqlEvidence": "overwritten by original final summary; not claimed recovered"
+    },
+    "foundation": {
+      "runId": "run-20261117-b6-foundation",
+      "httpCases": 121,
+      "migratedAuthCases": 65
+    },
+    "restart": {
+      "runId": "run-20261117-b6-restart-final",
+      "httpCases": 11,
+      "actualDifferentOwnedChildProcesses": 2
+    },
+    "source": {
+      "runId": "run-20261117-b6-source",
+      "httpCases": 8,
+      "newConnectionSqlChecks": 1
+    },
+    "reviewSql": {
+      "runId": "run-20261117-b6-review-sql",
+      "currentOrderedOutfits": 16,
+      "separatePhysicalConnections": 16,
+      "sessionsOpened": 0,
+      "databaseWrites": false
+    }
+  },
+  "counts": {
+    "users": 29,
+    "categories": 7,
+    "clothes": 125,
+    "outfits": 63,
+    "outfit_items": 197,
+    "diaries": 21,
+    "diary_items": 71
+  },
+  "totalImages": 83,
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2",
+      "run-20261117-b3-validation",
+      "run-20261117-b4-save",
+      "run-20261117-b5-linkage",
+      "run-20261117-b5-linkage-final",
+      "run-20261117-b6-integration",
+      "run-20261117-b6-restart3",
+      "run-20261117-b6-foundation",
+      "run-20261117-b6-source",
+      "run-20261117-b6-integration-final",
+      "run-20261117-b6-restart-final"
+    ],
+    "registeredAccounts": 8,
+    "registeredRows": 276,
+    "registeredImages": 12,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0,
+    "historicalLocalReportsUnchanged": true,
+    "historicalLocalReportCount": 6
+  },
+  "newThisBatch": {
+    "accounts": 6,
+    "clothes": 44,
+    "outfits": 32,
+    "outfitItems": 94,
+    "diaries": 2,
+    "diaryItems": 4,
+    "images": 10
+  },
+  "accountsLoggedOut": true,
+  "ownedApplicationsClosed": true,
+  "developerToolPortOpened": false,
+  "metadataNote": "generic audit retains historical batch:2 and old pending; this batch6 wrapper binds actual current completion; prior raw evidence not rewritten",
+  "acceptance": {
+    "V02": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V03": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V04": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V05": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V06": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V07": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V08": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V09": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V10": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V11": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V12": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V13": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V14": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V15": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V16": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V17": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-integration-final/http-results.json;sql-results.json;rollback-results.json",
+      "native": "pending Batch7 where applicable"
+    },
+    "V23": {
+      "automatic": "passed",
+      "evidence": "integration-final current name/alternate own real image/archive HTTP; SQL; final-tests.txt",
+      "native": "pending Batch7"
+    },
+    "V25": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-source/source-entry.json;historical-independence.json",
+      "native": "pending Batch7"
+    },
+    "V26": {
+      "automatic": "passed",
+      "evidence": "run-20261117-b6-restart-final/restart-proof.json;processes.json",
+      "sqlEvidenceCorrection": "restart query uses pooled connection; independent physical SQL proof in review-sql"
+    },
+    "V27": {
+      "automatic": "passed",
+      "evidence": "historical-149-map.json;foundation/automated-results.json;integration-final/http-results.json"
+    },
+    "V31-V33": {
+      "automatic": "passed through Batch6",
+      "evidence": "run-20261117-b6-final/results.json; delivery/review records",
+      "stageClosure": "pending Batch7"
+    },
+    "V28-V30": {
+      "state": "pending Batch7 actual native/manual/visual",
+      "guide": "manual-guide.md"
+    },
+    "V34": {
+      "state": "pending Batch7; no implementation p5 tag"
+    }
+  },
+  "finalAudit": "run-20261117-b6-post-review-audit/results.json",
+  "review": "review-results.json"
+}

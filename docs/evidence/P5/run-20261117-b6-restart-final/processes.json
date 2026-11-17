@@ -1,0 +1,16 @@
+[
+  {
+    "pid": 73012,
+    "origin": "http://127.0.0.1:50869",
+    "startedAt": "2026-11-17T12:59:18.465Z",
+    "stoppedAt": "2026-11-17T12:59:18.961Z",
+    "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+  },
+  {
+    "pid": 50148,
+    "origin": "http://127.0.0.1:50869",
+    "startedAt": "2026-11-17T12:59:18.996Z",
+    "stoppedAt": "2026-11-17T12:59:19.404Z",
+    "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+  }
+]

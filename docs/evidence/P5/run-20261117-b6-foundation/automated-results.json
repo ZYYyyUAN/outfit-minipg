@@ -1,0 +1,1075 @@
+{
+  "runId": "run-20261117-b6-foundation",
+  "startedAt": "2026-11-17T12:56:55.261Z",
+  "state": "automated-passed",
+  "cases": [
+    {
+      "id": "HTTP-001",
+      "label": "anonymous health",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-002",
+      "label": "unimplemented /api/diaries",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-003",
+      "label": "unimplemented /api/statistics",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-004",
+      "label": "unimplemented /uploads/users/11/file.jpg",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-005",
+      "label": "unimplemented /api/api/health",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-006",
+      "label": "outfits anonymous authentication migrated from old 404",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-007",
+      "label": "register 0",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-008",
+      "label": "register 1",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-009",
+      "label": "duplicate normalized username",
+      "status": 409,
+      "code": "USERNAME_TAKEN",
+      "passed": true
+    },
+    {
+      "id": "HTTP-010",
+      "label": "registration missing",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-011",
+      "label": "registration array",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-012",
+      "label": "registration type",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-013",
+      "label": "registration extra",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-014",
+      "label": "registration short name",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-015",
+      "label": "registration long name",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-016",
+      "label": "registration unicode username",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-017",
+      "label": "registration short password",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-018",
+      "label": "registration long password",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-019",
+      "label": "registration empty nickname",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-020",
+      "label": "registration long nickname",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-021",
+      "label": "registration newline nickname",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-022",
+      "label": "invalid JSON",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-023",
+      "label": "oversized JSON",
+      "status": 413,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-024",
+      "label": "login 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-025",
+      "label": "login 1",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-026",
+      "label": "bad password",
+      "status": 401,
+      "code": "INVALID_CREDENTIALS",
+      "passed": true
+    },
+    {
+      "id": "HTTP-027",
+      "label": "unknown user",
+      "status": 401,
+      "code": "INVALID_CREDENTIALS",
+      "passed": true
+    },
+    {
+      "id": "HTTP-028",
+      "label": "password trimmed",
+      "status": 401,
+      "code": "INVALID_CREDENTIALS",
+      "passed": true
+    },
+    {
+      "id": "HTTP-029",
+      "label": "invalid bearer",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-030",
+      "label": "invalid bearer",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-031",
+      "label": "invalid bearer",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-032",
+      "label": "invalid bearer",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-033",
+      "label": "invalid bearer",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-034",
+      "label": "current user",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-035",
+      "label": "other identity",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-036",
+      "label": "query identity rejected",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-037",
+      "label": "nickname save",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-038",
+      "label": "read saved",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-039",
+      "label": "B unchanged",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-040",
+      "label": "missing avatar",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-041",
+      "label": "wrong avatar type",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-042",
+      "label": "extra userId",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-043",
+      "label": "empty nickname",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-044",
+      "label": "long nickname",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-045",
+      "label": "newline",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-046",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-047",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-048",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-049",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-050",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-051",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-052",
+      "label": "invalid image reference",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-053",
+      "label": "refused edits unchanged",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-054",
+      "label": "login 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-055",
+      "label": "superseded token GET",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-056",
+      "label": "superseded token POST",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-057",
+      "label": "superseded token PUT",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-058",
+      "label": "new login survives stale logout",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-059",
+      "label": "persist after server restart",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-060",
+      "label": "real HTTP expired token",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-061",
+      "label": "login 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-062",
+      "label": "logout 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-063",
+      "label": "logout replay 0",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-064",
+      "label": "logout 1",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-065",
+      "label": "logout replay 1",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-066",
+      "label": "login 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-067",
+      "label": "login 1",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-068",
+      "label": "categories real ordered seven",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-069",
+      "label": "categories anonymous",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-070",
+      "label": "categories extra query",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-071",
+      "label": "unauth invalid JSON",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-072",
+      "label": "unauth invalid multipart",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-073",
+      "label": "unauth oversized file",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-074",
+      "label": "real JPEG upload",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-075",
+      "label": "real PNG upload",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-076",
+      "label": "other user own image",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-077",
+      "label": "JPEG private read",
+      "status": 200,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "bytes": 269594,
+      "passed": true
+    },
+    {
+      "id": "HTTP-078",
+      "label": "PNG private read",
+      "status": 200,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "bytes": 369,
+      "passed": true
+    },
+    {
+      "id": "HTTP-079",
+      "label": "B private own read",
+      "status": 200,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "bytes": 369,
+      "passed": true
+    },
+    {
+      "id": "HTTP-080",
+      "label": "anonymous image read",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-081",
+      "label": "B cannot read A JPEG",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-082",
+      "label": "A cannot read B PNG",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-083",
+      "label": "empty image",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-084",
+      "label": "fake JPEG",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-085",
+      "label": "truncated JPEG",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-086",
+      "label": "truncated PNG",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-087",
+      "label": "GIF",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-088",
+      "label": "SVG",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-089",
+      "label": "HTML",
+      "status": 415,
+      "code": "UNSUPPORTED_IMAGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-090",
+      "label": "over 5MiB",
+      "status": 413,
+      "code": "FILE_TOO_LARGE",
+      "passed": true
+    },
+    {
+      "id": "HTTP-091",
+      "label": "valid boundary 5242879",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-092",
+      "label": "valid boundary 5242880",
+      "status": 201,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-093",
+      "label": "no file",
+      "status": 400,
+      "code": "IMAGE_REQUIRED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-094",
+      "label": "wrong field",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-095",
+      "label": "two files",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-096",
+      "label": "extra text",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-097",
+      "label": "no multipart",
+      "status": 400,
+      "code": "IMAGE_REQUIRED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-098",
+      "label": "missing boundary",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-099",
+      "label": "upload query rejected",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-100",
+      "label": "invalid/missing image invalid.png",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-101",
+      "label": "invalid/missing image users%2F41%2Fb0cffaf6-a2c7-4870-b29a-133453a2b6c1.jpg",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-102",
+      "label": "invalid/missing image 00000000-0000-0000-0000-000000000000.png",
+      "status": 404,
+      "code": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-103",
+      "label": "image query rejected",
+      "status": 400,
+      "code": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-104",
+      "label": "save nonnull avatar",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-105",
+      "label": "read persisted nonnull avatar",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-106",
+      "label": "actual new process preserves avatar",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-107",
+      "label": "actual new process reads identical bytes",
+      "status": 200,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "bytes": 269594,
+      "passed": true
+    },
+    {
+      "id": "HTTP-108",
+      "label": "replace avatar",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-109",
+      "label": "old successful JPEG retained after replacement",
+      "status": 200,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "bytes": 269594,
+      "passed": true
+    },
+    {
+      "id": "HTTP-110",
+      "label": "cancel makes no write/read same saved avatar",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-111",
+      "label": "remove avatar",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-112",
+      "label": "removed avatar is null",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-113",
+      "label": "successful PNG retained after remove",
+      "status": 200,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "bytes": 369,
+      "passed": true
+    },
+    {
+      "id": "HTTP-114",
+      "label": "reject B path in A profile",
+      "status": 400,
+      "code": "INVALID_IMAGE_REF",
+      "passed": true
+    },
+    {
+      "id": "HTTP-115",
+      "label": "cross path refusal preserves profile",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-116",
+      "label": "expired media /api/categories",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-117",
+      "label": "expired media /api/media/b0cffaf6-a2c7-4870-b29a-133453a2b6c1.jpg",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-118",
+      "label": "expired media /api/uploads",
+      "status": 401,
+      "code": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-119",
+      "label": "login 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-120",
+      "label": "final media logout 0",
+      "status": 200,
+      "code": null,
+      "passed": true
+    },
+    {
+      "id": "HTTP-121",
+      "label": "final media logout 1",
+      "status": 200,
+      "code": null,
+      "passed": true
+    }
+  ],
+  "implementation": {
+    "server/.env.example": "f6c3de3bc1c606519509c8b18e6441afb0a7b4831291b9501103929a724d18c6",
+    "server/.p5-private/run-20261117-b2-http2.json": "8a5aa8d60f21600923a110b74f104db34f2c7eeb75e9e0edf1a5b089315bd008",
+    "server/.p5-private/run-20261117-b6-integration.json": "4294e97269c88224cf2cbac924b184e472d92d28760a19c21f7da2253b80b88a",
+    "server/package-lock.json": "6d8dd20a2b71cecd89a3887b140605c658f77a52efb420aafed376ed07ea0e1c",
+    "server/package.json": "0f1cf75ad59cb2fcdb3a994dccb166ba50538c2d31f677fd0df2fca7658fb441",
+    "server/scripts/audit-wardrobe.mjs": "f600586bb183ccf65313ac72f4bee7182b4dd214ece37040ce7f276252dff1a5",
+    "server/scripts/baseline-wardrobe.mjs": "0bb821aecc84a8158737e4a240cceda5cc2dd10b91ba9ecd13777fce8ac81905",
+    "server/scripts/capture-wardrobe-ui.mjs": "6ee6adc96072bae9406f92452c4314318c331c399d24e26c9c9c17e86b50423d",
+    "server/scripts/check-wardrobe-boundaries.mjs": "014743e4c09a04160a5814276bdace9bf3f45108570dc09c9093a1ea632d190f",
+    "server/scripts/check-wardrobe-readonly.mjs": "f5dd04f63f521d665964be9288289f06fb1b521dcde1809b95ad5459572538b2",
+    "server/scripts/check-wardrobe-restart.mjs": "b99a26d812ddcb9710c1e8a62488c47fc41c45628ef6b0cbe0d7e2de46f16ca8",
+    "server/scripts/outfit-http.mjs": "6e95926c9463a58836bba2a86a7a55dd21252397f43ee981b07a20f01dd98722",
+    "server/scripts/outfit-restart.mjs": "dfcd2aecd18ec89b17aa64dff40532fca39ed604c780034dafed3a199fb8b70b",
+    "server/scripts/prepare-wardrobe-ui.mjs": "d0f57b9f76c0747abd6b5ca76bbcc0133ed99227ee7c17e74eafcc7bba4dcb63",
+    "server/scripts/verify-auth.mjs": "c3df548434af8283d019a8a53f14d5632b277a0214e371848c37cd6cd36a4d14",
+    "server/scripts/verify-foundation-regression.mjs": "5e038a1f477edd69b425085f1eb068c4f1b1c34b1a6dc7708cf3d37837b52846",
+    "server/scripts/verify-foundation.mjs": "d966ac053926faf2f76f8e54ee51104d83cfe6d7c384a0cc649954151eb00251",
+    "server/scripts/verify-media.mjs": "437b5025da5d8bc83c3839cf8c18c745edc2570407c50838b1b449509b574f01",
+    "server/scripts/verify-outfit-edit.mjs": "a0e3710ac4ecfa47f0345e96137967648fc20eaea71eb13d2ff17d7cd7ed3538",
+    "server/scripts/verify-outfit-linkage.mjs": "825c56e42957cce0f5393e7ce78223737aa8a9e81a11b107ce96b357bb96c0bb",
+    "server/scripts/verify-outfits.mjs": "03bc975ae1c2736f5de2bf96b1374307a96472d78c49244aeed2e6fe5ec71329",
+    "server/scripts/verify-wardrobe.mjs": "e4a4336706e5038d2dedc920299c2160a3d95ecc3fc41e75e55b925fd212871b",
+    "server/scripts/wardrobe-fixtures.mjs": "15b072e2d7cd9270dc146a09878068042a298bb1d9596cb3a0d7d430f9e47799",
+    "server/src/app.js": "69af1501796e4aba5aae0560fa8e05abbcd4fa0241a427f4aefbb2b977606554",
+    "server/src/config.js": "a4ed05c3ec958bc2021a609b0f49c3aff0743edef0533c106f2337ec79af5600",
+    "server/src/db.js": "b196e3f497f04044349e91992e1305c3313bd807e0022e88ecdc864f0444f469",
+    "server/src/index.js": "4184aba3d6932197734b4ca7f6906c7e7e607a49cb717a797d02d83f391301f3",
+    "server/src/middleware/auth.js": "61c9fa4dadec7069235f1fd8df32f2e2c6010a8bac680902b0b63bb57ad4f52c",
+    "server/src/routes/account.js": "f6d1b3907a2b4da18888d9444f0d905c54a8ed07315de60ec23f09d6ea149d1d",
+    "server/src/routes/clothes.js": "67968a59b1cd2d6882404c0d24b5cfe5739bd9245104a64673b8069ed67d189c",
+    "server/src/routes/media.js": "37eb2635b8d5c82328e34d741d04b282611cd5b19b5b0efb2402e1c585133d3f",
+    "server/src/routes/outfits.js": "9affc3dff0a8b76f2117e9d6e75b118c5d091ab622bab1ff457943e8e48bcfd0",
+    "server/src/services/account.js": "623ca1bff9d524e3df72fa86f343039d876c51bbf10916e147d255932cf74a3b",
+    "server/src/services/clothes.js": "4ba741daed42856cd1ec79c2753c79a16bde6a991f4f0531ed30b7fe85965662",
+    "server/src/services/media.js": "98312fa070f96c27732fe426192af11d4519e6a236959d9283a2560c1b1b9a54",
+    "server/src/services/outfits.js": "4fecec3fe27dae857b6fc63b4c039120236747ee8412b423a9b6ccd1a12ff8b4",
+    "server/src/utils/business-error.js": "ca8bd173dbc365071357120e01b41c0a852ed4c74f83af0f2d6a88e9d2304849",
+    "server/src/utils/image-reference.js": "a9fb630662879e45e3fe67b2fd182b66a3d1de1ae69153e99107d463308e04cb",
+    "server/src/utils/input-validation.js": "fded228e4927aafcf6cb8fdf35a326fe39403ee7b10d7914110044167ea43f5a",
+    "server/test/auth.test.mjs": "700d010fc9d2ac8a10c074df24abb60e3c8e9099f3497c247ea98e4c2b7e23a7",
+    "server/test/client-harness.mjs": "d733445d00cbe55c7d004cf0fb050b033c33cbb58f5f56e0efea3a7e9a6382d4",
+    "server/test/clothes-client.test.mjs": "a6cacc9c6f0965b1f5f2fc4f4446bbcc25f824516f7083ea6456fa33bf8713d0",
+    "server/test/clothes.test.mjs": "adf38280fe9f3eef00123023bcf4795ceae7ec245e1ec01bd42753d8f6090c1d",
+    "server/test/foundation.test.mjs": "c07b3210ae1db211c6237f8c49aedb11dd82403cf9c2bdeb12cea08deedb9994",
+    "server/test/media-fixtures.mjs": "bdf57853e9a5a9c5b8ce6473ad3a669cf3cfc932c05a4ae3926108f4d9e658e1",
+    "server/test/media.test.mjs": "fee8df880500723492f0611f8073b1061dadda159abf10694dd650978a16b944",
+    "server/test/outfit-edit-verifier.test.mjs": "e395386ffcfb78d323223b6f24b1c94b2e03c4c8e1147e16fb4c130b168e2f53",
+    "server/test/outfit-fixture-registry.test.mjs": "c05c014006b514b12b21b1b80f1a1f6e8f7ff57dbe293ab20c968c5a81c89d38",
+    "server/test/outfit-linkage-verifier.test.mjs": "ef9347186f4dce5b3f845d056cab0c4509c4dfcc0ff84740df08f1c3aab51b7c",
+    "server/test/outfit-service.test.mjs": "8e6074feab73168f585965a0a5964ed72263bf5a5aeaba0afd826fadd77884d6",
+    "server/test/outfits-client.test.mjs": "bddb753507d0156ae7b35a3036f62ef3f9d35603f4e50928df34ee4a36c41808",
+    "server/test/outfits-edit-client.test.mjs": "e107806f177cc7eac80a6c829f909759deaa7fa73137b587be3fd4e23d1faf12",
+    "server/test/outfits-verifier.test.mjs": "16310615e991dbc18269c195a16726be3b6798f4450b2b3ac0a9b8299a26f8d2",
+    "server/test/outfits.test.mjs": "2ff20bb8014d3f20e2cf74dd8e2d1921838ffe221efd102714c6c13f7b39733c",
+    "miniprogram/app.js": "3f7a8d8a5377d1ad05a9d217249eec4b1971f8f8b99869f965bc4905a5d1fe66",
+    "miniprogram/app.json": "706f06457629937e09d131b478e2b91493790b068d4786da93e3944d55c51e02",
+    "miniprogram/app.wxss": "ee59db8af2e7879f713018423f549fea0527a00bede88058a937f019584e4d78",
+    "miniprogram/assets/tab-diary-active.png": "8b8f23055c92f0644d5ba69149dfe56c08eac1d07bb03ec88c01377c43268e05",
+    "miniprogram/assets/tab-diary.png": "cf3cb260b4654f8aa25d545b35b4b967d9cecb3c68bd80e07343a7337b87ff39",
+    "miniprogram/assets/tab-me-active.png": "684c7260f66dfc9c7a895c9e9b8910fd5bda1693d5fd1b68c58ccd8f8aa957ed",
+    "miniprogram/assets/tab-me.png": "4189be6766b6e3b66d8567e7e106ec65a9df7d1d9ed77c6599dfa42752a08931",
+    "miniprogram/assets/tab-outfits-active.png": "a448df4045f31896e619f85aac713fbf1cc97f53abcf81d02eccfb8a6a9063a3",
+    "miniprogram/assets/tab-outfits.png": "c4731711bc4ede80d3cc1c07085f855d908c5ae8abb2267f1e12f6859500deed",
+    "miniprogram/assets/tab-wardrobe-active.png": "7a6f216badb9a798ce772cecb5e79a5b438b304d146e4e904700bbec0bdac0b7",
+    "miniprogram/assets/tab-wardrobe.png": "abf460c3c03048a5d5b00db5826e6b159edea9f460c4d9764106d6afa2191615",
+    "miniprogram/components/clothes-picker/index.js": "3dd9444c815febb821ab7f0e0b4b9c10541157e15c4a8eaf416015b02d46ef45",
+    "miniprogram/components/clothes-picker/index.json": "5f0c700cc36dc094e14d245415390f4661d744ddd561090b64fcfcca416536db",
+    "miniprogram/components/clothes-picker/index.wxml": "a7e6fe2e2c0bd0a646b98dbb178b67a4b11f3ebb0b761acd27af0bee3d215f40",
+    "miniprogram/components/clothes-picker/index.wxss": "ef2da4868845add495a1f30bbb79f03ad8bca3ee2aaee38739afe4f9eee58895",
+    "miniprogram/config.js": "f5daec78b68f3a80478d53aac7b7f012e99f24f268cce01ca8dd0d6d9bc461c9",
+    "miniprogram/pages/auth/login/index.js": "a9c443335628606598535896d4a100120cf8dc3d63ade6765417ebf80a9138d7",
+    "miniprogram/pages/auth/login/index.json": "01baa9e5ad226f02125d9437c005ce3730825dee840f97bfabe9dfc73cd1a366",
+    "miniprogram/pages/auth/login/index.wxml": "d28bb42589ed7e84662869484d9d833a25fdf38b4d6afd50167c21f734199e14",
+    "miniprogram/pages/auth/login/index.wxss": "df35014bb1eeecdd59f60d38a493694f405c79bf06e2bb425c11fa9a8411dd1a",
+    "miniprogram/pages/auth/register/index.js": "e97019be204351e08da7a2da129e66ea8a06fb97c04c50c4dfd49157f7cd33c8",
+    "miniprogram/pages/auth/register/index.json": "da728f9db871d3db902a5f5e1b2e17ce02fe9b745332036490793032aba038ca",
+    "miniprogram/pages/auth/register/index.wxml": "ed53e2ebc37641b7fad58d5e68dcba7b613e5cdcfa185fcf70ab438ee6fbc182",
+    "miniprogram/pages/auth/register/index.wxss": "df35014bb1eeecdd59f60d38a493694f405c79bf06e2bb425c11fa9a8411dd1a",
+    "miniprogram/pages/clothes/detail/index.js": "0bd8dbe54612ef6d04ffca05328ccac9938213a576eae2ffd4e7a331ee03e9f8",
+    "miniprogram/pages/clothes/detail/index.json": "4e8dd0d28464d018f3d23209ce8e6752e93f3f11e1166dc69293d689993439a2",
+    "miniprogram/pages/clothes/detail/index.wxml": "6933cbc9bb4c973b002240899ed69d61490c2248448e12a16abf3977e6241f74",
+    "miniprogram/pages/clothes/detail/index.wxss": "49710fed486bbaf87a1633afb186aed2d7799b76905ec4e8b83e693aae59f284",
+    "miniprogram/pages/clothes/edit/index.js": "02713ee0a79a099b081c19800011ca9aa9f9deea2581d4914b233492f82e803b",
+    "miniprogram/pages/clothes/edit/index.json": "62bf79457f03caed0174b87933653e0157f218766c3002e7e9e47451f4e94415",
+    "miniprogram/pages/clothes/edit/index.wxml": "df670e5ce31c59e7f1407787d3045488999d4ebde6b4ee2cc65ecc4c6e83099a",
+    "miniprogram/pages/clothes/edit/index.wxss": "25147dcad7e39cd9cc60a4dbf5714b29bc1c592c0df234c163db866408e21652",
+    "miniprogram/pages/diary/index.js": "71fa33667ea8f1c774b3a1e54c7314a11d809639b785bb8ceb4bdf8c8550845d",
+    "miniprogram/pages/diary/index.json": "c313b918dbd2ba0b068a92809676722d8d1b5142c6606d614a60a8f8002e4384",
+    "miniprogram/pages/diary/index.wxml": "ea88c365b6d89d883055c8ec5b9bb1faf5e9d10537979ab82a6c08a7fcc09abe",
+    "miniprogram/pages/diary/index.wxss": "5f785362012894ee8e096cdd8ae216001d880b73f2a504e2b0b6951e601b61ad",
+    "miniprogram/pages/me/index.js": "28da0580d5256a439b8b7eed5cac8f18534c18d2a92971fe85c9b52c6a0e2676",
+    "miniprogram/pages/me/index.json": "a465281f644c1694ebbe3d38aade68e78a16b5a63e7a3e11c28cda4b7103b543",
+    "miniprogram/pages/me/index.wxml": "a4d5f1a259b8c214914abd9e72b8b21b6fd6223bb847bb94d7d52644351dbf39",
+    "miniprogram/pages/me/index.wxss": "e14d7a034566dfc795f80a998418f56b06b2952a13dbf22d784faa273a8a1316",
+    "miniprogram/pages/outfits/detail/index.js": "b24b22ccf90c90a651e6275da5b1e1a2d89749959ce48af933855fb40c5b3f3d",
+    "miniprogram/pages/outfits/detail/index.json": "8734ac6cab6e16b9738af1dd1639eb728747bd7b4827d93ea4a978e306e2b3e4",
+    "miniprogram/pages/outfits/detail/index.wxml": "f26ee8cd230a9e1553f5f3cac18668db92f6459eec54a3b9d2a7f000bcb8f3a4",
+    "miniprogram/pages/outfits/detail/index.wxss": "60d42ec4a8b1b101c990cf9ad8a021c33b3383233aac315c0b969638e4b4dcc8",
+    "miniprogram/pages/outfits/edit/index.js": "920fea8657fc7a7236cc80ce72134b65fb41ce30040a1d185470090aad71c929",
+    "miniprogram/pages/outfits/edit/index.json": "2384d3c9eef901d039afeed88fd76caa69ae7461b058d27106d1c1579a5c52b0",
+    "miniprogram/pages/outfits/edit/index.wxml": "72e07c32b8917300e9f0e10782dfcdfe4ef9eca3962d31cecf1714d2c75edce2",
+    "miniprogram/pages/outfits/edit/index.wxss": "6caae0c4a0bcbbb78642f5e9de61e63c9929e6676cfc60e93ebc22f5aadd3896",
+    "miniprogram/pages/outfits/index.js": "67e7fe064a0fcf282919760eb735d958c82e9072ef82355334714aaa19929074",
+    "miniprogram/pages/outfits/index.json": "18981933cc4956df66cb7a22d73b2c4350f0ce126076269370d05292b19ea814",
+    "miniprogram/pages/outfits/index.wxml": "d134179b6e665352bc1e0eb1da5a785ac12b8a184bd144a51e003c66ff828c7a",
+    "miniprogram/pages/outfits/index.wxss": "c079128c3faee6c353fc070798bfcc8f0b504181df074f9a17b75d923cc3d9ca",
+    "miniprogram/pages/profile/index.js": "bd5016209aaa8588761a345906fa763d5417b9acc44194a81cc64e72e0f9ff95",
+    "miniprogram/pages/profile/index.json": "975897489e6248d68ba184b940c69bb908c880ebe6271d767ca8f4d5929706a6",
+    "miniprogram/pages/profile/index.wxml": "8ef8009bb4f743abb58135d16e16cf79bcfdceab4c98ace0a219e8763f4253ef",
+    "miniprogram/pages/profile/index.wxss": "f757304ea40853d59e3913b685d6884fdaa552c1c61a1012778efeb9aea81b34",
+    "miniprogram/pages/wardrobe/index.js": "f8255ff8fbf46e168abaa9c074dfa8c986437e436e9e5c9d2315809c37bf044b",
+    "miniprogram/pages/wardrobe/index.json": "9030e20b6faa91aac0b8b92d4790347306392c4c85db4aaf56859b0faeabd56a",
+    "miniprogram/pages/wardrobe/index.wxml": "22fe442735d547db8fd5d495763a9d042a5233f0dbf8e001f4ff3e1652209f99",
+    "miniprogram/pages/wardrobe/index.wxss": "d2107929e68a31f39062bce2b6d3e2d787db981ca36cf0362427517864727850",
+    "miniprogram/project.config.example.json": "7000d6bcb091e61eb06273cc406a85b2b31fd297405b2261e22c2aa023b4edfd",
+    "miniprogram/utils/media.js": "458dee77bb91966579125b371deed345e377bb7ce9140362e6d0d10d10b88be8",
+    "miniprogram/utils/outfit-state.js": "1c2817f57008c2baf0d36e54349b45b654544b7b040ccea6d4fde255799fac29",
+    "miniprogram/utils/request.js": "66c3d7ccd6896497fdcedcc2fd1e48b5c92b7acde85671d7fd01cd580178c190",
+    "miniprogram/utils/session.js": "d20193b3f572c6c18fea27ee36f003dbd0c9e14feb37b3610720fef6b8b2b010",
+    "miniprogram/utils/wardrobe-state.js": "79dfe2e6c91ffe521851fc7d3327c1678171d9b9144357dbb6b8265324ab3d01"
+  },
+  "processes": [
+    {
+      "pid": 75296,
+      "startedAt": "2026-11-17T12:56:56.490Z",
+      "origin": "http://127.0.0.1:51174",
+      "stoppedAt": "2026-11-17T12:56:57.046Z",
+      "stopMode": "owned Windows child terminated; no graceful-shutdown claim"
+    },
+    {
+      "pid": 68792,
+      "startedAt": "2026-11-17T12:56:57.405Z",
+      "origin": "http://127.0.0.1:51174",
+      "stoppedAt": "2026-11-17T12:56:59.506Z",
+      "stopMode": "owned Windows child terminated; no graceful-shutdown claim"
+    },
+    {
+      "pid": 57096,
+      "startedAt": "2026-11-17T12:56:59.863Z",
+      "origin": "http://127.0.0.1:51174",
+      "stoppedAt": "2026-11-17T12:57:00.420Z",
+      "stopMode": "owned Windows child terminated; no graceful-shutdown claim"
+    }
+  ],
+  "identity": {
+    "version": "8.0.28",
+    "hostname": "DESKTOP-D97LI2N",
+    "port": 3306,
+    "account": "root@localhost",
+    "db": "wardrobe_demo",
+    "connectionId": 296,
+    "timeZone": "+00:00",
+    "clientCharset": "utf8mb4",
+    "connectionCharset": "utf8mb4",
+    "resultsCharset": "utf8mb4",
+    "connectionCollation": "utf8mb4_0900_as_cs"
+  },
+  "tokenProtocol": {
+    "rawLength": 43,
+    "digestLength": 64,
+    "expiryMilliseconds": 604800000,
+    "onlyDigestStored": true
+  },
+  "existingImageReadOnly": {
+    "ownerId": 11,
+    "valid": true,
+    "validationLayer": "function, not authenticated HTTP"
+  },
+  "restart": {
+    "tokenStillValid": true,
+    "expiryUnchanged": true,
+    "nicknamePersisted": true
+  },
+  "expiryFixture": {
+    "id": 41,
+    "column": "auth_expires_at",
+    "affectedRows": 1,
+    "newValue": "2000-01-01 00:00:00.000"
+  },
+  "migratedAuthCases": 65,
+  "mediaRestart": {
+    "oldPid": 68792,
+    "newPid": 57096,
+    "avatarPreserved": true,
+    "byteHashPreserved": true,
+    "expiryUnchanged": true
+  },
+  "mediaExpiryFixture": {
+    "id": 41,
+    "column": "auth_expires_at",
+    "affectedRows": 1
+  },
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2",
+      "run-20261117-b3-validation",
+      "run-20261117-b4-save",
+      "run-20261117-b5-linkage",
+      "run-20261117-b5-linkage-final",
+      "run-20261117-b6-integration",
+      "run-20261117-b6-restart3",
+      "run-20261117-b6-foundation"
+    ],
+    "registeredAccounts": 6,
+    "registeredRows": 186,
+    "registeredImages": 9,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0
+  },
+  "completedAt": "2026-11-17T12:57:00.862Z"
+}

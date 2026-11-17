@@ -1,0 +1,1372 @@
+{
+  "batch": 6,
+  "runId": "run-20261117-b6-validation",
+  "historicalCount": 149,
+  "retained": 149,
+  "updated": 0,
+  "notApplicable": 0,
+  "historicalReportSha256": "28bdeea63d08ce411203f1655473125acc002a6894e2d395b1109bb578232bff",
+  "currentReportSha256": "ed0a585a1f1a99b1de0b1b6feb3d184f245c465234874ada9c5de0565e9e7a3b",
+  "cases": [
+    {
+      "id": "P4-UNIT-001",
+      "historicalTitle": "entry normalization, Unicode count and untrimmed password",
+      "currentTitle": "entry normalization, Unicode count and untrimmed password",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 1
+    },
+    {
+      "id": "P4-UNIT-002",
+      "historicalTitle": "shared scrypt random salts, positive/negative verification",
+      "currentTitle": "shared scrypt random salts, positive/negative verification",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 2
+    },
+    {
+      "id": "P4-UNIT-003",
+      "historicalTitle": "only username unique constraint is mapped",
+      "currentTitle": "only username unique constraint is mapped",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 3
+    },
+    {
+      "id": "P4-UNIT-004",
+      "historicalTitle": "authentication binds injected UTC clock to strict expiry comparison",
+      "currentTitle": "authentication binds injected UTC clock to strict expiry comparison",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 4
+    },
+    {
+      "id": "P4-UNIT-005",
+      "historicalTitle": "bearer format and combined headers",
+      "currentTitle": "bearer format and combined headers",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 5
+    },
+    {
+      "id": "P4-UNIT-006",
+      "historicalTitle": "nonnull avatar validator and service/DTO positive branch using temporary fixture",
+      "currentTitle": "nonnull avatar validator and service/DTO positive branch using temporary fixture",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 6
+    },
+    {
+      "id": "P4-UNIT-007",
+      "historicalTitle": "atomic logout rejects stale hash without clearing newer login",
+      "currentTitle": "atomic logout rejects stale hash without clearing newer login",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 7
+    },
+    {
+      "id": "P4-UNIT-008",
+      "historicalTitle": "request prefix, auth headers and storage isolation",
+      "currentTitle": "request prefix, auth headers and storage isolation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 8
+    },
+    {
+      "id": "P4-UNIT-009",
+      "historicalTitle": "request bad 2xx",
+      "currentTitle": "request bad 2xx",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 9
+    },
+    {
+      "id": "P4-UNIT-010",
+      "historicalTitle": "request bad 500",
+      "currentTitle": "request bad 500",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 10
+    },
+    {
+      "id": "P4-UNIT-011",
+      "historicalTitle": "request credentials",
+      "currentTitle": "request credentials",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 11
+    },
+    {
+      "id": "P4-UNIT-012",
+      "historicalTitle": "network TIMEOUT keeps session and does not retry",
+      "currentTitle": "network TIMEOUT keeps session and does not retry",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 12
+    },
+    {
+      "id": "P4-UNIT-013",
+      "historicalTitle": "network NETWORK_ERROR keeps session and does not retry",
+      "currentTitle": "network NETWORK_ERROR keeps session and does not retry",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 13
+    },
+    {
+      "id": "P4-UNIT-014",
+      "historicalTitle": "concurrent 401 clears once and navigates once",
+      "currentTitle": "concurrent 401 clears once and navigates once",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 14
+    },
+    {
+      "id": "P4-UNIT-015",
+      "historicalTitle": "late success cannot affect newer session",
+      "currentTitle": "late success cannot affect newer session",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 15
+    },
+    {
+      "id": "P4-UNIT-016",
+      "historicalTitle": "late 401 cannot affect newer session",
+      "currentTitle": "late 401 cannot affect newer session",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 16
+    },
+    {
+      "id": "P4-UNIT-017",
+      "historicalTitle": "late network cannot affect newer session",
+      "currentTitle": "late network cannot affect newer session",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 17
+    },
+    {
+      "id": "P4-UNIT-018",
+      "historicalTitle": "bootstrap none without early navigation",
+      "currentTitle": "bootstrap none without early navigation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 18
+    },
+    {
+      "id": "P4-UNIT-019",
+      "historicalTitle": "bootstrap valid without early navigation",
+      "currentTitle": "bootstrap valid without early navigation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 19
+    },
+    {
+      "id": "P4-UNIT-020",
+      "historicalTitle": "bootstrap 401 without early navigation",
+      "currentTitle": "bootstrap 401 without early navigation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 20
+    },
+    {
+      "id": "P4-UNIT-021",
+      "historicalTitle": "bootstrap network without early navigation",
+      "currentTitle": "bootstrap network without early navigation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 21
+    },
+    {
+      "id": "P4-UNIT-022",
+      "historicalTitle": "late login after hiding/reopening page cannot adopt identity",
+      "currentTitle": "late login after hiding/reopening page cannot adopt identity",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 22
+    },
+    {
+      "id": "P4-UNIT-023",
+      "historicalTitle": "register confirms locally, sends no confirmation and clears password",
+      "currentTitle": "register confirms locally, sends no confirmation and clears password",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 23
+    },
+    {
+      "id": "P4-UNIT-024",
+      "historicalTitle": "profile dirty cancel and save preserve current avatar",
+      "currentTitle": "profile dirty cancel and save preserve current avatar",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 24
+    },
+    {
+      "id": "P4-UNIT-025",
+      "historicalTitle": "invalid nickname and revert do not write; cancel disables native alert first",
+      "currentTitle": "invalid nickname and revert do not write; cancel disables native alert first",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 25
+    },
+    {
+      "id": "P4-UNIT-026",
+      "historicalTitle": "logout network failure keeps identity, server confirmation clears it",
+      "currentTitle": "logout network failure keeps identity, server confirmation clears it",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 26
+    },
+    {
+      "id": "P4-UNIT-027",
+      "historicalTitle": "login duplicate submit is suppressed and invalid credentials keep form",
+      "currentTitle": "login duplicate submit is suppressed and invalid credentials keep form",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 27
+    },
+    {
+      "id": "P4-UNIT-028",
+      "historicalTitle": "failed profile save keeps draft and dirty protection",
+      "currentTitle": "failed profile save keeps draft and dirty protection",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 28
+    },
+    {
+      "id": "P4-UNIT-029",
+      "historicalTitle": "unknown SyntaxError remains private internal failure",
+      "currentTitle": "unknown SyntaxError remains private internal failure",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 29
+    },
+    {
+      "id": "P4-UNIT-030",
+      "historicalTitle": "older login completion cannot release a newer submit button",
+      "currentTitle": "older login completion cannot release a newer submit button",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 30
+    },
+    {
+      "id": "P4-UNIT-031",
+      "historicalTitle": "profile completion after leaving cannot navigate back a second time",
+      "currentTitle": "profile completion after leaving cannot navigate back a second time",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 31
+    },
+    {
+      "id": "P4-UNIT-032",
+      "historicalTitle": "clothes form cancel stays a draft; invalid inputs do not POST",
+      "currentTitle": "clothes form cancel stays a draft; invalid inputs do not POST",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 32
+    },
+    {
+      "id": "P4-UNIT-033",
+      "historicalTitle": "clothes form failed save preserves stable image and dirty draft",
+      "currentTitle": "clothes form failed save preserves stable image and dirty draft",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 33
+    },
+    {
+      "id": "P4-UNIT-034",
+      "historicalTitle": "clothes late successful save after unloading never navigates",
+      "currentTitle": "clothes late successful save after unloading never navigates",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 34
+    },
+    {
+      "id": "P4-UNIT-035",
+      "historicalTitle": "wardrobe obsolete filter response cannot replace current query",
+      "currentTitle": "wardrobe obsolete filter response cannot replace current query",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 35
+    },
+    {
+      "id": "P4-UNIT-036",
+      "historicalTitle": "wardrobe failed next page retains data and retries same page",
+      "currentTitle": "wardrobe failed next page retains data and retries same page",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 36
+    },
+    {
+      "id": "P4-UNIT-037",
+      "historicalTitle": "wardrobe hidden response and older account never populate page",
+      "currentTitle": "wardrobe hidden response and older account never populate page",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 37
+    },
+    {
+      "id": "P4-UNIT-038",
+      "historicalTitle": "wardrobe filter cancel preserves applied conditions and clear retains archive scope",
+      "currentTitle": "wardrobe filter cancel preserves applied conditions and clear retains archive scope",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 38
+    },
+    {
+      "id": "P4-UNIT-039",
+      "historicalTitle": "clothes successful replacement upload stays a draft and cancel makes no business write",
+      "currentTitle": "clothes successful replacement upload stays a draft and cancel makes no business write",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 39
+    },
+    {
+      "id": "P4-UNIT-040",
+      "historicalTitle": "clothes replacement save sends stable uploaded path and failed upload can be abandoned",
+      "currentTitle": "clothes replacement save sends stable uploaded path and failed upload can be abandoned",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 40
+    },
+    {
+      "id": "P4-UNIT-041",
+      "historicalTitle": "clothes filters normalize only known inputs and retain literal keyword",
+      "currentTitle": "clothes filters normalize only known inputs and retain literal keyword",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 41
+    },
+    {
+      "id": "P4-UNIT-042",
+      "historicalTitle": "clothes rejects query {\"page\":\"\"}",
+      "currentTitle": "clothes rejects query {\"page\":\"\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 42
+    },
+    {
+      "id": "P4-UNIT-043",
+      "historicalTitle": "clothes rejects query {\"page\":\"0\"}",
+      "currentTitle": "clothes rejects query {\"page\":\"0\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 43
+    },
+    {
+      "id": "P4-UNIT-044",
+      "historicalTitle": "clothes rejects query {\"page\":\"1e2\"}",
+      "currentTitle": "clothes rejects query {\"page\":\"1e2\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 44
+    },
+    {
+      "id": "P4-UNIT-045",
+      "historicalTitle": "clothes rejects query {\"page\":\"1.5\"}",
+      "currentTitle": "clothes rejects query {\"page\":\"1.5\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 45
+    },
+    {
+      "id": "P4-UNIT-046",
+      "historicalTitle": "clothes rejects query {\"page\":\"9007199254740992\"}",
+      "currentTitle": "clothes rejects query {\"page\":\"9007199254740992\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 46
+    },
+    {
+      "id": "P4-UNIT-047",
+      "historicalTitle": "clothes rejects query {\"page\":\"9007199254740991\",\"pageSize\":\"50\"}",
+      "currentTitle": "clothes rejects query {\"page\":\"9007199254740991\",\"pageSize\":\"50\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 47
+    },
+    {
+      "id": "P4-UNIT-048",
+      "historicalTitle": "clothes rejects query {\"pageSize\":\"51\"}",
+      "currentTitle": "clothes rejects query {\"pageSize\":\"51\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 48
+    },
+    {
+      "id": "P4-UNIT-049",
+      "historicalTitle": "clothes rejects query {\"pageSize\":[\"1\",\"2\"]}",
+      "currentTitle": "clothes rejects query {\"pageSize\":[\"1\",\"2\"]}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 49
+    },
+    {
+      "id": "P4-UNIT-050",
+      "historicalTitle": "clothes rejects query {\"archived\":\"\"}",
+      "currentTitle": "clothes rejects query {\"archived\":\"\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 50
+    },
+    {
+      "id": "P4-UNIT-051",
+      "historicalTitle": "clothes rejects query {\"archived\":\"false\"}",
+      "currentTitle": "clothes rejects query {\"archived\":\"false\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 51
+    },
+    {
+      "id": "P4-UNIT-052",
+      "historicalTitle": "clothes rejects query {\"season\":\"春秋\"}",
+      "currentTitle": "clothes rejects query {\"season\":\"春秋\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 52
+    },
+    {
+      "id": "P4-UNIT-053",
+      "historicalTitle": "clothes rejects query {\"categoryId\":\"other\"}",
+      "currentTitle": "clothes rejects query {\"categoryId\":\"other\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 53
+    },
+    {
+      "id": "P4-UNIT-054",
+      "historicalTitle": "clothes rejects query {\"color\":\"\"}",
+      "currentTitle": "clothes rejects query {\"color\":\"\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 54
+    },
+    {
+      "id": "P4-UNIT-055",
+      "historicalTitle": "clothes rejects query {\"keyword\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+      "currentTitle": "clothes rejects query {\"keyword\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 55
+    },
+    {
+      "id": "P4-UNIT-056",
+      "historicalTitle": "clothes rejects query {\"sort\":\"id\"}",
+      "currentTitle": "clothes rejects query {\"sort\":\"id\"}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 56
+    },
+    {
+      "id": "P4-UNIT-057",
+      "historicalTitle": "clothes rejects query {\"keyword\":{\"value\":\"a\"}}",
+      "currentTitle": "clothes rejects query {\"keyword\":{\"value\":\"a\"}}",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 57
+    },
+    {
+      "id": "P4-UNIT-058",
+      "historicalTitle": "clothes decimal IDs, paging defaults and page offsets",
+      "currentTitle": "clothes decimal IDs, paging defaults and page offsets",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 58
+    },
+    {
+      "id": "P4-UNIT-059",
+      "historicalTitle": "clothes full form preserves note and counts Unicode codepoints",
+      "currentTitle": "clothes full form preserves note and counts Unicode codepoints",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 59
+    },
+    {
+      "id": "P4-UNIT-060",
+      "historicalTitle": "clothes dates explicitly preserve UTC and Shanghai natural-day boundary",
+      "currentTitle": "clothes dates explicitly preserve UTC and Shanghai natural-day boundary",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 60
+    },
+    {
+      "id": "P4-UNIT-061",
+      "historicalTitle": "clothes authentication precedes malformed and oversized JSON parsing",
+      "currentTitle": "clothes authentication precedes malformed and oversized JSON parsing",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 61
+    },
+    {
+      "id": "P4-UNIT-062",
+      "historicalTitle": "config defaults and paths are independent of caller cwd",
+      "currentTitle": "config defaults and paths are independent of caller cwd",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 62
+    },
+    {
+      "id": "P4-UNIT-063",
+      "historicalTitle": "missing config PUBLIC_BASE_URL",
+      "currentTitle": "missing config PUBLIC_BASE_URL",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 63
+    },
+    {
+      "id": "P4-UNIT-064",
+      "historicalTitle": "missing config DB_HOST",
+      "currentTitle": "missing config DB_HOST",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 64
+    },
+    {
+      "id": "P4-UNIT-065",
+      "historicalTitle": "missing config DB_PORT",
+      "currentTitle": "missing config DB_PORT",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 65
+    },
+    {
+      "id": "P4-UNIT-066",
+      "historicalTitle": "missing config DB_NAME",
+      "currentTitle": "missing config DB_NAME",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 66
+    },
+    {
+      "id": "P4-UNIT-067",
+      "historicalTitle": "missing config DB_USER",
+      "currentTitle": "missing config DB_USER",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 67
+    },
+    {
+      "id": "P4-UNIT-068",
+      "historicalTitle": "missing config DB_PASSWORD",
+      "currentTitle": "missing config DB_PASSWORD",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 68
+    },
+    {
+      "id": "P4-UNIT-069",
+      "historicalTitle": "missing config UPLOAD_ROOT",
+      "currentTitle": "missing config UPLOAD_ROOT",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 69
+    },
+    {
+      "id": "P4-UNIT-070",
+      "historicalTitle": "reject invalid PORT variant 0",
+      "currentTitle": "reject invalid PORT variant 0",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 70
+    },
+    {
+      "id": "P4-UNIT-071",
+      "historicalTitle": "reject invalid PORT variant 65536",
+      "currentTitle": "reject invalid PORT variant 65536",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 71
+    },
+    {
+      "id": "P4-UNIT-072",
+      "historicalTitle": "reject invalid PORT variant ",
+      "currentTitle": "reject invalid PORT variant ",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 72
+    },
+    {
+      "id": "P4-UNIT-073",
+      "historicalTitle": "reject invalid DB_PORT variant oops",
+      "currentTitle": "reject invalid DB_PORT variant oops",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 73
+    },
+    {
+      "id": "P4-UNIT-074",
+      "historicalTitle": "reject invalid DB_HOST variant localhost",
+      "currentTitle": "reject invalid DB_HOST variant localhost",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 74
+    },
+    {
+      "id": "P4-UNIT-075",
+      "historicalTitle": "reject invalid DB_NAME variant other_database",
+      "currentTitle": "reject invalid DB_NAME variant other_database",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 75
+    },
+    {
+      "id": "P4-UNIT-076",
+      "historicalTitle": "reject invalid PUBLIC_BASE_URL variant invalid",
+      "currentTitle": "reject invalid PUBLIC_BASE_URL variant invalid",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 76
+    },
+    {
+      "id": "P4-UNIT-077",
+      "historicalTitle": "reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3000/api",
+      "currentTitle": "reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3000/api",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 77
+    },
+    {
+      "id": "P4-UNIT-078",
+      "historicalTitle": "reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3001",
+      "currentTitle": "reject invalid PUBLIC_BASE_URL variant http://127.0.0.1:3001",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 78
+    },
+    {
+      "id": "P4-UNIT-079",
+      "historicalTitle": "reject invalid PUBLIC_BASE_URL variant http://redacted@127.0.0.1:3000",
+      "currentTitle": "reject invalid PUBLIC_BASE_URL variant http://redacted@127.0.0.1:3000",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 79
+    },
+    {
+      "id": "P4-UNIT-080",
+      "historicalTitle": "reject invalid UPLOAD_ROOT variant ../assets",
+      "currentTitle": "reject invalid UPLOAD_ROOT variant ../assets",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 80
+    },
+    {
+      "id": "P4-UNIT-081",
+      "historicalTitle": "private values are untrimmed and never included in safe errors",
+      "currentTitle": "private values are untrimmed and never included in safe errors",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 81
+    },
+    {
+      "id": "P4-UNIT-082",
+      "historicalTitle": "Node native env file keeps process environment precedence from another cwd",
+      "currentTitle": "Node native env file keeps process environment precedence from another cwd",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 82
+    },
+    {
+      "id": "P4-UNIT-083",
+      "historicalTitle": "health is anonymous and independent from DB; unsupported paths return JSON 404",
+      "currentTitle": "health is anonymous and independent from DB; unsupported paths return JSON 404",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 83
+    },
+    {
+      "id": "P4-UNIT-084",
+      "historicalTitle": "unknown request error boundary never serializes SQL, secrets or stack",
+      "currentTitle": "unknown request error boundary never serializes SQL, secrets or stack",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 84
+    },
+    {
+      "id": "P4-UNIT-085",
+      "historicalTitle": "missing configuration exits before binding even from another cwd",
+      "currentTitle": "missing configuration exits before binding even from another cwd",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 85
+    },
+    {
+      "id": "P4-UNIT-086",
+      "historicalTitle": "real refused DB connection exits and does not leave a listener",
+      "currentTitle": "real refused DB connection exits and does not leave a listener",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 86
+    },
+    {
+      "id": "P4-UNIT-087",
+      "historicalTitle": "occupied HTTP port exits, releases pool, and preserves the occupying fixture",
+      "currentTitle": "occupied HTTP port exits, releases pool, and preserves the occupying fixture",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 87
+    },
+    {
+      "id": "P4-UNIT-088",
+      "historicalTitle": "page request has one api prefix and disabled checking state",
+      "currentTitle": "page request has one api prefix and disabled checking state",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 88
+    },
+    {
+      "id": "P4-UNIT-089",
+      "historicalTitle": "page rejects HTTP500",
+      "currentTitle": "page rejects HTTP500",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 89
+    },
+    {
+      "id": "P4-UNIT-090",
+      "historicalTitle": "page rejects HTML",
+      "currentTitle": "page rejects HTML",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 90
+    },
+    {
+      "id": "P4-UNIT-091",
+      "historicalTitle": "page rejects wrong health",
+      "currentTitle": "page rejects wrong health",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 91
+    },
+    {
+      "id": "P4-UNIT-092",
+      "historicalTitle": "page failure restores action request:fail timeout",
+      "currentTitle": "page failure restores action request:fail timeout",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 92
+    },
+    {
+      "id": "P4-UNIT-093",
+      "historicalTitle": "page failure restores action request:fail connection refused",
+      "currentTitle": "page failure restores action request:fail connection refused",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 93
+    },
+    {
+      "id": "P4-UNIT-094",
+      "historicalTitle": "page judges real HTTP responses rather than callback success alone",
+      "currentTitle": "page judges real HTTP responses rather than callback success alone",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 94
+    },
+    {
+      "id": "P4-UNIT-095",
+      "historicalTitle": "media auth runs before JSON/multipart parsing",
+      "currentTitle": "media auth runs before JSON/multipart parsing",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 95
+    },
+    {
+      "id": "P4-UNIT-096",
+      "historicalTitle": "categories authentication, mapping and query validation",
+      "currentTitle": "categories authentication, mapping and query validation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 96
+    },
+    {
+      "id": "P4-UNIT-097",
+      "historicalTitle": "valid JPEG stored byte-for-byte and privately readable",
+      "currentTitle": "valid JPEG stored byte-for-byte and privately readable",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 97
+    },
+    {
+      "id": "P4-UNIT-098",
+      "historicalTitle": "valid PNG stored byte-for-byte and privately readable",
+      "currentTitle": "valid PNG stored byte-for-byte and privately readable",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 98
+    },
+    {
+      "id": "P4-UNIT-099",
+      "historicalTitle": "real PNG byte boundary 5242879",
+      "currentTitle": "real PNG byte boundary 5242879",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 99
+    },
+    {
+      "id": "P4-UNIT-100",
+      "historicalTitle": "real PNG byte boundary 5242880",
+      "currentTitle": "real PNG byte boundary 5242880",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 100
+    },
+    {
+      "id": "P4-UNIT-101",
+      "historicalTitle": "real PNG byte boundary 5242881",
+      "currentTitle": "real PNG byte boundary 5242881",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 101
+    },
+    {
+      "id": "P4-UNIT-102",
+      "historicalTitle": "upload rejects no multipart",
+      "currentTitle": "upload rejects no multipart",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 102
+    },
+    {
+      "id": "P4-UNIT-103",
+      "historicalTitle": "upload rejects no file",
+      "currentTitle": "upload rejects no file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 103
+    },
+    {
+      "id": "P4-UNIT-104",
+      "historicalTitle": "upload rejects empty file",
+      "currentTitle": "upload rejects empty file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 104
+    },
+    {
+      "id": "P4-UNIT-105",
+      "historicalTitle": "upload rejects wrong field",
+      "currentTitle": "upload rejects wrong field",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 105
+    },
+    {
+      "id": "P4-UNIT-106",
+      "historicalTitle": "upload rejects missing boundary",
+      "currentTitle": "upload rejects missing boundary",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 106
+    },
+    {
+      "id": "P4-UNIT-107",
+      "historicalTitle": "upload rejects truncated multipart",
+      "currentTitle": "upload rejects truncated multipart",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 107
+    },
+    {
+      "id": "P4-UNIT-108",
+      "historicalTitle": "upload rejects two files",
+      "currentTitle": "upload rejects two files",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 108
+    },
+    {
+      "id": "P4-UNIT-109",
+      "historicalTitle": "upload rejects text field",
+      "currentTitle": "upload rejects text field",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 109
+    },
+    {
+      "id": "P4-UNIT-110",
+      "historicalTitle": "upload rejects query",
+      "currentTitle": "upload rejects query",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 110
+    },
+    {
+      "id": "P4-UNIT-111",
+      "historicalTitle": "full decoding rejects GIF",
+      "currentTitle": "full decoding rejects GIF",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 111
+    },
+    {
+      "id": "P4-UNIT-112",
+      "historicalTitle": "full decoding rejects SVG",
+      "currentTitle": "full decoding rejects SVG",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 112
+    },
+    {
+      "id": "P4-UNIT-113",
+      "historicalTitle": "full decoding rejects HTML",
+      "currentTitle": "full decoding rejects HTML",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 113
+    },
+    {
+      "id": "P4-UNIT-114",
+      "historicalTitle": "full decoding rejects fake JPEG header",
+      "currentTitle": "full decoding rejects fake JPEG header",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 114
+    },
+    {
+      "id": "P4-UNIT-115",
+      "historicalTitle": "full decoding rejects truncated JPEG",
+      "currentTitle": "full decoding rejects truncated JPEG",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 115
+    },
+    {
+      "id": "P4-UNIT-116",
+      "historicalTitle": "full decoding rejects truncated PNG",
+      "currentTitle": "full decoding rejects truncated PNG",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 116
+    },
+    {
+      "id": "P4-UNIT-117",
+      "historicalTitle": "read missing/illegal invalid.png",
+      "currentTitle": "read missing/illegal invalid.png",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 117
+    },
+    {
+      "id": "P4-UNIT-118",
+      "historicalTitle": "read missing/illegal ../12345678-1234-1234-1234-123456789abc.png",
+      "currentTitle": "read missing/illegal ../12345678-1234-1234-1234-123456789abc.png",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 118
+    },
+    {
+      "id": "P4-UNIT-119",
+      "historicalTitle": "read missing/illegal users%2F42%2F12345678-1234-1234-1234-123456789abc.png",
+      "currentTitle": "read missing/illegal users%2F42%2F12345678-1234-1234-1234-123456789abc.png",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 119
+    },
+    {
+      "id": "P4-UNIT-120",
+      "historicalTitle": "read missing/illegal 12345678-1234-1234-1234-123456789abc.png",
+      "currentTitle": "read missing/illegal 12345678-1234-1234-1234-123456789abc.png",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 120
+    },
+    {
+      "id": "P4-UNIT-121",
+      "historicalTitle": "media read rejects query, anonymous read and public uploads",
+      "currentTitle": "media read rejects query, anonymous read and public uploads",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 121
+    },
+    {
+      "id": "P4-UNIT-122",
+      "historicalTitle": "owned file write failure is explicit and isolated",
+      "currentTitle": "owned file write failure is explicit and isolated",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 122
+    },
+    {
+      "id": "P4-UNIT-123",
+      "historicalTitle": "owned file close failure is explicit and isolated",
+      "currentTitle": "owned file close failure is explicit and isolated",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 123
+    },
+    {
+      "id": "P4-UNIT-124",
+      "historicalTitle": "owned file cleanup failure is explicit and isolated",
+      "currentTitle": "owned file cleanup failure is explicit and isolated",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 124
+    },
+    {
+      "id": "P4-UNIT-125",
+      "historicalTitle": "exclusive open never deletes or overwrites an existing successful file",
+      "currentTitle": "exclusive open never deletes or overwrites an existing successful file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 125
+    },
+    {
+      "id": "P4-UNIT-126",
+      "historicalTitle": "unknown read IO failure is safe 500",
+      "currentTitle": "unknown read IO failure is safe 500",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 126
+    },
+    {
+      "id": "P4-UNIT-127",
+      "historicalTitle": "upload transport uses native multipart header and exact path/201 JSON",
+      "currentTitle": "upload transport uses native multipart header and exact path/201 JSON",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 127
+    },
+    {
+      "id": "P4-UNIT-128",
+      "historicalTitle": "upload transport rejects HTML",
+      "currentTitle": "upload transport rejects HTML",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 128
+    },
+    {
+      "id": "P4-UNIT-129",
+      "historicalTitle": "upload transport rejects wrong status",
+      "currentTitle": "upload transport rejects wrong status",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 129
+    },
+    {
+      "id": "P4-UNIT-130",
+      "historicalTitle": "upload transport rejects bad payload",
+      "currentTitle": "upload transport rejects bad payload",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 130
+    },
+    {
+      "id": "P4-UNIT-131",
+      "historicalTitle": "upload transport rejects too large",
+      "currentTitle": "upload transport rejects too large",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 131
+    },
+    {
+      "id": "P4-UNIT-132",
+      "historicalTitle": "download rejects HTTP 401 without displaying JSON file",
+      "currentTitle": "download rejects HTTP 401 without displaying JSON file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 132
+    },
+    {
+      "id": "P4-UNIT-133",
+      "historicalTitle": "download rejects HTTP 404 without displaying JSON file",
+      "currentTitle": "download rejects HTTP 404 without displaying JSON file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 133
+    },
+    {
+      "id": "P4-UNIT-134",
+      "historicalTitle": "download rejects HTTP 500 without displaying JSON file",
+      "currentTitle": "download rejects HTTP 500 without displaying JSON file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 134
+    },
+    {
+      "id": "P4-UNIT-135",
+      "historicalTitle": "download rejects HTTP 204 without displaying JSON file",
+      "currentTitle": "download rejects HTTP 204 without displaying JSON file",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 135
+    },
+    {
+      "id": "P4-UNIT-136",
+      "historicalTitle": "download uses Authorization, temporary path and no persistent storage",
+      "currentTitle": "download uses Authorization, temporary path and no persistent storage",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 136
+    },
+    {
+      "id": "P4-UNIT-137",
+      "historicalTitle": "upload network rejects without stale identity writes",
+      "currentTitle": "upload network rejects without stale identity writes",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 137
+    },
+    {
+      "id": "P4-UNIT-138",
+      "historicalTitle": "upload timeout rejects without stale identity writes",
+      "currentTitle": "upload timeout rejects without stale identity writes",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 138
+    },
+    {
+      "id": "P4-UNIT-139",
+      "historicalTitle": "upload stale rejects without stale identity writes",
+      "currentTitle": "upload stale rejects without stale identity writes",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 139
+    },
+    {
+      "id": "P4-UNIT-140",
+      "historicalTitle": "download network rejects without stale identity writes",
+      "currentTitle": "download network rejects without stale identity writes",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 140
+    },
+    {
+      "id": "P4-UNIT-141",
+      "historicalTitle": "download timeout rejects without stale identity writes",
+      "currentTitle": "download timeout rejects without stale identity writes",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 141
+    },
+    {
+      "id": "P4-UNIT-142",
+      "historicalTitle": "download stale rejects without stale identity writes",
+      "currentTitle": "download stale rejects without stale identity writes",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 142
+    },
+    {
+      "id": "P4-UNIT-143",
+      "historicalTitle": "JSON/upload/download concurrent 401 share one invalidation and navigation",
+      "currentTitle": "JSON/upload/download concurrent 401 share one invalidation and navigation",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 143
+    },
+    {
+      "id": "P4-UNIT-144",
+      "historicalTitle": "profile selection cancellation and oversize leave saved avatar untouched",
+      "currentTitle": "profile selection cancellation and oversize leave saved avatar untouched",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 144
+    },
+    {
+      "id": "P4-UNIT-145",
+      "historicalTitle": "profile upload success is only a draft; cancel and remove never send a delete",
+      "currentTitle": "profile upload success is only a draft; cancel and remove never send a delete",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 145
+    },
+    {
+      "id": "P4-UNIT-146",
+      "historicalTitle": "profile failed upload can retry or discard; failed save reuses stable path",
+      "currentTitle": "profile failed upload can retry or discard; failed save reuses stable path",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 146
+    },
+    {
+      "id": "P4-UNIT-147",
+      "historicalTitle": "leaving profile or changing identity ignores late uploaded image",
+      "currentTitle": "leaving profile or changing identity ignores late uploaded image",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 147
+    },
+    {
+      "id": "P4-UNIT-148",
+      "historicalTitle": "profile old image download cannot replace a newer candidate preview",
+      "currentTitle": "profile old image download cannot replace a newer candidate preview",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 148
+    },
+    {
+      "id": "P4-UNIT-149",
+      "historicalTitle": "my page hide rejects late identity/image and clears visible avatar",
+      "currentTitle": "my page hide rejects late identity/image and clears visible avatar",
+      "disposition": "retained",
+      "currentPassed": true,
+      "evidence": "post-review-tests.txt",
+      "currentCaseOrdinal": 149
+    }
+  ],
+  "httpMigrations": [
+    {
+      "old": "GET /api/outfits anonymous =>404",
+      "current": "401 UNAUTHENTICATED; authenticated O01/O02/O03 real business and foreign isolation",
+      "evidence": [
+        "../run-20261117-b6-foundation/automated-results.json",
+        "../run-20261117-b6-integration/http-results.json"
+      ]
+    },
+    {
+      "old": "GET /api/diaries and /api/statistics =>404",
+      "current": "retained 404 NOT_FOUND",
+      "evidence": [
+        "../run-20261117-b6-foundation/automated-results.json",
+        "../run-20261117-b6-integration/http-results.json"
+      ]
+    }
+  ],
+  "scope": "149 historical unit/callback semantics retained; real HTTP evidence separate; no native UI/visual equivalence"
+}

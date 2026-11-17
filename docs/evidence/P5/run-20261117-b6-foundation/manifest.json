@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "sequence": 9,
+  "runId": "run-20261117-b6-foundation",
+  "batch": 6,
+  "accounts": [
+    {
+      "id": 41,
+      "createdByRunId": "run-20261117-b6-foundation"
+    },
+    {
+      "id": 42,
+      "createdByRunId": "run-20261117-b6-foundation"
+    }
+  ],
+  "rows": [
+    {
+      "table": "users",
+      "ownerId": 41,
+      "row": {
+        "key": 41,
+        "sha256": "69f1f1d7e938022b6694e1a97b8ddedc6c5cf8ca7f0d8a518ff8123648a7df69"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "nickname",
+        "avatar_path",
+        "auth_token_hash",
+        "auth_expires_at",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "users",
+      "ownerId": 42,
+      "row": {
+        "key": 42,
+        "sha256": "89967d789d078b834fe4a8777dee74290bfe34cd70590028adfd566b5b8b6385"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "nickname",
+        "avatar_path",
+        "auth_token_hash",
+        "auth_expires_at",
+        "updated_at"
+      ],
+      "changedFields": []
+    }
+  ],
+  "images": [
+    {
+      "userId": 41,
+      "path": "users/41/b0cffaf6-a2c7-4870-b29a-133453a2b6c1.jpg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "mimeType": "image/jpeg",
+      "references": [],
+      "retention": "successful HTTP upload retained"
+    },
+    {
+      "userId": 41,
+      "path": "users/41/bcaead53-ed6a-48d7-b8c1-a2dd4ba20950.png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png",
+      "references": [],
+      "retention": "successful HTTP upload retained"
+    },
+    {
+      "userId": 42,
+      "path": "users/42/d2b94213-be6d-4edd-994e-fd17628e1915.png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "mimeType": "image/png",
+      "references": [],
+      "retention": "successful HTTP upload retained"
+    },
+    {
+      "userId": 41,
+      "path": "users/41/71e462f9-a901-4a98-8947-f8260f78d60e.png",
+      "size": 5242879,
+      "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7",
+      "mimeType": "image/png",
+      "references": [],
+      "retention": "successful HTTP upload retained"
+    },
+    {
+      "userId": 41,
+      "path": "users/41/624f8a94-3a34-4fcf-b108-eab81a37c9ba.png",
+      "size": 5242880,
+      "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4",
+      "mimeType": "image/png",
+      "references": [],
+      "retention": "successful HTTP upload retained"
+    }
+  ],
+  "allAccountsLoggedOut": true,
+  "processClosed": true
+}

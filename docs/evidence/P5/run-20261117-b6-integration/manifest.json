@@ -1,0 +1,1644 @@
+{
+  "version": 1,
+  "sequence": 7,
+  "runId": "run-20261117-b6-integration",
+  "batch": 6,
+  "accounts": [
+    {
+      "id": 39,
+      "username": "p5_215a5510_a",
+      "role": "a",
+      "loggedOut": true,
+      "createdByRunId": "run-20261117-b6-integration"
+    },
+    {
+      "id": 40,
+      "username": "p5_215a5510_b",
+      "role": "b",
+      "loggedOut": true,
+      "createdByRunId": "run-20261117-b6-integration"
+    }
+  ],
+  "rows": [
+    {
+      "table": "users",
+      "ownerId": 39,
+      "row": {
+        "key": 39,
+        "sha256": "7bd61a47bb16f89004924985250c3ef9a030a0aee9272eb72de8d65d9484a889"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "nickname",
+        "avatar_path",
+        "auth_token_hash",
+        "auth_expires_at",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "users",
+      "ownerId": 40,
+      "row": {
+        "key": 40,
+        "sha256": "489d68eb394392a1f8abfbdc48ff44a02542a93c3b922e9a7124bc07ec28c28f"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "nickname",
+        "avatar_path",
+        "auth_token_hash",
+        "auth_expires_at",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 145,
+        "sha256": "abb71b783a4854359185aa15857011076194f7bc4da2a12a08521bd849c472c6",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 146,
+        "sha256": "af2b28a12c61a090b01657f56949d4700eb67177c6f154b17365cedbd8769c88",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 147,
+        "sha256": "49da48c538315f6c7f34ebf5283b8c0d6b13671d31a8a3b7e353686866808895",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 148,
+        "sha256": "7f276b1aff0b54712b17beba9183646b609e0a3f37ff1bf22c1ccc63dd8f4dee",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 149,
+        "sha256": "7af44ee3d16025e7faf707583ec65189a3b311cf4ea904b8b5da95ac57a9f3ba",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 150,
+        "sha256": "234eaf6d4432985c46e29490cb687598eb8106ca3af51eae453304d93b78c72d",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 151,
+        "sha256": "4c4a3069ec7013d5f606d677da35c03484c90cf966e6a4bb6ff496bfec06b693",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 152,
+        "sha256": "9039b2028ac03ffa4e9d72ad27d42313181a97f58d7e6eabf497d4fc5b89b274",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 153,
+        "sha256": "0ca37d853d09b633598a5520addefd220eb9f04c9164d6e5e089dd0e4570f364",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 154,
+        "sha256": "c138c019626523bde488a49eb9a250759fbfa7a3695f702919425eebc051df1f",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 155,
+        "sha256": "46af1811f5c701adcef014af6b39a4a0d358aad939fd8c5bf0b2cfa45d9e4cb2",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 156,
+        "sha256": "efd8e3399c66ddb924602465612a6b377b123369de66bb29fe74206fcede13ad",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 157,
+        "sha256": "8ef924a270eca1e8f361af05e130acf728404f4fc74640d8e57f8dda2d49c462",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 158,
+        "sha256": "1008e055c38d4fcdaab909aee2b9398cbbc9564d0d38905d0402708c25f880e3",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 159,
+        "sha256": "812846d853605245f494ca13ac4b814b56b76cd349d974e15f3c1f7a74c16325",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 160,
+        "sha256": "4f26ff5e8a26f1ead98a53140de78ce3e173fdaf40c0e3f2571a4391e2f0a6ce",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 161,
+        "sha256": "175ac8fe318a216aad6d4f392c84071f0c965cc344b64c53d0e30d2ba4949bb5",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 162,
+        "sha256": "16bc720115d3b30334842cda862f79e25219d48dc4a71b12ccc86dd80e153f15",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 163,
+        "sha256": "854191be5baf650fe00c973b6ee6cd3a9f16b0f948c89bf772f475d0e2f18219",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 164,
+        "sha256": "82326d68093bc8f0dce789ff1b5ada07ae1b4234391d1b1f01b6cdad512ed50b",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 39,
+      "row": {
+        "key": 165,
+        "sha256": "6d81a03d2d8291bc57df877d0154c6ad5c8763410e0b07c57176e4bdab16a9ac",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "clothes",
+      "ownerId": 40,
+      "row": {
+        "key": 166,
+        "sha256": "50e93a9fc6fb33f56e3aef936705fdf0becccbc6abe499cf576812f899ea88af",
+        "userId": 40
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "category_id",
+        "name",
+        "image_path",
+        "color",
+        "season",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 50,
+        "sha256": "20fbc3ded36d4d2c26b6847cfc074b7436aca0a32d77048c67e07a8558ab1675",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 51,
+        "sha256": "3cb665a9dc38a20134c63f9de960858b8e199e033b9a2836217b0d3f2c3bf03f",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 52,
+        "sha256": "31d934f12094b4acf523e40383266eece3a17bd602abfcc40802d9401be3dca2",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 53,
+        "sha256": "9a7b72c601d8275e2b87de0deffa00b53eb9331fc741487e85a233abb5dc2cf5",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 54,
+        "sha256": "89436fc033671f7e3b27eb6066e964d3648ae472abbb575929113e1ddd0d0df2",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 55,
+        "sha256": "bd4add7b08ca0605f5c8a1be1c217842673581d3a33dfdbe795cb58130d043f9",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 56,
+        "sha256": "008fb40e8d08aab74b3d6244e762c0122a1f4a7013831735953a343be4cec924",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 57,
+        "sha256": "3dbcc960a101ea455598e8d7556d35027a439bd8de42ce6a0cd398e117c4a1d5",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 58,
+        "sha256": "04b7ca7e36f9670ecba87aded3105f39828c7bf9b32fd2df9b9272ab346a5b01",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 59,
+        "sha256": "d8c5bb84e09749c875b273397fe542a95bb1cea441b70d03952d7087c675761f",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 60,
+        "sha256": "e430a9626c5f82fe1490354e967f5e0739b6e6ed8d920b41a5d4cf815380f7d9",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 61,
+        "sha256": "1fbe189222c485dabf2df83da61e65aa906d59e515f276329e1554a04d785762",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 62,
+        "sha256": "d3c30d4c9b29c77e0f6b3120cbe6c731dec61538168c878e9d6548a9be765f25",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 63,
+        "sha256": "4757648cfbbf4a0030fe683475035ecaf024e06b808e1be982c1a0b2ef969b2a",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 39,
+      "row": {
+        "key": 64,
+        "sha256": "5777bef150b107602c64196cb4c8afbed66846051af58e4770aa60db561d1431",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfits",
+      "ownerId": 40,
+      "row": {
+        "key": 65,
+        "sha256": "1d13a6f425c9884a9824c3de78645391ff7a26fa312db90963ff7e70632110c3",
+        "userId": 40
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "diaries",
+      "ownerId": 39,
+      "row": {
+        "key": 50,
+        "sha256": "cd5c94e58434bf593af3c900c8be8be8af8aede24b9d15853d36240324498c42",
+        "userId": 39
+      },
+      "beforeSha256": null,
+      "allowedFields": [],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "50:145",
+        "sha256": "1f890a0ead5b822f6bad4207b89514831a52a6606a0bff4b9987cc27c93fdb9b"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "51:145",
+        "sha256": "e526c44d5e8b2fb38269984f0732b27177ec74b32de8909324376070dc0e673e"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "51:146",
+        "sha256": "b56e25ee6428004ee726868bd34da7d10a5d7fd94193b3187bbfe98366526252"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "51:147",
+        "sha256": "03cd0a3b95a0bf61f461c0e81f971cb7331fed2fab0527c6f813448965eed4e1"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "51:148",
+        "sha256": "de46644a34d02375882b2df35a0d55c4136b2030378b60b07c57041d31f21530"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "52:149",
+        "sha256": "28dd840b4294729c7c248fe2ffdee43d99efc5794551d5d91a40fa240e4e8dba"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "52:146",
+        "sha256": "897523dea6c393ed477e35fcf9a384dfb1e654e5d86ec5f8195b6660e162d655"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "52:164",
+        "sha256": "d00c5ffb4701662a65927abded0e74c262124d70655bca07e7948af35243819a"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "52:148",
+        "sha256": "4f10403147c3c0257b407d81349a0962fb43876fdca9fc4747c4a4fe00b62ad0"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "52:145",
+        "sha256": "7c7fc92d2787cdbfae948441de68cca89d099c0cfa9f9ca969a696749713d24c"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:164",
+        "sha256": "0e8320a6685021602545602e53075c722a3526fc64160392423fbc98176fa892"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:163",
+        "sha256": "09b63d5e57abe8b56becebced2924393e2279a50a97eaa2c063e69f8c553df2f"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:162",
+        "sha256": "07ecec7bb31d4faf36c97f084561feb2eba63c0062d9f49cb26d62cd7bc9a601"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:161",
+        "sha256": "c0345ecbfd6d3cbbcb139eb36d0702e1fa09e988b449bafe0cca0e0826e6de53"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:160",
+        "sha256": "2ce982301ff9ef8e867c3ba177eeb5189bc8ce191fc70e48f67a080f77c17546"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:159",
+        "sha256": "797ee828884bbe4bfc24d212ce87e06ce8a6eb1bf50d7d9fd03fc0a504d78a18"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:158",
+        "sha256": "268060403364eccb5c91d5c0c1597ba83a81da2c26b5695f91b3faea16fa4c9c"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:157",
+        "sha256": "85e7552b60a4f01832ef1f204951a9f6c0450d8b3427ebabb4e67ae5f37611ae"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:156",
+        "sha256": "442074ee84339dc79a2452695d39f4dca576f14a81a24668b1f1242403079271"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:155",
+        "sha256": "30e65170f26baebff3122b8b82c680fa7c4fe2c18b5f905b2e5f2a8d2a251ac5"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:154",
+        "sha256": "9f7e91c705e32474d863a8abca87b354682e4b3660cd5fe68926ca04c0c0906f"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:153",
+        "sha256": "5d08294d3de2126fa1f3ef7ecc9d45ca661c2058676984dc8b0a45e730bdb020"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:152",
+        "sha256": "da895cc0d9350100328ddabf92bf94bbb6b3b863d7d6dec6d285391e44d01752"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:151",
+        "sha256": "9c05da6f4e52c5f33cd7159ec3f9d1b3b9af0d5a8a3c590fb331cb2fa3678f1c"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:150",
+        "sha256": "9d13be3fecbfc2f41e2a4dc0ed2014f28101d51f96debfa7a0678cab6f881a11"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:149",
+        "sha256": "5eb357d74a3e537e8df10c66781ff4ecbf72a3066e091808233408a37d408f19"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:148",
+        "sha256": "9ad7715c64f8885d2e1d429cfcc49b8517c2102c031d2bfc784add36ca93d172"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:147",
+        "sha256": "9b8325ce560c7745f5380a1a837ff08f82a4a54d867d1840de07fcd9bed0a10a"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:146",
+        "sha256": "26fc13daeda2fb4db4453a57bcc244cdccfce514385754d22cb3658530829680"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "53:145",
+        "sha256": "b3d259ab2dbf95b178ef770738964f4d58db420fa28ce53b959bfa30acedefcb"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "54:149",
+        "sha256": "a8e7d2155e7ba441930665a702cb91cfeb1e588b45185310c0034a68ef28430a"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "54:147",
+        "sha256": "e0ec1fd512fc8be7a9e26474c2aee6b959a7ca098aa4c6c7864c2094d82ce3dd"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "54:145",
+        "sha256": "410a654329c912671190f00747148654b16ec7627687701bdfc84f38edca0219"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "55:146",
+        "sha256": "fccd78953468ae13dc3a1330cd5e6d1cccf1fdb309041e424e3aed45eb5e62ff"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "56:145",
+        "sha256": "36942762ab07087e97f016789d66476e28414dc35682f4a82e75956fc9950773"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "57:146",
+        "sha256": "8db1740476c148ee28834e4a72a41df463a2e8b826f411a97508f7ed65670038"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "58:147",
+        "sha256": "fb5196d3f9cefb9c5ceb6692fba0abd65df4255e0ed83e089d9c8a6856d80bc3"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "59:148",
+        "sha256": "ab2b95aab8cef088d3c81df7d171b2d1d28c94cca27e3a3f249210fedf03b736"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "60:149",
+        "sha256": "70d85a3ea636ba8614c3cf26a5da67e60e5308270306a174b76f026f5b6e0b6e"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "61:150",
+        "sha256": "0aff649ca0e395b69a780acc1095dbeddcb26607378c438d78c1a7202e883f32"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "62:164",
+        "sha256": "51796e99c463f7252955265569ac342d2a983d0d1f430d7aa545d32e41a35909"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "63:145",
+        "sha256": "df9f0d444d5c002553ef9e3d06afa25162245ff676dca25eff4b00f7285d5de6"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "63:146",
+        "sha256": "186670d13ad8f8c1d587759e32afe5da4489bd623413501871b809ae68068fb8"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "63:147",
+        "sha256": "2d0af4631d105a74755aad7053c5c022304019f1867e8c19c98164c19da3bea6"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "63:148",
+        "sha256": "d31fbf4442be395252a3c13eae8f3ebcacafa393cdb52b0d64bb2a59f39bd412"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 39,
+      "row": {
+        "key": "64:164",
+        "sha256": "1c7d887a8a6fd18cb140dd91b89310d00d7a83ee8119adba799af9f92d504ace"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 40,
+      "row": {
+        "key": "65:166",
+        "sha256": "609842e9ae05e329920a5a715f34a3718a3d96cc14636cc388660a5c3d9327e9"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "diary_items",
+      "ownerId": 39,
+      "row": {
+        "key": "50:164",
+        "sha256": "c13c34298a58a00ad16875f877add4eeded50795212a2f1f9b3a99fcac37fa17"
+      },
+      "beforeSha256": null,
+      "allowedFields": [],
+      "changedFields": []
+    },
+    {
+      "table": "diary_items",
+      "ownerId": 39,
+      "row": {
+        "key": "50:146",
+        "sha256": "4cef47c10011bb7d4739bc7ea3c108cd53bbcdd1c93e39131258f593d49afe6f"
+      },
+      "beforeSha256": null,
+      "allowedFields": [],
+      "changedFields": []
+    }
+  ],
+  "images": [
+    {
+      "userId": 39,
+      "path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "size": 269594,
+      "mimeType": "image/jpeg",
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retained": true,
+      "references": [
+        {
+          "clothingId": 145,
+          "key": "A1"
+        },
+        {
+          "clothingId": 146,
+          "key": "A2"
+        },
+        {
+          "clothingId": 147,
+          "key": "A3"
+        },
+        {
+          "clothingId": 148,
+          "key": "A4"
+        },
+        {
+          "clothingId": 149,
+          "key": "A5"
+        },
+        {
+          "clothingId": 150,
+          "key": "A6"
+        },
+        {
+          "clothingId": 151,
+          "key": "A7"
+        },
+        {
+          "clothingId": 152,
+          "key": "A8"
+        },
+        {
+          "clothingId": 153,
+          "key": "A9"
+        },
+        {
+          "clothingId": 154,
+          "key": "A10"
+        },
+        {
+          "clothingId": 155,
+          "key": "A11"
+        },
+        {
+          "clothingId": 156,
+          "key": "A12"
+        },
+        {
+          "clothingId": 157,
+          "key": "A13"
+        },
+        {
+          "clothingId": 158,
+          "key": "A14"
+        },
+        {
+          "clothingId": 159,
+          "key": "A15"
+        },
+        {
+          "clothingId": 160,
+          "key": "A16"
+        },
+        {
+          "clothingId": 161,
+          "key": "A17"
+        },
+        {
+          "clothingId": 162,
+          "key": "A18"
+        },
+        {
+          "clothingId": 163,
+          "key": "A19"
+        },
+        {
+          "clothingId": 164,
+          "key": "A20"
+        },
+        {
+          "clothingId": 165,
+          "key": "A21"
+        }
+      ]
+    },
+    {
+      "userId": 40,
+      "path": "users/40/137962c9-43a9-426c-99ea-cb208ea24b91.jpg",
+      "size": 269594,
+      "mimeType": "image/jpeg",
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retained": true,
+      "references": [
+        {
+          "clothingId": 166,
+          "key": "B1"
+        }
+      ]
+    }
+  ],
+  "allowedFields": {
+    "users": [
+      "nickname",
+      "avatar_path",
+      "auth_token_hash",
+      "auth_expires_at",
+      "updated_at"
+    ],
+    "clothes": [
+      "category_id",
+      "name",
+      "image_path",
+      "color",
+      "season",
+      "note",
+      "is_archived",
+      "updated_at"
+    ],
+    "outfits": [
+      "name",
+      "occasion",
+      "note",
+      "is_archived",
+      "updated_at"
+    ],
+    "outfit_items": [
+      "clothing_id",
+      "sort_order"
+    ],
+    "diaries": [],
+    "diary_items": []
+  },
+  "allAccountsLoggedOut": true,
+  "processClosed": true
+}

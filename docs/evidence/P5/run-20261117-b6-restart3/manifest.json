@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "sequence": 8,
+  "runId": "run-20261117-b6-restart3",
+  "batch": 6,
+  "accounts": [],
+  "rows": [
+    {
+      "table": "users",
+      "ownerId": 39,
+      "row": {
+        "key": 39,
+        "sha256": "95b8124799df407e8c4d25655512cad748de78d5dcd057af7c2afe6347ab444d"
+      },
+      "beforeSha256": "7bd61a47bb16f89004924985250c3ef9a030a0aee9272eb72de8d65d9484a889",
+      "transition": "logged-out-session",
+      "proof": {
+        "beforeUpdatedAt": "2026-11-17 12:55:52.888",
+        "afterUpdatedAt": "2026-11-17 12:56:44.512",
+        "beforeSha256": "7bd61a47bb16f89004924985250c3ef9a030a0aee9272eb72de8d65d9484a889",
+        "afterSha256": "95b8124799df407e8c4d25655512cad748de78d5dcd057af7c2afe6347ab444d"
+      }
+    },
+    {
+      "table": "users",
+      "ownerId": 40,
+      "row": {
+        "key": 40,
+        "sha256": "63f5379f29d44c091cc96fd674654f94e323e883316de77b7cfe3103c8e23c25"
+      },
+      "beforeSha256": "489d68eb394392a1f8abfbdc48ff44a02542a93c3b922e9a7124bc07ec28c28f",
+      "transition": "logged-out-session",
+      "proof": {
+        "beforeUpdatedAt": "2026-11-17 12:55:52.897",
+        "afterUpdatedAt": "2026-11-17 12:56:44.518",
+        "beforeSha256": "489d68eb394392a1f8abfbdc48ff44a02542a93c3b922e9a7124bc07ec28c28f",
+        "afterSha256": "63f5379f29d44c091cc96fd674654f94e323e883316de77b7cfe3103c8e23c25"
+      }
+    }
+  ],
+  "images": [],
+  "referencedFixtureRunId": "run-20261117-b6-integration",
+  "processes": [
+    {
+      "pid": 74780,
+      "origin": "http://127.0.0.1:51160",
+      "startedAt": "2026-11-17T12:56:43.597Z",
+      "stoppedAt": "2026-11-17T12:56:44.093Z",
+      "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+    },
+    {
+      "pid": 41948,
+      "origin": "http://127.0.0.1:51160",
+      "startedAt": "2026-11-17T12:56:44.128Z",
+      "stoppedAt": "2026-11-17T12:56:44.531Z",
+      "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+    }
+  ],
+  "allAccountsLoggedOut": true
+}

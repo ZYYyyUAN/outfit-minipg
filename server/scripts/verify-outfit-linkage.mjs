@@ -9,12 +9,12 @@ import {createDatabase} from '../src/db.js';
 import {reserveRun,captureSnapshot,compareCumulative,loadManifests,sessionTransitionProof} from './verify-outfits.mjs';
 const root=path.dirname(serverRoot),hash=v=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
 const write=(file,value)=>fs.writeFile(file,JSON.stringify(value,null,2)+'\n');
-export async function verifyLinkage(runId){
+export async function verifyLinkage(runId,batch=5){
  assert.match(runId,/^[a-z0-9][a-z0-9_-]{0,79}$/);
  const directory=await reserveRun(path.join(root,'docs/evidence/P5'),runId),config=readConfig();
  const prior=await loadManifests(),baseline=JSON.parse(await fs.readFile(path.join(root,'docs/evidence/P5/run-20261116-b1-baseline/baseline.json')));
  const database=createDatabase(config);
- const reports=[],sql=[],manifest={version:1,sequence:Math.max(...prior.map(m=>m.sequence))+1,runId,batch:5,accounts:[],rows:[],images:[],referencedFixtureRunId:'run-20261117-b2-http2',referencedAccountIds:[37,38],sessionsOpened:0,allAccountsLoggedOut:false,processClosed:false};
+ const reports=[],sql=[],manifest={version:1,sequence:Math.max(...prior.map(m=>m.sequence))+1,runId,batch,accounts:[],rows:[],images:[],referencedFixtureRunId:'run-20261117-b2-http2',referencedAccountIds:[37,38],sessionsOpened:0,allAccountsLoggedOut:false,processClosed:false};
  let runtime,token,beforeUser,checksPassed=false;
  const rows=async(query,params=[])=>{const c=await database.getConnection();try{return (await c.execute(query,params))[0];}finally{c.release();}};
  const call=async(label,method,url,status,data)=>{
@@ -23,7 +23,7 @@ export async function verifyLinkage(runId){
  try{
   const preflight=await captureSnapshot(database,config.uploadRoot);compareCumulative(baseline,preflight,prior);await write(path.join(directory,'preflight.json'),preflight);
   [beforeUser]=await rows('SELECT * FROM users WHERE id=?',[37]);assert.equal(beforeUser.auth_token_hash,null);assert.equal(beforeUser.auth_expires_at,null);
-  await write(path.join(directory,'write-plan.json'),{batch:5,gitBase:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),reuseAccount:37,allowedExistingFields:['users.37.updated_at (login/logout only)'],businessWrites:false});
+  await write(path.join(directory,'write-plan.json'),{batch,gitBase:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),reuseAccount:37,allowedExistingFields:['users.37.updated_at (login/logout only)'],businessWrites:false});
   const history=await rows('SELECT * FROM diaries ORDER BY id'),historyItems=await rows('SELECT * FROM diary_items ORDER BY diary_id,sort_order');
   runtime=await start({...config,port:0});
   const privateData=JSON.parse(await fs.readFile(path.join(serverRoot,'.p5-private/run-20261117-b2-http2.json'))),account=privateData.accounts.find(a=>a.id===37);
@@ -61,8 +61,8 @@ export async function verifyLinkage(runId){
   manifest.allAccountsLoggedOut=(await rows('SELECT auth_token_hash,auth_expires_at FROM users WHERE id IN (37,38)')).every(r=>r.auth_token_hash===null&&r.auth_expires_at===null);
   await write(path.join(directory,'manifest.json'),manifest);await write(path.join(directory,'http-results.json'),reports);await write(path.join(directory,'sql-results.json'),sql);
   const final=await captureSnapshot(database,config.uploadRoot);await write(path.join(directory,'final-snapshot.json'),final);const protection=compareCumulative(baseline,final,[...prior,manifest]);
-  await write(path.join(directory,'results.json'),{runId,batch:5,checkedAt:new Date().toISOString(),stage5Complete:false,passed:checksPassed&&reports.length===8&&sql.length===1,authenticatedHttpChecks:reports.length,newConnectionSqlChecks:sql.length,manifest:'manifest.json',protection,allAccountsLoggedOut:manifest.allAccountsLoggedOut,ownedApplicationClosed:manifest.processClosed,developerToolPortOpened:false,pending:['Batch6 full integration/restart','Batch7 native/manual/visual']});
+  await write(path.join(directory,'results.json'),{runId,batch,checkedAt:new Date().toISOString(),stage5Complete:false,passed:checksPassed&&reports.length===8&&sql.length===1,authenticatedHttpChecks:reports.length,newConnectionSqlChecks:sql.length,manifest:'manifest.json',protection,allAccountsLoggedOut:manifest.allAccountsLoggedOut,ownedApplicationClosed:manifest.processClosed,developerToolPortOpened:false,pending:['Batch6 full integration/restart','Batch7 native/manual/visual']});
   }finally{await database.end();}
  }
 }
-if(import.meta.main){if(process.argv.length===2||process.argv[2]==='--help')console.log('Batch5只读业务联动验证：--check <唯一runId>；复用37登录并退出，不写业务数据。');else{assert.equal(process.argv[2],'--check');assert.equal(process.argv.length,4);await verifyLinkage(process.argv[3]);}}
+if(import.meta.main){if(process.argv.length===2||process.argv[2]==='--help')console.log('Batch5只读业务联动验证：--check <唯一runId>；复用37登录并退出，不写业务数据。');else{assert.ok(['--check','--check6'].includes(process.argv[2]));assert.equal(process.argv.length,4);await verifyLinkage(process.argv[3],process.argv[2]==="--check6"?6:5);}}

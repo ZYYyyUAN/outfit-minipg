@@ -1,0 +1,44 @@
+{
+  "batch": 6,
+  "oneSimultaneousDualReviewerRound": true,
+  "reviewers": [
+    "review_contract",
+    "review_scope"
+  ],
+  "readOnly": true,
+  "additionalReviewers": 0,
+  "findings": [
+    {
+      "priority": "P2",
+      "finding": "actual independent SQL intermediate records overwritten by fixture summary",
+      "repair": "future intermediate output uses independent-sql-orders.json; current 16 A/B outfits rechecked with 16 different physical MySQL connections in new read-only run",
+      "evidence": "run-20261117-b6-review-sql; no accounts/sessions/business writes added"
+    },
+    {
+      "priority": "P2",
+      "finding": "restart source could select later foundation manifest",
+      "repair": "selectIntegrationManifest restricts complete outfit manifest by allowedFields.outfits; regression covers later foundation"
+    },
+    {
+      "priority": "P2",
+      "finding": "manual new outfit would make 13 active become 14 before pagination check",
+      "repair": "archive newly created manual outfit and register change before original 13/12+1 check; retain successful rows"
+    },
+    {
+      "priority": "P3",
+      "finding": "restart pooled SQL was labeled newConnectionSql without proving new physical connection",
+      "repair": "future field is pooledConnectionSql; existing raw restart reports corrected by this record; independent physical proof is review-sql"
+    }
+  ],
+  "postReview": {
+    "unitTests": 313,
+    "failed": 0,
+    "skipped": 0,
+    "historical149Retained": true,
+    "readOnlySqlChecks": 16,
+    "newPhysicalConnectionIdsAllDistinct": true,
+    "finalProtection": "run-20261117-b6-post-review-audit/results.json"
+  },
+  "productionBusinessChanges": false,
+  "nativeManualPassed": false
+}

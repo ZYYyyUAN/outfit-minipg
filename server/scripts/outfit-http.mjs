@@ -109,7 +109,7 @@ async function rollbackChecks(database, config, a, form, targetId, directory) {
   return reports;
 }
 
-export async function verifyOutfitHttp({ runId, directory, baselineFile, config, database, gitState, verification }) {
+export async function verifyOutfitHttp({ runId, directory, baselineFile, config, database, gitState, verification, batch = 2 }) {
   const { captureSnapshot, compareCumulative, loadManifests, historicalReleaseHashes } = verification;
   const baseline = JSON.parse(await fs.readFile(baselineFile, 'utf8')), priorManifests = await loadManifests();
   const previousReleases = JSON.parse(await fs.readFile(path.join(path.dirname(baselineFile), 'historical-release-hashes.json'), 'utf8'));
@@ -117,14 +117,14 @@ export async function verifyOutfitHttp({ runId, directory, baselineFile, config,
   const before = await captureSnapshot(database, config.uploadRoot);
   const preflight = compareCumulative(baseline, before, priorManifests);
   await write(path.join(directory, 'preflight.json'), { git: gitState, baselineSha256: hash(await fs.readFile(baselineFile)), ...preflight, snapshot: before });
-  await write(path.join(directory, 'write-plan.json'), { runId, batch: 2, protectedStageBaseline: path.relative(root, baselineFile).replaceAll('\\', '/'),
+  await write(path.join(directory, 'write-plan.json'), { runId, batch, protectedStageBaseline: path.relative(root, baselineFile).replaceAll('\\', '/'),
     onlyNewDedicatedOwners: true, accountCount: 2, aClothes: 21, bClothes: 1, aOutfits: { active: 13, archived: 2 }, bOutfits: 1,
     directSql: ['one independent diary with two ordered items under A', 'expire B test session then relogin'],
     faultPoints: ['create after two items', 'update after deleting old items'], allowedFieldsForLaterBatches: permissions,
     retention: 'all committed rows and successful uploads retained; failed transactions rolled back; no original rows writable' });
-  const accounts = [], images = [], checks = [], fixture = { runId, accounts: {}, clothes: {}, outfits: {}, diaries: {} };
+  const accounts = [], images = [], checks = [], sqlChecks = [], fixture = { runId, accounts: {}, clothes: {}, outfits: {}, diaries: {} };
   const saveRegistry = () => write(path.join(directory, 'fixture-map.json'), fixture);
-  const manifest = { version: 1, sequence: Math.max(0, ...priorManifests.map(value => value.sequence)) + 1, runId, batch: 2,
+  const manifest = { version: 1, sequence: Math.max(0, ...priorManifests.map(value => value.sequence)) + 1, runId, batch,
     accounts: [], rows: [], images, allowedFields: permissions, allAccountsLoggedOut: false, processClosed: false };
   const saveManifest = async () => {
     const connection = await database.getConnection();
@@ -160,13 +160,17 @@ export async function verifyOutfitHttp({ runId, directory, baselineFile, config,
   const get = (label, url, account) => call(label, 'GET', url, 200, account);
   const reject = (label, method, url, account, body, code = 'INVALID_INPUT') => call(label, method, url, 400, account, body, { code });
   async function freshOrder(account, id, ids) {
-    const freshDatabase = createDatabase(config), connection = await freshDatabase.getConnection();
+    const freshDatabase = createDatabase(config);
     try {
+      const connection = await freshDatabase.getConnection();
+      try {
       const state = await outfitRows(connection, account.id, id);
       assert.equal(state.parents.length, 1); assert.deepEqual(state.items.map(row => row.clothing_id), ids);
       assert.deepEqual(state.items.map(row => row.sort_order), ids.map((_, index) => index + 1));
-      return state;
-    } finally { connection.release(); await freshDatabase.end(); }
+      sqlChecks.push({accountId:account.id,outfitId:id,newPhysicalConnection:true,connectionId:connection.threadId,orderedClothingIds:state.items.map(row=>row.clothing_id),sortOrder:state.items.map(row=>row.sort_order),parentSha256:hash(JSON.stringify(state.parents)),passed:true});
+      await write(path.join(directory,'independent-sql-orders.json'),sqlChecks);return state;
+      }finally{connection.release();}
+    } finally { await freshDatabase.end(); }
   }
   try {
     runtime = await start({ ...config, port: 0 }); base = 'http://127.0.0.1:' + runtime.server.address().port;
@@ -315,6 +319,27 @@ export async function verifyOutfitHttp({ runId, directory, baselineFile, config,
     await call('restore target', 'PATCH', '/outfits/' + target.id + '/archive', 200, a, { isArchived: false });
     const restoreRepeat = await call('repeat restore', 'PATCH', '/outfits/' + target.id + '/archive', 200, a, { isArchived: false });
     assert.equal(restoreRepeat.isArchived, false);
+    if(batch===6){
+      for(const [method,url,body]of [['GET','/clothes'],['GET','/clothes/facets'],['GET','/clothes/'+ids[0]],['POST','/clothes',{}],['PUT','/clothes/'+ids[0],{}],['PATCH','/clothes/'+ids[0]+'/archive',{isArchived:true}],['GET','/clothes/'+ids[0]+'/outfits'],['GET','/clothes/'+ids[0]+'/diaries']])await call('C anonymous '+method+url,method,url,401,null,body,{code:'UNAUTHENTICATED'});
+      for(const url of ['/diaries','/statistics'])await call('D/S remain unimplemented','GET',url,404,a,undefined,{code:'NOT_FOUND'});
+      const page1=await get('C01 12 first','/clothes',a),page2=await get('C01 next','/clothes?page=2',a);assert.equal(page1.items.length,12);assert.equal(new Set([...page1.items,...page2.items].map(i=>i.id)).size,20);
+      assert.equal((await get('C01 category filter','/clothes?categoryId=tops&pageSize=50',a)).total,13);
+      assert.equal((await get('C01 color season AND','/clothes?color='+encodeURIComponent('米白色')+'&season='+encodeURIComponent('春')+'&archived=all&pageSize=50',a)).total,21);
+      await get('C02 facets','/clothes/facets?archived=all',a);
+      for(const url of ['/clothes/'+bClothing.id,'/clothes/'+bClothing.id+'/outfits','/clothes/'+bClothing.id+'/diaries'])await call('C foreign unified 404','GET',url,404,a,undefined,{code:'NOT_FOUND'});
+      for(const query of ['page=0','pageSize=51','keyword=a&keyword=b','categoryId=bad','season=bad','archived=','x=1'])await reject('C invalid query '+query,'GET','/clothes?'+query,a);
+      const c=await get('C03 before current attribute edit','/clothes/'+ids[0],a);
+      const uploadForm=new FormData(),bytes=await fs.readFile(path.join(root,'assets/clothes/clothing-002.jpg'));uploadForm.append('file',new Blob([bytes],{type:'image/jpeg'}),'p5-alternate.jpg');
+      const alternate=await call('V23 alternate own real upload','POST','/uploads',201,a,uploadForm);images.push({userId:a.id,path:alternate.imagePath,size:bytes.length,mimeType:alternate.mimeType,sha256:hash(bytes),retained:true,references:[]});
+      const updated=await call('C05 rename and replace own image','PUT','/clothes/'+ids[0],200,a,{name:'Batch6当前衣物_%!',categoryId:c.categoryId,imagePath:alternate.imagePath,color:c.color,season:c.season,note:c.note});
+      await call('C06 archive current clothing','PATCH','/clothes/'+ids[0]+'/archive',200,a,{isArchived:true});
+      const full=await get('O03 reflects renamed archived clothing','/outfits/'+fixture.outfits.A1.id,a);assert.equal(full.items[0].imagePath,alternate.imagePath);assert.notEqual(full.items[0].imagePath,c.imagePath);assert.equal(full.items[0].name,updated.name);assert.equal(full.items[0].isArchived,true);
+      const list=await get('O01 reflects renamed archived clothing','/outfits?archived=all&pageSize=50',a);assert.deepEqual(list.items.find(i=>i.id===full.id).previewItems,full.items);
+      const related=await get('C07 complete ordered previews','/clothes/'+ids[0]+'/outfits?pageSize=50',a);assert.ok(related.items.some(i=>i.id===full.id));
+      const history=await get('C08 independent diary related','/clothes/'+ids[19]+'/diaries',a);assert.ok(history.items.some(i=>i.id===fixture.diaries.A1.id));
+      const cAfter=await get('C03 unchanged statistics after attribute edit','/clothes/'+ids[0],a);assert.equal(cAfter.wearCount,c.wearCount);assert.equal(cAfter.lastWornDate,c.lastWornDate);
+      await call('C06 restore clothing','PATCH','/clothes/'+ids[0]+'/archive',200,a,{isArchived:false});
+    }
     rollback = await rollbackChecks(database, config, a, { ...form, name: '故障必须回滚', clothingIds: ids.slice(0, 5) }, target.id, directory);
     const historyAfter = await captureSnapshot(database, config.uploadRoot);
     assert.deepEqual(historyAfter.tables.diaries, historyBefore.tables.diaries); assert.deepEqual(historyAfter.tables.diary_items, historyBefore.tables.diary_items);
@@ -326,9 +351,9 @@ export async function verifyOutfitHttp({ runId, directory, baselineFile, config,
       statsBefore, statsAfter, diaryFieldsAndItemsUnchanged: true, statisticsUnchanged: true, failedSelectionNoWrites: true });
     for (const url of ['/diaries', '/statistics', '/statistics/overview']) for (const account of [null, a]) await call('unimplemented remains 404 ' + url, 'GET', url, 404, account, undefined, { code: 'NOT_FOUND' });
     await call('wrong password stays credential error', 'POST', '/auth/login', 401, null, { username: a.username, password: 'wrong-password' }, { code: 'INVALID_CREDENTIALS' });
-    await write(path.join(directory, 'run-state.json'), { runId, batch: 2, status: 'backend-passed', httpCases: checks.length, stage5Complete: false, pending: ['Batch 3～5原生页面和联动', 'Batch 6完整集成/重启/历史迁移', 'Batch 7工具/视觉/发布'] });
+    await write(path.join(directory, 'run-state.json'), { runId, batch, status: 'backend-passed', httpCases: checks.length, stage5Complete: false, pending: ['Batch 3～5原生页面和联动', 'Batch 6完整集成/重启/历史迁移', 'Batch 7工具/视觉/发布'] });
   } catch (error) {
-    await write(path.join(directory, 'run-state.json'), { runId, batch: 2, status: 'failed', activeCheck, errorName: error.name, errorCode: error.code ?? null });
+    await write(path.join(directory, 'run-state.json'), { runId, batch, status: 'failed', activeCheck, errorName: error.name, errorCode: error.code ?? null });
     throw error;
   } finally {
     if (runtime) {
@@ -344,8 +369,8 @@ export async function verifyOutfitHttp({ runId, directory, baselineFile, config,
   assert.equal(manifest.allAccountsLoggedOut, true); assert.equal(manifest.processClosed, true);
   const final = await captureSnapshot(database, config.uploadRoot);
   for (const image of images) {
-    image.references = Object.entries(fixture.clothes).filter(([, item]) => item.userId === image.userId).map(([key, item]) => ({ clothingId: item.id, key }));
-    assert.equal(image.references.length, image.userId === accounts[0].id ? 21 : 1);
+    const c=await database.getConnection();try{const [refs]=await c.execute('SELECT id FROM clothes WHERE user_id=? AND image_path=? ORDER BY id',[image.userId,image.path]);image.references=refs.map(row=>({clothingId:row.id}));}finally{c.release();}
+    assert.ok(image.references.length>0);
   }
   await saveManifest();
   const protection = compareCumulative(baseline, final, [...priorManifests, manifest]);
@@ -354,7 +379,7 @@ export async function verifyOutfitHttp({ runId, directory, baselineFile, config,
   const implementationFiles = ['src/services/outfits.js', 'src/routes/outfits.js', 'src/app.js', 'src/index.js', 'scripts/verify-outfits.mjs', 'scripts/outfit-http.mjs'];
   const implementationSha256 = {};
   for (const file of implementationFiles) implementationSha256['server/' + file] = hash(await fs.readFile(path.join(serverRoot, file)));
-  const results = { runId, batch: 2, gitBase: gitState.startCommit, checkedAt: new Date().toISOString(), passed: true, stage5Complete: false,
+  const results = { runId, batch, gitBase: gitState.startCommit, checkedAt: new Date().toISOString(), passed: true, stage5Complete: false,
     httpCases: checks.length, rollbackCases: rollback.length, accountsLoggedOut: true, processClosed: true, protection: { ...protection, historicalLocalReportsUnchanged: true },
     counts: Object.fromEntries(Object.entries(final.tables).map(([table, state]) => [table, state.count])), totalImages: Object.keys(final.images).length,
     baselineSha256: hash(await fs.readFile(baselineFile)), implementationSha256,

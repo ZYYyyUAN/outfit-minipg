@@ -1,0 +1,12 @@
+{
+  "runId": "run-20261117-b6-integration",
+  "batch": 6,
+  "status": "backend-passed",
+  "httpCases": 301,
+  "stage5Complete": false,
+  "pending": [
+    "Batch 3～5原生页面和联动",
+    "Batch 6完整集成/重启/历史迁移",
+    "Batch 7工具/视觉/发布"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "sourceRunId": "run-20261117-b6-integration-final",
+  "outfitId": 70,
+  "orderedClothingIds": [
+    186,
+    185,
+    184,
+    183,
+    182,
+    181,
+    180,
+    179,
+    178,
+    177,
+    176,
+    175,
+    174,
+    173,
+    172,
+    171,
+    170,
+    169,
+    168,
+    167
+  ],
+  "beforeSha256": "c3c7913084ca1fa8b8618b39fa3709f6cd840da16ab36f4ee9b84e62f05918ab",
+  "afterSha256": "c3c7913084ca1fa8b8618b39fa3709f6cd840da16ab36f4ee9b84e62f05918ab",
+  "sessionsSurvived": true,
+  "expiryUnchanged": true,
+  "newConnectionSql": true,
+  "imagesPreserved": true,
+  "processes": [
+    {
+      "pid": 73012,
+      "origin": "http://127.0.0.1:50869",
+      "startedAt": "2026-11-17T12:59:18.465Z",
+      "stoppedAt": "2026-11-17T12:59:18.961Z",
+      "stopMode": "owned child terminated; Windows graceful shutdown not claimed"
+    },
+    {
+      "pid": 50148,
+      "origin": "http://127.0.0.1:50869",
+      "startedAt": "2026-11-17T12:59:18.996Z"
+    }
+  ]
+}

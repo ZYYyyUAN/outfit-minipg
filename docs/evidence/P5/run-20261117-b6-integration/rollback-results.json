@@ -1,0 +1,34 @@
+[
+  {
+    "operation": "create",
+    "point": "parent and two items inserted",
+    "expectedError": "P5_CONTROLLED_CREATE",
+    "actualError": "P5_CONTROLLED_CREATE",
+    "userId": 39,
+    "outfitId": 66,
+    "parentWritesBeforeFailure": 1,
+    "itemWritesBeforeFailure": 2,
+    "sameConnectionRestored": true,
+    "newConnectionRestored": true,
+    "beforeSha256": "0f4f9b27cd5b7d2d064f044a3fb3fcfb0d6ffc30b79a548a5a2011c19794127a",
+    "sameConnectionSha256": "0f4f9b27cd5b7d2d064f044a3fb3fcfb0d6ffc30b79a548a5a2011c19794127a",
+    "newConnectionSha256": "0f4f9b27cd5b7d2d064f044a3fb3fcfb0d6ffc30b79a548a5a2011c19794127a",
+    "passed": true
+  },
+  {
+    "operation": "update",
+    "point": "parent updated and old items deleted",
+    "expectedError": "P5_CONTROLLED_UPDATE",
+    "actualError": "P5_CONTROLLED_UPDATE",
+    "userId": 39,
+    "outfitId": 54,
+    "parentWritesBeforeFailure": 1,
+    "itemWritesBeforeFailure": 0,
+    "sameConnectionRestored": true,
+    "newConnectionRestored": true,
+    "beforeSha256": "6a09f436a220f6473deddc0a983f3d32204142a809d3f37844a70a44a0824365",
+    "sameConnectionSha256": "6a09f436a220f6473deddc0a983f3d32204142a809d3f37844a70a44a0824365",
+    "newConnectionSha256": "6a09f436a220f6473deddc0a983f3d32204142a809d3f37844a70a44a0824365",
+    "passed": true
+  }
+]

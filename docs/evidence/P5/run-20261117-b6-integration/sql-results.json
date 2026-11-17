@@ -1,0 +1,429 @@
+{
+  "freshConnectionOrders": [
+    {
+      "id": 50,
+      "userId": 39,
+      "clothingIds": [
+        145
+      ],
+      "initialName": "Alpha_%!日常",
+      "occasion": "通勤"
+    },
+    {
+      "id": 51,
+      "userId": 39,
+      "clothingIds": [
+        145,
+        146,
+        147,
+        148
+      ],
+      "initialName": "ALPHA日常",
+      "occasion": "通勤长"
+    },
+    {
+      "id": 52,
+      "userId": 39,
+      "clothingIds": [
+        149,
+        146,
+        164,
+        148,
+        145
+      ],
+      "initialName": "P5五件",
+      "occasion": "休闲"
+    },
+    {
+      "id": 53,
+      "userId": 39,
+      "clothingIds": [
+        164,
+        163,
+        162,
+        161,
+        160,
+        159,
+        158,
+        157,
+        156,
+        155,
+        154,
+        153,
+        152,
+        151,
+        150,
+        149,
+        148,
+        147,
+        146,
+        145
+      ],
+      "initialName": "P5二十件",
+      "occasion": "通勤"
+    },
+    {
+      "id": 54,
+      "userId": 39,
+      "clothingIds": [
+        149,
+        147,
+        145
+      ],
+      "initialName": "P5重复",
+      "occasion": "通勤"
+    },
+    {
+      "id": 55,
+      "userId": 39,
+      "clothingIds": [
+        146
+      ],
+      "initialName": "P5重复",
+      "occasion": "休闲"
+    },
+    {
+      "id": 56,
+      "userId": 39,
+      "clothingIds": [
+        145
+      ],
+      "initialName": "P5分页1",
+      "occasion": "通勤"
+    },
+    {
+      "id": 57,
+      "userId": 39,
+      "clothingIds": [
+        146
+      ],
+      "initialName": "P5分页2",
+      "occasion": "休闲"
+    },
+    {
+      "id": 58,
+      "userId": 39,
+      "clothingIds": [
+        147
+      ],
+      "initialName": "P5分页3",
+      "occasion": "通勤"
+    },
+    {
+      "id": 59,
+      "userId": 39,
+      "clothingIds": [
+        148
+      ],
+      "initialName": "P5分页4",
+      "occasion": "休闲"
+    },
+    {
+      "id": 60,
+      "userId": 39,
+      "clothingIds": [
+        149
+      ],
+      "initialName": "P5分页5",
+      "occasion": "通勤"
+    },
+    {
+      "id": 61,
+      "userId": 39,
+      "clothingIds": [
+        150
+      ],
+      "initialName": "P5分页6",
+      "occasion": "休闲"
+    },
+    {
+      "id": 62,
+      "userId": 39,
+      "clothingIds": [
+        164
+      ],
+      "initialName": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨"
+    },
+    {
+      "id": 63,
+      "userId": 39,
+      "clothingIds": [
+        145,
+        146,
+        147,
+        148
+      ],
+      "initialName": "P5归档一",
+      "occasion": "仅归档"
+    },
+    {
+      "id": 64,
+      "userId": 39,
+      "clothingIds": [
+        164
+      ],
+      "initialName": "P5归档二",
+      "occasion": "通勤"
+    },
+    {
+      "id": 65,
+      "userId": 40,
+      "clothingIds": [
+        166
+      ]
+    }
+  ],
+  "targetAfterEdit": {
+    "parents": [
+      {
+        "id": 54,
+        "user_id": 39,
+        "name": "更新后的搭配",
+        "occasion": "通勤",
+        "note": "修改\n保留换行",
+        "is_archived": 0,
+        "created_at": "2026-11-17 12:55:47.665",
+        "updated_at": "2026-11-17 12:55:51.222"
+      }
+    ],
+    "items": [
+      {
+        "outfit_id": 54,
+        "clothing_id": 149,
+        "sort_order": 1
+      },
+      {
+        "outfit_id": 54,
+        "clothing_id": 147,
+        "sort_order": 2
+      },
+      {
+        "outfit_id": 54,
+        "clothing_id": 145,
+        "sort_order": 3
+      }
+    ]
+  },
+  "archiveAllowedFieldsOnly": true,
+  "archivedItemsUnchanged": true,
+  "diarySha256Before": "d24fd8c6348a0839f15f1ed1316c9e6a433dd840d0b9aa1d00ed3a289f690bf7",
+  "diarySha256After": "d24fd8c6348a0839f15f1ed1316c9e6a433dd840d0b9aa1d00ed3a289f690bf7",
+  "statsBefore": [
+    {
+      "id": 145,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 146,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-09"
+    },
+    {
+      "id": 147,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 148,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 149,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 150,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 151,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 152,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 153,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 154,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 155,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 156,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 157,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 158,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 159,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 160,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 161,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 162,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 163,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 164,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-09"
+    },
+    {
+      "id": 165,
+      "wearCount": 0,
+      "lastWornDate": null
+    }
+  ],
+  "statsAfter": [
+    {
+      "id": 145,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 146,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-09"
+    },
+    {
+      "id": 147,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 148,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 149,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 150,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 151,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 152,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 153,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 154,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 155,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 156,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 157,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 158,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 159,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 160,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 161,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 162,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 163,
+      "wearCount": 0,
+      "lastWornDate": null
+    },
+    {
+      "id": 164,
+      "wearCount": 1,
+      "lastWornDate": "2026-10-09"
+    },
+    {
+      "id": 165,
+      "wearCount": 0,
+      "lastWornDate": null
+    }
+  ],
+  "diaryFieldsAndItemsUnchanged": true,
+  "statisticsUnchanged": true,
+  "failedSelectionNoWrites": true
+}

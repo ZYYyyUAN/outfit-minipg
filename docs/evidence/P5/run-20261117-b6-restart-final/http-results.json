@@ -1,0 +1,71 @@
+[
+  {
+    "label": "login 0",
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "label": "login 1",
+    "method": "POST",
+    "url": "/auth/login",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "label": "20 ordered items before restart",
+    "method": "GET",
+    "url": "/outfits/70",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "label": "authenticated image 0",
+    "status": 200,
+    "sha256Preserved": true
+  },
+  {
+    "label": "authenticated image 1",
+    "status": 404,
+    "sha256Preserved": false
+  },
+  {
+    "label": "same session same full outfit after actual process restart",
+    "method": "GET",
+    "url": "/outfits/70",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "label": "authenticated image 0",
+    "status": 200,
+    "sha256Preserved": true
+  },
+  {
+    "label": "authenticated image 1",
+    "status": 404,
+    "sha256Preserved": false
+  },
+  {
+    "label": "B cannot read A after restart",
+    "method": "GET",
+    "url": "/outfits/70",
+    "status": 404,
+    "expected": 404
+  },
+  {
+    "label": "final logout 0",
+    "method": "POST",
+    "url": "/auth/logout",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "label": "final logout 1",
+    "method": "POST",
+    "url": "/auth/logout",
+    "status": 200,
+    "expected": 200
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "runId": "run-20261117-b6-foundation",
+  "files": [
+    {
+      "runId": "run-20261117-b6-foundation",
+      "userId": 41,
+      "imagePath": "users/41/b0cffaf6-a2c7-4870-b29a-133453a2b6c1.jpg",
+      "filename": "b0cffaf6-a2c7-4870-b29a-133453a2b6c1.jpg",
+      "mimeType": "image/jpeg",
+      "size": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "source": {
+        "kind": "assets/clothes/clothing-001.jpg",
+        "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261117-b6-foundation",
+      "userId": 41,
+      "imagePath": "users/41/bcaead53-ed6a-48d7-b8c1-a2dd4ba20950.png",
+      "filename": "bcaead53-ed6a-48d7-b8c1-a2dd4ba20950.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "generated PNG",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261117-b6-foundation",
+      "userId": 42,
+      "imagePath": "users/42/d2b94213-be6d-4edd-994e-fd17628e1915.png",
+      "filename": "d2b94213-be6d-4edd-994e-fd17628e1915.png",
+      "mimeType": "image/png",
+      "size": 369,
+      "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f",
+      "source": {
+        "kind": "generated PNG",
+        "sha256": "a9f6bc46fceb09ce79494b7ae597b596df3ade5bf400c503fa89c80fbb9ca33f"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261117-b6-foundation",
+      "userId": 41,
+      "imagePath": "users/41/71e462f9-a901-4a98-8947-f8260f78d60e.png",
+      "filename": "71e462f9-a901-4a98-8947-f8260f78d60e.png",
+      "mimeType": "image/png",
+      "size": 5242879,
+      "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7",
+      "source": {
+        "kind": "valid PNG tEXt boundary",
+        "sha256": "df5295205578bcf1d1c7c31931f9bc9dc77638d5d6c7efcad1aa46be9e564df7"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    },
+    {
+      "runId": "run-20261117-b6-foundation",
+      "userId": 41,
+      "imagePath": "users/41/624f8a94-3a34-4fcf-b108-eab81a37c9ba.png",
+      "filename": "624f8a94-3a34-4fcf-b108-eab81a37c9ba.png",
+      "mimeType": "image/png",
+      "size": 5242880,
+      "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4",
+      "source": {
+        "kind": "valid PNG tEXt boundary",
+        "sha256": "ebb95e54b2ea05b79dd9cedd374edc0733632e0cf6a5ca1c460ff0b294f7edc4"
+      },
+      "retention": "successful HTTP upload retained",
+      "avatarReferenced": false
+    }
+  ]
+}

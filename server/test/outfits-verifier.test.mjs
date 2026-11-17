@@ -6,17 +6,32 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { parseArgs, reserveRun, compareSnapshots, compareCumulative } from '../scripts/verify-outfits.mjs';
+import { selectIntegrationManifest } from '../scripts/outfit-restart.mjs';
+
+test('restart selects complete outfit integration manifest even when foundation runs later', () => {
+  const integration={runId:'integration',batch:6,accounts:[{},{}],images:[{},{},{}],allowedFields:{outfits:['name']}};
+  const foundation={runId:'foundation',batch:6,accounts:[{},{}],images:[{},{},{},{},{}]};
+  assert.equal(selectIntegrationManifest([integration,foundation]),integration);
+  assert.equal(selectIntegrationManifest([foundation]),undefined);
+});
+
+test('read-only independent SQL verifier defaults to help without database configuration', () => {
+  const script=fileURLToPath(new URL('../scripts/outfit-sql.mjs',import.meta.url));
+  const env={...process.env};for(const key of Object.keys(env))if(key.startsWith('DB_'))delete env[key];
+  const result=spawnSync(process.execPath,[script],{cwd:os.tmpdir(),env,encoding:'utf8',windowsHide:true});
+  assert.equal(result.status,0);assert.match(result.stdout,/仅帮助/);assert.equal(result.stderr,'');
+});
 
 test('outfit verification CLI defaults to help and requires an explicit safe run ID for read or HTTP modes', () => {
   assert.deepEqual(parseArgs([]), { mode: 'help' }); assert.deepEqual(parseArgs(['--help']), { mode: 'help' });
-  for (const mode of ['preflight', 'audit', 'http']) assert.deepEqual(parseArgs(['--' + mode, 'run-20261116-b1']), { mode, runId: 'run-20261116-b1' });
+  for (const mode of ['preflight', 'audit', 'http', 'integrate', 'restart']) assert.deepEqual(parseArgs(['--' + mode, 'run-20261116-b1']), { mode, runId: 'run-20261116-b1' });
   for (const args of [['--audit'], ['--preflight', '../escape'], ['--audit', 'x/y'], ['--audit', ''], ['--audit', 'A'], ['--audit', 'a'.repeat(81)], ['--help', 'x'], ['--preflight', 'run', 'extra'], ['--run-id', 'run']]) assert.throws(() => parseArgs(args), { code: 'INVALID_ARGUMENTS' });
-  for (const mode of ['--prepare-ui', '--restart']) assert.throws(() => parseArgs([mode, 'run']), { code: 'UNSUPPORTED_MODE' });
+  for (const mode of ['--prepare-ui']) assert.throws(() => parseArgs([mode, 'run']), { code: 'UNSUPPORTED_MODE' });
 });
 test('help and unsupported modes work without database/private configuration from another cwd', () => {
   const script = fileURLToPath(new URL('../scripts/verify-outfits.mjs', import.meta.url));
   const env = { ...process.env }; for (const key of Object.keys(env)) if (key.startsWith('DB_') || ['PUBLIC_BASE_URL', 'UPLOAD_ROOT'].includes(key)) delete env[key];
-  for (const args of [[], ['--help'], ['--http'], ['--prepare-ui', 'run'], ['--restart', 'run'], ['--preflight', '../escape']]) {
+  for (const args of [[], ['--help'], ['--http'], ['--prepare-ui', 'run'], ['--preflight', '../escape']]) {
     const result = spawnSync(process.execPath, [script, ...args], { cwd: os.tmpdir(), env, encoding: 'utf8', windowsHide: true });
     if (!args.length || args[0] === '--help') { assert.equal(result.status, 0); assert.match(result.stdout, /仅帮助/); assert.equal(result.stderr, ''); }
     else { assert.equal(result.status, 1); assert.match(result.stderr, /UNSUPPORTED_MODE|INVALID_ARGUMENTS/); assert.doesNotMatch(result.stderr, /INVALID_CONFIG|mysql|ECONN/); }

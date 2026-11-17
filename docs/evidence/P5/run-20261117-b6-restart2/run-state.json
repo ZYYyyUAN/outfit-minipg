@@ -1,0 +1,9 @@
+{
+  "runId": "run-20261117-b6-restart2",
+  "batch": 6,
+  "status": "failed-before-business",
+  "reason": "CLI dynamic import cyclic dependency; second invocation still unfixed due to wrong editor cwd",
+  "databaseWrites": false,
+  "sessionsOpened": 0,
+  "ownedApplicationProcesses": []
+}

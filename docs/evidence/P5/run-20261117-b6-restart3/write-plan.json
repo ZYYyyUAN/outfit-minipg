@@ -1,0 +1,12 @@
+{
+  "batch": 6,
+  "sourceRunId": "run-20261117-b6-integration",
+  "accountIds": [
+    39,
+    40
+  ],
+  "allowedExistingFields": [
+    "users.updated_at via login/logout only"
+  ],
+  "businessWrites": false
+}
