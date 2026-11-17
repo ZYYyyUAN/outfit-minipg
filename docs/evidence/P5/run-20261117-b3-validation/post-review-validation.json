@@ -1,0 +1,54 @@
+{
+  "batch": 3,
+  "baseCommit": "872722b3e2d24777b3cc0188c8202f6b41a6e30b",
+  "stage5Complete": false,
+  "unitTests": {
+    "passed": 269,
+    "failed": 0,
+    "skipped": 0,
+    "clientCases": 36,
+    "evidence": "post-review-tests.tap",
+    "sha256": "72aa6e6cd7f3b4834b14545e2488c3f30fcdf281cce87b4543ebcdaee1960145"
+  },
+  "review": {
+    "launches": 1,
+    "reviewers": 2,
+    "resolved": 4,
+    "openIssues": 0,
+    "evidence": "review-results.json"
+  },
+  "readonlyChecks": 14,
+  "readonlyReportSha256": "0b1102839f4cbc0ab0be4006b8a71d640c4c36bde720d7eb45bf234c2bc74485",
+  "protectionEvidence": "../run-20261117-b3-final/results.json",
+  "protectionReportSha256": "1161a3322c156002ef33886d3e6cbccad7a254d7461eaa7d13b178938f30113d",
+  "sourceSha256": {
+    "README.md": "cef139bc73e0c44816df4172fa4536d904f1b79310916d21369c8bba0695f9a0",
+    "docs/P5执行与验收记录.md": "4d87d1eacd1fe4b8e4e9112926eaadc7309c96c2a37130e12f85281bd8c8e18f",
+    "docs/执行计划.md": "6bab12bae047a364cabee0da045c50541644119fd5d7f72003687ee050b93409",
+    "docs/接口说明.md": "af218a811646f968b77257cbab4934ecfc4a9ff36fcd98b2068b6e552a37dd6d",
+    "docs/本地启动与演示说明.md": "baeab7e38c33a475824d852d1f23ead057dbf131d3c15e39ee358e35694d984c",
+    "docs/页面原型与样式约定.md": "69b8dcabcf5d61bcc58b458eeab41fefcea8bc7f1a37154bf58487e8028a7378",
+    "miniprogram/app.json": "0db5ae1b9df9a4d1f9d28978b437609d36e0b2ad2c7ddf222ec55539669c8fe2",
+    "miniprogram/pages/clothes/detail/index.js": "0244e49a7959efc7e9bc318ecdad5db69e6eff1301f53d805e7d493f0782f4fb",
+    "miniprogram/pages/clothes/detail/index.wxml": "6933cbc9bb4c973b002240899ed69d61490c2248448e12a16abf3977e6241f74",
+    "miniprogram/pages/outfits/detail/index.js": "4220d5e2223e1c80a5a92b32910c2d0245ca05ae2fbc66bc5c7ad9ac19ad8c02",
+    "miniprogram/pages/outfits/detail/index.json": "8734ac6cab6e16b9738af1dd1639eb728747bd7b4827d93ea4a978e306e2b3e4",
+    "miniprogram/pages/outfits/detail/index.wxml": "cd5dd8a60dd2c5f0722bed597b21fd87f44efcf57c7ea70b0ad805a8e573bbb4",
+    "miniprogram/pages/outfits/detail/index.wxss": "60d42ec4a8b1b101c990cf9ad8a021c33b3383233aac315c0b969638e4b4dcc8",
+    "miniprogram/pages/outfits/index.js": "627cfcde0722930f8baff3efc14fcf2111524fa23ba0ef43a85fdfb0ae4f0884",
+    "miniprogram/pages/outfits/index.wxml": "73db5f7051f369258a94f7551b94f59ea2e2c22e920bf9dcc8c9d7aa3e4fdfa2",
+    "miniprogram/pages/outfits/index.wxss": "c079128c3faee6c353fc070798bfcc8f0b504181df074f9a17b75d923cc3d9ca",
+    "miniprogram/utils/outfit-state.js": "1c2817f57008c2baf0d36e54349b45b654544b7b040ccea6d4fde255799fac29",
+    "server/test/client-harness.mjs": "617fc02b0941d39529694a92e50fa8cee574f0a5878942855dab3ccd106de126",
+    "server/test/outfits-client.test.mjs": "48866630900b114d5fc7fa973dda1adec7e3e20ca22493c4481d20fca8fc7e6a"
+  },
+  "sensitiveScan": {
+    "scannedFiles": 32,
+    "actualPrivateCredentialsAbsent": true,
+    "actualPrivateAppIdAbsent": true,
+    "shortPasswordCheckedByCredentialAssignmentContext": true,
+    "privatePathsTracked": false
+  },
+  "nativeCompileAndVisualPending": "Batch 7",
+  "nextBatchStarted": false
+}

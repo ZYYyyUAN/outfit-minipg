@@ -1,0 +1,70 @@
+{
+  "batch": 3,
+  "launches": 1,
+  "reviewers": 2,
+  "readOnly": true,
+  "additionalReviewersStarted": false,
+  "agents": [
+    "/root/batch3_contract_review",
+    "/root/batch3_scope_review"
+  ],
+  "independentFindings": 4,
+  "resolved": 4,
+  "openIssues": 0,
+  "findings": [
+    {
+      "id": "B3-R1",
+      "priority": "P1",
+      "reviewer": "contract",
+      "file": "miniprogram/pages/outfits/detail/index.js",
+      "problem": "新账号onShow在旧账号归档pending结算前展示旧详情",
+      "resolution": "onShow立即按epoch清旧详情，只等待当前epoch的pending；pending清理核对promise身份，避免旧账号finally清新请求",
+      "regression": "new account immediately clears old outfit while the old account archive is still pending",
+      "status": "resolved"
+    },
+    {
+      "id": "B3-R2",
+      "priority": "P2",
+      "reviewer": "contract",
+      "file": "miniprogram/pages/clothes/detail/index.js",
+      "problem": "离页归档成功被页面代次守卫丢弃，保留状态使P02及衣橱不再刷新",
+      "resolution": "同epoch成功先使wardrobe失效，页面UI仍受代次守卫；同页返回等待本会话pending后重查，跨账号不等待旧请求",
+      "regressions": [
+        "clothing hidden archive success invalidates wardrobe and rereads the same detail",
+        "clothing returned before archive settles waits and reloads; account switch never waits on the previous account"
+      ],
+      "status": "resolved"
+    },
+    {
+      "id": "B3-R3",
+      "priority": "P2",
+      "reviewer": "contract",
+      "file": "miniprogram/pages/outfits/index.js",
+      "problem": "追加分页失败使旧页尚未完成图片因共用generation失效并永久loading",
+      "resolution": "分离分页请求与图片代次；清查询/离页才使图片代次失效，保留页下载不受追加失败影响",
+      "regression": "outfits pending first-page images remain valid when an appended page fails",
+      "status": "resolved"
+    },
+    {
+      "id": "B3-R4",
+      "priority": "P3",
+      "reviewer": "scope",
+      "file": "docs/执行计划.md",
+      "problem": "当前进度表仍称页面待后批且下一批为Batch3",
+      "resolution": "当前行改为Batch3 G05/G06及实际自动范围、下一批Batch4；保留历史日期记录",
+      "status": "resolved"
+    }
+  ],
+  "metadataLimitation": {
+    "issue": "既有只读CLI固定batch:2",
+    "reviewerAssessment": "两位reviewer均确认原始报告限制已明示，实际runId/wrapper/只读结果归Batch3，可定位且保护结论有效",
+    "changedAuditImplementation": false
+  },
+  "postReviewTests": {
+    "passed": 269,
+    "failed": 0,
+    "skipped": 0,
+    "clientCases": 36,
+    "evidence": "post-review-tests.tap"
+  }
+}

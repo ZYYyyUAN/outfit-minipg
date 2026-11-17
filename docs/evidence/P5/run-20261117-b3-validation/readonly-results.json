@@ -1,0 +1,191 @@
+{
+  "batch": 3,
+  "runId": "run-20261117-b3-validation",
+  "checkedAt": "2026-11-17T07:59:29.381Z",
+  "checks": [
+    {
+      "kind": "real SQL and production service",
+      "outfitId": 32,
+      "count": 1,
+      "orderedIds": [
+        123
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "outfitId": 33,
+      "count": 4,
+      "orderedIds": [
+        123,
+        124,
+        125,
+        126
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "outfitId": 34,
+      "count": 5,
+      "orderedIds": [
+        127,
+        124,
+        142,
+        126,
+        123
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "outfitId": 35,
+      "count": 20,
+      "orderedIds": [
+        142,
+        141,
+        140,
+        139,
+        138,
+        137,
+        136,
+        135,
+        134,
+        133,
+        132,
+        131,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "activeTotal": 13,
+      "pages": [
+        12,
+        1
+      ],
+      "previewsMatchFullDetails": true,
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "archived": "active",
+      "total": 13,
+      "occasions": [
+        "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+        "休闲",
+        "通勤",
+        "通勤长"
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "archived": "archived",
+      "total": 2,
+      "occasions": [
+        "仅归档",
+        "通勤"
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL and production service",
+      "archived": "all",
+      "total": 15,
+      "occasions": [
+        "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+        "仅归档",
+        "休闲",
+        "通勤",
+        "通勤长"
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real SQL",
+      "accounts": [
+        {
+          "id": 37,
+          "loggedOut": true
+        },
+        {
+          "id": 38,
+          "loggedOut": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "real anonymous HTTP",
+      "method": "GET",
+      "route": "/health",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "kind": "real anonymous HTTP",
+      "method": "GET",
+      "route": "/outfits",
+      "expected": 401,
+      "actual": 401,
+      "passed": true
+    },
+    {
+      "kind": "real anonymous HTTP",
+      "method": "GET",
+      "route": "/outfits/facets",
+      "expected": 401,
+      "actual": 401,
+      "passed": true
+    },
+    {
+      "kind": "real anonymous HTTP",
+      "method": "GET",
+      "route": "/outfits/35",
+      "expected": 401,
+      "actual": 401,
+      "passed": true
+    },
+    {
+      "kind": "real anonymous HTTP",
+      "method": "GET",
+      "route": "/clothes/123/outfits",
+      "expected": 401,
+      "actual": 401,
+      "passed": true
+    }
+  ],
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2"
+    ],
+    "registeredAccounts": 2,
+    "registeredRows": 90,
+    "registeredImages": 2,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0
+  },
+  "allRowsAndImagesUnchangedDuringCheck": true,
+  "authenticatedHttpReexecuted": false,
+  "authenticationEvidence": "Batch 2 HTTP; unchanged server service/routes/app",
+  "sessionsOpened": 0,
+  "databaseWrites": false,
+  "uploadWrites": false,
+  "ownedServerClosed": true,
+  "developerToolPortOpened": false,
+  "stage5Complete": false
+}

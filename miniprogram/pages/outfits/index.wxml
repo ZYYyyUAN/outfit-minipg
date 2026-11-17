@@ -1,7 +1,21 @@
-<view class="page">
-  <view class="eyebrow">个人衣橱与穿搭日记</view>
-  <view class="title">搭配</view>
-  <view class="description">搭配列表与组合编辑将在搭配模块接入。</view>
-  <view class="label">功能待开发</view>
-  <view class="section"><view class="section-title">留住喜欢的组合</view><view class="hint">这里将用于选择衣物、调整顺序，保存自己的搭配。</view></view>
+<view class="page outfits">
+  <view class="heading"><view><view class="eyebrow">留住喜欢的组合</view><view class="title">我的搭配</view></view><button class="add" disabled>新增待开放</button></view>
+  <view class="hint">新增搭配将在后续开放。</view>
+  <view class="search"><input value="{{keywordDraft}}" maxlength="-1" placeholder="搜索搭配名称" confirm-type="search" bindinput="keywordInput" bindconfirm="search"/><button bindtap="search">搜索</button><button wx:if="{{keywordDraft || keyword}}" bindtap="clearSearch">清空</button></view>
+  <view class="filter-row"><text class="hint">{{occasion || '全部场景'}} · {{archived === 'active' ? '在用' : archived === 'archived' ? '已归档' : '全部'}}</text><button class="text-button" bindtap="openPanel">筛选</button></view>
+  <view wx:if="{{panel}}" class="filter-panel">
+    <view class="section-title">筛选搭配</view><view class="field-label">归档范围</view><view class="options"><button wx:for="{{scopes}}" wx:key="id" data-id="{{item.id}}" class="chip {{draftArchived === item.id ? 'selected' : ''}}" bindtap="chooseScope">{{item.name}}</button></view>
+    <view class="field-label">场景</view><view class="options"><button class="chip {{!draftOccasion ? 'selected' : ''}}" data-value="" bindtap="chooseOccasion">全部场景</button><button wx:for="{{occasions}}" wx:key="*this" data-value="{{item}}" class="chip {{draftOccasion === item ? 'selected' : ''}}" bindtap="chooseOccasion">{{item}}</button></view>
+    <view wx:if="{{draftOccasion}}" class="hint break-text">已选：{{draftOccasion}}</view><view wx:if="{{facetError}}" class="error">{{facetError}}<button class="text-button" bindtap="retryFacets">重试场景</button></view>
+    <view class="actions"><button class="text-button" bindtap="resetPanel">重置条件</button><button class="text-button" bindtap="closePanel">取消</button><button class="button" bindtap="applyPanel">应用</button></view>
+  </view>
+  <view class="result-row"><text class="hint">{{page ? '共 ' + total + ' 套搭配' : busy ? '正在读取搭配…' : '搭配列表'}}</text><button wx:if="{{keyword || occasion || archived !== 'active'}}" class="text-button" bindtap="clearFilters">重置筛选</button></view>
+  <view class="outfit-grid"><view wx:for="{{items}}" wx:key="id" class="outfit" data-id="{{item.id}}" bindtap="detail">
+    <view class="previews"><view wx:for="{{item.previewItems}}" wx:for-item="child" wx:key="id" class="preview"><image wx:if="{{child.src}}" src="{{child.src}}" data-src="{{child.src}}" mode="aspectFit" data-parent="{{item.id}}" data-id="{{child.id}}" binderror="imageFailed"/><button wx:else class="preview-retry" data-parent="{{item.id}}" data-id="{{child.id}}" catchtap="retryImage" disabled="{{child.imageState !== 'failed'}}">{{child.imageState === 'failed' ? '重试图片' : '读取中'}}</button></view></view>
+    <view class="outfit-name">{{item.name}}</view><view class="hint break-text">{{item.occasion}} · 共{{item.clothingCount}}件</view><text wx:if="{{item.isArchived}}" class="archive-label">已归档</text>
+  </view></view>
+  <view wx:if="{{error}}" class="status failed"><view class="error">{{error}}</view><button class="button secondary" bindtap="retry" disabled="{{busy}}">{{page ? '重试加载更多' : '重新加载'}}</button></view>
+  <view wx:if="{{busy}}" class="empty hint">正在读取搭配…</view>
+  <view wx:if="{{page && !items.length && !busy && !error}}" class="empty"><view class="section-title">{{keyword || occasion || archived !== 'active' ? '没有符合条件的搭配' : '这里还没有搭配'}}</view><view class="hint">{{keyword || occasion || archived !== 'active' ? '可重置条件，查看在用搭配。' : '新增搭配功能尚未开放。'}}</view><button wx:if="{{keyword || occasion || archived !== 'active'}}" class="button secondary" bindtap="clearFilters">重置筛选</button></view>
+  <button wx:if="{{page && items.length < total && !error}}" class="button secondary" bindtap="more" disabled="{{busy}}">{{busy ? '正在加载' : '加载更多'}}</button><view wx:if="{{page && items.length && items.length >= total}}" class="empty hint">已全部显示</view>
 </view>

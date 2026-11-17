@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "sequence": 3,
+  "runId": "run-20261117-b3-validation",
+  "batch": 3,
+  "accounts": [],
+  "rows": [],
+  "images": [],
+  "referencedFixtureRunId": "run-20261117-b2-http2",
+  "referencedAccountIds": [
+    37,
+    38
+  ],
+  "sessionsOpened": 0,
+  "databaseWrites": false,
+  "uploadWrites": false,
+  "ownedApplicationProcesses": [],
+  "ownedApplicationClosed": true
+}

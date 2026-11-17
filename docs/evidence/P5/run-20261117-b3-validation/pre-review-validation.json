@@ -1,0 +1,51 @@
+{
+  "batch": 3,
+  "stage5Complete": false,
+  "baseCommit": "872722b3e2d24777b3cc0188c8202f6b41a6e30b",
+  "unitTests": {
+    "passed": 264,
+    "failed": 0,
+    "skipped": 0,
+    "evidence": "pre-review-tests.tap"
+  },
+  "clientCases": 31,
+  "readonlyChecks": 14,
+  "syntaxChecks": 6,
+  "gitDiffCheckPassed": true,
+  "sourceSha256": {
+    "README.md": "cef139bc73e0c44816df4172fa4536d904f1b79310916d21369c8bba0695f9a0",
+    "docs/P5执行与验收记录.md": "53f914d739f2465bbd5487837726bd98104e275d1ca451c6a38d8742a5937d6a",
+    "docs/执行计划.md": "382fe9f98be99fc501906772bd19c35ef2252b1a784020591f2fc84c5fde8142",
+    "docs/接口说明.md": "af218a811646f968b77257cbab4934ecfc4a9ff36fcd98b2068b6e552a37dd6d",
+    "docs/本地启动与演示说明.md": "baeab7e38c33a475824d852d1f23ead057dbf131d3c15e39ee358e35694d984c",
+    "docs/页面原型与样式约定.md": "69b8dcabcf5d61bcc58b458eeab41fefcea8bc7f1a37154bf58487e8028a7378",
+    "miniprogram/app.json": "0db5ae1b9df9a4d1f9d28978b437609d36e0b2ad2c7ddf222ec55539669c8fe2",
+    "miniprogram/pages/clothes/detail/index.js": "1946905cadb4d84d70ce8e98a35de91f97eac794f1b08f55a1848b8d8cddc0a5",
+    "miniprogram/pages/clothes/detail/index.wxml": "6933cbc9bb4c973b002240899ed69d61490c2248448e12a16abf3977e6241f74",
+    "miniprogram/pages/outfits/detail/index.js": "7288d1c4403e05410fd5691d696b86896d28e4f1762967347870817b9efea339",
+    "miniprogram/pages/outfits/detail/index.json": "8734ac6cab6e16b9738af1dd1639eb728747bd7b4827d93ea4a978e306e2b3e4",
+    "miniprogram/pages/outfits/detail/index.wxml": "cd5dd8a60dd2c5f0722bed597b21fd87f44efcf57c7ea70b0ad805a8e573bbb4",
+    "miniprogram/pages/outfits/detail/index.wxss": "60d42ec4a8b1b101c990cf9ad8a021c33b3383233aac315c0b969638e4b4dcc8",
+    "miniprogram/pages/outfits/index.js": "207c509811b34c6c116a5a6159b186a8aa61ed4811016a9ebd1c263399130cb5",
+    "miniprogram/pages/outfits/index.wxml": "73db5f7051f369258a94f7551b94f59ea2e2c22e920bf9dcc8c9d7aa3e4fdfa2",
+    "miniprogram/pages/outfits/index.wxss": "c079128c3faee6c353fc070798bfcc8f0b504181df074f9a17b75d923cc3d9ca",
+    "miniprogram/utils/outfit-state.js": "1c2817f57008c2baf0d36e54349b45b654544b7b040ccea6d4fde255799fac29",
+    "server/test/client-harness.mjs": "617fc02b0941d39529694a92e50fa8cee574f0a5878942855dab3ccd106de126",
+    "server/test/outfits-client.test.mjs": "d6ebf462f6782b7e6e15508d76d4407832de6771933b719d0cd277e494d60dbb"
+  },
+  "unchangedBackendAndTransport": {
+    "server/src/services/outfits.js": true,
+    "server/src/routes/outfits.js": true,
+    "server/src/app.js": true,
+    "server/src/index.js": true,
+    "miniprogram/utils/request.js": true,
+    "miniprogram/utils/media.js": true,
+    "miniprogram/utils/session.js": true
+  },
+  "protectionEvidence": "../run-20261117-b3-final/results.json",
+  "reviewLaunchesBeforeReview": 0,
+  "nativeCompileOrVisualVerified": false,
+  "databaseWrites": false,
+  "sessionsOpened": 0,
+  "uploadWrites": false
+}
