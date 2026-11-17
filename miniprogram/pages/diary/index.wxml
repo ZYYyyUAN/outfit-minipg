@@ -1,7 +1,1 @@
-<view class="page">
-  <view class="eyebrow">个人衣橱与穿搭日记</view>
-  <view class="title">日记</view>
-  <view class="description">穿搭日历与日记维护将在日记模块接入。</view>
-  <view class="label">功能待开发</view>
-  <view class="section"><view class="section-title">记下今天的穿着</view><view class="hint">这里将用于查看日历、补记穿搭，保留衣物与当日心情。</view></view>
-</view>
+<view class="page"><view class="eyebrow">穿搭日记</view><view class="title">每一天的穿着</view><view class="row"><button data-step="-1" bindtap="month">上月</button><text>{{month}}</text><button data-step="1" bindtap="month">下月</button></view><button bindtap="now">回到今天</button><view class="hint">当月记录 {{items.length}} 天</view><view class="calendar"><text wx:for="{{week}}" wx:key="*this">{{item}}</text><view wx:for="{{days}}" wx:key="index" data-date="{{item.date}}" bindtap="select" class="day {{item.date === date ? 'chosen' : ''}}"><text>{{item.day}}</text><text class="dot">{{item.marked ? '●' : ''}}</text></view></view><view wx:if="{{busy}}" class="hint">正在读取…</view><view wx:if="{{error}}" class="error">{{error}}<button bindtap="retry">重试</button></view><view wx:if="{{!busy &amp;&amp; !error}}" class="section"><view class="section-title">{{date}}</view><view wx:if="{{selected}}">{{selected.occasion}} · {{selected.clothingCount}}件<view class="previews"><view wx:for="{{previews}}" wx:key="id"><image wx:if="{{item.src}}" src="{{item.src}}" mode="aspectFit"/><text class="hint">{{item.name}}</text></view></view><view wx:if="{{selected.photoUrl}}" class="hint">有穿搭照片</view></view><view wx:else class="hint">{{date &gt; today ? '未来日期仅供浏览，不能记录' : '这一天还没有记录'}}</view><button class="button" bindtap="open" disabled="{{!selected &amp;&amp; date &gt; today}}">{{selected ? '查看日记' : '记一笔'}}</button></view></view>

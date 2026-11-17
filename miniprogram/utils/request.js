@@ -23,7 +23,9 @@ function settleJson(res, { sent, auth, redirectOn401 = true }, resolve, reject) 
   }
   if (!body || typeof body.error?.code !== 'string' || typeof body.error.message !== 'string') return reject(new RequestError('INVALID_RESPONSE', '服务响应异常', res.statusCode));
   if (auth && res.statusCode === 401 && body.error.code === 'UNAUTHENTICATED') session.expire(redirectOn401);
-  reject(new RequestError(body.error.code, body.error.message, res.statusCode, body.error.details?.fields));
+  const error = new RequestError(body.error.code, body.error.message, res.statusCode, body.error.details?.fields);
+  error.details = body.error.details;
+  reject(error);
 }
 function request(path, { method = 'GET', data, auth = true, redirectOn401 = true } = {}) {
   return new Promise((resolve, reject) => {

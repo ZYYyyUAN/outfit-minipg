@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "reason": "上一轮修正命令使用了错误相对路径，PNG未更新，重复415；3新账号全部退出，目录保留。",
+  "historicalFailureRetained": true
+}

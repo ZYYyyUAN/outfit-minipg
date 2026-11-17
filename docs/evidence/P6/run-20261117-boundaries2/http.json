@@ -1,0 +1,821 @@
+[
+  {
+    "route": "/auth/register",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/auth/login",
+    "method": "POST",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/auth/register",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/auth/login",
+    "method": "POST",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries",
+    "method": "GET",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-11-06",
+    "method": "GET",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-11-06",
+    "method": "POST",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/diaries/1",
+    "method": "GET",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/diaries/1",
+    "method": "POST",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/statistics?month=2026-11",
+    "method": "GET",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/statistics?month=2026-11",
+    "method": "POST",
+    "actual": 401,
+    "expected": 401,
+    "code": "UNAUTHENTICATED"
+  },
+  {
+    "route": "/diaries?month=0999-12",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=10000-01",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=2026-00",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=2026-13",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=2026-1",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=2026-02-01",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=2026-11&month=2026-10",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries?month=2026-11&unknown=1",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-02-29",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=1900-02-29",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-04-31",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=0999-12-31",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=10000-01-01",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-01-00",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-01-32",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=2026-13-01",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/by-date?date=1000-01-01",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/by-date?date=2000-02-29",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/by-date?date=2024-02-29",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/by-date?date=9999-12-31",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/0",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/0",
+    "method": "PUT",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/0",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/-1",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/-1",
+    "method": "PUT",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/-1",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/1.5",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/1.5",
+    "method": "PUT",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/1.5",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/1e2",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/1e2",
+    "method": "PUT",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/1e2",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/4294967296",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/4294967296",
+    "method": "PUT",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/4294967296",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/abc",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/abc",
+    "method": "PUT",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries/abc",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_SELECTION"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_SELECTION"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_SELECTION"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_SELECTION"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 413,
+    "expected": 413,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPage=0",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPage=1.5",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPageSize=0",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPageSize=51",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPage=9007199254740991&notWornPageSize=50",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPage=1&notWornPage=2",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&notWornPage[x]=1",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/statistics?month=2026-11&unknown=1",
+    "method": "GET",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/clothes?archived=all",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/clothes/facets?archived=all",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/outfits?archived=all",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/outfits/facets?archived=all",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/categories",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/statistics?month=9999-12",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/4294967295",
+    "method": "DELETE",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_INPUT"
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 400,
+    "expected": 400,
+    "code": "INVALID_SELECTION"
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/diaries/65",
+    "method": "PUT",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/65",
+    "method": "DELETE",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes/211/archive",
+    "method": "PATCH",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries",
+    "method": "POST",
+    "actual": 201,
+    "expected": 201,
+    "code": null
+  },
+  {
+    "route": "/clothes/211/archive",
+    "method": "PATCH",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/statistics?month=2099-01",
+    "method": "GET",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/68",
+    "method": "DELETE",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/66",
+    "method": "DELETE",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/67",
+    "method": "DELETE",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/63",
+    "method": "DELETE",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/64",
+    "method": "DELETE",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/diaries/52",
+    "method": "GET",
+    "actual": 404,
+    "expected": 404,
+    "code": "NOT_FOUND"
+  },
+  {
+    "route": "/outfits/84",
+    "method": "GET",
+    "actual": 404,
+    "expected": 404,
+    "code": "NOT_FOUND"
+  },
+  {
+    "route": "/clothes/189",
+    "method": "GET",
+    "actual": 404,
+    "expected": 404,
+    "code": "NOT_FOUND"
+  },
+  {
+    "route": "/media/13d31959-62d2-4e80-857e-51dea68b3bed.png",
+    "method": "GET",
+    "actual": 404,
+    "expected": 404,
+    "code": "NOT_FOUND"
+  },
+  {
+    "route": "/auth/logout",
+    "method": "POST",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  },
+  {
+    "route": "/auth/logout",
+    "method": "POST",
+    "actual": 200,
+    "expected": 200,
+    "code": null
+  }
+]

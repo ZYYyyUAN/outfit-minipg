@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "http": 115,
+  "midnightWriteRejection": true,
+  "originalRecordsNotTouched": true,
+  "stage6Complete": false
+}

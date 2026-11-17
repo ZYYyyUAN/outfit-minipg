@@ -227,7 +227,7 @@ test('visible C07 invalidates pending old relation when hidden save commits afte
  const {h,page,requests}=setup('pages/clothes/detail/index.js');await page.onShow();ok(requests[0],child(123));await flush();const old=requests.find(r=>r.url.includes('/123/outfits'));h.load('utils/outfit-state.js').changed();ok(old,pageResult([summary()],1));await flush();assert.equal(page.data.outfits.items.length,0);assert.equal(page.data.clothing,null);page.onUnload();const n=requests.length;h.load('utils/outfit-state.js').changed();assert.equal(requests.length,n);
 });
 test('source entry uses real id/name only, creates no request, refuses hidden/account stale entry',async()=>{
- const {h,page,requests}=await showDetail();const before=requests.length;page.recordWear();const modal=h.calls.at(-1)[1];assert.match(modal.content,/sourceOutfitId=35/);assert.ok(modal.content.includes('完整组合'));assert.match(modal.content,/尚未生成穿着记录/);assert.equal(requests.length,before);page.onHide();const n=h.calls.length;page.recordWear();assert.equal(h.calls.length,n);h.session.clear();page.recordWear();assert.equal(h.calls.length,n);
+ const {h,page,requests}=await showDetail();const before=requests.length;page.recordWear();assert.equal(h.calls.at(-1)[0],'navigateTo');assert.equal(h.calls.at(-1)[1].url,'/pages/diary/edit/index?sourceOutfitId=35');assert.equal(requests.length,before);page.onHide();const n=h.calls.length;page.recordWear();assert.equal(h.calls.length,n);h.session.clear();page.recordWear();assert.equal(h.calls.length,n);
 });
 test('wardrobe and outfit revisions reset together for a new session',()=>{
  const {h}=setup();const w=h.load('utils/wardrobe-state.js'),o=h.load('utils/outfit-state.js');w.changed();assert.equal(w.current(),1);assert.equal(o.current(),1);h.session.clear();assert.equal(w.current(),0);assert.equal(o.current(),0);
@@ -242,6 +242,6 @@ test('P02 own archive and restore settles acting despite synchronous cross-modul
   const {h,page,requests}=setup('pages/clothes/detail/index.js');await page.onShow();ok(requests[0],{...child(123),isArchived:archived});await flush();page.archive();const completed=h.calls.at(-1)[1].success({confirm:true});const write=requests.at(-1);assert.equal(write.method,'PATCH');ok(write,{...child(123),isArchived:!archived});await completed;assert.equal(page.data.acting,false);assert.equal(page._archivePending,null);ok(requests.at(-1),{...child(123),isArchived:!archived});await flush();assert.equal(page.data.clothing.isArchived,!archived);assert.equal(page.data.acting,false);page.onUnload();
  }
 });
-test('source entry returns the actual integer source descriptor for phase6 without persistence',async()=>{
- const {h,page,requests}=await showDetail();const n=requests.length;const source=page.recordWear();assert.deepEqual(JSON.parse(JSON.stringify(source)),{sourceOutfitId:35});assert.equal(Number.isInteger(source.sourceOutfitId),true);assert.equal(requests.length,n);assert.equal([...h.storage.keys()].some(key=>key.toLowerCase().includes('source')),false);page.onUnload();
+test('source entry navigates with actual integer source ID without persistence',async()=>{
+ const {h,page,requests}=await showDetail();const n=requests.length;page.recordWear();assert.equal(h.calls.at(-1)[1].url,'/pages/diary/edit/index?sourceOutfitId=35');assert.equal(requests.length,n);assert.equal([...h.storage.keys()].some(key=>key.toLowerCase().includes('source')),false);page.onUnload();
 });

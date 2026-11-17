@@ -1,0 +1,11 @@
+{
+  "pid": 81152,
+  "stoppedAt": "2026-11-17T14:31:49.793134+00:00",
+  "observedPort3016Closed": true,
+  "method": "owned exec session interrupted on Windows",
+  "gracefulShutdownClaimed": false,
+  "originalPort3000Pid54292Untouched": true,
+  "allOwnedAccountsLoggedOut": true,
+  "configRestored": "http://127.0.0.1:3000/api",
+  "nativeAcceptance": "skipped-by-user"
+}

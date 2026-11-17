@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "stage6Complete": false,
+  "runId": "run-20261117-audit2",
+  "sourceRuns": [
+    "run-20261117-integration1",
+    "run-20261117-integration2",
+    "run-20261117-integration3",
+    "run-20261117-foundation"
+  ],
+  "events": 63,
+  "changes": 141,
+  "counts": {
+    "users": 41,
+    "categories": 7,
+    "clothes": 147,
+    "outfits": 64,
+    "outfit_items": 198,
+    "diaries": 26,
+    "diary_items": 78
+  },
+  "protectedOriginalRows": 514,
+  "protectedOriginalFiles": 729,
+  "registeredNewImages": 7,
+  "allAccountsLoggedOut": true,
+  "accounts": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "explicitDeletedDiaries": [
+    60,
+    55,
+    54
+  ],
+  "fullExpectedSetMatches": true
+}

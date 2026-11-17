@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "readOnly": true,
+  "userId": 11,
+  "clock": "2026-11-06 internal only",
+  "mapping": "P2-03 committed id-map",
+  "oct": {
+    "asOf": "2026-11-06",
+    "month": "2026-10",
+    "activeClothesCount": 24,
+    "categoryDistribution": [
+      {
+        "id": "tops",
+        "name": "上装",
+        "count": 7
+      },
+      {
+        "id": "outerwear",
+        "name": "外套",
+        "count": 3
+      },
+      {
+        "id": "dresses",
+        "name": "连衣裙",
+        "count": 1
+      },
+      {
+        "id": "bottoms",
+        "name": "下装",
+        "count": 6
+      },
+      {
+        "id": "shoes",
+        "name": "鞋履",
+        "count": 2
+      },
+      {
+        "id": "bags",
+        "name": "包袋",
+        "count": 2
+      },
+      {
+        "id": "accessories",
+        "name": "配饰",
+        "count": 3
+      }
+    ],
+    "monthDiaryDays": 9,
+    "mostWorn": [
+      {
+        "id": 51,
+        "name": "白色休闲运动鞋",
+        "wearCount": 6,
+        "lastWornDate": "2026-11-05"
+      },
+      {
+        "id": 53,
+        "name": "深棕色褶皱软肩包",
+        "wearCount": 6,
+        "lastWornDate": "2026-11-03"
+      },
+      {
+        "id": 52,
+        "name": "黑色玛丽珍平底鞋",
+        "wearCount": 5,
+        "lastWornDate": "2026-11-03"
+      },
+      {
+        "id": 54,
+        "name": "浅蓝色手提包",
+        "wearCount": 5,
+        "lastWornDate": "2026-11-05"
+      },
+      {
+        "id": 34,
+        "name": "粉色绞花针织两件套",
+        "wearCount": 3,
+        "lastWornDate": "2026-10-24"
+      }
+    ],
+    "notWornRecently": {
+      "page": 1,
+      "pageSize": 50,
+      "total": 4,
+      "items": [
+        {
+          "id": 40,
+          "name": "奶油色绒感短针织",
+          "lastWornDate": null
+        },
+        {
+          "id": 43,
+          "name": "黑色圆领短外套",
+          "lastWornDate": null
+        },
+        {
+          "id": 44,
+          "name": "黑色系带吊带连衣裙",
+          "lastWornDate": null
+        },
+        {
+          "id": 50,
+          "name": "米白色小花半裙",
+          "lastWornDate": null
+        }
+      ]
+    }
+  },
+  "nov": {
+    "asOf": "2026-11-06",
+    "month": "2026-11",
+    "activeClothesCount": 24,
+    "categoryDistribution": [
+      {
+        "id": "tops",
+        "name": "上装",
+        "count": 7
+      },
+      {
+        "id": "outerwear",
+        "name": "外套",
+        "count": 3
+      },
+      {
+        "id": "dresses",
+        "name": "连衣裙",
+        "count": 1
+      },
+      {
+        "id": "bottoms",
+        "name": "下装",
+        "count": 6
+      },
+      {
+        "id": "shoes",
+        "name": "鞋履",
+        "count": 2
+      },
+      {
+        "id": "bags",
+        "name": "包袋",
+        "count": 2
+      },
+      {
+        "id": "accessories",
+        "name": "配饰",
+        "count": 3
+      }
+    ],
+    "monthDiaryDays": 3,
+    "mostWorn": [
+      {
+        "id": 51,
+        "name": "白色休闲运动鞋",
+        "wearCount": 6,
+        "lastWornDate": "2026-11-05"
+      },
+      {
+        "id": 53,
+        "name": "深棕色褶皱软肩包",
+        "wearCount": 6,
+        "lastWornDate": "2026-11-03"
+      },
+      {
+        "id": 52,
+        "name": "黑色玛丽珍平底鞋",
+        "wearCount": 5,
+        "lastWornDate": "2026-11-03"
+      },
+      {
+        "id": 54,
+        "name": "浅蓝色手提包",
+        "wearCount": 5,
+        "lastWornDate": "2026-11-05"
+      },
+      {
+        "id": 34,
+        "name": "粉色绞花针织两件套",
+        "wearCount": 3,
+        "lastWornDate": "2026-10-24"
+      }
+    ],
+    "notWornRecently": {
+      "page": 1,
+      "pageSize": 50,
+      "total": 4,
+      "items": [
+        {
+          "id": 40,
+          "name": "奶油色绒感短针织",
+          "lastWornDate": null
+        },
+        {
+          "id": 43,
+          "name": "黑色圆领短外套",
+          "lastWornDate": null
+        },
+        {
+          "id": 44,
+          "name": "黑色系带吊带连衣裙",
+          "lastWornDate": null
+        },
+        {
+          "id": 50,
+          "name": "米白色小花半裙",
+          "lastWornDate": null
+        }
+      ]
+    }
+  },
+  "allRowsAndFilesUnchanged": true
+}

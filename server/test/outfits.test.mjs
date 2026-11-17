@@ -86,7 +86,7 @@ test('isolated routes reject queries, IDs, complete forms and archive types befo
   }
   assert.equal(calls.length, 0);
 });
-test('assembled app authenticates outfits before parsing and keeps diaries/statistics unimplemented', async t => {
+test('assembled app authenticates outfits before parsing; omitted optional services stay 404', async t => {
   const account = { authenticate: async () => { throw unauthenticated(); } };
   const server = createServer(createApp(account, null, null, {})); await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   t.after(() => new Promise(resolve => server.close(resolve)));

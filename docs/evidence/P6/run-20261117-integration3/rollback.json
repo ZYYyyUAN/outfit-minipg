@@ -1,0 +1,26 @@
+[
+  {
+    "operation": "create",
+    "point": "item-inserted",
+    "id": 57,
+    "duringCount": 1,
+    "sameConnectionId": 362,
+    "freshConnectionId": 365
+  },
+  {
+    "operation": "update",
+    "point": "updated",
+    "id": 52,
+    "duringCount": 1,
+    "sameConnectionId": 362,
+    "freshConnectionId": 366
+  },
+  {
+    "operation": "remove",
+    "point": "deleted",
+    "id": 52,
+    "duringCount": 0,
+    "sameConnectionId": 362,
+    "freshConnectionId": 367
+  }
+]

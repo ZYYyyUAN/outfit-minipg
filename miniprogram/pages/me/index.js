@@ -26,6 +26,7 @@ Page({
     } catch (error) { if (this._visible && sequence === this._sequence && epoch === session.snapshot().epoch && error.code !== 'STALE_SESSION') this.setData({ avatarState: 'failed', avatarError: error.message }); }
   },
   imageError() { if (this._visible) this.setData({ avatarSrc: '', avatarState: 'failed', avatarError: '图片显示失败，请重新读取' }); },
+  statistics(){wx.navigateTo({url:'/pages/statistics/index'});},
   editProfile() { wx.navigateTo({ url: '/pages/profile/index' }); },
   async logout() {
     if (this.data.busy) return;

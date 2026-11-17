@@ -1,0 +1,63 @@
+[
+  {
+    "label": "register",
+    "changes": [
+      {
+        "table": "users",
+        "key": "61",
+        "before": null,
+        "after": "0a6ae1b84b87d76265a9b55dfd339b1502da6f7c42b7650fe66be3e05d7eb529"
+      }
+    ]
+  },
+  {
+    "label": "login",
+    "changes": [
+      {
+        "table": "users",
+        "key": "61",
+        "before": "0a6ae1b84b87d76265a9b55dfd339b1502da6f7c42b7650fe66be3e05d7eb529",
+        "after": "1f5e8591eef7dbcc950f689db882d9f7e11877c7989d35ffe499794838b129b7"
+      }
+    ]
+  },
+  {
+    "label": "register",
+    "changes": [
+      {
+        "table": "users",
+        "key": "62",
+        "before": null,
+        "after": "705a2b42e4b6d67265fd7fa149ea09817b95932d5d64c271a7abbda9f3def771"
+      }
+    ]
+  },
+  {
+    "label": "login",
+    "changes": [
+      {
+        "table": "users",
+        "key": "62",
+        "before": "705a2b42e4b6d67265fd7fa149ea09817b95932d5d64c271a7abbda9f3def771",
+        "after": "b00495826f95bd7869670a0a5484cffc8d08041bb7e953df61b11299246f95ca"
+      }
+    ]
+  },
+  {
+    "label": "final logout",
+    "changes": [
+      {
+        "table": "users",
+        "key": "61",
+        "before": "1f5e8591eef7dbcc950f689db882d9f7e11877c7989d35ffe499794838b129b7",
+        "after": "1cd6405475ffbe474ef393dacab07c1e0dd3627a268cad1a1438bbedfd7058b4"
+      },
+      {
+        "table": "users",
+        "key": "62",
+        "before": "b00495826f95bd7869670a0a5484cffc8d08041bb7e953df61b11299246f95ca",
+        "after": "1d264248bc98c3dfea53e540d485ce7b57ff0bd889b50a176c5baf512a60485c"
+      }
+    ]
+  }
+]

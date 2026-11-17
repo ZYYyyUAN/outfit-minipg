@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-17",
+  "instruction": "跳过验收",
+  "scope": "本轮请求的原生人工连续流程、尺寸/键盘/返回能力、六图与逐图查看",
+  "status": "skipped-by-user",
+  "passed": false,
+  "automaticEvidenceRetained": true,
+  "noNativeScreenshotsProduced": true
+}

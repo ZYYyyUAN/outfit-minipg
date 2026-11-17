@@ -1,0 +1,112 @@
+{
+  "users": [
+    63,
+    64
+  ],
+  "clothes": [
+    {
+      "id": 211,
+      "userId": 63
+    },
+    {
+      "id": 212,
+      "userId": 63
+    },
+    {
+      "id": 213,
+      "userId": 63
+    },
+    {
+      "id": 214,
+      "userId": 63
+    },
+    {
+      "id": 215,
+      "userId": 63
+    },
+    {
+      "id": 216,
+      "userId": 63
+    },
+    {
+      "id": 217,
+      "userId": 63
+    },
+    {
+      "id": 218,
+      "userId": 63
+    }
+  ],
+  "outfits": [],
+  "diaries": [
+    {
+      "id": 63,
+      "userId": 63
+    },
+    {
+      "id": 64,
+      "userId": 63
+    },
+    {
+      "id": 65,
+      "userId": 63
+    },
+    {
+      "id": 66,
+      "userId": 63
+    },
+    {
+      "id": 67,
+      "userId": 63
+    },
+    {
+      "id": 68,
+      "userId": 63
+    }
+  ],
+  "images": [
+    {
+      "userId": 63,
+      "path": "users/63/561a7ed4-3da5-4299-b223-66b0dd5b458b.jpg",
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a"
+    }
+  ],
+  "deleted": [
+    {
+      "id": 65,
+      "userId": 63,
+      "beforeSha256": "fab896b26abb082291bbfe68ef81bf386866cc3ea06814690a37168483b66aba",
+      "reason": "P6 controlled test cleanup"
+    },
+    {
+      "id": 68,
+      "userId": 63,
+      "beforeSha256": "11d76a21301300b2cec507c11b84d5140768e1184918be7d1cfedb6cd4437455",
+      "reason": "P6 controlled test cleanup"
+    },
+    {
+      "id": 66,
+      "userId": 63,
+      "beforeSha256": "262f0ce8bb5a18724d65ab44b8eded826e92ed75651a3a7af1332b436c6b442f",
+      "reason": "P6 controlled test cleanup"
+    },
+    {
+      "id": 67,
+      "userId": 63,
+      "beforeSha256": "4ec751072b82ea3cb222a9185a3807b5120cdd557a77ef3b5886394cad84f70d",
+      "reason": "P6 controlled test cleanup"
+    },
+    {
+      "id": 63,
+      "userId": 63,
+      "beforeSha256": "e6ad1d485e75dcfcf897ab150041df25d9bd6efcdbf6e88c120e082125607488",
+      "reason": "P6 controlled test cleanup"
+    },
+    {
+      "id": 64,
+      "userId": 63,
+      "beforeSha256": "40c85bb5f80665e14bc8fceb86834bc8b48f1d3dc56424d58196717ea1da24b9",
+      "reason": "P6 controlled test cleanup"
+    }
+  ]
+}

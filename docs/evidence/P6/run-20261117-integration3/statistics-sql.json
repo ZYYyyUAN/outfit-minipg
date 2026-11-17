@@ -1,0 +1,1253 @@
+[
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 57,
+    "month": "2026-11",
+    "asOf": "2026-11-17",
+    "active": 0,
+    "days": 0,
+    "top": [],
+    "unworn": []
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-17",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      },
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      },
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-17",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      },
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      },
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-10",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 3,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      },
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 2,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 3,
+        "lastWornDate": "2026-11-06"
+      },
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 3,
+        "lastWornDate": "2026-11-06"
+      },
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-06"
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-06"
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-06"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 3,
+        "lastWornDate": "2026-10-11"
+      },
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-10",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 4,
+    "top": [
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 3,
+        "lastWornDate": "2026-10-11"
+      },
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      },
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-06",
+    "active": 20,
+    "days": 1,
+    "top": [
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-06",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 3,
+        "lastWornDate": "2026-10-12"
+      },
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 2,
+        "lastWornDate": "2026-10-09"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 55,
+    "month": "2026-11",
+    "asOf": "2026-11-17",
+    "active": 21,
+    "days": 1,
+    "top": [
+      {
+        "id": 190,
+        "name": "P6单品1",
+        "wearCount": 4,
+        "lastWornDate": "2026-11-17"
+      },
+      {
+        "id": 189,
+        "name": "P6单品0",
+        "wearCount": 3,
+        "lastWornDate": "2026-11-17"
+      }
+    ],
+    "unworn": [
+      {
+        "id": 191,
+        "name": "P6单品2",
+        "lastWornDate": null
+      },
+      {
+        "id": 192,
+        "name": "P6单品3",
+        "lastWornDate": null
+      },
+      {
+        "id": 193,
+        "name": "P6单品4",
+        "lastWornDate": null
+      },
+      {
+        "id": 194,
+        "name": "P6单品5",
+        "lastWornDate": null
+      },
+      {
+        "id": 195,
+        "name": "P6单品6",
+        "lastWornDate": null
+      },
+      {
+        "id": 196,
+        "name": "P6单品7",
+        "lastWornDate": null
+      },
+      {
+        "id": 197,
+        "name": "P6单品8",
+        "lastWornDate": null
+      },
+      {
+        "id": 198,
+        "name": "P6单品9",
+        "lastWornDate": null
+      },
+      {
+        "id": 199,
+        "name": "P6单品10",
+        "lastWornDate": null
+      },
+      {
+        "id": 200,
+        "name": "P6单品11",
+        "lastWornDate": null
+      },
+      {
+        "id": 201,
+        "name": "P6单品12",
+        "lastWornDate": null
+      },
+      {
+        "id": 202,
+        "name": "P6单品13",
+        "lastWornDate": null
+      },
+      {
+        "id": 203,
+        "name": "P6单品14",
+        "lastWornDate": null
+      },
+      {
+        "id": 204,
+        "name": "P6单品15",
+        "lastWornDate": null
+      },
+      {
+        "id": 205,
+        "name": "P6单品16",
+        "lastWornDate": null
+      },
+      {
+        "id": 206,
+        "name": "P6单品17",
+        "lastWornDate": null
+      },
+      {
+        "id": 207,
+        "name": "P6单品18",
+        "lastWornDate": null
+      },
+      {
+        "id": 208,
+        "name": "P6单品19",
+        "lastWornDate": null
+      },
+      {
+        "id": 209,
+        "name": "P6单品20",
+        "lastWornDate": null
+      }
+    ]
+  },
+  {
+    "type": "independent JS from SQL rows",
+    "userId": 56,
+    "month": "2026-11",
+    "asOf": "2026-11-17",
+    "active": 1,
+    "days": 1,
+    "top": [
+      {
+        "id": 210,
+        "name": "P6单品0",
+        "wearCount": 1,
+        "lastWornDate": "2026-11-17"
+      }
+    ],
+    "unworn": []
+  }
+]

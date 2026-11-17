@@ -21,3 +21,5 @@ docs/evidence/P5/release-verification.local.json
 
 # Dedicated P5 test-account credentials; no tokens or evidence are stored here.
 server/.p5-private/
+server/.p6-private/
+docs/evidence/P6/release-verification.local.json

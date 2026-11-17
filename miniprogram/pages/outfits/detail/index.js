@@ -89,9 +89,7 @@ Page({
   },
   recordWear() {
     if(!this.current(this._sequence) || !this.data.outfit || this.data.acting) return;
-    const {id,name}=this.data.outfit,source={sourceOutfitId:id};
-    wx.showModal({title:'记录穿着入口',content:`来源搭配：${name}（sourceOutfitId=${source.sourceOutfitId}）。尚未生成穿着记录。日记功能将在阶段6开放。`,showCancel:false,confirmText:'知道了'});
-    return source;
+    wx.navigateTo({url:'/pages/diary/edit/index?sourceOutfitId='+this.data.outfit.id});
   },
   back() { if(getCurrentPages().length>1) wx.navigateBack({delta:1});else wx.switchTab({url:'/pages/outfits/index'}); },
 });

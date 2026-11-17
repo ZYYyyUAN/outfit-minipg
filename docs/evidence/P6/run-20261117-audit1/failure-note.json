@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "reason": "审计尚未允许本轮已登记来源搭配的明细替换，错误拒绝outfit_items移除；修正为仅允许已登记父项明细替换后audit2/3通过。",
+  "historicalFailureRetained": true
+}

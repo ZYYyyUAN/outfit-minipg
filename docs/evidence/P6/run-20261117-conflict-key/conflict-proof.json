@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "mysqlError": {
+    "code": "ER_DUP_ENTRY",
+    "errno": 1062,
+    "sqlState": "23000",
+    "sqlMessage": "Duplicate entry '55-2026-11-17' for key 'diaries.uq_diaries_user_date'"
+  },
+  "details": {
+    "wearDate": "2026-11-17",
+    "existingDiaryId": 52
+  },
+  "rolledBack": true,
+  "allRowsAndFilesUnchanged": true
+}

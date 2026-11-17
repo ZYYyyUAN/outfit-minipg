@@ -1,0 +1,219 @@
+{
+  "users": [
+    65,
+    66
+  ],
+  "clothes": [
+    {
+      "id": 219
+    },
+    {
+      "id": 220
+    },
+    {
+      "id": 221
+    },
+    {
+      "id": 222
+    },
+    {
+      "id": 223
+    },
+    {
+      "id": 224
+    },
+    {
+      "id": 225
+    },
+    {
+      "id": 226
+    },
+    {
+      "id": 227
+    },
+    {
+      "id": 228
+    },
+    {
+      "id": 229
+    },
+    {
+      "id": 230
+    },
+    {
+      "id": 231
+    },
+    {
+      "id": 232
+    },
+    {
+      "id": 233
+    },
+    {
+      "id": 234
+    },
+    {
+      "id": 235
+    },
+    {
+      "id": 236
+    },
+    {
+      "id": 237
+    },
+    {
+      "id": 238
+    },
+    {
+      "id": 239
+    }
+  ],
+  "outfits": [
+    {
+      "id": 85
+    }
+  ],
+  "diaries": [
+    {
+      "id": 69
+    },
+    {
+      "id": 70
+    }
+  ],
+  "images": [
+    {
+      "path": "users/65/03b54389-ae29-45bb-9d1c-4e9b2554caf5.jpg",
+      "userId": 65,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/89a66bb0-6b83-4b2e-aae8-3cda521d3e70.jpg",
+      "userId": 65,
+      "sha256": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/d9400d34-1aa1-4c18-bc0a-2297db85bbfe.jpg",
+      "userId": 65,
+      "sha256": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/85f1c3b9-fb5a-4894-8f51-808df5de7ee6.jpg",
+      "userId": 65,
+      "sha256": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/0f6b6a69-964b-4d44-84da-100cc9de74b4.jpg",
+      "userId": 65,
+      "sha256": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/595fc8f0-67d8-4a09-a4a6-d5d2f4438ea9.jpg",
+      "userId": 65,
+      "sha256": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/d2f662c2-5e30-40bf-a8fc-fc1a74fcb03b.jpg",
+      "userId": 65,
+      "sha256": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/d5253f8f-8288-40ae-8850-6ffcc574d43b.jpg",
+      "userId": 65,
+      "sha256": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/5d3c3acd-e49e-4285-a7de-6d33ad2f8503.jpg",
+      "userId": 65,
+      "sha256": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/2ff4bdc5-6c82-4cf9-8476-30f973db0af8.jpg",
+      "userId": 65,
+      "sha256": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/9156baaa-7af5-4a53-a545-1ab934f864f5.jpg",
+      "userId": 65,
+      "sha256": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/a71719d1-3af4-4768-8dd9-045e4cf0d19a.jpg",
+      "userId": 65,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/864009de-6c4c-454d-b916-1aa95ceade93.jpg",
+      "userId": 65,
+      "sha256": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/0c8f2d91-0e64-44a2-9430-cf16369e284e.jpg",
+      "userId": 65,
+      "sha256": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/81bd8021-d6a7-45ec-bdcc-5f12748fca91.jpg",
+      "userId": 65,
+      "sha256": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/70afd5c1-83a1-4206-838f-fc02cebe4d79.jpg",
+      "userId": 65,
+      "sha256": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/7187a6ea-81cd-4aef-ade0-eaa28ecff90e.jpg",
+      "userId": 65,
+      "sha256": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/3b5dde4d-f598-4f55-ba89-b72ce37c2cfb.jpg",
+      "userId": 65,
+      "sha256": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/218bba05-b4c5-455f-ac1c-5596643200e7.jpg",
+      "userId": 65,
+      "sha256": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/e20dc935-3c83-48a9-b31b-f4fd150bc9e8.jpg",
+      "userId": 65,
+      "sha256": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/65/6722ef20-077b-4785-876c-7f0e4aca7055.jpg",
+      "userId": 65,
+      "sha256": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12",
+      "retention": "all successful files retained including cancelled drafts"
+    },
+    {
+      "path": "users/66/63aebffa-bc36-4598-a0c4-50a5dfb03921.jpg",
+      "userId": 66,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retention": "all successful files retained including cancelled drafts"
+    }
+  ],
+  "deleted": []
+}

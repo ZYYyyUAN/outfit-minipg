@@ -1,0 +1,192 @@
+{
+  "accounts": [
+    {
+      "id": 55,
+      "username": "p6_gration3_a"
+    },
+    {
+      "id": 56,
+      "username": "p6_gration3_b"
+    },
+    {
+      "id": 57,
+      "username": "p6_gration3_empty"
+    }
+  ],
+  "registered": {
+    "users": [
+      55,
+      56,
+      57
+    ],
+    "clothes": [
+      {
+        "id": 189,
+        "userId": 55
+      },
+      {
+        "id": 190,
+        "userId": 55
+      },
+      {
+        "id": 191,
+        "userId": 55
+      },
+      {
+        "id": 192,
+        "userId": 55
+      },
+      {
+        "id": 193,
+        "userId": 55
+      },
+      {
+        "id": 194,
+        "userId": 55
+      },
+      {
+        "id": 195,
+        "userId": 55
+      },
+      {
+        "id": 196,
+        "userId": 55
+      },
+      {
+        "id": 197,
+        "userId": 55
+      },
+      {
+        "id": 198,
+        "userId": 55
+      },
+      {
+        "id": 199,
+        "userId": 55
+      },
+      {
+        "id": 200,
+        "userId": 55
+      },
+      {
+        "id": 201,
+        "userId": 55
+      },
+      {
+        "id": 202,
+        "userId": 55
+      },
+      {
+        "id": 203,
+        "userId": 55
+      },
+      {
+        "id": 204,
+        "userId": 55
+      },
+      {
+        "id": 205,
+        "userId": 55
+      },
+      {
+        "id": 206,
+        "userId": 55
+      },
+      {
+        "id": 207,
+        "userId": 55
+      },
+      {
+        "id": 208,
+        "userId": 55
+      },
+      {
+        "id": 209,
+        "userId": 55
+      },
+      {
+        "id": 210,
+        "userId": 56
+      }
+    ],
+    "outfits": [
+      {
+        "id": 84,
+        "userId": 55
+      }
+    ],
+    "diaries": [
+      {
+        "id": 52,
+        "userId": 55
+      },
+      {
+        "id": 54,
+        "userId": 56
+      },
+      {
+        "id": 55,
+        "userId": 55
+      },
+      {
+        "id": 58,
+        "userId": 55
+      },
+      {
+        "id": 59,
+        "userId": 55
+      },
+      {
+        "id": 60,
+        "userId": 55
+      },
+      {
+        "id": 61,
+        "userId": 55
+      },
+      {
+        "id": 62,
+        "userId": 55
+      }
+    ],
+    "images": [
+      {
+        "userId": 55,
+        "path": "users/55/13d31959-62d2-4e80-857e-51dea68b3bed.png",
+        "sha256": "eb45e4a6d3dddc1d66b2318b45391f4b3380322305e35e584a2a379467be94fe"
+      },
+      {
+        "userId": 56,
+        "path": "users/56/c83fec8e-2c01-4dfe-bb82-4f459eb43908.png",
+        "sha256": "eb45e4a6d3dddc1d66b2318b45391f4b3380322305e35e584a2a379467be94fe"
+      }
+    ],
+    "deleted": [
+      {
+        "id": 60,
+        "userId": 55,
+        "beforeSha256": "980c4483fcc33f1d821dc880aafeb18f79c9a2f70b1765f42333dd61f076ebc1",
+        "reason": "P6 explicit test cleanup"
+      },
+      {
+        "id": 55,
+        "userId": 55,
+        "beforeSha256": "39a87c1c2cd1724c926b99d3339cca1a895a5c929115ed67e529dd425a364042",
+        "reason": "P6 explicit test cleanup"
+      },
+      {
+        "id": 54,
+        "userId": 56,
+        "beforeSha256": "9795255c7f9db3fc0ce3d9c695c26c2b903049796a0c6b02c65053e87c42d43f",
+        "reason": "P6 explicit test cleanup"
+      }
+    ]
+  },
+  "mainDiaryId": 52,
+  "photoDiaryId": 62,
+  "outfitId": 84,
+  "boundaryDiaryIds": [
+    58,
+    59
+  ]
+}

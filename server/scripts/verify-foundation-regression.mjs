@@ -15,6 +15,7 @@ import {implementationHashes} from './verify-auth.mjs';
 import {makeFixtures} from '../test/media-fixtures.mjs';
 import {verifyOriginals} from './verify-wardrobe.mjs';
 import {captureSnapshot,compareCumulative,loadManifests,historicalReleaseHashes} from './verify-outfits.mjs';
+import {snapshot as p6Snapshot} from './verify-diaries.mjs';
 import {fixtureManifestRows} from './outfit-http.mjs';
 const root=path.dirname(serverRoot);
 let evidence=path.join(root,'docs/evidence/P4');
@@ -24,7 +25,7 @@ const write=(p,value)=>fs.writeFile(p,JSON.stringify(value,null,2)+'\n');
 async function uploadFiles(){const files={};async function walk(folder){for(const e of await fs.readdir(path.join(root,folder),{withFileTypes:true})){const f=folder+'/'+e.name;if(e.isDirectory())await walk(f);else{const bytes=await fs.readFile(path.join(root,f));files[f]={sha256:hash(bytes),bytes:bytes.length};}}}await walk('server/uploads');return files;}
 async function audit(database){return verifyOriginals(database);}
 async function main(){
-  const args=process.argv.slice(2);const p5=args[0]==='--p5';if(p5){args.shift();evidence=path.join(root,'docs/evidence/P5');}if(!args.length){console.log('Usage: verify-foundation-regression.mjs --run-id <unique-id> | --audit <existing-run-id>');return;}
+  const args=process.argv.slice(2);const p6=args[0]==='--p6';if(p6){args.shift();evidence=path.join(root,'docs/evidence/P6');}const p5=args[0]==='--p5';if(p5){args.shift();evidence=path.join(root,'docs/evidence/P5');}if(!args.length){console.log('Usage: verify-foundation-regression.mjs --run-id <unique-id> | --audit <existing-run-id>');return;}
   assert.ok(args.length===2&&['--run-id','--audit'].includes(args[0])&&/^[A-Za-z0-9_-]+$/.test(args[1]),'INVALID_ARGUMENTS');
   assert.ok(!p5||args[0]==='--run-id','P5_REQUIRES_NEW_RUN');
   const runId=args[1],dir=path.join(evidence,runId),config=readConfig(),database=createDatabase(config);
@@ -35,10 +36,11 @@ async function main(){
     finally{await database.end();await fs.writeFile(path.join(dir,'audit-'+Date.now()+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});}
     console.log(JSON.stringify({state:report.state,counts:report.protection?.counts,newImages:report.protection?.newImages,failure:report.failure}));return;
   }
+  const p6Before=p6?await p6Snapshot(database,config.uploadRoot):null;
   const prior=p5?await loadManifests():[];
   const baseline=p5?await read(path.join(root,'docs/evidence/P5/run-20261116-b1-baseline/baseline.json')):null;
   const releases=p5?await historicalReleaseHashes():null;
-  const checkProtection=async()=>p5?compareCumulative(baseline,await captureSnapshot(database,config.uploadRoot),await loadManifests()):audit(database);
+  const checkProtection=async()=>p6?{mode:'P6 original rows checked at final snapshot'}:p5?compareCumulative(baseline,await captureSnapshot(database,config.uploadRoot),await loadManifests()):audit(database);
   await fs.mkdir(dir);await fs.mkdir(path.join(dir,'fixtures'));await fs.mkdir(path.join(dir,'manual'));
   const suffix=randomBytes(4).toString('hex'),accounts=['a','b'].map(part=>({runId,username:'p4_'+suffix+'_'+part,id:null,purpose:part==='u'?'manual':'HTTP',state:'reserved'})),files=[];
   const passwords=[' '+randomBytes(12).toString('base64url')+' ',randomBytes(16).toString('base64url')],active=new Map();
@@ -65,7 +67,8 @@ async function main(){
     connection=await database.getConnection();report.identity=await probe(connection);await checkProtection();for(const a of accounts){const [rows]=await connection.execute('SELECT id FROM users WHERE username=?',[a.username]);assert.equal(rows.length,0,'ACCOUNT_COLLISION');}
     await listen();
     await call('anonymous health',{url:'/api/health'});
-    for(const url of ['/api/diaries','/api/statistics','/uploads/users/11/file.jpg','/api/api/health'])await call('unimplemented '+url,{url,status:404,code:'NOT_FOUND'});
+    for(const url of [...(p6?[]:['/api/diaries','/api/statistics']),'/uploads/users/11/file.jpg','/api/api/health'])await call('unimplemented '+url,{url,status:404,code:'NOT_FOUND'});
+    if(p6)for(const url of ['/api/diaries','/api/statistics'])await call('P6 migrated anonymous '+url,{url,status:401,code:'UNAUTHENTICATED'});
     await call('outfits anonymous authentication migrated from old 404',{url:'/api/outfits',status:401,code:'UNAUTHENTICATED'});
     for(let i=0;i<2;i++){
       const user=await call('register '+i,{url:'/api/auth/register',method:'POST',body:{username:i?' '+accounts[i].username.toUpperCase()+' ':accounts[i].username,password:passwords[i],nickname:i?'隔离账号':'衣😀'.repeat(10)},status:201});
@@ -131,7 +134,18 @@ async function main(){
   finally{
     if(server&&server.exitCode===null){for(const [i,token]of active){try{await call('failure cleanup logout '+i,{url:'/api/auth/logout',method:'POST',token});accounts[i].state='logged-out';}catch(error){report.cleanupFailure=true;process.exitCode=1;}}await close();}
     connection?.release();
-    if(p5){
+    if(p6){
+      try{
+        const final=await p6Snapshot(database,config.uploadRoot);
+        for(const [table,value]of Object.entries(p6Before.tables)){assert.equal(final.tables[table].structure,value.structure);for(const [key,sha]of Object.entries(value.rows))assert.equal(final.tables[table].rows[key],sha,'ORIGINAL_ROW:'+table+':'+key);const added=Object.keys(final.tables[table].rows).filter(k=>!Object.hasOwn(value.rows,k));assert.deepEqual(added.sort(),table==='users'?accounts.filter(a=>a.id).map(a=>String(a.id)).sort():[]);}
+        for(const [file,sha]of Object.entries(p6Before.files))assert.equal(final.files[file],sha,'ORIGINAL_FILE:'+file);
+        const added=Object.keys(final.files).filter(f=>!Object.hasOwn(p6Before.files,f));assert.deepEqual(added.sort(),files.map(f=>'server/uploads/'+f.imagePath).sort());
+        assert.ok(accounts.every(a=>a.state==='logged-out'));
+        await write(path.join(dir,'baseline.json'),p6Before);await write(path.join(dir,'final-snapshot.json'),final);await write(path.join(dir,'registry.json'),{users:accounts.map(a=>a.id),images:files.map(f=>({userId:f.userId,path:f.imagePath,sha256:f.sha256})),clothes:[],outfits:[],diaries:[],deleted:[]});
+        await write(path.join(dir,'events.json'),[{label:'A/session/media full regression, temporary expiry changes in automated-results.json',changes:accounts.map(a=>({table:'users',key:String(a.id),before:null,after:final.tables.users.rows[a.id]}))}]);
+        report.protection={originalRowsAndFilesUnchanged:true,allNewRowsAndImagesRegistered:true};
+      }finally{await database.end();}
+    }else if(p5){
       try{
         const snapshot=await captureSnapshot(database,config.uploadRoot);
         const c=await database.getConnection();let all={};try{for(const table of ['users','clothes','outfits','outfit_items','diaries','diary_items'])all[table]=(await c.query('SELECT * FROM '+table))[0];}finally{c.release();}

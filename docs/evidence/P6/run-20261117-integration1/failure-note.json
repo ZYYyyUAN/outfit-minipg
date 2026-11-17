@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "reason": "上传测试PNG被真实解码拒绝415；已注册3账号全部退出，未产生成功图片和业务行。",
+  "historicalFailureRetained": true
+}

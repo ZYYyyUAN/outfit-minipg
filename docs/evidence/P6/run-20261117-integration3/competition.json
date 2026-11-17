@@ -1,0 +1,56 @@
+[
+  {
+    "status": 201,
+    "value": {
+      "data": {
+        "id": 55,
+        "wearDate": "2026-10-09",
+        "occasion": "衣衣衣衣衣衣衣衣衣衣衣衣衣衣衣衣衣衣衣衣",
+        "mood": null,
+        "note": "",
+        "photoPath": null,
+        "photoUrl": null,
+        "sourceOutfitId": 84,
+        "sourceOutfitName": "P6来源已改",
+        "sourceOutfitArchived": false,
+        "items": [
+          {
+            "id": 190,
+            "name": "P6单品1",
+            "categoryId": "tops",
+            "color": "白",
+            "season": "四季",
+            "imagePath": "users/55/13d31959-62d2-4e80-857e-51dea68b3bed.png",
+            "imageUrl": "http://127.0.0.1:3016/api/media/13d31959-62d2-4e80-857e-51dea68b3bed.png",
+            "isArchived": false
+          },
+          {
+            "id": 189,
+            "name": "P6单品0",
+            "categoryId": "tops",
+            "color": "白",
+            "season": "四季",
+            "imagePath": "users/55/13d31959-62d2-4e80-857e-51dea68b3bed.png",
+            "imageUrl": "http://127.0.0.1:3016/api/media/13d31959-62d2-4e80-857e-51dea68b3bed.png",
+            "isArchived": false
+          }
+        ],
+        "createdAt": "2026-11-17T13:43:06.230Z",
+        "updatedAt": "2026-11-17T13:43:06.230Z"
+      }
+    }
+  },
+  {
+    "status": 409,
+    "value": {
+      "error": {
+        "code": "DATE_OCCUPIED",
+        "message": "该日期已有穿搭日记",
+        "details": {
+          "wearDate": "2026-10-09",
+          "existingDiaryId": 55
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "reason": "assert.rejects校验回调返回字符串而非true，真实午夜拒绝逻辑正确；修正测试回调后在boundaries2重验通过，2账号已退出。",
+  "historicalFailureRetained": true
+}

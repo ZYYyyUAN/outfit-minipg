@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-17T14:31:49.793134+00:00",
+  "reviewRounds": 1,
+  "reviewers": [
+    "final_backend_review",
+    "final_client_review"
+  ],
+  "readOnly": true,
+  "findings": [
+    {
+      "id": "B01",
+      "issue": "D/S GET业务body未拒绝",
+      "fix": "认证后8KiB解析并统一空业务body检查",
+      "verification": "diaries.test.mjs D/S GET reject unknown body，真实隔离HTTP4路由400且服务未调用",
+      "status": "fixed"
+    },
+    {
+      "id": "B02",
+      "issue": "起点git ls-files未包含未跟踪/忽略历史证据",
+      "fix": "独立diary-history递归快照与收尾相等，匹配P5既存6个发布报告哈希；不回填起点范围",
+      "verification": "history-start/history-final 608文件（23未跟踪/忽略）一致",
+      "status": "fixed-with-explicit-coverage-start"
+    },
+    {
+      "id": "C01",
+      "issue": "删除跨后台结算遗留已删详情",
+      "fix": "pending/epoch/deleted结果在onShow等待后清栈回日历",
+      "verification": "hidden delete return callback test",
+      "status": "fixed"
+    },
+    {
+      "id": "C02",
+      "issue": "移除/重试后旧照片失败污染草稿",
+      "fix": "照片独立attempt与路径双校验，旧binderror核对src",
+      "verification": "removed photo and older retry failure callback test",
+      "status": "fixed"
+    },
+    {
+      "id": "C03",
+      "issue": "上海跨日后日历保留旧today",
+      "fix": "每次onShow重取S01.asOf，保留既有月份/选日",
+      "verification": "midnight server calibration callback test",
+      "status": "fixed"
+    }
+  ],
+  "newReviewersSpawnedAfterFix": false,
+  "regression": {
+    "workspaceTests": 366,
+    "passed": 366,
+    "failed": 0,
+    "targetedDiaryTests": 51
+  },
+  "native": "skipped-by-user; no screenshots/visual/native-return claim"
+}

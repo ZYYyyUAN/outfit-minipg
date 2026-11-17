@@ -1,0 +1,98 @@
+[
+  {
+    "label": "register 52",
+    "at": "2026-11-17T13:42:09.280Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "52",
+        "before": null,
+        "after": "3e6f1d063bf95e1a26c87cea33158977bcc83fbea080209679ecf9a0b44666f3"
+      }
+    ]
+  },
+  {
+    "label": "login 52",
+    "at": "2026-11-17T13:42:09.658Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "52",
+        "before": "3e6f1d063bf95e1a26c87cea33158977bcc83fbea080209679ecf9a0b44666f3",
+        "after": "f956a4cb5b69ce3f2b81bfefea22903d51621d9a5590166059e3df85216e14d3"
+      }
+    ]
+  },
+  {
+    "label": "register 53",
+    "at": "2026-11-17T13:42:10.024Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "53",
+        "before": null,
+        "after": "bcae592899faa8bcb3d32faf6a2225d2875129cb9041d8c379037694c5f68324"
+      }
+    ]
+  },
+  {
+    "label": "login 53",
+    "at": "2026-11-17T13:42:10.396Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "53",
+        "before": "bcae592899faa8bcb3d32faf6a2225d2875129cb9041d8c379037694c5f68324",
+        "after": "d358271890a1b4cfedc76dd4955347ada333ff260a96f43fff8c93ff2017bba7"
+      }
+    ]
+  },
+  {
+    "label": "register 54",
+    "at": "2026-11-17T13:42:10.760Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "54",
+        "before": null,
+        "after": "e80539070a2ffcd7090c6f8a022346a31a49b5d4f17469c89b43c05206094ebd"
+      }
+    ]
+  },
+  {
+    "label": "login 54",
+    "at": "2026-11-17T13:42:11.119Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "54",
+        "before": "e80539070a2ffcd7090c6f8a022346a31a49b5d4f17469c89b43c05206094ebd",
+        "after": "e1403593035d5f773c73cd07568ce65e4b3a5a0ce45dabdadf83e4a94e7f22e8"
+      }
+    ]
+  },
+  {
+    "label": "final logout and protection",
+    "at": "2026-11-17T13:42:11.741Z",
+    "changes": [
+      {
+        "table": "users",
+        "key": "52",
+        "before": "f956a4cb5b69ce3f2b81bfefea22903d51621d9a5590166059e3df85216e14d3",
+        "after": "45c30e114943a3784dd40210422f322f923f4142251d673c5eebe1069743f162"
+      },
+      {
+        "table": "users",
+        "key": "53",
+        "before": "d358271890a1b4cfedc76dd4955347ada333ff260a96f43fff8c93ff2017bba7",
+        "after": "13ceaf0c8e43158b721929c1fd6af5c3897890375f80388ce1232270f29370f4"
+      },
+      {
+        "table": "users",
+        "key": "54",
+        "before": "e1403593035d5f773c73cd07568ce65e4b3a5a0ce45dabdadf83e4a94e7f22e8",
+        "after": "cf183c2d5acc63c43e26a60348bd1cbd4bc7afd56433e7c7c0c34276cc491cf2"
+      }
+    ]
+  }
+]

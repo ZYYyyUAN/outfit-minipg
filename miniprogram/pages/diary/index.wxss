@@ -1,1 +1,2 @@
-/* Shared page styles are defined in app.wxss. */
+.row{display:flex;align-items:center;justify-content:space-between;gap:16rpx}.row button{margin:0}.calendar{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:4rpx;margin-top:28rpx}.calendar>text{font-size:24rpx;color:#6D6670}.day{min-height:88rpx;padding:12rpx 0;border-radius:12rpx}.dot{display:block;font-size:20rpx;line-height:22rpx;color:#A34F69}.chosen{background:#F6E7ED}.row button,button{min-height:88rpx;font-size:26rpx}
+.previews{display:flex;gap:12rpx;margin-top:20rpx}.previews>view{width:31%;overflow-wrap:anywhere}.previews image{width:100%;height:180rpx;background:white}.previews text{display:block}

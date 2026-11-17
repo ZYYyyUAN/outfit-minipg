@@ -4,19 +4,23 @@ import { BusinessError } from './utils/business-error.js';
 import { mediaRoutes } from './routes/media.js';
 import { clothesRoutes } from './routes/clothes.js';
 import { outfitsRoutes } from './routes/outfits.js';
+import { diariesRoutes } from './routes/diaries.js';
+import { statisticsRoutes } from './routes/statistics.js';
 
 export function internalError(error, req, res, next) {
-  if (error instanceof BusinessError) return res.status(error.status).json({ error: { code: error.code, message: error.message, ...(error.fields ? { details: { fields: error.fields } } : {}) } });
+  if (error instanceof BusinessError) return res.status(error.status).json({ error: { code: error.code, message: error.message, ...(error.details || error.fields ? { details: error.details ?? { fields: error.fields } } : {}) } });
   if (['entity.parse.failed', 'entity.too.large'].includes(error.type)) return res.status(error.type === 'entity.too.large' ? 413 : 400).json({ error: { code: 'INVALID_INPUT', message: '请求内容无效', details: { fields: { body: error.type === 'entity.too.large' ? '请求不能超过8KiB' : '请提交有效JSON' } } } });
   res.status(500).json({ error: { code: 'INTERNAL_ERROR', message: '服务暂时无法完成请求' } });
 }
-export function createApp(account, media, clothes, outfits) {
+export function createApp(account, media, clothes, outfits, diaries, statistics) {
   const app = express();
   app.disable('x-powered-by');
   app.get('/api/health', (req, res) => res.json({ data: { status: 'ok' } }));
   if (media) app.use('/api', mediaRoutes(account, media));
   if (clothes) app.use('/api', clothesRoutes(account, clothes));
   if (outfits) app.use('/api', outfitsRoutes(account, outfits));
+  if (diaries) app.use('/api', diariesRoutes(account, diaries));
+  if (statistics) app.use('/api', statisticsRoutes(account, statistics));
   app.use(express.json({ limit: '8kb' }));
   if (account) app.use('/api', accountRoutes(account));
   app.use((req, res) => res.status(404).json({ error: { code: 'NOT_FOUND', message: '请求的资源不存在' } }));

@@ -1,0 +1,10 @@
+{
+  "pid": 81152,
+  "origin": "http://127.0.0.1:3016",
+  "allowedAccountIds": [
+    65,
+    66
+  ],
+  "developerToolServicePortOpened": false,
+  "scope": "manual fixture accounts only; instrumented service calls capture row/file events; HTTP is real Express/MySQL"
+}

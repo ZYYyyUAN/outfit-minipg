@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "stage6Complete": false,
+  "requests": 94,
+  "checks": 13,
+  "accounts": [
+    55,
+    56,
+    57
+  ],
+  "originalRowsAndFilesUnchanged": true,
+  "allAccountsLoggedOut": true,
+  "pending": [
+    "native UI and screenshot acceptance",
+    "remaining parameter/client checks",
+    "final dual review and publication"
+  ]
+}

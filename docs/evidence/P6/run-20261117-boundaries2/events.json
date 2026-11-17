@@ -1,0 +1,470 @@
+[
+  {
+    "label": "register",
+    "changes": [
+      {
+        "table": "users",
+        "key": "63",
+        "before": null,
+        "after": "d236af907e4e1d2e46e8b6c3c2f5d99bff0968e186fe381b554536bc0b8cb930"
+      }
+    ]
+  },
+  {
+    "label": "login",
+    "changes": [
+      {
+        "table": "users",
+        "key": "63",
+        "before": "d236af907e4e1d2e46e8b6c3c2f5d99bff0968e186fe381b554536bc0b8cb930",
+        "after": "378d5cdf31d731a58115aa7b2f2d160f116aa07d995e7107a339ea572866b134"
+      }
+    ]
+  },
+  {
+    "label": "register",
+    "changes": [
+      {
+        "table": "users",
+        "key": "64",
+        "before": null,
+        "after": "f921cf1417bcf614b8bf34a82a398e9f00106b525822a5a685dd1de2a24d4db3"
+      }
+    ]
+  },
+  {
+    "label": "login",
+    "changes": [
+      {
+        "table": "users",
+        "key": "64",
+        "before": "f921cf1417bcf614b8bf34a82a398e9f00106b525822a5a685dd1de2a24d4db3",
+        "after": "f9825d054317a84a317d8647ad9f1e58e526999256df66d687aa47f0c258a364"
+      }
+    ]
+  },
+  {
+    "label": "own JPEG upload",
+    "changes": []
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "211",
+        "before": null,
+        "after": "664a4079bc19d94dc28fa7f7a403934bf6ceb5fb2ea65b36b6aeb093cfa0c5f4"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "212",
+        "before": null,
+        "after": "b46692898136595d878350c6b410e1f4f0dd4dc96c3cde64d117d5cdcc389889"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "213",
+        "before": null,
+        "after": "f898b2dd72a40588fa78052caaca1128fa7bb718f0f80613afa742b8fc061a0b"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "214",
+        "before": null,
+        "after": "6c7c9966055058ffabb62ac63762c45df6c98e55f111d01f1db5b2d9978f36aa"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "215",
+        "before": null,
+        "after": "e2bc11eb5cb95d88041c282689d97678ea8b15faa65701b97a2e6b362c72b1ab"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "216",
+        "before": null,
+        "after": "4130ccf89d88ff16796b2bf42f18440d48a11e813f4d9dafe424be7943e813e4"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "217",
+        "before": null,
+        "after": "97bb262fd55bd90dac0ee8a8e6946a07fdffe6e4ea9d6fc7ca91ec3246463836"
+      }
+    ]
+  },
+  {
+    "label": "controlled clothing",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "218",
+        "before": null,
+        "after": "b1ce2a5a9675ea1565d22c1a71db9d3f5a25f91a86e7b99f01ec4ad2f03fbe91"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary create",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "63",
+        "before": null,
+        "after": "e6ad1d485e75dcfcf897ab150041df25d9bd6efcdbf6e88c120e082125607488"
+      },
+      {
+        "table": "diary_items",
+        "key": "63:211",
+        "before": null,
+        "after": "046809d45bb4dd03fc11ed09260af3f76102301fae686e1a47cea5063dff2350"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary create",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "64",
+        "before": null,
+        "after": "40c85bb5f80665e14bc8fceb86834bc8b48f1d3dc56424d58196717ea1da24b9"
+      },
+      {
+        "table": "diary_items",
+        "key": "64:212",
+        "before": null,
+        "after": "182613dfa4615dedc4360c8a38f6a998ddb45cb317f458d79f017be6103cbcff"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary create",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "65",
+        "before": null,
+        "after": "714d6f87b93595be3edb026ed0e967d1f11fc0d16f79757d28d47db73672f88f"
+      },
+      {
+        "table": "diary_items",
+        "key": "65:211",
+        "before": null,
+        "after": "fd57926ff91b1b5960faf9a538860a7daada90ddcfeae9b345e1f3eb49f60097"
+      },
+      {
+        "table": "diary_items",
+        "key": "65:212",
+        "before": null,
+        "after": "f0a87ba52f406436dc13e5c1985af008c1fa35ce2cc34c77e1f3d2b9ebf4bcba"
+      }
+    ]
+  },
+  {
+    "label": "controlled move month remove A",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "65",
+        "before": "714d6f87b93595be3edb026ed0e967d1f11fc0d16f79757d28d47db73672f88f",
+        "after": "fab896b26abb082291bbfe68ef81bf386866cc3ea06814690a37168483b66aba"
+      },
+      {
+        "table": "diary_items",
+        "key": "65:211",
+        "before": "fd57926ff91b1b5960faf9a538860a7daada90ddcfeae9b345e1f3eb49f60097",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "65:212",
+        "before": "f0a87ba52f406436dc13e5c1985af008c1fa35ce2cc34c77e1f3d2b9ebf4bcba",
+        "after": "0a2f0a6e47905d89190d55185d3650224d608a799767e585f003a3611e0098ae"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary delete",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "65",
+        "before": "fab896b26abb082291bbfe68ef81bf386866cc3ea06814690a37168483b66aba",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "65:212",
+        "before": "0a2f0a6e47905d89190d55185d3650224d608a799767e585f003a3611e0098ae",
+        "after": null
+      }
+    ]
+  },
+  {
+    "label": "controlled diary create",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "66",
+        "before": null,
+        "after": "262f0ce8bb5a18724d65ab44b8eded826e92ed75651a3a7af1332b436c6b442f"
+      },
+      {
+        "table": "diary_items",
+        "key": "66:213",
+        "before": null,
+        "after": "2c760a17bd5d9b555a43f9bdbf5fd25b0bb4394ec0e23ad6f981ab30f05e046b"
+      },
+      {
+        "table": "diary_items",
+        "key": "66:214",
+        "before": null,
+        "after": "3bc3c5bd6bc3387c516b89aab838d6244fae5250c2869229ec667cb3300c7e80"
+      },
+      {
+        "table": "diary_items",
+        "key": "66:215",
+        "before": null,
+        "after": "4ff9255a1082d372a5eb34dec1d7ce31bb29ee4defb8b717a9c34867036c9708"
+      },
+      {
+        "table": "diary_items",
+        "key": "66:216",
+        "before": null,
+        "after": "b4e6e80bd0756acc170dfb8dd441fc38dbc0a75b835e5a685e28d910f42fa8a5"
+      },
+      {
+        "table": "diary_items",
+        "key": "66:217",
+        "before": null,
+        "after": "fca105b33a49e235592a975a121ef160bbb323406e374b3c8bd5cc3042fe9624"
+      },
+      {
+        "table": "diary_items",
+        "key": "66:218",
+        "before": null,
+        "after": "bddbc660af74edfbe1590b4393adf47a62bcf1046169b8fbec1f95f69a4d9fbd"
+      }
+    ]
+  },
+  {
+    "label": "controlled archive",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "211",
+        "before": "664a4079bc19d94dc28fa7f7a403934bf6ceb5fb2ea65b36b6aeb093cfa0c5f4",
+        "after": "35891b36fa865bb8a4ec4cabdb1a589e57ede0d7960043b6fba14d63f76bf4a1"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary create",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "67",
+        "before": null,
+        "after": "4ec751072b82ea3cb222a9185a3807b5120cdd557a77ef3b5886394cad84f70d"
+      },
+      {
+        "table": "diary_items",
+        "key": "67:211",
+        "before": null,
+        "after": "0785ebfa7b1008254ee6a57bbe3e494f4915099c97bc54bc7bb51b8fb18955d1"
+      }
+    ]
+  },
+  {
+    "label": "controlled restore",
+    "changes": [
+      {
+        "table": "clothes",
+        "key": "211",
+        "before": "35891b36fa865bb8a4ec4cabdb1a589e57ede0d7960043b6fba14d63f76bf4a1",
+        "after": "a6866f10ffaf617e62ab309e45bda4ad8e027722b7a3cafe51bf0814776f14ca"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary create",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "68",
+        "before": null,
+        "after": "11d76a21301300b2cec507c11b84d5140768e1184918be7d1cfedb6cd4437455"
+      },
+      {
+        "table": "diary_items",
+        "key": "68:211",
+        "before": null,
+        "after": "50d5a75749d0c2b528fbbc9b8c4c988bac0151361a42eda4532c46dc4ba02676"
+      }
+    ]
+  },
+  {
+    "label": "controlled diary delete",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "68",
+        "before": "11d76a21301300b2cec507c11b84d5140768e1184918be7d1cfedb6cd4437455",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "68:211",
+        "before": "50d5a75749d0c2b528fbbc9b8c4c988bac0151361a42eda4532c46dc4ba02676",
+        "after": null
+      }
+    ]
+  },
+  {
+    "label": "controlled diary delete",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "66",
+        "before": "262f0ce8bb5a18724d65ab44b8eded826e92ed75651a3a7af1332b436c6b442f",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "66:213",
+        "before": "2c760a17bd5d9b555a43f9bdbf5fd25b0bb4394ec0e23ad6f981ab30f05e046b",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "66:214",
+        "before": "3bc3c5bd6bc3387c516b89aab838d6244fae5250c2869229ec667cb3300c7e80",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "66:215",
+        "before": "4ff9255a1082d372a5eb34dec1d7ce31bb29ee4defb8b717a9c34867036c9708",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "66:216",
+        "before": "b4e6e80bd0756acc170dfb8dd441fc38dbc0a75b835e5a685e28d910f42fa8a5",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "66:217",
+        "before": "fca105b33a49e235592a975a121ef160bbb323406e374b3c8bd5cc3042fe9624",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "66:218",
+        "before": "bddbc660af74edfbe1590b4393adf47a62bcf1046169b8fbec1f95f69a4d9fbd",
+        "after": null
+      }
+    ]
+  },
+  {
+    "label": "controlled diary delete",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "67",
+        "before": "4ec751072b82ea3cb222a9185a3807b5120cdd557a77ef3b5886394cad84f70d",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "67:211",
+        "before": "0785ebfa7b1008254ee6a57bbe3e494f4915099c97bc54bc7bb51b8fb18955d1",
+        "after": null
+      }
+    ]
+  },
+  {
+    "label": "controlled diary delete",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "63",
+        "before": "e6ad1d485e75dcfcf897ab150041df25d9bd6efcdbf6e88c120e082125607488",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "63:211",
+        "before": "046809d45bb4dd03fc11ed09260af3f76102301fae686e1a47cea5063dff2350",
+        "after": null
+      }
+    ]
+  },
+  {
+    "label": "controlled diary delete",
+    "changes": [
+      {
+        "table": "diaries",
+        "key": "64",
+        "before": "40c85bb5f80665e14bc8fceb86834bc8b48f1d3dc56424d58196717ea1da24b9",
+        "after": null
+      },
+      {
+        "table": "diary_items",
+        "key": "64:212",
+        "before": "182613dfa4615dedc4360c8a38f6a998ddb45cb317f458d79f017be6103cbcff",
+        "after": null
+      }
+    ]
+  },
+  {
+    "label": "final logout",
+    "changes": [
+      {
+        "table": "users",
+        "key": "63",
+        "before": "378d5cdf31d731a58115aa7b2f2d160f116aa07d995e7107a339ea572866b134",
+        "after": "22fa926e0f5603984d35006a4dd7050bf52cd9b988b3c1c2822b12dae585756f"
+      },
+      {
+        "table": "users",
+        "key": "64",
+        "before": "f9825d054317a84a317d8647ad9f1e58e526999256df66d687aa47f0c258a364",
+        "after": "b99dae3d6291d6eacfe8911390d3959670ecd304eb5d3a87b127b670b2d5ce91"
+      }
+    ]
+  }
+]

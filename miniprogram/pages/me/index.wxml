@@ -3,6 +3,7 @@
   <view class="title">我的</view>
   <view wx:if="{{user}}"><image wx:if="{{avatarSrc}}" class="avatar-image" mode="aspectFit" src="{{avatarSrc}}" binderror="imageError" /><view wx:else class="avatar-placeholder">衣</view><view class="section-title break-text">{{user.nickname}}</view>
 <view class="hint break-text">账号：{{user.username}}</view><view wx:if="{{avatarState === 'loading'}}" class="hint">正在读取头像…</view><view wx:if="{{avatarError}}" class="error">{{avatarError}}</view><button wx:if="{{avatarState === 'failed'}}" class="button secondary" bindtap="refreshAvatar">重新读取头像</button>
+<button class="button secondary" bindtap="statistics">衣橱统计</button>
 <button class="button" bindtap="editProfile" disabled="{{busy}}">编辑资料</button>
 <button class="button secondary" bindtap="logout" disabled="{{busy}}" loading="{{busy}}">退出登录</button></view>
 <view wx:if="{{error}}" class="error" role="alert">{{error}}</view>

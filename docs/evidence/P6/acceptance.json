@@ -1,0 +1,172 @@
+{
+  "stage6Complete": false,
+  "publicationPending": true,
+  "userWaiver": "run-20261117-native/user-waiver.json",
+  "nativePassed": false,
+  "allApplicableLocalChecksPassed": true,
+  "review": "final-review.json",
+  "protection": "run-20261117-final-protection2/audit.json",
+  "historySupplement": "run-20261117-history-final/history.json",
+  "groups": [
+    {
+      "id": "P6-V01",
+      "status": "automatic-passed/prerequisite-overridden-by-user"
+    },
+    {
+      "id": "P6-V02",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V03",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V04",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V05",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V06",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V07",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V08",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V09",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V10",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V11",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V12",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V13",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V14",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V15",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V16",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V17",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V18",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V19",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V20",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V21",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V22",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V23",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V24",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V25",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V26",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V27",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V28",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V29",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V30",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V31",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V32",
+      "status": "automatic-passed/native-skipped-by-user"
+    },
+    {
+      "id": "P6-V33",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V34",
+      "status": "skipped-by-user"
+    },
+    {
+      "id": "P6-V35",
+      "status": "skipped-by-user"
+    },
+    {
+      "id": "P6-V36",
+      "status": "skipped-by-user"
+    },
+    {
+      "id": "P6-V37",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V38",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V39",
+      "status": "passed"
+    },
+    {
+      "id": "P6-V40",
+      "status": "pending-publication"
+    }
+  ]
+}

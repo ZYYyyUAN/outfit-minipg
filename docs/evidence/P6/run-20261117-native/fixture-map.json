@@ -1,0 +1,43 @@
+{
+  "runId": "run-20261117-native",
+  "accounts": [
+    {
+      "id": 65,
+      "username": "p6ui_7daa1895_a"
+    },
+    {
+      "id": 66,
+      "username": "p6ui_c5a1ebb0_b"
+    }
+  ],
+  "sourceOutfitId": 85,
+  "longDiaryId": 69,
+  "occupiedDiaryId": 70,
+  "clothingIds": [
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238
+  ],
+  "photoPath": "users/65/6722ef20-077b-4785-876c-7f0e4aca7055.jpg",
+  "api": "http://127.0.0.1:3016",
+  "pid": 81152,
+  "preparedAt": "2026-11-17T14:14:08.787Z",
+  "nativeAcceptance": "pending"
+}

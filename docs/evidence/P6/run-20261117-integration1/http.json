@@ -1,0 +1,72 @@
+[
+  {
+    "route": "/auth/register",
+    "method": "POST",
+    "status": 201,
+    "code": null,
+    "expectedStatus": 201
+  },
+  {
+    "route": "/auth/login",
+    "method": "POST",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  },
+  {
+    "route": "/auth/register",
+    "method": "POST",
+    "status": 201,
+    "code": null,
+    "expectedStatus": 201
+  },
+  {
+    "route": "/auth/login",
+    "method": "POST",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  },
+  {
+    "route": "/auth/register",
+    "method": "POST",
+    "status": 201,
+    "code": null,
+    "expectedStatus": 201
+  },
+  {
+    "route": "/auth/login",
+    "method": "POST",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  },
+  {
+    "route": "/statistics?month=2026-11",
+    "method": "GET",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  },
+  {
+    "route": "/auth/logout",
+    "method": "POST",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  },
+  {
+    "route": "/auth/logout",
+    "method": "POST",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  },
+  {
+    "route": "/auth/logout",
+    "method": "POST",
+    "status": 200,
+    "code": null,
+    "expectedStatus": 200
+  }
+]

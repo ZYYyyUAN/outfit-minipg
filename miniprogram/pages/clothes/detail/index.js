@@ -122,6 +122,7 @@ Page({
       finally { if(this._archivePending===pending) this._archivePending=null; }
     }});
   },
+  diary(event){if(this.current(this._sequence))wx.navigateTo({url:'/pages/diary/detail/index?id='+event.currentTarget.dataset.id});},
   outfit(event) { if(this.current(this._sequence)) wx.navigateTo({url:'/pages/outfits/detail/index?id='+event.currentTarget.dataset.id}); },
   back() { if(getCurrentPages().length>1) wx.navigateBack({delta:1});else wx.switchTab({url:'/pages/wardrobe/index'}); },
 });

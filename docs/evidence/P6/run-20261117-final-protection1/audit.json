@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "stage6Complete": false,
+  "runId": "run-20261117-final-protection1",
+  "sourceRuns": [
+    "run-20261117-integration1",
+    "run-20261117-integration2",
+    "run-20261117-integration3",
+    "run-20261117-foundation",
+    "run-20261117-boundaries1",
+    "run-20261117-boundaries2",
+    "run-20261117-native"
+  ],
+  "events": 150,
+  "changes": 274,
+  "counts": {
+    "users": 47,
+    "categories": 7,
+    "clothes": 176,
+    "outfits": 65,
+    "outfit_items": 218,
+    "diaries": 28,
+    "diary_items": 101
+  },
+  "protectedOriginalRows": 514,
+  "protectedOriginalFiles": 729,
+  "registeredNewImages": 30,
+  "allAccountsLoggedOut": true,
+  "accounts": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+  ],
+  "explicitDeletedDiaries": [
+    60,
+    55,
+    54,
+    65,
+    68,
+    66,
+    67,
+    63,
+    64
+  ],
+  "fullExpectedSetMatches": true
+}
