@@ -1,0 +1,20 @@
+✔ business proof folds exact field changes and explicit relation removal, preserving old manifests (4.2901ms)
+✔ business proofs reject false previous rows, protected data, scope and forbidden field changes (2.1306ms)
+✔ restart selects complete outfit integration manifest even when foundation runs later (0.8457ms)
+✔ read-only independent SQL verifier defaults to help without database configuration (196.4747ms)
+✔ outfit verification CLI defaults to help and requires an explicit safe run ID for read or HTTP modes (1.2104ms)
+✔ help and unsupported modes work without database/private configuration from another cwd (553.0153ms)
+✔ evidence run reservation refuses any existing directory and preserves its bytes (10.6302ms)
+✔ zero-increment protection detects changed, added or missing rows/images/files, schema and identity (3.5838ms)
+✔ cumulative manifests explain only registered new owners and exact row/image hashes (12.1793ms)
+✔ cumulative audit checks actual parent, clothing and diary-source ownership beyond manifest declarations (0.8461ms)
+✔ logged-out session proof reconstructs previous whole row and rejects sensitive or business changes (1.1679ms)
+✔ cumulative session transition binds real proof to previous hash and exact new hash (1.1713ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 949.4628

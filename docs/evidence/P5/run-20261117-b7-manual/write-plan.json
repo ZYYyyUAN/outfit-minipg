@@ -1,0 +1,79 @@
+{
+  "runId": "run-20261117-b7-manual",
+  "batch": 7,
+  "manualScope": {
+    "ownerIds": [
+      44,
+      45
+    ],
+    "clothingIds": [
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "outfitIds": [
+      69,
+      70
+    ]
+  },
+  "newAccountPrefix": "p5_b7_",
+  "allowedFields": {
+    "clothes": [
+      "name",
+      "image_path",
+      "is_archived",
+      "updated_at"
+    ],
+    "outfits": [
+      "name",
+      "occasion",
+      "note",
+      "is_archived",
+      "updated_at"
+    ]
+  },
+  "relationReplacement": "explicit full before/after proof; no parent deletion",
+  "diariesMutable": false,
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2",
+      "run-20261117-b3-validation",
+      "run-20261117-b4-save",
+      "run-20261117-b5-linkage",
+      "run-20261117-b5-linkage-final",
+      "run-20261117-b6-integration",
+      "run-20261117-b6-restart3",
+      "run-20261117-b6-foundation",
+      "run-20261117-b6-source",
+      "run-20261117-b6-integration-final",
+      "run-20261117-b6-restart-final"
+    ],
+    "registeredAccounts": 8,
+    "registeredRows": 276,
+    "registeredImages": 12,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0
+  }
+}

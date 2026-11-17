@@ -1,0 +1,3248 @@
+{
+  "clothes": [
+    {
+      "id": 34,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "粉色绞花针织两件套",
+      "image_path": "users/11/e7036f72-5506-4839-a94e-83d637362ff0.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "短款V领针织与同色背心作为一组衣物记录，适合与牛仔裤搭配。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 35,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "灰米色撞领针织上衣",
+      "image_path": "users/11/2dce84aa-ced8-4885-a21f-de77d6baee62.jpg",
+      "color": "灰米色",
+      "season": "春秋",
+      "note": "白色领口和下摆形成层次；图片展示的是一件假两件设计上衣。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 36,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "棕色菱格针织上衣",
+      "image_path": "users/11/cd00fb8a-2275-4ce5-a854-958302011a50.jpg",
+      "color": "棕色",
+      "season": "秋冬",
+      "note": "菱格图案与深色牛仔裤组合，增加上装的图案变化。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 37,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "浅紫色V领宽松针织",
+      "image_path": "users/11/bc024c67-3a4c-48e4-a365-172a8db114dd.jpg",
+      "color": "浅紫色",
+      "season": "春秋",
+      "note": "宽松轮廓，可与牛仔裤和浅彩围巾组合。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 38,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "白色荷叶领衬衫",
+      "image_path": "users/11/c91583af-49bd-443e-aac3-79f6829ba731.jpg",
+      "color": "白色",
+      "season": "春秋",
+      "note": "荷叶领和灯笼袖增加细节，可在开衫内叠穿。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 39,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "藏蓝拼袖长袖上衣",
+      "image_path": "users/11/0dffa7f8-ecbc-45b0-8f55-650c56432fae.jpg",
+      "color": "藏蓝与灰色",
+      "season": "春秋",
+      "note": "灰色衣身与藏蓝插肩袖，适合校园休闲搭配。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 40,
+      "user_id": 11,
+      "category_id": "tops",
+      "name": "奶油色绒感短针织",
+      "image_path": "users/11/87b67c9b-41c2-4ef4-9600-11df5ccb0b50.jpg",
+      "color": "奶油色",
+      "season": "秋冬",
+      "note": "短款轮廓与明显绒感纹理，预备搭配小花半裙。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 41,
+      "user_id": 11,
+      "category_id": "outerwear",
+      "name": "浅蓝色罗纹短开衫",
+      "image_path": "users/11/78425f99-3716-4360-9cf5-c7c9bed52f3b.jpg",
+      "color": "浅蓝色",
+      "season": "春秋",
+      "note": "短款开衫，可在白色衬衫外叠穿。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 42,
+      "user_id": 11,
+      "category_id": "outerwear",
+      "name": "藏蓝北欧图案开衫",
+      "image_path": "users/11/1d8ac382-ad0a-4f8a-be84-f675c9194d72.jpg",
+      "color": "藏蓝与米白色",
+      "season": "秋冬",
+      "note": "肩部与袖口带北欧图案，适合日常牛仔组合。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 43,
+      "user_id": 11,
+      "category_id": "outerwear",
+      "name": "黑色圆领短外套",
+      "image_path": "users/11/04c82ddb-a122-44e5-ade1-012539affb3c.jpg",
+      "color": "黑色",
+      "season": "秋冬",
+      "note": "圆领与颗粒纹理；保留为待穿衣物，尚未写入穿着日记。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 44,
+      "user_id": 11,
+      "category_id": "dresses",
+      "name": "黑色系带吊带连衣裙",
+      "image_path": "users/11/ef78faaf-c408-4cc0-a81e-ef70046e3dfe.jpg",
+      "color": "黑色",
+      "season": "春夏",
+      "note": "肩带系结，可单穿或叠穿；演示数据中暂未穿着。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 45,
+      "user_id": 11,
+      "category_id": "bottoms",
+      "name": "水洗蓝阔腿牛仔裤",
+      "image_path": "users/11/1758b8f6-3006-4116-afa0-4d09ec42160a.jpg",
+      "color": "水洗蓝",
+      "season": "四季",
+      "note": "宽松直落裤型，适合短款针织与图案开衫。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 46,
+      "user_id": 11,
+      "category_id": "bottoms",
+      "name": "浅蓝色直筒牛仔裤",
+      "image_path": "users/11/93c9ff10-2212-4ebe-b642-ad21e029cd96.jpg",
+      "color": "浅蓝色",
+      "season": "四季",
+      "note": "直筒轮廓，与阔腿及微喇裤型分别展示。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 47,
+      "user_id": 11,
+      "category_id": "bottoms",
+      "name": "深靛蓝微喇牛仔裤",
+      "image_path": "users/11/f567f384-ccb8-41da-8adc-bb4fa57db25f.jpg",
+      "color": "深靛蓝",
+      "season": "四季",
+      "note": "微喇裤脚与深色水洗，与棕色菱格针织组合。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 48,
+      "user_id": 11,
+      "category_id": "bottoms",
+      "name": "奶油色层叠长半裙",
+      "image_path": "users/11/c3d2d631-77ee-489f-a2bd-6dcdcdd65020.jpg",
+      "color": "奶油色",
+      "season": "春秋",
+      "note": "抽绳腰头和层叠裙摆，适合蓝色开衫与白色衬衫。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 49,
+      "user_id": 11,
+      "category_id": "bottoms",
+      "name": "灰色细格纹直筒半裙",
+      "image_path": "users/11/1c1e128f-aec1-4948-ab96-d3a640788109.jpg",
+      "color": "灰色",
+      "season": "秋冬",
+      "note": "细格纹和开衩细节，搭配撞领针织用于自习场景。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 50,
+      "user_id": 11,
+      "category_id": "bottoms",
+      "name": "米白色小花半裙",
+      "image_path": "users/11/f5ccdd69-c885-4740-864d-2d4eec79db43.jpg",
+      "color": "米白与黑色",
+      "season": "春夏",
+      "note": "小花图案与直落裙型，已建立待穿搭配。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 51,
+      "user_id": 11,
+      "category_id": "shoes",
+      "name": "白色休闲运动鞋",
+      "image_path": "users/11/ac403c2d-cb8b-48f7-8fca-0c1a0c0febf6.jpg",
+      "color": "白色",
+      "season": "四季",
+      "note": "保留首批已核对的完整单品图，供牛仔裤装搭配。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 52,
+      "user_id": 11,
+      "category_id": "shoes",
+      "name": "黑色玛丽珍平底鞋",
+      "image_path": "users/11/07e7a91f-9e26-4a4e-bf13-1a08754d5e28.jpg",
+      "color": "黑色",
+      "season": "四季",
+      "note": "细搭扣和圆头设计，供半裙及深蓝牛仔裤组合。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 53,
+      "user_id": 11,
+      "category_id": "bags",
+      "name": "深棕色褶皱软肩包",
+      "image_path": "users/11/be415b92-f6ae-47b5-ac9e-f7319bbefa0d.jpg",
+      "color": "深棕色",
+      "season": "四季",
+      "note": "柔软肩包与长肩带，适合针织及牛仔搭配。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 54,
+      "user_id": 11,
+      "category_id": "bags",
+      "name": "浅蓝色手提包",
+      "image_path": "users/11/908fb98d-708c-494d-9a76-c3cbb5d739d3.jpg",
+      "color": "浅蓝色",
+      "season": "四季",
+      "note": "保留首批完整单品图，用于粉蓝和浅紫配色组合。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 55,
+      "user_id": 11,
+      "category_id": "accessories",
+      "name": "粉蓝浅彩格纹围巾",
+      "image_path": "users/11/6c0cf21d-910a-4896-be39-b0e01a6e7693.jpg",
+      "color": "粉蓝与浅绿色",
+      "season": "秋冬",
+      "note": "保留完整折叠及流苏轮廓，用作浅色搭配中的彩色配饰。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 56,
+      "user_id": 11,
+      "category_id": "accessories",
+      "name": "米白色毛绒渔夫帽",
+      "image_path": "users/11/fa6dda30-7668-450c-9800-febe4cc3332b.jpg",
+      "color": "米白色",
+      "season": "秋冬",
+      "note": "毛绒纹理与浅色帽型，适合秋冬休闲搭配。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 57,
+      "user_id": 11,
+      "category_id": "accessories",
+      "name": "薄荷蓝流苏围巾",
+      "image_path": "users/11/fe7ac251-69ab-42b7-8997-5e73d8ae12c5.jpg",
+      "color": "薄荷蓝",
+      "season": "秋冬",
+      "note": "用明亮配饰补充藏蓝与浅蓝牛仔组合。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 58,
+      "user_id": 27,
+      "category_id": "tops",
+      "name": "P4已编辑",
+      "image_path": "users/27/b2b3f076-1116-4892-8770-1735e06fac6f.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "第一行\n第二行",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:55:29.340",
+      "updated_at": "2026-11-14 16:55:29.948"
+    },
+    {
+      "id": 59,
+      "user_id": 27,
+      "category_id": "tops",
+      "name": "P4针织_%!Alpha",
+      "image_path": "users/27/b2b3f076-1116-4892-8770-1735e06fac6f.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:55:29.413",
+      "updated_at": "2026-11-14 16:55:29.413"
+    },
+    {
+      "id": 60,
+      "user_id": 29,
+      "category_id": "tops",
+      "name": "P4已编辑",
+      "image_path": "users/29/ba374c11-48f6-4633-b7e5-8a0729f370af.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "第一行\n第二行",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.224",
+      "updated_at": "2026-11-14 16:58:23.746"
+    },
+    {
+      "id": 61,
+      "user_id": 29,
+      "category_id": "tops",
+      "name": "P4针织_%!Alpha",
+      "image_path": "users/29/ba374c11-48f6-4633-b7e5-8a0729f370af.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.256",
+      "updated_at": "2026-11-14 16:58:23.256"
+    },
+    {
+      "id": 77,
+      "user_id": 30,
+      "category_id": "tops",
+      "name": "P4针织_%!Alpha",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:24.001"
+    },
+    {
+      "id": 78,
+      "user_id": 30,
+      "category_id": "bottoms",
+      "name": "P4牛仔裤Beta",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "浅蓝色",
+      "season": "四季",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 79,
+      "user_id": 30,
+      "category_id": "outerwear",
+      "name": "P4夹具C3",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "灰米色",
+      "season": "秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 80,
+      "user_id": 30,
+      "category_id": "dresses",
+      "name": "P4夹具C4",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "米白色",
+      "season": "夏",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 81,
+      "user_id": 30,
+      "category_id": "shoes",
+      "name": "P4夹具C5",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "黑色",
+      "season": "秋冬",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 82,
+      "user_id": 30,
+      "category_id": "bags",
+      "name": "P4夹具C6",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "棕色",
+      "season": "四季",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 83,
+      "user_id": 30,
+      "category_id": "accessories",
+      "name": "P4夹具C7",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "银色",
+      "season": "冬",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 84,
+      "user_id": 30,
+      "category_id": "tops",
+      "name": "P4夹具C8",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "浅粉色",
+      "season": "春夏",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 85,
+      "user_id": 30,
+      "category_id": "tops",
+      "name": "P4夹具C9",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "白色",
+      "season": "春",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 86,
+      "user_id": 30,
+      "category_id": "tops",
+      "name": "P4夹具C10",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "黑色",
+      "season": "冬",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 87,
+      "user_id": 30,
+      "category_id": "bottoms",
+      "name": "P4夹具C11",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "浅蓝色",
+      "season": "夏",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 88,
+      "user_id": 30,
+      "category_id": "outerwear",
+      "name": "P4夹具C12",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "藏蓝与灰色",
+      "season": "春秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 89,
+      "user_id": 30,
+      "category_id": "accessories",
+      "name": "P4夹具C13",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "彩色",
+      "season": "秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 90,
+      "user_id": 30,
+      "category_id": "tops",
+      "name": "P4归档针织",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 1,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 91,
+      "user_id": 30,
+      "category_id": "bottoms",
+      "name": "P4夹具C15",
+      "image_path": "users/30/08ccfbcb-e460-4050-a19a-29cd513fb945.jpg",
+      "color": "浅蓝色",
+      "season": "四季",
+      "note": "独立分页测试夹具",
+      "is_archived": 1,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 107,
+      "user_id": 31,
+      "category_id": "bottoms",
+      "name": "P4重启后仍在的牛仔裤",
+      "image_path": "users/31/3180506e-ac83-4dde-b618-245282c72e34.jpg",
+      "color": "水洗蓝",
+      "season": "四季",
+      "note": "独立进程持久读取验证",
+      "is_archived": 0,
+      "created_at": "2026-11-14 17:02:27.190",
+      "updated_at": "2026-11-14 17:02:27.190"
+    },
+    {
+      "id": 108,
+      "user_id": 35,
+      "category_id": "tops",
+      "name": "P4针织_%!Alpha",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:29:59.038",
+      "updated_at": "2026-11-15 14:35:13.814"
+    },
+    {
+      "id": 109,
+      "user_id": 35,
+      "category_id": "bottoms",
+      "name": "P4牛仔裤Beta",
+      "image_path": "users/35/6c3cc2b7-41e5-418e-ae2e-8eb0e62584e8.jpg",
+      "color": "浅蓝色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:31:48.052",
+      "updated_at": "2026-11-15 14:31:48.052"
+    },
+    {
+      "id": 110,
+      "user_id": 35,
+      "category_id": "outerwear",
+      "name": "P4夹具C3",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "灰米色",
+      "season": "秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 111,
+      "user_id": 35,
+      "category_id": "dresses",
+      "name": "P4夹具C4",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "米白色",
+      "season": "夏",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 112,
+      "user_id": 35,
+      "category_id": "shoes",
+      "name": "P4夹具C5",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "黑色",
+      "season": "秋冬",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 113,
+      "user_id": 35,
+      "category_id": "bags",
+      "name": "P4夹具C6",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "棕色",
+      "season": "四季",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 114,
+      "user_id": 35,
+      "category_id": "accessories",
+      "name": "P4夹具C7",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "银色",
+      "season": "冬",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 115,
+      "user_id": 35,
+      "category_id": "tops",
+      "name": "P4夹具C8",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "浅粉色",
+      "season": "春夏",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 116,
+      "user_id": 35,
+      "category_id": "tops",
+      "name": "P4夹具C9",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "白色",
+      "season": "春",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 117,
+      "user_id": 35,
+      "category_id": "tops",
+      "name": "P4夹具C10",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "黑色",
+      "season": "冬",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 118,
+      "user_id": 35,
+      "category_id": "bottoms",
+      "name": "P4夹具C11",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "浅蓝色",
+      "season": "夏",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 119,
+      "user_id": 35,
+      "category_id": "outerwear",
+      "name": "P4夹具C12",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "藏蓝与灰色",
+      "season": "春秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 120,
+      "user_id": 35,
+      "category_id": "accessories",
+      "name": "P4夹具C13",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "彩色",
+      "season": "秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 121,
+      "user_id": 35,
+      "category_id": "tops",
+      "name": "P4归档针织",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "浅粉色",
+      "season": "春秋",
+      "note": "独立分页测试夹具",
+      "is_archived": 1,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 122,
+      "user_id": 35,
+      "category_id": "bottoms",
+      "name": "P4夹具C15",
+      "image_path": "users/35/4edebc7d-bcc3-4058-8973-ce1901aaa75d.jpg",
+      "color": "浅蓝色",
+      "season": "四季",
+      "note": "独立分页测试夹具",
+      "is_archived": 1,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 123,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物1",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.536",
+      "updated_at": "2026-11-17 06:03:45.536"
+    },
+    {
+      "id": 124,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物2",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.555",
+      "updated_at": "2026-11-17 06:03:45.555"
+    },
+    {
+      "id": 125,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物3",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.577",
+      "updated_at": "2026-11-17 06:03:45.577"
+    },
+    {
+      "id": 126,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物4",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.601",
+      "updated_at": "2026-11-17 06:03:45.601"
+    },
+    {
+      "id": 127,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物5",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.615",
+      "updated_at": "2026-11-17 06:03:45.615"
+    },
+    {
+      "id": 128,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物6",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.636",
+      "updated_at": "2026-11-17 06:03:45.636"
+    },
+    {
+      "id": 129,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物7",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.661",
+      "updated_at": "2026-11-17 06:03:45.661"
+    },
+    {
+      "id": 130,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物8",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.682",
+      "updated_at": "2026-11-17 06:03:45.682"
+    },
+    {
+      "id": 131,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物9",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.700",
+      "updated_at": "2026-11-17 06:03:45.700"
+    },
+    {
+      "id": 132,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物10",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.719",
+      "updated_at": "2026-11-17 06:03:45.719"
+    },
+    {
+      "id": 133,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物11",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.742",
+      "updated_at": "2026-11-17 06:03:45.742"
+    },
+    {
+      "id": 134,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物12",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.758",
+      "updated_at": "2026-11-17 06:03:45.758"
+    },
+    {
+      "id": 135,
+      "user_id": 37,
+      "category_id": "tops",
+      "name": "P5衣物13",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.775",
+      "updated_at": "2026-11-17 06:03:45.775"
+    },
+    {
+      "id": 136,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物14",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.792",
+      "updated_at": "2026-11-17 06:03:45.792"
+    },
+    {
+      "id": 137,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物15",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.810",
+      "updated_at": "2026-11-17 06:03:45.810"
+    },
+    {
+      "id": 138,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物16",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.828",
+      "updated_at": "2026-11-17 06:03:45.828"
+    },
+    {
+      "id": 139,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物17",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.844",
+      "updated_at": "2026-11-17 06:03:45.844"
+    },
+    {
+      "id": 140,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物18",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.866",
+      "updated_at": "2026-11-17 06:03:45.866"
+    },
+    {
+      "id": 141,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物19",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.888",
+      "updated_at": "2026-11-17 06:03:45.888"
+    },
+    {
+      "id": 142,
+      "user_id": 37,
+      "category_id": "outerwear",
+      "name": "P5衣物20",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 06:03:45.905",
+      "updated_at": "2026-11-17 06:03:45.965"
+    },
+    {
+      "id": 143,
+      "user_id": 37,
+      "category_id": "bottoms",
+      "name": "P5衣物21",
+      "image_path": "users/37/12d5292b-7539-4fb1-acce-c4626b12a17d.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.928",
+      "updated_at": "2026-11-17 06:03:45.928"
+    },
+    {
+      "id": 144,
+      "user_id": 38,
+      "category_id": "tops",
+      "name": "B专属衣物",
+      "image_path": "users/38/e0c5e4bf-002d-444c-bc50-ea68b0b2e59e.jpg",
+      "color": "黑色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.944",
+      "updated_at": "2026-11-17 06:03:45.944"
+    },
+    {
+      "id": 145,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "Batch6当前衣物_%!",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.196",
+      "updated_at": "2026-11-17 12:55:52.030"
+    },
+    {
+      "id": 146,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物2",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.231",
+      "updated_at": "2026-11-17 12:55:47.231"
+    },
+    {
+      "id": 147,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物3",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.244",
+      "updated_at": "2026-11-17 12:55:47.244"
+    },
+    {
+      "id": 148,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物4",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.264",
+      "updated_at": "2026-11-17 12:55:47.264"
+    },
+    {
+      "id": 149,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物5",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.277",
+      "updated_at": "2026-11-17 12:55:47.277"
+    },
+    {
+      "id": 150,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物6",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.293",
+      "updated_at": "2026-11-17 12:55:47.293"
+    },
+    {
+      "id": 151,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物7",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.308",
+      "updated_at": "2026-11-17 12:55:47.308"
+    },
+    {
+      "id": 152,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物8",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.327",
+      "updated_at": "2026-11-17 12:55:47.327"
+    },
+    {
+      "id": 153,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物9",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.341",
+      "updated_at": "2026-11-17 12:55:47.341"
+    },
+    {
+      "id": 154,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物10",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.357",
+      "updated_at": "2026-11-17 12:55:47.357"
+    },
+    {
+      "id": 155,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物11",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.370",
+      "updated_at": "2026-11-17 12:55:47.370"
+    },
+    {
+      "id": 156,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物12",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.384",
+      "updated_at": "2026-11-17 12:55:47.384"
+    },
+    {
+      "id": 157,
+      "user_id": 39,
+      "category_id": "tops",
+      "name": "P5衣物13",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.401",
+      "updated_at": "2026-11-17 12:55:47.401"
+    },
+    {
+      "id": 158,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物14",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.415",
+      "updated_at": "2026-11-17 12:55:47.415"
+    },
+    {
+      "id": 159,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物15",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.428",
+      "updated_at": "2026-11-17 12:55:47.428"
+    },
+    {
+      "id": 160,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物16",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.437",
+      "updated_at": "2026-11-17 12:55:47.437"
+    },
+    {
+      "id": 161,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物17",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.462",
+      "updated_at": "2026-11-17 12:55:47.462"
+    },
+    {
+      "id": 162,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物18",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.482",
+      "updated_at": "2026-11-17 12:55:47.482"
+    },
+    {
+      "id": 163,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物19",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.501",
+      "updated_at": "2026-11-17 12:55:47.501"
+    },
+    {
+      "id": 164,
+      "user_id": 39,
+      "category_id": "outerwear",
+      "name": "P5衣物20",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 12:55:47.519",
+      "updated_at": "2026-11-17 12:55:47.563"
+    },
+    {
+      "id": 165,
+      "user_id": 39,
+      "category_id": "bottoms",
+      "name": "P5衣物21",
+      "image_path": "users/39/87bdec1e-7e96-4621-9c46-4cfe2dd06f05.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.534",
+      "updated_at": "2026-11-17 12:55:47.534"
+    },
+    {
+      "id": 166,
+      "user_id": 40,
+      "category_id": "tops",
+      "name": "B专属衣物",
+      "image_path": "users/40/137962c9-43a9-426c-99ea-cb208ea24b91.jpg",
+      "color": "黑色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.550",
+      "updated_at": "2026-11-17 12:55:47.550"
+    },
+    {
+      "id": 167,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "Batch6当前衣物_%!",
+      "image_path": "users/44/99380d86-e8b8-4115-86ed-6605ebaf8cc9.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.413",
+      "updated_at": "2026-11-17 12:58:55.051"
+    },
+    {
+      "id": 168,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物2",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.450",
+      "updated_at": "2026-11-17 12:58:49.450"
+    },
+    {
+      "id": 169,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物3",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.477",
+      "updated_at": "2026-11-17 12:58:49.477"
+    },
+    {
+      "id": 170,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物4",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.490",
+      "updated_at": "2026-11-17 12:58:49.490"
+    },
+    {
+      "id": 171,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物5",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.504",
+      "updated_at": "2026-11-17 12:58:49.504"
+    },
+    {
+      "id": 172,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物6",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.520",
+      "updated_at": "2026-11-17 12:58:49.520"
+    },
+    {
+      "id": 173,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物7",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.534",
+      "updated_at": "2026-11-17 12:58:49.534"
+    },
+    {
+      "id": 174,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物8",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.551",
+      "updated_at": "2026-11-17 12:58:49.551"
+    },
+    {
+      "id": 175,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物9",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.565",
+      "updated_at": "2026-11-17 12:58:49.565"
+    },
+    {
+      "id": 176,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物10",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.582",
+      "updated_at": "2026-11-17 12:58:49.582"
+    },
+    {
+      "id": 177,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物11",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.592",
+      "updated_at": "2026-11-17 12:58:49.592"
+    },
+    {
+      "id": 178,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物12",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.610",
+      "updated_at": "2026-11-17 12:58:49.610"
+    },
+    {
+      "id": 179,
+      "user_id": 44,
+      "category_id": "tops",
+      "name": "P5衣物13",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.626",
+      "updated_at": "2026-11-17 12:58:49.626"
+    },
+    {
+      "id": 180,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物14",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.647",
+      "updated_at": "2026-11-17 12:58:49.647"
+    },
+    {
+      "id": 181,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物15",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.662",
+      "updated_at": "2026-11-17 12:58:49.662"
+    },
+    {
+      "id": 182,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物16",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.683",
+      "updated_at": "2026-11-17 12:58:49.683"
+    },
+    {
+      "id": 183,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物17",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.702",
+      "updated_at": "2026-11-17 12:58:49.702"
+    },
+    {
+      "id": 184,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物18",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.724",
+      "updated_at": "2026-11-17 12:58:49.724"
+    },
+    {
+      "id": 185,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物19",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.750",
+      "updated_at": "2026-11-17 12:58:49.750"
+    },
+    {
+      "id": 186,
+      "user_id": 44,
+      "category_id": "outerwear",
+      "name": "P5衣物20",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 12:58:49.768",
+      "updated_at": "2026-11-17 12:58:49.824"
+    },
+    {
+      "id": 187,
+      "user_id": 44,
+      "category_id": "bottoms",
+      "name": "P5衣物21",
+      "image_path": "users/44/d5ca62bb-db53-44d5-8c2d-6b44cce7845e.jpg",
+      "color": "米白色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.787",
+      "updated_at": "2026-11-17 12:58:49.787"
+    },
+    {
+      "id": 188,
+      "user_id": 45,
+      "category_id": "tops",
+      "name": "B专属衣物",
+      "image_path": "users/45/986338b8-7e25-48b4-af43-027c1d8cfebf.jpg",
+      "color": "黑色",
+      "season": "四季",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.805",
+      "updated_at": "2026-11-17 12:58:49.805"
+    }
+  ],
+  "outfits": [
+    {
+      "id": 18,
+      "user_id": 11,
+      "name": "粉蓝校园日常",
+      "occasion": "校园",
+      "note": "粉色绞花两件套配水洗蓝阔腿牛仔裤，用浅蓝包呼应。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 19,
+      "user_id": 11,
+      "name": "图书馆自习",
+      "occasion": "校园",
+      "note": "撞领针织与灰色细格纹半裙，配黑色平底鞋和深棕软包。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 20,
+      "user_id": 11,
+      "name": "周末轻松散步",
+      "occasion": "休闲",
+      "note": "藏蓝插肩袖配直筒牛仔裤，以薄荷蓝围巾点色。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 21,
+      "user_id": 11,
+      "name": "蓝白针织叠穿",
+      "occasion": "休闲",
+      "note": "白色荷叶领衬衫叠浅蓝短开衫，下装选奶油色层叠长裙。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 22,
+      "user_id": 11,
+      "name": "菱格与深蓝牛仔",
+      "occasion": "校园",
+      "note": "棕色菱格针织搭深靛蓝微喇牛仔裤，配黑色玛丽珍鞋。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 23,
+      "user_id": 11,
+      "name": "浅紫色秋日",
+      "occasion": "休闲",
+      "note": "浅紫宽松针织搭直筒牛仔裤，以格纹围巾和毛绒帽增加层次。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 24,
+      "user_id": 11,
+      "name": "小花半裙计划",
+      "occasion": "出游",
+      "note": "奶油色短针织搭米白小花半裙；已保存为搭配，尚未记录穿着。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 25,
+      "user_id": 11,
+      "name": "北欧图案开衫",
+      "occasion": "休闲",
+      "note": "图案短开衫搭阔腿牛仔裤，米白毛绒帽呼应图案颜色。",
+      "is_archived": 0,
+      "created_at": "2026-11-06 16:42:33.800",
+      "updated_at": "2026-11-06 16:42:33.800"
+    },
+    {
+      "id": 26,
+      "user_id": 30,
+      "name": "P4夹具搭配1",
+      "occasion": "日常",
+      "note": "独立关联测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 27,
+      "user_id": 30,
+      "name": "P4夹具搭配2",
+      "occasion": "日常",
+      "note": "独立关联测试夹具",
+      "is_archived": 1,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 28,
+      "user_id": 30,
+      "name": "P4夹具搭配3",
+      "occasion": "日常",
+      "note": "独立关联测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-14 16:58:23.842",
+      "updated_at": "2026-11-14 16:58:23.842"
+    },
+    {
+      "id": 29,
+      "user_id": 35,
+      "name": "P4夹具搭配1",
+      "occasion": "日常",
+      "note": "独立关联测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 30,
+      "user_id": 35,
+      "name": "P4夹具搭配2",
+      "occasion": "日常",
+      "note": "独立关联测试夹具",
+      "is_archived": 1,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 31,
+      "user_id": 35,
+      "name": "P4夹具搭配3",
+      "occasion": "日常",
+      "note": "独立关联测试夹具",
+      "is_archived": 0,
+      "created_at": "2026-11-15 14:35:30.170",
+      "updated_at": "2026-11-15 14:35:30.170"
+    },
+    {
+      "id": 32,
+      "user_id": 37,
+      "name": "Alpha_%!日常",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:45.987",
+      "updated_at": "2026-11-17 06:03:45.987"
+    },
+    {
+      "id": 33,
+      "user_id": 37,
+      "name": "ALPHA日常",
+      "occasion": "通勤长",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.011",
+      "updated_at": "2026-11-17 06:03:46.011"
+    },
+    {
+      "id": 34,
+      "user_id": 37,
+      "name": "P5五件",
+      "occasion": "休闲",
+      "note": " 第一行\n第二行 ",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.028",
+      "updated_at": "2026-11-17 06:03:46.028"
+    },
+    {
+      "id": 35,
+      "user_id": 37,
+      "name": "P5二十件",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.050",
+      "updated_at": "2026-11-17 06:03:46.050"
+    },
+    {
+      "id": 36,
+      "user_id": 37,
+      "name": "更新后的搭配",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.068",
+      "updated_at": "2026-11-17 06:03:49.882"
+    },
+    {
+      "id": 37,
+      "user_id": 37,
+      "name": "P5重复",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.090",
+      "updated_at": "2026-11-17 06:03:46.090"
+    },
+    {
+      "id": 38,
+      "user_id": 37,
+      "name": "P5分页1",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.117",
+      "updated_at": "2026-11-17 06:03:46.117"
+    },
+    {
+      "id": 39,
+      "user_id": 37,
+      "name": "P5分页2",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.135",
+      "updated_at": "2026-11-17 06:03:46.135"
+    },
+    {
+      "id": 40,
+      "user_id": 37,
+      "name": "P5分页3",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.152",
+      "updated_at": "2026-11-17 06:03:46.152"
+    },
+    {
+      "id": 41,
+      "user_id": 37,
+      "name": "P5分页4",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.172",
+      "updated_at": "2026-11-17 06:03:46.172"
+    },
+    {
+      "id": 42,
+      "user_id": 37,
+      "name": "P5分页5",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.185",
+      "updated_at": "2026-11-17 06:03:46.185"
+    },
+    {
+      "id": 43,
+      "user_id": 37,
+      "name": "P5分页6",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.201",
+      "updated_at": "2026-11-17 06:03:46.201"
+    },
+    {
+      "id": 44,
+      "user_id": 37,
+      "name": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+      "note": "📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.219",
+      "updated_at": "2026-11-17 06:03:46.219"
+    },
+    {
+      "id": 45,
+      "user_id": 37,
+      "name": "P5归档一",
+      "occasion": "仅归档",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 06:03:46.243",
+      "updated_at": "2026-11-17 06:03:46.261"
+    },
+    {
+      "id": 46,
+      "user_id": 37,
+      "name": "P5归档二",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 06:03:46.285",
+      "updated_at": "2026-11-17 06:03:46.304"
+    },
+    {
+      "id": 47,
+      "user_id": 38,
+      "name": "B隔离搭配",
+      "occasion": "B专属场景",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 06:03:46.332",
+      "updated_at": "2026-11-17 06:03:46.332"
+    },
+    {
+      "id": 49,
+      "user_id": 37,
+      "name": "Batch4 已编辑组合",
+      "occasion": "组合编辑",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 10:39:35.746",
+      "updated_at": "2026-11-17 10:39:35.788"
+    },
+    {
+      "id": 50,
+      "user_id": 39,
+      "name": "Alpha_%!日常",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.584",
+      "updated_at": "2026-11-17 12:55:47.584"
+    },
+    {
+      "id": 51,
+      "user_id": 39,
+      "name": "ALPHA日常",
+      "occasion": "通勤长",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.608",
+      "updated_at": "2026-11-17 12:55:47.608"
+    },
+    {
+      "id": 52,
+      "user_id": 39,
+      "name": "P5五件",
+      "occasion": "休闲",
+      "note": " 第一行\n第二行 ",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.626",
+      "updated_at": "2026-11-17 12:55:47.626"
+    },
+    {
+      "id": 53,
+      "user_id": 39,
+      "name": "P5二十件",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.644",
+      "updated_at": "2026-11-17 12:55:47.644"
+    },
+    {
+      "id": 54,
+      "user_id": 39,
+      "name": "更新后的搭配",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.665",
+      "updated_at": "2026-11-17 12:55:51.352"
+    },
+    {
+      "id": 55,
+      "user_id": 39,
+      "name": "P5重复",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.681",
+      "updated_at": "2026-11-17 12:55:47.681"
+    },
+    {
+      "id": 56,
+      "user_id": 39,
+      "name": "P5分页1",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.698",
+      "updated_at": "2026-11-17 12:55:47.698"
+    },
+    {
+      "id": 57,
+      "user_id": 39,
+      "name": "P5分页2",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.715",
+      "updated_at": "2026-11-17 12:55:47.715"
+    },
+    {
+      "id": 58,
+      "user_id": 39,
+      "name": "P5分页3",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.730",
+      "updated_at": "2026-11-17 12:55:47.730"
+    },
+    {
+      "id": 59,
+      "user_id": 39,
+      "name": "P5分页4",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.748",
+      "updated_at": "2026-11-17 12:55:47.748"
+    },
+    {
+      "id": 60,
+      "user_id": 39,
+      "name": "P5分页5",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.761",
+      "updated_at": "2026-11-17 12:55:47.761"
+    },
+    {
+      "id": 61,
+      "user_id": 39,
+      "name": "P5分页6",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.778",
+      "updated_at": "2026-11-17 12:55:47.778"
+    },
+    {
+      "id": 62,
+      "user_id": 39,
+      "name": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+      "note": "📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.792",
+      "updated_at": "2026-11-17 12:55:47.792"
+    },
+    {
+      "id": 63,
+      "user_id": 39,
+      "name": "P5归档一",
+      "occasion": "仅归档",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 12:55:47.809",
+      "updated_at": "2026-11-17 12:55:47.821"
+    },
+    {
+      "id": 64,
+      "user_id": 39,
+      "name": "P5归档二",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 12:55:47.848",
+      "updated_at": "2026-11-17 12:55:47.857"
+    },
+    {
+      "id": 65,
+      "user_id": 40,
+      "name": "B隔离搭配",
+      "occasion": "B专属场景",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:55:47.876",
+      "updated_at": "2026-11-17 12:55:47.876"
+    },
+    {
+      "id": 67,
+      "user_id": 44,
+      "name": "Alpha_%!日常",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.845",
+      "updated_at": "2026-11-17 12:58:49.845"
+    },
+    {
+      "id": 68,
+      "user_id": 44,
+      "name": "ALPHA日常",
+      "occasion": "通勤长",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.880",
+      "updated_at": "2026-11-17 12:58:49.880"
+    },
+    {
+      "id": 69,
+      "user_id": 44,
+      "name": "P5五件",
+      "occasion": "休闲",
+      "note": " 第一行\n第二行 ",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.900",
+      "updated_at": "2026-11-17 12:58:49.900"
+    },
+    {
+      "id": 70,
+      "user_id": 44,
+      "name": "P5二十件",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.919",
+      "updated_at": "2026-11-17 12:58:49.919"
+    },
+    {
+      "id": 71,
+      "user_id": 44,
+      "name": "更新后的搭配",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.940",
+      "updated_at": "2026-11-17 12:58:54.375"
+    },
+    {
+      "id": 72,
+      "user_id": 44,
+      "name": "P5重复",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.963",
+      "updated_at": "2026-11-17 12:58:49.963"
+    },
+    {
+      "id": 73,
+      "user_id": 44,
+      "name": "P5分页1",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:49.980",
+      "updated_at": "2026-11-17 12:58:49.980"
+    },
+    {
+      "id": 74,
+      "user_id": 44,
+      "name": "P5分页2",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.008",
+      "updated_at": "2026-11-17 12:58:50.008"
+    },
+    {
+      "id": 75,
+      "user_id": 44,
+      "name": "P5分页3",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.024",
+      "updated_at": "2026-11-17 12:58:50.024"
+    },
+    {
+      "id": 76,
+      "user_id": 44,
+      "name": "P5分页4",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.046",
+      "updated_at": "2026-11-17 12:58:50.046"
+    },
+    {
+      "id": 77,
+      "user_id": 44,
+      "name": "P5分页5",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.069",
+      "updated_at": "2026-11-17 12:58:50.069"
+    },
+    {
+      "id": 78,
+      "user_id": 44,
+      "name": "P5分页6",
+      "occasion": "休闲",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.093",
+      "updated_at": "2026-11-17 12:58:50.093"
+    },
+    {
+      "id": 79,
+      "user_id": 44,
+      "name": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨",
+      "note": "📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.109",
+      "updated_at": "2026-11-17 12:58:50.109"
+    },
+    {
+      "id": 80,
+      "user_id": 44,
+      "name": "P5归档一",
+      "occasion": "仅归档",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 12:58:50.126",
+      "updated_at": "2026-11-17 12:58:50.145"
+    },
+    {
+      "id": 81,
+      "user_id": 44,
+      "name": "P5归档二",
+      "occasion": "通勤",
+      "note": "",
+      "is_archived": 1,
+      "created_at": "2026-11-17 12:58:50.166",
+      "updated_at": "2026-11-17 12:58:50.183"
+    },
+    {
+      "id": 82,
+      "user_id": 45,
+      "name": "B隔离搭配",
+      "occasion": "B专属场景",
+      "note": "",
+      "is_archived": 0,
+      "created_at": "2026-11-17 12:58:50.203",
+      "updated_at": "2026-11-17 12:58:50.203"
+    }
+  ],
+  "outfit_items": [
+    {
+      "outfit_id": 18,
+      "clothing_id": 34,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 18,
+      "clothing_id": 45,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 18,
+      "clothing_id": 51,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 18,
+      "clothing_id": 54,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 19,
+      "clothing_id": 35,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 19,
+      "clothing_id": 49,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 19,
+      "clothing_id": 52,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 19,
+      "clothing_id": 53,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 20,
+      "clothing_id": 39,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 20,
+      "clothing_id": 46,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 20,
+      "clothing_id": 51,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 20,
+      "clothing_id": 54,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 20,
+      "clothing_id": 57,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 21,
+      "clothing_id": 38,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 21,
+      "clothing_id": 41,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 21,
+      "clothing_id": 48,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 21,
+      "clothing_id": 52,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 21,
+      "clothing_id": 53,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 22,
+      "clothing_id": 36,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 22,
+      "clothing_id": 47,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 22,
+      "clothing_id": 52,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 22,
+      "clothing_id": 53,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 23,
+      "clothing_id": 37,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 23,
+      "clothing_id": 46,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 23,
+      "clothing_id": 51,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 23,
+      "clothing_id": 54,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 23,
+      "clothing_id": 55,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 23,
+      "clothing_id": 56,
+      "sort_order": 6
+    },
+    {
+      "outfit_id": 24,
+      "clothing_id": 40,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 24,
+      "clothing_id": 50,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 24,
+      "clothing_id": 52,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 24,
+      "clothing_id": 53,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 25,
+      "clothing_id": 42,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 25,
+      "clothing_id": 45,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 25,
+      "clothing_id": 51,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 25,
+      "clothing_id": 53,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 25,
+      "clothing_id": 56,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 26,
+      "clothing_id": 78,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 26,
+      "clothing_id": 79,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 26,
+      "clothing_id": 80,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 26,
+      "clothing_id": 81,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 26,
+      "clothing_id": 77,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 27,
+      "clothing_id": 77,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 27,
+      "clothing_id": 78,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 28,
+      "clothing_id": 77,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 29,
+      "clothing_id": 109,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 29,
+      "clothing_id": 110,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 29,
+      "clothing_id": 111,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 29,
+      "clothing_id": 112,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 29,
+      "clothing_id": 108,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 30,
+      "clothing_id": 108,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 30,
+      "clothing_id": 109,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 31,
+      "clothing_id": 108,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 32,
+      "clothing_id": 123,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 33,
+      "clothing_id": 123,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 33,
+      "clothing_id": 124,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 33,
+      "clothing_id": 125,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 33,
+      "clothing_id": 126,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 34,
+      "clothing_id": 127,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 34,
+      "clothing_id": 124,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 34,
+      "clothing_id": 142,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 34,
+      "clothing_id": 126,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 34,
+      "clothing_id": 123,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 142,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 141,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 140,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 139,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 138,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 137,
+      "sort_order": 6
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 136,
+      "sort_order": 7
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 135,
+      "sort_order": 8
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 134,
+      "sort_order": 9
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 133,
+      "sort_order": 10
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 132,
+      "sort_order": 11
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 131,
+      "sort_order": 12
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 130,
+      "sort_order": 13
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 129,
+      "sort_order": 14
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 128,
+      "sort_order": 15
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 127,
+      "sort_order": 16
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 126,
+      "sort_order": 17
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 125,
+      "sort_order": 18
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 124,
+      "sort_order": 19
+    },
+    {
+      "outfit_id": 35,
+      "clothing_id": 123,
+      "sort_order": 20
+    },
+    {
+      "outfit_id": 36,
+      "clothing_id": 127,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 36,
+      "clothing_id": 125,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 36,
+      "clothing_id": 123,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 37,
+      "clothing_id": 124,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 38,
+      "clothing_id": 123,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 39,
+      "clothing_id": 124,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 40,
+      "clothing_id": 125,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 41,
+      "clothing_id": 126,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 42,
+      "clothing_id": 127,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 43,
+      "clothing_id": 128,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 44,
+      "clothing_id": 142,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 45,
+      "clothing_id": 123,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 45,
+      "clothing_id": 124,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 45,
+      "clothing_id": 125,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 45,
+      "clothing_id": 126,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 46,
+      "clothing_id": 142,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 47,
+      "clothing_id": 144,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 49,
+      "clothing_id": 142,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 49,
+      "clothing_id": 125,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 49,
+      "clothing_id": 123,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 50,
+      "clothing_id": 145,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 51,
+      "clothing_id": 145,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 51,
+      "clothing_id": 146,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 51,
+      "clothing_id": 147,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 51,
+      "clothing_id": 148,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 52,
+      "clothing_id": 149,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 52,
+      "clothing_id": 146,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 52,
+      "clothing_id": 164,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 52,
+      "clothing_id": 148,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 52,
+      "clothing_id": 145,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 164,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 163,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 162,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 161,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 160,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 159,
+      "sort_order": 6
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 158,
+      "sort_order": 7
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 157,
+      "sort_order": 8
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 156,
+      "sort_order": 9
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 155,
+      "sort_order": 10
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 154,
+      "sort_order": 11
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 153,
+      "sort_order": 12
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 152,
+      "sort_order": 13
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 151,
+      "sort_order": 14
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 150,
+      "sort_order": 15
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 149,
+      "sort_order": 16
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 148,
+      "sort_order": 17
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 147,
+      "sort_order": 18
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 146,
+      "sort_order": 19
+    },
+    {
+      "outfit_id": 53,
+      "clothing_id": 145,
+      "sort_order": 20
+    },
+    {
+      "outfit_id": 54,
+      "clothing_id": 149,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 54,
+      "clothing_id": 147,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 54,
+      "clothing_id": 145,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 55,
+      "clothing_id": 146,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 56,
+      "clothing_id": 145,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 57,
+      "clothing_id": 146,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 58,
+      "clothing_id": 147,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 59,
+      "clothing_id": 148,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 60,
+      "clothing_id": 149,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 61,
+      "clothing_id": 150,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 62,
+      "clothing_id": 164,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 63,
+      "clothing_id": 145,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 63,
+      "clothing_id": 146,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 63,
+      "clothing_id": 147,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 63,
+      "clothing_id": 148,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 64,
+      "clothing_id": 164,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 65,
+      "clothing_id": 166,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 67,
+      "clothing_id": 167,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 68,
+      "clothing_id": 167,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 68,
+      "clothing_id": 168,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 68,
+      "clothing_id": 169,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 68,
+      "clothing_id": 170,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 69,
+      "clothing_id": 171,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 69,
+      "clothing_id": 168,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 69,
+      "clothing_id": 186,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 69,
+      "clothing_id": 170,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 69,
+      "clothing_id": 167,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 186,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 185,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 184,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 183,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 182,
+      "sort_order": 5
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 181,
+      "sort_order": 6
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 180,
+      "sort_order": 7
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 179,
+      "sort_order": 8
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 178,
+      "sort_order": 9
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 177,
+      "sort_order": 10
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 176,
+      "sort_order": 11
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 175,
+      "sort_order": 12
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 174,
+      "sort_order": 13
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 173,
+      "sort_order": 14
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 172,
+      "sort_order": 15
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 171,
+      "sort_order": 16
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 170,
+      "sort_order": 17
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 169,
+      "sort_order": 18
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 168,
+      "sort_order": 19
+    },
+    {
+      "outfit_id": 70,
+      "clothing_id": 167,
+      "sort_order": 20
+    },
+    {
+      "outfit_id": 71,
+      "clothing_id": 171,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 71,
+      "clothing_id": 169,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 71,
+      "clothing_id": 167,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 72,
+      "clothing_id": 168,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 73,
+      "clothing_id": 167,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 74,
+      "clothing_id": 168,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 75,
+      "clothing_id": 169,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 76,
+      "clothing_id": 170,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 77,
+      "clothing_id": 171,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 78,
+      "clothing_id": 172,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 79,
+      "clothing_id": 186,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 80,
+      "clothing_id": 167,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 80,
+      "clothing_id": 168,
+      "sort_order": 2
+    },
+    {
+      "outfit_id": 80,
+      "clothing_id": 169,
+      "sort_order": 3
+    },
+    {
+      "outfit_id": 80,
+      "clothing_id": 170,
+      "sort_order": 4
+    },
+    {
+      "outfit_id": 81,
+      "clothing_id": 186,
+      "sort_order": 1
+    },
+    {
+      "outfit_id": 82,
+      "clothing_id": 188,
+      "sort_order": 1
+    }
+  ]
+}

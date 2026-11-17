@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
+import {applyBusinessEvents} from './outfit-business-proof.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const evidence = path.join(root, 'docs/evidence/P5');
@@ -111,6 +112,7 @@ export function compareSnapshots(baseline, current) {
 }
 
 export function compareCumulative(baseline, current, manifests) {
+  if(manifests.some(manifest=>manifest.businessEvents))return compareCumulative(baseline,current,applyBusinessEvents(baseline,manifests));
   const expected = structuredClone(baseline), owners = new Set(), registered = new Map();
   for (const manifest of manifests) {
     assert.equal(manifest.version, 1, 'MANIFEST_VERSION');
