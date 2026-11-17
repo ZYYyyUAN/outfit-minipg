@@ -5,6 +5,7 @@ const outfits = require('../../../utils/outfit-state.js');
 const initial = () => ({outfit:null,loading:true,error:'',notFound:false,acting:false});
 Page({
   data: initial(),
+  edit() { if(this.current(this._sequence) && this.data.outfit && !this.data.acting) wx.navigateTo({url:'/pages/outfits/edit/index?id='+this._id}); },
   onLoad(options) { this._id=options.id;this._sequence=0;this._show=0;this._scroll=0;this._images=new Map(); },
   async onShow() {
     this._visible=true;const show=++this._show;

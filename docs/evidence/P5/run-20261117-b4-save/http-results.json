@@ -1,0 +1,65 @@
+[
+  {
+    "label": "reuse A login",
+    "method": "POST",
+    "path": "/auth/login",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "C03 before save",
+    "method": "GET",
+    "path": "/clothes/123",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O04 create five including archived",
+    "method": "POST",
+    "path": "/outfits",
+    "expected": 201,
+    "actual": 201
+  },
+  {
+    "label": "O03 reopen complete items",
+    "method": "GET",
+    "path": "/outfits/49",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O05 reorder remove and retain archived",
+    "method": "PUT",
+    "path": "/outfits/49",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O03 reopen persisted order",
+    "method": "GET",
+    "path": "/outfits/49",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "O05 reject zero selection",
+    "method": "PUT",
+    "path": "/outfits/49",
+    "expected": 400,
+    "actual": 400
+  },
+  {
+    "label": "C03 after save",
+    "method": "GET",
+    "path": "/clothes/123",
+    "expected": 200,
+    "actual": 200
+  },
+  {
+    "label": "A03 final logout",
+    "method": "POST",
+    "path": "/auth/logout",
+    "expected": 200,
+    "actual": 200
+  }
+]

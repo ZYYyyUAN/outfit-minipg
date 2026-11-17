@@ -1,0 +1,12 @@
+{
+  "id": 49,
+  "userId": 37,
+  "clothingIds": [
+    123,
+    124,
+    125,
+    126,
+    142
+  ],
+  "createdByRunId": "run-20261117-b4-save"
+}

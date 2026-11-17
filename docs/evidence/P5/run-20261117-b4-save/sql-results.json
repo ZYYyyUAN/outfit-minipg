@@ -1,0 +1,63 @@
+[
+  {
+    "label": "after create",
+    "outfitId": 49,
+    "ownerId": 37,
+    "clothingIds": [
+      123,
+      124,
+      125,
+      126,
+      142
+    ],
+    "sortOrders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "parentSha256": "d6eb50a42108ab8124600d68d3c8ad7f3205f63a9cafd66146762cde53b40a1e",
+    "itemsSha256": "d085ec5a6aef51c63972f7816cdffe3a0b8905f6dae382497435aa59001dde42",
+    "newConnection": true,
+    "passed": true
+  },
+  {
+    "label": "after edit",
+    "outfitId": 49,
+    "ownerId": 37,
+    "clothingIds": [
+      142,
+      125,
+      123
+    ],
+    "sortOrders": [
+      1,
+      2,
+      3
+    ],
+    "parentSha256": "5a317788bd405c5d55dcfdd038acfd89b9390c83d2779ac3a055b7811e338ef0",
+    "itemsSha256": "a2897eb9cd243a288c07a98acaadd0fa4d930413476ec6b0a6578a5123d09fec",
+    "newConnection": true,
+    "passed": true
+  },
+  {
+    "label": "invalid save leaves order",
+    "outfitId": 49,
+    "ownerId": 37,
+    "clothingIds": [
+      142,
+      125,
+      123
+    ],
+    "sortOrders": [
+      1,
+      2,
+      3
+    ],
+    "parentSha256": "5a317788bd405c5d55dcfdd038acfd89b9390c83d2779ac3a055b7811e338ef0",
+    "itemsSha256": "a2897eb9cd243a288c07a98acaadd0fa4d930413476ec6b0a6578a5123d09fec",
+    "newConnection": true,
+    "passed": true
+  }
+]

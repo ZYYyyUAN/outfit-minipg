@@ -5,6 +5,7 @@ const outfits = require('../../utils/outfit-state.js');
 const initial = () => ({items:[],total:0,page:0,busy:false,error:'',keywordDraft:'',keyword:'',occasion:'',archived:'active',occasions:[],facetError:'',panel:false,draftOccasion:'',draftArchived:'active',scopes:[{id:'active',name:'在用'},{id:'archived',name:'已归档'},{id:'all',name:'全部'}]});
 Page({
   data: initial(),
+  create() { if(this._visible && this._epoch===session.snapshot().epoch) wx.navigateTo({url:'/pages/outfits/edit/index'}); },
   onLoad() { this._generation=0;this._imageGeneration=0;this._facets=0;this._show=0;this._scroll=0;this._images=new Map(); },
   async onShow() {
     this._visible=true;

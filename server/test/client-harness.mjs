@@ -14,6 +14,7 @@ export function clientHarness(request, extraWx = {}) {
     const module = { exports: {} }; cache.set(filename,module);
     vm.runInNewContext(fs.readFileSync(filename,'utf8'), { module, exports: module.exports, require: p => load(path.relative(path.resolve(serverRoot,'../miniprogram'),path.resolve(path.dirname(filename),p))), wx,
       getApp: () => app, getCurrentPages: () => currentPages,
+      Component: value => { module.exports={...value.methods,data:structuredClone(value.data),properties:{},setData(values){Object.assign(this.data,values);},triggerEvent(name,detail){calls.push(['event',{name,detail}]);},...value.lifetimes,pageLifetimes:value.pageLifetimes}; },
       App: value => { app = value; }, Page: value => { module.exports = { ...value, data: structuredClone(value.data || {}), setData(values){
         for(const [key,value] of Object.entries(values)) {
           const parts=key.replace(/\[(\d+)\]/g,'.$1').split('.');

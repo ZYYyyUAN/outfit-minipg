@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "sequence": 4,
+  "runId": "run-20261117-b4-save",
+  "batch": 4,
+  "accounts": [],
+  "rows": [
+    {
+      "table": "users",
+      "ownerId": 37,
+      "row": {
+        "key": 37,
+        "sha256": "ec1f7bc8c54fb1409a8ef0fe41e0e4cf192f149d1ae31650eaae25443585fc41"
+      },
+      "beforeSha256": "95168afbdd073b13a809246e7b291c02de8096ac8139570a49f011a86fda3f44",
+      "transition": "logged-out-session",
+      "proof": {
+        "beforeUpdatedAt": "2026-11-17 06:03:50.682",
+        "afterUpdatedAt": "2026-11-17 10:39:35.826",
+        "beforeSha256": "95168afbdd073b13a809246e7b291c02de8096ac8139570a49f011a86fda3f44",
+        "afterSha256": "ec1f7bc8c54fb1409a8ef0fe41e0e4cf192f149d1ae31650eaae25443585fc41"
+      },
+      "allowedFields": [
+        "updated_at"
+      ],
+      "changedFields": [
+        "updated_at"
+      ]
+    },
+    {
+      "table": "outfits",
+      "ownerId": 37,
+      "row": {
+        "key": 49,
+        "sha256": "fa13ebe553561c7b458d31baf58b7a6d2312464d4d8d0760e9269364d343991e",
+        "userId": 37
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "name",
+        "occasion",
+        "note",
+        "is_archived",
+        "updated_at"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 37,
+      "row": {
+        "key": "49:142",
+        "sha256": "c13035090b0705fce86ac0ae8db9d641ece5a15eb4374ded051ba7b54eb56a57"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 37,
+      "row": {
+        "key": "49:125",
+        "sha256": "2b149dba2214c9d154098d07456b050da5de70f23a0768aeb45ac355d62fbd0d"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    },
+    {
+      "table": "outfit_items",
+      "ownerId": 37,
+      "row": {
+        "key": "49:123",
+        "sha256": "2974c8308d821042cfdad78a5eee1f83985319eb48ac1c931b252bab74651839"
+      },
+      "beforeSha256": null,
+      "allowedFields": [
+        "clothing_id",
+        "sort_order"
+      ],
+      "changedFields": []
+    }
+  ],
+  "images": [],
+  "referencedFixtureRunId": "run-20261117-b2-http2",
+  "referencedAccountIds": [
+    37,
+    38
+  ],
+  "sessionsOpened": 1,
+  "allAccountsLoggedOut": true,
+  "processClosed": true,
+  "fixture": {
+    "outfitId": 49,
+    "ownerId": 37,
+    "clothingIds": [
+      142,
+      125,
+      123
+    ],
+    "createdByRunId": "run-20261117-b4-save"
+  }
+}

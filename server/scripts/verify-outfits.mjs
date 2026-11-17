@@ -44,7 +44,14 @@ export async function historicalReleaseHashes() {
   return hashes;
 }
 
+// 只允许已登记专用账号退出后的updated_at变化；用当前完整行重建前行SHA，禁止自报changedFields。
+export function sessionTransitionProof(row, beforeUpdatedAt) {
+  assert.equal(row.auth_token_hash, null, 'SESSION_NOT_LOGGED_OUT');
+  assert.equal(row.auth_expires_at, null, 'SESSION_NOT_LOGGED_OUT');
+  return {beforeUpdatedAt,afterUpdatedAt:row.updated_at,beforeSha256:hash(JSON.stringify({...row,updated_at:beforeUpdatedAt})),afterSha256:hash(JSON.stringify(row))};
+}
 export async function captureSnapshot(database, uploadRoot) {
+  const transitions=(await loadManifests()).flatMap(manifest=>manifest.rows.filter(entry=>entry.transition==='logged-out-session'));
   const connection = await database.getConnection();
   let identity, grants, columns, tableData;
   const ownership = {};
@@ -62,6 +69,12 @@ export async function captureSnapshot(database, uploadRoot) {
       ownership[table] = Object.fromEntries(rows.map(row => [String(row.id ?? `${row.outfit_id ?? row.diary_id}:${row.clothing_id}`),
         row.user_id !== undefined ? { ownerId: row.user_id, ...(table === 'diaries' ? { sourceOutfitId: row.source_outfit_id } : {}) }
           : table === 'users' ? { ownerId: row.id } : table.endsWith('_items') ? { parentId: row.outfit_id ?? row.diary_id, clothingId: row.clothing_id, sortOrder: row.sort_order } : {}]));
+      if(table==='users')for(const entry of transitions){
+        const row=rows.find(row=>row.id===entry.ownerId);
+        const historical={...row,updated_at:entry.proof.afterUpdatedAt};
+        ownership.users[entry.ownerId].sessionProofs ||= [];
+        ownership.users[entry.ownerId].sessionProofs.push(sessionTransitionProof(historical,entry.proof.beforeUpdatedAt));
+      }
       tableData[table] = { count: rows.length, structure: Object.values(ddl[0])[1].replace(/AUTO_INCREMENT=\d+ /g, ''),
         rows: rows.map(row => ({ key: row.id ?? `${row.outfit_id ?? row.diary_id}:${row.clothing_id}`, sha256: hash(JSON.stringify(row)),
           ...(row.user_id === undefined ? {} : { userId: row.user_id }) })).sort((a, b) => String(a.key).localeCompare(String(b.key))) };
@@ -122,8 +135,17 @@ export function compareCumulative(baseline, current, manifests) {
         }
       }
       const key = entry.table + ':' + entry.row.key, previous = registered.get(key);
-      // 当前批次仅登记新键；后批须先提供实际字段差异核验，不能用自报字段放宽已登记行。
-      assert.equal(previous, undefined, 'EXISTING_KEY_TRANSITION_NOT_SUPPORTED');
+      if(previous){
+        assert.equal(entry.transition,'logged-out-session','EXISTING_KEY_TRANSITION_NOT_SUPPORTED');
+        assert.equal(entry.table,'users','SESSION_TRANSITION_USERS_ONLY');
+        assert.equal(entry.ownerId,previous.ownerId,'TRANSITION_OWNER');
+        assert.equal(entry.beforeSha256,previous.row.sha256,'TRANSITION_PREVIOUS_SHA');
+        assert.equal(entry.proof.beforeSha256,previous.row.sha256,'TRANSITION_BEFORE_PROOF');
+        assert.equal(entry.proof.afterSha256,entry.row.sha256,'TRANSITION_AFTER_PROOF');
+        assert.ok(current.ownership.users[entry.ownerId].sessionProofs.some(proof=>JSON.stringify(proof)===JSON.stringify(entry.proof)),'TRANSITION_ACTUAL_ROW_PROOF');
+        const index=expected.tables.users.rows.findIndex(row=>row.key===entry.row.key);
+        expected.tables.users.rows[index]=entry.row;registered.set(key,entry);continue;
+      }
       assert.equal(entry.beforeSha256, null, 'UNREGISTERED_PREVIOUS_ROW');
       registered.set(key, entry);
       expected.tables[entry.table].rows.push(entry.row);

@@ -1,0 +1,66 @@
+{
+  "batch": 4,
+  "gitBase": "a7984ce49d0deae46de5ad469aef2137c0b87713",
+  "checkedAt": "2026-11-17T10:47:17.749929+00:00",
+  "stage5Complete": false,
+  "tests": {
+    "passed": 294,
+    "failed": 0,
+    "skipped": 0,
+    "newPickerEditCases": 20,
+    "newProtectionCases": 2,
+    "newVerifierCleanupCases": 3
+  },
+  "http": {
+    "checks": 9,
+    "evidence": "../run-20261117-b4-save/http-results.json",
+    "productionServiceChangedAfterRun": false,
+    "postRunScriptChanges": [
+      "failure-only resource finalization",
+      "success-only aggregate passed gate"
+    ]
+  },
+  "sql": {
+    "newConnectionChecks": 3,
+    "outfitId": 49,
+    "clothingIds": [
+      142,
+      125,
+      123
+    ]
+  },
+  "review": {
+    "batch": 4,
+    "launches": 1,
+    "reviewers": 2,
+    "readOnly": true,
+    "additionalReviewers": 0,
+    "findings": [
+      {
+        "id": "B4-R1",
+        "priority": "P2",
+        "reviewer": "contract_review",
+        "file": "server/scripts/verify-outfit-edit.mjs",
+        "problem": "Logout or protection failures could skip runtime.close/database.end.",
+        "fix": "Nested finally guarantees owned runtime closure and independent database.end; pool creation moved after pre-resource reads. Unknown failures still propagate.",
+        "validation": "outfit-edit-verifier.test.mjs injects logout/proof failures through the actual orchestration function with stub I/O; both resources close in order."
+      }
+    ],
+    "scopeReview": "No findings; reviewer independently ran 28 focused tests.",
+    "contractReview": "One P2, otherwise no additional defects; reviewer independently ran 28 focused tests.",
+    "resolved": 1,
+    "openIssues": 0
+  },
+  "protectionEvidence": "../run-20261117-b4-final/results.json",
+  "genericAuditBatchMetadataLimitation": "Historical batch:2 retained; actual run is Batch4.",
+  "accountsLoggedOut": true,
+  "ownedApplicationClosed": true,
+  "developerToolPortOpened": false,
+  "nativeCompileAndVisualVerified": false,
+  "pending": [
+    "Batch5 cross-module linkage/C07 and diary source",
+    "Batch6 integration/restart/history regression",
+    "Batch7 native/manual/visual and V34"
+  ],
+  "nextBatchStarted": false
+}

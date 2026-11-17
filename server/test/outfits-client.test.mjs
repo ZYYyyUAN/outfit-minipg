@@ -197,7 +197,7 @@ test('outfit revision is session-only and resets across account epochs',()=> {
 });
 test('native templates register P05, bind real handlers and keep P06/diary entry unopened',()=> {
   const root=path.resolve(serverRoot,'../miniprogram'),app=JSON.parse(fs.readFileSync(path.join(root,'app.json'),'utf8'));
-  assert.ok(app.pages.includes('pages/outfits/detail/index'));assert.ok(!app.pages.includes('pages/outfits/edit/index'));
+  assert.ok(app.pages.includes('pages/outfits/detail/index'));assert.ok(app.pages.includes('pages/outfits/edit/index'));
   for(const route of ['pages/outfits/index','pages/outfits/detail/index','pages/clothes/detail/index']) {
     for(const extension of ['js','json','wxml','wxss']) assert.ok(fs.existsSync(path.join(root,route+'.'+extension)));
     const template=fs.readFileSync(path.join(root,route+'.wxml'),'utf8'),{h}=setup(route+'.js'),page=h.load(route+'.js');
@@ -205,5 +205,5 @@ test('native templates register P05, bind real handlers and keep P06/diary entry
     assert.doesNotMatch(template,/src="\{\{[^}]*imageUrl/);
   }
   const list=fs.readFileSync(path.join(root,'pages/outfits/index.wxml'),'utf8'),p05=fs.readFileSync(path.join(root,'pages/outfits/detail/index.wxml'),'utf8'),p02=fs.readFileSync(path.join(root,'pages/clothes/detail/index.wxml'),'utf8');
-  assert.match(list,/<button[^>]*disabled>新增待开放/);assert.match(p05,/<button[^>]*disabled>编辑待开放/);assert.match(p05,/<button[^>]*disabled>记录穿着待开放/);assert.match(p05,/wx:for="\{\{outfit.items\}\}"/);assert.match(list,/item.clothingCount/);assert.match(list,/catchtap="retryImage"/);assert.match(p05,/catchtap="retryImage"/);assert.match(p02,/catchtap="retryPreview"/);assert.doesNotMatch(p02,/bindtap="(?:diary|moreDiaries)"[^>]*class="related"/);
+  assert.match(list,/<button[^>]*bindtap="create">新增搭配/);assert.match(p05,/<button[^>]*bindtap="edit"[^>]*>编辑搭配/);assert.match(p05,/<button[^>]*disabled>记录穿着待开放/);assert.match(p05,/wx:for="\{\{outfit.items\}\}"/);assert.match(list,/item.clothingCount/);assert.match(list,/catchtap="retryImage"/);assert.match(p05,/catchtap="retryImage"/);assert.match(p02,/catchtap="retryPreview"/);assert.doesNotMatch(p02,/bindtap="(?:diary|moreDiaries)"[^>]*class="related"/);
 });

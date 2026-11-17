@@ -71,3 +71,29 @@ test('cumulative audit checks actual parent, clothing and diary-source ownership
     const altered = structuredClone(current); mutate(altered); assert.throws(() => compareCumulative(baseline, altered, [manifest]));
   }
 });
+
+// Session transitions never authorize profile/password/business-row changes.
+test('logged-out session proof reconstructs previous whole row and rejects sensitive or business changes',async()=>{
+ const {sessionTransitionProof}=await import('../scripts/verify-outfits.mjs');
+ const before={id:2,username:'u',password_hash:'private',nickname:'n',auth_token_hash:null,auth_expires_at:null,updated_at:'2026-11-16 00:00:00.000'};
+ const after={...before,updated_at:'2026-11-17 00:00:00.000'};const proof=sessionTransitionProof(after,before.updated_at);
+ const {createHash}=await import('node:crypto');const hash=row=>createHash('sha256').update(JSON.stringify(row)).digest('hex');assert.equal(proof.beforeSha256,hash(before));assert.equal(proof.afterSha256,hash(after));
+ for(const key of ['nickname','password_hash','username'])assert.notEqual(sessionTransitionProof({...after,[key]:'changed'},before.updated_at).beforeSha256,proof.beforeSha256);
+ assert.throws(()=>sessionTransitionProof({...after,auth_token_hash:'active'},before.updated_at),/SESSION_NOT_LOGGED_OUT/);
+ assert.throws(()=>sessionTransitionProof({...after,auth_expires_at:'active'},before.updated_at),/SESSION_NOT_LOGGED_OUT/);
+ assert.ok(!JSON.stringify(proof).includes('private'));
+});
+
+test('cumulative session transition binds real proof to previous hash and exact new hash',async()=>{
+ const {sessionTransitionProof}=await import('../scripts/verify-outfits.mjs');
+ const raw={id:2,password_hash:'secret',nickname:'n',auth_token_hash:null,auth_expires_at:null,updated_at:'new'};const proof=sessionTransitionProof(raw,'old');
+ const baseline={identity:{},grants:[],columns:[],U0:1,tables:{},protectedFiles:{},images:{}};
+ for(const table of ['users','categories','clothes','outfits','outfit_items','diaries','diary_items'])baseline.tables[table]={count:0,structure:table,rows:[]};
+ baseline.tables.users={count:1,structure:'users',rows:[{key:1,sha256:'original'}]};
+ const first={version:1,runId:'first',accounts:[{id:2}],rows:[{table:'users',ownerId:2,row:{key:2,sha256:proof.beforeSha256},beforeSha256:null}],images:[]};
+ const next={version:1,runId:'second',accounts:[],rows:[{table:'users',ownerId:2,row:{key:2,sha256:proof.afterSha256},beforeSha256:proof.beforeSha256,transition:'logged-out-session',proof}],images:[]};
+ const current=structuredClone(baseline);current.U0=2;current.tables.users.count=2;current.tables.users.rows.push(next.rows[0].row);current.ownership={users:{2:{ownerId:2,sessionProofs:[proof]}}};
+ assert.equal(compareCumulative(baseline,current,[first,next]).registeredRows,1);
+ for(const mutate of [m=>m.rows[0].beforeSha256='fake',m=>m.rows[0].proof.beforeSha256='fake',m=>m.rows[0].proof.afterSha256='fake',m=>m.rows[0].proof.beforeUpdatedAt='fake',m=>m.rows[0].row.sha256='fake',m=>m.rows[0].ownerId=1]){const bad=structuredClone(next);mutate(bad);assert.throws(()=>compareCumulative(baseline,current,[first,bad]));}
+ const changed=structuredClone(current);changed.ownership.users[2].sessionProofs=[sessionTransitionProof({...raw,nickname:'changed'},'old')];assert.throws(()=>compareCumulative(baseline,changed,[first,next]),/TRANSITION_ACTUAL_ROW_PROOF/);
+});

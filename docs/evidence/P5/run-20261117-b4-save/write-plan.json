@@ -1,0 +1,20 @@
+{
+  "batch": 4,
+  "gitBase": "a7984ce49d0deae46de5ad469aef2137c0b87713",
+  "reuseAccount": 37,
+  "accountCreatedBy": "run-20261117-b2-http2",
+  "beforeUserSha256": "95168afbdd073b13a809246e7b291c02de8096ac8139570a49f011a86fda3f44",
+  "allowedExistingFields": [
+    "users.37.updated_at (after login/logout only)"
+  ],
+  "newOutfits": 1,
+  "clothingIds": [
+    123,
+    124,
+    125,
+    126,
+    142
+  ],
+  "previousOutfitsMutable": false,
+  "diariesMutable": false
+}

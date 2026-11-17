@@ -4,8 +4,8 @@
   <block wx:if="{{outfit}}">
     <view class="eyebrow">我的搭配</view><view class="title break-text">{{outfit.name}}</view><text wx:if="{{outfit.isArchived}}" class="archive-label">已归档</text><view class="occasion break-text">{{outfit.occasion}} · 共{{outfit.items.length}}件衣物</view>
     <text class="note">{{outfit.note || '暂无备注'}}</text>
-    <view class="detail-actions"><button class="button secondary" disabled>编辑待开放</button><button class="button" bindtap="archive" disabled="{{acting}}">{{acting ? '正在处理' : outfit.isArchived ? '恢复搭配' : '归档搭配'}}</button></view>
-    <button class="button secondary" disabled>记录穿着待开放</button><view class="hint">编辑搭配与记录穿着将在后续开放，当前不会生成穿着记录。</view>
+    <view class="detail-actions"><button class="button secondary" bindtap="edit" disabled="{{acting}}">编辑搭配</button><button class="button" bindtap="archive" disabled="{{acting}}">{{acting ? '正在处理' : outfit.isArchived ? '恢复搭配' : '归档搭配'}}</button></view>
+    <button class="button secondary" disabled>记录穿着待开放</button><view class="hint">记录穿着将在后续开放，当前不会生成穿着记录。</view>
     <view class="section"><view class="section-title">组合单品 · 按搭配顺序</view><view class="items"><view wx:for="{{outfit.items}}" wx:key="id" class="clothing" data-id="{{item.id}}" bindtap="clothing"><view class="picture"><image wx:if="{{item.src}}" src="{{item.src}}" data-src="{{item.src}}" mode="aspectFit" data-id="{{item.id}}" binderror="imageFailed"/><text wx:else class="hint">{{item.imageState === 'failed' ? '图片暂不可用' : '图片读取中'}}</text></view><button wx:if="{{item.imageState === 'failed'}}" class="text-button" data-id="{{item.id}}" catchtap="retryImage">重试图片</button><view class="clothing-name">{{index + 1}}. {{item.name}}</view><text wx:if="{{item.isArchived}}" class="archive-label">衣物已归档</text></view></view></view>
   </block>
   <button class="button secondary" bindtap="back">返回</button>

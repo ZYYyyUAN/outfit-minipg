@@ -1,0 +1,34 @@
+{
+  "runId": "run-20261117-b4-save",
+  "batch": 4,
+  "checkedAt": "2026-11-17T10:39:36.141Z",
+  "stage5Complete": false,
+  "passed": true,
+  "authenticatedHttpChecks": 9,
+  "newConnectionSqlChecks": 3,
+  "manifest": "manifest.json",
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2",
+      "run-20261117-b3-validation",
+      "run-20261117-b4-save"
+    ],
+    "registeredAccounts": 2,
+    "registeredRows": 94,
+    "registeredImages": 2,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0
+  },
+  "allAccountsLoggedOut": true,
+  "ownedApplicationClosed": true,
+  "developerToolPortOpened": false,
+  "pending": [
+    "Batch5 full linkage and diary source",
+    "Batch6 full integration/restart",
+    "Batch7 native/manual/visual"
+  ]
+}

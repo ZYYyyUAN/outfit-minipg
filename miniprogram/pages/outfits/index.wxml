@@ -1,6 +1,5 @@
 <view class="page outfits">
-  <view class="heading"><view><view class="eyebrow">留住喜欢的组合</view><view class="title">我的搭配</view></view><button class="add" disabled>新增待开放</button></view>
-  <view class="hint">新增搭配将在后续开放。</view>
+  <view class="heading"><view><view class="eyebrow">留住喜欢的组合</view><view class="title">我的搭配</view></view><button class="add" bindtap="create">新增搭配</button></view>
   <view class="search"><input value="{{keywordDraft}}" maxlength="-1" placeholder="搜索搭配名称" confirm-type="search" bindinput="keywordInput" bindconfirm="search"/><button bindtap="search">搜索</button><button wx:if="{{keywordDraft || keyword}}" bindtap="clearSearch">清空</button></view>
   <view class="filter-row"><text class="hint">{{occasion || '全部场景'}} · {{archived === 'active' ? '在用' : archived === 'archived' ? '已归档' : '全部'}}</text><button class="text-button" bindtap="openPanel">筛选</button></view>
   <view wx:if="{{panel}}" class="filter-panel">

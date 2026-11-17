@@ -1,0 +1,54 @@
+{
+  "runId": "run-20261117-b4-audit",
+  "batch": 2,
+  "mode": "audit",
+  "checkedAt": "2026-11-17T10:40:36.298Z",
+  "stage5Complete": false,
+  "passed": true,
+  "baseline": "docs/evidence/P5/run-20261116-b1-baseline/baseline.json",
+  "baselineSha256": "b1bb7db2a91b611f5e2e5d88db7712d0a3d1956a127a202cfbcf54fa8245c2a1",
+  "counts": {
+    "users": 23,
+    "categories": 7,
+    "clothes": 81,
+    "outfits": 31,
+    "outfit_items": 103,
+    "diaries": 19,
+    "diary_items": 67
+  },
+  "totalImages": 73,
+  "protectedFiles": 477,
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2",
+      "run-20261117-b3-validation",
+      "run-20261117-b4-save"
+    ],
+    "registeredAccounts": 2,
+    "registeredRows": 94,
+    "registeredImages": 2,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0,
+    "historicalLocalReportsUnchanged": true,
+    "historicalLocalReportCount": 6
+  },
+  "historicalReleaseBaselineSha256": "91929db6a97e4d40e01132dd38d9369e510a75999b3b4d9e77e084baa51bf416",
+  "manifest": {
+    "accounts": [],
+    "rows": [],
+    "images": [],
+    "sessionsOpened": 0,
+    "ownedApplicationProcesses": [],
+    "databaseWrites": false,
+    "uploadWrites": false
+  },
+  "pending": [
+    "原生页面/工具/视觉",
+    "Batch 6完整集成与重启回归",
+    "V34阶段发布"
+  ]
+}

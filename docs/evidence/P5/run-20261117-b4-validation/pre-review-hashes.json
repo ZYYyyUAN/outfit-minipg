@@ -1,0 +1,30 @@
+{
+  "gitBase": "a7984ce49d0deae46de5ad469aef2137c0b87713",
+  "files": {
+    "miniprogram/assets/tab-outfits-active.png": "a448df4045f31896e619f85aac713fbf1cc97f53abcf81d02eccfb8a6a9063a3",
+    "miniprogram/assets/tab-outfits.png": "c4731711bc4ede80d3cc1c07085f855d908c5ae8abb2267f1e12f6859500deed",
+    "miniprogram/components/clothes-picker/index.js": "3dd9444c815febb821ab7f0e0b4b9c10541157e15c4a8eaf416015b02d46ef45",
+    "miniprogram/components/clothes-picker/index.json": "5f0c700cc36dc094e14d245415390f4661d744ddd561090b64fcfcca416536db",
+    "miniprogram/components/clothes-picker/index.wxml": "a7e6fe2e2c0bd0a646b98dbb178b67a4b11f3ebb0b761acd27af0bee3d215f40",
+    "miniprogram/components/clothes-picker/index.wxss": "ef2da4868845add495a1f30bbb79f03ad8bca3ee2aaee38739afe4f9eee58895",
+    "miniprogram/pages/outfits/index.js": "67e7fe064a0fcf282919760eb735d958c82e9072ef82355334714aaa19929074",
+    "miniprogram/pages/outfits/index.json": "18981933cc4956df66cb7a22d73b2c4350f0ce126076269370d05292b19ea814",
+    "miniprogram/pages/outfits/index.wxml": "d134179b6e665352bc1e0eb1da5a785ac12b8a184bd144a51e003c66ff828c7a",
+    "miniprogram/pages/outfits/index.wxss": "c079128c3faee6c353fc070798bfcc8f0b504181df074f9a17b75d923cc3d9ca",
+    "miniprogram/pages/outfits/detail/index.js": "2a0018f6bcd0a6cf06a0571f4497f64671023527d7e75e5bbbd2a243e5f7a53a",
+    "miniprogram/pages/outfits/detail/index.json": "8734ac6cab6e16b9738af1dd1639eb728747bd7b4827d93ea4a978e306e2b3e4",
+    "miniprogram/pages/outfits/detail/index.wxml": "a2d936fee88d20c9d832f82e4db5f0277a9dcf3890b00e7bdea4de33a5f879d0",
+    "miniprogram/pages/outfits/detail/index.wxss": "60d42ec4a8b1b101c990cf9ad8a021c33b3383233aac315c0b969638e4b4dcc8",
+    "miniprogram/pages/outfits/edit/index.js": "da0612b98294f1043809072b8a115beae0ece36d7ea3bfb7c1271191c5ae4152",
+    "miniprogram/pages/outfits/edit/index.json": "2384d3c9eef901d039afeed88fd76caa69ae7461b058d27106d1c1579a5c52b0",
+    "miniprogram/pages/outfits/edit/index.wxml": "7471d847ed346fc839f82d4a24a7afe4a564d48f25e6b78b5cb9d1fa552eb0c1",
+    "miniprogram/pages/outfits/edit/index.wxss": "6caae0c4a0bcbbb78642f5e9de61e63c9929e6676cfc60e93ebc22f5aadd3896",
+    "miniprogram/app.json": "706f06457629937e09d131b478e2b91493790b068d4786da93e3944d55c51e02",
+    "server/scripts/verify-outfits.mjs": "4b004cd91570f5fba447acb4caf84b7a263e132c130a1f28fe6270999ff1d295",
+    "server/scripts/verify-outfit-edit.mjs": "717ed9ad83f08926437292624d8c5368b50b8fa89bd5fc7b1b9d13fb5d269d4b",
+    "server/test/outfits-edit-client.test.mjs": "7ad7b9be19ccba336c01899a9a65e875f567572230313edad492348cffbe1f34",
+    "server/test/outfits-verifier.test.mjs": "4aa2e6cf446fb19ea3cd7a48fd057c442a032044271e2b7b518f42f6d10c92a8",
+    "server/test/client-harness.mjs": "d733445d00cbe55c7d004cf0fb050b033c33cbb58f5f56e0efea3a7e9a6382d4",
+    "server/test/outfits-client.test.mjs": "98cd67497c5c024afb3751a10215cc0cc802bdc355d855d175005a5872d60e23"
+  }
+}
