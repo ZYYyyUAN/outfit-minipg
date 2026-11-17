@@ -1,0 +1,244 @@
+{
+  "runId": "2026-11-17T16-16-22-018Z-155da8f0",
+  "username": "zyyuan",
+  "datasetVersion": "korean-daily-20261106",
+  "committed": true,
+  "files": [
+    {
+      "logicalId": "CLO001",
+      "source": "assets/clothes/clothing-001.jpg",
+      "imagePath": "users/21/aa0f5bec-0cf6-43d3-b572-8c8cbd5d2d7a.jpg",
+      "bytes": 269594,
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a"
+    },
+    {
+      "logicalId": "CLO002",
+      "source": "assets/clothes/clothing-002.jpg",
+      "imagePath": "users/21/8ea478d0-e65e-4367-a534-1e729e72484e.jpg",
+      "bytes": 204461,
+      "sha256": "907ab70052be6810310de4abdb6bec5d051e2e53bc88dd572dfd375274cd4238"
+    },
+    {
+      "logicalId": "CLO003",
+      "source": "assets/clothes/clothing-003.jpg",
+      "imagePath": "users/21/aa94d7e3-0439-48fd-b558-277820186d50.jpg",
+      "bytes": 210293,
+      "sha256": "c86522b4b88fce9381d0a0b4be9a04b44ee5737d542830aa488ed37b9bfe15ed"
+    },
+    {
+      "logicalId": "CLO004",
+      "source": "assets/clothes/clothing-004.jpg",
+      "imagePath": "users/21/edf6cce8-022e-42f8-9e9b-d7f98765bb73.jpg",
+      "bytes": 46462,
+      "sha256": "b120e8f9377eb7bb24ff0b5f5b7d30a885bf10e6e216f23bff9287b3f0ca5f9e"
+    },
+    {
+      "logicalId": "CLO005",
+      "source": "assets/clothes/clothing-005.jpg",
+      "imagePath": "users/21/d3927dcf-65c2-4bc5-9e25-f65590d25ce3.jpg",
+      "bytes": 26218,
+      "sha256": "e91bedacadb4c23182c4073e541f459bc12a5795409c8814590adbc5a5fb5d29"
+    },
+    {
+      "logicalId": "CLO006",
+      "source": "assets/clothes/clothing-006.jpg",
+      "imagePath": "users/21/f0839457-488d-49e7-ae60-6d4ed651a516.jpg",
+      "bytes": 170395,
+      "sha256": "a58bc2b1547c3fe6518d536d93767643fad109df0b31bd73a33c422d5ed26443"
+    },
+    {
+      "logicalId": "CLO007",
+      "source": "assets/clothes/clothing-007.jpg",
+      "imagePath": "users/21/c233d90f-6530-4f12-bfc0-4f64e62f9cb0.jpg",
+      "bytes": 146962,
+      "sha256": "3074b8ff72f77314473d4ba77dbd20c7fe7a6f036a95766b0bf483e71b8a77ba"
+    },
+    {
+      "logicalId": "CLO008",
+      "source": "assets/clothes/clothing-008.jpg",
+      "imagePath": "users/21/47e3b9a3-c0a8-4565-a708-3511a4bd6cc9.jpg",
+      "bytes": 42225,
+      "sha256": "9d63ec02d9781215c45c185ddc02a1c70ced296f4b7e8ead1538ae36b08070a8"
+    },
+    {
+      "logicalId": "CLO009",
+      "source": "assets/clothes/clothing-009.jpg",
+      "imagePath": "users/21/eeba5841-e9b9-441b-a63c-ccd6cf1e0d64.jpg",
+      "bytes": 46926,
+      "sha256": "701cc2dcdeef3e0084d59626828747f6cc871d53d573fb32e799a8a732e568b1"
+    },
+    {
+      "logicalId": "CLO010",
+      "source": "assets/clothes/clothing-010.jpg",
+      "imagePath": "users/21/111c502c-f3f7-4a3d-9e65-11c3043bf6af.jpg",
+      "bytes": 28660,
+      "sha256": "d6601dc4ec99dc0c48dcd68f6e548211ea06e47e0ec1272637107ea5c3d30232"
+    },
+    {
+      "logicalId": "CLO011",
+      "source": "assets/clothes/clothing-011.jpg",
+      "imagePath": "users/21/bc4b5a72-e912-495d-931b-aabee47b667d.jpg",
+      "bytes": 15187,
+      "sha256": "2b546a742c5b34ba5f1835a0efe1502727fc604a1b1527c069f134080b8f79ae"
+    },
+    {
+      "logicalId": "CLO012",
+      "source": "assets/clothes/clothing-012.jpg",
+      "imagePath": "users/21/1dbfee41-2d3f-4678-b6d7-64b7416e2b45.jpg",
+      "bytes": 193583,
+      "sha256": "d31cb7eef91bce13dfaa5c3154145e410c20a307eb10a65ab464ceff0611e938"
+    },
+    {
+      "logicalId": "CLO013",
+      "source": "assets/clothes/clothing-013.jpg",
+      "imagePath": "users/21/d2b07b81-1efa-44b4-bb0f-20d8ff130b07.jpg",
+      "bytes": 143845,
+      "sha256": "b1a649bdd9a88d6076bf268037d8f1b3767798f48d8801f0dba78339a53117d7"
+    },
+    {
+      "logicalId": "CLO014",
+      "source": "assets/clothes/clothing-014.jpg",
+      "imagePath": "users/21/8888d593-47c3-4402-9d71-89f0586a8f58.jpg",
+      "bytes": 176798,
+      "sha256": "10dc88c1444a0941b6954d67f21ef11d284b0f8f06502732ccfcb863c9731776"
+    },
+    {
+      "logicalId": "CLO015",
+      "source": "assets/clothes/clothing-015.jpg",
+      "imagePath": "users/21/c2f67afd-16f6-4e55-8b86-28e632b8c586.jpg",
+      "bytes": 105810,
+      "sha256": "cf7979076a3bee468c29f9b6fe91f2f75cc0307ce58f49d76c01b038f1474742"
+    },
+    {
+      "logicalId": "CLO016",
+      "source": "assets/clothes/clothing-016.jpg",
+      "imagePath": "users/21/a12dfa51-6d9e-4214-abd5-7b8338904f8e.jpg",
+      "bytes": 246083,
+      "sha256": "0363b2f544395063d6ddedda9a851010043633d3fb69d181f890ca1eb350f569"
+    },
+    {
+      "logicalId": "CLO017",
+      "source": "assets/clothes/clothing-017.jpg",
+      "imagePath": "users/21/7c5c968a-7753-4e58-88bf-25daaccb1e30.jpg",
+      "bytes": 26241,
+      "sha256": "18ef40704f07e3bcc8884e500d3bb13b4d4cb5a15a6a8e403d170201abcefef9"
+    },
+    {
+      "logicalId": "CLO018",
+      "source": "assets/clothes/clothing-018.jpg",
+      "imagePath": "users/21/fa205e50-e751-4506-b1ab-f1889b9b9b7f.jpg",
+      "bytes": 71670,
+      "sha256": "a09204f1575933b263feef8a77c57b8e77f433ff9329466bdaf30d13e3e863e9"
+    },
+    {
+      "logicalId": "CLO019",
+      "source": "assets/clothes/clothing-019.jpg",
+      "imagePath": "users/21/99e4df97-bbe9-4e93-a346-5c7ef6e7762c.jpg",
+      "bytes": 116567,
+      "sha256": "2aef3b6983d08e6df017b0add9a1048b907c5f84ca94ab80b7145c33c7bdd6ee"
+    },
+    {
+      "logicalId": "CLO020",
+      "source": "assets/clothes/clothing-020.jpg",
+      "imagePath": "users/21/d0636fdb-af0f-460d-a233-182c5aa5ef74.jpg",
+      "bytes": 102089,
+      "sha256": "1dfac30a3f8cb151f200f0d65946963bdca5c91638ffd73bb817e2382781881a"
+    },
+    {
+      "logicalId": "CLO021",
+      "source": "assets/clothes/clothing-021.jpg",
+      "imagePath": "users/21/f6b08372-eb41-47d9-9ec2-a35d443a015e.jpg",
+      "bytes": 188050,
+      "sha256": "58fc6944ab859569c79901d1ec3b259a01dc7114645a32ae4aaf48ea4787a4d2"
+    },
+    {
+      "logicalId": "CLO022",
+      "source": "assets/clothes/clothing-022.jpg",
+      "imagePath": "users/21/1d883da1-89f1-420a-8058-ed49a24057a6.jpg",
+      "bytes": 172454,
+      "sha256": "2b70156c8b206af5d0e872a472dfc023e77de083b432b202a4598683edeb5d46"
+    },
+    {
+      "logicalId": "CLO023",
+      "source": "assets/clothes/clothing-023.jpg",
+      "imagePath": "users/21/91dba612-54ab-4de2-9b5e-5a2f56a1557e.jpg",
+      "bytes": 89360,
+      "sha256": "81fdfa716b9299db752ffc2cd5dd6751092d260add5563e4d03d331879b934fc"
+    },
+    {
+      "logicalId": "CLO024",
+      "source": "assets/clothes/clothing-024.jpg",
+      "imagePath": "users/21/55d48b42-c803-484c-a1c6-bd2646c3d75c.jpg",
+      "bytes": 38160,
+      "sha256": "be4115421f4c8f4719b5bdf3ba965ec0e5ad4b6377d9d61c1befd346eda10f18"
+    },
+    {
+      "logicalId": "DIA004",
+      "source": "assets/diaries/diary-004.jpg",
+      "imagePath": "users/21/55244779-a311-4326-8037-7ac7138d9754.jpg",
+      "bytes": 163542,
+      "sha256": "a507162e8680b86763b15da6c3b8afd8afb97aba19e4d6908adb475c53360b12"
+    }
+  ],
+  "map": {
+    "clothes": {
+      "CLO001": 242,
+      "CLO002": 243,
+      "CLO003": 244,
+      "CLO004": 245,
+      "CLO005": 246,
+      "CLO006": 247,
+      "CLO007": 248,
+      "CLO008": 249,
+      "CLO009": 250,
+      "CLO010": 251,
+      "CLO011": 252,
+      "CLO012": 253,
+      "CLO013": 254,
+      "CLO014": 255,
+      "CLO015": 256,
+      "CLO016": 257,
+      "CLO017": 258,
+      "CLO018": 259,
+      "CLO019": 260,
+      "CLO020": 261,
+      "CLO021": 262,
+      "CLO022": 263,
+      "CLO023": 264,
+      "CLO024": 265
+    },
+    "outfits": {
+      "OUT001": 87,
+      "OUT002": 88,
+      "OUT003": 89,
+      "OUT004": 90,
+      "OUT005": 91,
+      "OUT006": 92,
+      "OUT007": 93,
+      "OUT008": 94
+    },
+    "diaries": {
+      "DIA001": 73,
+      "DIA002": 74,
+      "DIA003": 75,
+      "DIA004": 76,
+      "DIA005": 77,
+      "DIA006": 78,
+      "DIA007": 79,
+      "DIA008": 80,
+      "DIA009": 81,
+      "DIA010": 82,
+      "DIA011": 83,
+      "DIA012": 84
+    }
+  },
+  "userId": 21,
+  "counts": {
+    "clothes": 24,
+    "outfits": 8,
+    "diaries": 12,
+    "outfit_items": 37,
+    "diary_items": 53
+  },
+  "accountUnchanged": true
+}
