@@ -1,0 +1,19 @@
+{
+  "linksCheckedFiles": 11,
+  "brokenLinks": [],
+  "businessCodeChanged": false,
+  "foreignTrackedSha256": {
+    "docs/P5执行与验收记录.md": "524507d04e0885fc448bde314e18547dafaeb24feb84d1b0bb02d8146e96a57d",
+    "server/scripts/verify-outfits.mjs": "1ef022da81a449c8608cec3b0019123f133f888f77add55d4974d90e78c98deb"
+  },
+  "exclusions": [
+    ".env",
+    "actual AppID configs",
+    "uploads",
+    "node_modules",
+    "private credentials",
+    "foreign uncommitted content",
+    ".p6-release-check and junctions"
+  ],
+  "noCleanMachineVerification": true
+}

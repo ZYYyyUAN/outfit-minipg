@@ -1,0 +1,351 @@
+{
+  "startedAt": "2026-11-17T15:40:17.840Z",
+  "requests": [
+    {
+      "route": "/health",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/auth/register",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "route": "/auth/login",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "route": "/clothes",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/clothes",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "route": "/clothes",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "route": "/outfits",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "route": "/statistics?month=2026-11",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/diaries",
+      "method": "POST",
+      "status": 201
+    },
+    {
+      "route": "/statistics?month=2026-11",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/outfits/86",
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "route": "/diaries/72",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/diaries/72",
+      "method": "DELETE",
+      "status": 200
+    },
+    {
+      "route": "/statistics?month=2026-11",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/auth/logout",
+      "method": "POST",
+      "status": 200
+    }
+  ],
+  "changes": [
+    {
+      "type": "register",
+      "userId": 67
+    },
+    {
+      "type": "login",
+      "userId": 67
+    },
+    {
+      "type": "upload",
+      "userId": 67,
+      "path": "users/67/f0581fff-7c14-4cb8-a4a2-52a5d7206ccd.jpg",
+      "sha256": "c8d3e98172183761748456e2b7a05309ed3b46c95cad148231d1afba3f540f1a",
+      "retained": true
+    },
+    {
+      "type": "create clothing",
+      "userId": 67,
+      "id": 240
+    },
+    {
+      "type": "create clothing",
+      "userId": 67,
+      "id": 241
+    },
+    {
+      "type": "create outfit",
+      "userId": 67,
+      "id": 86,
+      "clothingIds": [
+        240,
+        241
+      ]
+    },
+    {
+      "type": "create diary",
+      "userId": 67,
+      "id": 72,
+      "clothingIds": [
+        240,
+        241
+      ],
+      "wearDate": "2026-11-17"
+    },
+    {
+      "type": "update outfit",
+      "id": 86,
+      "before": [
+        240,
+        241
+      ],
+      "after": [
+        241
+      ]
+    },
+    {
+      "type": "delete own diary and items",
+      "id": 72,
+      "clothingIds": [
+        240,
+        241
+      ]
+    },
+    {
+      "type": "logout",
+      "userId": 67
+    }
+  ],
+  "checks": {
+    "authenticatedBusinessRead": true,
+    "diaryIndependent": true,
+    "statisticsReverted": true,
+    "loggedOut": true,
+    "ownServiceClosed": true
+  },
+  "protectionScope": "Only dedicated new account writes; no full database/file hash rerun",
+  "configKeysPresent": true,
+  "database": {
+    "name": "wardrobe_demo",
+    "version": "8.0.28",
+    "port": 3306
+  },
+  "statistics": {
+    "baseline": {
+      "asOf": "2026-11-17",
+      "month": "2026-11",
+      "activeClothesCount": 2,
+      "categoryDistribution": [
+        {
+          "id": "tops",
+          "name": "上装",
+          "count": 2
+        },
+        {
+          "id": "outerwear",
+          "name": "外套",
+          "count": 0
+        },
+        {
+          "id": "dresses",
+          "name": "连衣裙",
+          "count": 0
+        },
+        {
+          "id": "bottoms",
+          "name": "下装",
+          "count": 0
+        },
+        {
+          "id": "shoes",
+          "name": "鞋履",
+          "count": 0
+        },
+        {
+          "id": "bags",
+          "name": "包袋",
+          "count": 0
+        },
+        {
+          "id": "accessories",
+          "name": "配饰",
+          "count": 0
+        }
+      ],
+      "monthDiaryDays": 0,
+      "mostWorn": [],
+      "notWornRecently": {
+        "page": 1,
+        "pageSize": 12,
+        "total": 2,
+        "items": [
+          {
+            "id": 240,
+            "name": "P7交付单品1",
+            "lastWornDate": null
+          },
+          {
+            "id": 241,
+            "name": "P7交付单品2",
+            "lastWornDate": null
+          }
+        ]
+      }
+    },
+    "during": {
+      "asOf": "2026-11-17",
+      "month": "2026-11",
+      "activeClothesCount": 2,
+      "categoryDistribution": [
+        {
+          "id": "tops",
+          "name": "上装",
+          "count": 2
+        },
+        {
+          "id": "outerwear",
+          "name": "外套",
+          "count": 0
+        },
+        {
+          "id": "dresses",
+          "name": "连衣裙",
+          "count": 0
+        },
+        {
+          "id": "bottoms",
+          "name": "下装",
+          "count": 0
+        },
+        {
+          "id": "shoes",
+          "name": "鞋履",
+          "count": 0
+        },
+        {
+          "id": "bags",
+          "name": "包袋",
+          "count": 0
+        },
+        {
+          "id": "accessories",
+          "name": "配饰",
+          "count": 0
+        }
+      ],
+      "monthDiaryDays": 1,
+      "mostWorn": [
+        {
+          "id": 240,
+          "name": "P7交付单品1",
+          "wearCount": 1,
+          "lastWornDate": "2026-11-17"
+        },
+        {
+          "id": 241,
+          "name": "P7交付单品2",
+          "wearCount": 1,
+          "lastWornDate": "2026-11-17"
+        }
+      ],
+      "notWornRecently": {
+        "page": 1,
+        "pageSize": 12,
+        "total": 0,
+        "items": []
+      }
+    },
+    "after": {
+      "asOf": "2026-11-17",
+      "month": "2026-11",
+      "activeClothesCount": 2,
+      "categoryDistribution": [
+        {
+          "id": "tops",
+          "name": "上装",
+          "count": 2
+        },
+        {
+          "id": "outerwear",
+          "name": "外套",
+          "count": 0
+        },
+        {
+          "id": "dresses",
+          "name": "连衣裙",
+          "count": 0
+        },
+        {
+          "id": "bottoms",
+          "name": "下装",
+          "count": 0
+        },
+        {
+          "id": "shoes",
+          "name": "鞋履",
+          "count": 0
+        },
+        {
+          "id": "bags",
+          "name": "包袋",
+          "count": 0
+        },
+        {
+          "id": "accessories",
+          "name": "配饰",
+          "count": 0
+        }
+      ],
+      "monthDiaryDays": 0,
+      "mostWorn": [],
+      "notWornRecently": {
+        "page": 1,
+        "pageSize": 12,
+        "total": 2,
+        "items": [
+          {
+            "id": 240,
+            "name": "P7交付单品1",
+            "lastWornDate": null
+          },
+          {
+            "id": 241,
+            "name": "P7交付单品2",
+            "lastWornDate": null
+          }
+        ]
+      }
+    }
+  },
+  "passed": true
+}

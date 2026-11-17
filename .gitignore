@@ -23,3 +23,5 @@ docs/evidence/P5/release-verification.local.json
 server/.p5-private/
 server/.p6-private/
 docs/evidence/P6/release-verification.local.json
+server/.p7-private/
+docs/evidence/P7/release-verification.local.json
