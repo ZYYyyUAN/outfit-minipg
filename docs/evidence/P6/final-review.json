@@ -48,7 +48,10 @@
     "workspaceTests": 366,
     "passed": 366,
     "failed": 0,
-    "targetedDiaryTests": 51
+    "targetedDiaryTests": 51,
+    "publishedIsolatedTests": 364,
+    "publishedIsolatedPassed": 364,
+    "externalUncommittedP5TestsExcluded": 2
   },
   "native": "skipped-by-user; no screenshots/visual/native-return claim"
 }

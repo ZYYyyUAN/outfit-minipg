@@ -1,0 +1,19 @@
+{
+  "implementationCommit": "cea3167",
+  "isolatedFromExternalP5Changes": true,
+  "tests": 364,
+  "passed": 364,
+  "failed": 0,
+  "workspaceTests": 366,
+  "externalTestsExcluded": 2,
+  "initialEnvironmentFailuresRetained": [
+    "published-check-without-env-failed.txt",
+    "published-check-empty-env-path-failed.txt"
+  ],
+  "privateValuesInEvidence": false,
+  "temporaryWorktreeRemoved": false,
+  "temporaryWorktree": "Z:/outfit/.p6-release-check",
+  "dependencyJunctionTargetUnchanged": true,
+  "cleanupBlockedByAutomaticApproval": true,
+  "statedReason": "blocked by policy"
+}
