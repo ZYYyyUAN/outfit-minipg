@@ -22,7 +22,6 @@ export function outfitInput(body) {
   return { name, occasion, note, clothingIds: [...ids] };
 }
 
-// Batch 1仅在隔离桩服务测试中挂载；生产装配及真实服务留Batch 2。
 export function outfitsRoutes(account, outfits) {
   const router = Router();
   router.use('/outfits', requireAuth(account), json({ limit: '8kb' }));

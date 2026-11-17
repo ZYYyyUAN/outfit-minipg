@@ -1,0 +1,292 @@
+{
+  "runId": "run-20261117-b2-http2",
+  "accounts": {
+    "a": {
+      "id": 37,
+      "username": "p5_7fdd6945_a",
+      "createdByRunId": "run-20261117-b2-http2"
+    },
+    "b": {
+      "id": 38,
+      "username": "p5_7fdd6945_b",
+      "createdByRunId": "run-20261117-b2-http2"
+    }
+  },
+  "clothes": {
+    "A1": {
+      "id": 123,
+      "userId": 37
+    },
+    "A2": {
+      "id": 124,
+      "userId": 37
+    },
+    "A3": {
+      "id": 125,
+      "userId": 37
+    },
+    "A4": {
+      "id": 126,
+      "userId": 37
+    },
+    "A5": {
+      "id": 127,
+      "userId": 37
+    },
+    "A6": {
+      "id": 128,
+      "userId": 37
+    },
+    "A7": {
+      "id": 129,
+      "userId": 37
+    },
+    "A8": {
+      "id": 130,
+      "userId": 37
+    },
+    "A9": {
+      "id": 131,
+      "userId": 37
+    },
+    "A10": {
+      "id": 132,
+      "userId": 37
+    },
+    "A11": {
+      "id": 133,
+      "userId": 37
+    },
+    "A12": {
+      "id": 134,
+      "userId": 37
+    },
+    "A13": {
+      "id": 135,
+      "userId": 37
+    },
+    "A14": {
+      "id": 136,
+      "userId": 37
+    },
+    "A15": {
+      "id": 137,
+      "userId": 37
+    },
+    "A16": {
+      "id": 138,
+      "userId": 37
+    },
+    "A17": {
+      "id": 139,
+      "userId": 37
+    },
+    "A18": {
+      "id": 140,
+      "userId": 37
+    },
+    "A19": {
+      "id": 141,
+      "userId": 37
+    },
+    "A20": {
+      "id": 142,
+      "userId": 37
+    },
+    "A21": {
+      "id": 143,
+      "userId": 37
+    },
+    "B1": {
+      "id": 144,
+      "userId": 38
+    }
+  },
+  "outfits": {
+    "A1": {
+      "id": 32,
+      "userId": 37,
+      "clothingIds": [
+        123
+      ],
+      "initialName": "Alpha_%!日常",
+      "occasion": "通勤"
+    },
+    "A2": {
+      "id": 33,
+      "userId": 37,
+      "clothingIds": [
+        123,
+        124,
+        125,
+        126
+      ],
+      "initialName": "ALPHA日常",
+      "occasion": "通勤长"
+    },
+    "A3": {
+      "id": 34,
+      "userId": 37,
+      "clothingIds": [
+        127,
+        124,
+        142,
+        126,
+        123
+      ],
+      "initialName": "P5五件",
+      "occasion": "休闲"
+    },
+    "A4": {
+      "id": 35,
+      "userId": 37,
+      "clothingIds": [
+        142,
+        141,
+        140,
+        139,
+        138,
+        137,
+        136,
+        135,
+        134,
+        133,
+        132,
+        131,
+        130,
+        129,
+        128,
+        127,
+        126,
+        125,
+        124,
+        123
+      ],
+      "initialName": "P5二十件",
+      "occasion": "通勤"
+    },
+    "A5": {
+      "id": 36,
+      "userId": 37,
+      "clothingIds": [
+        127,
+        125,
+        123
+      ],
+      "initialName": "P5重复",
+      "occasion": "通勤"
+    },
+    "A6": {
+      "id": 37,
+      "userId": 37,
+      "clothingIds": [
+        124
+      ],
+      "initialName": "P5重复",
+      "occasion": "休闲"
+    },
+    "A7": {
+      "id": 38,
+      "userId": 37,
+      "clothingIds": [
+        123
+      ],
+      "initialName": "P5分页1",
+      "occasion": "通勤"
+    },
+    "A8": {
+      "id": 39,
+      "userId": 37,
+      "clothingIds": [
+        124
+      ],
+      "initialName": "P5分页2",
+      "occasion": "休闲"
+    },
+    "A9": {
+      "id": 40,
+      "userId": 37,
+      "clothingIds": [
+        125
+      ],
+      "initialName": "P5分页3",
+      "occasion": "通勤"
+    },
+    "A10": {
+      "id": 41,
+      "userId": 37,
+      "clothingIds": [
+        126
+      ],
+      "initialName": "P5分页4",
+      "occasion": "休闲"
+    },
+    "A11": {
+      "id": 42,
+      "userId": 37,
+      "clothingIds": [
+        127
+      ],
+      "initialName": "P5分页5",
+      "occasion": "通勤"
+    },
+    "A12": {
+      "id": 43,
+      "userId": 37,
+      "clothingIds": [
+        128
+      ],
+      "initialName": "P5分页6",
+      "occasion": "休闲"
+    },
+    "A13": {
+      "id": 44,
+      "userId": 37,
+      "clothingIds": [
+        142
+      ],
+      "initialName": "🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥",
+      "occasion": "🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨"
+    },
+    "A14": {
+      "id": 45,
+      "userId": 37,
+      "clothingIds": [
+        123,
+        124,
+        125,
+        126
+      ],
+      "initialName": "P5归档一",
+      "occasion": "仅归档"
+    },
+    "A15": {
+      "id": 46,
+      "userId": 37,
+      "clothingIds": [
+        142
+      ],
+      "initialName": "P5归档二",
+      "occasion": "通勤"
+    },
+    "B1": {
+      "id": 47,
+      "userId": 38,
+      "clothingIds": [
+        144
+      ]
+    }
+  },
+  "diaries": {
+    "A1": {
+      "id": 49,
+      "userId": 37,
+      "sourceOutfitId": 36,
+      "wearDate": "2026-10-09",
+      "clothingIds": [
+        142,
+        124
+      ]
+    }
+  }
+}

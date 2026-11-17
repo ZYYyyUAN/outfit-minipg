@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-17T06:20:46.764Z",
+  "batch": 2,
+  "gitBase": "8c95a83ce31c552b3b57b798316b744e29f20c44",
+  "unitTests": {
+    "passed": 233,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unitLog": "post-review-tests.tap",
+  "unitLogSha256": "c0165f823c6ef087f743e8258901d753c2f62a6efa91adb5ce11b96be7f13226",
+  "httpCases": 267,
+  "rollbackCases": 2,
+  "serviceRouteAssemblyHashesUnchanged": true,
+  "httpRunnerChange": "Manifest inventory only; no API call/assertion/fault transaction changes",
+  "fixtureReconstruction": {
+    "mode": "read-only MySQL",
+    "registeredRows": 90,
+    "unknownRows": 0,
+    "missingRows": 0,
+    "exactKeysOrderAndHashesMatchOriginalManifest": true
+  },
+  "owners": [
+    {
+      "id": 37,
+      "loggedOut": 1
+    },
+    {
+      "id": 38,
+      "loggedOut": 1
+    }
+  ],
+  "finalProtectionEvidence": "../run-20261117-b2-final/results.json",
+  "implementationSha256": {
+    "server/src/services/outfits.js": "4fecec3fe27dae857b6fc63b4c039120236747ee8412b423a9b6ccd1a12ff8b4",
+    "server/src/routes/outfits.js": "9affc3dff0a8b76f2117e9d6e75b118c5d091ab622bab1ff457943e8e48bcfd0",
+    "server/src/app.js": "69af1501796e4aba5aae0560fa8e05abbcd4fa0241a427f4aefbb2b977606554",
+    "server/src/index.js": "4184aba3d6932197734b4ca7f6906c7e7e607a49cb717a797d02d83f391301f3",
+    "server/scripts/verify-outfits.mjs": "42e6f1c1ce957b37f42b86d3cf59a90b8f67d57d38efae21ffd0da6bd33ea31e",
+    "server/scripts/outfit-http.mjs": "cfbdff0d1ca2444c49b2ac489309b7fe174c12c105420faa43b8c3e556a4e956",
+    "server/test/outfit-service.test.mjs": "8e6074feab73168f585965a0a5964ed72263bf5a5aeaba0afd826fadd77884d6",
+    "server/test/outfit-fixture-registry.test.mjs": "c05c014006b514b12b21b1b80f1a1f6e8f7ff57dbe293ab20c968c5a81c89d38",
+    "server/test/outfits.test.mjs": "2ff20bb8014d3f20e2cf74dd8e2d1921838ffe221efd102714c6c13f7b39733c",
+    "server/test/outfits-verifier.test.mjs": "124bc4a25e9d6ff8930bc957dc1cf1eda0721a6b44f5b7c223befc1c980246b0"
+  },
+  "remaining": [
+    "Batch 3 requires verified field differences before modifying prior registered rows",
+    "Native UI and full integration/restart deferred to assigned batches",
+    "V34 and stage5Complete remain pending Batch 7"
+  ]
+}

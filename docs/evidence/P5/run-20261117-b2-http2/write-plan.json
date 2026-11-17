@@ -1,0 +1,55 @@
+{
+  "runId": "run-20261117-b2-http2",
+  "batch": 2,
+  "protectedStageBaseline": "docs/evidence/P5/run-20261116-b1-baseline/baseline.json",
+  "onlyNewDedicatedOwners": true,
+  "accountCount": 2,
+  "aClothes": 21,
+  "bClothes": 1,
+  "aOutfits": {
+    "active": 13,
+    "archived": 2
+  },
+  "bOutfits": 1,
+  "directSql": [
+    "one independent diary with two ordered items under A",
+    "expire B test session then relogin"
+  ],
+  "faultPoints": [
+    "create after two items",
+    "update after deleting old items"
+  ],
+  "allowedFieldsForLaterBatches": {
+    "users": [
+      "nickname",
+      "avatar_path",
+      "auth_token_hash",
+      "auth_expires_at",
+      "updated_at"
+    ],
+    "clothes": [
+      "category_id",
+      "name",
+      "image_path",
+      "color",
+      "season",
+      "note",
+      "is_archived",
+      "updated_at"
+    ],
+    "outfits": [
+      "name",
+      "occasion",
+      "note",
+      "is_archived",
+      "updated_at"
+    ],
+    "outfit_items": [
+      "clothing_id",
+      "sort_order"
+    ],
+    "diaries": [],
+    "diary_items": []
+  },
+  "retention": "all committed rows and successful uploads retained; failed transactions rolled back; no original rows writable"
+}

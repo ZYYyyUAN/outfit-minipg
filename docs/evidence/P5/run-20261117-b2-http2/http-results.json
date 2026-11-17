@@ -1,0 +1,2680 @@
+{
+  "runId": "run-20261117-b2-http2",
+  "checks": [
+    {
+      "id": "HTTP-001",
+      "label": "register a",
+      "method": "POST",
+      "path": "/auth/register",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-002",
+      "label": "login a",
+      "method": "POST",
+      "path": "/auth/login",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-003",
+      "label": "own upload a",
+      "method": "POST",
+      "path": "/uploads",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-004",
+      "label": "register b",
+      "method": "POST",
+      "path": "/auth/register",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-005",
+      "label": "login b",
+      "method": "POST",
+      "path": "/auth/login",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-006",
+      "label": "own upload b",
+      "method": "POST",
+      "path": "/uploads",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-007",
+      "label": "anonymous or invalid GET/outfits",
+      "method": "GET",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-008",
+      "label": "anonymous or invalid GET/outfits",
+      "method": "GET",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-009",
+      "label": "anonymous or invalid GET/outfits/facets",
+      "method": "GET",
+      "path": "/outfits/facets",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-010",
+      "label": "anonymous or invalid GET/outfits/facets",
+      "method": "GET",
+      "path": "/outfits/facets",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-011",
+      "label": "anonymous or invalid GET/outfits/1",
+      "method": "GET",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-012",
+      "label": "anonymous or invalid GET/outfits/1",
+      "method": "GET",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-013",
+      "label": "anonymous or invalid POST/outfits",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-014",
+      "label": "anonymous or invalid POST/outfits",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-015",
+      "label": "anonymous malformed/oversized POST/outfits",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-016",
+      "label": "anonymous malformed/oversized POST/outfits",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-017",
+      "label": "anonymous or invalid PUT/outfits/1",
+      "method": "PUT",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-018",
+      "label": "anonymous or invalid PUT/outfits/1",
+      "method": "PUT",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-019",
+      "label": "anonymous malformed/oversized PUT/outfits/1",
+      "method": "PUT",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-020",
+      "label": "anonymous malformed/oversized PUT/outfits/1",
+      "method": "PUT",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-021",
+      "label": "anonymous or invalid PATCH/outfits/1/archive",
+      "method": "PATCH",
+      "path": "/outfits/1/archive",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-022",
+      "label": "anonymous or invalid PATCH/outfits/1/archive",
+      "method": "PATCH",
+      "path": "/outfits/1/archive",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-023",
+      "label": "anonymous malformed/oversized PATCH/outfits/1/archive",
+      "method": "PATCH",
+      "path": "/outfits/1/archive",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-024",
+      "label": "anonymous malformed/oversized PATCH/outfits/1/archive",
+      "method": "PATCH",
+      "path": "/outfits/1/archive",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-025",
+      "label": "expired GET/outfits",
+      "method": "GET",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-026",
+      "label": "expired GET/outfits/facets",
+      "method": "GET",
+      "path": "/outfits/facets",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-027",
+      "label": "expired GET/outfits/1",
+      "method": "GET",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-028",
+      "label": "expired POST/outfits",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-029",
+      "label": "expired PUT/outfits/1",
+      "method": "PUT",
+      "path": "/outfits/1",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-030",
+      "label": "expired PATCH/outfits/1/archive",
+      "method": "PATCH",
+      "path": "/outfits/1/archive",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "UNAUTHENTICATED",
+      "actualErrorCode": "UNAUTHENTICATED",
+      "passed": true
+    },
+    {
+      "id": "HTTP-031",
+      "label": "relogin B after expired test",
+      "method": "POST",
+      "path": "/auth/login",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-032",
+      "label": "A empty",
+      "method": "GET",
+      "path": "/outfits",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-033",
+      "label": "B empty facets",
+      "method": "GET",
+      "path": "/outfits/facets",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-034",
+      "label": "create A clothing 1",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-035",
+      "label": "create A clothing 2",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-036",
+      "label": "create A clothing 3",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-037",
+      "label": "create A clothing 4",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-038",
+      "label": "create A clothing 5",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-039",
+      "label": "create A clothing 6",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-040",
+      "label": "create A clothing 7",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-041",
+      "label": "create A clothing 8",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-042",
+      "label": "create A clothing 9",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-043",
+      "label": "create A clothing 10",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-044",
+      "label": "create A clothing 11",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-045",
+      "label": "create A clothing 12",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-046",
+      "label": "create A clothing 13",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-047",
+      "label": "create A clothing 14",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-048",
+      "label": "create A clothing 15",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-049",
+      "label": "create A clothing 16",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-050",
+      "label": "create A clothing 17",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-051",
+      "label": "create A clothing 18",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-052",
+      "label": "create A clothing 19",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-053",
+      "label": "create A clothing 20",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-054",
+      "label": "create A clothing 21",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-055",
+      "label": "create B clothing",
+      "method": "POST",
+      "path": "/clothes",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-056",
+      "label": "archive own clothing allowed in selection",
+      "method": "PATCH",
+      "path": "/clothes/142/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-057",
+      "label": "create outfit A1",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-058",
+      "label": "create outfit A2",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-059",
+      "label": "create outfit A3",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-060",
+      "label": "create outfit A4",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-061",
+      "label": "create outfit A5",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-062",
+      "label": "create outfit A6",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-063",
+      "label": "create outfit A7",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-064",
+      "label": "create outfit A8",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-065",
+      "label": "create outfit A9",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-066",
+      "label": "create outfit A10",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-067",
+      "label": "create outfit A11",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-068",
+      "label": "create outfit A12",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-069",
+      "label": "create outfit A13",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-070",
+      "label": "create outfit A14",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-071",
+      "label": "archive fixture A14",
+      "method": "PATCH",
+      "path": "/outfits/45/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-072",
+      "label": "create outfit A15",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-073",
+      "label": "archive fixture A15",
+      "method": "PATCH",
+      "path": "/outfits/46/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-074",
+      "label": "create B own outfit",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 201,
+      "actualStatus": 201,
+      "passed": true
+    },
+    {
+      "id": "HTTP-075",
+      "label": "A active page 12",
+      "method": "GET",
+      "path": "/outfits",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-076",
+      "label": "A active page 1",
+      "method": "GET",
+      "path": "/outfits?page=2",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-077",
+      "label": "pagination pageSize=1",
+      "method": "GET",
+      "path": "/outfits?pageSize=1",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-078",
+      "label": "pagination pageSize=50",
+      "method": "GET",
+      "path": "/outfits?pageSize=50",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-079",
+      "label": "pagination page=3",
+      "method": "GET",
+      "path": "/outfits?page=3",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-080",
+      "label": "filter archived=archived",
+      "method": "GET",
+      "path": "/outfits?archived=archived",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-081",
+      "label": "filter archived=all",
+      "method": "GET",
+      "path": "/outfits?archived=all",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-082",
+      "label": "filter keyword=alpha",
+      "method": "GET",
+      "path": "/outfits?keyword=alpha",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-083",
+      "label": "filter keyword=ALPHA",
+      "method": "GET",
+      "path": "/outfits?keyword=ALPHA",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-084",
+      "label": "filter keyword=_%25!",
+      "method": "GET",
+      "path": "/outfits?keyword=_%25!",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-085",
+      "label": "filter keyword=%25",
+      "method": "GET",
+      "path": "/outfits?keyword=%25",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-086",
+      "label": "filter keyword=_",
+      "method": "GET",
+      "path": "/outfits?keyword=_",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-087",
+      "label": "filter keyword=!",
+      "method": "GET",
+      "path": "/outfits?keyword=!",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-088",
+      "label": "filter occasion=%E9%80%9A%E5%8B%A4%E9%95%BF",
+      "method": "GET",
+      "path": "/outfits?occasion=%E9%80%9A%E5%8B%A4%E9%95%BF",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-089",
+      "label": "filter occasion=%E9%80%9A",
+      "method": "GET",
+      "path": "/outfits?occasion=%E9%80%9A",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-090",
+      "label": "filter keyword=alpha&occasion=%E9%80%9A%E5%8B%A4&archived=active",
+      "method": "GET",
+      "path": "/outfits?keyword=alpha&occasion=%E9%80%9A%E5%8B%A4&archived=active",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-091",
+      "label": "filter keyword=does-not-exist",
+      "method": "GET",
+      "path": "/outfits?keyword=does-not-exist",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-092",
+      "label": "filter keyword=' OR 1=1 --",
+      "method": "GET",
+      "path": "/outfits?keyword=' OR 1=1 --",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-093",
+      "label": "filter keyword=",
+      "method": "GET",
+      "path": "/outfits?keyword=",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-094",
+      "label": "facets active",
+      "method": "GET",
+      "path": "/outfits/facets?archived=active",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-095",
+      "label": "facets archived",
+      "method": "GET",
+      "path": "/outfits/facets?archived=archived",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-096",
+      "label": "facets all",
+      "method": "GET",
+      "path": "/outfits/facets?archived=all",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-097",
+      "label": "facets B isolated",
+      "method": "GET",
+      "path": "/outfits/facets?archived=all",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-098",
+      "label": "detail full ordered A1",
+      "method": "GET",
+      "path": "/outfits/32",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-099",
+      "label": "summary A1",
+      "method": "GET",
+      "path": "/outfits?archived=all&pageSize=50",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-100",
+      "label": "detail full ordered A2",
+      "method": "GET",
+      "path": "/outfits/33",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-101",
+      "label": "summary A2",
+      "method": "GET",
+      "path": "/outfits?archived=all&pageSize=50",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-102",
+      "label": "detail full ordered A3",
+      "method": "GET",
+      "path": "/outfits/34",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-103",
+      "label": "summary A3",
+      "method": "GET",
+      "path": "/outfits?archived=all&pageSize=50",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-104",
+      "label": "detail full ordered A4",
+      "method": "GET",
+      "path": "/outfits/35",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-105",
+      "label": "summary A4",
+      "method": "GET",
+      "path": "/outfits?archived=all&pageSize=50",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-106",
+      "label": "foreign/missing unified GET36",
+      "method": "GET",
+      "path": "/outfits/36",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-107",
+      "label": "foreign/missing unified PUT36",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-108",
+      "label": "foreign/missing unified PATCH36",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-109",
+      "label": "foreign/missing unified GET4294967295",
+      "method": "GET",
+      "path": "/outfits/4294967295",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-110",
+      "label": "foreign/missing unified PUT4294967295",
+      "method": "PUT",
+      "path": "/outfits/4294967295",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-111",
+      "label": "foreign/missing unified PATCH4294967295",
+      "method": "PATCH",
+      "path": "/outfits/4294967295/archive",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-112",
+      "label": "foreign/missing unified GET47",
+      "method": "GET",
+      "path": "/outfits/47",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-113",
+      "label": "foreign/missing unified PUT47",
+      "method": "PUT",
+      "path": "/outfits/47",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-114",
+      "label": "foreign/missing unified PATCH47",
+      "method": "PATCH",
+      "path": "/outfits/47/archive",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-115",
+      "label": "foreign/missing unified GET4294967295",
+      "method": "GET",
+      "path": "/outfits/4294967295",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-116",
+      "label": "foreign/missing unified PUT4294967295",
+      "method": "PUT",
+      "path": "/outfits/4294967295",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-117",
+      "label": "foreign/missing unified PATCH4294967295",
+      "method": "PATCH",
+      "path": "/outfits/4294967295/archive",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-118",
+      "label": "B only own",
+      "method": "GET",
+      "path": "/outfits?archived=all",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-119",
+      "label": "invalid selection ownership POST",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-120",
+      "label": "invalid selection ownership PUT",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-121",
+      "label": "invalid selection ownership POST",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-122",
+      "label": "invalid selection ownership PUT",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-123",
+      "label": "reject query {\"page\":\"\"}",
+      "method": "GET",
+      "path": "/outfits?page=",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-124",
+      "label": "reject query {\"page\":\"0\"}",
+      "method": "GET",
+      "path": "/outfits?page=0",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-125",
+      "label": "reject query {\"page\":\"-1\"}",
+      "method": "GET",
+      "path": "/outfits?page=-1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-126",
+      "label": "reject query {\"page\":\"1.5\"}",
+      "method": "GET",
+      "path": "/outfits?page=1.5",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-127",
+      "label": "reject query {\"page\":\"1e2\"}",
+      "method": "GET",
+      "path": "/outfits?page=1e2",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-128",
+      "label": "reject query {\"page\":\"9007199254740992\"}",
+      "method": "GET",
+      "path": "/outfits?page=9007199254740992",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-129",
+      "label": "reject query {\"page\":\"9007199254740991\",\"pageSize\":\"50\"}",
+      "method": "GET",
+      "path": "/outfits?page=9007199254740991&pageSize=50",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-130",
+      "label": "reject query {\"pageSize\":\"\"}",
+      "method": "GET",
+      "path": "/outfits?pageSize=",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-131",
+      "label": "reject query {\"pageSize\":\"0\"}",
+      "method": "GET",
+      "path": "/outfits?pageSize=0",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-132",
+      "label": "reject query {\"pageSize\":\"51\"}",
+      "method": "GET",
+      "path": "/outfits?pageSize=51",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-133",
+      "label": "reject query {\"keyword\":\"🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥\"}",
+      "method": "GET",
+      "path": "/outfits?keyword=%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5%F0%9F%A7%A5",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-134",
+      "label": "reject query {\"occasion\":\"\"}",
+      "method": "GET",
+      "path": "/outfits?occasion=",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-135",
+      "label": "reject query {\"occasion\":\" \"}",
+      "method": "GET",
+      "path": "/outfits?occasion=+",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-136",
+      "label": "reject query {\"occasion\":\"xxxxxxxxxxxxxxxxxxxxx\"}",
+      "method": "GET",
+      "path": "/outfits?occasion=xxxxxxxxxxxxxxxxxxxxx",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-137",
+      "label": "reject query {\"occasion\":\"a\\nb\"}",
+      "method": "GET",
+      "path": "/outfits?occasion=a%0Ab",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-138",
+      "label": "reject query {\"archived\":\"\"}",
+      "method": "GET",
+      "path": "/outfits?archived=",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-139",
+      "label": "reject query {\"archived\":\"true\"}",
+      "method": "GET",
+      "path": "/outfits?archived=true",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-140",
+      "label": "reject query {\"extra\":\"x\"}",
+      "method": "GET",
+      "path": "/outfits?extra=x",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-141",
+      "label": "reject structured query page=1&page=2",
+      "method": "GET",
+      "path": "/outfits?page=1&page=2",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-142",
+      "label": "reject structured query keyword=a&keyword=b",
+      "method": "GET",
+      "path": "/outfits?keyword=a&keyword=b",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-143",
+      "label": "reject structured query keyword[x]=a",
+      "method": "GET",
+      "path": "/outfits?keyword[x]=a",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-144",
+      "label": "reject structured query occasion[x]=a",
+      "method": "GET",
+      "path": "/outfits?occasion[x]=a",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-145",
+      "label": "reject structured query archived=active&archived=all",
+      "method": "GET",
+      "path": "/outfits?archived=active&archived=all",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-146",
+      "label": "reject facets query keyword=x",
+      "method": "GET",
+      "path": "/outfits/facets?keyword=x",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-147",
+      "label": "reject facets query archived=",
+      "method": "GET",
+      "path": "/outfits/facets?archived=",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-148",
+      "label": "reject facets query archived=active&archived=all",
+      "method": "GET",
+      "path": "/outfits/facets?archived=active&archived=all",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-149",
+      "label": "reject ID GET0",
+      "method": "GET",
+      "path": "/outfits/0",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-150",
+      "label": "reject ID PUT0",
+      "method": "PUT",
+      "path": "/outfits/0",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-151",
+      "label": "reject ID PATCH0",
+      "method": "PATCH",
+      "path": "/outfits/0/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-152",
+      "label": "reject ID GET-1",
+      "method": "GET",
+      "path": "/outfits/-1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-153",
+      "label": "reject ID PUT-1",
+      "method": "PUT",
+      "path": "/outfits/-1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-154",
+      "label": "reject ID PATCH-1",
+      "method": "PATCH",
+      "path": "/outfits/-1/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-155",
+      "label": "reject ID GET1e2",
+      "method": "GET",
+      "path": "/outfits/1e2",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-156",
+      "label": "reject ID PUT1e2",
+      "method": "PUT",
+      "path": "/outfits/1e2",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-157",
+      "label": "reject ID PATCH1e2",
+      "method": "PATCH",
+      "path": "/outfits/1e2/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-158",
+      "label": "reject ID GET1.5",
+      "method": "GET",
+      "path": "/outfits/1.5",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-159",
+      "label": "reject ID PUT1.5",
+      "method": "PUT",
+      "path": "/outfits/1.5",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-160",
+      "label": "reject ID PATCH1.5",
+      "method": "PATCH",
+      "path": "/outfits/1.5/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-161",
+      "label": "reject ID GET4294967296",
+      "method": "GET",
+      "path": "/outfits/4294967296",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-162",
+      "label": "reject ID PUT4294967296",
+      "method": "PUT",
+      "path": "/outfits/4294967296",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-163",
+      "label": "reject ID PATCH4294967296",
+      "method": "PATCH",
+      "path": "/outfits/4294967296/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-164",
+      "label": "reject ID GETabc",
+      "method": "GET",
+      "path": "/outfits/abc",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-165",
+      "label": "reject ID PUTabc",
+      "method": "PUT",
+      "path": "/outfits/abc",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-166",
+      "label": "reject ID PATCHabc",
+      "method": "PATCH",
+      "path": "/outfits/abc/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-167",
+      "label": "reject extra query GET",
+      "method": "GET",
+      "path": "/outfits/36?x=1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-168",
+      "label": "reject extra query POST",
+      "method": "POST",
+      "path": "/outfits?x=1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-169",
+      "label": "reject extra query PUT",
+      "method": "PUT",
+      "path": "/outfits/36?x=1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-170",
+      "label": "reject extra query PATCH",
+      "method": "PATCH",
+      "path": "/outfits/36/archive?x=1",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-171",
+      "label": "authenticated malformed/oversized POST",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-172",
+      "label": "authenticated malformed/oversized PUT",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-173",
+      "label": "authenticated malformed/oversized PATCH",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-174",
+      "label": "authenticated malformed/oversized POST",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 413,
+      "actualStatus": 413,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-175",
+      "label": "authenticated malformed/oversized PUT",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 413,
+      "actualStatus": 413,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-176",
+      "label": "authenticated malformed/oversized PATCH",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 413,
+      "actualStatus": 413,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-177",
+      "label": "reject form {\"name\":\"\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-178",
+      "label": "reject form {\"name\":\" \"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-179",
+      "label": "reject form {\"name\":\"🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥🧥\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-180",
+      "label": "reject form {\"name\":\"a\\nb\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-181",
+      "label": "reject form {\"name\":\"a\\rb\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-182",
+      "label": "reject form {\"occasion\":\"🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨🎨\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-183",
+      "label": "reject form {\"occasion\":\"a b\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-184",
+      "label": "reject form {\"note\":\"📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝📝\"}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-185",
+      "label": "reject form {\"note\":null}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-186",
+      "label": "reject form {\"userId\":38}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-187",
+      "label": "reject form {\"isArchived\":true}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-188",
+      "label": "reject form {\"clothingIds\":[\"1\"]}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-189",
+      "label": "reject form {\"clothingIds\":[1.5]}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-190",
+      "label": "reject form {\"clothingIds\":[0]}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-191",
+      "label": "reject form {\"clothingIds\":[4294967296]}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-192",
+      "label": "reject form {\"clothingIds\":null}",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-193",
+      "label": "reject missing POSTname",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-194",
+      "label": "reject missing PUTname",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-195",
+      "label": "reject missing POSToccasion",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-196",
+      "label": "reject missing PUToccasion",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-197",
+      "label": "reject missing POSTnote",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-198",
+      "label": "reject missing PUTnote",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-199",
+      "label": "reject missing POSTclothingIds",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-200",
+      "label": "reject missing PUTclothingIds",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-201",
+      "label": "selection cardinality POST0",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-202",
+      "label": "selection cardinality PUT0",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-203",
+      "label": "selection cardinality POST2",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-204",
+      "label": "selection cardinality PUT2",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-205",
+      "label": "selection cardinality POST21",
+      "method": "POST",
+      "path": "/outfits",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-206",
+      "label": "selection cardinality PUT21",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_SELECTION",
+      "actualErrorCode": "INVALID_SELECTION",
+      "passed": true
+    },
+    {
+      "id": "HTTP-207",
+      "label": "archive boolean {}",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-208",
+      "label": "archive boolean {\"isArchived\":1}",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-209",
+      "label": "archive boolean {\"isArchived\":\"true\"}",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-210",
+      "label": "archive boolean {\"isArchived\":null}",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-211",
+      "label": "archive boolean {\"isArchived\":false,\"name\":\"x\"}",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 400,
+      "actualStatus": 400,
+      "expectedErrorCode": "INVALID_INPUT",
+      "actualErrorCode": "INVALID_INPUT",
+      "passed": true
+    },
+    {
+      "id": "HTTP-212",
+      "label": "wear before 123",
+      "method": "GET",
+      "path": "/clothes/123",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-213",
+      "label": "wear before 124",
+      "method": "GET",
+      "path": "/clothes/124",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-214",
+      "label": "wear before 125",
+      "method": "GET",
+      "path": "/clothes/125",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-215",
+      "label": "wear before 126",
+      "method": "GET",
+      "path": "/clothes/126",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-216",
+      "label": "wear before 127",
+      "method": "GET",
+      "path": "/clothes/127",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-217",
+      "label": "wear before 128",
+      "method": "GET",
+      "path": "/clothes/128",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-218",
+      "label": "wear before 129",
+      "method": "GET",
+      "path": "/clothes/129",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-219",
+      "label": "wear before 130",
+      "method": "GET",
+      "path": "/clothes/130",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-220",
+      "label": "wear before 131",
+      "method": "GET",
+      "path": "/clothes/131",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-221",
+      "label": "wear before 132",
+      "method": "GET",
+      "path": "/clothes/132",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-222",
+      "label": "wear before 133",
+      "method": "GET",
+      "path": "/clothes/133",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-223",
+      "label": "wear before 134",
+      "method": "GET",
+      "path": "/clothes/134",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-224",
+      "label": "wear before 135",
+      "method": "GET",
+      "path": "/clothes/135",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-225",
+      "label": "wear before 136",
+      "method": "GET",
+      "path": "/clothes/136",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-226",
+      "label": "wear before 137",
+      "method": "GET",
+      "path": "/clothes/137",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-227",
+      "label": "wear before 138",
+      "method": "GET",
+      "path": "/clothes/138",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-228",
+      "label": "wear before 139",
+      "method": "GET",
+      "path": "/clothes/139",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-229",
+      "label": "wear before 140",
+      "method": "GET",
+      "path": "/clothes/140",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-230",
+      "label": "wear before 141",
+      "method": "GET",
+      "path": "/clothes/141",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-231",
+      "label": "wear before 142",
+      "method": "GET",
+      "path": "/clothes/142",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-232",
+      "label": "wear before 143",
+      "method": "GET",
+      "path": "/clothes/143",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-233",
+      "label": "target before edit",
+      "method": "GET",
+      "path": "/outfits/36",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-234",
+      "label": "edit reorder remove reselect",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-235",
+      "label": "archive target",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-236",
+      "label": "repeat archive is idempotent",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-237",
+      "label": "edit archived without implicit restore",
+      "method": "PUT",
+      "path": "/outfits/36",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-238",
+      "label": "restore target",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-239",
+      "label": "repeat restore",
+      "method": "PATCH",
+      "path": "/outfits/36/archive",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-240",
+      "label": "wear after 123",
+      "method": "GET",
+      "path": "/clothes/123",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-241",
+      "label": "wear after 124",
+      "method": "GET",
+      "path": "/clothes/124",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-242",
+      "label": "wear after 125",
+      "method": "GET",
+      "path": "/clothes/125",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-243",
+      "label": "wear after 126",
+      "method": "GET",
+      "path": "/clothes/126",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-244",
+      "label": "wear after 127",
+      "method": "GET",
+      "path": "/clothes/127",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-245",
+      "label": "wear after 128",
+      "method": "GET",
+      "path": "/clothes/128",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-246",
+      "label": "wear after 129",
+      "method": "GET",
+      "path": "/clothes/129",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-247",
+      "label": "wear after 130",
+      "method": "GET",
+      "path": "/clothes/130",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-248",
+      "label": "wear after 131",
+      "method": "GET",
+      "path": "/clothes/131",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-249",
+      "label": "wear after 132",
+      "method": "GET",
+      "path": "/clothes/132",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-250",
+      "label": "wear after 133",
+      "method": "GET",
+      "path": "/clothes/133",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-251",
+      "label": "wear after 134",
+      "method": "GET",
+      "path": "/clothes/134",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-252",
+      "label": "wear after 135",
+      "method": "GET",
+      "path": "/clothes/135",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-253",
+      "label": "wear after 136",
+      "method": "GET",
+      "path": "/clothes/136",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-254",
+      "label": "wear after 137",
+      "method": "GET",
+      "path": "/clothes/137",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-255",
+      "label": "wear after 138",
+      "method": "GET",
+      "path": "/clothes/138",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-256",
+      "label": "wear after 139",
+      "method": "GET",
+      "path": "/clothes/139",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-257",
+      "label": "wear after 140",
+      "method": "GET",
+      "path": "/clothes/140",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-258",
+      "label": "wear after 141",
+      "method": "GET",
+      "path": "/clothes/141",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-259",
+      "label": "wear after 142",
+      "method": "GET",
+      "path": "/clothes/142",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-260",
+      "label": "wear after 143",
+      "method": "GET",
+      "path": "/clothes/143",
+      "expectedStatus": 200,
+      "actualStatus": 200,
+      "passed": true
+    },
+    {
+      "id": "HTTP-261",
+      "label": "unimplemented remains 404 /diaries",
+      "method": "GET",
+      "path": "/diaries",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-262",
+      "label": "unimplemented remains 404 /diaries",
+      "method": "GET",
+      "path": "/diaries",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-263",
+      "label": "unimplemented remains 404 /statistics",
+      "method": "GET",
+      "path": "/statistics",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-264",
+      "label": "unimplemented remains 404 /statistics",
+      "method": "GET",
+      "path": "/statistics",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-265",
+      "label": "unimplemented remains 404 /statistics/overview",
+      "method": "GET",
+      "path": "/statistics/overview",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-266",
+      "label": "unimplemented remains 404 /statistics/overview",
+      "method": "GET",
+      "path": "/statistics/overview",
+      "expectedStatus": 404,
+      "actualStatus": 404,
+      "expectedErrorCode": "NOT_FOUND",
+      "actualErrorCode": "NOT_FOUND",
+      "passed": true
+    },
+    {
+      "id": "HTTP-267",
+      "label": "wrong password stays credential error",
+      "method": "POST",
+      "path": "/auth/login",
+      "expectedStatus": 401,
+      "actualStatus": 401,
+      "expectedErrorCode": "INVALID_CREDENTIALS",
+      "actualErrorCode": "INVALID_CREDENTIALS",
+      "passed": true
+    }
+  ]
+}

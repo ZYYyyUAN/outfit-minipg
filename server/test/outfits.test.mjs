@@ -86,10 +86,15 @@ test('isolated routes reject queries, IDs, complete forms and archive types befo
   }
   assert.equal(calls.length, 0);
 });
-test('Batch 1 production app keeps outfits, diaries and statistics unimplemented', async t => {
-  const server = createServer(createApp({})); await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+test('assembled app authenticates outfits before parsing and keeps diaries/statistics unimplemented', async t => {
+  const account = { authenticate: async () => { throw unauthenticated(); } };
+  const server = createServer(createApp(account, null, null, {})); await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   t.after(() => new Promise(resolve => server.close(resolve)));
   for (const suffix of ['/outfits', '/outfits/facets', '/outfits/1', '/diaries', '/statistics']) {
-    const res = await fetch('http://127.0.0.1:' + server.address().port + '/api' + suffix); assert.equal(res.status, 404); assert.equal((await res.json()).error.code, 'NOT_FOUND');
+    const res = await fetch('http://127.0.0.1:' + server.address().port + '/api' + suffix);
+    assert.equal(res.status, suffix.startsWith('/outfits') ? 401 : 404);
+    assert.equal((await res.json()).error.code, suffix.startsWith('/outfits') ? 'UNAUTHENTICATED' : 'NOT_FOUND');
   }
+  const res = await fetch('http://127.0.0.1:' + server.address().port + '/api/outfits', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{' });
+  assert.equal(res.status, 401);
 });

@@ -18,3 +18,6 @@ docs/evidence/P4/release-verification.local.json
 # P5 per-batch and final post-publication reports bind the published commit.
 docs/evidence/P5/*/batch-release-verification.local.json
 docs/evidence/P5/release-verification.local.json
+
+# Dedicated P5 test-account credentials; no tokens or evidence are stored here.
+server/.p5-private/

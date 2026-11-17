@@ -1,0 +1,51 @@
+{
+  "batch": 2,
+  "launches": 1,
+  "reviewers": 2,
+  "readOnly": true,
+  "additionalReviewers": 0,
+  "agents": [
+    "/root/batch2_contract_review",
+    "/root/batch2_scope_review"
+  ],
+  "independentFindings": 3,
+  "openIssues": 0,
+  "findings": [
+    {
+      "id": "R1",
+      "priority": "P2",
+      "reviewers": [
+        "contract",
+        "scope"
+      ],
+      "problem": "Automatically enrolled unregistered owned rows",
+      "fix": "Exact fixture keys and order required; unknown or missing inventory fails with a separate report",
+      "verification": "Seven offline registry tests plus read-only exact comparison of all 90 actual rows to original manifest",
+      "status": "resolved"
+    },
+    {
+      "id": "R2",
+      "priority": "P2",
+      "reviewers": [
+        "contract"
+      ],
+      "problem": "Changed field claims did not prove actual changes",
+      "fix": "Reject all existing-key transitions in this batch; document prerequisite for later authorized edits",
+      "verification": "Allowed and unauthorized claimed updates both rejected; cumulative live read-only audit passes",
+      "status": "resolved"
+    },
+    {
+      "id": "R3",
+      "priority": "P3",
+      "reviewers": [
+        "scope"
+      ],
+      "problem": "Interface introduction still described O as unimplemented",
+      "fix": "Update current O/D/S status and date",
+      "verification": "Document consistency check",
+      "status": "resolved"
+    }
+  ],
+  "businessServiceFindings": 0,
+  "dataCorruptionObserved": false
+}

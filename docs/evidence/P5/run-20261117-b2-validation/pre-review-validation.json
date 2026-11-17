@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-17T06:12:05.250Z",
+  "gitBase": "8c95a83ce31c552b3b57b798316b744e29f20c44",
+  "unitTests": {
+    "passed": 226,
+    "failed": 0,
+    "skipped": 0
+  },
+  "http": {
+    "cases": 267,
+    "passed": true,
+    "serviceRouteAssemblyAndRunnerHashesUnchanged": true
+  },
+  "rollback": {
+    "cases": 2,
+    "uncommittedId48Absent": true
+  },
+  "owners": [
+    {
+      "id": 37,
+      "loggedOut": 1
+    },
+    {
+      "id": 38,
+      "loggedOut": 1
+    }
+  ],
+  "retainedActiveArchived": [
+    13,
+    2
+  ],
+  "sensitiveValuesAbsent": true,
+  "scannedFiles": 33,
+  "secretScanNote": "Initial whole-substring DB credential scan matched a pre-existing database account description; corrected to credential assignment context. New account passwords scanned exactly; no values emitted.",
+  "privateCredentialsIgnored": true,
+  "implementationSha256": {
+    "server/src/services/outfits.js": "4fecec3fe27dae857b6fc63b4c039120236747ee8412b423a9b6ccd1a12ff8b4",
+    "server/src/routes/outfits.js": "9affc3dff0a8b76f2117e9d6e75b118c5d091ab622bab1ff457943e8e48bcfd0",
+    "server/src/app.js": "69af1501796e4aba5aae0560fa8e05abbcd4fa0241a427f4aefbb2b977606554",
+    "server/src/index.js": "4184aba3d6932197734b4ca7f6906c7e7e607a49cb717a797d02d83f391301f3",
+    "server/scripts/verify-outfits.mjs": "6fbe1118e07ec7705b6362d42786af0884c9b8d58d814c14788949255a63dfab",
+    "server/scripts/outfit-http.mjs": "334865d4ec66a6b621528bd9398b2627bf256031cce372ca464211a93075b4d3",
+    "server/test/outfit-service.test.mjs": "8e6074feab73168f585965a0a5964ed72263bf5a5aeaba0afd826fadd77884d6",
+    "server/test/outfits.test.mjs": "2ff20bb8014d3f20e2cf74dd8e2d1921838ffe221efd102714c6c13f7b39733c",
+    "server/test/outfits-verifier.test.mjs": "6d3d5c89100facce66082a2986cb5c542a2d071dc78921b1ee2ac96e7f4e1e52"
+  },
+  "testsSha256": "e4951a7943fdf6280fe56e0e2c4535aeeb6509840616be79a7ccce6cc2923424",
+  "protectionEvidence": "../run-20261117-b2-audit/results.json",
+  "verifierChangeAfterHttp": "read-only ownership metadata and cumulative relation ownership checks; independently audited and unit tested"
+}

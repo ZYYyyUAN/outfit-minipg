@@ -18,13 +18,16 @@ export const help = `阶段5验证（从server目录运行，私有配置使用 
 无参数/--help：仅帮助，不读取配置、不连接数据库、不写输出。
 preflight：首次建立阶段基线，以后核对同一基线；audit：核对已有基线。
 两者只读数据库/上传图，独占创建P5批次目录，拒绝覆盖。
-Batch 1只允许零业务增量；Batch 2写入前须扩展累计manifest审计。
---http / --prepare-ui / --restart 尚未实现，明确拒绝，不执行写操作。
+audit/preflight按阶段基线及全部已登记manifest核对旧行、结构、图和累计增量。
+  node --env-file-if-exists=.env scripts/verify-outfits.mjs --http <唯一runId>
+http：显式注册专用A/B、上传、准备21件衣物及搭配/独立日记夹具，执行后端定向验证。
+成功数据/上传保留，凭据仅保存本机忽略目录，最终退出；不操作开发者工具。
+--prepare-ui / --restart 尚未实现，明确拒绝，不执行写操作。
 `;
 export function parseArgs(args) {
   if (args.length === 0 || (args.length === 1 && args[0] === '--help')) return { mode: 'help' };
-  if (['--http', '--prepare-ui', '--restart'].includes(args[0])) throw Object.assign(new Error('此批次尚未实现该模式'), { code: 'UNSUPPORTED_MODE' });
-  if (args.length !== 2 || !['--preflight', '--audit'].includes(args[0]) || !/^[a-z0-9][a-z0-9_-]{0,79}$/.test(args[1])) throw Object.assign(new Error('请使用帮助中的模式及安全唯一runId'), { code: 'INVALID_ARGUMENTS' });
+  if (['--prepare-ui', '--restart'].includes(args[0])) throw Object.assign(new Error('此批次尚未实现该模式'), { code: 'UNSUPPORTED_MODE' });
+  if (args.length !== 2 || !['--preflight', '--audit', '--http'].includes(args[0]) || !/^[a-z0-9][a-z0-9_-]{0,79}$/.test(args[1])) throw Object.assign(new Error('请使用帮助中的模式及安全唯一runId'), { code: 'INVALID_ARGUMENTS' });
   return { mode: args[0].slice(2), runId: args[1] };
 }
 export async function reserveRun(directory, runId) {
@@ -34,7 +37,7 @@ export async function reserveRun(directory, runId) {
   return output;
 }
 const protectedPath = file => /^(assets\/|data\/|prototype\/|database\/|docs\/evidence\/P[1-4](?:[-/])|docs\/P[1-4])/.test(file) || file === 'server/package-lock.json';
-async function historicalReleaseHashes() {
+export async function historicalReleaseHashes() {
   const files = git('ls-files', '--others', '--ignored', '--exclude-standard', '-z', 'docs/evidence').split('\0').filter(file => /^docs\/evidence\/P[1-4](?:[-/])/.test(file));
   const hashes = {};
   for (const file of files) hashes[file] = hash(await fs.readFile(path.join(root, file)));
@@ -44,6 +47,7 @@ async function historicalReleaseHashes() {
 export async function captureSnapshot(database, uploadRoot) {
   const connection = await database.getConnection();
   let identity, grants, columns, tableData;
+  const ownership = {};
   try {
     const { probe } = await import('../src/db.js');
     identity = await probe(connection);
@@ -55,6 +59,9 @@ export async function captureSnapshot(database, uploadRoot) {
     for (const table of tables) {
       const [rows] = await connection.query(`SELECT * FROM ${table}`);
       const [ddl] = await connection.query(`SHOW CREATE TABLE ${table}`);
+      ownership[table] = Object.fromEntries(rows.map(row => [String(row.id ?? `${row.outfit_id ?? row.diary_id}:${row.clothing_id}`),
+        row.user_id !== undefined ? { ownerId: row.user_id, ...(table === 'diaries' ? { sourceOutfitId: row.source_outfit_id } : {}) }
+          : table === 'users' ? { ownerId: row.id } : table.endsWith('_items') ? { parentId: row.outfit_id ?? row.diary_id, clothingId: row.clothing_id, sortOrder: row.sort_order } : {}]));
       tableData[table] = { count: rows.length, structure: Object.values(ddl[0])[1].replace(/AUTO_INCREMENT=\d+ /g, ''),
         rows: rows.map(row => ({ key: row.id ?? `${row.outfit_id ?? row.diary_id}:${row.clothing_id}`, sha256: hash(JSON.stringify(row)),
           ...(row.user_id === undefined ? {} : { userId: row.user_id }) })).sort((a, b) => String(a.key).localeCompare(String(b.key))) };
@@ -76,7 +83,7 @@ export async function captureSnapshot(database, uploadRoot) {
   }
   await walk(uploadRoot);
   return { capturedAt: new Date().toISOString(), identity, grants: grants.map(row => Object.values(row)[0]), columns,
-    U0: tableData.users.count, tables: tableData, protectedFiles, images, nodeVersion: process.version };
+    U0: tableData.users.count, tables: tableData, ownership, protectedFiles, images, nodeVersion: process.version };
 }
 export function compareSnapshots(baseline, current) {
   for (const field of ['version', 'hostname', 'port', 'account', 'db', 'timeZone', 'connectionCollation']) assert.equal(current.identity[field], baseline.identity[field], 'INSTANCE:' + field);
@@ -86,6 +93,66 @@ export function compareSnapshots(baseline, current) {
   assert.deepEqual(current.protectedFiles, baseline.protectedFiles, 'CHANGED_OR_UNEXPLAINED_PROTECTED_FILES');
   assert.deepEqual(current.images, baseline.images, 'CHANGED_OR_UNEXPLAINED_UPLOAD');
   return { allRowsUnchanged: true, allStructuresUnchanged: true, allProtectedFilesUnchanged: true, allImagesUnchanged: true, unexpectedRows: 0, unexpectedImages: 0 };
+}
+
+export function compareCumulative(baseline, current, manifests) {
+  const expected = structuredClone(baseline), owners = new Set(), registered = new Map();
+  for (const manifest of manifests) {
+    assert.equal(manifest.version, 1, 'MANIFEST_VERSION');
+    for (const account of manifest.accounts) {
+      assert.ok(!baseline.tables.users.rows.some(row => row.key === account.id), 'ORIGINAL_ACCOUNT_IS_PROTECTED');
+      owners.add(account.id);
+    }
+    for (const entry of manifest.rows) {
+      assert.ok(tables.includes(entry.table) && entry.table !== 'categories', 'MANIFEST_TABLE');
+      assert.ok(owners.has(entry.ownerId), 'MANIFEST_OWNER');
+      assert.ok(!baseline.tables[entry.table].rows.some(row => String(row.key) === String(entry.row.key)), 'ORIGINAL_ROW_IS_PROTECTED');
+      assert.ok(entry.row.userId === undefined || entry.row.userId === entry.ownerId, 'ROW_OWNER');
+      if (entry.table === 'users') assert.equal(entry.row.key, entry.ownerId, 'ACCOUNT_KEY');
+      if (!['users', 'categories'].includes(entry.table)) {
+        const actual = current.ownership[entry.table][entry.row.key];
+        assert.ok(actual, 'MISSING_OWNERSHIP_METADATA');
+        if (entry.table.endsWith('_items')) {
+          const parentTable = entry.table === 'outfit_items' ? 'outfits' : 'diaries';
+          assert.equal(current.ownership[parentTable][actual.parentId].ownerId, entry.ownerId, 'PARENT_OWNER');
+          assert.equal(current.ownership.clothes[actual.clothingId].ownerId, entry.ownerId, 'CHILD_OWNER');
+        } else {
+          assert.equal(actual.ownerId, entry.ownerId, 'ACTUAL_OWNER');
+          if (entry.table === 'diaries' && actual.sourceOutfitId !== null) assert.equal(current.ownership.outfits[actual.sourceOutfitId].ownerId, entry.ownerId, 'SOURCE_OWNER');
+        }
+      }
+      const key = entry.table + ':' + entry.row.key, previous = registered.get(key);
+      // 当前批次仅登记新键；后批须先提供实际字段差异核验，不能用自报字段放宽已登记行。
+      assert.equal(previous, undefined, 'EXISTING_KEY_TRANSITION_NOT_SUPPORTED');
+      assert.equal(entry.beforeSha256, null, 'UNREGISTERED_PREVIOUS_ROW');
+      registered.set(key, entry);
+      expected.tables[entry.table].rows.push(entry.row);
+    }
+    for (const image of manifest.images) {
+      assert.ok(owners.has(image.userId) && image.path.startsWith('users/' + image.userId + '/'), 'IMAGE_OWNER');
+      assert.ok(!Object.hasOwn(expected.images, image.path), 'IMAGE_ALREADY_REGISTERED');
+      expected.images[image.path] = { size: image.size, sha256: image.sha256, mimeType: image.mimeType };
+    }
+  }
+  for (const table of tables) {
+    expected.tables[table].rows.sort((a, b) => String(a.key).localeCompare(String(b.key)));
+    expected.tables[table].count = expected.tables[table].rows.length;
+  }
+  compareSnapshots(expected, current);
+  assert.equal(current.U0, baseline.U0 + owners.size, 'CUMULATIVE_USER_COUNT');
+  return { originalRowsUnchanged: true, allStructuresUnchanged: true, allProtectedFilesUnchanged: true, originalImagesUnchanged: true,
+    cumulativeManifests: manifests.map(manifest => manifest.runId), registeredAccounts: owners.size, registeredRows: registered.size,
+    registeredImages: manifests.reduce((n, manifest) => n + manifest.images.length, 0), unexpectedRows: 0, unexpectedImages: 0 };
+}
+
+export async function loadManifests() {
+  const manifests = [];
+  for (const entry of await fs.readdir(evidence, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const directory = path.join(evidence, entry.name);
+    if ((await fs.readdir(directory)).includes('manifest.json')) manifests.push(await read(path.join(directory, 'manifest.json')));
+  }
+  return manifests.sort((a, b) => a.sequence - b.sequence);
 }
 
 async function findBaseline() {
@@ -121,12 +188,18 @@ export async function main(args = process.argv.slice(2)) {
   if (options.mode === 'help') { console.log(help); return; }
   const directory = await reserveRun(evidence, options.runId);
   const baselineFile = await findBaseline();
-  if (options.mode === 'audit') assert.ok(baselineFile, 'BASELINE_REQUIRED');
+  if (['audit', 'http'].includes(options.mode)) assert.ok(baselineFile, 'BASELINE_REQUIRED');
   const gitState = await gitPrerequisites();
   const { readConfig } = await import('../src/config.js');
   const { createDatabase } = await import('../src/db.js');
   const config = readConfig(), database = createDatabase(config);
   try {
+    if (options.mode === 'http') {
+      const { verifyOutfitHttp } = await import('./outfit-http.mjs');
+      await verifyOutfitHttp({ runId: options.runId, directory, baselineFile, config, database, gitState,
+        verification: { captureSnapshot, compareCumulative, loadManifests, historicalReleaseHashes } });
+      return;
+    }
     if (!baselineFile) {
       // 旧审计只读取业务数据，输出显式放在P5，不改P4证据。
       const { auditWardrobe } = await import('./audit-wardrobe.mjs');
@@ -141,20 +214,21 @@ export async function main(args = process.argv.slice(2)) {
         assert.deepEqual(snapshot.tables[table].rows.map(row => ({ key: String(row.key), sha256: row.sha256 })), expected, 'P4_HANDOFF_ROWS:' + table);
       }
     }
-    const protection = baselineFile ? compareSnapshots(await read(baselineFile), snapshot) : { baselineEstablished: true, p4HandoffVerified: true };
+    const manifests = await loadManifests();
+    const protection = baselineFile ? compareCumulative(await read(baselineFile), snapshot, manifests) : { baselineEstablished: true, p4HandoffVerified: true };
     const historicalReleases = await historicalReleaseHashes();
     const releaseBaseline = path.join(baselineFile ? path.dirname(baselineFile) : directory, 'historical-release-hashes.json');
     if (baselineFile) assert.deepEqual(historicalReleases, await read(releaseBaseline), 'HISTORICAL_LOCAL_RELEASES');
     else await fs.writeFile(releaseBaseline, JSON.stringify(historicalReleases, null, 2) + '\n', { flag: 'wx' });
     const filename = baselineFile ? 'snapshot.json' : 'baseline.json';
-    await fs.writeFile(path.join(directory, filename), JSON.stringify({ runId: options.runId, batch: 1, git: gitState, ...snapshot }, null, 2) + '\n', { flag: 'wx' });
-    const result = { runId: options.runId, batch: 1, mode: options.mode, checkedAt: new Date().toISOString(), stage5Complete: false, passed: true,
+    await fs.writeFile(path.join(directory, filename), JSON.stringify({ runId: options.runId, batch: 2, git: gitState, ...snapshot }, null, 2) + '\n', { flag: 'wx' });
+    const result = { runId: options.runId, batch: 2, mode: options.mode, checkedAt: new Date().toISOString(), stage5Complete: false, passed: true,
       baseline: path.relative(root, baselineFile ?? path.join(directory, filename)).replaceAll('\\', '/'), baselineSha256: hash(await fs.readFile(baselineFile ?? path.join(directory, filename))),
       counts: Object.fromEntries(tables.map(table => [table, snapshot.tables[table].count])), totalImages: Object.keys(snapshot.images).length, protectedFiles: Object.keys(snapshot.protectedFiles).length,
       protection: { ...protection, historicalLocalReportsUnchanged: true, historicalLocalReportCount: Object.keys(historicalReleases).length },
       historicalReleaseBaselineSha256: hash(await fs.readFile(releaseBaseline)),
       manifest: { accounts: [], rows: [], images: [], sessionsOpened: 0, ownedApplicationProcesses: [], databaseWrites: false, uploadWrites: false },
-      pending: ['真实O01～O06服务与事务', '累计增量manifest审计（写入前扩展）', '原生页面/工具/视觉', 'V34阶段发布'] };
+      pending: ['原生页面/工具/视觉', 'Batch 6完整集成与重启回归', 'V34阶段发布'] };
     await fs.writeFile(path.join(directory, 'results.json'), JSON.stringify(result, null, 2) + '\n', { flag: 'wx' });
     console.log(JSON.stringify(result));
   } finally { await database.end(); }

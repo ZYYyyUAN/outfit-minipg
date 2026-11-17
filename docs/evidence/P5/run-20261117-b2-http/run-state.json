@@ -1,0 +1,10 @@
+{
+  "cause": "circular-module-evaluation with awaited CLI entry",
+  "exitCode": 1,
+  "databaseWrites": false,
+  "runId": "run-20261117-b2-http",
+  "retryRunId": "run-20261117-b2-http2",
+  "status": "failed-before-business-work",
+  "uploadWrites": false,
+  "fix": "pass audit functions to HTTP runner; remove circular import"
+}

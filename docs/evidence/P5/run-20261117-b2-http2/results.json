@@ -1,0 +1,50 @@
+{
+  "runId": "run-20261117-b2-http2",
+  "batch": 2,
+  "gitBase": "8c95a83ce31c552b3b57b798316b744e29f20c44",
+  "checkedAt": "2026-11-17T06:03:51.023Z",
+  "passed": true,
+  "stage5Complete": false,
+  "httpCases": 267,
+  "rollbackCases": 2,
+  "accountsLoggedOut": true,
+  "processClosed": true,
+  "protection": {
+    "originalRowsUnchanged": true,
+    "allStructuresUnchanged": true,
+    "allProtectedFilesUnchanged": true,
+    "originalImagesUnchanged": true,
+    "cumulativeManifests": [
+      "run-20261117-b2-http2"
+    ],
+    "registeredAccounts": 2,
+    "registeredRows": 90,
+    "registeredImages": 2,
+    "unexpectedRows": 0,
+    "unexpectedImages": 0,
+    "historicalLocalReportsUnchanged": true
+  },
+  "counts": {
+    "users": 23,
+    "categories": 7,
+    "clothes": 81,
+    "outfits": 30,
+    "outfit_items": 100,
+    "diaries": 19,
+    "diary_items": 67
+  },
+  "totalImages": 73,
+  "baselineSha256": "b1bb7db2a91b611f5e2e5d88db7712d0a3d1956a127a202cfbcf54fa8245c2a1",
+  "implementationSha256": {
+    "server/src/services/outfits.js": "4fecec3fe27dae857b6fc63b4c039120236747ee8412b423a9b6ccd1a12ff8b4",
+    "server/src/routes/outfits.js": "9affc3dff0a8b76f2117e9d6e75b118c5d091ab622bab1ff457943e8e48bcfd0",
+    "server/src/app.js": "69af1501796e4aba5aae0560fa8e05abbcd4fa0241a427f4aefbb2b977606554",
+    "server/src/index.js": "4184aba3d6932197734b4ca7f6906c7e7e607a49cb717a797d02d83f391301f3",
+    "server/scripts/verify-outfits.mjs": "6efe9de7c58e86a7e05c7e076a00c11733e370ae4df9123eeac929a8160185a7",
+    "server/scripts/outfit-http.mjs": "334865d4ec66a6b621528bd9398b2627bf256031cce372ca464211a93075b4d3"
+  },
+  "privateLogin": "server/.p5-private/run-20261117-b2-http2.json (ignored; passwords only, no tokens)",
+  "fixtureMap": "fixture-map.json",
+  "verification": "real local HTTP and MySQL; same/new physical connection rollback; no native UI or real device/public network claim",
+  "currentHead": "8c95a83ce31c552b3b57b798316b744e29f20c44"
+}
