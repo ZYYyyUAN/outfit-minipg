@@ -1,0 +1,31 @@
+{
+  "batch": 5,
+  "gitBase": "57531416d87700b4b57ffb0b6f8dae7ac836700d",
+  "stage5Complete": false,
+  "tests": {
+    "passed": 311,
+    "failed": 0,
+    "skipped": 0,
+    "evidence": "post-review-tests.tap"
+  },
+  "finalAuthenticatedHttpChecks": 8,
+  "finalNewConnectionSqlChecks": 1,
+  "totalBatchAuthenticatedHttpChecks": 16,
+  "totalBatchNewConnectionSqlChecks": 2,
+  "finalHttpSqlRun": "run-20261117-b5-linkage-final",
+  "sourceDescriptorActualObject": true,
+  "sourceClickRequests": 0,
+  "diariesUnchanged": true,
+  "wearCountAndLastWornDateUnchanged": true,
+  "protection": "../run-20261117-b5-final/results.json",
+  "accountsLoggedOut": true,
+  "ownedApplicationClosed": true,
+  "developerToolPortOpened": false,
+  "nativeCompileAndVisualVerified": false,
+  "addedBusinessRows": 0,
+  "addedImages": 0,
+  "pending": [
+    "Batch6 G12/G13 full integration and historical regression",
+    "Batch7 native/manual/visual and V34"
+  ]
+}

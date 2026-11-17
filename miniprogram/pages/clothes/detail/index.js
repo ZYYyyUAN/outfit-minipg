@@ -1,6 +1,7 @@
 const session = require('../../../utils/session.js');
 const { request } = require('../../../utils/request.js');
 const media = require('../../../utils/media.js');
+const outfits = require('../../../utils/outfit-state.js');
 const wardrobe = require('../../../utils/wardrobe-state.js');
 const section = () => ({items:[],page:0,total:0,busy:false,error:''});
 Page({
@@ -17,9 +18,11 @@ Page({
     }
     if(!this._visible || show!==this._show) return;
     this.setData({acting:false});
-    const epoch=session.snapshot().epoch,revision=wardrobe.current();
-    if(this._epoch!==epoch || this._revision!==revision || !this.data.clothing) {
-      this._epoch=epoch;this._revision=revision;this._scroll=0;this.load();wx.pageScrollTo({scrollTop:0,duration:0});return;
+    if(this._unwatch) this._unwatch();
+    this._unwatch=outfits.watch(()=> { if(!this.current(this._sequence)) return; this._outfitRevision=outfits.current();this._revision=wardrobe.current();this._scroll=0;this.load();wx.pageScrollTo({scrollTop:0,duration:0}); });
+    const epoch=session.snapshot().epoch,revision=wardrobe.current(),outfitRevision=outfits.current();
+    if(this._epoch!==epoch || this._revision!==revision || this._outfitRevision!==outfitRevision || !this.data.clothing) {
+      this._epoch=epoch;this._revision=revision;this._outfitRevision=outfitRevision;this._scroll=0;this.load();wx.pageScrollTo({scrollTop:0,duration:0});return;
     }
     this.readImage();
     for(const kind of ['outfits','diaries']) {
@@ -29,6 +32,7 @@ Page({
     wx.pageScrollTo({scrollTop:this._scroll,duration:0});
   },
   onHide() {
+    if(this._unwatch) { this._unwatch();this._unwatch=null; }
     this._visible=false;this._show++;this._sequence++;this._imageSequence++;this._previews.clear();
     const patch={src:'',acting:false};
     for(const kind of ['outfits','diaries']) patch[kind]={...this.data[kind],busy:false,items:this.data[kind].items.map(item=>({...item,previewItems:item.previewItems.map(child=>({...child,src:''}))}))};
@@ -110,6 +114,7 @@ Page({
         this._archiveEpoch=epoch;this._archivePending=pending;
         const clothing=await pending;
         if(epoch!==session.snapshot().epoch) return;
+        if(this.current(sequence)) this.setData({acting:false});
         wardrobe.changed();
         if(!this.current(sequence)) return;
         this._revision=wardrobe.current();this.setData({clothing,acting:false});

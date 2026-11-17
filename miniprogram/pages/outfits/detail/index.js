@@ -17,6 +17,8 @@ Page({
     }
     if(!this._visible || show!==this._show) return;
     this.setData({acting:false});
+    if(this._unwatch) this._unwatch();
+    this._unwatch=outfits.watch(()=> { if(!this.current(this._sequence) || this._revision===outfits.current()) return; this._revision=outfits.current();this._scroll=0;this.load();wx.pageScrollTo({scrollTop:0,duration:0}); });
     const epoch=session.snapshot().epoch,revision=outfits.current();
     if(this._epoch!==epoch || this._revision!==revision || !this.data.outfit) {
       this._epoch=epoch;this._revision=revision;this._scroll=0;this.load();wx.pageScrollTo({scrollTop:0,duration:0});return;
@@ -24,6 +26,7 @@ Page({
     this.refreshImages();wx.pageScrollTo({scrollTop:this._scroll,duration:0});
   },
   onHide() {
+    if(this._unwatch) { this._unwatch();this._unwatch=null; }
     this._visible=false;this._show++;this._sequence++;this._images.clear();
     this.setData({acting:false,outfit:this.data.outfit?{...this.data.outfit,items:this.data.outfit.items.map(item=>({...item,src:''}))}:null});
   },
@@ -73,6 +76,7 @@ Page({
         const value=await pending;
         // 同一会话的已提交写入仍使后台列表失效；离页后不更新详情或弹反馈。
         if(epoch!==session.snapshot().epoch) return;
+        if(this.current(sequence)) this._revision=outfits.current()+1;
         outfits.changed();
         if(!this.current(sequence)) return;
         this._revision=outfits.current();
@@ -82,6 +86,12 @@ Page({
       } catch(error) { if(this.current(sequence)) this.setData({acting:false,error:error.message}); }
       finally { if(this._archivePending===pending) this._archivePending=null; }
     },fail:()=> { if(this.current(sequence)) this.setData({acting:false}); }});
+  },
+  recordWear() {
+    if(!this.current(this._sequence) || !this.data.outfit || this.data.acting) return;
+    const {id,name}=this.data.outfit,source={sourceOutfitId:id};
+    wx.showModal({title:'记录穿着入口',content:`来源搭配：${name}（sourceOutfitId=${source.sourceOutfitId}）。尚未生成穿着记录。日记功能将在阶段6开放。`,showCancel:false,confirmText:'知道了'});
+    return source;
   },
   back() { if(getCurrentPages().length>1) wx.navigateBack({delta:1});else wx.switchTab({url:'/pages/outfits/index'}); },
 });

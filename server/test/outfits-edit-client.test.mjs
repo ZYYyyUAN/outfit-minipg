@@ -78,3 +78,14 @@ test('page receives latest parent selection after cancel, opens picker without b
 test('hidden failed save restores server field errors and scroll target on return',async()=>{
  const env=await create();fill(env);const saving=env.page.save();env.page.onHide();env.requests[0].success({statusCode:400,data:{error:{code:'INVALID_SELECTION',message:'组合错误',details:{fields:{clothingIds:'重新选择'}}}}});await saving;await env.page.onShow();assert.equal(env.page.data.errors.clothingIds,'重新选择');assert.ok(env.h.calls.some(c=>c[0]==='scroll'&&c[1].selector==='#field-clothingIds'));assert.equal(env.page.data.items.length,2);
 });
+
+
+test('wardrobe changes refresh selected current attributes without losing unsaved fields or order',async()=>{
+ const env=await edit();env.page.input({currentTarget:{dataset:{field:'name'}},detail:{value:'未保存名称'}});env.page.move(event({index:0,step:1}));const ids=Array.from(env.page.data.items,i=>i.id);env.page.onHide();env.h.load('utils/wardrobe-state.js').changed();await env.page.onShow();assert.equal(env.page.data.busy,true);const reads=env.requests.slice(-5);assert.deepEqual(reads.map(r=>Number(r.url.split('/').at(-1))),ids);for(let i=0;i<reads.length;i++)ok(reads[i],{...child(ids[i]),name:'当前'+ids[i],imagePath:child(ids[i]+30).imagePath,isArchived:true});await flush();assert.equal(env.page.data.form.name,'未保存名称');assert.deepEqual(Array.from(env.page.data.items,i=>i.id),ids);assert.ok(env.page.data.items.every(i=>i.name.startsWith('当前')&&i.isArchived));assert.equal(env.page.data.dirty,true);assert.equal(env.page.data.busy,false);env.picker.properties={epoch:env.page.data.epoch,selected:env.page.data.items};env.page.choose();assert.deepEqual(env.picker.data.chosen.map(i=>i.name),env.page.data.items.map(i=>i.name));
+});
+test('selected clothing refresh failure preserves draft and old account late responses are ignored',async()=>{
+ const env=await edit();env.h.load('utils/wardrobe-state.js').changed();const reads=env.requests.slice(-5);reads[0].fail({errMsg:'timeout'});await flush();assert.equal(env.page.data.items.length,5);assert.equal(env.page.data.busy,false);assert.ok(env.page.data.error);env.page.onHide();await env.page.onShow();const newer=env.requests.slice(-5);env.page.onHide();env.h.session.clear();for(let i=0;i<newer.length;i++)ok(newer[i],child(i+1));await flush();assert.ok(env.page.data.items.every(i=>!i.src));
+});
+test('wardrobe mutation while picker is open closes its stale draft and invalidates old callbacks',async()=>{
+ const env=await edit();env.picker.properties={epoch:env.page.data.epoch,selected:env.page.data.items};env.page.choose();const query=env.clothes().at(-1);env.h.load('utils/wardrobe-state.js').changed();assert.equal(env.picker.data.open,false);ok(query,value([child(99)]));await flush();assert.equal(env.picker.data.items.length,0);
+});

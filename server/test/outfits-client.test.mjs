@@ -205,5 +205,43 @@ test('native templates register P05, bind real handlers and keep P06/diary entry
     assert.doesNotMatch(template,/src="\{\{[^}]*imageUrl/);
   }
   const list=fs.readFileSync(path.join(root,'pages/outfits/index.wxml'),'utf8'),p05=fs.readFileSync(path.join(root,'pages/outfits/detail/index.wxml'),'utf8'),p02=fs.readFileSync(path.join(root,'pages/clothes/detail/index.wxml'),'utf8');
-  assert.match(list,/<button[^>]*bindtap="create">新增搭配/);assert.match(p05,/<button[^>]*bindtap="edit"[^>]*>编辑搭配/);assert.match(p05,/<button[^>]*disabled>记录穿着待开放/);assert.match(p05,/wx:for="\{\{outfit.items\}\}"/);assert.match(list,/item.clothingCount/);assert.match(list,/catchtap="retryImage"/);assert.match(p05,/catchtap="retryImage"/);assert.match(p02,/catchtap="retryPreview"/);assert.doesNotMatch(p02,/bindtap="(?:diary|moreDiaries)"[^>]*class="related"/);
+  assert.match(list,/<button[^>]*bindtap="create">新增搭配/);assert.match(p05,/<button[^>]*bindtap="edit"[^>]*>编辑搭配/);assert.match(p05,/bindtap="recordWear"/);assert.match(p05,/wx:for="\{\{outfit.items\}\}"/);assert.match(list,/item.clothingCount/);assert.match(list,/catchtap="retryImage"/);assert.match(p05,/catchtap="retryImage"/);assert.match(p02,/catchtap="retryPreview"/);assert.doesNotMatch(p02,/bindtap="(?:diary|moreDiaries)"[^>]*class="related"/);
+});
+
+
+test('wardrobe mutation refreshes visible list/facets and rejects pending old page and media',async()=>{
+ const {h,page,list,facets,images}=setup();await page.onShow();ok(list()[0],pageResult([summary(1,1)],2));await flush();page.more();const old=list().at(-1),oldImage=images[0];page.onPageScroll({scrollTop:777});
+ h.load('utils/wardrobe-state.js').changed();assert.equal(list().at(-1).data.page,1);assert.equal(page.data.items.length,0);assert.equal(facets().length,2);ok(old,pageResult([summary(2)],2,2));oldImage.success({statusCode:200,tempFilePath:'wxfile://obsolete'});await flush();assert.equal(page.data.page,0);assert.equal(page._scroll,0);
+ const updated=summary(1,1);updated.previewItems[0]={...child(1),name:'新名称',imagePath:child(9).imagePath,isArchived:true};ok(list().at(-1),pageResult([updated]));await flush();assert.equal(page.data.items[0].previewItems[0].name,'新名称');assert.equal(page.data.items[0].previewItems[0].src,'');
+});
+test('hidden outfit detail rechecks clothes after wardrobe write; no write preserves position',async()=>{
+ const {h,page,requests}=await showDetail();page.onPageScroll({scrollTop:666});page.onHide();await page.onShow();assert.equal(requests.length,1);assert.equal(page._scroll,666);page.onHide();h.load('utils/wardrobe-state.js').changed();await page.onShow();assert.equal(requests.length,2);assert.equal(page._scroll,0);const changed=detail();changed.items[0].name='已改名';changed.items[0].isArchived=true;ok(requests[1],changed);await flush();assert.equal(page.data.outfit.items[0].name,'已改名');
+});
+test('visible detail refreshes late wardrobe commit, hidden and old account callbacks cannot restore data',async()=>{
+ const {h,page,requests}=await showDetail();h.load('utils/wardrobe-state.js').changed();assert.equal(requests.length,2);page.onHide();ok(requests[1],detail(20));await flush();assert.equal(page.data.outfit,null);await page.onShow();h.session.clear();ok(requests.at(-1),detail());await flush();assert.equal(page.data.outfit,null);page.onUnload();
+});
+test('C07 refreshes after outfit save/relation change, retaining no old pages or images',async()=>{
+ const {h,page,requests}=setup('pages/clothes/detail/index.js');await page.onShow();ok(requests[0],{...child(123),wearCount:7,lastWornDate:'2026-01-01'});await flush();const old=requests.find(r=>r.url.includes('/123/outfits'));ok(old,pageResult([summary()],3,1,2));await flush();page.onPageScroll({scrollTop:333});page.onHide();h.load('utils/outfit-state.js').changed();await page.onShow();assert.equal(page._scroll,0);assert.equal(page.data.outfits.items.length,0);ok(requests.at(-1),{...child(123),wearCount:7,lastWornDate:'2026-01-01'});await flush();assert.equal(requests.filter(r=>r.url.includes('/123/outfits')).length,2);assert.equal(page.data.clothing.wearCount,7);
+});
+test('visible C07 invalidates pending old relation when hidden save commits after return',async()=>{
+ const {h,page,requests}=setup('pages/clothes/detail/index.js');await page.onShow();ok(requests[0],child(123));await flush();const old=requests.find(r=>r.url.includes('/123/outfits'));h.load('utils/outfit-state.js').changed();ok(old,pageResult([summary()],1));await flush();assert.equal(page.data.outfits.items.length,0);assert.equal(page.data.clothing,null);page.onUnload();const n=requests.length;h.load('utils/outfit-state.js').changed();assert.equal(requests.length,n);
+});
+test('source entry uses real id/name only, creates no request, refuses hidden/account stale entry',async()=>{
+ const {h,page,requests}=await showDetail();const before=requests.length;page.recordWear();const modal=h.calls.at(-1)[1];assert.match(modal.content,/sourceOutfitId=35/);assert.ok(modal.content.includes('完整组合'));assert.match(modal.content,/尚未生成穿着记录/);assert.equal(requests.length,before);page.onHide();const n=h.calls.length;page.recordWear();assert.equal(h.calls.length,n);h.session.clear();page.recordWear();assert.equal(h.calls.length,n);
+});
+test('wardrobe and outfit revisions reset together for a new session',()=>{
+ const {h}=setup();const w=h.load('utils/wardrobe-state.js'),o=h.load('utils/outfit-state.js');w.changed();assert.equal(w.current(),1);assert.equal(o.current(),1);h.session.clear();assert.equal(w.current(),0);assert.equal(o.current(),0);
+});
+
+
+test('visible P05 refreshes late P06 save after native back and rejects old detail response',async()=>{
+ const {h,page,requests}=await showDetail();page.onHide();await page.onShow();assert.equal(requests.length,1);h.load('utils/outfit-state.js').changed();assert.equal(requests.length,2);h.load('utils/outfit-state.js').changed();assert.equal(requests.length,3);const saved={...detail(3),name:'迟到保存的新名称'};ok(requests[2],saved);ok(requests[1],detail());await flush();assert.equal(page.data.outfit.name,'迟到保存的新名称');assert.equal(page.data.outfit.items.length,3);assert.equal(page._scroll,0);
+});
+test('P02 own archive and restore settles acting despite synchronous cross-module refresh',async()=>{
+ for(const archived of [false,true]){
+  const {h,page,requests}=setup('pages/clothes/detail/index.js');await page.onShow();ok(requests[0],{...child(123),isArchived:archived});await flush();page.archive();const completed=h.calls.at(-1)[1].success({confirm:true});const write=requests.at(-1);assert.equal(write.method,'PATCH');ok(write,{...child(123),isArchived:!archived});await completed;assert.equal(page.data.acting,false);assert.equal(page._archivePending,null);ok(requests.at(-1),{...child(123),isArchived:!archived});await flush();assert.equal(page.data.clothing.isArchived,!archived);assert.equal(page.data.acting,false);page.onUnload();
+ }
+});
+test('source entry returns the actual integer source descriptor for phase6 without persistence',async()=>{
+ const {h,page,requests}=await showDetail();const n=requests.length;const source=page.recordWear();assert.deepEqual(JSON.parse(JSON.stringify(source)),{sourceOutfitId:35});assert.equal(Number.isInteger(source.sourceOutfitId),true);assert.equal(requests.length,n);assert.equal([...h.storage.keys()].some(key=>key.toLowerCase().includes('source')),false);page.onUnload();
 });
